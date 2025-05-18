@@ -1,0 +1,41 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081be1: panic_abort at /home/tvconss/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4008fbdd: esp_system_abort at /home/tvconss/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4009639d: __assert_func at /home/tvconss/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40160e4b: tcpip_send_msg_wait_sem at /home/tvconss/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+--- 0x4016d39e: netconn_gethostbyname_addrtype at /home/tvconss/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+--- 0x4015ee21: lwip_getaddrinfo at /home/tvconss/esp/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+--- 0x4013e415: getaddrinfo at /home/tvconss/esp/esp-idf/components/lwip/include/lwip/netdb.h:23
+---  (inlined by) esp_tls_hostname_to_fd at /home/tvconss/esp/esp-idf/components/esp-tls/esp_tls.c:210
+--- 0x4013e767: tcp_connect at /home/tvconss/esp/esp-idf/components/esp-tls/esp_tls.c:359
+--- 0x4013ea26: esp_tls_low_level_conn at /home/tvconss/esp/esp-idf/components/esp-tls/esp_tls.c:456
+--- 0x4013ed0d: esp_tls_conn_new_sync at /home/tvconss/esp/esp-idf/components/esp-tls/esp_tls.c:544
+--- 0x4013ff56: ssl_connect at /home/tvconss/esp/esp-idf/components/tcp_transport/transport_ssl.c:117 (discriminator 1)
+--- 0x4019a089: esp_transport_connect at /home/tvconss/esp/esp-idf/components/tcp_transport/transport.c:123
+--- 0x40135493: esp_mqtt_task at /home/tvconss/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+--- 0x40090605: vPortTaskWrapper at /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081be1: panic_abort at /home/tvconss/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4008fbdd: esp_system_abort at /home/tvconss/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4009639d: __assert_func at /home/tvconss/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40160e4b: tcpip_send_msg_wait_sem at /home/tvconss/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+--- 0x4016d39e: netconn_gethostbyname_addrtype at /home/tvconss/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+--- 0x4015ee21: lwip_getaddrinfo at /home/tvconss/esp/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+--- 0x4013e415: getaddrinfo at /home/tvconss/esp/esp-idf/components/lwip/include/lwip/netdb.h:23
+---  (inlined by) esp_tls_hostname_to_fd at /home/tvconss/esp/esp-idf/components/esp-tls/esp_tls.c:210
+--- 0x4013e767: tcp_connect at /home/tvconss/esp/esp-idf/components/esp-tls/esp_tls.c:359
+--- 0x4013ea26: esp_tls_low_level_conn at /home/tvconss/esp/esp-idf/components/esp-tls/esp_tls.c:456
+--- 0x4013ed0d: esp_tls_conn_new_sync at /home/tvconss/esp/esp-idf/components/esp-tls/esp_tls.c:544
+--- 0x4013ff56: ssl_connect at /home/tvconss/esp/esp-idf/components/tcp_transport/transport_ssl.c:117 (discriminator 1)
+--- 0x4019a089: esp_transport_connect at /home/tvconss/esp/esp-idf/components/tcp_transport/transport.c:123
+--- 0x40135493: esp_mqtt_task at /home/tvconss/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+--- 0x40090605: vPortTaskWrapper at /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

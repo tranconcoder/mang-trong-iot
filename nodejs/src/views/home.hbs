@@ -1,2 +1,34 @@
-<h2>{{title}}</h2>
-<p>Welcome to the home page, rendered with Handlebars!</p>
+<div class="page-header">
+  <h1>Welcome to Our Application!</h1>
+  <p class="lead">This is the main landing page after you log in.</p>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p>Explore the application features using the sidebar or bottom navigation.</p>
+    <p>You can start by visiting your
+      <a href="/dashboard">Dashboard</a>
+      or checking out your
+      <a href="/profile">Profile</a>.</p>
+
+    <h4>What is this?</h4>
+    <p>This is a sample home page. You can customize this content to provide
+      relevant information or actions for your users.</p>
+
+    <h4>Next Steps:</h4>
+    <ul>
+      <li>Customize this page with real content.</li>
+      <li>Build out the Dashboard and Profile pages.</li>
+      <li>Add more features and navigation links.</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  /* Styles from dashboard.hbs can be reused or kept separate */ /* For
+  simplicity, if these card styles are common, move them to main.css */
+  .page-header { margin-bottom: 2rem; } .card { background-color: #fff; border:
+  1px solid var(--border-color, #e0e0e0); border-radius: 8px; margin-bottom:
+  1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); } .card-body { padding:
+  1.25rem; }
+</style>

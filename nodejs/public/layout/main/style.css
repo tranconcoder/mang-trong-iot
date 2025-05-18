@@ -1,0 +1,143 @@
+/* nodejs/public/layout/main/style.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-bg: #f4f7f9;
+  --sidebar-bg: #ffffff;
+  --header-bg: #ffffff;
+  --text-color: #333333;
+  --text-color-light: #777777;
+  --border-color: #e0e0e0;
+  --primary-accent: #4a90e2;
+  --hover-accent: #357abd;
+  --font-family: "Poppins", sans-serif;
+  --header-height: 60px;
+  --sidebar-width: 250px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; /* Prevent double scrollbars initially */
+}
+
+.main-app-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden; /* Important for nested scrolling */
+  margin-top: var(--header-height); /* Space for fixed header */
+}
+
+.main-header {
+  background-color: var(--header-bg);
+  padding: 0 20px;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust for menu toggle */
+  border-bottom: 1px solid var(--border-color);
+  position: fixed; /* Fixed header */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.main-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-accent);
+}
+
+.menu-toggle-btn {
+  display: none; /* Hidden by default, shown on mobile */
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--primary-accent);
+  cursor: pointer;
+}
+
+.main-sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 20px;
+  overflow-y: auto; /* Scrollable sidebar content */
+  height: calc(100vh - var(--header-height)); /* Full height minus header */
+  position: fixed; /* Fixed sidebar */
+  left: 0;
+  top: var(--header-height);
+}
+
+.main-sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.main-sidebar ul {
+  list-style-type: none;
+}
+
+.main-sidebar ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--text-color-light);
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.main-sidebar ul li a:hover,
+.main-sidebar ul li a.active {
+  background-color: var(--primary-accent);
+  color: #ffffff;
+}
+
+.main-content-area {
+  flex-grow: 1;
+  padding: 25px;
+  overflow-y: auto; /* Scrollable main content */
+  margin-left: var(--sidebar-width); /* Offset by sidebar width */
+  /* height is implicitly handled by flex-grow and main-app-container's height */
+}
+
+.main-sidebar.open {
+  transform: translateX(0);
+}
+
+/* Responsive adjustments: Hide sidebar, adjust main content for smaller screens */
+@media (max-width: 768px) {
+  .main-sidebar {
+    transform: translateX(-100%); /* Hide sidebar off-screen */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1001; /* Ensure sidebar is above content if it slides in */
+    /* To make it toggleable, you'd add a class with JS to set transform: translateX(0); */
+  }
+
+  .main-content-area {
+    margin-left: 0; /* Full width when sidebar is hidden */
+  }
+
+  .menu-toggle-btn {
+    display: block; /* Show toggle button on mobile */
+  }
+
+  /* Example for a menu toggle button if you add one */
+  /* .menu-toggle {
+        display: block; 
+    } */
+}

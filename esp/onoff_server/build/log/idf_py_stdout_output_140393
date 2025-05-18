@@ -1,0 +1,13 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+NOTICE: Manifest files have changed, solving dependencies.
+NOTICE: Using component placed at /home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/example_init for dependency "example_init", specified in /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/idf_component.yml
+NOTICE: Using component placed at /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/mqtt_service for dependency "mqtt_service", specified in /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/idf_component.yml
+NOTICE: Using component placed at /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/setup_wifi for dependency "setup_wifi", specified in /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/idf_component.yml
+...NOTICE: Using component placed at /home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/example_init for dependency "example_init", specified in /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/idf_component.yml
+NOTICE: Using component placed at /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/mqtt_service for dependency "mqtt_service", specified in /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/idf_component.yml
+NOTICE: Using component placed at /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/setup_wifi for dependency "setup_wifi", specified in /home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/main/idf_component.yml
+...HINT: Please check manifest file of the following component(s): main
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/tvconss/Workspace/mang-trong-iot/esp/onoff_server -B/home/tvconss/Workspace/mang-trong-iot/esp/onoff_server/build

@@ -4,7 +4,7 @@ import { createServer } from "http";
 
 const server = createServer(app);
 
-server.listen(serverConfig.PORT, () => {
+server.listen(serverConfig.PORT, serverConfig.HOST, () => {
   console.log(
     `Server is running on http://${serverConfig.HOST}:${serverConfig.PORT}`
   );
@@ -12,6 +12,7 @@ server.listen(serverConfig.PORT, () => {
 
 server.on("error", (error) => {
   console.error("Server error:", error);
+  process.exit(1);
 });
 
 server.on("close", () => {

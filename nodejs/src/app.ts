@@ -1,16 +1,32 @@
 import express, { type Express, type Request, type Response } from "express";
 import path from "path";
 import morgan from "morgan";
-import dotenv from "dotenv";
 import { engine } from "express-handlebars";
 
+import { connectDB } from "@/services/database.service";
 import rootRoute from "@/routes";
+import apiRouter from "@/routes/api.route";
+import User from "./models/user.model";
+import bcrypt from "bcrypt";
 
-const app = express();
+const app: Express = express();
 
-dotenv.config({
-  path: path.join(__dirname, "../.env.development"),
-});
+// Connect MongoDB
+await connectDB();
+await User.findOneAndReplace(
+  {
+    email: "tranvanconkg@gmail.com",
+  },
+  {
+    email: "tranvanconkg@gmail.com",
+    password: bcrypt.hashSync("123", 10),
+    name: "Tran Van Con",
+  },
+  {
+    upsert: true,
+    new: true,
+  }
+);
 
 // Express middlewares
 app.use(express.json());
@@ -28,6 +44,9 @@ app.engine(
     defaultLayout: "main",
     layoutsDir: path.join(__dirname, "views/layouts"),
     partialsDir: path.join(__dirname, "views/partials"),
+    helpers: {
+      eq: (v1: any, v2: any) => v1 === v2,
+    },
   })
 );
 app.set("view engine", "hbs");
