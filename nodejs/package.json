@@ -1,0 +1,24 @@
+{
+  "name": "nodejs",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.2",
+    "@types/morgan": "^1.9.9",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "handlebars": "^4.7.8",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.0",
+    "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "dev": "bun --watch server.ts"
+  }
+}

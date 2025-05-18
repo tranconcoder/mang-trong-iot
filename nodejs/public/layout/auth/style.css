@@ -1,0 +1,295 @@
+/* nodejs/public/layout/auth/style.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #4a90e2; /* A modern blue */
+  --primary-color-dark: #357abd;
+  /* Text colors for inside the light login box */
+  --text-color-in-box: #2c3e50; /* Dark slate for main text */
+  --text-color-light-in-box: #5a6872; /* Softer slate for secondary text */
+  /* Page text color (if any outside the box, for consistency) will remain white from body */
+  --white-color: #ffffff; /* Retained for elements that must be white, e.g., button text */
+  --border-color: #e0e0e0; /* General border, might not be used much */
+  --error-color: #e74c3c;
+  --success-color: #2ecc71;
+  --font-family: "Poppins", sans-serif;
+  /* Input styles for light box */
+  --input-bg-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Light, semi-transparent input bg */
+  --input-text-color: #333333; /* Dark text for inputs */
+  --input-border-color: #d1d9e0; /* Light grey border for inputs */
+  --input-focus-border-color: var(--primary-color);
+  --input-placeholder-color: #777e85;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  /* Abstract Blue Background */
+  background-image: url("/public/layout/auth/background.svg"); /* Replace with your blue abstract image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: keeps background static during scroll */
+  background-color: #0f172a; /* Dark blue fallback color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(
+    --white-color
+  ); /* Default text color for the page (outside the box) */
+  line-height: 1.6;
+}
+
+main {
+  /* This will wrap the .auth-container from login.hbs */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-container {
+  /* Transparent/Blurred Background */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Light, highly transparent background */
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer shadow for light box */
+  width: 100%;
+  max-width: 480px; /* Slightly wider for better feel with blur */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px) saturate(120%); /* Adjust blur/saturate if needed */
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Very subtle border for definition */
+}
+
+.auth-container:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Remove the two-column layout and image section for admin login */
+.auth-form-section {
+  flex-basis: 100%; /* Take full width */
+  padding: 0; /* Remove extra padding as .auth-container has it */
+}
+
+.auth-image-section {
+  display: none; /* Hide the image section */
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-color); /* Primary color for logo on light bg */
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.auth-form-section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-color-in-box); /* Dark text for heading */
+  margin-bottom: 10px;
+}
+
+.auth-form-section .subtitle {
+  font-size: 16px;
+  color: var(--text-color-light-in-box); /* Lighter dark text for subtitle */
+  margin-bottom: 35px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left; /* Align labels and inputs to the left */
+}
+
+.form-group label {
+  display: block; /* Ensure label is above input */
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color-light-in-box); /* Lighter dark text for labels */
+  margin-bottom: 8px;
+  /* No longer visually hidden */
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="text"] /* Adding text for username */ {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: var(--input-text-color); /* Dark text inside input */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  background-color: var(--input-bg-color);
+}
+
+.form-group input[type="email"]::placeholder,
+.form-group input[type="password"]::placeholder,
+.form-group input[type="text"]::placeholder {
+  color: var(--input-placeholder-color); /* Specific placeholder color */
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="text"]:focus {
+  border-color: var(--input-focus-border-color);
+  background-color: rgba(255, 255, 255, 0.9); /* More opaque white on focus */
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+  outline: none;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.remember-me {
+  color: var(--text-color-light-in-box); /* Lighter dark text */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 8px;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.remember-me input[type="checkbox"]:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.remember-me input[type="checkbox"]:checked::after {
+  content: "\2713"; /* Checkmark */
+  font-size: 12px;
+  color: var(--white-color); /* Checkmark color remains white */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.forgot-password-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.forgot-password-link:hover {
+  color: var(--primary-color-dark);
+  text-decoration: underline;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color); /* Button text remains white */
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.2);
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary-color-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
+}
+
+.btn.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(74, 144, 226, 0.2);
+}
+
+.signup-link {
+  /* Will be used for copyright or other links if needed */
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-color-light-in-box); /* Lighter dark text for copyright */
+}
+
+.signup-link a {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.signup-link a:hover {
+  color: var(--primary-color-dark);
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .auth-container {
+    padding: 30px 25px;
+    margin: 20px; /* Add some margin on small screens */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .auth-form-section h2 {
+    font-size: 22px;
+  }
+
+  .auth-form-section .subtitle {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .form-group input[type="email"],
+  .form-group input[type="password"],
+  .form-group input[type="text"] {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .btn.btn-primary {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .forgot-password-link {
+    margin-top: 10px;
+  }
+}
