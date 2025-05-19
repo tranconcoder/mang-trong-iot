@@ -836,13 +836,6 @@
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
-/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/button/CMakeFiles/__idf_button.dir
-/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/button/CMakeFiles/edit_cache.dir
-/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/button/CMakeFiles/rebuild_cache.dir
-/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/button/CMakeFiles/list_install_components.dir
-/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/button/CMakeFiles/install.dir
-/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/button/CMakeFiles/install/local.dir
-/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/button/CMakeFiles/install/strip.dir
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/dht_simulation/CMakeFiles/__idf_dht_simulation.dir
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/dht_simulation/CMakeFiles/edit_cache.dir
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/dht_simulation/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+ninja: error: '/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/main/board.c', needed by 'esp-idf/main/CMakeFiles/__idf_main.dir/board.c.obj', missing and no known rule to make it

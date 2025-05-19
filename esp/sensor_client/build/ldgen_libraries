@@ -84,7 +84,6 @@
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/touch_element/libtouch_element.a
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/usb/libusb.a
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
-/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/button/libbutton.a
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/dht_simulation/libdht_simulation.a
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/example_init/libexample_init.a
 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/ldr_simulation/libldr_simulation.a

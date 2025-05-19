@@ -1,0 +1,1412 @@
+[0;32mI (134) esp_image: segment 1: paddr=0004ee28 vaddr=3fc9e300 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f59
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 19 2025 13:25:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=3ee00h (257536) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=0004ee28 vaddr=3fc9e300 size=011f0h (  4592) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=113ed0h (1130192) map[0m
+[0;32mI (337) esp_image: segment 3: paddr=00163ef8 vaddr=3fc9f4f0 size=048a0h ( 18592) load[0m
+[0;32mI (341) esp_image: segment 4: paddr=001687a0 vaddr=40374000 size=1a2a0h (107168) load[0m
+[0;32mI (365) esp_image: segment 5: paddr=00182a48 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (375) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (375) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) cpu_start: Multicore app[0m
+[0;32mI (395) cpu_start: Pro cpu start user code[0m
+[0;32mI (395) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (395) app_init: Application information:[0m
+[0;32mI (395) app_init: Project name:     sensor_client[0m
+[0;32mI (399) app_init: App version:      815c01b-dirty[0m
+[0;32mI (404) app_init: Compile time:     May 20 2025 04:26:11[0m
+[0;32mI (409) app_init: ELF file SHA256:  523bc93a4...[0m
+[0;32mI (413) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (417) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (421) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (425) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (428) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (435) heap_init: At 3FCAF0F8 len 0003A618 (233 KiB): RAM[0m
+[0;32mI (440) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (445) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (457) spi_flash: detected chip: boya[0m
+[0;32mI (459) spi_flash: flash io: dio[0m
+[0;33mW (462) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (475) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (481) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (487) coexist: coex firmware version: e727207[0m
+[0;32mI (491) coexist: coexist rom version e7ae62f[0m
+[0;32mI (496) main_task: Started on CPU0[0m
+[0;32mI (506) main_task: Calling app_main()[0m
+[0;32mI (506) EXAMPLE: Initializing...[0m
+[0;32mI (516) EXAMPLE: Initializing WiFi[0m
+[0;32mI (516) pp: pp rom version: e7ae62f[0m
+[0;32mI (516) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (536) wifi:wifi driver task: 3fcb8ee8, prio:23, stack:6656, core=0[0m
+[0;32mI (536) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (536) wifi:wifi certification version: v7.0[0m
+[0;32mI (536) wifi:config NVS flash: enabled[0m
+[0;32mI (536) wifi:config nano formatting: disabled[0m
+[0;32mI (546) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (546) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (556) wifi:Init management short buffer num: 32[0m
+[0;32mI (556) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (556) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (566) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (566) wifi:Init static rx buffer num: 10[0m
+[0;32mI (576) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (576) wifi_init: rx ba win: 6[0m
+[0;32mI (576) wifi_init: accept mbox: 6[0m
+[0;32mI (586) wifi_init: tcpip mbox: 32[0m
+[0;32mI (586) wifi_init: udp mbox: 6[0m
+[0;32mI (586) wifi_init: tcp mbox: 6[0m
+[0;32mI (586) wifi_init: tcp tx win: 5760[0m
+[0;32mI (596) wifi_init: tcp rx win: 5760[0m
+[0;32mI (596) wifi_init: tcp mss: 1440[0m
+[0;32mI (596) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (606) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (626) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (626) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (656) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (676) wifi:mode : sta (24:ec:4a:3a:2b:ec)[0m
+[0;32mI (676) wifi:enable tsf[0m
+[0;32mI (676) EXAMPLE: WiFi initialization complete[0m
+[0;32mI (676) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (676) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (796) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (796) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_DEV_UUID_MATCH_COMP_EVT, err_code 0[0m
+[0;32mI (806) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (806) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_LOCAL_APP_KEY_COMP_EVT, err_code 0[0m
+[0;32mI (816) EXAMPLE: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (816) EXAMPLE: BLE Mesh sensor client initialized[0m
+[0;32mI (826) main_task: Returned from app_main()[0m
+[0;32mI (3066) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3066) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3076) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3076) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (6196) wifi:connected with Tran Con, aid = 3, channel 10, BW20, bssid = 30:16:9d:62:a0:f8[0m
+[0;32mI (6196) wifi:security: WPA2-PSK, phy: bgn, rssi: -56[0m
+[0;32mI (6216) wifi:pm start, type: 1[0m
+
+[0;32mI (6216) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (6216) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (6226) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (9566) esp_netif_handlers: sta ip: 192.168.1.13, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (9566) EXAMPLE: Got IP:192.168.1.13[0m
+[0;32mI (9566) EXAMPLE: Starting MQTT client[0m
+[0;32mI (9566) EXAMPLE: MQTT Other event id:7[0m
+[0;32mI (9596) wifi:<ba-add>idx:0 (ifx:0, 30:16:9d:62:a0:f8), tid:0, ssn:5, winSize:64[0m
+[0;32mI (9796) wifi:<ba-add>idx:1 (ifx:0, 30:16:9d:62:a0:f8), tid:5, ssn:0, winSize:64[0m
+[0;32mI (10516) EXAMPLE: MQTT Connected to broker[0m
+[0;32mI (16976) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (16976) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (16976) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (16986) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (16986) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (16996) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (17006) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (19306) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (19306) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (19306) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (19316) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (19616) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (19756) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (19756) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 03 00 00 00[0m
+[0;32mI (19756) Composition data: 00 11 01 11[0m
+[0;32mI (19756) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (19766) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (19776) EXAMPLE: * Loc 0x0000, NumS 0x03, NumV 0x00 *[0m
+[0;32mI (19776) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (19786) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (19786) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (19786) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (19806) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (20096) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (20186) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (20316) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;33mW (20316) EXAMPLE: Provision and config successfully[0m
+[0;32mI (24826) EXAMPLE: Starting sensor data simulation...[0m
+[0;32mI (24826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (24826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (24896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (24896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (24896) Sensor Data: 1e 36 fa[0m
+[0;32mI (24896) EXAMPLE: Temperature: 30[0m
+[0;32mI (24906) EXAMPLE: Humidity: 54[0m
+[0;32mI (24906) EXAMPLE: Light Level: 250[0m
+[0;32mI (24906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":30,"humidity":54,"light":250},"status":"active"}[0m
+[0;32mI (24926) EXAMPLE: Successfully published sensor data, msg_id=63837[0m
+[0;32mI (25256) EXAMPLE: MQTT Published, msg_id=63837[0m
+[0;32mI (26826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (26826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (26876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (26876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (26876) Sensor Data: 22 5a fa[0m
+[0;32mI (26876) EXAMPLE: Temperature: 34[0m
+[0;32mI (26886) EXAMPLE: Humidity: 90[0m
+[0;32mI (26886) EXAMPLE: Light Level: 250[0m
+[0;32mI (26886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":34,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (26906) EXAMPLE: Successfully published sensor data, msg_id=6559[0m
+[0;32mI (27206) EXAMPLE: MQTT Published, msg_id=6559[0m
+[0;32mI (28826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (28826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (28896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (28896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (28896) Sensor Data: 32 5a fa[0m
+[0;32mI (28896) EXAMPLE: Temperature: 50[0m
+[0;32mI (28906) EXAMPLE: Humidity: 90[0m
+[0;32mI (28906) EXAMPLE: Light Level: 250[0m
+[0;32mI (28906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (28926) EXAMPLE: Successfully published sensor data, msg_id=39917[0m
+[0;32mI (29256) EXAMPLE: MQTT Published, msg_id=39917[0m
+[0;32mI (30826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (30826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (30876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (30876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (30876) Sensor Data: 32 5a fa[0m
+[0;32mI (30876) EXAMPLE: Temperature: 50[0m
+[0;32mI (30886) EXAMPLE: Humidity: 90[0m
+[0;32mI (30886) EXAMPLE: Light Level: 250[0m
+[0;32mI (30886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (30906) EXAMPLE: Successfully published sensor data, msg_id=65391[0m
+[0;32mI (31196) EXAMPLE: MQTT Published, msg_id=65391[0m
+[0;32mI (32826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (32826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (32896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (32896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (32896) Sensor Data: 32 5a fa[0m
+[0;32mI (32896) EXAMPLE: Temperature: 50[0m
+[0;32mI (32906) EXAMPLE: Humidity: 90[0m
+[0;32mI (32906) EXAMPLE: Light Level: 250[0m
+[0;32mI (32906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (32926) EXAMPLE: Successfully published sensor data, msg_id=64640[0m
+[0;32mI (33256) EXAMPLE: MQTT Published, msg_id=64640[0m
+[0;32mI (34826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (34826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (34926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (34936) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (34936) Sensor Data: 32 5a fa[0m
+[0;32mI (34936) EXAMPLE: Temperature: 50[0m
+[0;32mI (34936) EXAMPLE: Humidity: 90[0m
+[0;32mI (34936) EXAMPLE: Light Level: 250[0m
+[0;32mI (34946) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (34956) EXAMPLE: Successfully published sensor data, msg_id=26074[0m
+[0;32mI (35296) EXAMPLE: MQTT Published, msg_id=26074[0m
+[0;32mI (36826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (36826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (36876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (36876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (36876) Sensor Data: 32 5a fa[0m
+[0;32mI (36876) EXAMPLE: Temperature: 50[0m
+[0;32mI (36886) EXAMPLE: Humidity: 90[0m
+[0;32mI (36886) EXAMPLE: Light Level: 250[0m
+[0;32mI (36886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (36906) EXAMPLE: Successfully published sensor data, msg_id=31406[0m
+[0;32mI (37246) EXAMPLE: MQTT Published, msg_id=31406[0m
+[0;32mI (38826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (38826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (38876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (38876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (38876) Sensor Data: 32 5a fa[0m
+[0;32mI (38876) EXAMPLE: Temperature: 50[0m
+[0;32mI (38886) EXAMPLE: Humidity: 90[0m
+[0;32mI (38886) EXAMPLE: Light Level: 250[0m
+[0;32mI (38886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (38906) EXAMPLE: Successfully published sensor data, msg_id=39640[0m
+[0;32mI (39186) EXAMPLE: MQTT Published, msg_id=39640[0m
+[0;32mI (40826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (40826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (40876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (40876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (40876) Sensor Data: 32 5a fa[0m
+[0;32mI (40876) EXAMPLE: Temperature: 50[0m
+[0;32mI (40886) EXAMPLE: Humidity: 90[0m
+[0;32mI (40886) EXAMPLE: Light Level: 250[0m
+[0;32mI (40886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (40906) EXAMPLE: Successfully published sensor data, msg_id=41496[0m
+[0;32mI (41236) EXAMPLE: MQTT Published, msg_id=41496[0m
+[0;32mI (42826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (42826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (42876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (42876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (42876) Sensor Data: 32 5a fa[0m
+[0;32mI (42876) EXAMPLE: Temperature: 50[0m
+[0;32mI (42886) EXAMPLE: Humidity: 90[0m
+[0;32mI (42886) EXAMPLE: Light Level: 250[0m
+[0;32mI (42886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (42906) EXAMPLE: Successfully published sensor data, msg_id=3979[0m
+[0;32mI (43186) EXAMPLE: MQTT Published, msg_id=3979[0m
+[0;32mI (44826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (44826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (44876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (44876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (44876) Sensor Data: 32 5a fa[0m
+[0;32mI (44876) EXAMPLE: Temperature: 50[0m
+[0;32mI (44886) EXAMPLE: Humidity: 90[0m
+[0;32mI (44886) EXAMPLE: Light Level: 250[0m
+[0;32mI (44886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (44906) EXAMPLE: Successfully published sensor data, msg_id=36473[0m
+[0;32mI (45226) EXAMPLE: MQTT Published, msg_id=36473[0m
+[0;32mI (46826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (46826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (46876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (46876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (46876) Sensor Data: 32 5a fa[0m
+[0;32mI (46876) EXAMPLE: Temperature: 50[0m
+[0;32mI (46886) EXAMPLE: Humidity: 90[0m
+[0;32mI (46886) EXAMPLE: Light Level: 250[0m
+[0;32mI (46886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (46906) EXAMPLE: Successfully published sensor data, msg_id=32741[0m
+[0;32mI (47176) EXAMPLE: MQTT Published, msg_id=32741[0m
+[0;32mI (48826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (48826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (48896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (48896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (48896) Sensor Data: 32 5a fa[0m
+[0;32mI (48896) EXAMPLE: Temperature: 50[0m
+[0;32mI (48906) EXAMPLE: Humidity: 90[0m
+[0;32mI (48906) EXAMPLE: Light Level: 250[0m
+[0;32mI (48906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (48926) EXAMPLE: Successfully published sensor data, msg_id=26844[0m
+[0;32mI (49146) EXAMPLE: MQTT Published, msg_id=26844[0m
+[0;32mI (50826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (50826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (50906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (50906) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (50906) Sensor Data: 32 5a fa[0m
+[0;32mI (50906) EXAMPLE: Temperature: 50[0m
+[0;32mI (50916) EXAMPLE: Humidity: 90[0m
+[0;32mI (50916) EXAMPLE: Light Level: 250[0m
+[0;32mI (50916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (50936) EXAMPLE: Successfully published sensor data, msg_id=9384[0m
+[0;32mI (51276) EXAMPLE: MQTT Published, msg_id=9384[0m
+[0;32mI (52826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (52826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (52876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (52876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (52876) Sensor Data: 32 5a fa[0m
+[0;32mI (52876) EXAMPLE: Temperature: 50[0m
+[0;32mI (52886) EXAMPLE: Humidity: 90[0m
+[0;32mI (52886) EXAMPLE: Light Level: 250[0m
+[0;32mI (52886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (52906) EXAMPLE: Successfully published sensor data, msg_id=33594[0m
+[0;32mI (53216) EXAMPLE: MQTT Published, msg_id=33594[0m
+[0;32mI (54826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (54826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (54916) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (54916) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (54916) Sensor Data: 32 5a fa[0m
+[0;32mI (54916) EXAMPLE: Temperature: 50[0m
+[0;32mI (54926) EXAMPLE: Humidity: 90[0m
+[0;32mI (54926) EXAMPLE: Light Level: 250[0m
+[0;32mI (54926) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (54946) EXAMPLE: Successfully published sensor data, msg_id=46496[0m
+[0;32mI (55366) EXAMPLE: MQTT Published, msg_id=46496[0m
+[0;32mI (56826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (56826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (56876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (56876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (56876) Sensor Data: 32 5a fa[0m
+[0;32mI (56876) EXAMPLE: Temperature: 50[0m
+[0;32mI (56886) EXAMPLE: Humidity: 90[0m
+[0;32mI (56886) EXAMPLE: Light Level: 250[0m
+[0;32mI (56886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (56906) EXAMPLE: Successfully published sensor data, msg_id=26707[0m
+[0;32mI (57206) EXAMPLE: MQTT Published, msg_id=26707[0m
+[0;32mI (58826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (58826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (58876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (58876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (58876) Sensor Data: 32 5a fa[0m
+[0;32mI (58876) EXAMPLE: Temperature: 50[0m
+[0;32mI (58886) EXAMPLE: Humidity: 90[0m
+[0;32mI (58886) EXAMPLE: Light Level: 250[0m
+[0;32mI (58886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (58906) EXAMPLE: Successfully published sensor data, msg_id=38765[0m
+[0;32mI (59266) EXAMPLE: MQTT Published, msg_id=38765[0m
+[0;32mI (60826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (60826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (60876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (60876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (60876) Sensor Data: 32 5a fa[0m
+[0;32mI (60876) EXAMPLE: Temperature: 50[0m
+[0;32mI (60886) EXAMPLE: Humidity: 90[0m
+[0;32mI (60886) EXAMPLE: Light Level: 250[0m
+[0;32mI (60886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (60906) EXAMPLE: Successfully published sensor data, msg_id=25823[0m
+[0;32mI (61206) EXAMPLE: MQTT Published, msg_id=25823[0m
+[0;32mI (62826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (62826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (62896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (62896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (62896) Sensor Data: 32 5a fa[0m
+[0;32mI (62896) EXAMPLE: Temperature: 50[0m
+[0;32mI (62906) EXAMPLE: Humidity: 90[0m
+[0;32mI (62906) EXAMPLE: Light Level: 250[0m
+[0;32mI (62906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (62926) EXAMPLE: Successfully published sensor data, msg_id=2603[0m
+[0;32mI (63256) EXAMPLE: MQTT Published, msg_id=2603[0m
+[0;32mI (64826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (64826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (64876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (64876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (64876) Sensor Data: 32 5a fa[0m
+[0;32mI (64876) EXAMPLE: Temperature: 50[0m
+[0;32mI (64886) EXAMPLE: Humidity: 90[0m
+[0;32mI (64886) EXAMPLE: Light Level: 250[0m
+[0;32mI (64886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (64906) EXAMPLE: Successfully published sensor data, msg_id=17288[0m
+[0;32mI (65196) EXAMPLE: MQTT Published, msg_id=17288[0m
+[0;32mI (66826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (66826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (66896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (66896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (66896) Sensor Data: 32 5a fa[0m
+[0;32mI (66896) EXAMPLE: Temperature: 50[0m
+[0;32mI (66906) EXAMPLE: Humidity: 90[0m
+[0;32mI (66906) EXAMPLE: Light Level: 250[0m
+[0;32mI (66906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (66926) EXAMPLE: Successfully published sensor data, msg_id=23704[0m
+[0;32mI (67246) EXAMPLE: MQTT Published, msg_id=23704[0m
+[0;32mI (68826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (68826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (68896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (68896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (68896) Sensor Data: 32 5a fa[0m
+[0;32mI (68896) EXAMPLE: Temperature: 50[0m
+[0;32mI (68906) EXAMPLE: Humidity: 90[0m
+[0;32mI (68906) EXAMPLE: Light Level: 250[0m
+[0;32mI (68906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (68926) EXAMPLE: Successfully published sensor data, msg_id=45466[0m
+[0;32mI (69186) EXAMPLE: MQTT Published, msg_id=45466[0m
+[0;32mI (70826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (70826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (70866) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (70866) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (70866) Sensor Data: 32 5a fa[0m
+[0;32mI (70866) EXAMPLE: Temperature: 50[0m
+[0;32mI (70876) EXAMPLE: Humidity: 90[0m
+[0;32mI (70876) EXAMPLE: Light Level: 250[0m
+[0;32mI (70876) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (70896) EXAMPLE: Successfully published sensor data, msg_id=22517[0m
+[0;32mI (71236) EXAMPLE: MQTT Published, msg_id=22517[0m
+[0;32mI (72826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (72826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (72906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (72906) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (72906) Sensor Data: 32 5a fa[0m
+[0;32mI (72906) EXAMPLE: Temperature: 50[0m
+[0;32mI (72906) EXAMPLE: Humidity: 90[0m
+[0;32mI (72916) EXAMPLE: Light Level: 250[0m
+[0;32mI (72916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (72936) EXAMPLE: Successfully published sensor data, msg_id=1513[0m
+[0;32mI (73296) EXAMPLE: MQTT Published, msg_id=1513[0m
+[0;32mI (74826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (74826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (74876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (74876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (74876) Sensor Data: 32 5a fa[0m
+[0;32mI (74876) EXAMPLE: Temperature: 50[0m
+[0;32mI (74886) EXAMPLE: Humidity: 90[0m
+[0;32mI (74886) EXAMPLE: Light Level: 250[0m
+[0;32mI (74886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (74906) EXAMPLE: Successfully published sensor data, msg_id=18055[0m
+[0;32mI (75236) EXAMPLE: MQTT Published, msg_id=18055[0m
+[0;32mI (76826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (76826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (76926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (76926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (76926) Sensor Data: 32 5a fa[0m
+[0;32mI (76926) EXAMPLE: Temperature: 50[0m
+[0;32mI (76936) EXAMPLE: Humidity: 90[0m
+[0;32mI (76936) EXAMPLE: Light Level: 250[0m
+[0;32mI (76936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (76956) EXAMPLE: Successfully published sensor data, msg_id=19520[0m
+[0;32mI (77216) EXAMPLE: MQTT Published, msg_id=19520[0m
+[0;32mI (78826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (78826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (78926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (78926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (78926) Sensor Data: 32 5a fa[0m
+[0;32mI (78926) EXAMPLE: Temperature: 50[0m
+[0;32mI (78936) EXAMPLE: Humidity: 90[0m
+[0;32mI (78936) EXAMPLE: Light Level: 250[0m
+[0;32mI (78936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (78956) EXAMPLE: Successfully published sensor data, msg_id=42433[0m
+[0;32mI (79226) EXAMPLE: MQTT Published, msg_id=42433[0m
+[0;32mI (80826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (80826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (80876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (80876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (80876) Sensor Data: 32 5a fa[0m
+[0;32mI (80876) EXAMPLE: Temperature: 50[0m
+[0;32mI (80886) EXAMPLE: Humidity: 90[0m
+[0;32mI (80886) EXAMPLE: Light Level: 250[0m
+[0;32mI (80886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (80906) EXAMPLE: Successfully published sensor data, msg_id=34965[0m
+[0;32mI (81176) EXAMPLE: MQTT Published, msg_id=34965[0m
+[0;32mI (82826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (82826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (82896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (82896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (82896) Sensor Data: 32 5a fa[0m
+[0;32mI (82896) EXAMPLE: Temperature: 50[0m
+[0;32mI (82906) EXAMPLE: Humidity: 90[0m
+[0;32mI (82906) EXAMPLE: Light Level: 250[0m
+[0;32mI (82906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (82926) EXAMPLE: Successfully published sensor data, msg_id=42629[0m
+[0;32mI (83236) EXAMPLE: MQTT Published, msg_id=42629[0m
+[0;32mI (84826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (84826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (84916) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (84916) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (84916) Sensor Data: 32 5a fa[0m
+[0;32mI (84916) EXAMPLE: Temperature: 50[0m
+[0;32mI (84926) EXAMPLE: Humidity: 90[0m
+[0;32mI (84926) EXAMPLE: Light Level: 250[0m
+[0;32mI (84926) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (84946) EXAMPLE: Successfully published sensor data, msg_id=42147[0m
+[0;32mI (85266) EXAMPLE: MQTT Published, msg_id=42147[0m
+[0;32mI (86826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (86826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (86896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (86896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (86896) Sensor Data: 32 5a fa[0m
+[0;32mI (86896) EXAMPLE: Temperature: 50[0m
+[0;32mI (86896) EXAMPLE: Humidity: 90[0m
+[0;32mI (86896) EXAMPLE: Light Level: 250[0m
+[0;32mI (86906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (86916) EXAMPLE: Successfully published sensor data, msg_id=42061[0m
+[0;32mI (87216) EXAMPLE: MQTT Published, msg_id=42061[0m
+[0;32mI (88826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (88826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (88896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (88896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (88896) Sensor Data: 32 5a fa[0m
+[0;32mI (88906) EXAMPLE: Temperature: 50[0m
+[0;32mI (88906) EXAMPLE: Humidity: 90[0m
+[0;32mI (88906) EXAMPLE: Light Level: 250[0m
+[0;32mI (88906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (88926) EXAMPLE: Successfully published sensor data, msg_id=2704[0m
+[0;32mI (89156) EXAMPLE: MQTT Published, msg_id=2704[0m
+[0;32mI (90826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (90826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (90876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (90876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (90876) Sensor Data: 32 5a fa[0m
+[0;32mI (90886) EXAMPLE: Temperature: 50[0m
+[0;32mI (90886) EXAMPLE: Humidity: 90[0m
+[0;32mI (90886) EXAMPLE: Light Level: 250[0m
+[0;32mI (90886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (90906) EXAMPLE: Successfully published sensor data, msg_id=52616[0m
+[0;32mI (91206) EXAMPLE: MQTT Published, msg_id=52616[0m
+[0;32mI (92826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (92826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (92886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (92886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (92886) Sensor Data: 32 5a fa[0m
+[0;32mI (92886) EXAMPLE: Temperature: 50[0m
+[0;32mI (92896) EXAMPLE: Humidity: 90[0m
+[0;32mI (92896) EXAMPLE: Light Level: 250[0m
+[0;32mI (92896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (92916) EXAMPLE: Successfully published sensor data, msg_id=40332[0m
+[0;32mI (93266) EXAMPLE: MQTT Published, msg_id=40332[0m
+[0;32mI (94826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (94826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (94876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (94876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (94876) Sensor Data: 32 5a fa[0m
+[0;32mI (94876) EXAMPLE: Temperature: 50[0m
+[0;32mI (94886) EXAMPLE: Humidity: 90[0m
+[0;32mI (94886) EXAMPLE: Light Level: 250[0m
+[0;32mI (94886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (94906) EXAMPLE: Successfully published sensor data, msg_id=58030[0m
+[0;32mI (95206) EXAMPLE: MQTT Published, msg_id=58030[0m
+[0;32mI (96826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (96826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (96896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (96896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (96896) Sensor Data: 32 5a fa[0m
+[0;32mI (96896) EXAMPLE: Temperature: 50[0m
+[0;32mI (96906) EXAMPLE: Humidity: 90[0m
+[0;32mI (96906) EXAMPLE: Light Level: 250[0m
+[0;32mI (96906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (96926) EXAMPLE: Successfully published sensor data, msg_id=35719[0m
+[0;32mI (97146) EXAMPLE: MQTT Published, msg_id=35719[0m
+[0;32mI (98826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (98826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (98926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (98926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (98926) Sensor Data: 32 5a fa[0m
+[0;32mI (98926) EXAMPLE: Temperature: 50[0m
+[0;32mI (98936) EXAMPLE: Humidity: 90[0m
+[0;32mI (98936) EXAMPLE: Light Level: 250[0m
+[0;32mI (98936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":0,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (98956) EXAMPLE: Successfully published sensor data, msg_id=29367[0m
+[0;32mI (99296) EXAMPLE: MQTT Published, msg_id=29367[0m
+[0;32mI (100826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (100826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (100876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (100876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (100876) Sensor Data: 32 5a fa[0m
+[0;32mI (100876) EXAMPLE: Temperature: 50[0m
+[0;32mI (100886) EXAMPLE: Humidity: 90[0m
+[0;32mI (100886) EXAMPLE: Light Level: 250[0m
+[0;32mI (100886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (100906) EXAMPLE: Successfully published sensor data, msg_id=43886[0m
+[0;32mI (101246) EXAMPLE: MQTT Published, msg_id=43886[0m
+[0;32mI (102826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (102826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (102906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (102906) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (102906) Sensor Data: 32 5a fa[0m
+[0;32mI (102906) EXAMPLE: Temperature: 50[0m
+[0;32mI (102906) EXAMPLE: Humidity: 90[0m
+[0;32mI (102916) EXAMPLE: Light Level: 250[0m
+[0;32mI (102916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (102936) EXAMPLE: Successfully published sensor data, msg_id=36832[0m
+[0;32mI (103296) EXAMPLE: MQTT Published, msg_id=36832[0m
+[0;32mI (104826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (104826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (104876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (104876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (104886) Sensor Data: 32 5a fa[0m
+[0;32mI (104886) EXAMPLE: Temperature: 50[0m
+[0;32mI (104886) EXAMPLE: Humidity: 90[0m
+[0;32mI (104886) EXAMPLE: Light Level: 250[0m
+[0;32mI (104896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (104906) EXAMPLE: Successfully published sensor data, msg_id=53441[0m
+[0;32mI (105236) EXAMPLE: MQTT Published, msg_id=53441[0m
+[0;32mI (106826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (106826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (106896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (106896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (106896) Sensor Data: 32 5a fa[0m
+[0;32mI (106896) EXAMPLE: Temperature: 50[0m
+[0;32mI (106906) EXAMPLE: Humidity: 90[0m
+[0;32mI (106906) EXAMPLE: Light Level: 250[0m
+[0;32mI (106906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (106926) EXAMPLE: Successfully published sensor data, msg_id=33755[0m
+[0;32mI (107286) EXAMPLE: MQTT Published, msg_id=33755[0m
+[0;32mI (108826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (108826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (108876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (108876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (108876) Sensor Data: 32 5a fa[0m
+[0;32mI (108876) EXAMPLE: Temperature: 50[0m
+[0;32mI (108886) EXAMPLE: Humidity: 90[0m
+[0;32mI (108886) EXAMPLE: Light Level: 250[0m
+[0;32mI (108886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (108906) EXAMPLE: Successfully published sensor data, msg_id=28543[0m
+[0;32mI (109236) EXAMPLE: MQTT Published, msg_id=28543[0m
+[0;32mI (110826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (110826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (110896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (110896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (110896) Sensor Data: 32 5a fa[0m
+[0;32mI (110906) EXAMPLE: Temperature: 50[0m
+[0;32mI (110906) EXAMPLE: Humidity: 90[0m
+[0;32mI (110906) EXAMPLE: Light Level: 250[0m
+[0;32mI (110916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (110926) EXAMPLE: Successfully published sensor data, msg_id=49225[0m
+[0;32mI (111276) EXAMPLE: MQTT Published, msg_id=49225[0m
+[0;32mI (112826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (112826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (112926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (112926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (112926) Sensor Data: 32 5a fa[0m
+[0;32mI (112926) EXAMPLE: Temperature: 50[0m
+[0;32mI (112926) EXAMPLE: Humidity: 90[0m
+[0;32mI (112936) EXAMPLE: Light Level: 250[0m
+[0;32mI (112936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (112956) EXAMPLE: Successfully published sensor data, msg_id=29895[0m
+[0;32mI (113156) EXAMPLE: MQTT Published, msg_id=29895[0m
+[0;32mI (114826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (114826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (114916) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (114916) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (114916) Sensor Data: 32 5a fa[0m
+[0;32mI (114916) EXAMPLE: Temperature: 50[0m
+[0;32mI (114926) EXAMPLE: Humidity: 90[0m
+[0;32mI (114926) EXAMPLE: Light Level: 250[0m
+[0;32mI (114926) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (114946) EXAMPLE: Successfully published sensor data, msg_id=22182[0m
+[0;32mI (115216) EXAMPLE: MQTT Published, msg_id=22182[0m
+[0;32mI (116826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (116826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (116906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (116906) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (116906) Sensor Data: 32 5a fa[0m
+[0;32mI (116906) EXAMPLE: Temperature: 50[0m
+[0;32mI (116906) EXAMPLE: Humidity: 90[0m
+[0;32mI (116906) EXAMPLE: Light Level: 250[0m
+[0;32mI (116916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (116926) EXAMPLE: Successfully published sensor data, msg_id=37541[0m
+[0;32mI (117166) EXAMPLE: MQTT Published, msg_id=37541[0m
+[0;32mI (118826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (118826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (118876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (118876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (118886) Sensor Data: 32 5a fa[0m
+[0;32mI (118886) EXAMPLE: Temperature: 50[0m
+[0;32mI (118886) EXAMPLE: Humidity: 90[0m
+[0;32mI (118886) EXAMPLE: Light Level: 250[0m
+[0;32mI (118896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (118906) EXAMPLE: Successfully published sensor data, msg_id=48753[0m
+[0;32mI (119266) EXAMPLE: MQTT Published, msg_id=48753[0m
+[0;32mI (120826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (120826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (120936) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (120936) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (120936) Sensor Data: 32 5a fa[0m
+[0;32mI (120936) EXAMPLE: Temperature: 50[0m
+[0;32mI (120936) EXAMPLE: Humidity: 90[0m
+[0;32mI (120946) EXAMPLE: Light Level: 250[0m
+[0;32mI (120946) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (120966) EXAMPLE: Successfully published sensor data, msg_id=41482[0m
+[0;32mI (121316) EXAMPLE: MQTT Published, msg_id=41482[0m
+[0;32mI (122826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (122826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (122876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (122876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (122876) Sensor Data: 32 5a fa[0m
+[0;32mI (122886) EXAMPLE: Temperature: 50[0m
+[0;32mI (122886) EXAMPLE: Humidity: 90[0m
+[0;32mI (122886) EXAMPLE: Light Level: 250[0m
+[0;32mI (122886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (122906) EXAMPLE: Successfully published sensor data, msg_id=63947[0m
+[0;32mI (123266) EXAMPLE: MQTT Published, msg_id=63947[0m
+[0;32mI (124826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (124826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (124886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (124886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (124886) Sensor Data: 32 5a fa[0m
+[0;32mI (124886) EXAMPLE: Temperature: 50[0m
+[0;32mI (124886) EXAMPLE: Humidity: 90[0m
+[0;32mI (124886) EXAMPLE: Light Level: 250[0m
+[0;32mI (124896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (124906) EXAMPLE: Successfully published sensor data, msg_id=23166[0m
+[0;32mI (125206) EXAMPLE: MQTT Published, msg_id=23166[0m
+[0;32mI (126826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (126826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (126906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (126906) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (126906) Sensor Data: 32 5a fa[0m
+[0;32mI (126906) EXAMPLE: Temperature: 50[0m
+[0;32mI (126906) EXAMPLE: Humidity: 90[0m
+[0;32mI (126906) EXAMPLE: Light Level: 250[0m
+[0;32mI (126916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (126926) EXAMPLE: Successfully published sensor data, msg_id=11550[0m
+[0;32mI (127256) EXAMPLE: MQTT Published, msg_id=11550[0m
+[0;32mI (128826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (128826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (128946) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (128946) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (128946) Sensor Data: 32 5a fa[0m
+[0;32mI (128946) EXAMPLE: Temperature: 50[0m
+[0;32mI (128946) EXAMPLE: Humidity: 90[0m
+[0;32mI (128946) EXAMPLE: Light Level: 250[0m
+[0;32mI (128956) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (128966) EXAMPLE: Successfully published sensor data, msg_id=17875[0m
+[0;32mI (129306) EXAMPLE: MQTT Published, msg_id=17875[0m
+[0;32mI (130826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (130826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (130896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (130896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (130896) Sensor Data: 32 5a fa[0m
+[0;32mI (130906) EXAMPLE: Temperature: 50[0m
+[0;32mI (130906) EXAMPLE: Humidity: 90[0m
+[0;32mI (130906) EXAMPLE: Light Level: 250[0m
+[0;32mI (130916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (130926) EXAMPLE: Successfully published sensor data, msg_id=60596[0m
+[0;32mI (131246) EXAMPLE: MQTT Published, msg_id=60596[0m
+[0;32mI (132826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (132826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (132946) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (132946) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (132946) Sensor Data: 32 5a fa[0m
+[0;32mI (132946) EXAMPLE: Temperature: 50[0m
+[0;32mI (132956) EXAMPLE: Humidity: 90[0m
+[0;32mI (132956) EXAMPLE: Light Level: 250[0m
+[0;32mI (132956) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (132976) EXAMPLE: Successfully published sensor data, msg_id=10199[0m
+[0;32mI (133296) EXAMPLE: MQTT Published, msg_id=10199[0m
+[0;32mI (134826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (134826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (134876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (134886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (134886) Sensor Data: 32 5a fa[0m
+[0;32mI (134886) EXAMPLE: Temperature: 50[0m
+[0;32mI (134886) EXAMPLE: Humidity: 90[0m
+[0;32mI (134886) EXAMPLE: Light Level: 250[0m
+[0;32mI (134896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (134906) EXAMPLE: Successfully published sensor data, msg_id=49204[0m
+[0;32mI (135246) EXAMPLE: MQTT Published, msg_id=49204[0m
+[0;32mI (136826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (136826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (136926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (136926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (136926) Sensor Data: 32 5a fa[0m
+[0;32mI (136926) EXAMPLE: Temperature: 50[0m
+[0;32mI (136926) EXAMPLE: Humidity: 90[0m
+[0;32mI (136926) EXAMPLE: Light Level: 250[0m
+[0;32mI (136936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (136946) EXAMPLE: Successfully published sensor data, msg_id=41114[0m
+[0;32mI (137196) EXAMPLE: MQTT Published, msg_id=41114[0m
+[0;32mI (138826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (138826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (138876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (138886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (138886) Sensor Data: 32 5a fa[0m
+[0;32mI (138886) EXAMPLE: Temperature: 50[0m
+[0;32mI (138886) EXAMPLE: Humidity: 90[0m
+[0;32mI (138886) EXAMPLE: Light Level: 250[0m
+[0;32mI (138896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (138906) EXAMPLE: Successfully published sensor data, msg_id=36396[0m
+[0;32mI (139236) EXAMPLE: MQTT Published, msg_id=36396[0m
+[0;32mI (140826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (140826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (140906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (140906) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (140906) Sensor Data: 32 5a fa[0m
+[0;32mI (140916) EXAMPLE: Temperature: 50[0m
+[0;32mI (140916) EXAMPLE: Humidity: 90[0m
+[0;32mI (140916) EXAMPLE: Light Level: 250[0m
+[0;32mI (140916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (140936) EXAMPLE: Successfully published sensor data, msg_id=25308[0m
+[0;32mI (141206) EXAMPLE: MQTT Published, msg_id=25308[0m
+[0;32mI (142826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (142826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (142896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (142896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (142896) Sensor Data: 32 5a fa[0m
+[0;32mI (142896) EXAMPLE: Temperature: 50[0m
+[0;32mI (142896) EXAMPLE: Humidity: 90[0m
+[0;32mI (142896) EXAMPLE: Light Level: 250[0m
+[0;32mI (142906) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (142916) EXAMPLE: Successfully published sensor data, msg_id=9654[0m
+[0;32mI (143226) EXAMPLE: MQTT Published, msg_id=9654[0m
+[0;32mI (144826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (144826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (144906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (144906) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (144906) Sensor Data: 32 5a fa[0m
+[0;32mI (144906) EXAMPLE: Temperature: 50[0m
+[0;32mI (144916) EXAMPLE: Humidity: 90[0m
+[0;32mI (144916) EXAMPLE: Light Level: 250[0m
+[0;32mI (144916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (144936) EXAMPLE: Successfully published sensor data, msg_id=45688[0m
+[0;32mI (145276) EXAMPLE: MQTT Published, msg_id=45688[0m
+[0;32mI (146826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (146826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (146886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (146886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (146886) Sensor Data: 32 5a fa[0m
+[0;32mI (146886) EXAMPLE: Temperature: 50[0m
+[0;32mI (146886) EXAMPLE: Humidity: 90[0m
+[0;32mI (146886) EXAMPLE: Light Level: 250[0m
+[0;32mI (146896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (146906) EXAMPLE: Successfully published sensor data, msg_id=54124[0m
+[0;32mI (147226) EXAMPLE: MQTT Published, msg_id=54124[0m
+[0;32mI (148826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (148826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (148926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (148926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (148926) Sensor Data: 32 5a fa[0m
+[0;32mI (148926) EXAMPLE: Temperature: 50[0m
+[0;32mI (148926) EXAMPLE: Humidity: 90[0m
+[0;32mI (148926) EXAMPLE: Light Level: 250[0m
+[0;32mI (148936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (148946) EXAMPLE: Successfully published sensor data, msg_id=39973[0m
+[0;32mI (149166) EXAMPLE: MQTT Published, msg_id=39973[0m
+[0;32mI (150826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (150826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (150876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (150876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (150876) Sensor Data: 32 5a fa[0m
+[0;32mI (150876) EXAMPLE: Temperature: 50[0m
+[0;32mI (150876) EXAMPLE: Humidity: 90[0m
+[0;32mI (150886) EXAMPLE: Light Level: 250[0m
+[0;32mI (150886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (150906) EXAMPLE: Successfully published sensor data, msg_id=3910[0m
+[0;32mI (151216) EXAMPLE: MQTT Published, msg_id=3910[0m
+[0;32mI (152826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (152826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (152926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (152926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (152926) Sensor Data: 32 5a fa[0m
+[0;32mI (152926) EXAMPLE: Temperature: 50[0m
+[0;32mI (152926) EXAMPLE: Humidity: 90[0m
+[0;32mI (152926) EXAMPLE: Light Level: 250[0m
+[0;32mI (152936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (152946) EXAMPLE: Successfully published sensor data, msg_id=28974[0m
+[0;32mI (153266) EXAMPLE: MQTT Published, msg_id=28974[0m
+[0;32mI (154826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (154826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (154876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (154876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (154876) Sensor Data: 32 5a fa[0m
+[0;32mI (154876) EXAMPLE: Temperature: 50[0m
+[0;32mI (154876) EXAMPLE: Humidity: 90[0m
+[0;32mI (154876) EXAMPLE: Light Level: 250[0m
+[0;32mI (154886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (154896) EXAMPLE: Successfully published sensor data, msg_id=1458[0m
+[0;32mI (155216) EXAMPLE: MQTT Published, msg_id=1458[0m
+[0;32mI (156826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (156826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (156926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (156926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (156926) Sensor Data: 32 5a fa[0m
+[0;32mI (156926) EXAMPLE: Temperature: 50[0m
+[0;32mI (156936) EXAMPLE: Humidity: 90[0m
+[0;32mI (156936) EXAMPLE: Light Level: 250[0m
+[0;32mI (156936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (156956) EXAMPLE: Successfully published sensor data, msg_id=40914[0m
+[0;32mI (157256) EXAMPLE: MQTT Published, msg_id=40914[0m
+[0;32mI (158826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (158826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (158886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (158886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (158886) Sensor Data: 32 5a fa[0m
+[0;32mI (158886) EXAMPLE: Temperature: 50[0m
+[0;32mI (158886) EXAMPLE: Humidity: 90[0m
+[0;32mI (158886) EXAMPLE: Light Level: 250[0m
+[0;32mI (158896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (158906) EXAMPLE: Successfully published sensor data, msg_id=44835[0m
+[0;32mI (159206) EXAMPLE: MQTT Published, msg_id=44835[0m
+[0;32mI (160826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (160826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (160866) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (160866) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (160866) Sensor Data: 32 5a fa[0m
+[0;32mI (160866) EXAMPLE: Temperature: 50[0m
+[0;32mI (160866) EXAMPLE: Humidity: 90[0m
+[0;32mI (160866) EXAMPLE: Light Level: 250[0m
+[0;32mI (160876) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (160886) EXAMPLE: Successfully published sensor data, msg_id=36387[0m
+[0;32mI (161256) EXAMPLE: MQTT Published, msg_id=36387[0m
+[0;32mI (162826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (162826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (162886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (162886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (162886) Sensor Data: 32 5a fa[0m
+[0;32mI (162886) EXAMPLE: Temperature: 50[0m
+[0;32mI (162886) EXAMPLE: Humidity: 90[0m
+[0;32mI (162886) EXAMPLE: Light Level: 250[0m
+[0;32mI (162896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (162906) EXAMPLE: Successfully published sensor data, msg_id=50155[0m
+[0;32mI (163206) EXAMPLE: MQTT Published, msg_id=50155[0m
+[0;32mI (164826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (164826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (164886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (164886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (164886) Sensor Data: 32 5a fa[0m
+[0;32mI (164886) EXAMPLE: Temperature: 50[0m
+[0;32mI (164896) EXAMPLE: Humidity: 90[0m
+[0;32mI (164896) EXAMPLE: Light Level: 250[0m
+[0;32mI (164896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (164916) EXAMPLE: Successfully published sensor data, msg_id=61670[0m
+[0;32mI (165246) EXAMPLE: MQTT Published, msg_id=61670[0m
+[0;32mI (166826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (166826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (166936) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (166946) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (166946) Sensor Data: 32 5a fa[0m
+[0;32mI (166946) EXAMPLE: Temperature: 50[0m
+[0;32mI (166946) EXAMPLE: Humidity: 90[0m
+[0;32mI (166946) EXAMPLE: Light Level: 250[0m
+[0;32mI (166956) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (166966) EXAMPLE: Successfully published sensor data, msg_id=31223[0m
+[0;32mI (167296) EXAMPLE: MQTT Published, msg_id=31223[0m
+[0;32mI (168826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (168826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (168886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (168886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (168886) Sensor Data: 32 5a fa[0m
+[0;32mI (168886) EXAMPLE: Temperature: 50[0m
+[0;32mI (168886) EXAMPLE: Humidity: 90[0m
+[0;32mI (168886) EXAMPLE: Light Level: 250[0m
+[0;32mI (168896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (168906) EXAMPLE: Successfully published sensor data, msg_id=8358[0m
+[0;32mI (169236) EXAMPLE: MQTT Published, msg_id=8358[0m
+[0;32mI (170826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (170826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (170926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (170926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (170926) Sensor Data: 32 5a fa[0m
+[0;32mI (170926) EXAMPLE: Temperature: 50[0m
+[0;32mI (170926) EXAMPLE: Humidity: 90[0m
+[0;32mI (170926) EXAMPLE: Light Level: 250[0m
+[0;32mI (170936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (170946) EXAMPLE: Successfully published sensor data, msg_id=21797[0m
+[0;32mI (171286) EXAMPLE: MQTT Published, msg_id=21797[0m
+[0;32mI (172826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (172826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (172856) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (172866) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (172866) Sensor Data: 32 5a fa[0m
+[0;32mI (172866) EXAMPLE: Temperature: 50[0m
+[0;32mI (172866) EXAMPLE: Humidity: 90[0m
+[0;32mI (172866) EXAMPLE: Light Level: 250[0m
+[0;32mI (172876) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (172886) EXAMPLE: Successfully published sensor data, msg_id=27356[0m
+[0;32mI (173236) EXAMPLE: MQTT Published, msg_id=27356[0m
+[0;32mI (174826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (174826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (174886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (174886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (174886) Sensor Data: 32 5a fa[0m
+[0;32mI (174886) EXAMPLE: Temperature: 50[0m
+[0;32mI (174886) EXAMPLE: Humidity: 90[0m
+[0;32mI (174886) EXAMPLE: Light Level: 250[0m
+[0;32mI (174896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (174906) EXAMPLE: Successfully published sensor data, msg_id=46356[0m
+[0;32mI (175186) EXAMPLE: MQTT Published, msg_id=46356[0m
+[0;32mI (176826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (176826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (176906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (176906) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (176906) Sensor Data: 32 5a fa[0m
+[0;32mI (176906) EXAMPLE: Temperature: 50[0m
+[0;32mI (176906) EXAMPLE: Humidity: 90[0m
+[0;32mI (176906) EXAMPLE: Light Level: 250[0m
+[0;32mI (176916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (176926) EXAMPLE: Successfully published sensor data, msg_id=14091[0m
+[0;32mI (177226) EXAMPLE: MQTT Published, msg_id=14091[0m
+[0;32mI (178826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (178826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (178896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (178896) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (178896) Sensor Data: 32 5a fa[0m
+[0;32mI (178906) EXAMPLE: Temperature: 50[0m
+[0;32mI (178906) EXAMPLE: Humidity: 90[0m
+[0;32mI (178906) EXAMPLE: Light Level: 250[0m
+[0;32mI (178916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (178926) EXAMPLE: Successfully published sensor data, msg_id=29466[0m
+[0;32mI (179276) EXAMPLE: MQTT Published, msg_id=29466[0m
+[0;32mI (180826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (180826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (180926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (180926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (180926) Sensor Data: 32 5a fa[0m
+[0;32mI (180926) EXAMPLE: Temperature: 50[0m
+[0;32mI (180926) EXAMPLE: Humidity: 90[0m
+[0;32mI (180926) EXAMPLE: Light Level: 250[0m
+[0;32mI (180936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (180946) EXAMPLE: Successfully published sensor data, msg_id=16393[0m
+[0;32mI (181226) EXAMPLE: MQTT Published, msg_id=16393[0m
+[0;32mI (182826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (182826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (182876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (182876) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (182876) Sensor Data: 32 5a fa[0m
+[0;32mI (182876) EXAMPLE: Temperature: 50[0m
+[0;32mI (182876) EXAMPLE: Humidity: 90[0m
+[0;32mI (182876) EXAMPLE: Light Level: 250[0m
+[0;32mI (182886) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (182896) EXAMPLE: Successfully published sensor data, msg_id=46402[0m
+[0;32mI (183166) EXAMPLE: MQTT Published, msg_id=46402[0m
+[0;32mI (184826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (184826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (184926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (184926) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (184926) Sensor Data: 32 5a fa[0m
+[0;32mI (184926) EXAMPLE: Temperature: 50[0m
+[0;32mI (184926) EXAMPLE: Humidity: 90[0m
+[0;32mI (184926) EXAMPLE: Light Level: 250[0m
+[0;32mI (184936) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (184946) EXAMPLE: Successfully published sensor data, msg_id=42552[0m
+[0;32mI (185326) EXAMPLE: MQTT Published, msg_id=42552[0m
+[0;32mI (186826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (186826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (186886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (186886) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (186886) Sensor Data: 32 5a fa[0m
+[0;32mI (186886) EXAMPLE: Temperature: 50[0m
+[0;32mI (186886) EXAMPLE: Humidity: 90[0m
+[0;32mI (186886) EXAMPLE: Light Level: 250[0m
+[0;32mI (186896) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (186906) EXAMPLE: Successfully published sensor data, msg_id=5513[0m
+[0;32mI (187266) EXAMPLE: MQTT Published, msg_id=5513[0m
+[0;32mI (188826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (188826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (188906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (188906) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (188906) Sensor Data: 32 5a fa[0m
+[0;32mI (188906) EXAMPLE: Temperature: 50[0m
+[0;32mI (188906) EXAMPLE: Humidity: 90[0m
+[0;32mI (188906) EXAMPLE: Light Level: 250[0m
+[0;32mI (188916) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (188926) EXAMPLE: Successfully published sensor data, msg_id=47075[0m
+[0;32mI (189206) EXAMPLE: MQTT Published, msg_id=47075[0m
+[0;32mI (190826) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (190826) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (190916) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (190916) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (190916) Sensor Data: 32 5a fa[0m
+[0;32mI (190916) EXAMPLE: Temperature: 50[0m
+[0;32mI (190916) EXAMPLE: Humidity: 90[0m
+[0;32mI (190916) EXAMPLE: Light Level: 250[0m
+[0;32mI (190926) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":1,"sensors":{"temperature":50,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (190936) EXAMPLE: Successfully published sensor data, msg_id=6930[0m
+[0;32mI (191256) EXAMPLE: MQTT Published, msg_id=6930[0m
+[0;32mI (192826) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (192826) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (194826) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (194826) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (194826) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (194826) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (194826) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (196826) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (196826) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (196826) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (196836) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (196836) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (196846) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (196846) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (196856) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (198856) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (198856) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (198856) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (198856) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (198856) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (200836) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (200836) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (200836) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (200866) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (200866) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (200866) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (200866) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (200866) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (202876) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (202876) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (202876) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (202876) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (202876) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (204846) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (204846) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (204846) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (204886) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (204886) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (204886) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (204886) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (204886) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (206896) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (206896) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (206896) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (206896) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (206896) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (208856) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (208856) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (208856) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (208906) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (208906) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (208906) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (208906) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (208906) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (210916) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (210916) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (210916) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (210916) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (210916) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (212866) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (212866) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (212866) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (212926) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (212926) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (212926) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (212926) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (212926) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (214936) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (214936) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (214936) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (214936) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (214936) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (216876) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (216876) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (216876) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (216946) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (216946) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (216946) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (216946) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (216946) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (218956) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (218956) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (218956) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (218956) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (218956) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (220886) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (220886) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (220886) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (220966) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (220966) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (220966) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (220966) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (220966) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (222976) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (222976) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (222976) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (222976) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (222976) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (223516) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (223516) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (223516) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (223516) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (223526) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (223536) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (223536) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;33mW (224896) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (224896) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (224896) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (224986) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (224986) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (224986) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (224986) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (224986) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (225816) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (225816) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (225816) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (225826) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (226116) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (226306) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (226316) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 03 00 00 00[0m
+[0;32mI (226316) Composition data: 00 11 01 11[0m
+[0;32mI (226316) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (226326) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (226336) EXAMPLE: * Loc 0x0000, NumS 0x03, NumV 0x00 *[0m
+[0;32mI (226336) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (226336) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (226346) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (226346) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (226356) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (226616) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (226706) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (226796) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;33mW (226796) EXAMPLE: Provision and config successfully[0m
+[0;32mI (226996) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (226996) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (226996) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (226996) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (226996) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (228976) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (228976) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (228976) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (229006) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (229006) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (229006) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (229006) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (229006) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (229086) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (229086) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (229086) Sensor Data: 14 2e fa 60 0b 3c[0m
+[0;32mI (229086) EXAMPLE: Temperature: 20[0m
+[0;32mI (229096) EXAMPLE: Humidity: 46[0m
+[0;32mI (229096) EXAMPLE: Light Level: 250[0m
+[0;32mI (229096) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":20,"humidity":46,"light":250},"status":"active"}[0m
+[0;32mI (229116) EXAMPLE: Successfully published sensor data, msg_id=52465[0m
+[0;32mI (229456) EXAMPLE: MQTT Published, msg_id=52465[0m
+[0;32mI (231016) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (231016) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (231076) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (231076) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (231076) Sensor Data: 32 1e 64[0m
+[0;32mI (231076) EXAMPLE: Temperature: 50[0m
+[0;32mI (231076) EXAMPLE: Humidity: 30[0m
+[0;32mI (231086) EXAMPLE: Light Level: 100[0m
+[0;32mI (231086) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":50,"humidity":30,"light":100},"status":"active"}[0m
+[0;32mI (231106) EXAMPLE: Successfully published sensor data, msg_id=47794[0m
+[0;32mI (231396) EXAMPLE: MQTT Published, msg_id=47794[0m
+[0;32mI (233016) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (233016) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (233116) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (233116) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (233116) Sensor Data: 0a 1e fa[0m
+[0;32mI (233116) EXAMPLE: Temperature: 10[0m
+[0;32mI (233116) EXAMPLE: Humidity: 30[0m
+[0;32mI (233116) EXAMPLE: Light Level: 250[0m
+[0;32mI (233126) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":10,"humidity":30,"light":250},"status":"active"}[0m
+[0;32mI (233136) EXAMPLE: Successfully published sensor data, msg_id=64525[0m
+[0;32mI (233366) EXAMPLE: MQTT Published, msg_id=64525[0m
+[0;32mI (235016) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (235016) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (235096) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (235096) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (235096) Sensor Data: 0b 1e fa[0m
+[0;32mI (235096) EXAMPLE: Temperature: 11[0m
+[0;32mI (235096) EXAMPLE: Humidity: 30[0m
+[0;32mI (235106) EXAMPLE: Light Level: 250[0m
+[0;32mI (235106) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":11,"humidity":30,"light":250},"status":"active"}[0m
+[0;32mI (235126) EXAMPLE: Successfully published sensor data, msg_id=51321[0m
+[0;32mI (235326) EXAMPLE: MQTT Published, msg_id=51321[0m
+[0;32mI (237016) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (237016) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (237056) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (237056) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (237056) Sensor Data: 0a 26 e9[0m
+[0;32mI (237056) EXAMPLE: Temperature: 10[0m
+[0;32mI (237056) EXAMPLE: Humidity: 38[0m
+[0;32mI (237066) EXAMPLE: Light Level: 233[0m
+[0;32mI (237066) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":10,"humidity":38,"light":233},"status":"active"}[0m
+[0;32mI (237086) EXAMPLE: Successfully published sensor data, msg_id=44195[0m
+[0;32mI (237366) EXAMPLE: MQTT Published, msg_id=44195[0m
+[0;32mI (239016) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (239016) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (239056) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (239056) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (239056) Sensor Data: 0a 5a fa[0m
+[0;32mI (239056) EXAMPLE: Temperature: 10[0m
+[0;32mI (239056) EXAMPLE: Humidity: 90[0m
+[0;32mI (239066) EXAMPLE: Light Level: 250[0m
+[0;32mI (239066) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":10,"humidity":90,"light":250},"status":"active"}[0m
+[0;32mI (239086) EXAMPLE: Successfully published sensor data, msg_id=49021[0m
+[0;32mI (239386) EXAMPLE: MQTT Published, msg_id=49021[0m
+[0;32mI (241016) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (241016) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (243016) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (243016) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (243016) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (243016) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (243016) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (245016) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (245016) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (245016) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (245026) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (245026) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (245036) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (245036) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (245046) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (247046) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (247046) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (247046) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (247046) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (247046) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (249026) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (249026) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (249026) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (249056) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (249056) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (249056) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (249056) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (249056) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (249076) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (249076) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (249076) Sensor Data: 31 5a 64 60 0b 3c[0m
+[0;32mI (249076) EXAMPLE: Temperature: 49[0m
+[0;32mI (249086) EXAMPLE: Humidity: 90[0m
+[0;32mI (249086) EXAMPLE: Light Level: 100[0m
+[0;32mI (249086) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":49,"humidity":90,"light":100},"status":"active"}[0m
+[0;32mI (249106) EXAMPLE: Successfully published sensor data, msg_id=11482[0m
+[0;32mI (249316) EXAMPLE: MQTT Published, msg_id=11482[0m
+[0;32mI (251066) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (251066) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (253066) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (253066) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (253066) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (253066) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (253066) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (255066) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (255066) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (255066) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (255076) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (255076) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (255086) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (255086) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (255086) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (257096) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (257096) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (257096) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (257096) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (257096) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (259076) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (259076) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (259076) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (259106) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (259106) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (259106) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (259106) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (259106) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (259136) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (259136) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (259136) Sensor Data: 2e 57 f7 60 0b 3c[0m
+[0;32mI (259136) EXAMPLE: Temperature: 46[0m
+[0;32mI (259136) EXAMPLE: Humidity: 87[0m
+[0;32mI (259146) EXAMPLE: Light Level: 247[0m
+[0;32mI (259146) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":46,"humidity":87,"light":247},"status":"active"}[0m
+[0;32mI (259166) EXAMPLE: Successfully published sensor data, msg_id=64366[0m
+[0;32mI (259456) EXAMPLE: MQTT Published, msg_id=64366[0m
+[0;32mI (261116) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (261116) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (261246) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (261246) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (261246) Sensor Data: 0a 1e fa[0m
+[0;32mI (261246) EXAMPLE: Temperature: 10[0m
+[0;32mI (261256) EXAMPLE: Humidity: 30[0m
+[0;32mI (261256) EXAMPLE: Light Level: 250[0m
+[0;32mI (261256) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":10,"humidity":30,"light":250},"status":"active"}[0m
+[0;32mI (261276) EXAMPLE: Successfully published sensor data, msg_id=37368[0m
+[0;32mI (261606) EXAMPLE: MQTT Published, msg_id=37368[0m
+[0;32mI (263116) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (263116) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (263156) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (263156) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (263156) Sensor Data: 0a 5a 64[0m
+[0;32mI (263156) EXAMPLE: Temperature: 10[0m
+[0;32mI (263156) EXAMPLE: Humidity: 90[0m
+[0;32mI (263166) EXAMPLE: Light Level: 100[0m
+[0;32mI (263166) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":10,"humidity":90,"light":100},"status":"active"}[0m
+[0;32mI (263186) EXAMPLE: Successfully published sensor data, msg_id=12174[0m
+[0;32mI (263456) EXAMPLE: MQTT Published, msg_id=12174[0m
+[0;32mI (265116) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (265116) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (265176) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (265176) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (265176) Sensor Data: 0a 5a 64[0m
+[0;32mI (265176) EXAMPLE: Temperature: 10[0m
+[0;32mI (265176) EXAMPLE: Humidity: 90[0m
+[0;32mI (265186) EXAMPLE: Light Level: 100[0m
+[0;32mI (265186) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":10,"humidity":90,"light":100},"status":"active"}[0m
+[0;32mI (265196) EXAMPLE: Successfully published sensor data, msg_id=15555[0m
+[0;32mI (265506) EXAMPLE: MQTT Published, msg_id=15555[0m
+[0;32mI (267116) EXAMPLE: Sending humidity: 100.00%[0m
+[0;32mI (267116) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (269116) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (269116) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (269116) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (269116) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (269116) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (271116) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (271116) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (271116) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (271126) EXAMPLE: Sending temperature: 100.00°C[0m
+[0;32mI (271126) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (271136) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (271136) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (271146) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (271246) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (271256) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (271256) Sensor Data: 32 50 fa 60 0b 3c[0m
+[0;32mI (271256) EXAMPLE: Temperature: 50[0m
+[0;32mI (271256) EXAMPLE: Humidity: 80[0m
+[0;32mI (271256) EXAMPLE: Light Level: 250[0m
+[0;32mI (271266) EXAMPLE: Publishing sensor data: {"device":"ESP32_BLE_Mesh_Client","timestamp":2,"sensors":{"temperature":50,"humidity":80,"light":250},"status":"active"}[0m
+[0;32mI (271276) EXAMPLE: Successfu

@@ -15,6 +15,12 @@
 #include "nvs_flash.h"
 #include "esp_random.h"
 
+// Add MQTT libraries
+#include "mqtt_client.h"
+#include "esp_wifi.h"
+#include "esp_event.h"
+#include "sdkconfig.h"
+
 #include "esp_ble_mesh_defs.h"
 #include "esp_ble_mesh_common_api.h"
 #include "esp_ble_mesh_provisioning_api.h"
@@ -23,7 +29,6 @@
 #include "esp_ble_mesh_sensor_model_api.h"
 
 #include "ble_mesh_example_init.h"
-#include "board.h"
 
 // Include DHT and LDR simulation headers
 #include "dht_simulation.h"
@@ -52,6 +57,28 @@
 #define SENSOR_PROP_ID_PRESENT_AMBIENT_HUMIDITY    0x0076 // Humidity property ID
 #define SENSOR_PROP_ID_PRESENT_AMBIENT_LIGHT_LEVEL 0x004D // Light level property ID
 
+// MQTT Configuration
+// Configure with 'idf.py menuconfig' under "Example Configuration"
+#define EXAMPLE_WIFI_SSID               CONFIG_EXAMPLE_WIFI_SSID
+#define EXAMPLE_WIFI_PASS               CONFIG_EXAMPLE_WIFI_PASSWORD
+#define EXAMPLE_MQTT_BROKER_URL         CONFIG_EXAMPLE_MQTT_BROKER_URL
+#define EXAMPLE_MQTT_BROKER_USERNAME    CONFIG_EXAMPLE_MQTT_BROKER_USERNAME
+#define EXAMPLE_MQTT_BROKER_PASSWORD    CONFIG_EXAMPLE_MQTT_BROKER_PASSWORD
+#define EXAMPLE_MQTT_TOPIC              CONFIG_EXAMPLE_MQTT_TOPIC
+
+// Global variables for MQTT and WiFi
+static esp_mqtt_client_handle_t mqtt_client = NULL;
+static bool mqtt_connected = false;
+static uint8_t last_temperature = 0;
+static uint8_t last_humidity = 0;
+static uint8_t last_light_level = 0;
+static bool have_sensor_data = false;
+
+// Forward declarations for MQTT functions
+static void mqtt_app_start(void);
+static void wifi_init_sta(void);
+static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data);
+static void publish_sensor_data(uint8_t temperature, uint8_t humidity, uint8_t light);
 
 static uint8_t  dev_uuid[ESP_BLE_MESH_OCTET16_LEN];
 static uint16_t server_address = ESP_BLE_MESH_ADDR_UNASSIGNED;
@@ -569,7 +596,15 @@ static void example_ble_mesh_sensor_client_cb(esp_ble_mesh_sensor_client_cb_even
                 ESP_LOGI(TAG, "Temperature: %d", data[0]);
                 ESP_LOGI(TAG, "Humidity: %d", data[1]);
                 ESP_LOGI(TAG, "Light Level: %d", data[2]);
-
+                
+                // Store sensor data
+                last_temperature = data[0];
+                last_humidity = data[1];
+                last_light_level = data[2];
+                have_sensor_data = true;
+                
+                // Publish sensor data to MQTT
+                publish_sensor_data(data[0], data[1], data[2]);
             }
             break;
         case ESP_BLE_MESH_MODEL_OP_SENSOR_COLUMN_GET:
@@ -795,6 +830,155 @@ void handle_send_sensor_data(void *pvParameters) {
     }
 }
 
+// Add WiFi event handler
+static void wifi_event_handler(void* arg, esp_event_base_t event_base,
+                                int32_t event_id, void* event_data)
+{
+    if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+        esp_wifi_connect();
+    } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+        ESP_LOGI(TAG, "WiFi disconnected, trying to reconnect...");
+        esp_wifi_connect();
+    } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+        ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+        ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+        mqtt_app_start();
+    }
+}
+
+// Initialize WiFi in station mode
+static void wifi_init_sta(void)
+{
+    ESP_LOGI(TAG, "Initializing WiFi");
+    
+    ESP_ERROR_CHECK(esp_netif_init());
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+    esp_netif_create_default_wifi_sta();
+
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+
+    ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL));
+    ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL));
+
+    wifi_config_t wifi_config = {
+        .sta = {
+            .ssid = EXAMPLE_WIFI_SSID,
+            .password = EXAMPLE_WIFI_PASS,
+            .threshold.authmode = WIFI_AUTH_WPA2_PSK,
+            .pmf_cfg = {
+                .capable = true,
+                .required = false
+            },
+        },
+    };
+    
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+    ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
+    ESP_ERROR_CHECK(esp_wifi_start());
+
+    ESP_LOGI(TAG, "WiFi initialization complete");
+}
+
+// MQTT event handler
+static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
+{
+    esp_mqtt_event_handle_t event = event_data;
+    
+    switch ((esp_mqtt_event_id_t)event_id) {
+    case MQTT_EVENT_CONNECTED:
+        ESP_LOGI(TAG, "MQTT Connected to broker");
+        mqtt_connected = true;
+        
+        // Publish existing sensor data if available
+        if (have_sensor_data) {
+            publish_sensor_data(last_temperature, last_humidity, last_light_level);
+        }
+        break;
+        
+    case MQTT_EVENT_DISCONNECTED:
+        ESP_LOGI(TAG, "MQTT Disconnected from broker");
+        mqtt_connected = false;
+        break;
+        
+    case MQTT_EVENT_SUBSCRIBED:
+        ESP_LOGI(TAG, "MQTT Subscribed, msg_id=%d", event->msg_id);
+        break;
+        
+    case MQTT_EVENT_UNSUBSCRIBED:
+        ESP_LOGI(TAG, "MQTT Unsubscribed, msg_id=%d", event->msg_id);
+        break;
+        
+    case MQTT_EVENT_PUBLISHED:
+        ESP_LOGI(TAG, "MQTT Published, msg_id=%d", event->msg_id);
+        break;
+        
+    case MQTT_EVENT_DATA:
+        ESP_LOGI(TAG, "MQTT Data received");
+        break;
+        
+    case MQTT_EVENT_ERROR:
+        ESP_LOGI(TAG, "MQTT Error");
+        break;
+        
+    default:
+        ESP_LOGI(TAG, "MQTT Other event id:%d", event->event_id);
+        break;
+    }
+}
+
+// Start MQTT client
+static void mqtt_app_start(void)
+{
+    ESP_LOGI(TAG, "Starting MQTT client");
+    
+    esp_mqtt_client_config_t mqtt_cfg = {
+        .broker = {
+            .address.uri = EXAMPLE_MQTT_BROKER_URL,
+        },
+        .credentials.client_id = "ESP32_BLE_Mesh_Sensor_Client"
+    };
+    
+    mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
+    esp_mqtt_client_register_event(mqtt_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+    esp_mqtt_client_start(mqtt_client);
+}
+
+// Publish sensor data to MQTT broker
+static void publish_sensor_data(uint8_t temperature, uint8_t humidity, uint8_t light)
+{
+    if (!mqtt_connected || mqtt_client == NULL) {
+        ESP_LOGW(TAG, "MQTT not connected, can't publish data");
+        return;
+    }
+    
+    // Create a JSON payload with timestamp and device information
+    char data[256];
+    uint32_t timestamp = (uint32_t)(xTaskGetTickCount() / portTICK_PERIOD_MS / 1000); // Seconds since boot
+    
+    snprintf(data, sizeof(data), 
+             "{"
+             "\"device\":\"ESP32_BLE_Mesh_Client\","
+             "\"timestamp\":%" PRIu32 ","
+             "\"sensors\":{"
+             "\"temperature\":%d,"
+             "\"humidity\":%d,"
+             "\"light\":%d"
+             "},"
+             "\"status\":\"active\""
+             "}", 
+             timestamp, temperature, humidity, light);
+    
+    ESP_LOGI(TAG, "Publishing sensor data: %s", data);
+    
+    int msg_id = esp_mqtt_client_publish(mqtt_client, EXAMPLE_MQTT_TOPIC, data, 0, 1, 0);
+    if (msg_id == -1) {
+        ESP_LOGE(TAG, "Failed to publish sensor data");
+    } else {
+        ESP_LOGI(TAG, "Successfully published sensor data, msg_id=%d", msg_id);
+    }
+}
+
 void app_main(void)
 {
     esp_err_t err = ESP_OK;
@@ -808,7 +992,8 @@ void app_main(void)
     }
     ESP_ERROR_CHECK(err);
 
-    board_init();
+    // Initialize WiFi
+    wifi_init_sta();
 
     err = bluetooth_init();
     if (err != ESP_OK) {

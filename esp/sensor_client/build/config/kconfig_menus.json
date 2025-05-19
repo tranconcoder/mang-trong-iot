@@ -6408,6 +6408,74 @@
     {
         "children": [
             {
+                "children": [],
+                "depends_on": null,
+                "help": "SSID (network name) for the example to connect to.",
+                "id": "EXAMPLE_WIFI_SSID",
+                "name": "EXAMPLE_WIFI_SSID",
+                "range": null,
+                "title": "WiFi SSID",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "WiFi password (WPA or WPA2) for the example to use.",
+                "id": "EXAMPLE_WIFI_PASSWORD",
+                "name": "EXAMPLE_WIFI_PASSWORD",
+                "range": null,
+                "title": "WiFi Password",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "URL of the MQTT broker to connect to",
+                "id": "EXAMPLE_MQTT_BROKER_URL",
+                "name": "EXAMPLE_MQTT_BROKER_URL",
+                "range": null,
+                "title": "MQTT Broker URL",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Username for MQTT broker (leave empty if no username is required)",
+                "id": "EXAMPLE_MQTT_BROKER_USERNAME",
+                "name": "EXAMPLE_MQTT_BROKER_USERNAME",
+                "range": null,
+                "title": "MQTT Broker Username",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Password for MQTT broker (leave empty if no password is required)",
+                "id": "EXAMPLE_MQTT_BROKER_PASSWORD",
+                "name": "EXAMPLE_MQTT_BROKER_PASSWORD",
+                "range": null,
+                "title": "MQTT Broker Password",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "MQTT topic to publish sensor data",
+                "id": "EXAMPLE_MQTT_TOPIC",
+                "name": "EXAMPLE_MQTT_TOPIC",
+                "range": null,
+                "title": "MQTT Topic",
+                "type": "string"
+            }
+        ],
+        "depends_on": null,
+        "id": "example-configuration",
+        "title": "Example Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [
                     {
                         "children": [],
@@ -31662,57 +31730,6 @@
                 "depends_on": null,
                 "id": "component-config-wi-fi-provisioning-manager",
                 "title": "Wi-Fi Provisioning Manager",
-                "type": "menu"
-            },
-            {
-                "children": [
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "<choice BUTTON_TIMER_IMPLEMENT>",
-                                "help": null,
-                                "id": "BUTTON_USE_RTOS_TIMER",
-                                "name": "BUTTON_USE_RTOS_TIMER",
-                                "range": null,
-                                "title": "Use FreeRTOS Timer",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice BUTTON_TIMER_IMPLEMENT>",
-                                "help": null,
-                                "id": "BUTTON_USE_ESP_TIMER",
-                                "name": "BUTTON_USE_ESP_TIMER",
-                                "range": null,
-                                "title": "Use ESP Timer",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "help": "Choose a implementation of timer for button instance.",
-                        "id": "component-config-button-button-timer-mode",
-                        "name": "BUTTON_TIMER_IMPLEMENT",
-                        "title": "Button Timer Mode",
-                        "type": "choice"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": null,
-                        "id": "BUTTON_IO_GLITCH_FILTER_TIME_MS",
-                        "name": "BUTTON_IO_GLITCH_FILTER_TIME_MS",
-                        "range": [
-                            10,
-                            100
-                        ],
-                        "title": "IO glitch filter timer ms (10~100)",
-                        "type": "int"
-                    }
-                ],
-                "depends_on": null,
-                "id": "component-config-button",
-                "title": "Button",
                 "type": "menu"
             }
         ],

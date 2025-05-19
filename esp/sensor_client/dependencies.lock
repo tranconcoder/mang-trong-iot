@@ -1,10 +1,4 @@
 dependencies:
-  button:
-    dependencies: []
-    source:
-      path: /home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/button
-      type: local
-    version: '*'
   dht_simulation:
     dependencies: []
     source:
@@ -28,10 +22,9 @@ dependencies:
       type: local
     version: '*'
 direct_dependencies:
-- button
 - dht_simulation
 - example_init
 - ldr_simulation
-manifest_hash: 0e4fe272289c7da2156f048609dc5e524410d1650da18d07f514bb90d1da7c59
+manifest_hash: b09f902783ca688a95cbbcbe39d5a0a105ad3361fa60627fdd99d2b8f4ee8633
 target: esp32s3
 version: 2.0.0

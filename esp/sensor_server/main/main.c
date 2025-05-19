@@ -90,9 +90,10 @@ static uint8_t get_simulated_temperature(void) {
     // Generate a small random variation between -0.5 and +0.5 degrees
     uint8_t variation = (random() % 11) - 5;
     if (random() % 2 == 0) {
-        variation = -variation;
+        simulated_temperature += variation;
+    } else {
+        simulated_temperature -= variation;
     }
-    simulated_temperature += variation;
     
     // Keep the temperature within reasonable bounds
     if (simulated_temperature < 10) simulated_temperature = 10;
@@ -106,9 +107,10 @@ static uint8_t get_simulated_humidity(void) {
     // Generate a small random variation between -1.0 and +1.0 percent
     uint8_t variation = (random() % 21) - 10;
     if (random() % 2 == 0) {
-        variation = -variation;
+        simulated_humidity += variation;
+    } else {
+        simulated_humidity -= variation;
     }
-    simulated_humidity += variation;
     
     // Keep the humidity within reasonable bounds
     if (simulated_humidity < 30) simulated_humidity = 30;
@@ -122,9 +124,10 @@ static uint8_t get_simulated_light_level(void) {
     // Generate a random variation between -50 and +50 lux
     uint8_t variation = (random() % 101) - 50;
     if (random() % 2 == 0) {
-        variation = -variation;
+        simulated_light_level += variation;
+    } else {
+        simulated_light_level -= variation;
     }
-    simulated_light_level += variation;
     
     // Keep the light level within reasonable bounds
     if (simulated_light_level < 100) simulated_light_level = 100;

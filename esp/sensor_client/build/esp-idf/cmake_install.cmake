@@ -554,11 +554,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/button/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/dht_simulation/cmake_install.cmake")
 endif()
 
