@@ -1,0 +1,2 @@
+source /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/bootloader/gdbinit/symbols
+source /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/bootloader/gdbinit/connect

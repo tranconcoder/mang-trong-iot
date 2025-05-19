@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/CMakeFiles/bootloader
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/CMakeFiles/bootloader.rule
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/CMakeFiles/bootloader-complete.rule
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

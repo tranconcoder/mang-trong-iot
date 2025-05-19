@@ -1,0 +1,23 @@
+dependencies:
+  button:
+    dependencies: []
+    source:
+      path: /home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/button
+      type: local
+    version: '*'
+  example_init:
+    dependencies: []
+    source:
+      path: /home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/example_init
+      type: local
+    version: '*'
+  idf:
+    source:
+      type: idf
+    version: 5.4.1
+direct_dependencies:
+- button
+- example_init
+manifest_hash: 7fd13577b9c8d90dfddbbb2b2c1b633f9d718bd8c53a4a805e6d88b3e445741e
+target: esp32
+version: 2.0.0
