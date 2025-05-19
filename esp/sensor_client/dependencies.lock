@@ -5,6 +5,12 @@ dependencies:
       path: /home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/button
       type: local
     version: '*'
+  dht_simulation:
+    dependencies: []
+    source:
+      path: /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/main/dht_simulation
+      type: local
+    version: '*'
   example_init:
     dependencies: []
     source:
@@ -15,9 +21,17 @@ dependencies:
     source:
       type: idf
     version: 5.4.1
+  ldr_simulation:
+    dependencies: []
+    source:
+      path: /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/main/ldr_simulation
+      type: local
+    version: '*'
 direct_dependencies:
 - button
+- dht_simulation
 - example_init
-manifest_hash: 7fd13577b9c8d90dfddbbb2b2c1b633f9d718bd8c53a4a805e6d88b3e445741e
-target: esp32
+- ldr_simulation
+manifest_hash: 0e4fe272289c7da2156f048609dc5e524410d1650da18d07f514bb90d1da7c59
+target: esp32s3
 version: 2.0.0

@@ -1,0 +1,15 @@
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting................................
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+WARNING: Detected crystal freq 15.55MHz is quite different to normalized freq 26MHz. Unsupported crystal in use?
+Crystal is 26MHz
+MAC: 5c:01:3b:47:5b:20
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+
+A fatal error occurred: Unable to verify flash chip connection (No serial data received.).

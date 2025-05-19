@@ -1,0 +1,123 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 19 2025 14:55:12[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=298dch (170204) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=00039904 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=00039928 vaddr=3ffbdb60 size=055c8h ( 21960) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003eef8 vaddr=40080000 size=01120h (  4384) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=953e0h (611296) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d5408 vaddr=40081120 size=169d8h ( 92632) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     sensor_server[0m
+[0;32mI (447) app_init: App version:      79448e5-dirty[0m
+[0;32mI (452) app_init: Compile time:     May 19 2025 14:54:59[0m
+[0;32mI (457) app_init: ELF file SHA256:  34ac3268e...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAF18 len 000150E8 (84 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Initializing...[0m
+[0;32mI (563) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (573) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (583) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (583) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (593) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (673) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1083) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1093) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1093) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1093) main_task: Returned from app_main()[0m
+[0;32mI (287313) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (287793) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (287793) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (287793) EXAMPLE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (287803) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;33mW (287853) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (288253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (288253) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (288263) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (288363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (288373) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;32mI (288453) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (288463) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1101[0m
+[0;32mI (293303) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (293303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (293303) Sensor Data: ff 4f 00[0m
+[0;32mI (295323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (295323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (295323) Sensor Data: ff 76 00[0m
+[0;32mI (297323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (297323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (297323) Sensor Data: ff 4d 00[0m
+[0;32mI (299343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (299343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (299343) Sensor Data: ff 4f 00[0m
+[0;32mI (301313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (301313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (301313) Sensor Data: ff 76 00[0m
+[0;32mI (303313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (303313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (303313) Sensor Data: ff 4d 00[0m
+[0;32mI (305343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (305343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (305343) Sensor Data: ff 4f 00[0m
+[0;32mI (307333) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (307333) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (307333) Sensor Data: ff 76 00[0m
+[0;32mI (309313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (309313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (309313) Sensor Data: ff 4d 00[0m
+[0;32mI (311323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (311323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (311323) Sensor Data: ff 4f 00[0m
+[0;32mI (313333) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (313333) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (313333) Sensor Data: ff 76 00[0m
+[0;32mI (315343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (315343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (315343) Sensor Data: ff 4d 00[0m
+[0;32mI (317323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x

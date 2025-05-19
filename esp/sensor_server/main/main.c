@@ -534,6 +534,18 @@ static void example_ble_mesh_sensor_server_cb(esp_ble_mesh_sensor_server_cb_even
         event, param->ctx.addr, param->ctx.recv_dst, param->model->model_id);
 
     switch (event) {
+    case ESP_BLE_MESH_SENSOR_SERVER_STATE_CHANGE_EVT:
+        ESP_LOGI(TAG, "ESP_BLE_MESH_SENSOR_SERVER_STATE_CHANGE_EVT");
+        break;
+    
+    case ESP_BLE_MESH_SENSOR_SERVER_RECV_SET_MSG_EVT:
+        ESP_LOGI(TAG, "ESP_BLE_MESH_SENSOR_SERVER_RECV_SET_MSG_EVT");
+        break;
+
+    case ESP_BLE_MESH_SENSOR_SERVER_EVT_MAX:
+        ESP_LOGI(TAG, "ESP_BLE_MESH_SENSOR_SERVER_EVT_MAX");
+        break;
+
     case ESP_BLE_MESH_SENSOR_SERVER_RECV_GET_MSG_EVT:
         switch (param->ctx.recv_op) {
         case ESP_BLE_MESH_MODEL_OP_SENSOR_DESCRIPTOR_GET:
@@ -564,10 +576,6 @@ static void example_ble_mesh_sensor_server_cb(esp_ble_mesh_sensor_server_cb_even
             ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_SENSOR_SERIES_GET");
             example_ble_mesh_send_sensor_series_status(param);
             break;
-        
-        
-        
-        
         break;
     case ESP_BLE_MESH_SENSOR_SERVER_RECV_SET_MSG_EVT:
         switch (param->ctx.recv_op) {
@@ -593,6 +601,7 @@ static void example_ble_mesh_sensor_server_cb(esp_ble_mesh_sensor_server_cb_even
     default:
         ESP_LOGE(TAG, "Unknown Sensor Server event %d", event);
         break;
+        }
     }
 }
 

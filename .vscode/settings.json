@@ -2,6 +2,10 @@
   "files.associations": {
     "*.dbclient-js": "javascript",
     "ble_mesh_fast_prov_common.h": "c",
-    "ble_mesh_example_init.h": "c"
+    "ble_mesh_example_init.h": "c",
+    "cstdint": "c",
+    "dht_simulation.h": "c",
+    "board.h": "c",
+    "format": "c"
   }
 }

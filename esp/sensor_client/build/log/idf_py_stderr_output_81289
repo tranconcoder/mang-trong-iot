@@ -1,0 +1,25 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x42034c72: net_buf_simple_add_u8 at /home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/common/buf.c:63
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42034c6f: net_buf_simple_add_u8 at /home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/common/buf.c:62
+--- 0x4200bdb5: handle_send_sensor_data at /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/main/main.c:685
+--- 0x403810dd: vPortTaskWrapper at /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ae0: esp_restart_noos at /home/tvconss/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42034c72: net_buf_simple_add_u8 at /home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/common/buf.c:63
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42034c6f: net_buf_simple_add_u8 at /home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/common/buf.c:62
+--- 0x4200bdb5: handle_send_sensor_data at /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/main/main.c:685
+--- 0x403810dd: vPortTaskWrapper at /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ae0: esp_restart_noos at /home/tvconss/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

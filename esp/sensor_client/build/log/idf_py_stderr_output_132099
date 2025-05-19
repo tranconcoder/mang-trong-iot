@@ -1,0 +1,25 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4037d11e: esp_crosscore_isr at /home/tvconss/esp/esp-idf/components/esp_system/crosscore_int.c:73
+--- 0x4037b995: _xt_lowint1 at /home/tvconss/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x420089fe: uart_ll_get_txfifo_len at /home/tvconss/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:410
+---  (inlined by) uart_tx_char at /home/tvconss/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+--- 0x4200994b: uart_write at /home/tvconss/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:243
+--- 0x4200b0b6: esp_vfs_write at /home/tvconss/esp/esp-idf/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x4208ac52: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11 (discriminator 1)
+--- 0x4200aaa5: console_write at /home/tvconss/esp/esp-idf/components/esp_vfs_console/vfs_console.c:71
+--- 0x4200b0b6: esp_vfs_write at /home/tvconss/esp/esp-idf/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x4208a616: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+--- 0x42089bf9: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x42089c4a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+--- 0x4208a249: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+--- 0x4209359b: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+---  (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+--- 0x42092fa2: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+--- 0x4208a68d: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x420a1ae6: esp_log_writev at /home/tvconss/esp/esp-idf/components/log/src/os/log_write.c:34
+--- 0x40387191: esp_log_write at /home/tvconss/esp/esp-idf/components/log/src/os/log_write.c:44
+--- 0x4200bdf2: handle_send_sensor_data at /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/main/main.c:707 (discriminator 1)
+--- 0x403810dd: vPortTaskWrapper at /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0m

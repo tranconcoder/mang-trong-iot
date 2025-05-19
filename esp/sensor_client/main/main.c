@@ -10,11 +10,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <inttypes.h>
-#include "dht_simulation.h"
-#include "ldr_simulation.h"
-
+#include <freertos/FreeRTOS.h>
 #include "esp_log.h"
 #include "nvs_flash.h"
+#include "esp_random.h"
 
 #include "esp_ble_mesh_defs.h"
 #include "esp_ble_mesh_common_api.h"
@@ -26,8 +25,11 @@
 #include "ble_mesh_example_init.h"
 #include "board.h"
 
-#define TAG "EXAMPLE"
+// Include DHT and LDR simulation headers
+#include "dht_simulation.h"
+#include "ldr_simulation.h"
 
+#define TAG "EXAMPLE"
 
 #define CID_ESP             0x02E5
 
@@ -44,6 +46,65 @@
 
 #define COMP_DATA_1_OCTET(msg, offset)      (msg[offset])
 #define COMP_DATA_2_OCTET(msg, offset)      (msg[offset + 1] << 8 | msg[offset])
+
+// Sensor property IDs for DHT and LDR sensors based on BLE Mesh Sensor Model
+#define SENSOR_PROP_ID_PRESENT_AMBIENT_TEMPERATURE 0x004F // Temperature property ID 
+#define SENSOR_PROP_ID_PRESENT_AMBIENT_HUMIDITY    0x0076 // Humidity property ID
+#define SENSOR_PROP_ID_PRESENT_AMBIENT_LIGHT_LEVEL 0x004D // Light level property ID
+
+// DHT sensor simulation data
+static float simulated_temperature = 25.0; // Default 25°C
+static float simulated_humidity = 50.0;    // Default 50% RH
+
+// LDR sensor simulation data
+static uint16_t simulated_light_level = 500; // Default 500 lux
+
+// Global property ID for the sensor currently being sent
+// static uint16_t current_property_id; // Not used, let's remove it
+
+// Forward declaration of functions to get simulated data
+static float get_simulated_temperature(void);
+static float get_simulated_humidity(void);
+static uint16_t get_simulated_light_level(void);
+
+// Function to get simulated temperature with small random variations
+static float get_simulated_temperature(void) {
+    // Generate a small random variation between -0.5 and +0.5 degrees
+    float variation = ((float)esp_random() / UINT32_MAX) - 0.5;
+    simulated_temperature += variation;
+    
+    // Keep the temperature within reasonable bounds
+    if (simulated_temperature < 15.0) simulated_temperature = 15.0;
+    if (simulated_temperature > 35.0) simulated_temperature = 35.0;
+    
+    return simulated_temperature;
+}
+
+// Function to get simulated humidity with small random variations
+static float get_simulated_humidity(void) {
+    // Generate a small random variation between -1.0 and +1.0 percent
+    float variation = ((float)esp_random() / UINT32_MAX * 2.0) - 1.0;
+    simulated_humidity += variation;
+    
+    // Keep the humidity within reasonable bounds
+    if (simulated_humidity < 30.0) simulated_humidity = 30.0;
+    if (simulated_humidity > 90.0) simulated_humidity = 90.0;
+    
+    return simulated_humidity;
+}
+
+// Function to get simulated light level with variations
+static uint16_t get_simulated_light_level(void) {
+    // Generate a random variation between -50 and +50 lux
+    int variation = (esp_random() % 101) - 50;
+    simulated_light_level += variation;
+    
+    // Keep the light level within reasonable bounds
+    if (simulated_light_level < 100) simulated_light_level = 100;
+    if (simulated_light_level > 2000) simulated_light_level = 2000;
+    
+    return simulated_light_level;
+}
 
 static uint8_t  dev_uuid[ESP_BLE_MESH_OCTET16_LEN];
 static uint16_t server_address = ESP_BLE_MESH_ADDR_UNASSIGNED;
@@ -434,12 +495,14 @@ void example_ble_mesh_send_sensor_message(uint32_t opcode)
 
     example_ble_mesh_set_msg_common(&common, node, sensor_client.model, opcode);
     switch (opcode) {
-    case SEND_DHT_DATA:
-        get.dht_send.temperature = get_temperature();
-        get.dht_send.humidity = get_humidity();
+    case ESP_BLE_MESH_MODEL_OP_SENSOR_CADENCE_GET:
+        get.cadence_get.property_id = sensor_prop_id;
         break;
-    case SEND_LDR_DATA:
-        get.ldr_send.light_level = get_light_level();
+    case ESP_BLE_MESH_MODEL_OP_SENSOR_SETTINGS_GET:
+        get.settings_get.sensor_property_id = sensor_prop_id;
+        break;
+    case ESP_BLE_MESH_MODEL_OP_SENSOR_SERIES_GET:
+        get.series_get.property_id = sensor_prop_id;
         break;
     default:
         break;
@@ -666,6 +729,138 @@ static esp_err_t ble_mesh_init(void)
     return ESP_OK;
 }
 
+// Function to send sensor data using ESP BLE Mesh
+void send_sensor_data(uint16_t property_id, void *sensor_data, uint8_t data_len) {
+    esp_ble_mesh_client_common_param_t common = {0};
+    esp_ble_mesh_node_t *node = NULL;
+    esp_err_t err = ESP_OK;
+
+    // Allocate net_buf_simple for the sensor data
+    struct net_buf_simple *buf = malloc(sizeof(struct net_buf_simple) + 32); // Larger buffer for various sensor types
+    if (!buf) {
+        ESP_LOGE(TAG, "Allocation failed for net_buf_simple");
+        return;
+    }
+
+    // Initialize the net_buf_simple
+    uint8_t *buf_data = (uint8_t *)buf + sizeof(struct net_buf_simple);
+    memset(buf_data, 0, 32);
+    buf->data = buf_data;
+    buf->len = 0;
+    buf->size = 32;
+
+    // Format data based on property ID
+    switch (property_id) {
+        case SENSOR_PROP_ID_PRESENT_AMBIENT_TEMPERATURE: {
+            float temperature = *(float *)sensor_data;
+            // Convert temperature to raw format (may need adjustment based on BLE Mesh specifications)
+            int16_t raw_temp = (int16_t)(temperature * 100); // 0.01 degree Celsius resolution
+            net_buf_simple_add_le16(buf, raw_temp);
+            ESP_LOGI(TAG, "Sending temperature: %.2f°C", temperature);
+            break;
+        }
+        case SENSOR_PROP_ID_PRESENT_AMBIENT_HUMIDITY: {
+            float humidity = *(float *)sensor_data;
+            // Convert humidity to raw format (may need adjustment based on BLE Mesh specifications)
+            uint16_t raw_humidity = (uint16_t)(humidity * 100); // 0.01% resolution
+            net_buf_simple_add_le16(buf, raw_humidity);
+            ESP_LOGI(TAG, "Sending humidity: %.2f%%", humidity);
+            break;
+        }
+        case SENSOR_PROP_ID_PRESENT_AMBIENT_LIGHT_LEVEL: {
+            uint16_t light = *(uint16_t *)sensor_data;
+            // Light level in lux (may need adjustment based on BLE Mesh specifications)
+            net_buf_simple_add_le16(buf, light);
+            ESP_LOGI(TAG, "Sending light level: %u lux", light);
+            break;
+        }
+        default:
+            ESP_LOGE(TAG, "Unknown property ID: 0x%04x", property_id);
+            free(buf);
+            return;
+    }
+
+    // Find the node to send the data to
+    node = esp_ble_mesh_provisioner_get_node_with_addr(server_address);
+    if (node == NULL) {
+        ESP_LOGE(TAG, "Node 0x%04x does not exist", server_address);
+        free(buf);
+        return;
+    }
+
+    // We'll use the example_ble_mesh_send_sensor_message function that already exists
+    // This is a simpler approach that uses the existing API correctly
+    
+    // Since we can't directly send sensor readings from client to server 
+    // (as that's not how BLE Mesh sensor model is designed),
+    // we'll use a different approach - we'll trigger a sensor reading request
+    
+    common.opcode = ESP_BLE_MESH_MODEL_OP_SENSOR_GET;
+    common.model = sensor_client.model;
+    common.ctx.net_idx = prov_key.net_idx;
+    common.ctx.app_idx = prov_key.app_idx;
+    common.ctx.addr = server_address;
+    common.ctx.send_ttl = MSG_SEND_TTL;
+    common.msg_timeout = MSG_TIMEOUT;
+
+    // Use the existing esp_ble_mesh_sensor_client_get_state function
+    esp_ble_mesh_sensor_client_get_state_t get = {0};
+    get.sensor_get.op_en = true;
+    get.sensor_get.property_id = property_id;
+
+    ESP_LOGI(TAG, "Requesting sensor data for property ID 0x%04x", property_id);
+    
+    // Send the request
+    err = esp_ble_mesh_sensor_client_get_state(&common, &get);
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to send sensor get request for property ID 0x%04x: 0x%04x", property_id, err);
+    }
+
+    free(buf);
+}
+
+// Task to send simulated sensor data periodically
+void handle_send_sensor_data(void *pvParameters) {
+    // Wait until we have a valid server address
+    while (server_address == ESP_BLE_MESH_ADDR_UNASSIGNED) {
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+    }
+    
+    // Allow time for provisioning and configuration
+    vTaskDelay(5000 / portTICK_PERIOD_MS);
+    
+    ESP_LOGI(TAG, "Starting sensor data simulation...");
+    
+    uint8_t sensor_type = 0; // 0=temp, 1=humidity, 2=light
+    
+    while (1) {
+        // Rotate between different sensor types
+        switch (sensor_type) {
+            case 0: {
+                float temp = get_simulated_temperature();
+                send_sensor_data(SENSOR_PROP_ID_PRESENT_AMBIENT_TEMPERATURE, &temp, sizeof(temp));
+                break;
+            }
+            case 1: {
+                float humidity = get_simulated_humidity();
+                send_sensor_data(SENSOR_PROP_ID_PRESENT_AMBIENT_HUMIDITY, &humidity, sizeof(humidity));
+                break;
+            }
+            case 2: {
+                uint16_t light = get_simulated_light_level();
+                send_sensor_data(SENSOR_PROP_ID_PRESENT_AMBIENT_LIGHT_LEVEL, &light, sizeof(light));
+                break;
+            }
+        }
+        
+        // Move to next sensor type
+        sensor_type = (sensor_type + 1) % 3;
+        
+        // Wait before sending next sensor data
+        vTaskDelay(2000 / portTICK_PERIOD_MS);
+    }
+}
+
 void app_main(void)
 {
     esp_err_t err = ESP_OK;
@@ -694,4 +889,6 @@ void app_main(void)
     if (err != ESP_OK) {
         ESP_LOGE(TAG, "Bluetooth mesh init failed (err %d)", err);
     }
+
+    xTaskCreate(handle_send_sensor_data, "handle_send_sen", 4096, NULL, 5, NULL);
 }

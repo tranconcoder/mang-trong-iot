@@ -1,4 +1,8 @@
 dependencies:
+  dht_simulation:
+    path: './dht_simulation/'
+  ldr_simulation:
+    path: './ldr_simulation/'
   button:
     path: ${IDF_PATH}/examples/bluetooth/esp_ble_mesh/common_components/button
   example_init:
