@@ -1,0 +1,2071 @@
+ �������ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 19 2025 14:55:12[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29d4ch (171340) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=00039d74 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=00039d98 vaddr=3ffbdb60 size=055e8h ( 21992) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003f388 vaddr=40080000 size=00c90h (  3216) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=95800h (612352) map[0m
+[0;32mI (377) esp_image: segment 5: paddr=000d5828 vaddr=40080c90 size=16e68h ( 93800) load[0m
+[0;32mI (425) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (425) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (444) cpu_start: Pro cpu start user code[0m
+[0;32mI (444) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (444) app_init: Application information:[0m
+[0;32mI (444) app_init: Project name:     sensor_server[0m
+[0;32mI (448) app_init: App version:      79448e5-dirty[0m
+[0;32mI (453) app_init: Compile time:     May 19 2025 17:44:22[0m
+[0;32mI (458) app_init: ELF file SHA256:  009d20962...[0m
+[0;32mI (462) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (466) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (470) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (474) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (478) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (484) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (489) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFCAF38 len 000150C8 (84 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (510) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (522) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (541) coexist: coex firmware version: e727207[0m
+[0;32mI (545) main_task: Started on CPU0[0m
+[0;32mI (555) main_task: Calling app_main()[0m
+[0;32mI (555) EXAMPLE: Initializing...[0m
+[0;32mI (565) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (565) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (565) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (575) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (585) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (585) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (595) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (675) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1075) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1085) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1085) EXAMPLE: Sensor data buffers initialized with:[0m
+[0;32mI (1085) EXAMPLE:   Temperature: 25.00°C (raw: 0x32)[0m
+[0;32mI (1095) EXAMPLE:   Humidity: 50.00% (raw: 0x32)[0m
+[0;32mI (1095) EXAMPLE:   Light level: 500 lux[0m
+[0;32mI (1095) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1105) main_task: Returned from app_main()[0m
+[0;32mI (1115) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (3975) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (3975) EXAMPLE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (3975) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (4215) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-ADV[0m
+[0;32mI (4745) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (4755) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (4755) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (4915) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (4925) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;32mI (4995) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (4995) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1101[0m
+[0;32mI (6105) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (6105) EXAMPLE: ====================================================================[0m
+[0;32mI (6105) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (6105) EXAMPLE: ====================================================================[0m
+[0;32mI (6115) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (6125) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (6125) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (6135) EXAMPLE: ====================================================================[0m
+[0;32mI (8795) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (8795) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (8795) Sensor Data: c0 0a 32 60 0b 32[0m
+[0;32mI (8945) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (8945) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (8945) Sensor Data: ff 4f 00[0m
+[0;32mI (10885) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (10885) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (10885) Sensor Data: ff 76 00[0m
+[0;32mI (11145) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (11145) EXAMPLE: ====================================================================[0m
+[0;32mI (11145) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (11145) EXAMPLE: ====================================================================[0m
+[0;32mI (11155) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (11165) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (11165) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (11175) EXAMPLE: ====================================================================[0m
+[0;32mI (12885) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (12885) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (12885) Sensor Data: ff 4d 00[0m
+[0;32mI (14885) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (14885) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (14885) Sensor Data: ff 4f 00[0m
+[0;32mI (16185) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (16185) EXAMPLE: ====================================================================[0m
+[0;32mI (16185) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (16185) EXAMPLE: ====================================================================[0m
+[0;32mI (16195) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (16205) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (16205) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (16215) EXAMPLE: ====================================================================[0m
+[0;32mI (16905) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (16905) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (16905) Sensor Data: ff 76 00[0m
+[0;32mI (18885) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (18885) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (18885) Sensor Data: ff 4d 00[0m
+[0;32mI (20905) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (20905) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (20905) Sensor Data: ff 4f 00[0m
+[0;32mI (21225) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (21225) EXAMPLE: ====================================================================[0m
+[0;32mI (21225) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (21225) EXAMPLE: ====================================================================[0m
+[0;32mI (21235) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (21245) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (21245) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (21255) EXAMPLE: ====================================================================[0m
+[0;32mI (22885) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (22885) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (22885) Sensor Data: ff 76 00[0m
+[0;32mI (24945) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (24945) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (24945) Sensor Data: ff 4d 00[0m
+[0;32mI (26265) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (26265) EXAMPLE: ====================================================================[0m
+[0;32mI (26265) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (26265) EXAMPLE: ====================================================================[0m
+[0;32mI (26275) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (26285) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (26285) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (26295) EXAMPLE: ====================================================================[0m
+[0;32mI (26885) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (26885) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (26885) Sensor Data: ff 4f 00[0m
+[0;32mI (28875) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (28875) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (28875) Sensor Data: ff 76 00[0m
+[0;32mI (31305) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (31305) EXAMPLE: ====================================================================[0m
+[0;32mI (31305) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (31305) EXAMPLE: ====================================================================[0m
+[0;32mI (31315) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (31325) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (31325) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (31335) EXAMPLE: ====================================================================[0m
+[0;32mI (32925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (32925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (32925) Sensor Data: c0 0a 32 60 0b 32[0m
+[0;32mI (34915) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (34925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (34925) Sensor Data: ff 76 00[0m
+[0;32mI (36345) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (36345) EXAMPLE: ====================================================================[0m
+[0;32mI (36345) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (36345) EXAMPLE: ====================================================================[0m
+[0;32mI (36355) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (36365) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (36365) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (36375) EXAMPLE: ====================================================================[0m
+[0;32mI (36925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (36925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (36925) Sensor Data: ff 4d 00[0m
+[0;32mI (38965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (38965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (38965) Sensor Data: ff 4f 00[0m
+[0;32mI (40925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (40925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (40925) Sensor Data: ff 76 00[0m
+[0;32mI (41385) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (41385) EXAMPLE: ====================================================================[0m
+[0;32mI (41385) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (41385) EXAMPLE: ====================================================================[0m
+[0;32mI (41395) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (41405) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (41405) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (41415) EXAMPLE: ====================================================================[0m
+[0;32mI (42925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (42925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (42925) Sensor Data: ff 4d 00[0m
+[0;32mI (44915) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (44915) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (44915) Sensor Data: ff 4f 00[0m
+[0;32mI (46425) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (46425) EXAMPLE: ====================================================================[0m
+[0;32mI (46425) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (46425) EXAMPLE: ====================================================================[0m
+[0;32mI (46435) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (46445) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (46445) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (46455) EXAMPLE: ====================================================================[0m
+[0;32mI (46925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (46925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (46925) Sensor Data: ff 76 00[0m
+[0;32mI (48925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (48925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (48925) Sensor Data: ff 4d 00[0m
+[0;32mI (50955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (50965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (50965) Sensor Data: ff 4f 00[0m
+[0;32mI (51465) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (51465) EXAMPLE: ====================================================================[0m
+[0;32mI (51465) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (51465) EXAMPLE: ====================================================================[0m
+[0;32mI (51475) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (51485) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (51485) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (51495) EXAMPLE: ====================================================================[0m
+[0;32mI (52925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (52925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (52925) Sensor Data: ff 76 00[0m
+[0;32mI (54945) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (54945) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (54945) Sensor Data: ff 4d 00[0m
+[0;32mI (56505) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (56505) EXAMPLE: ====================================================================[0m
+[0;32mI (56505) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (56505) EXAMPLE: ====================================================================[0m
+[0;32mI (56515) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (56525) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (56525) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (56535) EXAMPLE: ====================================================================[0m
+[0;32mI (56925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (56925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (56925) Sensor Data: ff 4f 00[0m
+[0;32mI (58925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (58925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (58925) Sensor Data: ff 76 00[0m
+[0;32mI (60925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (60925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (60925) Sensor Data: ff 4d 00[0m
+[0;32mI (61545) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (61545) EXAMPLE: ====================================================================[0m
+[0;32mI (61545) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (61545) EXAMPLE: ====================================================================[0m
+[0;32mI (61555) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (61565) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (61565) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (61575) EXAMPLE: ====================================================================[0m
+[0;32mI (62915) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (62915) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (62915) Sensor Data: ff 4f 00[0m
+[0;32mI (64965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (64965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (64965) Sensor Data: ff 76 00[0m
+[0;32mI (66585) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (66585) EXAMPLE: ====================================================================[0m
+[0;32mI (66585) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (66585) EXAMPLE: ====================================================================[0m
+[0;32mI (66595) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (66605) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (66605) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (66615) EXAMPLE: ====================================================================[0m
+[0;32mI (66925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (66925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (66925) Sensor Data: ff 4d 00[0m
+[0;32mI (68925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (68925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (68925) Sensor Data: ff 4f 00[0m
+[0;32mI (70925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (70925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (70925) Sensor Data: ff 76 00[0m
+[0;32mI (71625) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (71625) EXAMPLE: ====================================================================[0m
+[0;32mI (71625) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (71625) EXAMPLE: ====================================================================[0m
+[0;32mI (71635) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (71645) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (71645) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (71655) EXAMPLE: ====================================================================[0m
+[0;32mI (72915) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (72925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (72925) Sensor Data: ff 4d 00[0m
+[0;32mI (74925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (74925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (74925) Sensor Data: ff 4f 00[0m
+[0;32mI (76665) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (76665) EXAMPLE: ====================================================================[0m
+[0;32mI (76665) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (76665) EXAMPLE: ====================================================================[0m
+[0;32mI (76675) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (76685) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (76685) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (76695) EXAMPLE: ====================================================================[0m
+[0;32mI (76925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (76925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (76925) Sensor Data: ff 76 00[0m
+[0;32mI (78965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (78965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (78965) Sensor Data: ff 4d 00[0m
+[0;32mI (80925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (80925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (80925) Sensor Data: ff 4f 00[0m
+[0;32mI (81705) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (81705) EXAMPLE: ====================================================================[0m
+[0;32mI (81705) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (81705) EXAMPLE: ====================================================================[0m
+[0;32mI (81715) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (81725) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (81725) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (81735) EXAMPLE: ====================================================================[0m
+[0;32mI (82925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (82925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (82925) Sensor Data: ff 76 00[0m
+[0;32mI (84925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (84925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (84925) Sensor Data: ff 4d 00[0m
+[0;32mI (86745) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (86745) EXAMPLE: ====================================================================[0m
+[0;32mI (86745) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (86745) EXAMPLE: ====================================================================[0m
+[0;32mI (86755) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (86765) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (86765) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (86775) EXAMPLE: ====================================================================[0m
+[0;32mI (86925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (86925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (86925) Sensor Data: ff 4f 00[0m
+[0;32mI (88925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (88925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (88925) Sensor Data: ff 76 00[0m
+[0;32mI (90925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (90925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (90925) Sensor Data: ff 4d 00[0m
+[0;32mI (91785) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (91785) EXAMPLE: ====================================================================[0m
+[0;32mI (91785) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (91785) EXAMPLE: ====================================================================[0m
+[0;32mI (91795) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (91805) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (91805) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (91815) EXAMPLE: ====================================================================[0m
+[0;32mI (92925) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (92925) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (92925) Sensor Data: ff 4f 00[0m
+[0;32mI (96825) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (96825) EXAMPLE: ====================================================================[0m
+[0;32mI (96825) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (96825) EXAMPLE: ====================================================================[0m
+[0;32mI (96835) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (96845) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (96845) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (96855) EXAMPLE: ====================================================================[0m
+[0;32mI (96945) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (96945) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (96945) Sensor Data: c0 0a 32 60 0b 32[0m
+[0;32mI (98965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (98965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (98965) Sensor Data: ff 4f 00[0m
+[0;32mI (100965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (100965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (100965) Sensor Data: ff 76 00[0m
+[0;32mI (101865) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (101865) EXAMPLE: ====================================================================[0m
+[0;32mI (101865) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (101865) EXAMPLE: ====================================================================[0m
+[0;32mI (101875) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (101885) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (101885) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (101895) EXAMPLE: ====================================================================[0m
+[0;32mI (102965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (102965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (102965) Sensor Data: ff 4d 00[0m
+[0;32mI (104965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (104965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (104965) Sensor Data: ff 4f 00[0m
+[0;32mI (106905) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (106905) EXAMPLE: ====================================================================[0m
+[0;32mI (106905) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (106905) EXAMPLE: ====================================================================[0m
+[0;32mI (106915) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (106925) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (106925) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (106935) EXAMPLE: ====================================================================[0m
+[0;32mI (106965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (106965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (106965) Sensor Data: ff 76 00[0m
+[0;32mI (108965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (108965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (108965) Sensor Data: ff 4d 00[0m
+[0;32mI (110965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (110965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (110965) Sensor Data: ff 4f 00[0m
+[0;32mI (111945) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (111945) EXAMPLE: ====================================================================[0m
+[0;32mI (111945) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (111945) EXAMPLE: ====================================================================[0m
+[0;32mI (111955) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (111965) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (111965) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (111975) EXAMPLE: ====================================================================[0m
+[0;32mI (112965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (112965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (112965) Sensor Data: ff 76 00[0m
+[0;32mI (114955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (114955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (114955) Sensor Data: ff 4d 00[0m
+[0;32mI (116965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (116965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (116965) Sensor Data: ff 4f 00[0m
+[0;32mI (116985) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (116985) EXAMPLE: ====================================================================[0m
+[0;32mI (116985) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (116985) EXAMPLE: ====================================================================[0m
+[0;32mI (116995) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (117005) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (117005) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (117015) EXAMPLE: ====================================================================[0m
+[0;32mI (118965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (118965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (118965) Sensor Data: ff 76 00[0m
+[0;32mI (120965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (120965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (120965) Sensor Data: ff 4d 00[0m
+[0;32mI (122025) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (122025) EXAMPLE: ====================================================================[0m
+[0;32mI (122025) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (122025) EXAMPLE: ====================================================================[0m
+[0;32mI (122035) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (122045) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (122045) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (122055) EXAMPLE: ====================================================================[0m
+[0;32mI (123025) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (123025) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (123025) Sensor Data: ff 4f 00[0m
+[0;32mI (124965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (124965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (124965) Sensor Data: ff 76 00[0m
+[0;32mI (126965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (126965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (126965) Sensor Data: ff 4d 00[0m
+[0;32mI (127065) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (127065) EXAMPLE: ====================================================================[0m
+[0;32mI (127065) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (127075) EXAMPLE: ====================================================================[0m
+[0;32mI (127075) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (127085) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (127095) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (127095) EXAMPLE: ====================================================================[0m
+[0;32mI (128965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (128965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (128965) Sensor Data: ff 4f 00[0m
+[0;32mI (130965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (130965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (130965) Sensor Data: ff 76 00[0m
+[0;32mI (132105) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (132105) EXAMPLE: ====================================================================[0m
+[0;32mI (132105) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (132105) EXAMPLE: ====================================================================[0m
+[0;32mI (132115) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (132125) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (132125) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (132135) EXAMPLE: ====================================================================[0m
+[0;32mI (132965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (132965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (132965) Sensor Data: ff 4d 00[0m
+[0;32mI (134965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (134965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (134965) Sensor Data: ff 4f 00[0m
+[0;32mI (136965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (136965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (136965) Sensor Data: ff 76 00[0m
+[0;32mI (137145) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (137145) EXAMPLE: ====================================================================[0m
+[0;32mI (137145) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (137145) EXAMPLE: ====================================================================[0m
+[0;32mI (137155) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (137165) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (137165) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (137175) EXAMPLE: ====================================================================[0m
+[0;32mI (138965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (138965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (138965) Sensor Data: ff 4d 00[0m
+[0;32mI (140965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (140965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (140965) Sensor Data: ff 4f 00[0m
+[0;32mI (142185) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (142185) EXAMPLE: ====================================================================[0m
+[0;32mI (142185) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (142185) EXAMPLE: ====================================================================[0m
+[0;32mI (142195) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (142205) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (142205) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (142215) EXAMPLE: ====================================================================[0m
+[0;32mI (142965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (142965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (142965) Sensor Data: ff 76 00[0m
+[0;32mI (144965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (144965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (144965) Sensor Data: ff 4d 00[0m
+[0;32mI (146955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (146955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (146955) Sensor Data: ff 4f 00[0m
+[0;32mI (147225) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (147225) EXAMPLE: ====================================================================[0m
+[0;32mI (147225) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (147225) EXAMPLE: ====================================================================[0m
+[0;32mI (147235) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (147245) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (147245) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (147255) EXAMPLE: ====================================================================[0m
+[0;32mI (148965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (148965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (148965) Sensor Data: ff 76 00[0m
+[0;32mI (150965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (150965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (150965) Sensor Data: ff 4d 00[0m
+[0;32mI (152265) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (152265) EXAMPLE: ====================================================================[0m
+[0;32mI (152265) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (152265) EXAMPLE: ====================================================================[0m
+[0;32mI (152275) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (152285) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (152285) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (152295) EXAMPLE: ====================================================================[0m
+[0;32mI (152965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (152965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (152965) Sensor Data: ff 4f 00[0m
+[0;32mI (154955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (154955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (154955) Sensor Data: ff 76 00[0m
+[0;32mI (156955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (156955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (156965) Sensor Data: ff 4d 00[0m
+[0;32mI (157305) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (157305) EXAMPLE: ====================================================================[0m
+[0;32mI (157305) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (157305) EXAMPLE: ====================================================================[0m
+[0;32mI (157315) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (157325) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (157325) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (157335) EXAMPLE: ====================================================================[0m
+[0;32mI (158965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (158965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (158965) Sensor Data: ff 4f 00[0m
+[0;32mI (160965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (160965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (160965) Sensor Data: ff 76 00[0m
+[0;32mI (162345) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (162345) EXAMPLE: ====================================================================[0m
+[0;32mI (162345) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (162345) EXAMPLE: ====================================================================[0m
+[0;32mI (162355) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (162365) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (162365) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (162375) EXAMPLE: ====================================================================[0m
+[0;32mI (162965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (162965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (162965) Sensor Data: ff 4d 00[0m
+[0;32mI (164965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (164965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (164965) Sensor Data: ff 4f 00[0m
+[0;32mI (166965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (166965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (166965) Sensor Data: ff 76 00[0m
+[0;32mI (167385) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (167385) EXAMPLE: ====================================================================[0m
+[0;32mI (167385) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (167385) EXAMPLE: ====================================================================[0m
+[0;32mI (167395) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (167405) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (167405) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (167415) EXAMPLE: ====================================================================[0m
+[0;32mI (168955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (168965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (168965) Sensor Data: ff 4d 00[0m
+[0;32mI (170955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (170955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (170955) Sensor Data: ff 4f 00[0m
+[0;32mI (172425) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (172425) EXAMPLE: ====================================================================[0m
+[0;32mI (172425) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (172425) EXAMPLE: ====================================================================[0m
+[0;32mI (172435) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (172445) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (172445) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (172455) EXAMPLE: ====================================================================[0m
+[0;32mI (172965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (172965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (172965) Sensor Data: ff 76 00[0m
+[0;32mI (174965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (174965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (174965) Sensor Data: ff 4d 00[0m
+[0;32mI (176965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (176965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (176965) Sensor Data: ff 4f 00[0m
+[0;32mI (177465) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (177465) EXAMPLE: ====================================================================[0m
+[0;32mI (177465) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (177465) EXAMPLE: ====================================================================[0m
+[0;32mI (177475) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (177485) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (177485) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (177495) EXAMPLE: ====================================================================[0m
+[0;32mI (178955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (178965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (178965) Sensor Data: ff 76 00[0m
+[0;32mI (181005) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (181005) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (181005) Sensor Data: ff 4d 00[0m
+[0;32mI (182505) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (182505) EXAMPLE: ====================================================================[0m
+[0;32mI (182505) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (182505) EXAMPLE: ====================================================================[0m
+[0;32mI (182515) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (182525) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (182525) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (182535) EXAMPLE: ====================================================================[0m
+[0;32mI (182965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (182965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (182965) Sensor Data: ff 4f 00[0m
+[0;32mI (184965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (184965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (184965) Sensor Data: ff 76 00[0m
+[0;32mI (186965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (186965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (186965) Sensor Data: ff 4d 00[0m
+[0;32mI (187545) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (187545) EXAMPLE: ====================================================================[0m
+[0;32mI (187545) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (187545) EXAMPLE: ====================================================================[0m
+[0;32mI (187555) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (187565) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (187565) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (187575) EXAMPLE: ====================================================================[0m
+[0;32mI (188965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (188965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (188965) Sensor Data: ff 4f 00[0m
+[0;32mI (190965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (190965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (190965) Sensor Data: ff 76 00[0m
+[0;32mI (192585) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (192585) EXAMPLE: ====================================================================[0m
+[0;32mI (192585) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (192585) EXAMPLE: ====================================================================[0m
+[0;32mI (192595) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (192605) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (192605) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (192615) EXAMPLE: ====================================================================[0m
+[0;32mI (192965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (192965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (192965) Sensor Data: ff 4d 00[0m
+[0;32mI (194965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (194965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (194965) Sensor Data: ff 4f 00[0m
+[0;32mI (196965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (196965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (196965) Sensor Data: ff 76 00[0m
+[0;32mI (197625) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (197625) EXAMPLE: ====================================================================[0m
+[0;32mI (197625) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (197625) EXAMPLE: ====================================================================[0m
+[0;32mI (197635) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (197645) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (197645) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (197655) EXAMPLE: ====================================================================[0m
+[0;32mI (198965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (198965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (198965) Sensor Data: ff 4d 00[0m
+[0;32mI (200965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (200965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (200965) Sensor Data: ff 4f 00[0m
+[0;32mI (202665) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (202665) EXAMPLE: ====================================================================[0m
+[0;32mI (202665) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (202665) EXAMPLE: ====================================================================[0m
+[0;32mI (202675) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (202685) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (202685) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (202695) EXAMPLE: ====================================================================[0m
+[0;32mI (202965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (202965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (202965) Sensor Data: ff 76 00[0m
+[0;32mI (204955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (204955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (204965) Sensor Data: ff 4d 00[0m
+[0;32mI (206965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (206965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (206965) Sensor Data: ff 4f 00[0m
+[0;32mI (207705) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (207705) EXAMPLE: ====================================================================[0m
+[0;32mI (207705) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (207705) EXAMPLE: ====================================================================[0m
+[0;32mI (207715) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (207725) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (207725) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (207735) EXAMPLE: ====================================================================[0m
+[0;32mI (208965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (208965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (208965) Sensor Data: ff 76 00[0m
+[0;32mI (210965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (210965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (210965) Sensor Data: ff 4d 00[0m
+[0;32mI (212745) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (212745) EXAMPLE: ====================================================================[0m
+[0;32mI (212745) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (212745) EXAMPLE: ====================================================================[0m
+[0;32mI (212755) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (212765) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (212765) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (212775) EXAMPLE: ====================================================================[0m
+[0;32mI (212965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (212965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (212965) Sensor Data: ff 4f 00[0m
+[0;32mI (214965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (214965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (214965) Sensor Data: ff 76 00[0m
+[0;32mI (216965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (216965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (216965) Sensor Data: ff 4d 00[0m
+[0;32mI (217785) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (217785) EXAMPLE: ====================================================================[0m
+[0;32mI (217785) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (217785) EXAMPLE: ====================================================================[0m
+[0;32mI (217795) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (217805) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (217805) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (217815) EXAMPLE: ====================================================================[0m
+[0;32mI (218965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (218965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (218965) Sensor Data: ff 4f 00[0m
+[0;32mI (220965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (220965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (220965) Sensor Data: ff 76 00[0m
+[0;32mI (222825) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (222825) EXAMPLE: ====================================================================[0m
+[0;32mI (222825) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (222825) EXAMPLE: ====================================================================[0m
+[0;32mI (222835) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (222845) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (222845) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (222855) EXAMPLE: ====================================================================[0m
+[0;32mI (222965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (222965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (222965) Sensor Data: ff 4d 00[0m
+[0;32mI (224955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (224955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (224955) Sensor Data: ff 4f 00[0m
+[0;32mI (226965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (226965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (226965) Sensor Data: ff 76 00[0m
+[0;32mI (227865) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (227865) EXAMPLE: ====================================================================[0m
+[0;32mI (227865) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (227865) EXAMPLE: ====================================================================[0m
+[0;32mI (227875) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (227885) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (227885) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (227895) EXAMPLE: ====================================================================[0m
+[0;32mI (228965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (228965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (228965) Sensor Data: ff 4d 00[0m
+[0;32mI (230955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (230955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (230955) Sensor Data: ff 4f 00[0m
+[0;32mI (232905) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (232905) EXAMPLE: ====================================================================[0m
+[0;32mI (232905) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (232905) EXAMPLE: ====================================================================[0m
+[0;32mI (232915) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (232925) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (232925) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (232935) EXAMPLE: ====================================================================[0m
+[0;32mI (232965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (232965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (232965) Sensor Data: ff 76 00[0m
+[0;32mI (234965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (234965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (234965) Sensor Data: ff 4d 00[0m
+[0;32mI (236955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (236955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (236955) Sensor Data: ff 4f 00[0m
+[0;32mI (237945) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (237945) EXAMPLE: ====================================================================[0m
+[0;32mI (237945) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (237945) EXAMPLE: ====================================================================[0m
+[0;32mI (237955) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (237965) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (237965) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (237975) EXAMPLE: ====================================================================[0m
+[0;32mI (238965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (238965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (238965) Sensor Data: ff 76 00[0m
+[0;32mI (240965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (240965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (240965) Sensor Data: ff 4d 00[0m
+[0;32mI (242965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (242965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (242965) Sensor Data: ff 4f 00[0m
+[0;32mI (242985) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (242985) EXAMPLE: ====================================================================[0m
+[0;32mI (242985) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (242985) EXAMPLE: ====================================================================[0m
+[0;32mI (242995) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (243005) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (243005) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (243015) EXAMPLE: ====================================================================[0m
+[0;32mI (244965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (244965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (244965) Sensor Data: ff 76 00[0m
+[0;32mI (246965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (246965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (246965) Sensor Data: ff 4d 00[0m
+[0;32mI (248025) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (248025) EXAMPLE: ====================================================================[0m
+[0;32mI (248025) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (248025) EXAMPLE: ====================================================================[0m
+[0;32mI (248035) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (248045) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (248045) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (248055) EXAMPLE: ====================================================================[0m
+[0;32mI (248965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (248965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (248965) Sensor Data: ff 4f 00[0m
+[0;32mI (250945) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (250955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (250955) Sensor Data: ff 76 00[0m
+[0;32mI (252945) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (252945) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (252945) Sensor Data: ff 4d 00[0m
+[0;32mI (253065) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (253065) EXAMPLE: ====================================================================[0m
+[0;32mI (253065) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (253065) EXAMPLE: ====================================================================[0m
+[0;32mI (253075) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (253085) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (253085) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (253095) EXAMPLE: ====================================================================[0m
+[0;32mI (254965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (254965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (254965) Sensor Data: ff 4f 00[0m
+[0;32mI (256965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (256965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (256965) Sensor Data: ff 76 00[0m
+[0;32mI (258105) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (258105) EXAMPLE: ====================================================================[0m
+[0;32mI (258105) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (258105) EXAMPLE: ====================================================================[0m
+[0;32mI (258115) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (258125) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (258125) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (258135) EXAMPLE: ====================================================================[0m
+[0;32mI (258965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (258965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (258965) Sensor Data: ff 4d 00[0m
+[0;32mI (260965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (260965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (260965) Sensor Data: ff 4f 00[0m
+[0;32mI (262965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (262965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (262965) Sensor Data: ff 76 00[0m
+[0;32mI (263145) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (263145) EXAMPLE: ====================================================================[0m
+[0;32mI (263145) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (263145) EXAMPLE: ====================================================================[0m
+[0;32mI (263155) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (263165) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (263165) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (263175) EXAMPLE: ====================================================================[0m
+[0;32mI (264965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (264965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (264965) Sensor Data: ff 4d 00[0m
+[0;32mI (266965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (266965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (266965) Sensor Data: ff 4f 00[0m
+[0;32mI (268185) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (268185) EXAMPLE: ====================================================================[0m
+[0;32mI (268185) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (268185) EXAMPLE: ====================================================================[0m
+[0;32mI (268195) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (268205) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (268205) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (268215) EXAMPLE: ====================================================================[0m
+[0;32mI (268965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (268965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (268965) Sensor Data: ff 76 00[0m
+[0;32mI (270955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (270955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (270955) Sensor Data: ff 4d 00[0m
+[0;32mI (272965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (272965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (272965) Sensor Data: ff 4f 00[0m
+[0;32mI (273225) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (273225) EXAMPLE: ====================================================================[0m
+[0;32mI (273225) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (273225) EXAMPLE: ====================================================================[0m
+[0;32mI (273235) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (273245) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (273245) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (273255) EXAMPLE: ====================================================================[0m
+[0;32mI (274955) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (274955) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (274955) Sensor Data: ff 76 00[0m
+[0;32mI (276965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (276965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (276965) Sensor Data: ff 4d 00[0m
+[0;32mI (278265) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (278265) EXAMPLE: ====================================================================[0m
+[0;32mI (278265) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (278265) EXAMPLE: ====================================================================[0m
+[0;32mI (278275) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (278285) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (278285) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (278295) EXAMPLE: ====================================================================[0m
+[0;32mI (278965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (278965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (278965) Sensor Data: ff 4f 00[0m
+[0;32mI (280965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (280965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (280965) Sensor Data: ff 76 00[0m
+[0;32mI (282985) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (282985) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (282985) Sensor Data: ff 4d 00[0m
+[0;32mI (283305) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (283305) EXAMPLE: ====================================================================[0m
+[0;32mI (283305) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (283305) EXAMPLE: ====================================================================[0m
+[0;32mI (283315) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (283325) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (283325) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (283335) EXAMPLE: ====================================================================[0m
+[0;32mI (284965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (284965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (284965) Sensor Data: ff 4f 00[0m
+[0;32mI (286965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (286965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (286965) Sensor Data: ff 76 00[0m
+[0;32mI (288345) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (288345) EXAMPLE: ====================================================================[0m
+[0;32mI (288345) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (288345) EXAMPLE: ====================================================================[0m
+[0;32mI (288355) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (288365) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (288365) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (288375) EXAMPLE: ====================================================================[0m
+[0;32mI (288965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (288965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (288965) Sensor Data: ff 4d 00[0m
+[0;32mI (290965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (290965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (290965) Sensor Data: ff 4f 00[0m
+[0;32mI (292965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (292965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (292965) Sensor Data: ff 76 00[0m
+[0;32mI (293385) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (293385) EXAMPLE: ====================================================================[0m
+[0;32mI (293385) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (293385) EXAMPLE: ====================================================================[0m
+[0;32mI (293395) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (293405) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (293405) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (293415) EXAMPLE: ====================================================================[0m
+[0;32mI (294965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (294965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (294965) Sensor Data: ff 4d 00[0m
+[0;32mI (296965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (296965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (296965) Sensor Data: ff 4f 00[0m
+[0;32mI (298425) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (298425) EXAMPLE: ====================================================================[0m
+[0;32mI (298425) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (298425) EXAMPLE: ====================================================================[0m
+[0;32mI (298435) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (298445) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (298445) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (298455) EXAMPLE: ====================================================================[0m
+[0;32mI (298965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (298965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (298965) Sensor Data: ff 76 00[0m
+[0;32mI (300965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (300965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (300965) Sensor Data: ff 4d 00[0m
+[0;32mI (302965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (302965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (302965) Sensor Data: ff 4f 00[0m
+[0;32mI (303465) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (303465) EXAMPLE: ====================================================================[0m
+[0;32mI (303465) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (303465) EXAMPLE: ====================================================================[0m
+[0;32mI (303475) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (303485) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (303485) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (303495) EXAMPLE: ====================================================================[0m
+[0;32mI (304965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (304965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (304965) Sensor Data: ff 76 00[0m
+[0;32mI (306965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (306965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (306965) Sensor Data: ff 4d 00[0m
+[0;32mI (308505) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (308505) EXAMPLE: ====================================================================[0m
+[0;32mI (308505) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (308505) EXAMPLE: ====================================================================[0m
+[0;32mI (308515) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (308525) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (308525) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (308535) EXAMPLE: ====================================================================[0m
+[0;32mI (308965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (308965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (308965) Sensor Data: ff 4f 00[0m
+[0;32mI (310965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (310965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (310965) Sensor Data: ff 76 00[0m
+[0;32mI (312965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (312965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (312965) Sensor Data: ff 4d 00[0m
+[0;32mI (313545) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (313545) EXAMPLE: ====================================================================[0m
+[0;32mI (313545) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (313545) EXAMPLE: ====================================================================[0m
+[0;32mI (313555) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (313565) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (313565) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (313575) EXAMPLE: ====================================================================[0m
+[0;32mI (314945) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (314945) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (314955) Sensor Data: ff 4f 00[0m
+[0;32mI (316965) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (316965) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (316965) Sensor Data: ff 76 00[0m
+[0;32mI (318585) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (318585) EXAMPLE: ====================================================================[0m
+[0;32mI (318585) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (318585) EXAMPLE: ====================================================================[0m
+[0;32mI (318595) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (318605) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (318605) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (318615) EXAMPLE: ====================================================================[0m
+[0;32mI (323625) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (323625) EXAMPLE: ====================================================================[0m
+[0;32mI (323625) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (323625) EXAMPLE: ====================================================================[0m
+[0;32mI (323635) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (323645) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (323645) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (323655) EXAMPLE: ====================================================================[0m
+[0;32mI (328665) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (328665) EXAMPLE: ====================================================================[0m
+[0;32mI (328665) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (328665) EXAMPLE: ====================================================================[0m
+[0;32mI (328675) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (328685) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (328685) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (328695) EXAMPLE: ====================================================================[0m
+[0;32mI (333705) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (333705) EXAMPLE: ====================================================================[0m
+[0;32mI (333705) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (333705) EXAMPLE: ====================================================================[0m
+[0;32mI (333715) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (333725) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (333725) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (333735) EXAMPLE: ====================================================================[0m
+[0;32mI (338745) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (338745) EXAMPLE: ====================================================================[0m
+[0;32mI (338745) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (338745) EXAMPLE: ====================================================================[0m
+[0;32mI (338755) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (338765) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (338765) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (338775) EXAMPLE: ====================================================================[0m
+[0;32mI (343785) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (343785) EXAMPLE: ====================================================================[0m
+[0;32mI (343785) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (343785) EXAMPLE: ====================================================================[0m
+[0;32mI (343795) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (343805) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (343805) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (343815) EXAMPLE: ====================================================================[0m
+[0;32mI (348825) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (348825) EXAMPLE: ====================================================================[0m
+[0;32mI (348825) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (348825) EXAMPLE: ====================================================================[0m
+[0;32mI (348835) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (348845) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (348845) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (348855) EXAMPLE: ====================================================================[0m
+[0;32mI (353865) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (353865) EXAMPLE: ====================================================================[0m
+[0;32mI (353865) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (353865) EXAMPLE: ====================================================================[0m
+[0;32mI (353875) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (353885) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (353885) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (353895) EXAMPLE: ====================================================================[0m
+[0;32mI (358905) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (358905) EXAMPLE: ====================================================================[0m
+[0;32mI (358905) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (358905) EXAMPLE: ====================================================================[0m
+[0;32mI (358915) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (358925) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (358925) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (358935) EXAMPLE: ====================================================================[0m
+[0;32mI (363945) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (363945) EXAMPLE: ====================================================================[0m
+[0;32mI (363945) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (363945) EXAMPLE: ====================================================================[0m
+[0;32mI (363955) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (363965) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (363965) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (363975) EXAMPLE: ====================================================================[0m
+[0;32mI (368985) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (368985) EXAMPLE: ====================================================================[0m
+[0;32mI (368985) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (368985) EXAMPLE: ====================================================================[0m
+[0;32mI (368995) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (369005) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (369005) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (369015) EXAMPLE: ====================================================================[0m
+[0;32mI (374025) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (374025) EXAMPLE: ====================================================================[0m
+[0;32mI (374025) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (374025) EXAMPLE: ====================================================================[0m
+[0;32mI (374035) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (374045) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (374045) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (374055) EXAMPLE: ====================================================================[0m
+[0;32mI (379065) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (379065) EXAMPLE: ====================================================================[0m
+[0;32mI (379065) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (379065) EXAMPLE: ====================================================================[0m
+[0;32mI (379075) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (379085) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (379085) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (379095) EXAMPLE: ====================================================================[0m
+[0;32mI (384105) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (384105) EXAMPLE: ====================================================================[0m
+[0;32mI (384105) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (384105) EXAMPLE: ====================================================================[0m
+[0;32mI (384115) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (384125) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (384125) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (384135) EXAMPLE: ====================================================================[0m
+[0;32mI (389145) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (389145) EXAMPLE: ====================================================================[0m
+[0;32mI (389145) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (389145) EXAMPLE: ====================================================================[0m
+[0;32mI (389155) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (389165) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (389165) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (389175) EXAMPLE: ====================================================================[0m
+[0;32mI (394185) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (394185) EXAMPLE: ====================================================================[0m
+[0;32mI (394185) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (394185) EXAMPLE: ====================================================================[0m
+[0;32mI (394195) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (394205) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (394205) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (394215) EXAMPLE: ====================================================================[0m
+[0;32mI (399225) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (399225) EXAMPLE: ====================================================================[0m
+[0;32mI (399225) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (399225) EXAMPLE: ====================================================================[0m
+[0;32mI (399235) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (399245) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (399245) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (399255) EXAMPLE: ====================================================================[0m
+[0;32mI (404265) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (404265) EXAMPLE: ====================================================================[0m
+[0;32mI (404265) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (404265) EXAMPLE: ====================================================================[0m
+[0;32mI (404275) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (404285) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (404285) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (404295) EXAMPLE: ====================================================================[0m
+[0;32mI (409305) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (409305) EXAMPLE: ====================================================================[0m
+[0;32mI (409305) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (409305) EXAMPLE: ====================================================================[0m
+[0;32mI (409315) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (409325) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (409325) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (409335) EXAMPLE: ====================================================================[0m
+[0;32mI (414345) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (414345) EXAMPLE: ====================================================================[0m
+[0;32mI (414345) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (414345) EXAMPLE: ====================================================================[0m
+[0;32mI (414355) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (414365) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (414365) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (414375) EXAMPLE: ====================================================================[0m
+[0;32mI (419385) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (419385) EXAMPLE: ====================================================================[0m
+[0;32mI (419385) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (419385) EXAMPLE: ====================================================================[0m
+[0;32mI (419395) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (419405) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (419405) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (419415) EXAMPLE: ====================================================================[0m
+[0;32mI (424425) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (424425) EXAMPLE: ====================================================================[0m
+[0;32mI (424425) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (424425) EXAMPLE: ====================================================================[0m
+[0;32mI (424435) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (424445) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (424445) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (424455) EXAMPLE: ====================================================================[0m
+[0;32mI (429465) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (429465) EXAMPLE: ====================================================================[0m
+[0;32mI (429465) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (429465) EXAMPLE: ====================================================================[0m
+[0;32mI (429475) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (429485) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (429485) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (429495) EXAMPLE: ====================================================================[0m
+[0;32mI (434505) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (434505) EXAMPLE: ====================================================================[0m
+[0;32mI (434505) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (434505) EXAMPLE: ====================================================================[0m
+[0;32mI (434515) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (434525) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (434525) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (434535) EXAMPLE: ====================================================================[0m
+[0;32mI (439545) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (439545) EXAMPLE: ====================================================================[0m
+[0;32mI (439545) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (439545) EXAMPLE: ====================================================================[0m
+[0;32mI (439555) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (439565) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (439565) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (439575) EXAMPLE: ====================================================================[0m
+[0;32mI (444585) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (444585) EXAMPLE: ====================================================================[0m
+[0;32mI (444585) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (444585) EXAMPLE: ====================================================================[0m
+[0;32mI (444595) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (444605) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (444605) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (444615) EXAMPLE: ====================================================================[0m
+[0;32mI (449625) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (449625) EXAMPLE: ====================================================================[0m
+[0;32mI (449625) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (449625) EXAMPLE: ====================================================================[0m
+[0;32mI (449635) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (449645) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (449645) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (449655) EXAMPLE: ====================================================================[0m
+[0;32mI (454665) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (454665) EXAMPLE: ====================================================================[0m
+[0;32mI (454665) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (454665) EXAMPLE: ====================================================================[0m
+[0;32mI (454675) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (454685) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (454685) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (454695) EXAMPLE: ====================================================================[0m
+[0;32mI (459705) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (459705) EXAMPLE: ====================================================================[0m
+[0;32mI (459705) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (459705) EXAMPLE: ====================================================================[0m
+[0;32mI (459715) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (459725) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (459725) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (459735) EXAMPLE: ====================================================================[0m
+[0;32mI (464745) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (464745) EXAMPLE: ====================================================================[0m
+[0;32mI (464745) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (464745) EXAMPLE: ====================================================================[0m
+[0;32mI (464755) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (464765) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (464765) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (464775) EXAMPLE: ====================================================================[0m
+[0;32mI (469785) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (469785) EXAMPLE: ====================================================================[0m
+[0;32mI (469785) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (469785) EXAMPLE: ====================================================================[0m
+[0;32mI (469795) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (469805) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (469805) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (469815) EXAMPLE: ====================================================================[0m
+[0;32mI (474825) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (474825) EXAMPLE: ====================================================================[0m
+[0;32mI (474825) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (474825) EXAMPLE: ====================================================================[0m
+[0;32mI (474835) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (474845) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (474845) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (474855) EXAMPLE: ====================================================================[0m
+[0;32mI (479865) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (479865) EXAMPLE: ====================================================================[0m
+[0;32mI (479865) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (479865) EXAMPLE: ====================================================================[0m
+[0;32mI (479875) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (479885) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (479885) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (479895) EXAMPLE: ====================================================================[0m
+[0;32mI (484905) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (484905) EXAMPLE: ====================================================================[0m
+[0;32mI (484905) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (484905) EXAMPLE: ====================================================================[0m
+[0;32mI (484915) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (484925) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (484925) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (484935) EXAMPLE: ====================================================================[0m
+[0;32mI (489945) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (489945) EXAMPLE: ====================================================================[0m
+[0;32mI (489945) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (489945) EXAMPLE: ====================================================================[0m
+[0;32mI (489955) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (489965) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (489965) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (489975) EXAMPLE: ====================================================================[0m
+[0;32mI (494985) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (494985) EXAMPLE: ====================================================================[0m
+[0;32mI (494985) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (494985) EXAMPLE: ====================================================================[0m
+[0;32mI (494995) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (495005) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (495005) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (495015) EXAMPLE: ====================================================================[0m
+[0;32mI (500025) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (500025) EXAMPLE: ====================================================================[0m
+[0;32mI (500025) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (500025) EXAMPLE: ====================================================================[0m
+[0;32mI (500035) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (500045) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (500045) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (500055) EXAMPLE: ====================================================================[0m
+[0;32mI (505065) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (505065) EXAMPLE: ====================================================================[0m
+[0;32mI (505065) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (505065) EXAMPLE: ====================================================================[0m
+[0;32mI (505075) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (505085) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (505085) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (505095) EXAMPLE: ====================================================================[0m
+[0;32mI (510105) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (510105) EXAMPLE: ====================================================================[0m
+[0;32mI (510105) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (510105) EXAMPLE: ====================================================================[0m
+[0;32mI (510115) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (510125) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (510125) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (510135) EXAMPLE: ====================================================================[0m
+[0;32mI (515145) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (515145) EXAMPLE: ====================================================================[0m
+[0;32mI (515145) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (515145) EXAMPLE: ====================================================================[0m
+[0;32mI (515155) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (515165) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (515165) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (515175) EXAMPLE: ====================================================================[0m
+[0;32mI (520185) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (520185) EXAMPLE: ====================================================================[0m
+[0;32mI (520185) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (520185) EXAMPLE: ====================================================================[0m
+[0;32mI (520195) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (520205) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (520205) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (520215) EXAMPLE: ====================================================================[0m
+[0;32mI (525225) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (525225) EXAMPLE: ====================================================================[0m
+[0;32mI (525225) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (525225) EXAMPLE: ====================================================================[0m
+[0;32mI (525235) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (525245) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (525245) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (525255) EXAMPLE: ====================================================================[0m
+[0;32mI (530265) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (530265) EXAMPLE: ====================================================================[0m
+[0;32mI (530265) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (530265) EXAMPLE: ====================================================================[0m
+[0;32mI (530275) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (530285) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (530285) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (530295) EXAMPLE: ====================================================================[0m
+[0;32mI (535305) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (535305) EXAMPLE: ====================================================================[0m
+[0;32mI (535305) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (535305) EXAMPLE: ====================================================================[0m
+[0;32mI (535315) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (535325) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (535325) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (535335) EXAMPLE: ====================================================================[0m
+[0;32mI (540345) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (540345) EXAMPLE: ====================================================================[0m
+[0;32mI (540345) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (540345) EXAMPLE: ====================================================================[0m
+[0;32mI (540355) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (540365) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (540365) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (540375) EXAMPLE: ====================================================================[0m
+[0;32mI (545385) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (545385) EXAMPLE: ====================================================================[0m
+[0;32mI (545385) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (545385) EXAMPLE: ====================================================================[0m
+[0;32mI (545395) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (545405) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (545405) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (545415) EXAMPLE: ====================================================================[0m
+[0;32mI (550425) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (550425) EXAMPLE: ====================================================================[0m
+[0;32mI (550425) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (550425) EXAMPLE: ====================================================================[0m
+[0;32mI (550435) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (550445) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (550445) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (550455) EXAMPLE: ====================================================================[0m
+[0;32mI (555465) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (555465) EXAMPLE: ====================================================================[0m
+[0;32mI (555465) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (555465) EXAMPLE: ====================================================================[0m
+[0;32mI (555475) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (555485) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (555485) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (555495) EXAMPLE: ====================================================================[0m
+[0;32mI (560505) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (560505) EXAMPLE: ====================================================================[0m
+[0;32mI (560505) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (560505) EXAMPLE: ====================================================================[0m
+[0;32mI (560515) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (560525) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (560525) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (560535) EXAMPLE: ====================================================================[0m
+[0;32mI (565545) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (565545) EXAMPLE: ====================================================================[0m
+[0;32mI (565545) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (565545) EXAMPLE: ====================================================================[0m
+[0;32mI (565555) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (565565) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (565565) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (565575) EXAMPLE: ====================================================================[0m
+[0;32mI (570585) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (570585) EXAMPLE: ====================================================================[0m
+[0;32mI (570585) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (570585) EXAMPLE: ====================================================================[0m
+[0;32mI (570595) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (570605) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (570605) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (570615) EXAMPLE: ====================================================================[0m
+[0;32mI (575625) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (575625) EXAMPLE: ====================================================================[0m
+[0;32mI (575625) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (575625) EXAMPLE: ====================================================================[0m
+[0;32mI (575635) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (575645) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (575645) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (575655) EXAMPLE: ====================================================================[0m
+[0;32mI (580665) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (580665) EXAMPLE: ====================================================================[0m
+[0;32mI (580665) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (580665) EXAMPLE: ====================================================================[0m
+[0;32mI (580675) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (580685) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (580685) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (580695) EXAMPLE: ====================================================================[0m
+[0;32mI (585705) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (585705) EXAMPLE: ====================================================================[0m
+[0;32mI (585705) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (585705) EXAMPLE: ====================================================================[0m
+[0;32mI (585715) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (585725) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (585725) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (585735) EXAMPLE: ====================================================================[0m
+[0;32mI (590745) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (590745) EXAMPLE: ====================================================================[0m
+[0;32mI (590745) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (590745) EXAMPLE: ====================================================================[0m
+[0;32mI (590755) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (590765) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (590765) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (590775) EXAMPLE: ====================================================================[0m
+[0;32mI (595785) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (595785) EXAMPLE: ====================================================================[0m
+[0;32mI (595785) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (595785) EXAMPLE: ====================================================================[0m
+[0;32mI (595795) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (595805) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (595805) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (595815) EXAMPLE: ====================================================================[0m
+[0;32mI (600825) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (600825) EXAMPLE: ====================================================================[0m
+[0;32mI (600825) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (600825) EXAMPLE: ====================================================================[0m
+[0;32mI (600835) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (600845) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (600845) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (600855) EXAMPLE: ====================================================================[0m
+[0;32mI (605865) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (605865) EXAMPLE: ====================================================================[0m
+[0;32mI (605865) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (605865) EXAMPLE: ====================================================================[0m
+[0;32mI (605875) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (605885) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (605885) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (605895) EXAMPLE: ====================================================================[0m
+[0;32mI (610905) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (610905) EXAMPLE: ====================================================================[0m
+[0;32mI (610905) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (610905) EXAMPLE: ====================================================================[0m
+[0;32mI (610915) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (610925) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (610925) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (610935) EXAMPLE: ====================================================================[0m
+[0;32mI (615945) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (615945) EXAMPLE: ====================================================================[0m
+[0;32mI (615945) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (615945) EXAMPLE: ====================================================================[0m
+[0;32mI (615955) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (615965) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (615965) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (615975) EXAMPLE: ====================================================================[0m
+[0;32mI (620985) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (620985) EXAMPLE: ====================================================================[0m
+[0;32mI (620985) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (620985) EXAMPLE: ====================================================================[0m
+[0;32mI (620995) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (621005) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (621005) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (621015) EXAMPLE: ====================================================================[0m
+[0;32mI (626025) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (626025) EXAMPLE: ====================================================================[0m
+[0;32mI (626025) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (626025) EXAMPLE: ====================================================================[0m
+[0;32mI (626035) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (626045) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (626045) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (626055) EXAMPLE: ====================================================================[0m
+[0;32mI (631065) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (631065) EXAMPLE: ====================================================================[0m
+[0;32mI (631065) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (631065) EXAMPLE: ====================================================================[0m
+[0;32mI (631075) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (631085) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (631085) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (631095) EXAMPLE: ====================================================================[0m
+[0;32mI (636105) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (636105) EXAMPLE: ====================================================================[0m
+[0;32mI (636105) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (636105) EXAMPLE: ====================================================================[0m
+[0;32mI (636115) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (636125) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (636125) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (636135) EXAMPLE: ====================================================================[0m
+[0;32mI (641145) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (641145) EXAMPLE: ====================================================================[0m
+[0;32mI (641145) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (641145) EXAMPLE: ====================================================================[0m
+[0;32mI (641155) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (641165) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (641165) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (641175) EXAMPLE: ====================================================================[0m
+[0;32mI (646185) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (646185) EXAMPLE: ====================================================================[0m
+[0;32mI (646185) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (646185) EXAMPLE: ====================================================================[0m
+[0;32mI (646195) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (646205) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (646205) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (646215) EXAMPLE: ====================================================================[0m
+[0;32mI (651225) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (651225) EXAMPLE: ====================================================================[0m
+[0;32mI (651225) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (651225) EXAMPLE: ====================================================================[0m
+[0;32mI (651235) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (651245) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (651245) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (651255) EXAMPLE: ====================================================================[0m
+[0;32mI (656265) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (656265) EXAMPLE: ====================================================================[0m
+[0;32mI (656265) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (656265) EXAMPLE: ====================================================================[0m
+[0;32mI (656275) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (656285) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (656285) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (656295) EXAMPLE: ====================================================================[0m
+[0;32mI (661305) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (661305) EXAMPLE: ====================================================================[0m
+[0;32mI (661305) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (661305) EXAMPLE: ====================================================================[0m
+[0;32mI (661315) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (661325) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (661325) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (661335) EXAMPLE: ====================================================================[0m
+[0;32mI (666345) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (666345) EXAMPLE: ====================================================================[0m
+[0;32mI (666345) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (666345) EXAMPLE: ====================================================================[0m
+[0;32mI (666355) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (666365) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (666365) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (666375) EXAMPLE: ====================================================================[0m
+[0;32mI (671385) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (671385) EXAMPLE: ====================================================================[0m
+[0;32mI (671385) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (671385) EXAMPLE: ====================================================================[0m
+[0;32mI (671395) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (671405) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (671405) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (671415) EXAMPLE: ====================================================================[0m
+[0;32mI (676425) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (676425) EXAMPLE: ====================================================================[0m
+[0;32mI (676425) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (676425) EXAMPLE: ====================================================================[0m
+[0;32mI (676435) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (676445) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (676445) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (676455) EXAMPLE: ====================================================================[0m
+[0;32mI (681465) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (681465) EXAMPLE: ====================================================================[0m
+[0;32mI (681465) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (681465) EXAMPLE: ====================================================================[0m
+[0;32mI (681475) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (681485) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (681485) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (681495) EXAMPLE: ====================================================================[0m
+[0;32mI (686505) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (686505) EXAMPLE: ====================================================================[0m
+[0;32mI (686505) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (686505) EXAMPLE: ====================================================================[0m
+[0;32mI (686515) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (686525) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (686525) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (686535) EXAMPLE: ====================================================================[0m
+[0;32mI (691545) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (691545) EXAMPLE: ====================================================================[0m
+[0;32mI (691545) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (691545) EXAMPLE: ====================================================================[0m
+[0;32mI (691555) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (691565) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (691565) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (691575) EXAMPLE: ====================================================================[0m
+[0;32mI (696585) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (696585) EXAMPLE: ====================================================================[0m
+[0;32mI (696585) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (696585) EXAMPLE: ====================================================================[0m
+[0;32mI (696595) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (696605) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (696605) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (696615) EXAMPLE: ====================================================================[0m
+[0;32mI (701625) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (701625) EXAMPLE: ====================================================================[0m
+[0;32mI (701625) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (701625) EXAMPLE: ====================================================================[0m
+[0;32mI (701635) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (701645) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (701645) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (701655) EXAMPLE: ====================================================================[0m
+[0;32mI (706665) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (706665) EXAMPLE: ====================================================================[0m
+[0;32mI (706665) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (706665) EXAMPLE: ====================================================================[0m
+[0;32mI (706675) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (706685) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (706685) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (706695) EXAMPLE: ====================================================================[0m
+[0;32mI (711705) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (711705) EXAMPLE: ====================================================================[0m
+[0;32mI (711705) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (711705) EXAMPLE: ====================================================================[0m
+[0;32mI (711715) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (711725) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (711725) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (711735) EXAMPLE: ====================================================================[0m
+[0;32mI (716745) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (716745) EXAMPLE: ====================================================================[0m
+[0;32mI (716745) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (716745) EXAMPLE: ====================================================================[0m
+[0;32mI (716755) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (716765) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (716765) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (716775) EXAMPLE: ====================================================================[0m
+[0;32mI (721785) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (721785) EXAMPLE: ====================================================================[0m
+[0;32mI (721785) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (721785) EXAMPLE: ====================================================================[0m
+[0;32mI (721795) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (721805) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (721805) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (721815) EXAMPLE: ====================================================================[0m
+[0;32mI (726825) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (726825) EXAMPLE: ====================================================================[0m
+[0;32mI (726825) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (726825) EXAMPLE: ====================================================================[0m
+[0;32mI (726835) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (726845) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (726845) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (726855) EXAMPLE: ====================================================================[0m
+[0;32mI (731865) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (731865) EXAMPLE: ====================================================================[0m
+[0;32mI (731865) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (731865) EXAMPLE: ====================================================================[0m
+[0;32mI (731875) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (731885) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (731885) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (731895) EXAMPLE: ====================================================================[0m
+[0;32mI (736905) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (736905) EXAMPLE: ====================================================================[0m
+[0;32mI (736905) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (736905) EXAMPLE: ====================================================================[0m
+[0;32mI (736915) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (736925) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (736925) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (736935) EXAMPLE: ====================================================================[0m
+[0;32mI (741945) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (741945) EXAMPLE: ====================================================================[0m
+[0;32mI (741945) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (741945) EXAMPLE: ====================================================================[0m
+[0;32mI (741955) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (741965) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (741965) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (741975) EXAMPLE: ====================================================================[0m
+[0;32mI (746985) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (746985) EXAMPLE: ====================================================================[0m
+[0;32mI (746985) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (746985) EXAMPLE: ====================================================================[0m
+[0;32mI (746995) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (747005) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (747005) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (747015) EXAMPLE: ====================================================================[0m
+[0;32mI (752025) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (752025) EXAMPLE: ====================================================================[0m
+[0;32mI (752025) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (752025) EXAMPLE: ====================================================================[0m
+[0;32mI (752035) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (752045) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (752045) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (752055) EXAMPLE: ====================================================================[0m
+[0;32mI (757065) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (757065) EXAMPLE: ====================================================================[0m
+[0;32mI (757065) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (757065) EXAMPLE: ====================================================================[0m
+[0;32mI (757075) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (757085) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (757085) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (757095) EXAMPLE: ====================================================================[0m
+[0;32mI (762105) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (762105) EXAMPLE: ====================================================================[0m
+[0;32mI (762105) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (762105) EXAMPLE: ====================================================================[0m
+[0;32mI (762115) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (762125) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (762125) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (762135) EXAMPLE: ====================================================================[0m
+[0;32mI (767145) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (767145) EXAMPLE: ====================================================================[0m
+[0;32mI (767145) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (767145) EXAMPLE: ====================================================================[0m
+[0;32mI (767155) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (767165) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (767165) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (767175) EXAMPLE: ====================================================================[0m
+[0;32mI (772185) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (772185) EXAMPLE: ====================================================================[0m
+[0;32mI (772185) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (772185) EXAMPLE: ====================================================================[0m
+[0;32mI (772195) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (772205) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (772205) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (772215) EXAMPLE: ====================================================================[0m
+[0;32mI (777225) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (777225) EXAMPLE: ====================================================================[0m
+[0;32mI (777225) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (777225) EXAMPLE: ====================================================================[0m
+[0;32mI (777235) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (777245) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (777245) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (777255) EXAMPLE: ====================================================================[0m
+[0;32mI (782265) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (782265) EXAMPLE: ====================================================================[0m
+[0;32mI (782265) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (782265) EXAMPLE: ====================================================================[0m
+[0;32mI (782275) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (782285) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (782285) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (782295) EXAMPLE: ====================================================================[0m
+[0;32mI (787305) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (787305) EXAMPLE: ====================================================================[0m
+[0;32mI (787305) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (787305) EXAMPLE: ====================================================================[0m
+[0;32mI (787315) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (787325) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (787325) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (787335) EXAMPLE: ====================================================================[0m
+[0;32mI (792345) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (792345) EXAMPLE: ====================================================================[0m
+[0;32mI (792345) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (792345) EXAMPLE: ====================================================================[0m
+[0;32mI (792355) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (792365) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (792365) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (792375) EXAMPLE: ====================================================================[0m
+[0;32mI (797385) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (797385) EXAMPLE: ====================================================================[0m
+[0;32mI (797385) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (797385) EXAMPLE: ====================================================================[0m
+[0;32mI (797395) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (797405) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (797405) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (797415) EXAMPLE: ====================================================================[0m
+[0;32mI (802425) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (802425) EXAMPLE: ====================================================================[0m
+[0;32mI (802425) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (802425) EXAMPLE: ====================================================================[0m
+[0;32mI (802435) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (802445) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (802445) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (802455) EXAMPLE: ====================================================================[0m
+[0;32mI (807465) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (807465) EXAMPLE: ====================================================================[0m
+[0;32mI (807465) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (807465) EXAMPLE: ====================================================================[0m
+[0;32mI (807475) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (807485) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (807485) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (807495) EXAMPLE: ====================================================================[0m
+[0;32mI (812505) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (812505) EXAMPLE: ====================================================================[0m
+[0;32mI (812505) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (812505) EXAMPLE: ====================================================================[0m
+[0;32mI (812515) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (812525) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (812525) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (812535) EXAMPLE: ====================================================================[0m
+[0;32mI (817545) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (817545) EXAMPLE: ====================================================================[0m
+[0;32mI (817545) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (817545) EXAMPLE: ====================================================================[0m
+[0;32mI (817555) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (817565) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (817565) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (817575) EXAMPLE: ====================================================================[0m
+[0;32mI (822585) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (822585) EXAMPLE: ====================================================================[0m
+[0;32mI (822585) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (822585) EXAMPLE: ====================================================================[0m
+[0;32mI (822595) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (822605) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (822605) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (822615) EXAMPLE: ====================================================================[0m
+[0;32mI (827625) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (827625) EXAMPLE: ====================================================================[0m
+[0;32mI (827625) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (827625) EXAMPLE: ====================================================================[0m
+[0;32mI (827635) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (827645) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (827645) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (827655) EXAMPLE: ====================================================================[0m
+[0;32mI (832665) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (832665) EXAMPLE: ====================================================================[0m
+[0;32mI (832665) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (832665) EXAMPLE: ====================================================================[0m
+[0;32mI (832675) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (832685) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (832685) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (832695) EXAMPLE: ====================================================================[0m
+[0;32mI (837705) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (837705) EXAMPLE: ====================================================================[0m
+[0;32mI (837705) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (837705) EXAMPLE: ====================================================================[0m
+[0;32mI (837715) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (837725) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (837725) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (837735) EXAMPLE: ====================================================================[0m
+[0;32mI (842745) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (842745) EXAMPLE: ====================================================================[0m
+[0;32mI (842745) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (842745) EXAMPLE: ====================================================================[0m
+[0;32mI (842755) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (842765) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (842765) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (842775) EXAMPLE: ====================================================================[0m
+[0;32mI (847785) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (847785) EXAMPLE: ====================================================================[0m
+[0;32mI (847785) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (847785) EXAMPLE: ====================================================================[0m
+[0;32mI (847795) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (847805) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (847805) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (847815) EXAMPLE: ====================================================================[0m
+[0;32mI (852825) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (852825) EXAMPLE: ====================================================================[0m
+[0;32mI (852825) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (852825) EXAMPLE: ====================================================================[0m
+[0;32mI (852835) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (852845) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (852845) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (852855) EXAMPLE: ====================================================================[0m
+[0;32mI (857865) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (857865) EXAMPLE: ====================================================================[0m
+[0;32mI (857865) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (857865) EXAMPLE: ====================================================================[0m
+[0;32mI (857875) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (857885) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (857885) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (857895) EXAMPLE: ====================================================================[0m
+[0;32mI (862905) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (862905) EXAMPLE: ====================================================================[0m
+[0;32mI (862905) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (862905) EXAMPLE: ====================================================================[0m
+[0;32mI (862915) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (862925) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (862925) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (862935) EXAMPLE: ====================================================================[0m
+[0;32mI (867945) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (867945) EXAMPLE: ====================================================================[0m
+[0;32mI (867945) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (867945) EXAMPLE: ====================================================================[0m
+[0;32mI (867955) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (867965) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (867965) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (867975) EXAMPLE: ====================================================================[0m
+[0;32mI (872985) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (872985) EXAMPLE: ====================================================================[0m
+[0;32mI (872985) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (872985) EXAMPLE: ====================================================================[0m
+[0;32mI (872995) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (873005) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (873005) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (873015) EXAMPLE: ====================================================================[0m
+[0;32mI (878025) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (878025) EXAMPLE: ====================================================================[0m
+[0;32mI (878025) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (878025) EXAMPLE: ====================================================================[0m
+[0;32mI (878035) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (878045) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (878045) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (878055) EXAMPLE: ====================================================================[0m
+[0;32mI (883065) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (883065) EXAMPLE: ====================================================================[0m
+[0;32mI (883065) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (883065) EXAMPLE: ====================================================================[0m
+[0;32mI (883075) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (883085) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (883085) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (883095) EXAMPLE: ====================================================================[0m
+[0;32mI (888105) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (888105) EXAMPLE: ====================================================================[0m
+[0;32mI (888105) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (888105) EXAMPLE: ====================================================================[0m
+[0;32mI (888115) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (888125) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (888125) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (888135) EXAMPLE: ====================================================================[0m
+[0;32mI (893145) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (893145) EXAMPLE: ====================================================================[0m
+[0;32mI (893145) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (893145) EXAMPLE: ====================================================================[0m
+[0;32mI (893155) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (893165) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (893165) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (893175) EXAMPLE: ====================================================================[0m
+[0;32mI (898185) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (898185) EXAMPLE: ====================================================================[0m
+[0;32mI (898185) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (898185) EXAMPLE: ====================================================================[0m
+[0;32mI (898195) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (898205) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (898205) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (898215) EXAMPLE: ====================================================================[0m
+[0;32mI (903225) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (903225) EXAMPLE: ====================================================================[0m
+[0;32mI (903225) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (903225) EXAMPLE: ====================================================================[0m
+[0;32mI (903235) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (903245) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (903245) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (903255) EXAMPLE: ====================================================================[0m
+[0;32mI (908265) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (908265) EXAMPLE: ====================================================================[0m
+[0;32mI (908265) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (908265) EXAMPLE: ====================================================================[0m
+[0;32mI (908275) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (908285) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (908285) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (908295) EXAMPLE: ====================================================================[0m
+[0;32mI (913305) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (913305) EXAMPLE: ====================================================================[0m
+[0;32mI (913305) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (913305) EXAMPLE: ====================================================================[0m
+[0;32mI (913315) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (913325) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (913325) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (913335) EXAMPLE: ====================================================================[0m
+[0;32mI (918345) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (918345) EXAMPLE: ====================================================================[0m
+[0;32mI (918345) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (918345) EXAMPLE: ====================================================================[0m
+[0;32mI (918355) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (918365) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (918365) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (918375) EXAMPLE: ====================================================================[0m
+[0;32mI (923385) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (923385) EXAMPLE: ====================================================================[0m
+[0;32mI (923385) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (923385) EXAMPLE: ====================================================================[0m
+[0;32mI (923395) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (923405) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (923405) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (923415) EXAMPLE: ====================================================================[0m
+[0;32mI (928425) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (928425) EXAMPLE: ====================================================================[0m
+[0;32mI (928425) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (928425) EXAMPLE: ====================================================================[0m
+[0;32mI (928435) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (928445) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (928445) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (928455) EXAMPLE: ====================================================================[0m
+[0;32mI (933465) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (933465) EXAMPLE: ====================================================================[0m
+[0;32mI (933465) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (933465) EXAMPLE: ====================================================================[0m
+[0;32mI (933475) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (933485) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (933485) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (933495) EXAMPLE: ====================================================================[0m
+[0;32mI (938505) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (938505) EXAMPLE: ====================================================================[0m
+[0;32mI (938505) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (938505) EXAMPLE: ====================================================================[0m
+[0;32mI (938515) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (938525) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (938525) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (938535) EXAMPLE: ====================================================================[0m
+[0;32mI (943545) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (943545) EXAMPLE: ====================================================================[0m
+[0;32mI (943545) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (943545) EXAMPLE: ====================================================================[0m
+[0;32mI (943555) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (943565) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (943565) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (943575) EXAMPLE: ====================================================================[0m
+[0;32mI (948585) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (948585) EXAMPLE: ====================================================================[0m
+[0;32mI (948585) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (948585) EXAMPLE: ====================================================================[0m
+[0;32mI (948595) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (948605) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (948605) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (948615) EXAMPLE: ====================================================================[0m
+[0;32mI (953625) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (953625) EXAMPLE: ====================================================================[0m
+[0;32mI (953625) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (953625) EXAMPLE: ====================================================================[0m
+[0;32mI (953635) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (953645) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (953645) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (953655) EXAMPLE: ====================================================================[0m
+[0;32mI (958665) EXAMPLE: Periodic sensor values update:[0m
+[0;32mI (958665) EXAMPLE: ====================================================================[0m
+[0;32mI (958665) EXAMPLE:                        SENSOR DATA VALUES                           [0m
+[0;32mI (958665) EXAMPLE: ====================================================================[0m
+[0;32mI (958675) EXAMPLE: 🔴 🔴 🔴 TEMPERATURE: 25.00°C 🔴 🔴 🔴[0m
+[0;32mI (958685) EXAMPLE: 💧 💧 💧 HUMIDITY: 50.00% 💧 💧 💧[0m
+[0;32mI (958685) EXAMPLE: 💡 💡 💡 LIGHT LEVEL: 500 lux 💡 💡 💡[0m
+[0;32mI (958695) EXAMPLE: ====================================================================[0m

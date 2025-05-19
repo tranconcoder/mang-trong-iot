@@ -1,0 +1,68 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037ecda
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 20 2025 02:52:21[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=19020h (102432) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=00029048 vaddr=3fc99400 size=04734h ( 18228) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0002d784 vaddr=40374000 size=02894h ( 10388) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=63a88h (408200) map[0m
+[0;32mI (190) esp_image: segment 4: paddr=00093ab0 vaddr=40376894 size=12a98h ( 76440) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=000a6550 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (215) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (215) boot: Disabling RNG early entropy source...[0m
+[0;32mI (225) cpu_start: Multicore app[0m
+[0;32mI (235) cpu_start: Pro cpu start user code[0m
+[0;32mI (235) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (235) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     blemesh[0m
+[0;32mI (239) app_init: App version:      v5.4.1[0m
+[0;32mI (242) app_init: Compile time:     May 20 2025 02:52:12[0m
+[0;32mI (247) app_init: ELF file SHA256:  39aa4a8d9...[0m
+[0;32mI (252) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (256) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (259) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (263) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FCA1988 len 00047D88 (287 KiB): RAM[0m
+[0;32mI (279) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (284) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (295) spi_flash: detected chip: boya[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (313) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (319) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (326) coexist: coex firmware version: e727207[0m
+[0;32mI (330) coexist: coexist rom version e7ae62f[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (355) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (355) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (355) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (395) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (395) NimBLE_MESH: Bluetooth initialized[0m
+[0;32mI (545) NimBLE_MESH: Mesh initialized[0m
+[0;32mI (545) main_task: Returned from app_main()[0m

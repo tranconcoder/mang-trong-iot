@@ -1,0 +1,626 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 19 2025 14:55:12[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=299a4h (170404) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=000399cc vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=000399f0 vaddr=3ffbdb60 size=055d8h ( 21976) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003efd0 vaddr=40080000 size=01048h (  4168) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=956bch (612028) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d56e4 vaddr=40081048 size=16ab0h ( 92848) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     sensor_server[0m
+[0;32mI (448) app_init: App version:      79448e5-dirty[0m
+[0;32mI (452) app_init: Compile time:     May 20 2025 03:51:20[0m
+[0;32mI (457) app_init: ELF file SHA256:  f95c8dc17...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFCAF28 len 000150D8 (84 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (522) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) coexist: coex firmware version: e727207[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (554) EXAMPLE: Initializing...[0m
+[0;32mI (564) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (584) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (584) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (594) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (674) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1074) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1084) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1084) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1084) main_task: Returned from app_main()[0m
+[0;32mI (6754) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (7264) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (7264) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (7264) EXAMPLE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (7264) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;33mW (7324) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (7774) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (7774) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (7774) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (7904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (7904) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;32mI (8014) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (8014) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1101[0m
+[1;31mE (12584) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (16594) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (16594) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (16594) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (16594) EXAMPLE: Temperature: 30[0m
+[0;32mI (16594) EXAMPLE: Humidity: 90[0m
+[0;32mI (16604) EXAMPLE: Light Level: 250[0m
+[1;31mE (17584) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (21644) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (21644) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (21644) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (21654) EXAMPLE: Temperature: 34[0m
+[0;32mI (21654) EXAMPLE: Humidity: 90[0m
+[0;32mI (21654) EXAMPLE: Light Level: 250[0m
+[1;31mE (22574) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (26594) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (26594) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (26594) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (26594) EXAMPLE: Temperature: 35[0m
+[0;32mI (26604) EXAMPLE: Humidity: 90[0m
+[0;32mI (26604) EXAMPLE: Light Level: 250[0m
+[0;32mI (31594) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (31594) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (31604) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (31604) EXAMPLE: Temperature: 35[0m
+[0;32mI (31604) EXAMPLE: Humidity: 90[0m
+[0;32mI (31604) EXAMPLE: Light Level: 250[0m
+[1;31mE (32614) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (36584) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (36584) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (36594) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (36594) EXAMPLE: Temperature: 35[0m
+[0;32mI (36594) EXAMPLE: Humidity: 90[0m
+[0;32mI (36604) EXAMPLE: Light Level: 250[0m
+[1;31mE (37594) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 19 2025 14:55:12[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=299a4h (170404) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=000399cc vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=000399f0 vaddr=3ffbdb60 size=055d8h ( 21976) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003efd0 vaddr=40080000 size=01048h (  4168) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=956bch (612028) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d56e4 vaddr=40081048 size=16ab0h ( 92848) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     sensor_server[0m
+[0;32mI (448) app_init: App version:      79448e5-dirty[0m
+[0;32mI (452) app_init: Compile time:     May 20 2025 03:51:20[0m
+[0;32mI (457) app_init: ELF file SHA256:  f95c8dc17...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFCAF28 len 000150D8 (84 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (522) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) coexist: coex firmware version: e727207[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (554) EXAMPLE: Initializing...[0m
+[0;32mI (564) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (584) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (584) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (594) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (674) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1054) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1064) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1064) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1064) main_task: Returned from app_main()[0m
+[0;32mI (23974) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (24484) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (24484) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (24484) EXAMPLE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (24494) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;33mW (24544) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (24944) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (24944) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (24944) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (25054) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (25054) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;32mI (25174) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (25174) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1101[0m
+[1;31mE (29834) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (33874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (33874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (33874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (33884) EXAMPLE: Temperature: 30[0m
+[0;32mI (33884) EXAMPLE: Humidity: 90[0m
+[0;32mI (33884) EXAMPLE: Light Level: 250[0m
+[1;31mE (35854) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (39814) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (39814) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (39814) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (39824) EXAMPLE: Temperature: 34[0m
+[0;32mI (39824) EXAMPLE: Humidity: 90[0m
+[0;32mI (39824) EXAMPLE: Light Level: 250[0m
+[1;31mE (41794) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (45814) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (45814) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (45814) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (45824) EXAMPLE: Temperature: 35[0m
+[0;32mI (45824) EXAMPLE: Humidity: 90[0m
+[0;32mI (45824) EXAMPLE: Light Level: 250[0m
+[1;31mE (47794) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (55874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (55874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (55874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (55884) EXAMPLE: Temperature: 35[0m
+[0;32mI (55884) EXAMPLE: Humidity: 90[0m
+[0;32mI (55884) EXAMPLE: Light Level: 250[0m
+[1;31mE (57794) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (61814) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (61814) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (61814) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (61824) EXAMPLE: Temperature: 35[0m
+[0;32mI (61824) EXAMPLE: Humidity: 90[0m
+[0;32mI (61824) EXAMPLE: Light Level: 250[0m
+[1;31mE (63794) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+[0;32mI (67834) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (67834) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (67834) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (67834) EXAMPLE: Temperature: 35[0m
+[0;32mI (67834) EXAMPLE: Humidity: 90[0m
+[0;32mI (67844) EXAMPLE: Light Level: 250[0m
+[1;31mE (69864) BLE_MESH: Prohibited Sensor Property ID 0x0000[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 19 2025 14:55:12[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=299a4h (170404) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=000399cc vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=000399f0 vaddr=3ffbdb60 size=055d8h ( 21976) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003efd0 vaddr=40080000 size=01048h (  4168) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=956bch (612028) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d56e4 vaddr=40081048 size=16ab0h ( 92848) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     sensor_server[0m
+[0;32mI (448) app_init: App version:      79448e5-dirty[0m
+[0;32mI (452) app_init: Compile time:     May 20 2025 03:51:20[0m
+[0;32mI (457) app_init: ELF file SHA256:  f95c8dc17...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFCAF28 len 000150D8 (84 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (522) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) coexist: coex firmware version: e727207[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (554) EXAMPLE: Initializing...[0m
+[0;32mI (564) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (584) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (594) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (1024) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1034) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1034) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1034) main_task: Returned from app_main()[0m
+[0;32mI (1064) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (3864) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (3864) EXAMPLE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (3864) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (4154) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-ADV[0m
+[0;32mI (4664) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (4664) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (4664) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (4804) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (4804) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;32mI (4874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (4874) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1101[0m
+[0;32mI (9974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (9974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (9974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (9974) EXAMPLE: Temperature: 30[0m
+[0;32mI (9974) EXAMPLE: Humidity: 90[0m
+[0;32mI (9984) EXAMPLE: Light Level: 250[0m
+[0;32mI (11974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (11974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (11974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (11974) EXAMPLE: Temperature: 34[0m
+[0;32mI (11974) EXAMPLE: Humidity: 90[0m
+[0;32mI (11984) EXAMPLE: Light Level: 250[0m
+[0;32mI (13974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (13974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (13974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (13974) EXAMPLE: Temperature: 35[0m
+[0;32mI (13974) EXAMPLE: Humidity: 90[0m
+[0;32mI (13984) EXAMPLE: Light Level: 250[0m
+[0;32mI (15974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (15974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (15974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (15974) EXAMPLE: Temperature: 35[0m
+[0;32mI (15974) EXAMPLE: Humidity: 90[0m
+[0;32mI (15984) EXAMPLE: Light Level: 250[0m
+[0;32mI (17974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (17974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (17974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (17974) EXAMPLE: Temperature: 35[0m
+[0;32mI (17974) EXAMPLE: Humidity: 90[0m
+[0;32mI (17984) EXAMPLE: Light Level: 250[0m
+[0;32mI (19974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (19974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (19974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (19974) EXAMPLE: Temperature: 35[0m
+[0;32mI (19974) EXAMPLE: Humidity: 90[0m
+[0;32mI (19984) EXAMPLE: Light Level: 250[0m
+[0;32mI (21954) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (21954) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (21954) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (21964) EXAMPLE: Temperature: 35[0m
+[0;32mI (21964) EXAMPLE: Humidity: 90[0m
+[0;32mI (21964) EXAMPLE: Light Level: 250[0m
+[0;32mI (23974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (23974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (23974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (23974) EXAMPLE: Temperature: 35[0m
+[0;32mI (23974) EXAMPLE: Humidity: 90[0m
+[0;32mI (23984) EXAMPLE: Light Level: 250[0m
+[0;32mI (25974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (25974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (25974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (25974) EXAMPLE: Temperature: 35[0m
+[0;32mI (25974) EXAMPLE: Humidity: 90[0m
+[0;32mI (25984) EXAMPLE: Light Level: 250[0m
+[0;32mI (27974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (27974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (27974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (27974) EXAMPLE: Temperature: 35[0m
+[0;32mI (27974) EXAMPLE: Humidity: 90[0m
+[0;32mI (27984) EXAMPLE: Light Level: 250[0m
+[0;32mI (29974) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (29974) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (29974) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (29974) EXAMPLE: Temperature: 35[0m
+[0;32mI (29974) EXAMPLE: Humidity: 90[0m
+[0;32mI (29984) EXAMPLE: Light Level: 250[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 19 2025 14:55:12[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=299a4h (170404) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=000399cc vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=000399f0 vaddr=3ffbdb60 size=055d8h ( 21976) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003efd0 vaddr=40080000 size=01048h (  4168) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=956bch (612028) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d56e4 vaddr=40081048 size=16ab0h ( 92848) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     sensor_server[0m
+[0;32mI (448) app_init: App version:      79448e5-dirty[0m
+[0;32mI (452) app_init: Compile time:     May 20 2025 03:51:20[0m
+[0;32mI (457) app_init: ELF file SHA256:  f95c8dc17...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFCAF28 len 000150D8 (84 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (522) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) coexist: coex firmware version: e727207[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (554) EXAMPLE: Initializing...[0m
+[0;32mI (564) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (584) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (594) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (674) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1044) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1064) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1064) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1064) main_task: Returned from app_main()[0m
+[0;32mI (1114) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (3194) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (3194) EXAMPLE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (3194) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (3474) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-ADV[0m
+[0;32mI (3944) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (3944) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (3944) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (4054) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (4054) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;32mI (4154) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (4154) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1101[0m
+[0;32mI (5324) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (5324) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (5324) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (5324) EXAMPLE: Temperature: 30[0m
+[0;32mI (5334) EXAMPLE: Humidity: 90[0m
+[0;32mI (5334) EXAMPLE: Light Level: 250[0m
+[0;32mI (9334) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (9334) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (9334) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (9334) EXAMPLE: Temperature: 34[0m
+[0;32mI (9344) EXAMPLE: Humidity: 90[0m
+[0;32mI (9344) EXAMPLE: Light Level: 250[0m
+[0;32mI (13344) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (13344) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (13344) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (13354) EXAMPLE: Temperature: 35[0m
+[0;32mI (13354) EXAMPLE: Humidity: 90[0m
+[0;32mI (13354) EXAMPLE: Light Level: 250[0m
+[0;32mI (17394) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (17394) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (17394) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (17394) EXAMPLE: Temperature: 35[0m
+[0;32mI (17404) EXAMPLE: Humidity: 90[0m
+[0;32mI (17404) EXAMPLE: Light Level: 250[0m
+[0;32mI (21354) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (21354) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (21354) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (21354) EXAMPLE: Temperature: 35[0m
+[0;32mI (21364) EXAMPLE: Humidity: 90[0m
+[0;32mI (21364) EXAMPLE: Light Level: 250[0m
+[0;32mI (25374) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (25374) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (25374) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (25374) EXAMPLE: Temperature: 35[0m
+[0;32mI (25384) EXAMPLE: Humidity: 90[0m
+[0;32mI (25384) EXAMPLE: Light Level: 250[0m
+[0;32mI (29374) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (29374) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (29374) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (29374) EXAMPLE: Temperature: 35[0m
+[0;32mI (29384) EXAMPLE: Humidity: 90[0m
+[0;32mI (29384) EXAMPLE: Light Level: 250[0m
+[0;32mI (33404) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (33404) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (33404) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (33404) EXAMPLE: Temperature: 35[0m
+[0;32mI (33404) EXAMPLE: Humidity: 90[0m
+[0;32mI (33414) EXAMPLE: Light Level: 250[0m
+[0;32mI (37394) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (37394) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (37394) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (37394) EXAMPLE: Temperature: 35[0m
+[0;32mI (37404) EXAMPLE: Humidity: 90[0m
+[0;32mI (37404) EXAMPLE: Light Level: 250[0m
+[0;32mI (41394) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (41394) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (41394) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (41394) EXAMPLE: Temperature: 35[0m
+[0;32mI (41404) EXAMPLE: Humidity: 90[0m
+[0;32mI (41404) EXAMPLE: Light Level: 250[0m
+[0;32mI (45414) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (45414) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (45414) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (45414) EXAMPLE: Temperature: 35[0m
+[0;32mI (45424) EXAMPLE: Humidity: 90[0m
+[0;32mI (45424) EXAMPLE: Light Level: 250[0m
+[0;32mI (49474) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (49474) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (49474) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (49474) EXAMPLE: Temperature: 35[0m
+[0;32mI (49484) EXAMPLE: Humidity: 90[0m
+[0;32mI (49484) EXAMPLE: Light Level: 250[0m
+[0;32mI (49574) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (49574) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (49574) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (49574) EXAMPLE: Temperature: 35[0m
+[0;32mI (49574) EXAMPLE: Humidity: 90[0m
+[0;32mI (49584) EXAMPLE: Light Level: 250[0m
+[0;32mI (51574) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (51574) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (51574) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (51574) EXAMPLE: Temperature: 35[0m
+[0;32mI (51584) EXAMPLE: Humidity: 90[0m
+[0;32mI (51584) EXAMPLE: Light Level: 250[0m
+[0;32mI (53564) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (53564) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (53564) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (53574) EXAMPLE: Temperature: 35[0m
+[0;32mI (53574) EXAMPLE: Humidity: 90[0m
+[0;32mI (53574) EXAMPLE: Light Level: 250[0m
+[0;32mI (55564) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (55564) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (55564) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (55574) EXAMPLE: Temperature: 35[0m
+[0;32mI (55574) EXAMPLE: Humidity: 90[0m
+[0;32mI (55574) EXAMPLE: Light Level: 250[0m
+[0;32mI (57574) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (57574) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (57574) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (57574) EXAMPLE: Temperature: 35[0m
+[0;32mI (57584) EXAMPLE: Humidity: 90[0m
+[0;32mI (57584) EXAMPLE: Light Level: 250[0m
+[0;32mI (59574) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (59574) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (59574) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (59574) EXAMPLE: Temperature: 35[0m
+[0;32mI (59584) EXAMPLE: Humidity: 90[0m
+[0;32mI (59584) EXAMPLE: Light Level: 250[0m
+[0;32mI (61574) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (61574) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (61574) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (61574) EXAMPLE: Temperature: 35[0m
+[0;32mI (61584) EXAMPLE: Humidity: 90[0m
+[0;32mI (61584) EXAMPLE: Light Level: 250[0m
+[0;32mI (63574) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (63574) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (63574) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (63574) EXAMPLE: Temperature: 35[0m
+[0;32mI (63584) EXAMPLE: Humidity: 90[0m
+[0;32mI (63584) EXAMPLE: Light Level: 250[0m
+[0;32mI (65574) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (65574) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (65574) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (65574) EXAMPLE: Temperature: 35[0m
+[0;32mI (65584) EXAMPLE: Humidity: 90[0m
+[0;32mI (65584) EXAMPLE: Light Level: 250[0m
+[0;32mI (67574) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (67574) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (67574) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (67574) EXAMPLE: Temperature: 35[0m
+[0;32mI (67584) EXAMPLE: Humidity: 90[0m
+[0;32mI (67584) EXAMPLE: Light Level: 250[0m
+[0;32mI (69574) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (69574) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (69574) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (69574) EXAMPLE: Temperature: 35[0m
+[0;32mI (69584) EXAMPLE: Humidity: 90[0m
+[0;32mI (69584) EXAMPLE: Light Level: 250[0m
+[0;32mI (71614) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (71614) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (71614) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (71614) EXAMPLE: Temperature: 35[0m
+[0;32mI (71614) EXAMPLE: Humidity: 90[0m
+[0;32mI (71624) EXAMPLE: Light Level: 250[0m

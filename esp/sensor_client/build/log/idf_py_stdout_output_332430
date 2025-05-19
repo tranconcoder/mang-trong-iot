@@ -1,0 +1,388 @@
+[0;32mI (121) esp_image: segment 1: paddr=0003cb08 vaddr=3fc99300 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f5c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 19 2025 13:25:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2cae0h (183008) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0003cb08 vaddr=3fc99300 size=03510h ( 13584) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=a1ddch (663004) map[0m
+[0;32mI (241) esp_image: segment 3: paddr=000e1e04 vaddr=3fc9c810 size=01478h (  5240) load[0m
+[0;32mI (243) esp_image: segment 4: paddr=000e3284 vaddr=40374000 size=152b8h ( 86712) load[0m
+[0;32mI (264) esp_image: segment 5: paddr=000f8544 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (283) cpu_start: Multicore app[0m
+[0;32mI (292) cpu_start: Pro cpu start user code[0m
+[0;32mI (292) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (292) app_init: Application information:[0m
+[0;32mI (292) app_init: Project name:     sensor_client[0m
+[0;32mI (296) app_init: App version:      70c29ad-dirty[0m
+[0;32mI (301) app_init: Compile time:     May 19 2025 17:44:22[0m
+[0;32mI (306) app_init: ELF file SHA256:  be3134431...[0m
+[0;32mI (310) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (314) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (318) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (322) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (326) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (332) heap_init: At 3FCA57B8 len 00043F58 (271 KiB): RAM[0m
+[0;32mI (337) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (342) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (347) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (354) spi_flash: detected chip: boya[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;33mW (359) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (372) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (378) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (384) coexist: coex firmware version: e727207[0m
+[0;32mI (389) coexist: coexist rom version e7ae62f[0m
+[0;32mI (393) main_task: Started on CPU0[0m
+[0;32mI (403) main_task: Calling app_main()[0m
+[0;32mI (403) EXAMPLE: Initializing...[0m
+use esp timer !!!
+[1;31mE (413) esp_timer: Task is already initialized[0m
+[0;32mI (413) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (413) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (423) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (423) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (433) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (463) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_DEV_UUID_MATCH_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_LOCAL_APP_KEY_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (603) EXAMPLE: BLE Mesh sensor client initialized[0m
+[0;32mI (613) main_task: Returned from app_main()[0m
+[0;32mI (559) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0E (869) EXAMPLE: Node 0x0000 not exists[0m
+[0;32mI (16299) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (16299) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (16299) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (16299) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (16309) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (16319) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (16319) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (18579) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (18579) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (18589) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (18589) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (18889) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (18999) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (19009) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 03 00 00 00[0m
+[0;32mI (19009) Composition data: 00 11 01 11[0m
+[0;32mI (19009) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (19019) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (19029) EXAMPLE: * Loc 0x0000, NumS 0x03, NumV 0x00 *[0m
+[0;32mI (19029) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (19029) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (19039) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (19039) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (19049) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (19289) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (19379) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (19489) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;33mW (19489) EXAMPLE: Provision and config successfully[0m
+[0;32mI (23629) EXAMPLE: Starting sensor data simulation...[0m
+[0;32mI (23629) EXAMPLE: Sending temperature: 24.86°C[0m
+[0;32mI (23629) Sensor data: =====> : b6 09[0m
+[0;32mI (23629) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (23669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (23669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (23669) Sensor Data: ff 4f 00[0m
+[0;32mI (23669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (25639) EXAMPLE: Sending humidity: 49.95%[0m
+[0;32mI (25639) Sensor data: =====> : 83 13[0m
+[0;32mI (25639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (25669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (25669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (25669) Sensor Data: ff 76 00[0m
+[0;32mI (25669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (27639) EXAMPLE: Sending light level: 549 lux[0m
+[0;32mI (27639) Sensor data: =====> : 25 02[0m
+[0;32mI (27639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (27709) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (27709) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (27709) Sensor Data: ff 4d 00[0m
+[0;32mI (27709) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (29639) EXAMPLE: Sending temperature: 24.57°C[0m
+[0;32mI (29639) Sensor data: =====> : 98 09[0m
+[0;32mI (29639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (29689) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (29689) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (29689) Sensor Data: ff 4f 00[0m
+[0;32mI (29689) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (31639) EXAMPLE: Sending humidity: 49.06%[0m
+[0;32mI (31639) Sensor data: =====> : 2a 13[0m
+[0;32mI (31639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (31689) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (31689) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (31689) Sensor Data: ff 76 00[0m
+[0;32mI (31689) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (33639) EXAMPLE: Sending light level: 581 lux[0m
+[0;32mI (33639) Sensor data: =====> : 45 02[0m
+[0;32mI (33639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (33689) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (33689) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (33689) Sensor Data: ff 4d 00[0m
+[0;32mI (33689) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (35639) EXAMPLE: Sending temperature: 24.16°C[0m
+[0;32mI (35639) Sensor data: =====> : 70 09[0m
+[0;32mI (35639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (35709) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (35709) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (35709) Sensor Data: ff 4f 00[0m
+[0;32mI (35709) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (37639) EXAMPLE: Sending humidity: 48.76%[0m
+[0;32mI (37639) Sensor data: =====> : 0c 13[0m
+[0;32mI (37639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (37669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (37669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (37669) Sensor Data: ff 76 00[0m
+[0;32mI (37669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (39639) EXAMPLE: Sending light level: 624 lux[0m
+[0;32mI (39639) Sensor data: =====> : 70 02[0m
+[0;32mI (39639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (39689) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (39689) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (39689) Sensor Data: ff 4d 00[0m
+[0;32mI (39689) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (41639) EXAMPLE: Sending temperature: 23.86°C[0m
+[0;32mI (41639) Sensor data: =====> : 51 09[0m
+[0;32mI (41639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (41729) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (41729) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (41729) Sensor Data: ff 4f 00[0m
+[0;32mI (41729) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (43639) EXAMPLE: Sending humidity: 48.61%[0m
+[0;32mI (43639) Sensor data: =====> : fd 12[0m
+[0;32mI (43639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (43719) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (43719) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (43719) Sensor Data: ff 76 00[0m
+[0;32mI (43719) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (45639) EXAMPLE: Sending light level: 584 lux[0m
+[0;32mI (45639) Sensor data: =====> : 48 02[0m
+[0;32mI (45639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (45669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (45669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (45669) Sensor Data: ff 4d 00[0m
+[0;32mI (45669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (47639) EXAMPLE: Sending temperature: 24.14°C[0m
+[0;32mI (47639) Sensor data: =====> : 6e 09[0m
+[0;32mI (47639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (47709) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (47709) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (47709) Sensor Data: ff 4f 00[0m
+[0;32mI (47709) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (49639) EXAMPLE: Sending humidity: 47.85%[0m
+[0;32mI (49639) Sensor data: =====> : b0 12[0m
+[0;32mI (49639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (49669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (49669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (49669) Sensor Data: ff 76 00[0m
+[0;32mI (49669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (51639) EXAMPLE: Sending light level: 564 lux[0m
+[0;32mI (51639) Sensor data: =====> : 34 02[0m
+[0;32mI (51639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (51669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (51669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (51669) Sensor Data: ff 4d 00[0m
+[0;32mI (51669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (53639) EXAMPLE: Sending temperature: 24.46°C[0m
+[0;32mI (53639) Sensor data: =====> : 8e 09[0m
+[0;32mI (53639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (53689) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (53689) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (53689) Sensor Data: ff 4f 00[0m
+[0;32mI (53689) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (55639) EXAMPLE: Sending humidity: 47.99%[0m
+[0;32mI (55639) Sensor data: =====> : be 12[0m
+[0;32mI (55639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (55749) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (55749) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (55749) Sensor Data: ff 76 00[0m
+[0;32mI (55749) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (57639) EXAMPLE: Sending light level: 601 lux[0m
+[0;32mI (57639) Sensor data: =====> : 59 02[0m
+[0;32mI (57639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (57669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (57669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (57669) Sensor Data: ff 4d 00[0m
+[0;32mI (57669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (59639) EXAMPLE: Sending temperature: 24.31°C[0m
+[0;32mI (59639) Sensor data: =====> : 7e 09[0m
+[0;32mI (59639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (59709) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (59709) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (59709) Sensor Data: ff 4f 00[0m
+[0;32mI (59709) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (61639) EXAMPLE: Sending humidity: 47.40%[0m
+[0;32mI (61639) Sensor data: =====> : 83 12[0m
+[0;32mI (61639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (61689) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (61689) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (61689) Sensor Data: ff 76 00[0m
+[0;32mI (61689) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (63639) EXAMPLE: Sending light level: 648 lux[0m
+[0;32mI (63639) Sensor data: =====> : 88 02[0m
+[0;32mI (63639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (63729) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (63729) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (63729) Sensor Data: ff 4d 00[0m
+[0;32mI (63729) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (65639) EXAMPLE: Sending temperature: 23.92°C[0m
+[0;32mI (65639) Sensor data: =====> : 57 09[0m
+[0;32mI (65639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (65689) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (65689) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (65689) Sensor Data: ff 4f 00[0m
+[0;32mI (65689) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (67639) EXAMPLE: Sending humidity: 47.38%[0m
+[0;32mI (67639) Sensor data: =====> : 81 12[0m
+[0;32mI (67639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (67739) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (67739) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (67739) Sensor Data: ff 76 00[0m
+[0;32mI (67739) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (69639) EXAMPLE: Sending light level: 632 lux[0m
+[0;32mI (69639) Sensor data: =====> : 78 02[0m
+[0;32mI (69639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (69669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (69679) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (69679) Sensor Data: ff 4d 00[0m
+[0;32mI (69679) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (71639) EXAMPLE: Sending temperature: 23.86°C[0m
+[0;32mI (71639) Sensor data: =====> : 52 09[0m
+[0;32mI (71639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (71769) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (71769) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (71769) Sensor Data: ff 4f 00[0m
+[0;32mI (71769) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (73639) EXAMPLE: Sending humidity: 46.60%[0m
+[0;32mI (73639) Sensor data: =====> : 33 12[0m
+[0;32mI (73639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (73689) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (73689) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (73689) Sensor Data: ff 76 00[0m
+[0;32mI (73689) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (75639) EXAMPLE: Sending light level: 606 lux[0m
+[0;32mI (75639) Sensor data: =====> : 5e 02[0m
+[0;32mI (75639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (75699) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (75699) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (75699) Sensor Data: ff 4d 00[0m
+[0;32mI (75699) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (77639) EXAMPLE: Sending temperature: 24.20°C[0m
+[0;32mI (77639) Sensor data: =====> : 73 09[0m
+[0;32mI (77639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (77709) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (77709) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (77709) Sensor Data: ff 4f 00[0m
+[0;32mI (77709) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (79639) EXAMPLE: Sending humidity: 45.74%[0m
+[0;32mI (79639) Sensor data: =====> : de 11[0m
+[0;32mI (79639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (79669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (79669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (79669) Sensor Data: ff 76 00[0m
+[0;32mI (79669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (81639) EXAMPLE: Sending light level: 631 lux[0m
+[0;32mI (81639) Sensor data: =====> : 77 02[0m
+[0;32mI (81639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (81669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (81669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (81669) Sensor Data: ff 4d 00[0m
+[0;32mI (81669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (83639) EXAMPLE: Sending temperature: 23.80°C[0m
+[0;32mI (83639) Sensor data: =====> : 4c 09[0m
+[0;32mI (83639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (83689) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (83689) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (83689) Sensor Data: ff 4f 00[0m
+[0;32mI (83689) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (85639) EXAMPLE: Sending humidity: 44.99%[0m
+[0;32mI (85639) Sensor data: =====> : 93 11[0m
+[0;32mI (85639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (85679) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (85679) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (85679) Sensor Data: ff 76 00[0m
+[0;32mI (85679) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (87639) EXAMPLE: Sending light level: 646 lux[0m
+[0;32mI (87639) Sensor data: =====> : 86 02[0m
+[0;32mI (87639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (87729) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (87729) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (87729) Sensor Data: ff 4d 00[0m
+[0;32mI (87729) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (89639) EXAMPLE: Sending temperature: 23.37°C[0m
+[0;32mI (89639) Sensor data: =====> : 20 09[0m
+[0;32mI (89639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (89669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (89669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (89669) Sensor Data: ff 4f 00[0m
+[0;32mI (89669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (91639) EXAMPLE: Sending humidity: 44.32%[0m
+[0;32mI (91639) Sensor data: =====> : 4f 11[0m
+[0;32mI (91639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (91699) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (91699) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (91699) Sensor Data: ff 76 00[0m
+[0;32mI (91699) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x0076[0m
+[0;32mI (93639) EXAMPLE: Sending light level: 654 lux[0m
+[0;32mI (93639) Sensor data: =====> : 8e 02[0m
+[0;32mI (93639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[0;32mI (93749) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (93749) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (93749) Sensor Data: ff 4d 00[0m
+[0;32mI (93749) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004d[0m
+[0;32mI (95639) EXAMPLE: Sending temperature: 23.73°C[0m
+[0;32mI (95639) Sensor data: =====> : 45 09[0m
+[0;32mI (95639) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[0;32mI (95669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (95669) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (95669) Sensor Data: ff 4f 00[0m
+[0;32mI (95669) EXAMPLE: Format B, length 0x7f, Sensor Property ID 0x004f[0m
+[0;32mI (97639) EXAMPLE: Sending humidity: 45.22%[0m
+[0;32mI (97639) Sensor data: =====> : a9 11[0m
+[0;32mI (97639) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[0;32mI (99639) EXAMPLE: Sending light level: 615 lux[0m
+[0;32mI (99639) Sensor data: =====> : 67 02[0m
+[0;32mI (99639) EXAMPLE: Requesting sensor data for property ID 0x004d[0m
+[1;31mE (99639) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (99639) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (99649) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (101639) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (101639) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (101639) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (101649) EXAMPLE: Sending temperature: 24.03°C[0m
+[0;32mI (101649) Sensor data: =====> : 62 09[0m
+[0;32mI (101649) EXAMPLE: Requesting sensor data for property ID 0x004f[0m
+[1;31mE (101659) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (101669) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (101669) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (103679) EXAMPLE: Sending humidity: 44.51%[0m
+[0;32mI (103679) Sensor data: =====> : 62 11[0m
+[0;32mI (103679) EXAMPLE: Requesting sensor data for property ID 0x0076[0m
+[1;31mE (103679) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (103679) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (103689) EXAMPLE: Send sensor client message failed (err -16)[0m

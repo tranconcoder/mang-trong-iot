@@ -1,0 +1,284 @@
+[0;32mI (121) esp_image: segment 1: paddr=0003cab8 vaddr=3fc99300 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd7bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 19 2025 13:25:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2ca90h (182928) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0003cab8 vaddr=3fc99300 size=03560h ( 13664) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=a2008h (663560) map[0m
+[0;32mI (241) esp_image: segment 3: paddr=000e2030 vaddr=3fc9c860 size=01428h (  5160) load[0m
+[0;32mI (243) esp_image: segment 4: paddr=000e3460 vaddr=40374000 size=152b8h ( 86712) load[0m
+[0;32mI (264) esp_image: segment 5: paddr=000f8720 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (283) cpu_start: Multicore app[0m
+[0;32mI (292) cpu_start: Pro cpu start user code[0m
+[0;32mI (292) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (292) app_init: Application information:[0m
+[0;32mI (292) app_init: Project name:     sensor_client[0m
+[0;32mI (297) app_init: App version:      70c29ad-dirty[0m
+[0;32mI (301) app_init: Compile time:     May 19 2025 17:44:22[0m
+[0;32mI (306) app_init: ELF file SHA256:  ad477e4ba...[0m
+[0;32mI (310) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (314) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (318) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (322) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (326) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (332) heap_init: At 3FCA57B8 len 00043F58 (271 KiB): RAM[0m
+[0;32mI (337) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (342) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (348) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (354) spi_flash: detected chip: boya[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;33mW (359) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (372) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (378) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (385) coexist: coex firmware version: e727207[0m
+[0;32mI (389) coexist: coexist rom version e7ae62f[0m
+[0;32mI (393) main_task: Started on CPU0[0m
+[0;32mI (403) main_task: Calling app_main()[0m
+[0;32mI (403) EXAMPLE: Initializing...[0m
+use esp timer !!!
+[1;31mE (413) esp_timer: Task is already initialized[0m
+[0;32mI (413) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (413) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (423) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (423) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (433) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (463) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_DEV_UUID_MATCH_COMP_EVT, err_code 0[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_LOCAL_APP_KEY_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (603) EXAMPLE: BLE Mesh sensor client initialized[0m
+[0;32mI (603) main_task: Returned from app_main()[0m
+[0;32mI (1433) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (1433) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (1433) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (1433) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (1443) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (1453) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (1453) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (3673) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (3673) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (3683) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (3683) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (4003) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (4113) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (4113) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 03 00 00 00[0m
+[0;32mI (4113) Composition data: 00 11 01 11[0m
+[0;32mI (4113) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (4123) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (4133) EXAMPLE: * Loc 0x0000, NumS 0x03, NumV 0x00 *[0m
+[0;32mI (4133) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (4143) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (4143) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (4143) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (4153) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (4403) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (4553) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (4603) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;33mW (4603) EXAMPLE: Provision and config successfully[0m
+[0;32mI (9603) EXAMPLE: Starting sensor data simulation...[0m
+[0;32mI (9603) EXAMPLE: Sending batch sensor data - Temp: 25.5°C, Humidity: 50.5%, Light: 507 lux[0m
+[0;32mI (10603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 50.2%, Light: 482 lux[0m
+[0;32mI (11603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 51.1%, Light: 502 lux[0m
+[0;32mI (12603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 50.7%, Light: 509 lux[0m
+[0;32mI (13603) EXAMPLE: Sending batch sensor data - Temp: 24.5°C, Humidity: 50.5%, Light: 513 lux[0m
+[0;32mI (14603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 51.1%, Light: 496 lux[0m
+[0;32mI (15603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 51.9%, Light: 469 lux[0m
+[0;32mI (16603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 51.9%, Light: 481 lux[0m
+[0;32mI (17603) EXAMPLE: Sending batch sensor data - Temp: 24.6°C, Humidity: 51.0%, Light: 460 lux[0m
+[0;32mI (18603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 50.9%, Light: 482 lux[0m
+[0;32mI (19603) EXAMPLE: Sending batch sensor data - Temp: 24.6°C, Humidity: 51.5%, Light: 511 lux[0m
+[0;32mI (20603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 51.1%, Light: 510 lux[0m
+[0;32mI (21603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 51.7%, Light: 538 lux[0m
+[0;32mI (22603) EXAMPLE: Sending batch sensor data - Temp: 24.6°C, Humidity: 50.8%, Light: 528 lux[0m
+[0;32mI (23603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 51.6%, Light: 551 lux[0m
+[0;32mI (24603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 51.4%, Light: 553 lux[0m
+[0;32mI (25603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 51.4%, Light: 503 lux[0m
+[0;32mI (26603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 51.0%, Light: 471 lux[0m
+[0;32mI (27603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 50.6%, Light: 423 lux[0m
+[0;32mI (28603) EXAMPLE: Sending batch sensor data - Temp: 25.5°C, Humidity: 50.4%, Light: 444 lux[0m
+[0;32mI (29603) EXAMPLE: Sending batch sensor data - Temp: 25.8°C, Humidity: 50.9%, Light: 486 lux[0m
+[0;32mI (30603) EXAMPLE: Sending batch sensor data - Temp: 26.0°C, Humidity: 51.2%, Light: 501 lux[0m
+[0;32mI (31603) EXAMPLE: Sending batch sensor data - Temp: 25.7°C, Humidity: 51.1%, Light: 518 lux[0m
+[0;32mI (32603) EXAMPLE: Sending batch sensor data - Temp: 26.1°C, Humidity: 50.9%, Light: 562 lux[0m
+[0;32mI (33603) EXAMPLE: Sending batch sensor data - Temp: 26.4°C, Humidity: 51.8%, Light: 548 lux[0m
+[0;32mI (34603) EXAMPLE: Sending batch sensor data - Temp: 26.0°C, Humidity: 51.2%, Light: 562 lux[0m
+[0;32mI (35603) EXAMPLE: Sending batch sensor data - Temp: 26.1°C, Humidity: 52.2%, Light: 604 lux[0m
+[0;32mI (36603) EXAMPLE: Sending batch sensor data - Temp: 26.0°C, Humidity: 53.1%, Light: 649 lux[0m
+[0;32mI (37603) EXAMPLE: Sending batch sensor data - Temp: 26.0°C, Humidity: 52.8%, Light: 675 lux[0m
+[0;32mI (38603) EXAMPLE: Sending batch sensor data - Temp: 25.5°C, Humidity: 52.0%, Light: 670 lux[0m
+[0;32mI (39603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 51.5%, Light: 684 lux[0m
+[0;32mI (40603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 51.6%, Light: 709 lux[0m
+[0;32mI (41603) EXAMPLE: Sending batch sensor data - Temp: 25.5°C, Humidity: 51.8%, Light: 685 lux[0m
+[0;32mI (42603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 52.2%, Light: 648 lux[0m
+[0;32mI (43603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 51.5%, Light: 650 lux[0m
+[0;32mI (44603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 51.7%, Light: 630 lux[0m
+[0;32mI (45603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 52.6%, Light: 662 lux[0m
+[0;32mI (46603) EXAMPLE: Sending batch sensor data - Temp: 25.3°C, Humidity: 51.9%, Light: 658 lux[0m
+[0;32mI (47603) EXAMPLE: Sending batch sensor data - Temp: 25.5°C, Humidity: 51.0%, Light: 691 lux[0m
+[0;32mI (48603) EXAMPLE: Sending batch sensor data - Temp: 25.6°C, Humidity: 51.9%, Light: 700 lux[0m
+[0;32mI (49603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 52.8%, Light: 682 lux[0m
+[0;32mI (50603) EXAMPLE: Sending batch sensor data - Temp: 25.5°C, Humidity: 52.4%, Light: 650 lux[0m
+[0;32mI (51603) EXAMPLE: Sending batch sensor data - Temp: 25.6°C, Humidity: 52.1%, Light: 699 lux[0m
+[0;32mI (52603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 52.4%, Light: 740 lux[0m
+[0;32mI (53603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 53.3%, Light: 778 lux[0m
+[0;32mI (54603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 53.4%, Light: 746 lux[0m
+[0;32mI (55603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 52.9%, Light: 720 lux[0m
+[0;32mI (56603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 53.7%, Light: 697 lux[0m
+[0;32mI (57603) EXAMPLE: Sending batch sensor data - Temp: 25.4°C, Humidity: 53.9%, Light: 746 lux[0m
+[0;32mI (58603) EXAMPLE: Sending batch sensor data - Temp: 25.6°C, Humidity: 54.3%, Light: 711 lux[0m
+[0;32mI (59603) EXAMPLE: Sending batch sensor data - Temp: 26.1°C, Humidity: 53.8%, Light: 700 lux[0m
+[0;32mI (60603) EXAMPLE: Sending batch sensor data - Temp: 25.7°C, Humidity: 53.6%, Light: 713 lux[0m
+[0;32mI (61603) EXAMPLE: Sending batch sensor data - Temp: 25.3°C, Humidity: 53.4%, Light: 688 lux[0m
+[0;32mI (62603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 52.5%, Light: 647 lux[0m
+[0;32mI (63603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 52.4%, Light: 648 lux[0m
+[0;32mI (64603) EXAMPLE: Sending batch sensor data - Temp: 24.5°C, Humidity: 52.4%, Light: 607 lux[0m
+[0;32mI (65603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 53.1%, Light: 609 lux[0m
+[0;32mI (66603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 53.6%, Light: 652 lux[0m
+[0;32mI (67603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 54.4%, Light: 630 lux[0m
+[0;32mI (68603) EXAMPLE: Sending batch sensor data - Temp: 24.5°C, Humidity: 54.9%, Light: 594 lux[0m
+[0;32mI (69603) EXAMPLE: Sending batch sensor data - Temp: 24.4°C, Humidity: 55.6%, Light: 633 lux[0m
+[0;32mI (70603) EXAMPLE: Sending batch sensor data - Temp: 24.2°C, Humidity: 55.1%, Light: 616 lux[0m
+[0;32mI (71603) EXAMPLE: Sending batch sensor data - Temp: 23.7°C, Humidity: 55.7%, Light: 585 lux[0m
+[0;32mI (72603) EXAMPLE: Sending batch sensor data - Temp: 24.1°C, Humidity: 55.1%, Light: 555 lux[0m
+[0;32mI (73603) EXAMPLE: Sending batch sensor data - Temp: 24.5°C, Humidity: 54.3%, Light: 510 lux[0m
+[0;32mI (74603) EXAMPLE: Sending batch sensor data - Temp: 24.6°C, Humidity: 55.2%, Light: 493 lux[0m
+[0;32mI (75603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 55.1%, Light: 514 lux[0m
+[0;32mI (76603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 55.5%, Light: 489 lux[0m
+[0;32mI (77603) EXAMPLE: Sending batch sensor data - Temp: 25.3°C, Humidity: 56.1%, Light: 532 lux[0m
+[0;32mI (78603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 56.8%, Light: 504 lux[0m
+[0;32mI (79603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 56.7%, Light: 548 lux[0m
+[0;32mI (80603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 56.7%, Light: 524 lux[0m
+[0;32mI (81603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 57.2%, Light: 475 lux[0m
+[0;32mI (82603) EXAMPLE: Sending batch sensor data - Temp: 25.3°C, Humidity: 56.8%, Light: 500 lux[0m
+[0;32mI (83603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 56.4%, Light: 461 lux[0m
+[0;32mI (84603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 57.1%, Light: 426 lux[0m
+[0;32mI (85603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 56.9%, Light: 383 lux[0m
+[0;32mI (86603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 56.4%, Light: 392 lux[0m
+[0;32mI (87603) EXAMPLE: Sending batch sensor data - Temp: 24.3°C, Humidity: 57.2%, Light: 353 lux[0m
+[0;32mI (88603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 58.1%, Light: 387 lux[0m
+[0;32mI (89603) EXAMPLE: Sending batch sensor data - Temp: 24.2°C, Humidity: 57.7%, Light: 365 lux[0m
+[0;32mI (90603) EXAMPLE: Sending batch sensor data - Temp: 23.7°C, Humidity: 58.3%, Light: 334 lux[0m
+[0;32mI (91603) EXAMPLE: Sending batch sensor data - Temp: 23.8°C, Humidity: 57.8%, Light: 306 lux[0m
+[0;32mI (92603) EXAMPLE: Sending batch sensor data - Temp: 23.6°C, Humidity: 57.9%, Light: 260 lux[0m
+[0;32mI (93603) EXAMPLE: Sending batch sensor data - Temp: 23.3°C, Humidity: 58.4%, Light: 285 lux[0m
+[0;32mI (94603) EXAMPLE: Sending batch sensor data - Temp: 23.5°C, Humidity: 57.8%, Light: 244 lux[0m
+[0;32mI (95603) EXAMPLE: Sending batch sensor data - Temp: 23.1°C, Humidity: 57.4%, Light: 256 lux[0m
+[0;32mI (96603) EXAMPLE: Sending batch sensor data - Temp: 23.6°C, Humidity: 57.4%, Light: 249 lux[0m
+[0;32mI (97603) EXAMPLE: Sending batch sensor data - Temp: 23.4°C, Humidity: 57.0%, Light: 278 lux[0m
+[0;32mI (98603) EXAMPLE: Sending batch sensor data - Temp: 23.3°C, Humidity: 56.1%, Light: 236 lux[0m
+[0;32mI (99603) EXAMPLE: Sending batch sensor data - Temp: 23.8°C, Humidity: 55.8%, Light: 247 lux[0m
+[0;32mI (100603) EXAMPLE: Sending batch sensor data - Temp: 23.5°C, Humidity: 55.4%, Light: 262 lux[0m
+[0;32mI (101603) EXAMPLE: Sending batch sensor data - Temp: 23.7°C, Humidity: 55.6%, Light: 306 lux[0m
+[0;32mI (102603) EXAMPLE: Sending batch sensor data - Temp: 23.5°C, Humidity: 56.2%, Light: 343 lux[0m
+[0;32mI (103603) EXAMPLE: Sending batch sensor data - Temp: 23.9°C, Humidity: 56.4%, Light: 351 lux[0m
+[0;32mI (104603) EXAMPLE: Sending batch sensor data - Temp: 23.8°C, Humidity: 56.1%, Light: 366 lux[0m
+[0;32mI (105603) EXAMPLE: Sending batch sensor data - Temp: 24.0°C, Humidity: 55.2%, Light: 403 lux[0m
+[0;32mI (106603) EXAMPLE: Sending batch sensor data - Temp: 23.8°C, Humidity: 55.2%, Light: 370 lux[0m
+[0;32mI (107603) EXAMPLE: Sending batch sensor data - Temp: 23.8°C, Humidity: 56.0%, Light: 409 lux[0m
+[0;32mI (108603) EXAMPLE: Sending batch sensor data - Temp: 23.9°C, Humidity: 55.4%, Light: 416 lux[0m
+[0;32mI (109603) EXAMPLE: Sending batch sensor data - Temp: 24.2°C, Humidity: 56.3%, Light: 464 lux[0m
+[0;32mI (110603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 56.8%, Light: 433 lux[0m
+[0;32mI (111603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 57.5%, Light: 439 lux[0m
+[0;32mI (112603) EXAMPLE: Sending batch sensor data - Temp: 25.3°C, Humidity: 58.4%, Light: 436 lux[0m
+[0;32mI (113603) EXAMPLE: Sending batch sensor data - Temp: 25.6°C, Humidity: 59.2%, Light: 457 lux[0m
+[0;32mI (114603) EXAMPLE: Sending batch sensor data - Temp: 25.3°C, Humidity: 58.4%, Light: 467 lux[0m
+[0;32mI (115603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 57.5%, Light: 434 lux[0m
+[0;32mI (116603) EXAMPLE: Sending batch sensor data - Temp: 25.4°C, Humidity: 57.0%, Light: 438 lux[0m
+[0;32mI (117603) EXAMPLE: Sending batch sensor data - Temp: 25.4°C, Humidity: 57.7%, Light: 414 lux[0m
+[0;32mI (118603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 57.7%, Light: 441 lux[0m
+[0;32mI (119603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 58.0%, Light: 486 lux[0m
+[0;32mI (120603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 58.6%, Light: 450 lux[0m
+[0;32mI (121603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 57.7%, Light: 410 lux[0m
+[0;32mI (122603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 58.6%, Light: 453 lux[0m
+[0;32mI (123603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 59.2%, Light: 413 lux[0m
+[0;32mI (124603) EXAMPLE: Sending batch sensor data - Temp: 24.6°C, Humidity: 59.0%, Light: 454 lux[0m
+[0;32mI (125603) EXAMPLE: Sending batch sensor data - Temp: 24.5°C, Humidity: 59.4%, Light: 490 lux[0m
+[0;32mI (126603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 59.7%, Light: 523 lux[0m
+[0;32mI (127603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 59.7%, Light: 523 lux[0m
+[0;32mI (128603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 59.7%, Light: 502 lux[0m
+[0;32mI (129603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 60.5%, Light: 461 lux[0m
+[0;32mI (130603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 60.1%, Light: 418 lux[0m
+[0;32mI (131603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 60.2%, Light: 382 lux[0m
+[0;32mI (132603) EXAMPLE: Sending batch sensor data - Temp: 24.5°C, Humidity: 60.5%, Light: 412 lux[0m
+[0;32mI (133603) EXAMPLE: Sending batch sensor data - Temp: 24.2°C, Humidity: 60.7%, Light: 399 lux[0m
+[0;32mI (134603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 61.2%, Light: 376 lux[0m
+[0;32mI (135603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 61.7%, Light: 413 lux[0m
+[0;32mI (136603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 61.2%, Light: 439 lux[0m
+[0;32mI (137603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 61.7%, Light: 406 lux[0m
+[0;32mI (138603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 61.4%, Light: 445 lux[0m
+[0;32mI (139603) EXAMPLE: Sending batch sensor data - Temp: 25.3°C, Humidity: 61.3%, Light: 406 lux[0m
+[0;32mI (140603) EXAMPLE: Sending batch sensor data - Temp: 25.0°C, Humidity: 60.9%, Light: 443 lux[0m
+[0;32mI (141603) EXAMPLE: Sending batch sensor data - Temp: 24.6°C, Humidity: 60.3%, Light: 470 lux[0m
+[0;32mI (142603) EXAMPLE: Sending batch sensor data - Temp: 24.5°C, Humidity: 59.7%, Light: 495 lux[0m
+[0;32mI (143603) EXAMPLE: Sending batch sensor data - Temp: 24.2°C, Humidity: 59.9%, Light: 482 lux[0m
+[0;32mI (144603) EXAMPLE: Sending batch sensor data - Temp: 24.0°C, Humidity: 59.6%, Light: 491 lux[0m
+[0;32mI (145603) EXAMPLE: Sending batch sensor data - Temp: 23.7°C, Humidity: 59.2%, Light: 459 lux[0m
+[0;32mI (146603) EXAMPLE: Sending batch sensor data - Temp: 23.6°C, Humidity: 59.5%, Light: 477 lux[0m
+[0;32mI (147603) EXAMPLE: Sending batch sensor data - Temp: 24.1°C, Humidity: 60.4%, Light: 499 lux[0m
+[0;32mI (148603) EXAMPLE: Sending batch sensor data - Temp: 24.3°C, Humidity: 61.1%, Light: 486 lux[0m
+[0;32mI (149603) EXAMPLE: Sending batch sensor data - Temp: 24.7°C, Humidity: 61.5%, Light: 446 lux[0m
+[0;32mI (150603) EXAMPLE: Sending batch sensor data - Temp: 24.8°C, Humidity: 61.4%, Light: 442 lux[0m
+[0;32mI (151603) EXAMPLE: Sending batch sensor data - Temp: 24.9°C, Humidity: 61.1%, Light: 405 lux[0m
+[0;32mI (152603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 60.8%, Light: 419 lux[0m
+[0;32mI (153603) EXAMPLE: Sending batch sensor data - Temp: 25.4°C, Humidity: 61.2%, Light: 466 lux[0m
+[0;32mI (154603) EXAMPLE: Sending batch sensor data - Temp: 25.8°C, Humidity: 60.5%, Light: 466 lux[0m
+[0;32mI (155603) EXAMPLE: Sending batch sensor data - Temp: 25.9°C, Humidity: 59.8%, Light: 457 lux[0m
+[0;32mI (156603) EXAMPLE: Sending batch sensor data - Temp: 26.0°C, Humidity: 59.7%, Light: 452 lux[0m
+[0;32mI (157603) EXAMPLE: Sending batch sensor data - Temp: 25.8°C, Humidity: 59.1%, Light: 487 lux[0m
+[0;32mI (158603) EXAMPLE: Sending batch sensor data - Temp: 25.6°C, Humidity: 58.2%, Light: 477 lux[0m
+[0;32mI (159603) EXAMPLE: Sending batch sensor data - Temp: 25.1°C, Humidity: 59.1%, Light: 480 lux[0m
+[0;32mI (160603) EXAMPLE: Sending batch sensor data - Temp: 25.2°C, Humidity: 58.1%, Light: 517 lux[0m
+[0;32mI (161603) EXAMPLE: Sending batch sensor data - Temp: 25.7°C, Humidity: 58.8%, Light: 544 lux[0m
+[0;32mI (162603) EXAMPLE: Sending batch sensor data - Temp: 25.8°C, Humidity: 58.7%, Light: 536 lux[0m
+[0;32mI (163603) EXAMPLE: Sending batch sensor data - Temp: 25.8°C, Humidity: 59.1%, Light: 537 lux[0m
+[0;32mI (164603) EXAMPLE: Sending batch sensor data - Temp: 25.7°C, Humidity: 59.2%, Light: 507 lux[0m
+[0;32mI (165603) EXAMPLE: Sending batch sensor data - Temp: 25.6°C, Humidity: 58.4%, Light: 470 lux[0m
+[0;32mI (166603) EXAMPLE: Sending batch sensor data - Temp: 25.9°C, Humidity: 58.6%, Light: 504 lux[0m
+[0;32mI (167603) EXAMPLE: Sending batch sensor data - Temp: 25.6°C, Humidity: 59.4%, Light: 552 lux[0m
+[0;32mI (168603) EXAMPLE: Sending batch sensor data - Temp: 25.9°C, Humidity: 59.4%, Light: 516 lux[0m
+[0;32mI (169603) EXAMPLE: Sending batch sensor data - Temp: 26.1°C, Humidity: 59.4%, Light: 478 lux[0m
+[0;32mI (170603) EXAMPLE: Sending batch sensor data - Temp: 26.2°C, Humidity: 58.6%, Light: 507 lux[0m
+[0;32mI (171603) EXAMPLE: Sending batch sensor data - Temp: 25.7°C, Humidity: 58.0%, Light: 547 lux[0m
+[0;32mI (172603) EXAMPLE: Sending batch sensor data - Temp: 25.9°C, Humidity: 58.6%, Light: 530 lux[0m
+[0;32mI (173603) EXAMPLE: Sending batch sensor data - Temp: 26.3°C, Humidity: 59.1%, Light: 484 lux[0m
+[0;32mI (174603) EXAMPLE: Sending batch sensor data - Temp: 25.8°C, Humidity: 59.0%, Light: 471 lux[0m
+[0;32mI (175603) EXAMPLE: Sending batch sensor data - Temp: 25.7°C, Humidity: 59.1%, Light: 466 lux[0m
+[0;32mI (176603) EXAMPLE: Sending batch sensor data - Temp: 26.0°C, Humidity: 60.0%, Light: 452 lux[0m
+[0;32mI (177603) EXAMPLE: Sending batch sensor data - Temp: 26.4°C, Humidity: 59.9%, Light: 415 lux[0m
+[0;32mI (178603) EXAMPLE: Sending batch sensor data - Temp: 26.1°C, Humidity: 60.7%, Light: 454 lux[0m
+[0;32mI (179603) EXAMPLE: Sending batch sensor data - Temp: 26.3°C, Humidity: 60.9%, Light: 456 lux[0m
+[0;32mI (180603) EXAMPLE: Sending batch sensor data - Temp: 26.6°C, Humidity: 61.6%, Light: 470 lux[0m
+[0;32mI (181603) EXAMPLE: Sending batch sensor data - Temp: 26.6°C, Humidity: 61.1%, Light: 495 lux[0m
+[0;32mI (182603) EXAMPLE: Sending batch sensor data - Temp: 27.1°C, Humidity: 60.2%, Light: 515 lux[0m
+[0;32mI (183603) EXAMPLE: Sending batch sensor data - Temp: 27.2°C, Humidity: 61.2%, Light: 538 lux[0m
+[0;32mI (184603) EXAMPLE: Sending batch sensor data - Temp: 27.7°C, Humidity: 60.6%, Light: 559 lux[0m
+[0;32mI (185603) EXAMPLE: Sending batch sensor data - Temp: 27.4°C, Humidity: 60.4%, Light: 574 lux[0m
+[0;32mI (186603) EXAMPLE: Sending batch sensor data - Temp: 27.7°C, Humidity: 59.9%, Light: 543 lux[0m
+[0;32mI (187603) EXAMPLE: Sending batch sensor data - Temp: 27.4°C, Humidity: 59.6%, Light: 593 lux[0m
+[0;32mI (188603) EXAMPLE: Sending batch sensor data - Temp: 26.9°C, Humidity: 59.0%, Light: 567 lux[0m

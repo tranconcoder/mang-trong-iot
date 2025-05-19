@@ -1,0 +1,15 @@
+[1/7] Performing build step for 'bootloader'
+[1/1] cd /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/bootloader/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[2/7] No install step for 'bootloader'
+[3/7] Completed 'bootloader'
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable sensor_server.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/sensor_server.bin
+[7/7] cd /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/partition_table/partition-table.bin /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/sensor_server.bin
+sensor_server.bin binary size 0xdc200 bytes. Smallest app partition is 0x177000 bytes. 0x9ae00 bytes (41%) free.

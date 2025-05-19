@@ -1,0 +1,9 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+NOTICE: Using component placed at /home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/example_init for dependency "example_init", specified in /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/idf_component.yml
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] example_init (*) (/home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/example_init)
+NOTICE: [2/2] idf (5.4.1)
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server -B/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build

@@ -52,59 +52,6 @@
 #define SENSOR_PROP_ID_PRESENT_AMBIENT_HUMIDITY    0x0076 // Humidity property ID
 #define SENSOR_PROP_ID_PRESENT_AMBIENT_LIGHT_LEVEL 0x004D // Light level property ID
 
-// DHT sensor simulation data
-static float simulated_temperature = 25.0; // Default 25°C
-static float simulated_humidity = 50.0;    // Default 50% RH
-
-// LDR sensor simulation data
-static uint16_t simulated_light_level = 500; // Default 500 lux
-
-// Global property ID for the sensor currently being sent
-// static uint16_t current_property_id; // Not used, let's remove it
-
-// Forward declaration of functions to get simulated data
-static float get_simulated_temperature(void);
-static float get_simulated_humidity(void);
-static uint16_t get_simulated_light_level(void);
-
-// Function to get simulated temperature with small random variations
-static float get_simulated_temperature(void) {
-    // Generate a small random variation between -0.5 and +0.5 degrees
-    float variation = ((float)esp_random() / UINT32_MAX) - 0.5;
-    simulated_temperature += variation;
-    
-    // Keep the temperature within reasonable bounds
-    if (simulated_temperature < 15.0) simulated_temperature = 15.0;
-    if (simulated_temperature > 35.0) simulated_temperature = 35.0;
-    
-    return simulated_temperature;
-}
-
-// Function to get simulated humidity with small random variations
-static float get_simulated_humidity(void) {
-    // Generate a small random variation between -1.0 and +1.0 percent
-    float variation = ((float)esp_random() / UINT32_MAX * 2.0) - 1.0;
-    simulated_humidity += variation;
-    
-    // Keep the humidity within reasonable bounds
-    if (simulated_humidity < 30.0) simulated_humidity = 30.0;
-    if (simulated_humidity > 90.0) simulated_humidity = 90.0;
-    
-    return simulated_humidity;
-}
-
-// Function to get simulated light level with variations
-static uint16_t get_simulated_light_level(void) {
-    // Generate a random variation between -50 and +50 lux
-    int variation = (esp_random() % 101) - 50;
-    simulated_light_level += variation;
-    
-    // Keep the light level within reasonable bounds
-    if (simulated_light_level < 100) simulated_light_level = 100;
-    if (simulated_light_level > 2000) simulated_light_level = 2000;
-    
-    return simulated_light_level;
-}
 
 static uint8_t  dev_uuid[ESP_BLE_MESH_OCTET16_LEN];
 static uint16_t server_address = ESP_BLE_MESH_ADDR_UNASSIGNED;
@@ -618,24 +565,11 @@ static void example_ble_mesh_sensor_client_cb(esp_ble_mesh_sensor_client_cb_even
                 ESP_LOG_BUFFER_HEX("Sensor Data", param->status_cb.sensor_status.marshalled_sensor_data->data,
                     param->status_cb.sensor_status.marshalled_sensor_data->len);
                 uint8_t *data = param->status_cb.sensor_status.marshalled_sensor_data->data;
-                uint16_t length = 0;
-                for (; length < param->status_cb.sensor_status.marshalled_sensor_data->len; ) {
-                    uint8_t fmt = ESP_BLE_MESH_GET_SENSOR_DATA_FORMAT(data);
-                    uint8_t data_len = ESP_BLE_MESH_GET_SENSOR_DATA_LENGTH(data, fmt);
-                    uint16_t prop_id = ESP_BLE_MESH_GET_SENSOR_DATA_PROPERTY_ID(data, fmt);
-                    uint8_t mpid_len = (fmt == ESP_BLE_MESH_SENSOR_DATA_FORMAT_A ?
-                                        ESP_BLE_MESH_SENSOR_DATA_FORMAT_A_MPID_LEN : ESP_BLE_MESH_SENSOR_DATA_FORMAT_B_MPID_LEN);
-                    ESP_LOGI(TAG, "Format %s, length 0x%02x, Sensor Property ID 0x%04x",
-                        fmt == ESP_BLE_MESH_SENSOR_DATA_FORMAT_A ? "A" : "B", data_len, prop_id);
-                    if (data_len != ESP_BLE_MESH_SENSOR_DATA_ZERO_LEN) {
-                        ESP_LOG_BUFFER_HEX("Sensor Data", data + mpid_len, data_len + 1);
-                        length += mpid_len + data_len + 1;
-                        data += mpid_len + data_len + 1;
-                    } else {
-                        length += mpid_len;
-                        data += mpid_len;
-                    }
-                }
+
+                ESP_LOGI(TAG, "Temperature: %d", data[0]);
+                ESP_LOGI(TAG, "Humidity: %d", data[1]);
+                ESP_LOGI(TAG, "Light Level: %d", data[2]);
+
             }
             break;
         case ESP_BLE_MESH_MODEL_OP_SENSOR_COLUMN_GET:
@@ -837,23 +771,23 @@ void handle_send_sensor_data(void *pvParameters) {
         // Rotate between different sensor types
         switch (sensor_type) {
             case 0: {
-                float temp = get_simulated_temperature();
+                float temp = 100;
                 send_sensor_data(SENSOR_PROP_ID_PRESENT_AMBIENT_TEMPERATURE, &temp, sizeof(temp));
                 break;
             }
             case 1: {
-                float humidity = get_simulated_humidity();
+                float humidity = 100;
                 send_sensor_data(SENSOR_PROP_ID_PRESENT_AMBIENT_HUMIDITY, &humidity, sizeof(humidity));
                 break;
             }
             case 2: {
-                uint16_t light = get_simulated_light_level();
+                uint16_t light = 100;
                 send_sensor_data(SENSOR_PROP_ID_PRESENT_AMBIENT_LIGHT_LEVEL, &light, sizeof(light));
                 break;
             }
-        }
         
-        // Move to next sensor type
+        
+        }// Move to next sensor type
         sensor_type = (sensor_type + 1) % 3;
         
         // Wait before sending next sensor data

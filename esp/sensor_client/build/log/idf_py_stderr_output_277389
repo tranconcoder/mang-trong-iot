@@ -1,0 +1,6 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4037ecda: esp_ptr_byte_accessible at /home/tvconss/esp/esp-idf/components/esp_hw_support/esp_memory_utils.c:33
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 484d69323b5fefe7524893ceb25b5fbdaf37b2544329d85dc4bd9ccd224ee88c[0m
+[0m

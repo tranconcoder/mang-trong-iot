@@ -70,6 +70,69 @@ static esp_ble_mesh_cfg_srv_t config_server = {
 NET_BUF_SIMPLE_DEFINE_STATIC(sensor_data_0, 1);
 NET_BUF_SIMPLE_DEFINE_STATIC(sensor_data_1, 1);
 
+// DHT sensor simulation data
+static float simulated_temperature = 25.0; // Default 25°C
+static float simulated_humidity = 50.0;    // Default 50% RH
+
+// LDR sensor simulation data
+static uint16_t simulated_light_level = 500; // Default 500 lux
+
+// Global property ID for the sensor currently being sent
+// static uint16_t current_property_id; // Not used, let's remove it
+
+// Forward declaration of functions to get simulated data
+static uint8_t get_simulated_temperature(void);
+static uint8_t get_simulated_humidity(void);
+static uint8_t get_simulated_light_level(void);
+
+// Function to get simulated temperature with small random variations
+static uint8_t get_simulated_temperature(void) {
+    // Generate a small random variation between -0.5 and +0.5 degrees
+    uint8_t variation = (random() % 11) - 5;
+    if (random() % 2 == 0) {
+        variation = -variation;
+    }
+    simulated_temperature += variation;
+    
+    // Keep the temperature within reasonable bounds
+    if (simulated_temperature < 10) simulated_temperature = 10;
+    if (simulated_temperature > 50) simulated_temperature = 50;
+    
+    return simulated_temperature;
+}
+
+// Function to get simulated humidity with small random variations
+static uint8_t get_simulated_humidity(void) {
+    // Generate a small random variation between -1.0 and +1.0 percent
+    uint8_t variation = (random() % 21) - 10;
+    if (random() % 2 == 0) {
+        variation = -variation;
+    }
+    simulated_humidity += variation;
+    
+    // Keep the humidity within reasonable bounds
+    if (simulated_humidity < 30) simulated_humidity = 30;
+    if (simulated_humidity > 90) simulated_humidity = 90;
+    
+    return simulated_humidity;
+}
+
+// Function to get simulated light level with variations
+static uint8_t get_simulated_light_level(void) {
+    // Generate a random variation between -50 and +50 lux
+    uint8_t variation = (random() % 101) - 50;
+    if (random() % 2 == 0) {
+        variation = -variation;
+    }
+    simulated_light_level += variation;
+    
+    // Keep the light level within reasonable bounds
+    if (simulated_light_level < 100) simulated_light_level = 100;
+    if (simulated_light_level > 250) simulated_light_level = 250;
+    
+    return simulated_light_level;
+}
+
 static esp_ble_mesh_sensor_state_t sensor_states[2] = {
     /* Mesh Model Spec:
      * Multiple instances of the Sensor states may be present within the same model,
@@ -478,7 +541,17 @@ static void example_ble_mesh_send_sensor_status(esp_ble_mesh_sensor_server_cb_pa
     length = ESP_BLE_MESH_SENSOR_DATA_FORMAT_B_MPID_LEN;
 
 send:
-    ESP_LOG_BUFFER_HEX("Sensor Data", status, length);
+    ESP_LOGI(TAG, "Sending Sensor Status");
+    uint8_t temperature = get_simulated_temperature();
+    uint8_t humidity = get_simulated_humidity();
+    uint8_t light_level = get_simulated_light_level();
+    ESP_LOGI(TAG, "Temperature: %d", temperature);
+    ESP_LOGI(TAG, "Humidity: %d", humidity);
+    ESP_LOGI(TAG, "Light Level: %d", light_level);
+    status[0] = temperature;
+    status[1] = humidity;
+    status[2] = light_level;
+    // ESP_LOG_BUFFER_HEX("Sensor Data", status, length);
 
     err = esp_ble_mesh_server_model_send_msg(param->model, &param->ctx,
             ESP_BLE_MESH_MODEL_OP_SENSOR_STATUS, length, status);

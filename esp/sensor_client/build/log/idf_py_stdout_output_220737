@@ -1,0 +1,1039 @@
+[0;32mI (121) esp_image: segment 1: paddr=0003cb78 vaddr=3fc99300 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f6f
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 19 2025 13:25:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2cb50h (183120) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0003cb78 vaddr=3fc99300 size=034a0h ( 13472) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=a2240h (664128) map[0m
+[0;32mI (241) esp_image: segment 3: paddr=000e2268 vaddr=3fc9c7a0 size=014e8h (  5352) load[0m
+[0;32mI (243) esp_image: segment 4: paddr=000e3758 vaddr=40374000 size=152b8h ( 86712) load[0m
+[0;32mI (264) esp_image: segment 5: paddr=000f8a18 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (283) cpu_start: Multicore app[0m
+[0;32mI (292) cpu_start: Pro cpu start user code[0m
+[0;32mI (292) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (292) app_init: Application information:[0m
+[0;32mI (293) app_init: Project name:     sensor_client[0m
+[0;32mI (297) app_init: App version:      70c29ad-dirty[0m
+[0;32mI (301) app_init: Compile time:     May 19 2025 16:01:13[0m
+[0;32mI (306) app_init: ELF file SHA256:  e91bbb9ba...[0m
+[0;32mI (310) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (314) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (318) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (322) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (326) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (332) heap_init: At 3FCA57B8 len 00043F58 (271 KiB): RAM[0m
+[0;32mI (337) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (342) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (348) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (354) spi_flash: detected chip: boya[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;33mW (359) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (372) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (378) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (385) coexist: coex firmware version: e727207[0m
+[0;32mI (389) coexist: coexist rom version e7ae62f[0m
+[0;32mI (393) main_task: Started on CPU0[0m
+[0;32mI (403) main_task: Calling app_main()[0m
+[0;32mI (403) EXAMPLE: Initializing...[0m
+use esp timer !!!
+[1;31mE (413) esp_timer: Task is already initialized[0m
+[0;32mI (413) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (413) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (423) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (423) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (433) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (463) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_DEV_UUID_MATCH_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_LOCAL_APP_KEY_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (603) EXAMPLE: BLE Mesh sensor client initialized[0m
+[0;32mI (613) main_task: Returned from app_main()[0m
+[0;32mI (18183) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (18193) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (18193) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (18193) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (18193) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (18203) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (18213) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (20953) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (20953) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (20953) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (20963) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (21293) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (21393) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (21393) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 03 00 00 00[0m
+[0;32mI (21393) Composition data: 00 11 01 11[0m
+[0;32mI (21403) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (21403) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (21413) EXAMPLE: * Loc 0x0000, NumS 0x03, NumV 0x00 *[0m
+[0;32mI (21423) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (21423) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (21423) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (21433) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (21443) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (21693) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (21783) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (21873) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;33mW (21873) EXAMPLE: Provision and config successfully[0m
+[0;32mI (26613) EXAMPLE: Starting sensor data simulation...[0m
+[0;32mI (26613) EXAMPLE: Sending temperature: 25.27°C[0m
+[0;32mI (26613) Sending data: e0 32 ff[0m
+[0;32mI (26613) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (28623) EXAMPLE: Sending humidity: 50.94%[0m
+[0;32mI (28623) Sending data: c0 32 ff[0m
+[0;32mI (28623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (30623) EXAMPLE: Sending light level: 549 lux[0m
+[0;32mI (30623) Sending data: a0 3d ff[0m
+[0;32mI (30623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (32623) EXAMPLE: Sending temperature: 25.66°C[0m
+[0;32mI (32623) Sending data: e0 33 ff[0m
+[0;32mI (32623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (34623) EXAMPLE: Sending humidity: 51.38%[0m
+[0;32mI (34623) Sending data: c0 33 ff[0m
+[0;32mI (34623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (36623) EXAMPLE: Sending light level: 533 lux[0m
+[0;32mI (36623) Sending data: a0 3b ff[0m
+[0;32mI (36623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (38623) EXAMPLE: Sending temperature: 25.52°C[0m
+[0;32mI (38623) Sending data: e0 33 ff[0m
+[0;32mI (38623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (40623) EXAMPLE: Sending humidity: 50.84%[0m
+[0;32mI (40623) Sending data: c0 32 ff[0m
+[0;32mI (40623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (42623) EXAMPLE: Sending light level: 485 lux[0m
+[0;32mI (42623) Sending data: a0 35 ff[0m
+[0;32mI (42623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (44623) EXAMPLE: Sending temperature: 25.08°C[0m
+[0;32mI (44623) Sending data: e0 32 ff[0m
+[0;32mI (44623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (46623) EXAMPLE: Sending humidity: 49.95%[0m
+[0;32mI (46623) Sending data: c0 31 ff[0m
+[0;32mI (46623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (48623) EXAMPLE: Sending light level: 504 lux[0m
+[0;32mI (48623) Sending data: a0 38 ff[0m
+[0;32mI (48623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (50623) EXAMPLE: Sending temperature: 25.47°C[0m
+[0;32mI (50623) Sending data: e0 32 ff[0m
+[0;32mI (50623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (52623) EXAMPLE: Sending humidity: 49.72%[0m
+[0;32mI (52623) Sending data: c0 31 ff[0m
+[0;32mI (52623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (54623) EXAMPLE: Sending light level: 460 lux[0m
+[0;32mI (54623) Sending data: a0 33 ff[0m
+[0;32mI (54623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (56623) EXAMPLE: Sending temperature: 25.72°C[0m
+[0;32mI (56623) Sending data: e0 33 ff[0m
+[0;32mI (56623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (58623) EXAMPLE: Sending humidity: 49.48%[0m
+[0;32mI (58623) Sending data: c0 31 ff[0m
+[0;32mI (58623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (60623) EXAMPLE: Sending light level: 415 lux[0m
+[0;32mI (60623) Sending data: a0 2e ff[0m
+[0;32mI (60623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (62623) EXAMPLE: Sending temperature: 25.73°C[0m
+[0;32mI (62623) Sending data: e0 33 ff[0m
+[0;32mI (62623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (64623) EXAMPLE: Sending humidity: 50.08%[0m
+[0;32mI (64623) Sending data: c0 32 ff[0m
+[0;32mI (64623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (66623) EXAMPLE: Sending light level: 374 lux[0m
+[0;32mI (66623) Sending data: a0 29 ff[0m
+[0;32mI (66623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (68623) EXAMPLE: Sending temperature: 25.86°C[0m
+[0;32mI (68623) Sending data: e0 33 ff[0m
+[0;32mI (68623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (70623) EXAMPLE: Sending humidity: 49.54%[0m
+[0;32mI (70623) Sending data: c0 31 ff[0m
+[0;32mI (70623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (72623) EXAMPLE: Sending light level: 353 lux[0m
+[0;32mI (72623) Sending data: a0 27 ff[0m
+[0;32mI (72623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (74623) EXAMPLE: Sending temperature: 26.10°C[0m
+[0;32mI (74623) Sending data: e0 34 ff[0m
+[0;32mI (74623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (76623) EXAMPLE: Sending humidity: 48.89%[0m
+[0;32mI (76623) Sending data: c0 30 ff[0m
+[0;32mI (76623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (78623) EXAMPLE: Sending light level: 361 lux[0m
+[0;32mI (78623) Sending data: a0 28 ff[0m
+[0;32mI (78623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (80623) EXAMPLE: Sending temperature: 26.26°C[0m
+[0;32mI (80623) Sending data: e0 34 ff[0m
+[0;32mI (80623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (82623) EXAMPLE: Sending humidity: 48.13%[0m
+[0;32mI (82623) Sending data: c0 30 ff[0m
+[0;32mI (82623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (84623) EXAMPLE: Sending light level: 360 lux[0m
+[0;32mI (84623) Sending data: a0 28 ff[0m
+[0;32mI (84623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (86623) EXAMPLE: Sending temperature: 26.52°C[0m
+[0;32mI (86623) Sending data: e0 35 ff[0m
+[0;32mI (86623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (88623) EXAMPLE: Sending humidity: 48.78%[0m
+[0;32mI (88623) Sending data: c0 30 ff[0m
+[0;32mI (88623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (90623) EXAMPLE: Sending light level: 387 lux[0m
+[0;32mI (90623) Sending data: a0 2b ff[0m
+[0;32mI (90623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (92623) EXAMPLE: Sending temperature: 26.31°C[0m
+[0;32mI (92623) Sending data: e0 34 ff[0m
+[0;32mI (92623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (94623) EXAMPLE: Sending humidity: 48.52%[0m
+[0;32mI (94623) Sending data: c0 30 ff[0m
+[0;32mI (94623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (96623) EXAMPLE: Sending light level: 368 lux[0m
+[0;32mI (96623) Sending data: a0 28 ff[0m
+[0;32mI (96623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (98623) EXAMPLE: Sending temperature: 26.17°C[0m
+[0;32mI (98623) Sending data: e0 34 ff[0m
+[0;32mI (98623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (100623) EXAMPLE: Sending humidity: 47.95%[0m
+[0;32mI (100623) Sending data: c0 2f ff[0m
+[0;32mI (100623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (102623) EXAMPLE: Sending light level: 361 lux[0m
+[0;32mI (102623) Sending data: a0 28 ff[0m
+[0;32mI (102623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (104623) EXAMPLE: Sending temperature: 25.69°C[0m
+[0;32mI (104623) Sending data: e0 33 ff[0m
+[0;32mI (104623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (106623) EXAMPLE: Sending humidity: 48.93%[0m
+[0;32mI (106623) Sending data: c0 30 ff[0m
+[0;32mI (106623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (108623) EXAMPLE: Sending light level: 402 lux[0m
+[0;32mI (108623) Sending data: a0 2c ff[0m
+[0;32mI (108623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (110623) EXAMPLE: Sending temperature: 25.55°C[0m
+[0;32mI (110623) Sending data: e0 33 ff[0m
+[0;32mI (110623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (112623) EXAMPLE: Sending humidity: 48.60%[0m
+[0;32mI (112623) Sending data: c0 30 ff[0m
+[0;32mI (112623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (114623) EXAMPLE: Sending light level: 381 lux[0m
+[0;32mI (114623) Sending data: a0 2a ff[0m
+[0;32mI (114623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (116623) EXAMPLE: Sending temperature: 25.39°C[0m
+[0;32mI (116623) Sending data: e0 32 ff[0m
+[0;32mI (116623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (118623) EXAMPLE: Sending humidity: 48.56%[0m
+[0;32mI (118623) Sending data: c0 30 ff[0m
+[0;32mI (118623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (120623) EXAMPLE: Sending light level: 348 lux[0m
+[0;32mI (120623) Sending data: a0 26 ff[0m
+[0;32mI (120623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (122623) EXAMPLE: Sending temperature: 25.86°C[0m
+[0;32mI (122623) Sending data: e0 33 ff[0m
+[0;32mI (122623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (124623) EXAMPLE: Sending humidity: 49.39%[0m
+[0;32mI (124623) Sending data: c0 31 ff[0m
+[0;32mI (124623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (126623) EXAMPLE: Sending light level: 365 lux[0m
+[0;32mI (126623) Sending data: a0 28 ff[0m
+[0;32mI (126623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (128623) EXAMPLE: Sending temperature: 25.40°C[0m
+[0;32mI (128623) Sending data: e0 32 ff[0m
+[0;32mI (128623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (130623) EXAMPLE: Sending humidity: 48.77%[0m
+[0;32mI (130623) Sending data: c0 30 ff[0m
+[0;32mI (130623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (132623) EXAMPLE: Sending light level: 404 lux[0m
+[0;32mI (132623) Sending data: a0 2c ff[0m
+[0;32mI (132623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (134623) EXAMPLE: Sending temperature: 25.06°C[0m
+[0;32mI (134623) Sending data: e0 32 ff[0m
+[0;32mI (134623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (136623) EXAMPLE: Sending humidity: 48.53%[0m
+[0;32mI (136623) Sending data: c0 30 ff[0m
+[0;32mI (136623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (138623) EXAMPLE: Sending light level: 381 lux[0m
+[0;32mI (138623) Sending data: a0 2a ff[0m
+[0;32mI (138623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (140623) EXAMPLE: Sending temperature: 24.93°C[0m
+[0;32mI (140623) Sending data: e0 31 ff[0m
+[0;32mI (140623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (142623) EXAMPLE: Sending humidity: 48.02%[0m
+[0;32mI (142623) Sending data: c0 30 ff[0m
+[0;32mI (142623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (144623) EXAMPLE: Sending light level: 353 lux[0m
+[0;32mI (144623) Sending data: a0 27 ff[0m
+[0;32mI (144623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (146623) EXAMPLE: Sending temperature: 24.54°C[0m
+[0;32mI (146623) Sending data: e0 31 ff[0m
+[0;32mI (146623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (148623) EXAMPLE: Sending humidity: 48.04%[0m
+[0;32mI (148623) Sending data: c0 30 ff[0m
+[0;32mI (148623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (150623) EXAMPLE: Sending light level: 373 lux[0m
+[0;32mI (150623) Sending data: a0 29 ff[0m
+[0;32mI (150623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (152623) EXAMPLE: Sending temperature: 24.82°C[0m
+[0;32mI (152623) Sending data: e0 31 ff[0m
+[0;32mI (152623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (154623) EXAMPLE: Sending humidity: 48.00%[0m
+[0;32mI (154623) Sending data: c0 30 ff[0m
+[0;32mI (154623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (156623) EXAMPLE: Sending light level: 334 lux[0m
+[0;32mI (156623) Sending data: a0 25 ff[0m
+[0;32mI (156623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (158623) EXAMPLE: Sending temperature: 24.85°C[0m
+[0;32mI (158623) Sending data: e0 31 ff[0m
+[0;32mI (158623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (160623) EXAMPLE: Sending humidity: 48.32%[0m
+[0;32mI (160623) Sending data: c0 30 ff[0m
+[0;32mI (160623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (162623) EXAMPLE: Sending light level: 299 lux[0m
+[0;32mI (162623) Sending data: a0 21 ff[0m
+[0;32mI (162623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (164623) EXAMPLE: Sending temperature: 24.66°C[0m
+[0;32mI (164623) Sending data: e0 31 ff[0m
+[0;32mI (164623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (166623) EXAMPLE: Sending humidity: 49.26%[0m
+[0;32mI (166623) Sending data: c0 31 ff[0m
+[0;32mI (166623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (168623) EXAMPLE: Sending light level: 268 lux[0m
+[0;32mI (168623) Sending data: a0 1d ff[0m
+[0;32mI (168623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (170623) EXAMPLE: Sending temperature: 24.16°C[0m
+[0;32mI (170623) Sending data: e0 30 ff[0m
+[0;32mI (170623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (172623) EXAMPLE: Sending humidity: 50.17%[0m
+[0;32mI (172623) Sending data: c0 32 ff[0m
+[0;32mI (172623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (174623) EXAMPLE: Sending light level: 274 lux[0m
+[0;32mI (174623) Sending data: a0 1e ff[0m
+[0;32mI (174623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (176623) EXAMPLE: Sending temperature: 24.11°C[0m
+[0;32mI (176623) Sending data: e0 30 ff[0m
+[0;32mI (176623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (178623) EXAMPLE: Sending humidity: 50.86%[0m
+[0;32mI (178623) Sending data: c0 32 ff[0m
+[0;32mI (178623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (180623) EXAMPLE: Sending light level: 294 lux[0m
+[0;32mI (180623) Sending data: a0 20 ff[0m
+[0;32mI (180623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (182623) EXAMPLE: Sending temperature: 24.52°C[0m
+[0;32mI (182623) Sending data: e0 31 ff[0m
+[0;32mI (182623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (184623) EXAMPLE: Sending humidity: 49.98%[0m
+[0;32mI (184623) Sending data: c0 31 ff[0m
+[0;32mI (184623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (186623) EXAMPLE: Sending light level: 315 lux[0m
+[0;32mI (186623) Sending data: a0 23 ff[0m
+[0;32mI (186623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (188623) EXAMPLE: Sending temperature: 24.44°C[0m
+[0;32mI (188623) Sending data: e0 30 ff[0m
+[0;32mI (188623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (190623) EXAMPLE: Sending humidity: 49.80%[0m
+[0;32mI (190623) Sending data: c0 31 ff[0m
+[0;32mI (190623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (192623) EXAMPLE: Sending light level: 290 lux[0m
+[0;32mI (192623) Sending data: a0 20 ff[0m
+[0;32mI (192623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (194623) EXAMPLE: Sending temperature: 24.68°C[0m
+[0;32mI (194623) Sending data: e0 31 ff[0m
+[0;32mI (194623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (196623) EXAMPLE: Sending humidity: 50.45%[0m
+[0;32mI (196623) Sending data: c0 32 ff[0m
+[0;32mI (196623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (198623) EXAMPLE: Sending light level: 242 lux[0m
+[0;32mI (198623) Sending data: a0 1a ff[0m
+[0;32mI (198623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (200623) EXAMPLE: Sending temperature: 24.45°C[0m
+[0;32mI (200623) Sending data: e0 30 ff[0m
+[0;32mI (200623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (202623) EXAMPLE: Sending humidity: 50.73%[0m
+[0;32mI (202623) Sending data: c0 32 ff[0m
+[0;32mI (202623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (204623) EXAMPLE: Sending light level: 256 lux[0m
+[0;32mI (204623) Sending data: a0 1c ff[0m
+[0;32mI (204623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (206623) EXAMPLE: Sending temperature: 24.27°C[0m
+[0;32mI (206623) Sending data: e0 30 ff[0m
+[0;32mI (206623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (208623) EXAMPLE: Sending humidity: 50.20%[0m
+[0;32mI (208623) Sending data: c0 32 ff[0m
+[0;32mI (208623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (210623) EXAMPLE: Sending light level: 304 lux[0m
+[0;32mI (210623) Sending data: a0 21 ff[0m
+[0;32mI (210623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (212623) EXAMPLE: Sending temperature: 24.71°C[0m
+[0;32mI (212623) Sending data: e0 31 ff[0m
+[0;32mI (212623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (214623) EXAMPLE: Sending humidity: 49.90%[0m
+[0;32mI (214623) Sending data: c0 31 ff[0m
+[0;32mI (214623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (216623) EXAMPLE: Sending light level: 311 lux[0m
+[0;32mI (216623) Sending data: a0 22 ff[0m
+[0;32mI (216623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (218623) EXAMPLE: Sending temperature: 24.74°C[0m
+[0;32mI (218623) Sending data: e0 31 ff[0m
+[0;32mI (218623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (220623) EXAMPLE: Sending humidity: 50.01%[0m
+[0;32mI (220623) Sending data: c0 32 ff[0m
+[0;32mI (220623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (222623) EXAMPLE: Sending light level: 274 lux[0m
+[0;32mI (222623) Sending data: a0 1e ff[0m
+[0;32mI (222623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (224623) EXAMPLE: Sending temperature: 25.14°C[0m
+[0;32mI (224623) Sending data: e0 32 ff[0m
+[0;32mI (224623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (226623) EXAMPLE: Sending humidity: 49.56%[0m
+[0;32mI (226623) Sending data: c0 31 ff[0m
+[0;32mI (226623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (228623) EXAMPLE: Sending light level: 267 lux[0m
+[0;32mI (228623) Sending data: a0 1d ff[0m
+[0;32mI (228623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (230623) EXAMPLE: Sending temperature: 25.09°C[0m
+[0;32mI (230623) Sending data: e0 32 ff[0m
+[0;32mI (230623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (232623) EXAMPLE: Sending humidity: 49.09%[0m
+[0;32mI (232623) Sending data: c0 31 ff[0m
+[0;32mI (232623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (234623) EXAMPLE: Sending light level: 221 lux[0m
+[0;32mI (234623) Sending data: a0 18 ff[0m
+[0;32mI (234623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (236623) EXAMPLE: Sending temperature: 25.50°C[0m
+[0;32mI (236623) Sending data: e0 33 ff[0m
+[0;32mI (236623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (238623) EXAMPLE: Sending humidity: 50.02%[0m
+[0;32mI (238623) Sending data: c0 32 ff[0m
+[0;32mI (238623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (240623) EXAMPLE: Sending light level: 179 lux[0m
+[0;32mI (240623) Sending data: a0 13 ff[0m
+[0;32mI (240623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (242623) EXAMPLE: Sending temperature: 25.88°C[0m
+[0;32mI (242623) Sending data: e0 33 ff[0m
+[0;32mI (242623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (244623) EXAMPLE: Sending humidity: 50.60%[0m
+[0;32mI (244623) Sending data: c0 32 ff[0m
+[0;32mI (244623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (246623) EXAMPLE: Sending light level: 141 lux[0m
+[0;32mI (246623) Sending data: a0 0f ff[0m
+[0;32mI (246623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (248623) EXAMPLE: Sending temperature: 25.82°C[0m
+[0;32mI (248623) Sending data: e0 33 ff[0m
+[0;32mI (248623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (250623) EXAMPLE: Sending humidity: 51.05%[0m
+[0;32mI (250623) Sending data: c0 33 ff[0m
+[0;32mI (250623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (252623) EXAMPLE: Sending light level: 110 lux[0m
+[0;32mI (252623) Sending data: a0 0c ff[0m
+[0;32mI (252623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (254623) EXAMPLE: Sending temperature: 26.02°C[0m
+[0;32mI (254623) Sending data: e0 34 ff[0m
+[0;32mI (254623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (256623) EXAMPLE: Sending humidity: 51.12%[0m
+[0;32mI (256623) Sending data: c0 33 ff[0m
+[0;32mI (256623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (258623) EXAMPLE: Sending light level: 146 lux[0m
+[0;32mI (258623) Sending data: a0 10 ff[0m
+[0;32mI (258623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (260623) EXAMPLE: Sending temperature: 26.42°C[0m
+[0;32mI (260623) Sending data: e0 34 ff[0m
+[0;32mI (260623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (262623) EXAMPLE: Sending humidity: 50.22%[0m
+[0;32mI (262623) Sending data: c0 32 ff[0m
+[0;32mI (262623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (264623) EXAMPLE: Sending light level: 172 lux[0m
+[0;32mI (264623) Sending data: a0 13 ff[0m
+[0;32mI (264623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (266623) EXAMPLE: Sending temperature: 26.10°C[0m
+[0;32mI (266623) Sending data: e0 34 ff[0m
+[0;32mI (266623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (268623) EXAMPLE: Sending humidity: 49.69%[0m
+[0;32mI (268623) Sending data: c0 31 ff[0m
+[0;32mI (268623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (270623) EXAMPLE: Sending light level: 215 lux[0m
+[0;32mI (270623) Sending data: a0 17 ff[0m
+[0;32mI (270623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (272623) EXAMPLE: Sending temperature: 25.88°C[0m
+[0;32mI (272623) Sending data: e0 33 ff[0m
+[0;32mI (272623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (274623) EXAMPLE: Sending humidity: 49.13%[0m
+[0;32mI (274623) Sending data: c0 31 ff[0m
+[0;32mI (274623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (276623) EXAMPLE: Sending light level: 261 lux[0m
+[0;32mI (276623) Sending data: a0 1d ff[0m
+[0;32mI (276623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (278623) EXAMPLE: Sending temperature: 25.94°C[0m
+[0;32mI (278623) Sending data: e0 33 ff[0m
+[0;32mI (278623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (280623) EXAMPLE: Sending humidity: 48.45%[0m
+[0;32mI (280623) Sending data: c0 30 ff[0m
+[0;32mI (280623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (282623) EXAMPLE: Sending light level: 300 lux[0m
+[0;32mI (282623) Sending data: a0 21 ff[0m
+[0;32mI (282623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (284623) EXAMPLE: Sending temperature: 25.92°C[0m
+[0;32mI (284623) Sending data: e0 33 ff[0m
+[0;32mI (284623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (286623) EXAMPLE: Sending humidity: 48.62%[0m
+[0;32mI (286623) Sending data: c0 30 ff[0m
+[0;32mI (286623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (288623) EXAMPLE: Sending light level: 309 lux[0m
+[0;32mI (288623) Sending data: a0 22 ff[0m
+[0;32mI (288623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (290623) EXAMPLE: Sending temperature: 25.85°C[0m
+[0;32mI (290623) Sending data: e0 33 ff[0m
+[0;32mI (290623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (292623) EXAMPLE: Sending humidity: 48.90%[0m
+[0;32mI (292623) Sending data: c0 30 ff[0m
+[0;32mI (292623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (294623) EXAMPLE: Sending light level: 279 lux[0m
+[0;32mI (294623) Sending data: a0 1f ff[0m
+[0;32mI (294623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (296623) EXAMPLE: Sending temperature: 25.89°C[0m
+[0;32mI (296623) Sending data: e0 33 ff[0m
+[0;32mI (296623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (298623) EXAMPLE: Sending humidity: 49.76%[0m
+[0;32mI (298623) Sending data: c0 31 ff[0m
+[0;32mI (298623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (300623) EXAMPLE: Sending light level: 259 lux[0m
+[0;32mI (300623) Sending data: a0 1c ff[0m
+[0;32mI (300623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (302623) EXAMPLE: Sending temperature: 26.20°C[0m
+[0;32mI (302623) Sending data: e0 34 ff[0m
+[0;32mI (302623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (304623) EXAMPLE: Sending humidity: 49.25%[0m
+[0;32mI (304623) Sending data: c0 31 ff[0m
+[0;32mI (304623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (306623) EXAMPLE: Sending light level: 253 lux[0m
+[0;32mI (306623) Sending data: a0 1c ff[0m
+[0;32mI (306623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (308623) EXAMPLE: Sending temperature: 26.57°C[0m
+[0;32mI (308623) Sending data: e0 35 ff[0m
+[0;32mI (308623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (310623) EXAMPLE: Sending humidity: 48.76%[0m
+[0;32mI (310623) Sending data: c0 30 ff[0m
+[0;32mI (310623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (312623) EXAMPLE: Sending light level: 288 lux[0m
+[0;32mI (312623) Sending data: a0 20 ff[0m
+[0;32mI (312623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (314623) EXAMPLE: Sending temperature: 26.60°C[0m
+[0;32mI (314623) Sending data: e0 35 ff[0m
+[0;32mI (314623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (316623) EXAMPLE: Sending humidity: 49.36%[0m
+[0;32mI (316623) Sending data: c0 31 ff[0m
+[0;32mI (316623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (318623) EXAMPLE: Sending light level: 323 lux[0m
+[0;32mI (318623) Sending data: a0 23 ff[0m
+[0;32mI (318623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (320623) EXAMPLE: Sending temperature: 26.12°C[0m
+[0;32mI (320623) Sending data: e0 34 ff[0m
+[0;32mI (320623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (322623) EXAMPLE: Sending humidity: 49.85%[0m
+[0;32mI (322623) Sending data: c0 31 ff[0m
+[0;32mI (322623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (324623) EXAMPLE: Sending light level: 366 lux[0m
+[0;32mI (324623) Sending data: a0 28 ff[0m
+[0;32mI (324623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (326623) EXAMPLE: Sending temperature: 26.05°C[0m
+[0;32mI (326623) Sending data: e0 34 ff[0m
+[0;32mI (326623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (328623) EXAMPLE: Sending humidity: 50.46%[0m
+[0;32mI (328623) Sending data: c0 32 ff[0m
+[0;32mI (328623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (330623) EXAMPLE: Sending light level: 332 lux[0m
+[0;32mI (330623) Sending data: a0 24 ff[0m
+[0;32mI (330623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (332623) EXAMPLE: Sending temperature: 25.73°C[0m
+[0;32mI (332623) Sending data: e0 33 ff[0m
+[0;32mI (332623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (334623) EXAMPLE: Sending humidity: 50.24%[0m
+[0;32mI (334623) Sending data: c0 32 ff[0m
+[0;32mI (334623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (336623) EXAMPLE: Sending light level: 321 lux[0m
+[0;32mI (336623) Sending data: a0 23 ff[0m
+[0;32mI (336623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (338623) EXAMPLE: Sending temperature: 25.90°C[0m
+[0;32mI (338623) Sending data: e0 33 ff[0m
+[0;32mI (338623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (340623) EXAMPLE: Sending humidity: 49.53%[0m
+[0;32mI (340623) Sending data: c0 31 ff[0m
+[0;32mI (340623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (342623) EXAMPLE: Sending light level: 291 lux[0m
+[0;32mI (342623) Sending data: a0 20 ff[0m
+[0;32mI (342623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (344623) EXAMPLE: Sending temperature: 26.11°C[0m
+[0;32mI (344623) Sending data: e0 34 ff[0m
+[0;32mI (344623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (346623) EXAMPLE: Sending humidity: 49.08%[0m
+[0;32mI (346623) Sending data: c0 31 ff[0m
+[0;32mI (346623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (348623) EXAMPLE: Sending light level: 318 lux[0m
+[0;32mI (348623) Sending data: a0 23 ff[0m
+[0;32mI (348623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (350623) EXAMPLE: Sending temperature: 26.41°C[0m
+[0;32mI (350623) Sending data: e0 34 ff[0m
+[0;32mI (350623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (352623) EXAMPLE: Sending humidity: 49.46%[0m
+[0;32mI (352623) Sending data: c0 31 ff[0m
+[0;32mI (352623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (354623) EXAMPLE: Sending light level: 327 lux[0m
+[0;32mI (354623) Sending data: a0 24 ff[0m
+[0;32mI (354623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (356623) EXAMPLE: Sending temperature: 25.99°C[0m
+[0;32mI (356623) Sending data: e0 33 ff[0m
+[0;32mI (356623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (358623) EXAMPLE: Sending humidity: 48.75%[0m
+[0;32mI (358623) Sending data: c0 30 ff[0m
+[0;32mI (358623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (360623) EXAMPLE: Sending light level: 328 lux[0m
+[0;32mI (360623) Sending data: a0 24 ff[0m
+[0;32mI (360623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (362623) EXAMPLE: Sending temperature: 26.48°C[0m
+[0;32mI (362623) Sending data: e0 34 ff[0m
+[0;32mI (362623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (364623) EXAMPLE: Sending humidity: 48.50%[0m
+[0;32mI (364623) Sending data: c0 30 ff[0m
+[0;32mI (364623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (366623) EXAMPLE: Sending light level: 331 lux[0m
+[0;32mI (366623) Sending data: a0 24 ff[0m
+[0;32mI (366623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (368623) EXAMPLE: Sending temperature: 26.06°C[0m
+[0;32mI (368623) Sending data: e0 34 ff[0m
+[0;32mI (368623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (370623) EXAMPLE: Sending humidity: 47.53%[0m
+[0;32mI (370623) Sending data: c0 2f ff[0m
+[0;32mI (370623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (372623) EXAMPLE: Sending light level: 294 lux[0m
+[0;32mI (372623) Sending data: a0 20 ff[0m
+[0;32mI (372623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (374623) EXAMPLE: Sending temperature: 26.23°C[0m
+[0;32mI (374623) Sending data: e0 34 ff[0m
+[0;32mI (374623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (376623) EXAMPLE: Sending humidity: 47.73%[0m
+[0;32mI (376623) Sending data: c0 2f ff[0m
+[0;32mI (376623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (378623) EXAMPLE: Sending light level: 310 lux[0m
+[0;32mI (378623) Sending data: a0 22 ff[0m
+[0;32mI (378623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (380623) EXAMPLE: Sending temperature: 26.15°C[0m
+[0;32mI (380623) Sending data: e0 34 ff[0m
+[0;32mI (380623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (382623) EXAMPLE: Sending humidity: 47.99%[0m
+[0;32mI (382623) Sending data: c0 2f ff[0m
+[0;32mI (382623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (384623) EXAMPLE: Sending light level: 267 lux[0m
+[0;32mI (384623) Sending data: a0 1d ff[0m
+[0;32mI (384623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (386623) EXAMPLE: Sending temperature: 25.75°C[0m
+[0;32mI (386623) Sending data: e0 33 ff[0m
+[0;32mI (386623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (388623) EXAMPLE: Sending humidity: 47.23%[0m
+[0;32mI (388623) Sending data: c0 2f ff[0m
+[0;32mI (388623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (390623) EXAMPLE: Sending light level: 273 lux[0m
+[0;32mI (390623) Sending data: a0 1e ff[0m
+[0;32mI (390623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (392623) EXAMPLE: Sending temperature: 25.45°C[0m
+[0;32mI (392623) Sending data: e0 32 ff[0m
+[0;32mI (392623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (394623) EXAMPLE: Sending humidity: 47.63%[0m
+[0;32mI (394623) Sending data: c0 2f ff[0m
+[0;32mI (394623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (396623) EXAMPLE: Sending light level: 241 lux[0m
+[0;32mI (396623) Sending data: a0 1a ff[0m
+[0;32mI (396623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (398623) EXAMPLE: Sending temperature: 25.13°C[0m
+[0;32mI (398623) Sending data: e0 32 ff[0m
+[0;32mI (398623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (400623) EXAMPLE: Sending humidity: 47.40%[0m
+[0;32mI (400623) Sending data: c0 2f ff[0m
+[0;32mI (400623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (402623) EXAMPLE: Sending light level: 212 lux[0m
+[0;32mI (402623) Sending data: a0 17 ff[0m
+[0;32mI (402623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (404623) EXAMPLE: Sending temperature: 25.45°C[0m
+[0;32mI (404623) Sending data: e0 32 ff[0m
+[0;32mI (404623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (406623) EXAMPLE: Sending humidity: 47.49%[0m
+[0;32mI (406623) Sending data: c0 2f ff[0m
+[0;32mI (406623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (408623) EXAMPLE: Sending light level: 173 lux[0m
+[0;32mI (408623) Sending data: a0 13 ff[0m
+[0;32mI (408623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (410623) EXAMPLE: Sending temperature: 25.92°C[0m
+[0;32mI (410623) Sending data: e0 33 ff[0m
+[0;32mI (410623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (412623) EXAMPLE: Sending humidity: 46.87%[0m
+[0;32mI (412623) Sending data: c0 2e ff[0m
+[0;32mI (412623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (414623) EXAMPLE: Sending light level: 177 lux[0m
+[0;32mI (414623) Sending data: a0 13 ff[0m
+[0;32mI (414623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (416623) EXAMPLE: Sending temperature: 25.52°C[0m
+[0;32mI (416623) Sending data: e0 33 ff[0m
+[0;32mI (416623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (418623) EXAMPLE: Sending humidity: 46.09%[0m
+[0;32mI (418623) Sending data: c0 2e ff[0m
+[0;32mI (418623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (420623) EXAMPLE: Sending light level: 220 lux[0m
+[0;32mI (420623) Sending data: a0 18 ff[0m
+[0;32mI (420623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (422623) EXAMPLE: Sending temperature: 25.69°C[0m
+[0;32mI (422623) Sending data: e0 33 ff[0m
+[0;32mI (422623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (424623) EXAMPLE: Sending humidity: 46.75%[0m
+[0;32mI (424623) Sending data: c0 2e ff[0m
+[0;32mI (424623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (426623) EXAMPLE: Sending light level: 183 lux[0m
+[0;32mI (426623) Sending data: a0 14 ff[0m
+[0;32mI (426623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (428623) EXAMPLE: Sending temperature: 25.38°C[0m
+[0;32mI (428623) Sending data: e0 32 ff[0m
+[0;32mI (428623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (430623) EXAMPLE: Sending humidity: 45.86%[0m
+[0;32mI (430623) Sending data: c0 2d ff[0m
+[0;32mI (430623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (432623) EXAMPLE: Sending light level: 180 lux[0m
+[0;32mI (432623) Sending data: a0 14 ff[0m
+[0;32mI (432623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (434623) EXAMPLE: Sending temperature: 24.95°C[0m
+[0;32mI (434623) Sending data: e0 31 ff[0m
+[0;32mI (434623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (436623) EXAMPLE: Sending humidity: 46.83%[0m
+[0;32mI (436623) Sending data: c0 2e ff[0m
+[0;32mI (436623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (438623) EXAMPLE: Sending light level: 144 lux[0m
+[0;32mI (438623) Sending data: a0 10 ff[0m
+[0;32mI (438623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (440623) EXAMPLE: Sending temperature: 24.88°C[0m
+[0;32mI (440623) Sending data: e0 31 ff[0m
+[0;32mI (440623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (442623) EXAMPLE: Sending humidity: 47.62%[0m
+[0;32mI (442623) Sending data: c0 2f ff[0m
+[0;32mI (442623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (444623) EXAMPLE: Sending light level: 108 lux[0m
+[0;32mI (444623) Sending data: a0 0c ff[0m
+[0;32mI (444623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (446623) EXAMPLE: Sending temperature: 25.00°C[0m
+[0;32mI (446623) Sending data: e0 32 ff[0m
+[0;32mI (446623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (448623) EXAMPLE: Sending humidity: 47.29%[0m
+[0;32mI (448623) Sending data: c0 2f ff[0m
+[0;32mI (448623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (450623) EXAMPLE: Sending light level: 100 lux[0m
+[0;32mI (450623) Sending data: a0 0b ff[0m
+[0;32mI (450623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (452623) EXAMPLE: Sending temperature: 24.52°C[0m
+[0;32mI (452623) Sending data: e0 31 ff[0m
+[0;32mI (452623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (454623) EXAMPLE: Sending humidity: 47.88%[0m
+[0;32mI (454623) Sending data: c0 2f ff[0m
+[0;32mI (454623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (456623) EXAMPLE: Sending light level: 107 lux[0m
+[0;32mI (456623) Sending data: a0 0b ff[0m
+[0;32mI (456623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (458623) EXAMPLE: Sending temperature: 24.30°C[0m
+[0;32mI (458623) Sending data: e0 30 ff[0m
+[0;32mI (458623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (460623) EXAMPLE: Sending humidity: 48.08%[0m
+[0;32mI (460623) Sending data: c0 30 ff[0m
+[0;32mI (460623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (462623) EXAMPLE: Sending light level: 146 lux[0m
+[0;32mI (462623) Sending data: a0 10 ff[0m
+[0;32mI (462623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (464623) EXAMPLE: Sending temperature: 23.90°C[0m
+[0;32mI (464623) Sending data: e0 2f ff[0m
+[0;32mI (464623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (466623) EXAMPLE: Sending humidity: 47.70%[0m
+[0;32mI (466623) Sending data: c0 2f ff[0m
+[0;32mI (466623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (468623) EXAMPLE: Sending light level: 176 lux[0m
+[0;32mI (468623) Sending data: a0 13 ff[0m
+[0;32mI (468623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (470623) EXAMPLE: Sending temperature: 23.82°C[0m
+[0;32mI (470623) Sending data: e0 2f ff[0m
+[0;32mI (470623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (472623) EXAMPLE: Sending humidity: 47.13%[0m
+[0;32mI (472623) Sending data: c0 2f ff[0m
+[0;32mI (472623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (474623) EXAMPLE: Sending light level: 136 lux[0m
+[0;32mI (474623) Sending data: a0 0f ff[0m
+[0;32mI (474623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (476623) EXAMPLE: Sending temperature: 24.24°C[0m
+[0;32mI (476623) Sending data: e0 30 ff[0m
+[0;32mI (476623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (478623) EXAMPLE: Sending humidity: 47.74%[0m
+[0;32mI (478623) Sending data: c0 2f ff[0m
+[0;32mI (478623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (480623) EXAMPLE: Sending light level: 155 lux[0m
+[0;32mI (480623) Sending data: a0 11 ff[0m
+[0;32mI (480623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (482623) EXAMPLE: Sending temperature: 24.23°C[0m
+[0;32mI (482623) Sending data: e0 30 ff[0m
+[0;32mI (482623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (484623) EXAMPLE: Sending humidity: 48.46%[0m
+[0;32mI (484623) Sending data: c0 30 ff[0m
+[0;32mI (484623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (486623) EXAMPLE: Sending light level: 159 lux[0m
+[0;32mI (486623) Sending data: a0 11 ff[0m
+[0;32mI (486623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (488623) EXAMPLE: Sending temperature: 23.80°C[0m
+[0;32mI (488623) Sending data: e0 2f ff[0m
+[0;32mI (488623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (490623) EXAMPLE: Sending humidity: 49.08%[0m
+[0;32mI (490623) Sending data: c0 31 ff[0m
+[0;32mI (490623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (492623) EXAMPLE: Sending light level: 185 lux[0m
+[0;32mI (492623) Sending data: a0 14 ff[0m
+[0;32mI (492623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (494623) EXAMPLE: Sending temperature: 23.41°C[0m
+[0;32mI (494623) Sending data: e0 2e ff[0m
+[0;32mI (494623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (496623) EXAMPLE: Sending humidity: 49.17%[0m
+[0;32mI (496623) Sending data: c0 31 ff[0m
+[0;32mI (496623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (498623) EXAMPLE: Sending light level: 228 lux[0m
+[0;32mI (498623) Sending data: a0 19 ff[0m
+[0;32mI (498623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (500623) EXAMPLE: Sending temperature: 23.24°C[0m
+[0;32mI (500623) Sending data: e0 2e ff[0m
+[0;32mI (500623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (502623) EXAMPLE: Sending humidity: 48.22%[0m
+[0;32mI (502623) Sending data: c0 30 ff[0m
+[0;32mI (502623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (504623) EXAMPLE: Sending light level: 221 lux[0m
+[0;32mI (504623) Sending data: a0 18 ff[0m
+[0;32mI (504623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (506623) EXAMPLE: Sending temperature: 22.81°C[0m
+[0;32mI (506623) Sending data: e0 2d ff[0m
+[0;32mI (506623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (508623) EXAMPLE: Sending humidity: 48.14%[0m
+[0;32mI (508623) Sending data: c0 30 ff[0m
+[0;32mI (508623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (510623) EXAMPLE: Sending light level: 214 lux[0m
+[0;32mI (510623) Sending data: a0 17 ff[0m
+[0;32mI (510623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (512623) EXAMPLE: Sending temperature: 22.59°C[0m
+[0;32mI (512623) Sending data: e0 2d ff[0m
+[0;32mI (512623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (514623) EXAMPLE: Sending humidity: 48.22%[0m
+[0;32mI (514623) Sending data: c0 30 ff[0m
+[0;32mI (514623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (516623) EXAMPLE: Sending light level: 183 lux[0m
+[0;32mI (516623) Sending data: a0 14 ff[0m
+[0;32mI (516623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (518623) EXAMPLE: Sending temperature: 22.38°C[0m
+[0;32mI (518623) Sending data: e0 2c ff[0m
+[0;32mI (518623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (520623) EXAMPLE: Sending humidity: 47.46%[0m
+[0;32mI (520623) Sending data: c0 2f ff[0m
+[0;32mI (520623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (522623) EXAMPLE: Sending light level: 183 lux[0m
+[0;32mI (522623) Sending data: a0 14 ff[0m
+[0;32mI (522623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (524623) EXAMPLE: Sending temperature: 22.71°C[0m
+[0;32mI (524623) Sending data: e0 2d ff[0m
+[0;32mI (524623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (526623) EXAMPLE: Sending humidity: 46.99%[0m
+[0;32mI (526623) Sending data: c0 2e ff[0m
+[0;32mI (526623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (528623) EXAMPLE: Sending light level: 212 lux[0m
+[0;32mI (528623) Sending data: a0 17 ff[0m
+[0;32mI (528623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (530623) EXAMPLE: Sending temperature: 22.38°C[0m
+[0;32mI (530623) Sending data: e0 2c ff[0m
+[0;32mI (530623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (532623) EXAMPLE: Sending humidity: 47.28%[0m
+[0;32mI (532623) Sending data: c0 2f ff[0m
+[0;32mI (532623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (534623) EXAMPLE: Sending light level: 212 lux[0m
+[0;32mI (534623) Sending data: a0 17 ff[0m
+[0;32mI (534623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (536623) EXAMPLE: Sending temperature: 22.19°C[0m
+[0;32mI (536623) Sending data: e0 2c ff[0m
+[0;32mI (536623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (538623) EXAMPLE: Sending humidity: 47.32%[0m
+[0;32mI (538623) Sending data: c0 2f ff[0m
+[0;32mI (538623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (540623) EXAMPLE: Sending light level: 176 lux[0m
+[0;32mI (540623) Sending data: a0 13 ff[0m
+[0;32mI (540623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (542623) EXAMPLE: Sending temperature: 21.95°C[0m
+[0;32mI (542623) Sending data: e0 2b ff[0m
+[0;32mI (542623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (544623) EXAMPLE: Sending humidity: 47.60%[0m
+[0;32mI (544623) Sending data: c0 2f ff[0m
+[0;32mI (544623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (546623) EXAMPLE: Sending light level: 158 lux[0m
+[0;32mI (546623) Sending data: a0 11 ff[0m
+[0;32mI (546623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (548623) EXAMPLE: Sending temperature: 21.54°C[0m
+[0;32mI (548623) Sending data: e0 2b ff[0m
+[0;32mI (548623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (550623) EXAMPLE: Sending humidity: 47.85%[0m
+[0;32mI (550623) Sending data: c0 2f ff[0m
+[0;32mI (550623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (552623) EXAMPLE: Sending light level: 136 lux[0m
+[0;32mI (552623) Sending data: a0 0f ff[0m
+[0;32mI (552623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (554623) EXAMPLE: Sending temperature: 22.03°C[0m
+[0;32mI (554623) Sending data: e0 2c ff[0m
+[0;32mI (554623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (556623) EXAMPLE: Sending humidity: 47.97%[0m
+[0;32mI (556623) Sending data: c0 2f ff[0m
+[0;32mI (556623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (558623) EXAMPLE: Sending light level: 157 lux[0m
+[0;32mI (558623) Sending data: a0 11 ff[0m
+[0;32mI (558623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (560623) EXAMPLE: Sending temperature: 22.26°C[0m
+[0;32mI (560623) Sending data: e0 2c ff[0m
+[0;32mI (560623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (562623) EXAMPLE: Sending humidity: 47.59%[0m
+[0;32mI (562623) Sending data: c0 2f ff[0m
+[0;32mI (562623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (564623) EXAMPLE: Sending light level: 175 lux[0m
+[0;32mI (564623) Sending data: a0 13 ff[0m
+[0;32mI (564623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (566623) EXAMPLE: Sending temperature: 22.46°C[0m
+[0;32mI (566623) Sending data: e0 2c ff[0m
+[0;32mI (566623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (568623) EXAMPLE: Sending humidity: 47.92%[0m
+[0;32mI (568623) Sending data: c0 2f ff[0m
+[0;32mI (568623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (570623) EXAMPLE: Sending light level: 184 lux[0m
+[0;32mI (570623) Sending data: a0 14 ff[0m
+[0;32mI (570623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (572623) EXAMPLE: Sending temperature: 22.17°C[0m
+[0;32mI (572623) Sending data: e0 2c ff[0m
+[0;32mI (572623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (574623) EXAMPLE: Sending humidity: 47.32%[0m
+[0;32mI (574623) Sending data: c0 2f ff[0m
+[0;32mI (574623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (576623) EXAMPLE: Sending light level: 231 lux[0m
+[0;32mI (576623) Sending data: a0 19 ff[0m
+[0;32mI (576623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (578623) EXAMPLE: Sending temperature: 22.13°C[0m
+[0;32mI (578623) Sending data: e0 2c ff[0m
+[0;32mI (578623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (580623) EXAMPLE: Sending humidity: 48.07%[0m
+[0;32mI (580623) Sending data: c0 30 ff[0m
+[0;32mI (580623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (582623) EXAMPLE: Sending light level: 259 lux[0m
+[0;32mI (582623) Sending data: a0 1c ff[0m
+[0;32mI (582623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (584623) EXAMPLE: Sending temperature: 22.33°C[0m
+[0;32mI (584623) Sending data: e0 2c ff[0m
+[0;32mI (584623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (586623) EXAMPLE: Sending humidity: 47.62%[0m
+[0;32mI (586623) Sending data: c0 2f ff[0m
+[0;32mI (586623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (588623) EXAMPLE: Sending light level: 305 lux[0m
+[0;32mI (588623) Sending data: a0 21 ff[0m
+[0;32mI (588623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (590623) EXAMPLE: Sending temperature: 22.78°C[0m
+[0;32mI (590623) Sending data: e0 2d ff[0m
+[0;32mI (590623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (592623) EXAMPLE: Sending humidity: 46.75%[0m
+[0;32mI (592623) Sending data: c0 2e ff[0m
+[0;32mI (592623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (594623) EXAMPLE: Sending light level: 293 lux[0m
+[0;32mI (594623) Sending data: a0 20 ff[0m
+[0;32mI (594623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (596623) EXAMPLE: Sending temperature: 22.78°C[0m
+[0;32mI (596623) Sending data: e0 2d ff[0m
+[0;32mI (596623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (598623) EXAMPLE: Sending humidity: 47.20%[0m
+[0;32mI (598623) Sending data: c0 2f ff[0m
+[0;32mI (598623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (600623) EXAMPLE: Sending light level: 280 lux[0m
+[0;32mI (600623) Sending data: a0 1f ff[0m
+[0;32mI (600623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (602623) EXAMPLE: Sending temperature: 22.47°C[0m
+[0;32mI (602623) Sending data: e0 2c ff[0m
+[0;32mI (602623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (604623) EXAMPLE: Sending humidity: 46.24%[0m
+[0;32mI (604623) Sending data: c0 2e ff[0m
+[0;32mI (604623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (606623) EXAMPLE: Sending light level: 288 lux[0m
+[0;32mI (606623) Sending data: a0 20 ff[0m
+[0;32mI (606623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (608623) EXAMPLE: Sending temperature: 22.39°C[0m
+[0;32mI (608623) Sending data: e0 2c ff[0m
+[0;32mI (608623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (610623) EXAMPLE: Sending humidity: 46.50%[0m
+[0;32mI (610623) Sending data: c0 2e ff[0m
+[0;32mI (610623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (612623) EXAMPLE: Sending light level: 274 lux[0m
+[0;32mI (612623) Sending data: a0 1e ff[0m
+[0;32mI (612623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (614623) EXAMPLE: Sending temperature: 22.49°C[0m
+[0;32mI (614623) Sending data: e0 2c ff[0m
+[0;32mI (614623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (616623) EXAMPLE: Sending humidity: 47.38%[0m
+[0;32mI (616623) Sending data: c0 2f ff[0m
+[0;32mI (616623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (618623) EXAMPLE: Sending light level: 289 lux[0m
+[0;32mI (618623) Sending data: a0 20 ff[0m
+[0;32mI (618623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (620623) EXAMPLE: Sending temperature: 22.89°C[0m
+[0;32mI (620623) Sending data: e0 2d ff[0m
+[0;32mI (620623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (622623) EXAMPLE: Sending humidity: 47.13%[0m
+[0;32mI (622623) Sending data: c0 2f ff[0m
+[0;32mI (622623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (624623) EXAMPLE: Sending light level: 296 lux[0m
+[0;32mI (624623) Sending data: a0 20 ff[0m
+[0;32mI (624623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (626623) EXAMPLE: Sending temperature: 22.79°C[0m
+[0;32mI (626623) Sending data: e0 2d ff[0m
+[0;32mI (626623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (628623) EXAMPLE: Sending humidity: 47.04%[0m
+[0;32mI (628623) Sending data: c0 2f ff[0m
+[0;32mI (628623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (630623) EXAMPLE: Sending light level: 301 lux[0m
+[0;32mI (630623) Sending data: a0 21 ff[0m
+[0;32mI (630623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (632623) EXAMPLE: Sending temperature: 22.68°C[0m
+[0;32mI (632623) Sending data: e0 2d ff[0m
+[0;32mI (632623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (634623) EXAMPLE: Sending humidity: 46.54%[0m
+[0;32mI (634623) Sending data: c0 2e ff[0m
+[0;32mI (634623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (636623) EXAMPLE: Sending light level: 313 lux[0m
+[0;32mI (636623) Sending data: a0 22 ff[0m
+[0;32mI (636623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (638623) EXAMPLE: Sending temperature: 22.22°C[0m
+[0;32mI (638623) Sending data: e0 2c ff[0m
+[0;32mI (638623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (640623) EXAMPLE: Sending humidity: 45.63%[0m
+[0;32mI (640623) Sending data: c0 2d ff[0m
+[0;32mI (640623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (642623) EXAMPLE: Sending light level: 276 lux[0m
+[0;32mI (642623) Sending data: a0 1e ff[0m
+[0;32mI (642623) EXAMPLE: Sending sensor data for property ID 0x004d[0m
+[0;32mI (644623) EXAMPLE: Sending temperature: 21.88°C[0m
+[0;32mI (644623) Sending data: e0 2b ff[0m
+[0;32mI (644623) EXAMPLE: Sending sensor data for property ID 0x004f[0m
+[0;32mI (646623) EXAMPLE: Sending humidity: 45.30%[0m
+[0;32mI (646623) Sending data: c0 2d ff[0m
+[0;32mI (646623) EXAMPLE: Sending sensor data for property ID 0x0076[0m
+[0;32mI (648623) EXAMPLE: Sending light level: 260 lux[0m
+[0;32mI (648623) Sending data: a0 1c ff[0m

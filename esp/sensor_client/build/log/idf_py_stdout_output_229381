@@ -1,0 +1,420 @@
+[0;32mI (121) esp_image: segment 1: paddr=0003cc48 vaddr=3fc99300 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f6f
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 19 2025 13:25:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2cc20h (183328) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0003cc48 vaddr=3fc99300 size=033d0h ( 13264) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=a2100h (663808) map[0m
+[0;32mI (241) esp_image: segment 3: paddr=000e2128 vaddr=3fc9c6d0 size=015f8h (  5624) load[0m
+[0;32mI (243) esp_image: segment 4: paddr=000e3728 vaddr=40374000 size=152b8h ( 86712) load[0m
+[0;32mI (264) esp_image: segment 5: paddr=000f89e8 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (283) cpu_start: Multicore app[0m
+[0;32mI (292) cpu_start: Pro cpu start user code[0m
+[0;32mI (292) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (292) app_init: Application information:[0m
+[0;32mI (293) app_init: Project name:     sensor_client[0m
+[0;32mI (297) app_init: App version:      70c29ad-dirty[0m
+[0;32mI (301) app_init: Compile time:     May 19 2025 17:44:22[0m
+[0;32mI (306) app_init: ELF file SHA256:  df05352ab...[0m
+[0;32mI (310) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (314) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (318) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (322) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (326) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (332) heap_init: At 3FCA5810 len 00043F00 (271 KiB): RAM[0m
+[0;32mI (337) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (342) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (348) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (354) spi_flash: detected chip: boya[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;33mW (359) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (372) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (378) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (385) coexist: coex firmware version: e727207[0m
+[0;32mI (389) coexist: coexist rom version e7ae62f[0m
+[0;32mI (393) main_task: Started on CPU0[0m
+[0;32mI (403) main_task: Calling app_main()[0m
+[0;32mI (403) EXAMPLE: Initializing...[0m
+use esp timer !!!
+[1;31mE (413) esp_timer: Task is already initialized[0m
+[0;32mI (413) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (413) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (423) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (423) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (433) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (463) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_DEV_UUID_MATCH_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_LOCAL_APP_KEY_COMP_EVT, err_code 0[0m
+[1;31mE (593) BLE_MESH: No model found, model id 0x0003, cid 0x02e5[0m
+[0;32mI (603) EXAMPLE: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (613) EXAMPLE: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code -19[0m
+[0;32mI (613) EXAMPLE: Successfully bound AppKey to server's Vendor Sensor Data Model[0m
+[0;33mW (623) EXAMPLE: Provision and config successfully completed for all models.[0m
+[0;32mI (633) EXAMPLE: BLE Mesh sensor client initialized[0m
+[0;32mI (633) main_task: Returned from app_main()[0m
+[0;32mI (5443) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (5443) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (5443) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (5453) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (5453) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (5463) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (5463) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (7823) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (7833) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (7833) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (7833) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (8143) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (8323) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (8323) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 04 00 00 00[0m
+[0;32mI (8323) Composition data: 00 11 01 11 e5 02[0m
+[0;32mI (8323) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (8333) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (8343) EXAMPLE: * Loc 0x0000, NumS 0x04, NumV 0x00 *[0m
+[0;32mI (8343) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (8353) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (8353) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (8353) EXAMPLE: * SIG Model ID 0x02e5 *[0m
+[0;32mI (8363) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (8373) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (8633) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (8723) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (8813) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (8813) EXAMPLE: Binding AppKey to server's Vendor Sensor Data Model...[0m
+[0;32mI (8903) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (13633) EXAMPLE: Starting sensor data simulation...[0m
+[0;32mI (13633) EXAMPLE: Sending VENDOR sensor data - Temp: 24.8°C, Hum: 50.9%, Light: 512 lux (Payload Marker: 0xAA)[0m
+[0;32mI (13633) Vendor Payload: aa 31 32 33[0m
+[1;31mE (13633) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (14643) EXAMPLE: Sending VENDOR sensor data - Temp: 25.2°C, Hum: 50.3%, Light: 512 lux (Payload Marker: 0xAA)[0m
+[0;32mI (14643) Vendor Payload: aa 32 32 33[0m
+[1;31mE (14643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (15643) EXAMPLE: Sending VENDOR sensor data - Temp: 25.5°C, Hum: 49.5%, Light: 490 lux (Payload Marker: 0xAA)[0m
+[0;32mI (15643) Vendor Payload: aa 33 31 31[0m
+[1;31mE (15643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (16643) EXAMPLE: Sending VENDOR sensor data - Temp: 25.9°C, Hum: 49.1%, Light: 516 lux (Payload Marker: 0xAA)[0m
+[0;32mI (16643) Vendor Payload: aa 33 31 33[0m
+[1;31mE (16643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (17643) EXAMPLE: Sending VENDOR sensor data - Temp: 25.7°C, Hum: 49.5%, Light: 512 lux (Payload Marker: 0xAA)[0m
+[0;32mI (17643) Vendor Payload: aa 33 31 33[0m
+[1;31mE (17643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (18643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.2°C, Hum: 49.4%, Light: 462 lux (Payload Marker: 0xAA)[0m
+[0;32mI (18643) Vendor Payload: aa 34 31 2e[0m
+[1;31mE (18643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (19643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.5°C, Hum: 49.6%, Light: 449 lux (Payload Marker: 0xAA)[0m
+[0;32mI (19643) Vendor Payload: aa 34 31 2c[0m
+[1;31mE (19643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (20643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.8°C, Hum: 49.2%, Light: 414 lux (Payload Marker: 0xAA)[0m
+[0;32mI (20643) Vendor Payload: aa 35 31 29[0m
+[1;31mE (20643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (21643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.5°C, Hum: 49.7%, Light: 422 lux (Payload Marker: 0xAA)[0m
+[0;32mI (21643) Vendor Payload: aa 35 31 2a[0m
+[1;31mE (21643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (22643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.8°C, Hum: 49.9%, Light: 410 lux (Payload Marker: 0xAA)[0m
+[0;32mI (22643) Vendor Payload: aa 35 31 29[0m
+[1;31mE (22643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (23643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.9°C, Hum: 50.9%, Light: 452 lux (Payload Marker: 0xAA)[0m
+[0;32mI (23643) Vendor Payload: aa 35 32 2d[0m
+[1;31mE (23643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (24643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.6°C, Hum: 50.7%, Light: 460 lux (Payload Marker: 0xAA)[0m
+[0;32mI (24643) Vendor Payload: aa 35 32 2e[0m
+[1;31mE (24643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (25643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.0°C, Hum: 51.5%, Light: 507 lux (Payload Marker: 0xAA)[0m
+[0;32mI (25643) Vendor Payload: aa 36 33 32[0m
+[1;31mE (25643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (26643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.9°C, Hum: 51.5%, Light: 552 lux (Payload Marker: 0xAA)[0m
+[0;32mI (26643) Vendor Payload: aa 35 33 37[0m
+[1;31mE (26643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (27643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.2°C, Hum: 51.5%, Light: 545 lux (Payload Marker: 0xAA)[0m
+[0;32mI (27643) Vendor Payload: aa 36 33 36[0m
+[1;31mE (27643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (28643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.8°C, Hum: 51.8%, Light: 529 lux (Payload Marker: 0xAA)[0m
+[0;32mI (28643) Vendor Payload: aa 35 33 34[0m
+[1;31mE (28643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (29643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.2°C, Hum: 51.0%, Light: 500 lux (Payload Marker: 0xAA)[0m
+[0;32mI (29643) Vendor Payload: aa 36 33 32[0m
+[1;31mE (29643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (30643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.4°C, Hum: 51.4%, Light: 466 lux (Payload Marker: 0xAA)[0m
+[0;32mI (30643) Vendor Payload: aa 36 33 2e[0m
+[1;31mE (30643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (31643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.5°C, Hum: 50.9%, Light: 422 lux (Payload Marker: 0xAA)[0m
+[0;32mI (31643) Vendor Payload: aa 37 32 2a[0m
+[1;31mE (31643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (32643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.6°C, Hum: 51.7%, Light: 411 lux (Payload Marker: 0xAA)[0m
+[0;32mI (32643) Vendor Payload: aa 37 33 29[0m
+[1;31mE (32643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (33643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.7°C, Hum: 52.1%, Light: 419 lux (Payload Marker: 0xAA)[0m
+[0;32mI (33643) Vendor Payload: aa 37 34 29[0m
+[1;31mE (33643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (34643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.4°C, Hum: 51.4%, Light: 386 lux (Payload Marker: 0xAA)[0m
+[0;32mI (34643) Vendor Payload: aa 36 33 26[0m
+[1;31mE (34643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (35643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.5°C, Hum: 50.9%, Light: 416 lux (Payload Marker: 0xAA)[0m
+[0;32mI (35643) Vendor Payload: aa 36 32 29[0m
+[1;31mE (35643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (36643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.1°C, Hum: 50.2%, Light: 378 lux (Payload Marker: 0xAA)[0m
+[0;32mI (36643) Vendor Payload: aa 36 32 25[0m
+[1;31mE (36643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (37643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.1°C, Hum: 49.9%, Light: 329 lux (Payload Marker: 0xAA)[0m
+[0;32mI (37643) Vendor Payload: aa 36 31 20[0m
+[1;31mE (37643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (38643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.5°C, Hum: 49.8%, Light: 341 lux (Payload Marker: 0xAA)[0m
+[0;32mI (38643) Vendor Payload: aa 36 31 22[0m
+[1;31mE (38643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (39033) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (39033) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (39033) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (39043) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (39043) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (39053) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (39063) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (39643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.2°C, Hum: 49.4%, Light: 372 lux (Payload Marker: 0xAA)[0m
+[0;32mI (39643) Vendor Payload: aa 36 31 25[0m
+[1;31mE (39643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (40643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.0°C, Hum: 49.4%, Light: 343 lux (Payload Marker: 0xAA)[0m
+[0;32mI (40643) Vendor Payload: aa 35 31 22[0m
+[1;31mE (40643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (41643) EXAMPLE: Sending VENDOR sensor data - Temp: 27.0°C, Hum: 49.7%, Light: 354 lux (Payload Marker: 0xAA)[0m
+[0;32mI (41643) Vendor Payload: aa 35 31 23[0m
+[1;31mE (41643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (42033) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (42043) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (42043) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (42043) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (42373) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (42493) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (42493) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 04 00 00 00[0m
+[0;32mI (42493) Composition data: 00 11 01 11 e5 02[0m
+[0;32mI (42503) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (42503) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (42513) EXAMPLE: * Loc 0x0000, NumS 0x04, NumV 0x00 *[0m
+[0;32mI (42523) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (42523) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (42523) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (42533) EXAMPLE: * SIG Model ID 0x02e5 *[0m
+[0;32mI (42533) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (42543) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (42643) EXAMPLE: Sending VENDOR sensor data - Temp: 26.9°C, Hum: 50.6%, Light: 365 lux (Payload Marker: 0xAA)[0m
+[0;32mI (42643) Vendor Payload: aa 35 32 24[0m
+[1;31mE (42643) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (42803) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (42883) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[1;31mE (2587) EXAMPLE: Node 0x0000 not exists[0m
+[1;31mE (10187) EXAMPLE: Node 0x0000 not exists[0m
+[0;32mI (14097) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (14097) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (14097) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (14097) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (14107) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (14117) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (14117) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (16997) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (16997) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (16997) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (17007) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (17277) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (17397) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (17397) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 04 00 00 00[0m
+[0;32mI (17397) Composition data: 00 11 01 11 e5 02[0m
+[0;32mI (17397) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (17407) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (17417) EXAMPLE: * Loc 0x0000, NumS 0x04, NumV 0x00 *[0m
+[0;32mI (17427) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (17427) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (17427) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (17437) EXAMPLE: * SIG Model ID 0x02e5 *[0m
+[0;32mI (17437) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (17447) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (17687) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (17777) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (17867) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (17867) EXAMPLE: Binding AppKey to server's Vendor Sensor Data Model...[0m
+[0;32mI (17957) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (22607) EXAMPLE: Starting sensor data simulation...[0m
+[0;32mI (22607) EXAMPLE: Sending VENDOR sensor data - Temp: 25.1°C, Hum: 50.0%, Light: 530 lux (Payload Marker: 0xAA)[0m
+[0;32mI (22607) Vendor Payload: aa 32 32 35[0m
+[1;31mE (22607) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (23617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.0°C, Hum: 49.9%, Light: 501 lux (Payload Marker: 0xAA)[0m
+[0;32mI (23617) Vendor Payload: aa 31 31 32[0m
+[1;31mE (23617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (24617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.4°C, Hum: 49.9%, Light: 546 lux (Payload Marker: 0xAA)[0m
+[0;32mI (24617) Vendor Payload: aa 32 31 36[0m
+[1;31mE (24617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (25617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.4°C, Hum: 49.2%, Light: 500 lux (Payload Marker: 0xAA)[0m
+[0;32mI (25617) Vendor Payload: aa 32 31 32[0m
+[1;31mE (25617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (26617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.1°C, Hum: 49.2%, Light: 527 lux (Payload Marker: 0xAA)[0m
+[0;32mI (26617) Vendor Payload: aa 32 31 34[0m
+[1;31mE (26617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (27617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.8°C, Hum: 49.9%, Light: 571 lux (Payload Marker: 0xAA)[0m
+[0;32mI (27617) Vendor Payload: aa 31 31 39[0m
+[1;31mE (27617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (28617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.8°C, Hum: 49.4%, Light: 543 lux (Payload Marker: 0xAA)[0m
+[0;32mI (28617) Vendor Payload: aa 31 31 36[0m
+[1;31mE (28617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (29617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.0°C, Hum: 48.7%, Light: 593 lux (Payload Marker: 0xAA)[0m
+[0;32mI (29617) Vendor Payload: aa 31 30 3b[0m
+[1;31mE (29617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (30617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.5°C, Hum: 49.2%, Light: 548 lux (Payload Marker: 0xAA)[0m
+[0;32mI (30617) Vendor Payload: aa 30 31 36[0m
+[1;31mE (30617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (31617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.9°C, Hum: 48.4%, Light: 579 lux (Payload Marker: 0xAA)[0m
+[0;32mI (31617) Vendor Payload: aa 31 30 39[0m
+[1;31mE (31617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (32617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.4°C, Hum: 47.9%, Light: 548 lux (Payload Marker: 0xAA)[0m
+[0;32mI (32617) Vendor Payload: aa 30 2f 36[0m
+[1;31mE (32617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (33617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.0°C, Hum: 47.2%, Light: 507 lux (Payload Marker: 0xAA)[0m
+[0;32mI (33617) Vendor Payload: aa 30 2f 32[0m
+[1;31mE (33617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (34617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.4°C, Hum: 46.3%, Light: 533 lux (Payload Marker: 0xAA)[0m
+[0;32mI (34617) Vendor Payload: aa 30 2e 35[0m
+[1;31mE (34617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (35617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.8°C, Hum: 45.8%, Light: 490 lux (Payload Marker: 0xAA)[0m
+[0;32mI (35617) Vendor Payload: aa 31 2d 31[0m
+[1;31mE (35617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (36617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.5°C, Hum: 46.1%, Light: 522 lux (Payload Marker: 0xAA)[0m
+[0;32mI (36617) Vendor Payload: aa 31 2e 34[0m
+[1;31mE (36617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (37617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.0°C, Hum: 45.5%, Light: 511 lux (Payload Marker: 0xAA)[0m
+[0;32mI (37617) Vendor Payload: aa 31 2d 33[0m
+[1;31mE (37617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (38617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.0°C, Hum: 46.2%, Light: 557 lux (Payload Marker: 0xAA)[0m
+[0;32mI (38617) Vendor Payload: aa 31 2e 37[0m
+[1;31mE (38617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (39617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.3°C, Hum: 46.9%, Light: 527 lux (Payload Marker: 0xAA)[0m
+[0;32mI (39617) Vendor Payload: aa 32 2e 34[0m
+[1;31mE (39617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (40617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.0°C, Hum: 47.1%, Light: 535 lux (Payload Marker: 0xAA)[0m
+[0;32mI (40617) Vendor Payload: aa 32 2f 35[0m
+[1;31mE (40617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (41617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.6°C, Hum: 46.2%, Light: 562 lux (Payload Marker: 0xAA)[0m
+[0;32mI (41617) Vendor Payload: aa 31 2e 38[0m
+[1;31mE (41617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (42617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.1°C, Hum: 46.1%, Light: 547 lux (Payload Marker: 0xAA)[0m
+[0;32mI (42617) Vendor Payload: aa 32 2e 36[0m
+[1;31mE (42617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (43617) EXAMPLE: Sending VENDOR sensor data - Temp: 25.2°C, Hum: 46.5%, Light: 559 lux (Payload Marker: 0xAA)[0m
+[0;32mI (43617) Vendor Payload: aa 32 2e 37[0m
+[1;31mE (43617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (44617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.7°C, Hum: 46.2%, Light: 607 lux (Payload Marker: 0xAA)[0m
+[0;32mI (44617) Vendor Payload: aa 31 2e 3c[0m
+[1;31mE (44617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (45617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.4°C, Hum: 45.7%, Light: 562 lux (Payload Marker: 0xAA)[0m
+[0;32mI (45617) Vendor Payload: aa 30 2d 38[0m
+[1;31mE (45617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (46617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.2°C, Hum: 46.2%, Light: 519 lux (Payload Marker: 0xAA)[0m
+[0;32mI (46617) Vendor Payload: aa 30 2e 33[0m
+[1;31mE (46617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (47617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.5°C, Hum: 47.0%, Light: 569 lux (Payload Marker: 0xAA)[0m
+[0;32mI (47617) Vendor Payload: aa 30 2e 38[0m
+[1;31mE (47617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (48617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.1°C, Hum: 47.1%, Light: 539 lux (Payload Marker: 0xAA)[0m
+[0;32mI (48617) Vendor Payload: aa 30 2f 35[0m
+[1;31mE (48617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (49617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.4°C, Hum: 47.8%, Light: 523 lux (Payload Marker: 0xAA)[0m
+[0;32mI (49617) Vendor Payload: aa 30 2f 34[0m
+[1;31mE (49617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (50617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.4°C, Hum: 48.0%, Light: 490 lux (Payload Marker: 0xAA)[0m
+[0;32mI (50617) Vendor Payload: aa 30 2f 31[0m
+[1;31mE (50617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (51617) EXAMPLE: Sending VENDOR sensor data - Temp: 23.9°C, Hum: 48.9%, Light: 537 lux (Payload Marker: 0xAA)[0m
+[0;32mI (51617) Vendor Payload: aa 2f 30 35[0m
+[1;31mE (51617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (52617) EXAMPLE: Sending VENDOR sensor data - Temp: 23.6°C, Hum: 49.4%, Light: 529 lux (Payload Marker: 0xAA)[0m
+[0;32mI (52617) Vendor Payload: aa 2f 31 34[0m
+[1;31mE (52617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (53617) EXAMPLE: Sending VENDOR sensor data - Temp: 23.7°C, Hum: 49.0%, Light: 502 lux (Payload Marker: 0xAA)[0m
+[0;32mI (53617) Vendor Payload: aa 2f 31 32[0m
+[1;31mE (53617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (54617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.0°C, Hum: 49.5%, Light: 493 lux (Payload Marker: 0xAA)[0m
+[0;32mI (54617) Vendor Payload: aa 30 31 31[0m
+[1;31mE (54617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (55617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.1°C, Hum: 50.0%, Light: 458 lux (Payload Marker: 0xAA)[0m
+[0;32mI (55617) Vendor Payload: aa 30 32 2d[0m
+[1;31mE (55617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (56617) EXAMPLE: Sending VENDOR sensor data - Temp: 23.8°C, Hum: 49.2%, Light: 440 lux (Payload Marker: 0xAA)[0m
+[0;32mI (56617) Vendor Payload: aa 2f 31 2c[0m
+[1;31mE (56617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (57617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.1°C, Hum: 49.1%, Light: 439 lux (Payload Marker: 0xAA)[0m
+[0;32mI (57617) Vendor Payload: aa 30 31 2b[0m
+[1;31mE (57617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (58617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.0°C, Hum: 49.3%, Light: 473 lux (Payload Marker: 0xAA)[0m
+[0;32mI (58617) Vendor Payload: aa 30 31 2f[0m
+[1;31mE (58617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (59617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.2°C, Hum: 48.9%, Light: 458 lux (Payload Marker: 0xAA)[0m
+[0;32mI (59617) Vendor Payload: aa 30 30 2d[0m
+[1;31mE (59617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (60617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.3°C, Hum: 49.7%, Light: 480 lux (Payload Marker: 0xAA)[0m
+[0;32mI (60617) Vendor Payload: aa 30 31 30[0m
+[1;31mE (60617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (61617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.5°C, Hum: 48.7%, Light: 430 lux (Payload Marker: 0xAA)[0m
+[0;32mI (61617) Vendor Payload: aa 31 30 2b[0m
+[1;31mE (61617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (62617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.6°C, Hum: 49.7%, Light: 406 lux (Payload Marker: 0xAA)[0m
+[0;32mI (62617) Vendor Payload: aa 31 31 28[0m
+[1;31mE (62617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (63617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.7°C, Hum: 50.6%, Light: 447 lux (Payload Marker: 0xAA)[0m
+[0;32mI (63617) Vendor Payload: aa 31 32 2c[0m
+[1;31mE (63617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (64617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.2°C, Hum: 49.8%, Light: 486 lux (Payload Marker: 0xAA)[0m
+[0;32mI (64617) Vendor Payload: aa 30 31 30[0m
+[1;31mE (64617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (65617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.6°C, Hum: 50.4%, Light: 450 lux (Payload Marker: 0xAA)[0m
+[0;32mI (65617) Vendor Payload: aa 31 32 2d[0m
+[1;31mE (65617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (66617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.5°C, Hum: 49.6%, Light: 485 lux (Payload Marker: 0xAA)[0m
+[0;32mI (66617) Vendor Payload: aa 30 31 30[0m
+[1;31mE (66617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (67617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.0°C, Hum: 49.3%, Light: 524 lux (Payload Marker: 0xAA)[0m
+[0;32mI (67617) Vendor Payload: aa 2f 31 34[0m
+[1;31mE (67617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (68617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.4°C, Hum: 49.3%, Light: 519 lux (Payload Marker: 0xAA)[0m
+[0;32mI (68617) Vendor Payload: aa 30 31 33[0m
+[1;31mE (68617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (69617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.3°C, Hum: 50.1%, Light: 517 lux (Payload Marker: 0xAA)[0m
+[0;32mI (69617) Vendor Payload: aa 30 32 33[0m
+[1;31mE (69617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (70617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.0°C, Hum: 50.8%, Light: 553 lux (Payload Marker: 0xAA)[0m
+[0;32mI (70617) Vendor Payload: aa 2f 32 37[0m
+[1;31mE (70617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (71617) EXAMPLE: Sending VENDOR sensor data - Temp: 23.8°C, Hum: 50.5%, Light: 570 lux (Payload Marker: 0xAA)[0m
+[0;32mI (71617) Vendor Payload: aa 2f 32 39[0m
+[1;31mE (71617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (72617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.0°C, Hum: 49.9%, Light: 613 lux (Payload Marker: 0xAA)[0m
+[0;32mI (72617) Vendor Payload: aa 30 31 3d[0m
+[1;31mE (72617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (73617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.4°C, Hum: 50.9%, Light: 607 lux (Payload Marker: 0xAA)[0m
+[0;32mI (73617) Vendor Payload: aa 30 32 3c[0m
+[1;31mE (73617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (74617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.5°C, Hum: 50.7%, Light: 602 lux (Payload Marker: 0xAA)[0m
+[0;32mI (74617) Vendor Payload: aa 31 32 3c[0m
+[1;31mE (74617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m
+[0;32mI (75617) EXAMPLE: Sending VENDOR sensor data - Temp: 24.3°C, Hum: 50.0%, Light: 580 lux (Payload Marker: 0xAA)[0m
+[0;32mI (75617) Vendor Payload: aa 30 32 3a[0m
+[1;31mE (75617) EXAMPLE: Failed to send VENDOR sensor data: 0x102[0m

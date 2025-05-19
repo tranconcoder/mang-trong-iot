@@ -1,0 +1,154 @@
+[0;32mI (121) esp_image: segment 1: paddr=0003cf58 vaddr=3fc99300 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f5c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 19 2025 13:25:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2cf30h (184112) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0003cf58 vaddr=3fc99300 size=030c0h ( 12480) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=a2244h (664132) map[0m
+[0;32mI (242) esp_image: segment 3: paddr=000e226c vaddr=3fc9c3c0 size=01908h (  6408) load[0m
+[0;32mI (243) esp_image: segment 4: paddr=000e3b7c vaddr=40374000 size=152b8h ( 86712) load[0m
+[0;32mI (264) esp_image: segment 5: paddr=000f8e3c vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (283) cpu_start: Multicore app[0m
+[0;32mI (292) cpu_start: Pro cpu start user code[0m
+[0;32mI (292) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (293) app_init: Application information:[0m
+[0;32mI (293) app_init: Project name:     sensor_client[0m
+[0;32mI (297) app_init: App version:      70c29ad-dirty[0m
+[0;32mI (301) app_init: Compile time:     May 19 2025 17:44:22[0m
+[0;32mI (306) app_init: ELF file SHA256:  21932122f...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (314) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (318) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (322) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (326) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (333) heap_init: At 3FCA5818 len 00043EF8 (271 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (343) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (348) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (354) spi_flash: detected chip: boya[0m
+[0;32mI (357) spi_flash: flash io: dio[0m
+[0;33mW (360) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (372) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (378) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (385) coexist: coex firmware version: e727207[0m
+[0;32mI (389) coexist: coexist rom version e7ae62f[0m
+[0;32mI (394) main_task: Started on CPU0[0m
+[0;32mI (404) main_task: Calling app_main()[0m
+[0;32mI (404) EXAMPLE: Initializing...[0m
+use esp timer !!!
+[1;31mE (414) esp_timer: Task is already initialized[0m
+[0;32mI (414) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (414) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (424) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (424) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (434) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (464) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (584) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (584) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_DEV_UUID_MATCH_COMP_EVT, err_code 0[0m
+[0;32mI (594) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (594) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_LOCAL_APP_KEY_COMP_EVT, err_code 0[0m
+[1;31mE (594) BLE_MESH: No model found, model id 0x0003, cid 0x02e5[0m
+[0;32mI (604) EXAMPLE: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, elem_addr 0x0001, model_id 0x1102, cid 0xffff, err_code 0[0m
+[0;32mI (614) EXAMPLE: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, elem_addr 0x0001, model_id 0x0003, cid 0x02e5, err_code -19[0m
+[0;32mI (624) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (634) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (634) EXAMPLE: Address type 0x00, adv type 0x00[0m
+[0;32mI (644) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (644) EXAMPLE: oob info 0x0000, bearer PB-GATT[0m
+[0;32mI (654) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (654) EXAMPLE: BLE Mesh sensor client initialized[0m
+[0;32mI (664) main_task: Returned from app_main()[0m
+[0;32mI (1864) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (2344) BT_HCI: hci cmd send: disconnect: hdl 0x1, rsn:0x13[0m
+[0;33mW (2354) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x16[0m
+[0;32mI (2354) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (2354) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (2364) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-GATT, reason 0x16[0m
+[0;33mW (2374) BT_HCI: hcif disc complete: hdl 0x1, rsn 0x16[0m
+[0;32mI (2374) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (2384) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (2604) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (2604) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 04 00 00 00[0m
+[0;32mI (2604) Composition data: 00 11 01 11 e5 02[0m
+[0;32mI (2604) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (2614) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (2624) EXAMPLE: * Loc 0x0000, NumS 0x04, NumV 0x00 *[0m
+[0;32mI (2624) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (2634) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (2634) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (2634) EXAMPLE: * SIG Model ID 0x02e5 *[0m
+[0;32mI (2644) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (2654) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (2664) EXAMPLE: Waiting for Vendor Model AppKey binding on server...[0m
+[0;32mI (2914) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (3014) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (3014) EXAMPLE: Received Model App Bind Status. Element Addr: 0x0005, AppIdx: 0x0000, Model ID: 0x1100, CID: 0xffff, Status: 0x00[0m
+[0;32mI (3014) EXAMPLE: Sensor Server Model bound successfully. Binding Sensor Setup Server Model...[0m
+[0;32mI (3104) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (3104) EXAMPLE: Received Model App Bind Status. Element Addr: 0x0005, AppIdx: 0x0000, Model ID: 0x1101, CID: 0xffff, Status: 0x00[0m
+[0;32mI (3104) EXAMPLE: Sensor Setup Server Model bound successfully. Binding Vendor Sensor Data Model (CID: 0x02E5, ModelID: 0x0003) on addr 0x0005...[0m
+[0;32mI (3124) EXAMPLE: Config Model App Bind for Vendor Model sent successfully.[0m
+[0;32mI (3184) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (3194) EXAMPLE: Received Model App Bind Status. Element Addr: 0x0005, AppIdx: 0x0000, Model ID: 0x0003, CID: 0x02e5, Status: 0x02[0m
+[1;31mE (3194) EXAMPLE: Model App Bind failed for Model ID 0x0003, CID 0x02e5 with status 0x02[0m
+[1;31mE (2827) EXAMPLE: Node 0x0000 not exists[0m
+[0;32mI (7037) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (7037) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (7037) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (7047) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (7047) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (7057) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (7057) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (9327) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (9327) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (9337) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (9337) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (9607) EXAMPLE: Waiting for Vendor Model AppKey binding on server...[0m
+[0;32mI (9607) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (9727) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (9727) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 04 00 00 00[0m
+[0;32mI (9737) Composition data: 00 11 01 11 e5 02[0m
+[0;32mI (9737) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (9747) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (9757) EXAMPLE: * Loc 0x0000, NumS 0x04, NumV 0x00 *[0m
+[0;32mI (9757) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (9757) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (9767) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (9767) EXAMPLE: * SIG Model ID 0x02e5 *[0m
+[0;32mI (9777) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (9787) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (10047) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (10137) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (10137) EXAMPLE: Received Model App Bind Status. Element Addr: 0x0005, AppIdx: 0x0000, Model ID: 0x1100, CID: 0xffff, Status: 0x00[0m
+[0;32mI (10147) EXAMPLE: Sensor Server Model bound successfully. Binding Sensor Setup Server Model...[0m
+[0;32mI (10257) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (10257) EXAMPLE: Received Model App Bind Status. Element Addr: 0x0005, AppIdx: 0x0000, Model ID: 0x1101, CID: 0xffff, Status: 0x00[0m
+[0;32mI (10257) EXAMPLE: Sensor Setup Server Model bound successfully. Binding Vendor Sensor Data Model (CID: 0x02E5, ModelID: 0x0003) on addr 0x0005...[0m
+[0;32mI (10277) EXAMPLE: Config Model App Bind for Vendor Model sent successfully.[0m
+[0;32mI (10347) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (10347) EXAMPLE: Received Model App Bind Status. Element Addr: 0x0005, AppIdx: 0x0000, Model ID: 0x0003, CID: 0x02e5, Status: 0x02[0m
+[1;31mE (10357) EXAMPLE: Model App Bind failed for Model ID 0x0003, CID 0x02e5 with status 0x02[0m

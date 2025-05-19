@@ -1,0 +1,8 @@
+esptool.py v4.8.1
+Serial port /dev/tyACM0
+
+A fatal error occurred: Could not open /dev/tyACM0, the port is busy or doesn't exist.
+([Errno 2] could not open port /dev/tyACM0: [Errno 2] No such file or directory: '/dev/tyACM0')
+
+Hint: Check if the port is correct and ESP connected
+

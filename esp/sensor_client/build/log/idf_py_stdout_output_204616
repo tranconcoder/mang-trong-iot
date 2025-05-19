@@ -1,0 +1,74 @@
+[1/5] cd /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/partition_table/partition-table.bin /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/sensor_client.bin
+sensor_client.bin binary size 0xe8570 bytes. Smallest app partition is 0x177000 bytes. 0x8ea90 bytes (38%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/bootloader/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build/bootloader/bootloader.bin
+Bootloader binary size 0x5220 bytes. 0x2de0 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/tvconss/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/tvconss/esp/esp-idf -D "SERIAL_TOOL=/home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/home/tvconss/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build -P /home/tvconss/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 sensor_client.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 24:ec:4a:3a:2b:ec
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21024 bytes to 13384...
+Writing at 0x00000000... (100 %)
+Wrote 21024 bytes (13384 compressed) at 0x00000000 in 0.2 seconds (effective 865.8 kbit/s)...
+Hash of data verified.
+Compressed 951664 bytes to 543650...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001dae1... (5 %)
+Writing at 0x0002d797... (8 %)
+Writing at 0x00038a25... (11 %)
+Writing at 0x00042ddc... (14 %)
+Writing at 0x00048e0d... (17 %)
+Writing at 0x0004f543... (20 %)
+Writing at 0x000553d8... (23 %)
+Writing at 0x0005aff6... (26 %)
+Writing at 0x00060ec8... (29 %)
+Writing at 0x00066b6b... (32 %)
+Writing at 0x0006d5fb... (35 %)
+Writing at 0x00073ee9... (38 %)
+Writing at 0x0007abbd... (41 %)
+Writing at 0x00080bcd... (44 %)
+Writing at 0x00086e8c... (47 %)
+Writing at 0x0008d01a... (50 %)
+Writing at 0x00093182... (52 %)
+Writing at 0x0009901e... (55 %)
+Writing at 0x0009ed16... (58 %)
+Writing at 0x000a5127... (61 %)
+Writing at 0x000aa9bb... (64 %)
+Writing at 0x000b04aa... (67 %)
+Writing at 0x000b603c... (70 %)
+Writing at 0x000bc647... (73 %)
+Writing at 0x000c23d6... (76 %)
+Writing at 0x000c7a2d... (79 %)
+Writing at 0x000ce23f... (82 %)
+Writing at 0x000d7571... (85 %)
+Writing at 0x000de975... (88 %)
+Writing at 0x000e55ee... (91 %)
+Writing at 0x000ea979... (94 %)
+Writing at 0x000f0868... (97 %)
+Writing at 0x000f6f07... (100 %)
+Wrote 951664 bytes (543650 compressed) at 0x00010000 in 7.2 seconds (effective 1053.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 2086.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

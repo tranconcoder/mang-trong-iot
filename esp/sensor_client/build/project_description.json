@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "sensor_client",
-    "project_version":    "79448e5-dirty",
+    "project_version":    "70c29ad-dirty",
     "project_path":       "/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client",
     "idf_path":           "/home/tvconss/esp/esp-idf",
     "build_dir":          "/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client/build",

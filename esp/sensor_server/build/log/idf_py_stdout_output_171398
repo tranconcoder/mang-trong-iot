@@ -1,0 +1,867 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/bootloader/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/home/tvconss/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.4.1\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/config -I/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main -I/home/tvconss/esp/esp-idf/components/newlib/platform_include -I/home/tvconss/esp/esp-idf/components/freertos/config/include -I/home/tvconss/esp/esp-idf/components/freertos/config/include/freertos -I/home/tvconss/esp/esp-idf/components/freertos/config/xtensa/include -I/home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/tvconss/esp/esp-idf/components/freertos/esp_additions/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/include/soc -I/home/tvconss/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/tvconss/esp/esp-idf/components/esp_hw_support/dma/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/tvconss/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/tvconss/esp/esp-idf/components/heap/include -I/home/tvconss/esp/esp-idf/components/heap/tlsf -I/home/tvconss/esp/esp-idf/components/log/include -I/home/tvconss/esp/esp-idf/components/soc/include -I/home/tvconss/esp/esp-idf/components/soc/esp32 -I/home/tvconss/esp/esp-idf/components/soc/esp32/include -I/home/tvconss/esp/esp-idf/components/soc/esp32/register -I/home/tvconss/esp/esp-idf/components/hal/platform_port/include -I/home/tvconss/esp/esp-idf/components/hal/esp32/include -I/home/tvconss/esp/esp-idf/components/hal/include -I/home/tvconss/esp/esp-idf/components/esp_rom/include -I/home/tvconss/esp/esp-idf/components/esp_rom/esp32/include -I/home/tvconss/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/tvconss/esp/esp-idf/components/esp_rom/esp32 -I/home/tvconss/esp/esp-idf/components/esp_common/include -I/home/tvconss/esp/esp-idf/components/esp_system/include -I/home/tvconss/esp/esp-idf/components/esp_system/port/soc -I/home/tvconss/esp/esp-idf/components/esp_system/port/include/private -I/home/tvconss/esp/esp-idf/components/xtensa/esp32/include -I/home/tvconss/esp/esp-idf/components/xtensa/include -I/home/tvconss/esp/esp-idf/components/xtensa/deprecated_include -I/home/tvconss/esp/esp-idf/components/lwip/include -I/home/tvconss/esp/esp-idf/components/lwip/include/apps -I/home/tvconss/esp/esp-idf/components/lwip/include/apps/sntp -I/home/tvconss/esp/esp-idf/components/lwip/lwip/src/include -I/home/tvconss/esp/esp-idf/components/lwip/port/include -I/home/tvconss/esp/esp-idf/components/lwip/port/freertos/include -I/home/tvconss/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/tvconss/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/tvconss/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/example_init -I/home/tvconss/esp/esp-idf/components/bt/include/esp32/include -I/home/tvconss/esp/esp-idf/components/bt/common/osi/include -I/home/tvconss/esp/esp-idf/components/bt/common/api/include/api -I/home/tvconss/esp/esp-idf/components/bt/common/btc/profile/esp/blufi/include -I/home/tvconss/esp/esp-idf/components/bt/common/btc/profile/esp/include -I/home/tvconss/esp/esp-idf/components/bt/common/hci_log/include -I/home/tvconss/esp/esp-idf/components/bt/common/ble_log/include -I/home/tvconss/esp/esp-idf/components/bt/host/bluedroid/api/include/api -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/common/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/common/tinycrypt/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/core -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/core/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/core/storage -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/btc/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/models/common/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/models/client/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/models/server/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/api/core/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/api/models/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/api -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/lib/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/v1.1/api/core/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/v1.1/api/models/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/v1.1/btc/include -I/home/tvconss/esp/esp-idf/components/bt/porting/ext/tinycrypt/include -I/home/tvconss/esp/esp-idf/components/esp_timer/include -I/home/tvconss/esp/esp-idf/components/esp_wifi/include -I/home/tvconss/esp/esp-idf/components/esp_wifi/include/local -I/home/tvconss/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/tvconss/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/tvconss/esp/esp-idf/components/esp_event/include -I/home/tvconss/esp/esp-idf/components/esp_phy/include -I/home/tvconss/esp/esp-idf/components/esp_phy/esp32/include -I/home/tvconss/esp/esp-idf/components/esp_netif/include -I/home/tvconss/esp/esp-idf/components/esp_driver_gpio/include -I/home/tvconss/esp/esp-idf/components/esp_pm/include -I/home/tvconss/esp/esp-idf/components/mbedtls/port/include -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/tvconss/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/tvconss/esp/esp-idf/components/esp_app_format/include -I/home/tvconss/esp/esp-idf/components/esp_bootloader_format/include -I/home/tvconss/esp/esp-idf/components/app_update/include -I/home/tvconss/esp/esp-idf/components/bootloader_support/include -I/home/tvconss/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/tvconss/esp/esp-idf/components/esp_partition/include -I/home/tvconss/esp/esp-idf/components/efuse/include -I/home/tvconss/esp/esp-idf/components/efuse/esp32/include -I/home/tvconss/esp/esp-idf/components/esp_mm/include -I/home/tvconss/esp/esp-idf/components/spi_flash/include -I/home/tvconss/esp/esp-idf/components/esp_security/include -I/home/tvconss/esp/esp-idf/components/pthread/include -I/home/tvconss/esp/esp-idf/components/esp_driver_gptimer/include -I/home/tvconss/esp/esp-idf/components/esp_ringbuf/include -I/home/tvconss/esp/esp-idf/components/esp_driver_uart/include -I/home/tvconss/esp/esp-idf/components/vfs/include -I/home/tvconss/esp/esp-idf/components/app_trace/include -I/home/tvconss/esp/esp-idf/components/nvs_flash/include -I/home/tvconss/esp/esp-idf/components/esp_driver_pcnt/include -I/home/tvconss/esp/esp-idf/components/esp_driver_spi/include -I/home/tvconss/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/tvconss/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/tvconss/esp/esp-idf/components/esp_driver_i2s/include -I/home/tvconss/esp/esp-idf/components/sdmmc/include -I/home/tvconss/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/tvconss/esp/esp-idf/components/esp_driver_sdspi/include -I/home/tvconss/esp/esp-idf/components/esp_driver_sdio/include -I/home/tvconss/esp/esp-idf/components/esp_driver_dac/include -I/home/tvconss/esp/esp-idf/components/esp_driver_rmt/include -I/home/tvconss/esp/esp-idf/components/esp_driver_tsens/include -I/home/tvconss/esp/esp-idf/components/esp_driver_sdm/include -I/home/tvconss/esp/esp-idf/components/esp_driver_i2c/include -I/home/tvconss/esp/esp-idf/components/esp_driver_ledc/include -I/home/tvconss/esp/esp-idf/components/esp_driver_parlio/include -I/home/tvconss/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/tvconss/esp/esp-idf/components/driver/deprecated -I/home/tvconss/esp/esp-idf/components/driver/i2c/include -I/home/tvconss/esp/esp-idf/components/driver/touch_sensor/include -I/home/tvconss/esp/esp-idf/components/driver/twai/include -I/home/tvconss/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/tvconss/esp/esp-idf/components/esp_vfs_console/include -I/home/tvconss/esp/esp-idf/components/wpa_supplicant/include -I/home/tvconss/esp/esp-idf/components/wpa_supplicant/port/include -I/home/tvconss/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/tvconss/esp/esp-idf/components/esp_coex/include -I/home/tvconss/esp/esp-idf/components/unity/include -I/home/tvconss/esp/esp-idf/components/unity/unity/src -I/home/tvconss/esp/esp-idf/components/cmock/CMock/src -I/home/tvconss/esp/esp-idf/components/console -I/home/tvconss/esp/esp-idf/components/http_parser -I/home/tvconss/esp/esp-idf/components/esp-tls -I/home/tvconss/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/home/tvconss/esp/esp-idf/components/esp_adc/include -I/home/tvconss/esp/esp-idf/components/esp_adc/interface -I/home/tvconss/esp/esp-idf/components/esp_adc/esp32/include -I/home/tvconss/esp/esp-idf/components/esp_adc/deprecated/include -I/home/tvconss/esp/esp-idf/components/esp_driver_isp/include -I/home/tvconss/esp/esp-idf/components/esp_driver_cam/include -I/home/tvconss/esp/esp-idf/components/esp_driver_cam/interface -I/home/tvconss/esp/esp-idf/components/esp_driver_jpeg/include -I/home/tvconss/esp/esp-idf/components/esp_driver_ppa/include -I/home/tvconss/esp/esp-idf/components/esp_eth/include -I/home/tvconss/esp/esp-idf/components/esp_gdbstub/include -I/home/tvconss/esp/esp-idf/components/esp_hid/include -I/home/tvconss/esp/esp-idf/components/tcp_transport/include -I/home/tvconss/esp/esp-idf/components/esp_http_client/include -I/home/tvconss/esp/esp-idf/components/esp_http_server/include -I/home/tvconss/esp/esp-idf/components/esp_https_ota/include -I/home/tvconss/esp/esp-idf/components/esp_https_server/include -I/home/tvconss/esp/esp-idf/components/esp_psram/include -I/home/tvconss/esp/esp-idf/components/esp_lcd/include -I/home/tvconss/esp/esp-idf/components/esp_lcd/interface -I/home/tvconss/esp/esp-idf/components/protobuf-c/protobuf-c -I/home/tvconss/esp/esp-idf/components/protocomm/include/common -I/home/tvconss/esp/esp-idf/components/protocomm/include/security -I/home/tvconss/esp/esp-idf/components/protocomm/include/transports -I/home/tvconss/esp/esp-idf/components/protocomm/include/crypto/srp6a -I/home/tvconss/esp/esp-idf/components/protocomm/proto-c -I/home/tvconss/esp/esp-idf/components/esp_local_ctrl/include -I/home/tvconss/esp/esp-idf/components/espcoredump/include -I/home/tvconss/esp/esp-idf/components/espcoredump/include/port/xtensa -I/home/tvconss/esp/esp-idf/components/wear_levelling/include -I/home/tvconss/esp/esp-idf/components/fatfs/diskio -I/home/tvconss/esp/esp-idf/components/fatfs/src -I/home/tvconss/esp/esp-idf/components/fatfs/vfs -I/home/tvconss/esp/esp-idf/components/idf_test/include -I/home/tvconss/esp/esp-idf/components/idf_test/include/esp32 -I/home/tvconss/esp/esp-idf/components/ieee802154/include -I/home/tvconss/esp/esp-idf/components/json/cJSON -I/home/tvconss/esp/esp-idf/components/mqtt/esp-mqtt/include -I/home/tvconss/esp/esp-idf/components/nvs_sec_provider/include -I/home/tvconss/esp/esp-idf/components/perfmon/include -I/home/tvconss/esp/esp-idf/components/rt/include -I/home/tvconss/esp/esp-idf/components/spiffs/include -I/home/tvconss/esp/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server=. -fmacro-prefix-map=/home/tvconss/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c: In function 'example_ble_mesh_send_sensor_status':
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:462:13: error: implicit declaration of function 'decode_sensor_data' [-Wimplicit-function-declaration]
+  462 |             decode_sensor_data(buffer);
+      |             ^~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c: At top level:
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:705:6: warning: conflicting types for 'decode_sensor_data'; have 'void(const char *)'
+  705 | void decode_sensor_data(const char* hex_data);
+      |      ^~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:462:13: note: previous implicit declaration of 'decode_sensor_data' with type 'void(const char *)'
+  462 |             decode_sensor_data(buffer);
+      |             ^~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:877:1: error: expected identifier or '(' before '/' token
+  877 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c: In function 'example_ble_mesh_send_sensor_status':
+      | ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:877:83: warning: multi-character literal with 35 characters exceeds 'int' size of 4 bytes
+  877 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c: In function 'example_ble_mesh_send_sensor_status':
+      |                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:878:118: warning: multi-character literal with 18 characters exceeds 'int' size of 4 bytes
+  878 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:462:13: error: implicit declaration of function 'decode_sensor_data' [-Wimplicit-function-declaration]
+      |                                                                                                                      ^~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:880:7: error: expected identifier or '(' before '|' token
+  880 |       |             ^~~~~~~~~~~~~~~~~~
+      |       ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:881:83: warning: multi-character literal with 33 characters exceeds 'int' size of 4 bytes
+  881 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c: In function 'example_ble_mesh_sensor_server_cb':
+      |                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:882:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  882 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:609:28: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:882:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  882 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:609:28: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:882:145: error: unknown type name 'did'
+  882 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:609:28: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                 ^~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:882:153: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'mean'
+  882 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:609:28: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                         ^~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:882:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  882 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:609:28: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:887:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  887 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:887:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  887 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:887:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  887 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:890:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+  890 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:891:143: error: stray '##' in program
+  891 |   182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:891:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  891 |   182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:893:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+  893 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:9: error: stray '#' in program
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+In file included from /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:14:
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:96: error: stray '##' in program
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:96: error: stray '##' in program
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:96: error: stray '##' in program
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:96: error: stray '##' in program
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:96: error: stray '##' in program
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:894:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  894 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:896:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+  896 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:17: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:899:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  899 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:899:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  899 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:899:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  899 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:902:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+  902 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:903:143: error: stray '##' in program
+  903 |   183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:903:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  903 |   183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:905:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+  905 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:9: error: stray '#' in program
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:96: error: stray '##' in program
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:96: error: stray '##' in program
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:96: error: stray '##' in program
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:96: error: stray '##' in program
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:96: error: stray '##' in program
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:906:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  906 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:908:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+  908 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:17: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:911:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  911 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:911:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  911 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:911:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  911 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:914:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+  914 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:915:143: error: stray '##' in program
+  915 |   184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:915:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  915 |   184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:917:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+  917 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:9: error: stray '#' in program
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:96: error: stray '##' in program
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:96: error: stray '##' in program
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:96: error: stray '##' in program
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:96: error: stray '##' in program
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:96: error: stray '##' in program
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:918:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  918 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:920:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+  920 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:17: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:923:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  923 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:923:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  923 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:923:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  923 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:926:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+  926 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:927:143: error: stray '##' in program
+  927 |   185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:927:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  927 |   185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:929:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+  929 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:9: error: stray '#' in program
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:96: error: stray '##' in program
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:96: error: stray '##' in program
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:96: error: stray '##' in program
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:96: error: stray '##' in program
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:96: error: stray '##' in program
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:930:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  930 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:932:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+  932 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:17: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:935:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  935 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:935:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  935 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:935:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  935 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:86: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:938:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+  938 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:939:143: error: stray '##' in program
+  939 |   186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:939:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  939 |   186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:941:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+  941 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:9: error: stray '#' in program
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:96: error: stray '##' in program
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:96: error: stray '##' in program
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:96: error: stray '##' in program
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:96: error: stray '##' in program
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:96: error: stray '##' in program
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:942:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  942 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:944:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+  944 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:610:17: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:947:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  947 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:669:59: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux_ptr'
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:947:130: warning: multi-character literal with 15 characters exceeds 'int' size of 4 bytes
+  947 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:669:59: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux_ptr'
+      |                                                                                                                                  ^~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:950:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  950 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:670:50: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:950:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  950 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:670:50: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:950:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  950 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:670:50: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:954:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  954 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:954:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  954 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:954:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  954 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:957:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+  957 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:958:143: error: stray '##' in program
+  958 |   182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:958:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  958 |   182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:960:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+  960 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:9: error: stray '#' in program
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:96: error: stray '##' in program
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:96: error: stray '##' in program
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:96: error: stray '##' in program
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:96: error: stray '##' in program
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:96: error: stray '##' in program
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:961:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  961 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:963:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+  963 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:21: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:966:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  966 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:966:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  966 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:966:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  966 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:969:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+  969 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:970:143: error: stray '##' in program
+  970 |   183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:970:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  970 |   183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:972:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+  972 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:9: error: stray '#' in program
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:96: error: stray '##' in program
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:96: error: stray '##' in program
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:96: error: stray '##' in program
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:96: error: stray '##' in program
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:96: error: stray '##' in program
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:973:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  973 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:975:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+  975 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:21: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:978:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  978 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:978:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  978 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:978:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  978 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:981:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+  981 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:982:143: error: stray '##' in program
+  982 |   184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:982:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  982 |   184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:984:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+  984 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:9: error: stray '#' in program
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:96: error: stray '##' in program
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:96: error: stray '##' in program
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:96: error: stray '##' in program
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:96: error: stray '##' in program
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:96: error: stray '##' in program
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:985:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  985 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:987:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+  987 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:21: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:990:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+  990 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:990:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+  990 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:990:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+  990 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:993:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+  993 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:994:143: error: stray '##' in program
+  994 |   185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:994:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  994 |   185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:996:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+  996 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:9: error: stray '#' in program
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:96: error: stray '##' in program
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:96: error: stray '##' in program
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:96: error: stray '##' in program
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:96: error: stray '##' in program
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:96: error: stray '##' in program
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:997:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  997 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:999:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+  999 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:21: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1002:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+ 1002 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1002:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+ 1002 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1002:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+ 1002 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:76: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1005:98: warning: multi-character literal with 13 characters exceeds 'int' size of 4 bytes
+ 1005 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+      |                                                                                                  ^~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1006:143: error: stray '##' in program
+ 1006 |   186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                               ^~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1006:145: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+ 1006 |   186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1008:96: warning: multi-character literal with 19 characters exceeds 'int' size of 4 bytes
+ 1008 | /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:9: error: stray '#' in program
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:98: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                  ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:96: error: stray '##' in program
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:96: error: stray '##' in program
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:96: error: stray '##' in program
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:96: error: stray '##' in program
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:96: error: stray '##' in program
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                                                                                ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1009:46: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+ 1009 |   114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1011:106: warning: multi-character literal with 8 characters exceeds 'int' size of 4 bytes
+ 1011 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:671:21: note: in expansion of macro 'ESP_LOGI'
+      |                                                                                                          ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1015:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+ 1015 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:672:87: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1015:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+ 1015 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:672:87: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1015:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+ 1015 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:672:87: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1018:103: warning: multi-character literal with 24 characters exceeds 'int' size of 4 bytes
+ 1018 | /home/tvconss/esp/esp-idf/components/log/include/esp_log_buffer.h:83:84: note: in definition of macro 'ESP_LOG_BUFFER_HEX_LEVEL'
+      |                                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1021:106: warning: multi-character literal with 18 characters exceeds 'int' size of 4 bytes
+ 1021 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:672:21: note: in expansion of macro 'ESP_LOG_BUFFER_HEX'
+      |                                                                                                          ^~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1024:85: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+ 1024 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:677:36: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1024:130: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+ 1024 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:677:36: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                  ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1024:158: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+ 1024 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:677:36: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                              ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1028:86: warning: multi-character literal with 22 characters exceeds 'int' size of 4 bytes
+ 1028 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:691:108: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1028:131: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+ 1028 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:691:108: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                   ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1028:159: warning: multi-character literal with 7 characters exceeds 'int' size of 4 bytes
+ 1028 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:691:108: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'recv_op_aux'; did you mean 'recv_op'?
+      |                                                                                                                                                               ^~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1033:108: warning: multi-character literal with 18 characters exceeds 'int' size of 4 bytes
+ 1033 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:800:6: warning: conflicting types for 'decode_sensor_data'; have 'void(const char *)'
+      |                                                                                                            ^~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1033:135: warning: multi-character literal with 18 characters exceeds 'int' size of 4 bytes
+ 1033 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:800:6: warning: conflicting types for 'decode_sensor_data'; have 'void(const char *)'
+      |                                                                                                                                       ^~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1036:117: warning: multi-character literal with 18 characters exceeds 'int' size of 4 bytes
+ 1036 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:462:13: note: previous implicit declaration of 'decode_sensor_data' with type 'void(const char *)'
+      |                                                                                                                     ^~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1036:148: warning: multi-character literal with 18 characters exceeds 'int' size of 4 bytes
+ 1036 | /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:462:13: note: previous implicit declaration of 'decode_sensor_data' with type 'void(const char *)'
+      |                                                                                                                                                    ^~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1039:18: warning: multi-character literal with 10 characters exceeds 'int' size of 4 bytes
+ 1039 | [4/10] Completed 'bootloader'
+      |                  ^~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/main/main.c:1042:8: error: stray '@' in program
+ 1042 | tvconss@tran-con-Zenbook-UX3402VA:~/Workspace/mang-trong-iot/esp/sensor_server$
+      |        ^
+ninja: build stopped: subcommand failed.

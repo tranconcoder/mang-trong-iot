@@ -1,0 +1,84 @@
+[1/12] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[2/12] Performing build step for 'bootloader'
+[1/1] cd /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/bootloader/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[3/12] No install step for 'bootloader'
+[4/12] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[5/12] Completed 'bootloader'
+[6/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[7/12] Linking C static library esp-idf/main/libmain.a
+[8/12] Generating ld/sections.ld
+[9/12] Linking CXX executable sensor_server.elf
+[10/12] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/sensor_server.bin
+[11/12] cd /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/partition_table/partition-table.bin /home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build/sensor_server.bin
+sensor_server.bin binary size 0xdbe10 bytes. Smallest app partition is 0x177000 bytes. 0x9b1f0 bytes (41%) free.
+[11/12] cd /home/tvconss/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/tvconss/esp/esp-idf -D "SERIAL_TOOL=/home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/home/tvconss/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/tvconss/Workspace/mang-trong-iot/esp/sensor_server/build -P /home/tvconss/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 sensor_server.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 5c:01:3b:47:5b:20
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000ebfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25984 bytes to 16380...
+Writing at 0x00001000... (100 %)
+Wrote 25984 bytes (16380 compressed) at 0x00001000 in 0.6 seconds (effective 373.2 kbit/s)...
+Hash of data verified.
+Compressed 900624 bytes to 516687...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001da42... (6 %)
+Writing at 0x0002d3ad... (9 %)
+Writing at 0x00038090... (12 %)
+Writing at 0x00042f0a... (15 %)
+Writing at 0x000484ff... (18 %)
+Writing at 0x0004e64a... (21 %)
+Writing at 0x00053ffd... (25 %)
+Writing at 0x00059a98... (28 %)
+Writing at 0x0005f664... (31 %)
+Writing at 0x000660bc... (34 %)
+Writing at 0x0006c12a... (37 %)
+Writing at 0x00072547... (40 %)
+Writing at 0x00078574... (43 %)
+Writing at 0x0007e735... (46 %)
+Writing at 0x000847d3... (50 %)
+Writing at 0x0008a953... (53 %)
+Writing at 0x000907e9... (56 %)
+Writing at 0x0009666f... (59 %)
+Writing at 0x0009ccd4... (62 %)
+Writing at 0x000a2a3d... (65 %)
+Writing at 0x000a84e3... (68 %)
+Writing at 0x000ae133... (71 %)
+Writing at 0x000b434d... (75 %)
+Writing at 0x000ba1df... (78 %)
+Writing at 0x000c05e2... (81 %)
+Writing at 0x000ca601... (84 %)
+Writing at 0x000d0e7f... (87 %)
+Writing at 0x000d722a... (90 %)
+Writing at 0x000dccff... (93 %)
+Writing at 0x000e2610... (96 %)
+Writing at 0x000e8a5d... (100 %)
+Wrote 900624 bytes (516687 compressed) at 0x00010000 in 12.4 seconds (effective 583.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 1745.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

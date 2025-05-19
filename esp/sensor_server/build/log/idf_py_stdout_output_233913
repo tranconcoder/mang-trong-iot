@@ -1,0 +1,840 @@
+(17020�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 19 2025 14:55:12[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=298dch (170204) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=00039904 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=00039928 vaddr=3ffbdb60 size=055c8h ( 21960) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003eef8 vaddr=40080000 size=01120h (  4384) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=953e0h (611296) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d5408 vaddr=40081120 size=169d8h ( 92632) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     sensor_server[0m
+[0;32mI (447) app_init: App version:      79448e5-dirty[0m
+[0;32mI (452) app_init: Compile time:     May 19 2025 17:44:22[0m
+[0;32mI (457) app_init: ELF file SHA256:  610f596e5...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAF18 len 000150E8 (84 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) EXAMPLE: Initializing...[0m
+[0;32mI (563) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (573) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (583) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (583) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (593) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (673) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1073) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1083) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1083) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1083) main_task: Returned from app_main()[0m
+[0;32mI (1183) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (3193) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (3193) EXAMPLE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (3193) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (3473) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-ADV[0m
+[0;32mI (3943) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (3943) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (3943) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (4063) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (4063) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;32mI (4153) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (4153) EXAMPLE: elem_addr 0x0005, app_idx 0x0000, cid 0xffff, mod_id 0x1101[0m
+[0;32mI (9253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (9253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (9253) Sensor Data: ff 4f 00[0m
+[0;32mI (11253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (11263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (11263) Sensor Data: ff 76 00[0m
+[0;32mI (13253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (13263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (13263) Sensor Data: ff 4d 00[0m
+[0;32mI (15283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (15283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (15283) Sensor Data: ff 4f 00[0m
+[0;32mI (17293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (17293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (17293) Sensor Data: ff 76 00[0m
+[0;32mI (19253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (19253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (19263) Sensor Data: ff 4d 00[0m
+[0;32mI (21293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (21303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (21303) Sensor Data: ff 4f 00[0m
+[0;32mI (23263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (23263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (23263) Sensor Data: ff 76 00[0m
+[0;32mI (25253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (25263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (25263) Sensor Data: ff 4d 00[0m
+[0;32mI (27263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (27263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (27263) Sensor Data: ff 4f 00[0m
+[0;32mI (29293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (29293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (29293) Sensor Data: ff 76 00[0m
+[0;32mI (31263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (31263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (31263) Sensor Data: ff 4d 00[0m
+[0;32mI (33273) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (33283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (33283) Sensor Data: ff 4f 00[0m
+[0;32mI (35253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (35263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (35263) Sensor Data: ff 76 00[0m
+[0;32mI (37253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (37263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (37263) Sensor Data: ff 4d 00[0m
+[0;32mI (39253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (39253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (39263) Sensor Data: ff 4f 00[0m
+[0;32mI (41293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (41293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (41293) Sensor Data: ff 76 00[0m
+[0;32mI (43293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (43293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (43293) Sensor Data: ff 4d 00[0m
+[0;32mI (45253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (45263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (45263) Sensor Data: ff 4f 00[0m
+[0;32mI (47253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (47263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (47263) Sensor Data: ff 76 00[0m
+[0;32mI (49263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (49273) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (49273) Sensor Data: ff 4d 00[0m
+[0;32mI (51263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (51263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (51263) Sensor Data: ff 4f 00[0m
+[0;32mI (53263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (53263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (53273) Sensor Data: ff 76 00[0m
+[0;32mI (55313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (55313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (55323) Sensor Data: ff 4d 00[0m
+[0;32mI (57253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (57263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (57263) Sensor Data: ff 4f 00[0m
+[0;32mI (59253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (59253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (59253) Sensor Data: ff 76 00[0m
+[0;32mI (61253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (61263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (61263) Sensor Data: ff 4d 00[0m
+[0;32mI (63253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (63253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (63253) Sensor Data: ff 4f 00[0m
+[0;32mI (65263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (65263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (65263) Sensor Data: ff 76 00[0m
+[0;32mI (67253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (67263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (67263) Sensor Data: ff 4d 00[0m
+[0;32mI (69253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (69263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (69263) Sensor Data: ff 4f 00[0m
+[0;32mI (71253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (71263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (71263) Sensor Data: ff 76 00[0m
+[0;32mI (73273) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (73273) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (73273) Sensor Data: ff 4d 00[0m
+[0;32mI (75283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (75283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (75283) Sensor Data: ff 4f 00[0m
+[0;32mI (77253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (77263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (77263) Sensor Data: ff 76 00[0m
+[0;32mI (79283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (79283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (79283) Sensor Data: ff 4d 00[0m
+[0;32mI (81293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (81293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (81293) Sensor Data: ff 4f 00[0m
+[0;32mI (83253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (83253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (83263) Sensor Data: ff 76 00[0m
+[0;32mI (85253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (85253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (85253) Sensor Data: ff 4d 00[0m
+[0;32mI (87253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (87253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (87263) Sensor Data: ff 4f 00[0m
+[0;32mI (89273) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (89273) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (89273) Sensor Data: ff 76 00[0m
+[0;32mI (91253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (91253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (91253) Sensor Data: ff 4d 00[0m
+[0;32mI (93283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (93283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (93293) Sensor Data: ff 4f 00[0m
+[0;32mI (95263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (95263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (95263) Sensor Data: ff 76 00[0m
+[0;32mI (97263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (97263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (97273) Sensor Data: ff 4d 00[0m
+[0;32mI (99283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (99283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (99283) Sensor Data: ff 4f 00[0m
+[0;32mI (101283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (101283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (101283) Sensor Data: ff 76 00[0m
+[0;32mI (103273) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (103283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (103283) Sensor Data: ff 4d 00[0m
+[0;32mI (105283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (105293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (105293) Sensor Data: ff 4f 00[0m
+[0;32mI (107253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (107253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (107263) Sensor Data: ff 76 00[0m
+[0;32mI (109303) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (109303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (109303) Sensor Data: ff 4d 00[0m
+[0;32mI (111253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (111253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (111253) Sensor Data: ff 4f 00[0m
+[0;32mI (113253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (113253) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (113263) Sensor Data: ff 76 00[0m
+[0;32mI (115293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (115303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (115303) Sensor Data: ff 4d 00[0m
+[0;32mI (117253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (117263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (117263) Sensor Data: ff 4f 00[0m
+[0;32mI (119283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (119283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (119283) Sensor Data: ff 76 00[0m
+[0;32mI (121273) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (121283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (121283) Sensor Data: ff 4d 00[0m
+[0;32mI (123263) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (123263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (123263) Sensor Data: ff 4f 00[0m
+[0;32mI (125253) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (125263) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (125263) Sensor Data: ff 76 00[0m
+[0;32mI (129283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (129283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (129283) Sensor Data: c0 0a 28 60 0b 3c[0m
+[0;32mI (131303) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (131303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (131303) Sensor Data: ff 76 00[0m
+[0;32mI (133303) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (133303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (133303) Sensor Data: ff 4d 00[0m
+[0;32mI (135293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (135293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (135293) Sensor Data: ff 4f 00[0m
+[0;32mI (137303) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (137303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (137303) Sensor Data: ff 76 00[0m
+[0;32mI (139293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (139293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (139303) Sensor Data: ff 4d 00[0m
+[0;32mI (141303) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (141303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (141303) Sensor Data: ff 4f 00[0m
+[0;32mI (143283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (143283) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (143293) Sensor Data: ff 76 00[0m
+[0;32mI (145303) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (145303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (145303) Sensor Data: ff 4d 00[0m
+[0;32mI (147293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (147303) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (147303) Sensor Data: ff 4f 00[0m
+[0;32mI (149283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (149293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (149293) Sensor Data: ff 76 00[0m
+[0;32mI (151293) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (151293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (151293) Sensor Data: ff 4d 00[0m
+[0;32mI (153343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (153343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (153343) Sensor Data: ff 4f 00[0m
+[0;32mI (155283) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (155293) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (155293) Sensor Data: ff 76 00[0m
+[0;32mI (159343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (159343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (159343) Sensor Data: c0 0a 28 60 0b 3c[0m
+[0;32mI (161323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (161323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (161323) Sensor Data: ff 76 00[0m
+[0;32mI (163313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (163313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (163313) Sensor Data: ff 4d 00[0m
+[0;32mI (165313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (165323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (165323) Sensor Data: ff 4f 00[0m
+[0;32mI (167343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (167343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (167343) Sensor Data: ff 76 00[0m
+[0;32mI (169323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (169323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (169323) Sensor Data: ff 4d 00[0m
+[0;32mI (171323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (171323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (171323) Sensor Data: ff 4f 00[0m
+[0;32mI (173313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (173313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (173313) Sensor Data: ff 76 00[0m
+[0;32mI (175323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (175323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (175323) Sensor Data: ff 4d 00[0m
+[0;32mI (177323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (177323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (177323) Sensor Data: ff 4f 00[0m
+[0;32mI (179313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (179313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (179313) Sensor Data: ff 76 00[0m
+[0;32mI (181333) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (181343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (181343) Sensor Data: ff 4d 00[0m
+[0;32mI (183323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (183323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (183323) Sensor Data: ff 4f 00[0m
+[0;32mI (185343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (185343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (185343) Sensor Data: ff 76 00[0m
+[0;32mI (187313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (187313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (187323) Sensor Data: ff 4d 00[0m
+[0;32mI (189333) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (189333) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (189333) Sensor Data: ff 4f 00[0m
+[0;32mI (191333) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (191333) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (191333) Sensor Data: ff 76 00[0m
+[0;32mI (193313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (193313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (193313) Sensor Data: ff 4d 00[0m
+[0;32mI (195323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (195323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (195323) Sensor Data: ff 4f 00[0m
+[0;32mI (197323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (197323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (197323) Sensor Data: ff 76 00[0m
+[0;32mI (199323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (199323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (199323) Sensor Data: ff 4d 00[0m
+[0;32mI (201323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (201323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (201323) Sensor Data: ff 4f 00[0m
+[0;32mI (203323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (203323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (203323) Sensor Data: ff 76 00[0m
+[0;32mI (205323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (205323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (205323) Sensor Data: ff 4d 00[0m
+[0;32mI (207313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (207313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (207313) Sensor Data: ff 4f 00[0m
+[0;32mI (209323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (209323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (209323) Sensor Data: ff 76 00[0m
+[0;32mI (211343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (211343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (211343) Sensor Data: ff 4d 00[0m
+[0;32mI (213323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (213323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (213323) Sensor Data: ff 4f 00[0m
+[0;32mI (215313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (215313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (215313) Sensor Data: ff 76 00[0m
+[0;32mI (217323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (217323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (217323) Sensor Data: ff 4d 00[0m
+[0;32mI (219343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (219343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (219343) Sensor Data: ff 4f 00[0m
+[0;32mI (221313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (221313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (221313) Sensor Data: ff 76 00[0m
+[0;32mI (223323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (223323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (223323) Sensor Data: ff 4d 00[0m
+[0;32mI (225323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (225323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (225323) Sensor Data: ff 4f 00[0m
+[0;32mI (227323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (227323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (227323) Sensor Data: ff 76 00[0m
+[0;32mI (229313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (229313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (229313) Sensor Data: ff 4d 00[0m
+[0;32mI (231323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (231323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (231323) Sensor Data: ff 4f 00[0m
+[0;32mI (233343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (233343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (233343) Sensor Data: ff 76 00[0m
+[0;32mI (235373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (235373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (235373) Sensor Data: ff 4d 00[0m
+[0;32mI (237313) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (237313) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (237313) Sensor Data: ff 4f 00[0m
+[0;32mI (239323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (239323) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (239323) Sensor Data: ff 76 00[0m
+[0;32mI (243323) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (243333) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (243333) Sensor Data: c0 0a 28 60 0b 3c[0m
+[0;32mI (245363) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (245363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (245363) Sensor Data: ff 76 00[0m
+[0;32mI (247363) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (247363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (247363) Sensor Data: ff 4d 00[0m
+[0;32mI (249353) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (249353) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (249353) Sensor Data: ff 4f 00[0m
+[0;32mI (251353) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (251353) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (251353) Sensor Data: ff 76 00[0m
+[0;32mI (253363) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (253363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (253363) Sensor Data: ff 4d 00[0m
+[0;32mI (255353) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (255353) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (255353) Sensor Data: ff 4f 00[0m
+[0;32mI (257343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (257343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (257343) Sensor Data: ff 76 00[0m
+[0;32mI (259343) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (259343) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (259353) Sensor Data: ff 4d 00[0m
+[0;32mI (261353) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (261353) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (261353) Sensor Data: ff 4f 00[0m
+[0;32mI (263353) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (263353) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (263353) Sensor Data: ff 76 00[0m
+[0;32mI (265363) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (265363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (265363) Sensor Data: ff 4d 00[0m
+[0;32mI (267363) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (267363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (267363) Sensor Data: ff 4f 00[0m
+[0;32mI (269363) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (269363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (269363) Sensor Data: ff 76 00[0m
+[0;32mI (271353) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (271353) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (271353) Sensor Data: ff 4d 00[0m
+[0;32mI (273353) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (273353) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (273353) Sensor Data: ff 4f 00[0m
+[0;32mI (275353) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (275353) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (275353) Sensor Data: ff 76 00[0m
+[0;32mI (277363) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (277363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (277363) Sensor Data: ff 4d 00[0m
+[0;32mI (279363) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (279363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (279363) Sensor Data: ff 4f 00[0m
+[0;32mI (281363) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (281363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (281363) Sensor Data: ff 76 00[0m
+[0;32mI (283353) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (283363) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (283363) Sensor Data: ff 4d 00[0m
+[0;32mI (289403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (289403) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (289403) Sensor Data: c0 0a 28 60 0b 3c[0m
+[0;32mI (291383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (291383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (291383) Sensor Data: ff 4f 00[0m
+[0;32mI (293383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (293383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (293393) Sensor Data: ff 76 00[0m
+[0;32mI (295373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (295373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (295383) Sensor Data: ff 4d 00[0m
+[0;32mI (297393) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (297393) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (297393) Sensor Data: ff 4f 00[0m
+[0;32mI (299383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (299383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (299383) Sensor Data: ff 76 00[0m
+[0;32mI (301373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (301373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (301373) Sensor Data: ff 4d 00[0m
+[0;32mI (303373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (303373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (303373) Sensor Data: ff 4f 00[0m
+[0;32mI (305373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (305373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (305373) Sensor Data: ff 76 00[0m
+[0;32mI (307403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (307403) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (307403) Sensor Data: ff 4d 00[0m
+[0;32mI (309383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (309383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (309383) Sensor Data: ff 4f 00[0m
+[0;32mI (311383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (311383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (311383) Sensor Data: ff 76 00[0m
+[0;32mI (313373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (313373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (313373) Sensor Data: ff 4d 00[0m
+[0;32mI (315393) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (315393) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (315393) Sensor Data: ff 4f 00[0m
+[0;32mI (317413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (317413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (317413) Sensor Data: ff 76 00[0m
+[0;32mI (319383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (319383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (319383) Sensor Data: ff 4d 00[0m
+[0;32mI (321373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (321373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (321373) Sensor Data: ff 4f 00[0m
+[0;32mI (323413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (323413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (323413) Sensor Data: ff 76 00[0m
+[0;32mI (325373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (325373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (325373) Sensor Data: ff 4d 00[0m
+[0;32mI (327383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (327383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (327383) Sensor Data: ff 4f 00[0m
+[0;32mI (329383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (329383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (329383) Sensor Data: ff 76 00[0m
+[0;32mI (331403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (331403) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (331403) Sensor Data: ff 4d 00[0m
+[0;32mI (333373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (333373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (333373) Sensor Data: ff 4f 00[0m
+[0;32mI (335383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (335383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (335383) Sensor Data: ff 76 00[0m
+[0;32mI (337393) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (337393) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (337393) Sensor Data: ff 4d 00[0m
+[0;32mI (339373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (339373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (339373) Sensor Data: ff 4f 00[0m
+[0;32mI (341423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (341423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (341423) Sensor Data: ff 76 00[0m
+[0;32mI (343373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (343373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (343373) Sensor Data: ff 4d 00[0m
+[0;32mI (345383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (345383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (345383) Sensor Data: ff 4f 00[0m
+[0;32mI (347383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (347383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (347383) Sensor Data: ff 76 00[0m
+[0;32mI (349383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (349383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (349383) Sensor Data: ff 4d 00[0m
+[0;32mI (351373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (351373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (351373) Sensor Data: ff 4f 00[0m
+[0;32mI (353373) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (353373) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (353383) Sensor Data: ff 76 00[0m
+[0;32mI (355383) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (355383) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (355383) Sensor Data: ff 4d 00[0m
+[0;32mI (359393) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (359393) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (359393) Sensor Data: c0 0a 28 60 0b 3c[0m
+[0;32mI (361423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (361423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (361423) Sensor Data: ff 4d 00[0m
+[0;32mI (363463) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (363463) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (363463) Sensor Data: ff 4f 00[0m
+[0;32mI (365433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (365433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (365433) Sensor Data: ff 76 00[0m
+[0;32mI (367433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (367433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (367433) Sensor Data: ff 4d 00[0m
+[0;32mI (369413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (369413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (369413) Sensor Data: ff 4f 00[0m
+[0;32mI (371443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (371443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (371443) Sensor Data: ff 76 00[0m
+[0;32mI (373433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (373433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (373433) Sensor Data: ff 4d 00[0m
+[0;32mI (375423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (375423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (375423) Sensor Data: ff 4f 00[0m
+[0;32mI (377423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (377423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (377423) Sensor Data: ff 76 00[0m
+[0;32mI (379423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (379423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (379423) Sensor Data: ff 4d 00[0m
+[0;32mI (381423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (381423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (381423) Sensor Data: ff 4f 00[0m
+[0;32mI (383403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (383403) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (383403) Sensor Data: ff 76 00[0m
+[0;32mI (385423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (385423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (385423) Sensor Data: ff 4d 00[0m
+[0;32mI (387403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (387403) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (387403) Sensor Data: ff 4f 00[0m
+[0;32mI (389413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (389413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (389413) Sensor Data: ff 76 00[0m
+[0;32mI (391433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (391433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (391433) Sensor Data: ff 4d 00[0m
+[0;32mI (393433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (393433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (393433) Sensor Data: ff 4f 00[0m
+[0;32mI (395413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (395423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (395423) Sensor Data: ff 76 00[0m
+[0;32mI (397403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (397403) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (397403) Sensor Data: ff 4d 00[0m
+[0;32mI (399433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (399433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (399433) Sensor Data: ff 4f 00[0m
+[0;32mI (401413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (401413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (401413) Sensor Data: ff 76 00[0m
+[0;32mI (403423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (403423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (403423) Sensor Data: ff 4d 00[0m
+[0;32mI (405403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (405413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (405413) Sensor Data: ff 4f 00[0m
+[0;32mI (407413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (407423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (407423) Sensor Data: ff 76 00[0m
+[0;32mI (409433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (409443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (409443) Sensor Data: ff 4d 00[0m
+[0;32mI (411423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (411423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (411423) Sensor Data: ff 4f 00[0m
+[0;32mI (413433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (413443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (413443) Sensor Data: ff 76 00[0m
+[0;32mI (415443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (415443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (415443) Sensor Data: ff 4d 00[0m
+[0;32mI (417403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (417403) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (417413) Sensor Data: ff 4f 00[0m
+[0;32mI (419433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (419433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (419433) Sensor Data: ff 76 00[0m
+[0;32mI (421403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (421403) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (421403) Sensor Data: ff 4d 00[0m
+[0;32mI (423413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (423413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (423413) Sensor Data: ff 4f 00[0m
+[0;32mI (425413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (425413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (425413) Sensor Data: ff 76 00[0m
+[0;32mI (427413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (427423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (427423) Sensor Data: ff 4d 00[0m
+[0;32mI (429433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (429443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (429443) Sensor Data: ff 4f 00[0m
+[0;32mI (431413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (431413) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (431413) Sensor Data: ff 76 00[0m
+[0;32mI (433423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (433423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (433423) Sensor Data: ff 4d 00[0m
+[0;32mI (435443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (435443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (435443) Sensor Data: ff 4f 00[0m
+[0;32mI (437423) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (437423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (437423) Sensor Data: ff 76 00[0m
+[0;32mI (439403) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (439403) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (439403) Sensor Data: ff 4d 00[0m
+[0;32mI (443413) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (443423) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (443423) Sensor Data: c0 0a 28 60 0b 3c[0m
+[0;32mI (445443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (445443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (445443) Sensor Data: ff 4d 00[0m
+[0;32mI (447433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (447433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (447433) Sensor Data: ff 4f 00[0m
+[0;32mI (449473) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (449473) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (449473) Sensor Data: ff 76 00[0m
+[0;32mI (451443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (451443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (451443) Sensor Data: ff 4d 00[0m
+[0;32mI (453433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (453443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (453443) Sensor Data: ff 4f 00[0m
+[0;32mI (455463) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (455463) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (455463) Sensor Data: ff 76 00[0m
+[0;32mI (457433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (457433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (457433) Sensor Data: ff 4d 00[0m
+[0;32mI (459433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (459433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (459433) Sensor Data: ff 4f 00[0m
+[0;32mI (461453) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (461453) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (461453) Sensor Data: ff 76 00[0m
+[0;32mI (463433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (463433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (463433) Sensor Data: ff 4d 00[0m
+[0;32mI (465483) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (465483) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (465483) Sensor Data: ff 4f 00[0m
+[0;32mI (467443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (467443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (467443) Sensor Data: ff 76 00[0m
+[0;32mI (469433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (469433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (469433) Sensor Data: ff 4d 00[0m
+[0;32mI (471433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (471433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (471433) Sensor Data: ff 4f 00[0m
+[0;32mI (473433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (473433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (473433) Sensor Data: ff 76 00[0m
+[0;32mI (475433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (475443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (475443) Sensor Data: ff 4d 00[0m
+[0;32mI (477433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (477433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (477433) Sensor Data: ff 4f 00[0m
+[0;32mI (479433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (479443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (479443) Sensor Data: ff 76 00[0m
+[0;32mI (481443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (481443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (481443) Sensor Data: ff 4d 00[0m
+[0;32mI (483433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (483433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (483433) Sensor Data: ff 4f 00[0m
+[0;32mI (485483) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (485483) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (485483) Sensor Data: ff 76 00[0m
+[0;32mI (487433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (487433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (487433) Sensor Data: ff 4d 00[0m
+[0;32mI (489433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (489443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (489443) Sensor Data: ff 4f 00[0m
+[0;32mI (491453) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (491463) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (491463) Sensor Data: ff 76 00[0m
+[0;32mI (493443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (493443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (493443) Sensor Data: ff 4d 00[0m
+[0;32mI (495463) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (495463) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (495463) Sensor Data: ff 4f 00[0m
+[0;32mI (497433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (497433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (497433) Sensor Data: ff 76 00[0m
+[0;32mI (499433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (499433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (499433) Sensor Data: ff 4d 00[0m
+[0;32mI (501433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (501433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (501433) Sensor Data: ff 4f 00[0m
+[0;32mI (503433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (503433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (503433) Sensor Data: ff 76 00[0m
+[0;32mI (505443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (505443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (505443) Sensor Data: ff 4d 00[0m
+[0;32mI (507443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (507443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (507443) Sensor Data: ff 4f 00[0m
+[0;32mI (509473) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (509473) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (509473) Sensor Data: ff 76 00[0m
+[0;32mI (511433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (511443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (511443) Sensor Data: ff 4d 00[0m
+[0;32mI (513443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (513443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (513443) Sensor Data: ff 4f 00[0m
+[0;32mI (515443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (515443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (515443) Sensor Data: ff 76 00[0m
+[0;32mI (517433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (517433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (517433) Sensor Data: ff 4d 00[0m
+[0;32mI (519433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (519433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (519433) Sensor Data: ff 4f 00[0m
+[0;32mI (521473) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (521473) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (521473) Sensor Data: ff 76 00[0m
+[0;32mI (523433) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (523433) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (523433) Sensor Data: ff 4d 00[0m
+[0;32mI (525443) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (525443) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m

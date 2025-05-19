@@ -1,0 +1,754 @@
+[0;32mI (121) esp_image: segment 1: paddr=0003c9e8 vaddr=3fc99300 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd792
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 19 2025 13:25:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2c9c0h (182720) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0003c9e8 vaddr=3fc99300 size=03630h ( 13872) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=a1a5ch (662108) map[0m
+[0;32mI (241) esp_image: segment 3: paddr=000e1a84 vaddr=3fc9c930 size=01348h (  4936) load[0m
+[0;32mI (243) esp_image: segment 4: paddr=000e2dd4 vaddr=40374000 size=152b8h ( 86712) load[0m
+[0;32mI (264) esp_image: segment 5: paddr=000f8094 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (272) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (272) boot: Disabling RNG early entropy source...[0m
+[0;32mI (283) cpu_start: Multicore app[0m
+[0;32mI (292) cpu_start: Pro cpu start user code[0m
+[0;32mI (292) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (292) app_init: Application information:[0m
+[0;32mI (292) app_init: Project name:     sensor_client[0m
+[0;32mI (296) app_init: App version:      70c29ad-dirty[0m
+[0;32mI (301) app_init: Compile time:     May 20 2025 03:51:17[0m
+[0;32mI (306) app_init: ELF file SHA256:  99ba27ab7...[0m
+[0;32mI (310) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (314) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (318) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (322) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (326) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (332) heap_init: At 3FCA57A8 len 00043F68 (271 KiB): RAM[0m
+[0;32mI (337) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (342) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (347) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (354) spi_flash: detected chip: boya[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;33mW (359) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (372) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (378) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (384) coexist: coex firmware version: e727207[0m
+[0;32mI (389) coexist: coexist rom version e7ae62f[0m
+[0;32mI (393) main_task: Started on CPU0[0m
+[0;32mI (403) main_task: Calling app_main()[0m
+[0;32mI (403) EXAMPLE: Initializing...[0m
+use esp timer !!!
+[1;31mE (413) esp_timer: Task is already initialized[0m
+[0;32mI (413) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (413) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (423) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (423) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (433) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (463) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (583) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_DEV_UUID_MATCH_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_LOCAL_APP_KEY_COMP_EVT, err_code 0[0m
+[0;32mI (593) EXAMPLE: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (603) EXAMPLE: BLE Mesh sensor client initialized[0m
+[0;32mI (613) main_task: Returned from app_main()[0m
+[0;32mI (13253) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (13253) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (13253) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (13263) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (13263) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (13273) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (13283) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (15563) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (15563) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (15573) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (15573) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (15903) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (16033) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (16033) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 03 00 00 00[0m
+[0;32mI (16033) Composition data: 00 11 01 11[0m
+[0;32mI (16033) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (16043) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (16053) EXAMPLE: * Loc 0x0000, NumS 0x03, NumV 0x00 *[0m
+[0;32mI (16053) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (16063) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (16063) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (16063) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (16073) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (16393) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (16513) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (16573) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;33mW (16573) EXAMPLE: Provision and config successfully[0m
+[0;32mI (20613) EXAMPLE: Starting sensor data simulation...[0m
+[0;32mI (20613) EXAMPLE: Requesting sensor data[0m
+[0;32mI (21113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (21113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (21113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (21113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (21613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (21613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (21613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (21613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (22113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (22113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (22113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (22113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (22613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (22613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (22613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (22613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (23113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (23113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (23113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (23113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (23613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (23613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (23613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (23613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (24113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (24113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (24113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (24113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (24613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (24613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (24613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (24613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (24613) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (24623) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (24623) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (24673) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (24673) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (24673) Sensor Data: 1e 5a fa 60 0b 3c[0m
+[0;32mI (24683) EXAMPLE: Temperature: 30[0m
+[0;32mI (24683) EXAMPLE: Humidity: 90[0m
+[0;32mI (24683) EXAMPLE: Light Level: 250[0m
+[0;32mI (25113) EXAMPLE: Requesting sensor data[0m
+[0;32mI (25613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (25613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (25613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (25613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (26113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (26113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (26113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (26113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (26613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (26613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (26613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (26613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (27113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (27113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (27113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (27113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (27613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (27613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (27613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (27613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (28113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (28113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (28113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (28113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (28613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (28613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (28613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (28613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (29113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (29113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (29113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (29113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (29113) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (29123) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (29123) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (29193) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (29193) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (29193) Sensor Data: 22 5a fa 60 0b 3c[0m
+[0;32mI (29193) EXAMPLE: Temperature: 34[0m
+[0;32mI (29203) EXAMPLE: Humidity: 90[0m
+[0;32mI (29203) EXAMPLE: Light Level: 250[0m
+[0;32mI (29613) EXAMPLE: Requesting sensor data[0m
+[0;32mI (30113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (30113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (30113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (30113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (30613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (30613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (30613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (30613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (31113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (31113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (31113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (31113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (31613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (31613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (31613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (31613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (32113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (32113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (32113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (32113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (32613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (32613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (32613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (32613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (33113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (33113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (33113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (33113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (33613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (33613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (33613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (33613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (33613) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (33623) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (33623) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (33673) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (33673) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (33683) Sensor Data: 23 5a fa 60 0b 3c[0m
+[0;32mI (33683) EXAMPLE: Temperature: 35[0m
+[0;32mI (33683) EXAMPLE: Humidity: 90[0m
+[0;32mI (33683) EXAMPLE: Light Level: 250[0m
+[0;32mI (34113) EXAMPLE: Requesting sensor data[0m
+[0;32mI (34613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (34613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (34613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (34613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (35113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (35113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (35113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (35113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (35613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (35613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (35613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (35613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (36113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (36113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (36113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (36113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (36613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (36613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (36613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (36613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (37113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (37113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (37113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (37113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (37613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (37613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (37613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (37613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (37973) EXAMPLE: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (37973) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (37973) EXAMPLE: Address type 0x00, adv type 0x03[0m
+[0;32mI (37973) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (37983) EXAMPLE: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (37993) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (37993) EXAMPLE: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (38113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (38113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (38113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (38113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (38113) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (38123) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (38123) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (38613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (38613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (38613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (38613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (39113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (39143) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (39143) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (39143) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (39613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (39613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (39613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (39613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[1;31mE (40113) EXAMPLE: Node 0x0005 does not exist[0m
+[0;32mI (40233) EXAMPLE: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (40233) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (40233) EXAMPLE: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (40243) EXAMPLE: Node 0 name NODE-00[0m
+[0;32mI (40573) EXAMPLE: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (40613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (40613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (40613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (40613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (40683) EXAMPLE: Config client, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (40683) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 03 00 00 00[0m
+[0;32mI (40683) Composition data: 00 11 01 11[0m
+[0;32mI (40693) EXAMPLE: ********************** Composition Data Start **********************[0m
+[0;32mI (40703) EXAMPLE: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (40703) EXAMPLE: * Loc 0x0000, NumS 0x03, NumV 0x00 *[0m
+[0;32mI (40713) EXAMPLE: * SIG Model ID 0x0000 *[0m
+[0;32mI (40713) EXAMPLE: * SIG Model ID 0x1100 *[0m
+[0;32mI (40723) EXAMPLE: * SIG Model ID 0x1101 *[0m
+[0;32mI (40723) EXAMPLE: *********************** Composition Data End ***********************[0m
+[0;32mI (40733) EXAMPLE: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (40993) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (41083) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;32mI (41113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (41113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (41113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (41113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (41173) EXAMPLE: Config client, event 1, addr 0x0005, opcode 0x803d[0m
+[0;33mW (41173) EXAMPLE: Provision and config successfully[0m
+[0;32mI (41613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (41613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (41613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (41613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (42113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (42113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (42113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (42113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (42173) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (42173) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (42173) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (42613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (42613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (42613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (42613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (43113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (43113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (43113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (43113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (43613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (43613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (43613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (43613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (44113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (44113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (44113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (44113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (44613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (44613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (44613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (44613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (45113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (45113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (45113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (45113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (45613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (45613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (45613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (45613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (46113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (46113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (46113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (46113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (46183) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (46183) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (46183) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (46613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (46613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (46613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (46613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (47113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (47113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (47113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (47113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (47613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (47613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (47613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (47613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (48113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (48113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (48113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (48113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (48613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (48613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (48613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (48613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (49113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (49113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (49113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (49113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (49613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (49613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (49613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (49613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (50113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (50113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (50113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (50113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (50193) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (50193) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (50193) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (50613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (50613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (50613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (50613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (51113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (51113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (51113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (51113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (51613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (51613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (51613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (51613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (52113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (52113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (52113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (52113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (52613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (52613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (52613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (52613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (53113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (53113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (53113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (53113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (53613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (53613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (53613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (53613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (54113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (54113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (54113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (54113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (54193) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (54203) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (54203) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (54253) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (54253) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (54253) Sensor Data: 23 5a fa 60 0b 3c[0m
+[0;32mI (54253) EXAMPLE: Temperature: 35[0m
+[0;32mI (54253) EXAMPLE: Humidity: 90[0m
+[0;32mI (54263) EXAMPLE: Light Level: 250[0m
+[0;32mI (54613) EXAMPLE: Requesting sensor data[0m
+[0;32mI (55113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (55113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (55113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (55113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (55613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (55613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (55613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (55613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (56113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (56113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (56113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (56113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (56613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (56613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (56613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (56613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (57113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (57113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (57113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (57113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (57613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (57613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (57613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (57613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (58113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (58113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (58113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (58113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (58613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (58613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (58613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (58613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (58613) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (58623) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (58623) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (58723) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (58723) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (58723) Sensor Data: 23 5a fa 60 0b 3c[0m
+[0;32mI (58723) EXAMPLE: Temperature: 35[0m
+[0;32mI (58733) EXAMPLE: Humidity: 90[0m
+[0;32mI (58733) EXAMPLE: Light Level: 250[0m
+[0;32mI (59113) EXAMPLE: Requesting sensor data[0m
+[0;32mI (59613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (59613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (59613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (59613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (60113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (60113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (60113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (60113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (60613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (60613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (60613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (60613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (61113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (61113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (61113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (61113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (61613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (61613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (61613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (61613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (62113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (62113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (62113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (62113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (62613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (62613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (62613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (62613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (63113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (63113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (63113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (63113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (63113) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (63123) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (63123) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (63213) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (63213) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (63213) Sensor Data: 23 5a fa 60 0b 3c[0m
+[0;32mI (63213) EXAMPLE: Temperature: 35[0m
+[0;32mI (63213) EXAMPLE: Humidity: 90[0m
+[0;32mI (63223) EXAMPLE: Light Level: 250[0m
+[0;32mI (63613) EXAMPLE: Requesting sensor data[0m
+[0;32mI (64113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (64113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (64113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (64113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (64613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (64613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (64613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (64613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (65113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (65113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (65113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (65113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (65613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (65613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (65613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (65613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (66113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (66113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (66113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (66113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (66613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (66613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (66613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (66613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (67113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (67113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (67113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (67113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (67613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (67613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (67613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (67613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (67613) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (67623) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (67623) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (67673) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (67673) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (67673) Sensor Data: 23 5a fa 60 0b 3c[0m
+[0;32mI (67673) EXAMPLE: Temperature: 35[0m
+[0;32mI (67673) EXAMPLE: Humidity: 90[0m
+[0;32mI (67683) EXAMPLE: Light Level: 250[0m
+[0;32mI (68113) EXAMPLE: Requesting sensor data[0m
+[0;32mI (68613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (68613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (68613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (68613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (69113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (69113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (69113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (69113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (69613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (69613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (69613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (69613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (70113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (70113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (70113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (70113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (70613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (70613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (70613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (70613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (71113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (71113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (71113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (71113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (71613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (71613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (71613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (71613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (72113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (72113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (72113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (72113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (72113) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (72123) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (72123) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (72213) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (72213) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (72213) Sensor Data: 23 5a fa 60 0b 3c[0m
+[0;32mI (72213) EXAMPLE: Temperature: 35[0m
+[0;32mI (72213) EXAMPLE: Humidity: 90[0m
+[0;32mI (72223) EXAMPLE: Light Level: 250[0m
+[0;32mI (72613) EXAMPLE: Requesting sensor data[0m
+[0;32mI (73113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (73113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (73113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (73113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (73613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (73613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (73613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (73613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (74113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (74113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (74113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (74113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (74613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (74613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (74613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (74613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (75113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (75113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (75113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (75113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (75613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (75613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (75613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (75613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (76113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (76113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (76113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (76113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (76613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (76613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (76613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (76613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (76613) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (76623) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (76623) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (76713) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (76713) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (76713) Sensor Data: 23 5a fa 60 0b 3c[0m
+[0;32mI (76713) EXAMPLE: Temperature: 35[0m
+[0;32mI (76713) EXAMPLE: Humidity: 90[0m
+[0;32mI (76723) EXAMPLE: Light Level: 250[0m
+[0;32mI (77113) EXAMPLE: Requesting sensor data[0m
+[0;32mI (77613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (77613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (77613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (77613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (78113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (78113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (78113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (78113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (78613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (78613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (78613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (78613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (79113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (79113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (79113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (79113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (79613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (79613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (79613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (79613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (80113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (80113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (80113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (80113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (80613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (80613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (80613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (80613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (81113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (81113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (81113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (81113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (81113) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (81123) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (81123) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (81213) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (81213) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (81213) Sensor Data: 23 5a fa 60 0b 3c[0m
+[0;32mI (81213) EXAMPLE: Temperature: 35[0m
+[0;32mI (81213) EXAMPLE: Humidity: 90[0m
+[0;32mI (81223) EXAMPLE: Light Level: 250[0m
+[0;32mI (81613) EXAMPLE: Requesting sensor data[0m
+[0;32mI (82113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (82113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (82113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (82113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (82613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (82613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (82613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (82613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (83113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (83113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (83113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (83113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (83613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (83613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (83613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (83613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (84113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (84113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (84113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (84113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (84613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (84613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (84613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (84613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (85113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (85113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (85113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (85113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (85613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (85613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (85613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (85613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;33mW (85613) BLE_MESH: Receive sensor status message timeout[0m
+[0;32mI (85623) EXAMPLE: Sensor client, event 3, addr 0x0005[0m
+[0;33mW (85623) EXAMPLE: Sensor Get timeout, 0x8231[0m
+[0;32mI (85743) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[0;32mI (85743) EXAMPLE: Sensor Status, opcode 0x0052[0m
+[0;32mI (85743) Sensor Data: 23 5a fa 60 0b 3c[0m
+[0;32mI (85743) EXAMPLE: Temperature: 35[0m
+[0;32mI (85743) EXAMPLE: Humidity: 90[0m
+[0;32mI (85743) EXAMPLE: Light Level: 250[0m
+[0;32mI (86113) EXAMPLE: Requesting sensor data[0m
+[0;32mI (86613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (86613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (86613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (86613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (87113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (87113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (87113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (87113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (87613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (87613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (87613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (87613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (88113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (88113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (88113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (88113) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (88613) EXAMPLE: Requesting sensor data[0m
+[1;31mE (88613) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (88613) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
+[1;31mE (88613) EXAMPLE: Send sensor client message failed (err -16)[0m
+[0;32mI (89113) EXAMPLE: Requesting sensor data[0m
+[1;31mE (89113) BLE_MESH: Busy sending message to DST 0x0005[0m
+[0;32mI (89113) EXAMPLE: Sensor client, event 0, addr 0x0005[0m
