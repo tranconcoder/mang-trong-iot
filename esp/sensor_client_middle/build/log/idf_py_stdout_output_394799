@@ -1,0 +1,497 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/build/bootloader/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/home/tvconss/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.4.1\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/build/config -I/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main -I/home/tvconss/esp/esp-idf/components/newlib/platform_include -I/home/tvconss/esp/esp-idf/components/freertos/config/include -I/home/tvconss/esp/esp-idf/components/freertos/config/include/freertos -I/home/tvconss/esp/esp-idf/components/freertos/config/xtensa/include -I/home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/tvconss/esp/esp-idf/components/freertos/esp_additions/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/include/soc -I/home/tvconss/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/tvconss/esp/esp-idf/components/esp_hw_support/dma/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/tvconss/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/tvconss/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/tvconss/esp/esp-idf/components/heap/include -I/home/tvconss/esp/esp-idf/components/heap/tlsf -I/home/tvconss/esp/esp-idf/components/log/include -I/home/tvconss/esp/esp-idf/components/soc/include -I/home/tvconss/esp/esp-idf/components/soc/esp32 -I/home/tvconss/esp/esp-idf/components/soc/esp32/include -I/home/tvconss/esp/esp-idf/components/soc/esp32/register -I/home/tvconss/esp/esp-idf/components/hal/platform_port/include -I/home/tvconss/esp/esp-idf/components/hal/esp32/include -I/home/tvconss/esp/esp-idf/components/hal/include -I/home/tvconss/esp/esp-idf/components/esp_rom/include -I/home/tvconss/esp/esp-idf/components/esp_rom/esp32/include -I/home/tvconss/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/tvconss/esp/esp-idf/components/esp_rom/esp32 -I/home/tvconss/esp/esp-idf/components/esp_common/include -I/home/tvconss/esp/esp-idf/components/esp_system/include -I/home/tvconss/esp/esp-idf/components/esp_system/port/soc -I/home/tvconss/esp/esp-idf/components/esp_system/port/include/private -I/home/tvconss/esp/esp-idf/components/xtensa/esp32/include -I/home/tvconss/esp/esp-idf/components/xtensa/include -I/home/tvconss/esp/esp-idf/components/xtensa/deprecated_include -I/home/tvconss/esp/esp-idf/components/lwip/include -I/home/tvconss/esp/esp-idf/components/lwip/include/apps -I/home/tvconss/esp/esp-idf/components/lwip/include/apps/sntp -I/home/tvconss/esp/esp-idf/components/lwip/lwip/src/include -I/home/tvconss/esp/esp-idf/components/lwip/port/include -I/home/tvconss/esp/esp-idf/components/lwip/port/freertos/include -I/home/tvconss/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/tvconss/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/tvconss/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/tvconss/esp/esp-idf/components/nvs_flash/include -I/home/tvconss/esp/esp-idf/components/esp_partition/include -I/home/tvconss/esp/esp-idf/components/esp_wifi/include -I/home/tvconss/esp/esp-idf/components/esp_wifi/include/local -I/home/tvconss/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/tvconss/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/tvconss/esp/esp-idf/components/esp_event/include -I/home/tvconss/esp/esp-idf/components/esp_phy/include -I/home/tvconss/esp/esp-idf/components/esp_phy/esp32/include -I/home/tvconss/esp/esp-idf/components/esp_netif/include -I/home/tvconss/esp/esp-idf/components/mqtt/esp-mqtt/include -I/home/tvconss/esp/esp-idf/components/tcp_transport/include -I/home/tvconss/esp/esp-idf/components/esp-tls -I/home/tvconss/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/home/tvconss/esp/esp-idf/components/mbedtls/port/include -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/tvconss/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/tvconss/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/tvconss/esp/esp-idf/components/esp_timer/include -I/home/tvconss/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/example_init -I/home/tvconss/esp/esp-idf/components/bt/include/esp32/include -I/home/tvconss/esp/esp-idf/components/bt/common/osi/include -I/home/tvconss/esp/esp-idf/components/bt/common/api/include/api -I/home/tvconss/esp/esp-idf/components/bt/common/btc/profile/esp/blufi/include -I/home/tvconss/esp/esp-idf/components/bt/common/btc/profile/esp/include -I/home/tvconss/esp/esp-idf/components/bt/common/hci_log/include -I/home/tvconss/esp/esp-idf/components/bt/common/ble_log/include -I/home/tvconss/esp/esp-idf/components/bt/host/bluedroid/api/include/api -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/common/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/common/tinycrypt/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/core -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/core/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/core/storage -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/btc/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/models/common/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/models/client/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/models/server/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/api/core/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/api/models/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/api -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/lib/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/v1.1/api/core/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/v1.1/api/models/include -I/home/tvconss/esp/esp-idf/components/bt/esp_ble_mesh/v1.1/btc/include -I/home/tvconss/esp/esp-idf/components/bt/porting/ext/tinycrypt/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle=. -fmacro-prefix-map=/home/tvconss/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c: In function 'wifi_event_handler':
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:832:23: error: 'WIFI_EVENT' undeclared (first use in this function)
+  832 |     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+      |                       ^~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:832:23: note: each undeclared identifier is reported only once for each function it appears in
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:832:49: error: 'WIFI_EVENT_STA_START' undeclared (first use in this function)
+  832 |     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+      |                                                 ^~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:833:9: error: implicit declaration of function 'esp_wifi_connect' [-Wimplicit-function-declaration]
+  833 |         esp_wifi_connect();
+      |         ^~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:834:56: error: 'WIFI_EVENT_STA_DISCONNECTED' undeclared (first use in this function); did you mean 'MQTT_EVENT_DISCONNECTED'?
+  834 |     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                        MQTT_EVENT_DISCONNECTED
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:837:30: error: 'IP_EVENT' undeclared (first use in this function)
+  837 |     } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+      |                              ^~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:837:54: error: 'IP_EVENT_STA_GOT_IP' undeclared (first use in this function)
+  837 |     } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:838:9: error: unknown type name 'ip_event_got_ip_t'
+  838 |         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+      |         ^~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:838:37: error: 'ip_event_got_ip_t' undeclared (first use in this function)
+  838 |         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+      |                                     ^~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:838:55: error: expected expression before ')' token
+  838 |         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+      |                                                       ^
+In file included from /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:14:
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:33: error: expected ')' before 'IPSTR'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |                                 ^~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:88: note: in definition of macro 'LOG_FORMAT'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:60: note: to match this '('
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+In file included from /home/tvconss/esp/esp-idf/components/log/include/esp_log.h:15:
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:98:31: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+   98 | #define LOG_COLOR_E           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_E'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:86: note: in expansion of macro 'LOG_FORMAT'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:98:31: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+   98 | #define LOG_COLOR_E           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_E'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:182:86: note: in expansion of macro 'LOG_FORMAT'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:33: error: expected ')' before 'IPSTR'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |                                 ^~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:88: note: in definition of macro 'LOG_FORMAT'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:60: note: to match this '('
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:99:31: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+   99 | #define LOG_COLOR_W           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_W'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:86: note: in expansion of macro 'LOG_FORMAT'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:99:31: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+   99 | #define LOG_COLOR_W           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_W'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:183:86: note: in expansion of macro 'LOG_FORMAT'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:33: error: expected ')' before 'IPSTR'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |                                 ^~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:88: note: in definition of macro 'LOG_FORMAT'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:60: note: to match this '('
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:101:31: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  101 | #define LOG_COLOR_D           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_D'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:86: note: in expansion of macro 'LOG_FORMAT'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:101:31: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  101 | #define LOG_COLOR_D           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_D'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:184:86: note: in expansion of macro 'LOG_FORMAT'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:33: error: expected ')' before 'IPSTR'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |                                 ^~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:88: note: in definition of macro 'LOG_FORMAT'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:60: note: to match this '('
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:102:31: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  102 | #define LOG_COLOR_V           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_V'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:86: note: in expansion of macro 'LOG_FORMAT'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:102:31: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  102 | #define LOG_COLOR_V           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_V'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:185:86: note: in expansion of macro 'LOG_FORMAT'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:33: error: expected ')' before 'IPSTR'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |                                 ^~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:88: note: in definition of macro 'LOG_FORMAT'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:60: note: to match this '('
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:100:31: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  100 | #define LOG_COLOR_I           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_I'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:86: note: in expansion of macro 'LOG_FORMAT'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log_color.h:100:31: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  100 | #define LOG_COLOR_I           ""
+      |                               ^~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_I'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:186:86: note: in expansion of macro 'LOG_FORMAT'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:839:9: note: in expansion of macro 'ESP_LOGI'
+  839 |         ESP_LOGI(TAG, "Got IP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |         ^~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:838:28: warning: unused variable 'event' [-Wunused-variable]
+  838 |         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+      |                            ^~~~~
+In file included from /home/tvconss/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/tvconss/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/tvconss/esp/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:13:
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c: In function 'wifi_init_sta':
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:849:21: error: implicit declaration of function 'esp_netif_init'; did you mean 'esp_newlib_init'? [-Wimplicit-function-declaration]
+  849 |     ESP_ERROR_CHECK(esp_netif_init());
+      |                     ^~~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:851:5: error: implicit declaration of function 'esp_netif_create_default_wifi_sta' [-Wimplicit-function-declaration]
+  851 |     esp_netif_create_default_wifi_sta();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:853:5: error: unknown type name 'wifi_init_config_t'
+  853 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:853:30: error: implicit declaration of function 'WIFI_INIT_CONFIG_DEFAULT' [-Wimplicit-function-declaration]
+  853 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:854:21: error: implicit declaration of function 'esp_wifi_init'; did you mean 'esp_newlib_init'? [-Wimplicit-function-declaration]
+  854 |     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+      |                     ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:856:48: error: 'WIFI_EVENT' undeclared (first use in this function)
+  856 |     ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL));
+      |                                                ^~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:857:48: error: 'IP_EVENT' undeclared (first use in this function)
+  857 |     ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL));
+      |                                                ^~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:857:58: error: 'IP_EVENT_STA_GOT_IP' undeclared (first use in this function)
+  857 |     ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL));
+      |                                                          ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:859:5: error: unknown type name 'wifi_config_t'
+  859 |     wifi_config_t wifi_config = {
+      |     ^~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:860:9: error: field name not in record or union initializer
+  860 |         .sta = {
+      |         ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:860:9: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:860:9: warning: braces around scalar initializer
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:860:9: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:861:13: error: field name not in record or union initializer
+  861 |             .ssid = EXAMPLE_WIFI_SSID,
+      |             ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:861:13: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:861:21: error: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  861 |             .ssid = EXAMPLE_WIFI_SSID,
+      |                     ^~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:861:21: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:862:13: error: field name not in record or union initializer
+  862 |             .password = EXAMPLE_WIFI_PASS,
+      |             ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:862:13: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:862:25: warning: excess elements in scalar initializer
+  862 |             .password = EXAMPLE_WIFI_PASS,
+      |                         ^~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:862:25: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:863:13: error: field name not in record or union initializer
+  863 |             .threshold.authmode = WIFI_AUTH_WPA2_PSK,
+      |             ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:863:13: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:863:35: error: 'WIFI_AUTH_WPA2_PSK' undeclared (first use in this function)
+  863 |             .threshold.authmode = WIFI_AUTH_WPA2_PSK,
+      |                                   ^~~~~~~~~~~~~~~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:863:35: warning: excess elements in scalar initializer
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:863:35: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:864:13: error: field name not in record or union initializer
+  864 |             .pmf_cfg = {
+      |             ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:864:13: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:864:13: warning: braces around scalar initializer
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:864:13: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:865:17: error: field name not in record or union initializer
+  865 |                 .capable = true,
+      |                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:865:17: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:866:17: error: field name not in record or union initializer
+  866 |                 .required = false
+      |                 ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:866:17: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:866:29: warning: excess elements in scalar initializer
+  866 |                 .required = false
+      |                             ^~~~~
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:866:29: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:864:24: warning: excess elements in scalar initializer
+  864 |             .pmf_cfg = {
+      |                        ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:864:24: note: (near initialization for 'wifi_config')
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:871:21: error: implicit declaration of function 'esp_wifi_set_mode' [-Wimplicit-function-declaration]
+  871 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |                     ^~~~~~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:871:39: error: 'WIFI_MODE_STA' undeclared (first use in this function)
+  871 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |                                       ^~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:872:21: error: implicit declaration of function 'esp_wifi_set_config'; did you mean 'esp_mqtt_set_config'? [-Wimplicit-function-declaration]
+  872 |     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
+      |                     ^~~~~~~~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:872:41: error: 'ESP_IF_WIFI_STA' undeclared (first use in this function)
+  872 |     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
+      |                                         ^~~~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:873:21: error: implicit declaration of function 'esp_wifi_start'; did you mean 'esp_restart'? [-Wimplicit-function-declaration]
+  873 |     ESP_ERROR_CHECK(esp_wifi_start());
+      |                     ^~~~~~~~~~~~~~
+/home/tvconss/esp/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c: At top level:
+/home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/main/main.c:845:13: warning: 'wifi_init_sta' defined but not used [-Wunused-function]
+  845 | static void wifi_init_sta(void)
+      |             ^~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

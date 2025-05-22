@@ -127,4 +127,2431 @@ entry 0x4008063c
 [0;32mI (18634) EXAMPLE: Light Level: 100[0m
 [0;32mI (22624) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
 [0;32mI (22624) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
-[0;32mI (22624) EXAMPLE: 
+[0;32mI (22624) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (22624) EXAMPLE: Temperature: 50[0m
+[0;32mI (22624) EXAMPLE: Humidity: 30[0m
+[0;32mI (22634) EXAMPLE: Light Level: 100[0m
+[0;32mI (26624) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (26624) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (26624) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (26624) EXAMPLE: Temperature: 49[0m
+[0;32mI (26634) EXAMPLE: Humidity: 90[0m
+[0;32mI (26634) EXAMPLE: Light Level: 100[0m
+[0;32mI (28664) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (28664) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (28664) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (28664) EXAMPLE: Temperature: 50[0m
+[0;32mI (28674) EXAMPLE: Humidity: 90[0m
+[0;32mI (28674) EXAMPLE: Light Level: 250[0m
+[0;32mI (32684) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (32684) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (32684) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (32684) EXAMPLE: Temperature: 50[0m
+[0;32mI (32694) EXAMPLE: Humidity: 90[0m
+[0;32mI (32694) EXAMPLE: Light Level: 250[0m
+[0;32mI (36684) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (36684) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (36684) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (36684) EXAMPLE: Temperature: 46[0m
+[0;32mI (36694) EXAMPLE: Humidity: 87[0m
+[0;32mI (36694) EXAMPLE: Light Level: 247[0m
+[0;32mI (38744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (38744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (38744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (38744) EXAMPLE: Temperature: 10[0m
+[0;32mI (38754) EXAMPLE: Humidity: 30[0m
+[0;32mI (38754) EXAMPLE: Light Level: 250[0m
+[0;32mI (40704) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (40704) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (40704) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (40704) EXAMPLE: Temperature: 10[0m
+[0;32mI (40714) EXAMPLE: Humidity: 90[0m
+[0;32mI (40714) EXAMPLE: Light Level: 100[0m
+[0;32mI (42694) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (42704) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (42704) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (42704) EXAMPLE: Temperature: 10[0m
+[0;32mI (42704) EXAMPLE: Humidity: 90[0m
+[0;32mI (42714) EXAMPLE: Light Level: 100[0m
+[0;32mI (44744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (44744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (44744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (44744) EXAMPLE: Temperature: 50[0m
+[0;32mI (44754) EXAMPLE: Humidity: 90[0m
+[0;32mI (44754) EXAMPLE: Light Level: 250[0m
+[0;32mI (48724) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (48724) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (48724) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (48724) EXAMPLE: Temperature: 50[0m
+[0;32mI (48734) EXAMPLE: Humidity: 80[0m
+[0;32mI (48734) EXAMPLE: Light Level: 250[0m
+[0;32mI (50744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (50744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (50744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (50744) EXAMPLE: Temperature: 50[0m
+[0;32mI (50754) EXAMPLE: Humidity: 77[0m
+[0;32mI (50754) EXAMPLE: Light Level: 250[0m
+[0;32mI (52734) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (52734) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (52734) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (52744) EXAMPLE: Temperature: 50[0m
+[0;32mI (52744) EXAMPLE: Humidity: 79[0m
+[0;32mI (52744) EXAMPLE: Light Level: 250[0m
+[0;32mI (54744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (54744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (54744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (54744) EXAMPLE: Temperature: 49[0m
+[0;32mI (54754) EXAMPLE: Humidity: 30[0m
+[0;32mI (54754) EXAMPLE: Light Level: 217[0m
+[0;32mI (56744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (56744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (56744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (56744) EXAMPLE: Temperature: 10[0m
+[0;32mI (56754) EXAMPLE: Humidity: 30[0m
+[0;32mI (56754) EXAMPLE: Light Level: 250[0m
+[0;32mI (58764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (58764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (58764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (58764) EXAMPLE: Temperature: 10[0m
+[0;32mI (58774) EXAMPLE: Humidity: 30[0m
+[0;32mI (58774) EXAMPLE: Light Level: 200[0m
+[0;32mI (60744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (60744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (60744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (60744) EXAMPLE: Temperature: 50[0m
+[0;32mI (60754) EXAMPLE: Humidity: 30[0m
+[0;32mI (60754) EXAMPLE: Light Level: 250[0m
+[0;32mI (62744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (62744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (62744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (62744) EXAMPLE: Temperature: 47[0m
+[0;32mI (62754) EXAMPLE: Humidity: 30[0m
+[0;32mI (62754) EXAMPLE: Light Level: 250[0m
+[0;32mI (64734) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (64734) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (64734) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (64744) EXAMPLE: Temperature: 44[0m
+[0;32mI (64744) EXAMPLE: Humidity: 90[0m
+[0;32mI (64744) EXAMPLE: Light Level: 250[0m
+[0;32mI (66764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (66764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (66764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (66764) EXAMPLE: Temperature: 50[0m
+[0;32mI (66774) EXAMPLE: Humidity: 30[0m
+[0;32mI (66774) EXAMPLE: Light Level: 245[0m
+[0;32mI (68744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (68744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (68744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (68744) EXAMPLE: Temperature: 50[0m
+[0;32mI (68754) EXAMPLE: Humidity: 30[0m
+[0;32mI (68754) EXAMPLE: Light Level: 250[0m
+[0;32mI (70744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (70744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (70744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (70744) EXAMPLE: Temperature: 10[0m
+[0;32mI (70754) EXAMPLE: Humidity: 33[0m
+[0;32mI (70754) EXAMPLE: Light Level: 250[0m
+[0;32mI (72744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (72744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (72744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (72744) EXAMPLE: Temperature: 50[0m
+[0;32mI (72754) EXAMPLE: Humidity: 30[0m
+[0;32mI (72754) EXAMPLE: Light Level: 100[0m
+[0;32mI (74744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (74744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (74744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (74744) EXAMPLE: Temperature: 47[0m
+[0;32mI (74754) EXAMPLE: Humidity: 90[0m
+[0;32mI (74754) EXAMPLE: Light Level: 143[0m
+[0;32mI (76744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (76744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (76744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (76744) EXAMPLE: Temperature: 10[0m
+[0;32mI (76754) EXAMPLE: Humidity: 90[0m
+[0;32mI (76754) EXAMPLE: Light Level: 250[0m
+[0;32mI (78744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (78744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (78744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (78744) EXAMPLE: Temperature: 50[0m
+[0;32mI (78754) EXAMPLE: Humidity: 90[0m
+[0;32mI (78754) EXAMPLE: Light Level: 214[0m
+[0;32mI (80744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (80744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (80744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (80744) EXAMPLE: Temperature: 50[0m
+[0;32mI (80754) EXAMPLE: Humidity: 90[0m
+[0;32mI (80754) EXAMPLE: Light Level: 250[0m
+[0;32mI (84744) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (84744) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (84744) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (84744) EXAMPLE: Temperature: 50[0m
+[0;32mI (84754) EXAMPLE: Humidity: 90[0m
+[0;32mI (84754) EXAMPLE: Light Level: 100[0m
+[0;32mI (86754) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (86754) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (86754) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (86764) EXAMPLE: Temperature: 10[0m
+[0;32mI (86764) EXAMPLE: Humidity: 30[0m
+[0;32mI (86764) EXAMPLE: Light Level: 123[0m
+[0;32mI (88764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (88764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (88764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (88764) EXAMPLE: Temperature: 10[0m
+[0;32mI (88774) EXAMPLE: Humidity: 90[0m
+[0;32mI (88774) EXAMPLE: Light Level: 160[0m
+[0;32mI (90774) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (90774) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (90774) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (90784) EXAMPLE: Temperature: 10[0m
+[0;32mI (90784) EXAMPLE: Humidity: 90[0m
+[0;32mI (90784) EXAMPLE: Light Level: 145[0m
+[0;32mI (92764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (92764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (92764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (92764) EXAMPLE: Temperature: 10[0m
+[0;32mI (92774) EXAMPLE: Humidity: 30[0m
+[0;32mI (92774) EXAMPLE: Light Level: 250[0m
+[0;32mI (94764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (94764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (94764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (94764) EXAMPLE: Temperature: 10[0m
+[0;32mI (94774) EXAMPLE: Humidity: 30[0m
+[0;32mI (94774) EXAMPLE: Light Level: 250[0m
+[0;32mI (96764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (96764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (96764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (96764) EXAMPLE: Temperature: 10[0m
+[0;32mI (96764) EXAMPLE: Humidity: 30[0m
+[0;32mI (96774) EXAMPLE: Light Level: 100[0m
+[0;32mI (98764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (98764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (98764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (98764) EXAMPLE: Temperature: 50[0m
+[0;32mI (98774) EXAMPLE: Humidity: 90[0m
+[0;32mI (98774) EXAMPLE: Light Level: 136[0m
+[0;32mI (100764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (100764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (100764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (100764) EXAMPLE: Temperature: 50[0m
+[0;32mI (100774) EXAMPLE: Humidity: 87[0m
+[0;32mI (100774) EXAMPLE: Light Level: 142[0m
+[0;32mI (102754) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (102754) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (102754) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (102764) EXAMPLE: Temperature: 45[0m
+[0;32mI (102764) EXAMPLE: Humidity: 89[0m
+[0;32mI (102764) EXAMPLE: Light Level: 163[0m
+[0;32mI (104764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (104764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (104764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (104764) EXAMPLE: Temperature: 42[0m
+[0;32mI (104774) EXAMPLE: Humidity: 83[0m
+[0;32mI (104774) EXAMPLE: Light Level: 114[0m
+[0;32mI (106764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (106764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (106764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (106764) EXAMPLE: Temperature: 44[0m
+[0;32mI (106774) EXAMPLE: Humidity: 86[0m
+[0;32mI (106774) EXAMPLE: Light Level: 250[0m
+[0;32mI (108784) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (108784) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (108784) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (108784) EXAMPLE: Temperature: 10[0m
+[0;32mI (108794) EXAMPLE: Humidity: 30[0m
+[0;32mI (108794) EXAMPLE: Light Level: 250[0m
+[0;32mI (110804) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (110804) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (110804) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (110804) EXAMPLE: Temperature: 10[0m
+[0;32mI (110814) EXAMPLE: Humidity: 30[0m
+[0;32mI (110814) EXAMPLE: Light Level: 250[0m
+[0;32mI (112764) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (112764) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (112764) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (112764) EXAMPLE: Temperature: 50[0m
+[0;32mI (112774) EXAMPLE: Humidity: 90[0m
+[0;32mI (112774) EXAMPLE: Light Level: 250[0m
+[0;32mI (116784) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (116784) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (116784) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (116784) EXAMPLE: Temperature: 50[0m
+[0;32mI (116794) EXAMPLE: Humidity: 90[0m
+[0;32mI (116794) EXAMPLE: Light Level: 100[0m
+[0;32mI (118804) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (118804) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (118804) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (118804) EXAMPLE: Temperature: 45[0m
+[0;32mI (118814) EXAMPLE: Humidity: 30[0m
+[0;32mI (118814) EXAMPLE: Light Level: 250[0m
+[0;32mI (120804) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (120804) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (120804) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (120804) EXAMPLE: Temperature: 47[0m
+[0;32mI (120814) EXAMPLE: Humidity: 30[0m
+[0;32mI (120814) EXAMPLE: Light Level: 250[0m
+[0;32mI (122804) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (122804) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (122804) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (122804) EXAMPLE: Temperature: 50[0m
+[0;32mI (122814) EXAMPLE: Humidity: 90[0m
+[0;32mI (122814) EXAMPLE: Light Level: 250[0m
+[0;32mI (126824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (126824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (126824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (126824) EXAMPLE: Temperature: 10[0m
+[0;32mI (126834) EXAMPLE: Humidity: 85[0m
+[0;32mI (126834) EXAMPLE: Light Level: 100[0m
+[0;32mI (128864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (128864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (128864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (128864) EXAMPLE: Temperature: 13[0m
+[0;32mI (128874) EXAMPLE: Humidity: 84[0m
+[0;32mI (128874) EXAMPLE: Light Level: 100[0m
+[0;32mI (130864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (130864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (130864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (130864) EXAMPLE: Temperature: 50[0m
+[0;32mI (130874) EXAMPLE: Humidity: 30[0m
+[0;32mI (130874) EXAMPLE: Light Level: 100[0m
+[0;32mI (132824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (132824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (132824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (132824) EXAMPLE: Temperature: 50[0m
+[0;32mI (132834) EXAMPLE: Humidity: 30[0m
+[0;32mI (132834) EXAMPLE: Light Level: 250[0m
+[0;32mI (134864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (134864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (134864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (134864) EXAMPLE: Temperature: 10[0m
+[0;32mI (134874) EXAMPLE: Humidity: 30[0m
+[0;32mI (134874) EXAMPLE: Light Level: 250[0m
+[0;32mI (136824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (136824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (136824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (136824) EXAMPLE: Temperature: 50[0m
+[0;32mI (136834) EXAMPLE: Humidity: 30[0m
+[0;32mI (136834) EXAMPLE: Light Level: 217[0m
+[0;32mI (138864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (138864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (138864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (138864) EXAMPLE: Temperature: 10[0m
+[0;32mI (138874) EXAMPLE: Humidity: 38[0m
+[0;32mI (138874) EXAMPLE: Light Level: 203[0m
+[0;32mI (140824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (140824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (140824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (140824) EXAMPLE: Temperature: 10[0m
+[0;32mI (140834) EXAMPLE: Humidity: 48[0m
+[0;32mI (140834) EXAMPLE: Light Level: 250[0m
+[0;32mI (142824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (142824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (142824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (142824) EXAMPLE: Temperature: 10[0m
+[0;32mI (142834) EXAMPLE: Humidity: 30[0m
+[0;32mI (142834) EXAMPLE: Light Level: 250[0m
+[0;32mI (144824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (144824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (144824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (144824) EXAMPLE: Temperature: 10[0m
+[0;32mI (144834) EXAMPLE: Humidity: 30[0m
+[0;32mI (144834) EXAMPLE: Light Level: 250[0m
+[0;32mI (146844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (146844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (146844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (146844) EXAMPLE: Temperature: 50[0m
+[0;32mI (146854) EXAMPLE: Humidity: 30[0m
+[0;32mI (146854) EXAMPLE: Light Level: 250[0m
+[0;32mI (148824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (148824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (148824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (148824) EXAMPLE: Temperature: 47[0m
+[0;32mI (148834) EXAMPLE: Humidity: 90[0m
+[0;32mI (148834) EXAMPLE: Light Level: 247[0m
+[0;32mI (150824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (150824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (150824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (150824) EXAMPLE: Temperature: 50[0m
+[0;32mI (150834) EXAMPLE: Humidity: 84[0m
+[0;32mI (150834) EXAMPLE: Light Level: 100[0m
+[0;32mI (152844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (152844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (152844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (152844) EXAMPLE: Temperature: 49[0m
+[0;32mI (152854) EXAMPLE: Humidity: 88[0m
+[0;32mI (152854) EXAMPLE: Light Level: 100[0m
+[0;32mI (154824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (154824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (154824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (154824) EXAMPLE: Temperature: 10[0m
+[0;32mI (154834) EXAMPLE: Humidity: 83[0m
+[0;32mI (154834) EXAMPLE: Light Level: 250[0m
+[0;32mI (156824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (156824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (156824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (156824) EXAMPLE: Temperature: 10[0m
+[0;32mI (156834) EXAMPLE: Humidity: 77[0m
+[0;32mI (156834) EXAMPLE: Light Level: 250[0m
+[0;32mI (158824) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (158824) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (158824) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (158824) EXAMPLE: Temperature: 11[0m
+[0;32mI (158834) EXAMPLE: Humidity: 90[0m
+[0;32mI (158834) EXAMPLE: Light Level: 250[0m
+[0;32mI (160864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (160864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (160864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (160864) EXAMPLE: Temperature: 50[0m
+[0;32mI (160874) EXAMPLE: Humidity: 90[0m
+[0;32mI (160874) EXAMPLE: Light Level: 250[0m
+[0;32mI (164864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (164864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (164864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (164864) EXAMPLE: Temperature: 50[0m
+[0;32mI (164874) EXAMPLE: Humidity: 90[0m
+[0;32mI (164874) EXAMPLE: Light Level: 100[0m
+[0;32mI (166864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (166864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (166864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (166864) EXAMPLE: Temperature: 50[0m
+[0;32mI (166874) EXAMPLE: Humidity: 90[0m
+[0;32mI (166874) EXAMPLE: Light Level: 107[0m
+[0;32mI (168864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (168864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (168864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (168864) EXAMPLE: Temperature: 10[0m
+[0;32mI (168874) EXAMPLE: Humidity: 30[0m
+[0;32mI (168874) EXAMPLE: Light Level: 100[0m
+[0;32mI (170864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (170864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (170864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (170864) EXAMPLE: Temperature: 10[0m
+[0;32mI (170874) EXAMPLE: Humidity: 34[0m
+[0;32mI (170874) EXAMPLE: Light Level: 250[0m
+[0;32mI (172864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (172864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (172864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (172864) EXAMPLE: Temperature: 10[0m
+[0;32mI (172874) EXAMPLE: Humidity: 30[0m
+[0;32mI (172874) EXAMPLE: Light Level: 250[0m
+[0;32mI (174864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (174864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (174864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (174864) EXAMPLE: Temperature: 10[0m
+[0;32mI (174874) EXAMPLE: Humidity: 30[0m
+[0;32mI (174874) EXAMPLE: Light Level: 250[0m
+[0;32mI (176864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (176864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (176864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (176864) EXAMPLE: Temperature: 10[0m
+[0;32mI (176874) EXAMPLE: Humidity: 30[0m
+[0;32mI (176874) EXAMPLE: Light Level: 248[0m
+[0;32mI (178884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (178884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (178884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (178884) EXAMPLE: Temperature: 12[0m
+[0;32mI (178884) EXAMPLE: Humidity: 90[0m
+[0;32mI (178894) EXAMPLE: Light Level: 202[0m
+[0;32mI (180864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (180864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (180864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (180864) EXAMPLE: Temperature: 10[0m
+[0;32mI (180874) EXAMPLE: Humidity: 90[0m
+[0;32mI (180874) EXAMPLE: Light Level: 250[0m
+[0;32mI (182864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (182864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (182864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (182864) EXAMPLE: Temperature: 50[0m
+[0;32mI (182874) EXAMPLE: Humidity: 90[0m
+[0;32mI (182874) EXAMPLE: Light Level: 100[0m
+[0;32mI (184864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (184864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (184864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (184864) EXAMPLE: Temperature: 47[0m
+[0;32mI (184874) EXAMPLE: Humidity: 90[0m
+[0;32mI (184874) EXAMPLE: Light Level: 250[0m
+[0;32mI (186884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (186884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (186884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (186884) EXAMPLE: Temperature: 50[0m
+[0;32mI (186894) EXAMPLE: Humidity: 89[0m
+[0;32mI (186894) EXAMPLE: Light Level: 100[0m
+[0;32mI (188864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (188864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (188864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (188864) EXAMPLE: Temperature: 10[0m
+[0;32mI (188874) EXAMPLE: Humidity: 80[0m
+[0;32mI (188874) EXAMPLE: Light Level: 250[0m
+[0;32mI (190854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (190854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (190854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (190854) EXAMPLE: Temperature: 10[0m
+[0;32mI (190864) EXAMPLE: Humidity: 90[0m
+[0;32mI (190864) EXAMPLE: Light Level: 250[0m
+[0;32mI (192864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (192864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (192864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (192864) EXAMPLE: Temperature: 10[0m
+[0;32mI (192874) EXAMPLE: Humidity: 90[0m
+[0;32mI (192874) EXAMPLE: Light Level: 250[0m
+[0;32mI (194864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (194864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (194864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (194864) EXAMPLE: Temperature: 10[0m
+[0;32mI (194874) EXAMPLE: Humidity: 30[0m
+[0;32mI (194874) EXAMPLE: Light Level: 250[0m
+[0;32mI (196864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (196864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (196864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (196864) EXAMPLE: Temperature: 10[0m
+[0;32mI (196874) EXAMPLE: Humidity: 38[0m
+[0;32mI (196874) EXAMPLE: Light Level: 250[0m
+[0;32mI (198864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (198864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (198864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (198864) EXAMPLE: Temperature: 10[0m
+[0;32mI (198874) EXAMPLE: Humidity: 30[0m
+[0;32mI (198874) EXAMPLE: Light Level: 250[0m
+[0;32mI (200854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (200864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (200864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (200864) EXAMPLE: Temperature: 14[0m
+[0;32mI (200864) EXAMPLE: Humidity: 30[0m
+[0;32mI (200874) EXAMPLE: Light Level: 250[0m
+[0;32mI (202864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (202864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (202864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (202864) EXAMPLE: Temperature: 18[0m
+[0;32mI (202874) EXAMPLE: Humidity: 30[0m
+[0;32mI (202874) EXAMPLE: Light Level: 250[0m
+[0;32mI (204864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (204864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (204864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (204864) EXAMPLE: Temperature: 23[0m
+[0;32mI (204874) EXAMPLE: Humidity: 30[0m
+[0;32mI (204874) EXAMPLE: Light Level: 250[0m
+[0;32mI (206854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (206854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (206854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (206854) EXAMPLE: Temperature: 50[0m
+[0;32mI (206864) EXAMPLE: Humidity: 30[0m
+[0;32mI (206864) EXAMPLE: Light Level: 234[0m
+[0;32mI (208864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (208864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (208864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (208864) EXAMPLE: Temperature: 50[0m
+[0;32mI (208874) EXAMPLE: Humidity: 30[0m
+[0;32mI (208874) EXAMPLE: Light Level: 250[0m
+[0;32mI (210864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (210864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (210864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (210864) EXAMPLE: Temperature: 10[0m
+[0;32mI (210874) EXAMPLE: Humidity: 30[0m
+[0;32mI (210874) EXAMPLE: Light Level: 223[0m
+[0;32mI (212864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (212864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (212864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (212864) EXAMPLE: Temperature: 14[0m
+[0;32mI (212874) EXAMPLE: Humidity: 30[0m
+[0;32mI (212874) EXAMPLE: Light Level: 250[0m
+[0;32mI (214864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (214864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (214864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (214864) EXAMPLE: Temperature: 50[0m
+[0;32mI (214874) EXAMPLE: Humidity: 30[0m
+[0;32mI (214874) EXAMPLE: Light Level: 250[0m
+[0;32mI (216864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (216864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (216864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (216864) EXAMPLE: Temperature: 50[0m
+[0;32mI (216874) EXAMPLE: Humidity: 34[0m
+[0;32mI (216874) EXAMPLE: Light Level: 236[0m
+[0;32mI (218864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (218864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (218864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (218864) EXAMPLE: Temperature: 10[0m
+[0;32mI (218874) EXAMPLE: Humidity: 30[0m
+[0;32mI (218874) EXAMPLE: Light Level: 250[0m
+[0;32mI (220864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (220864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (220864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (220864) EXAMPLE: Temperature: 15[0m
+[0;32mI (220874) EXAMPLE: Humidity: 30[0m
+[0;32mI (220874) EXAMPLE: Light Level: 226[0m
+[0;32mI (222854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (222854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (222854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (222854) EXAMPLE: Temperature: 50[0m
+[0;32mI (222864) EXAMPLE: Humidity: 90[0m
+[0;32mI (222864) EXAMPLE: Light Level: 222[0m
+[0;32mI (224864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (224864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (224864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (224864) EXAMPLE: Temperature: 50[0m
+[0;32mI (224874) EXAMPLE: Humidity: 90[0m
+[0;32mI (224874) EXAMPLE: Light Level: 232[0m
+[0;32mI (226864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (226864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (226864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (226864) EXAMPLE: Temperature: 50[0m
+[0;32mI (226874) EXAMPLE: Humidity: 90[0m
+[0;32mI (226874) EXAMPLE: Light Level: 250[0m
+[0;32mI (228864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (228864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (228864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (228864) EXAMPLE: Temperature: 50[0m
+[0;32mI (228874) EXAMPLE: Humidity: 30[0m
+[0;32mI (228874) EXAMPLE: Light Level: 250[0m
+[0;32mI (230864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (230864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (230864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (230864) EXAMPLE: Temperature: 10[0m
+[0;32mI (230874) EXAMPLE: Humidity: 39[0m
+[0;32mI (230874) EXAMPLE: Light Level: 250[0m
+[0;32mI (232864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (232864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (232864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (232864) EXAMPLE: Temperature: 10[0m
+[0;32mI (232874) EXAMPLE: Humidity: 30[0m
+[0;32mI (232874) EXAMPLE: Light Level: 100[0m
+[0;32mI (234864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (234864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (234864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (234864) EXAMPLE: Temperature: 13[0m
+[0;32mI (234874) EXAMPLE: Humidity: 30[0m
+[0;32mI (234874) EXAMPLE: Light Level: 250[0m
+[0;32mI (236864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (236864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (236864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (236864) EXAMPLE: Temperature: 50[0m
+[0;32mI (236874) EXAMPLE: Humidity: 30[0m
+[0;32mI (236874) EXAMPLE: Light Level: 250[0m
+[0;32mI (238864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (238864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (238864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (238864) EXAMPLE: Temperature: 50[0m
+[0;32mI (238874) EXAMPLE: Humidity: 30[0m
+[0;32mI (238874) EXAMPLE: Light Level: 250[0m
+[0;32mI (240864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (240864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (240864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (240864) EXAMPLE: Temperature: 49[0m
+[0;32mI (240874) EXAMPLE: Humidity: 30[0m
+[0;32mI (240874) EXAMPLE: Light Level: 250[0m
+[0;32mI (242864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (242864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (242864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (242864) EXAMPLE: Temperature: 10[0m
+[0;32mI (242874) EXAMPLE: Humidity: 30[0m
+[0;32mI (242874) EXAMPLE: Light Level: 250[0m
+[0;32mI (244884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (244884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (244884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (244884) EXAMPLE: Temperature: 10[0m
+[0;32mI (244894) EXAMPLE: Humidity: 30[0m
+[0;32mI (244894) EXAMPLE: Light Level: 250[0m
+[0;32mI (246864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (246864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (246864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (246864) EXAMPLE: Temperature: 50[0m
+[0;32mI (246874) EXAMPLE: Humidity: 30[0m
+[0;32mI (246874) EXAMPLE: Light Level: 233[0m
+[0;32mI (248864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (248864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (248864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (248864) EXAMPLE: Temperature: 10[0m
+[0;32mI (248874) EXAMPLE: Humidity: 30[0m
+[0;32mI (248874) EXAMPLE: Light Level: 250[0m
+[0;32mI (250864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (250864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (250864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (250864) EXAMPLE: Temperature: 10[0m
+[0;32mI (250874) EXAMPLE: Humidity: 90[0m
+[0;32mI (250874) EXAMPLE: Light Level: 100[0m
+[0;32mI (252864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (252864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (252864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (252864) EXAMPLE: Temperature: 10[0m
+[0;32mI (252874) EXAMPLE: Humidity: 87[0m
+[0;32mI (252874) EXAMPLE: Light Level: 100[0m
+[0;32mI (254864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (254864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (254864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (254864) EXAMPLE: Temperature: 50[0m
+[0;32mI (254874) EXAMPLE: Humidity: 79[0m
+[0;32mI (254874) EXAMPLE: Light Level: 250[0m
+[0;32mI (256884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (256884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (256884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (256884) EXAMPLE: Temperature: 47[0m
+[0;32mI (256894) EXAMPLE: Humidity: 30[0m
+[0;32mI (256894) EXAMPLE: Light Level: 100[0m
+[0;32mI (258864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (258864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (258864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (258864) EXAMPLE: Temperature: 10[0m
+[0;32mI (258874) EXAMPLE: Humidity: 30[0m
+[0;32mI (258874) EXAMPLE: Light Level: 250[0m
+[0;32mI (260884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (260884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (260884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (260884) EXAMPLE: Temperature: 10[0m
+[0;32mI (260894) EXAMPLE: Humidity: 90[0m
+[0;32mI (260894) EXAMPLE: Light Level: 250[0m
+[0;32mI (262864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (262864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (262864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (262864) EXAMPLE: Temperature: 50[0m
+[0;32mI (262874) EXAMPLE: Humidity: 90[0m
+[0;32mI (262874) EXAMPLE: Light Level: 250[0m
+[0;32mI (264864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (264864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (264864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (264864) EXAMPLE: Temperature: 50[0m
+[0;32mI (264864) EXAMPLE: Humidity: 85[0m
+[0;32mI (264874) EXAMPLE: Light Level: 250[0m
+[0;32mI (266904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (266904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (266904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (266904) EXAMPLE: Temperature: 50[0m
+[0;32mI (266914) EXAMPLE: Humidity: 85[0m
+[0;32mI (266914) EXAMPLE: Light Level: 250[0m
+[0;32mI (268854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (268854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (268854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (268864) EXAMPLE: Temperature: 50[0m
+[0;32mI (268864) EXAMPLE: Humidity: 88[0m
+[0;32mI (268864) EXAMPLE: Light Level: 204[0m
+[0;32mI (270854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (270854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (270854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (270854) EXAMPLE: Temperature: 50[0m
+[0;32mI (270854) EXAMPLE: Humidity: 90[0m
+[0;32mI (270864) EXAMPLE: Light Level: 238[0m
+[0;32mI (272864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (272864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (272864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (272864) EXAMPLE: Temperature: 50[0m
+[0;32mI (272874) EXAMPLE: Humidity: 30[0m
+[0;32mI (272874) EXAMPLE: Light Level: 250[0m
+[0;32mI (274904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (274904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (274904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (274904) EXAMPLE: Temperature: 50[0m
+[0;32mI (274914) EXAMPLE: Humidity: 31[0m
+[0;32mI (274914) EXAMPLE: Light Level: 100[0m
+[0;32mI (276864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (276864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (276864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (276864) EXAMPLE: Temperature: 10[0m
+[0;32mI (276874) EXAMPLE: Humidity: 30[0m
+[0;32mI (276874) EXAMPLE: Light Level: 250[0m
+[0;32mI (278864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (278864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (278864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (278864) EXAMPLE: Temperature: 10[0m
+[0;32mI (278874) EXAMPLE: Humidity: 30[0m
+[0;32mI (278874) EXAMPLE: Light Level: 250[0m
+[0;32mI (280884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (280884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (280884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (280884) EXAMPLE: Temperature: 11[0m
+[0;32mI (280894) EXAMPLE: Humidity: 30[0m
+[0;32mI (280894) EXAMPLE: Light Level: 250[0m
+[0;32mI (282884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (282884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (282884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (282884) EXAMPLE: Temperature: 50[0m
+[0;32mI (282894) EXAMPLE: Humidity: 38[0m
+[0;32mI (282894) EXAMPLE: Light Level: 250[0m
+[0;32mI (284884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (284884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (284884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (284884) EXAMPLE: Temperature: 50[0m
+[0;32mI (284894) EXAMPLE: Humidity: 90[0m
+[0;32mI (284894) EXAMPLE: Light Level: 100[0m
+[0;32mI (286864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (286864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (286864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (286864) EXAMPLE: Temperature: 50[0m
+[0;32mI (286874) EXAMPLE: Humidity: 90[0m
+[0;32mI (286874) EXAMPLE: Light Level: 100[0m
+[0;32mI (288864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (288864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (288864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (288864) EXAMPLE: Temperature: 48[0m
+[0;32mI (288874) EXAMPLE: Humidity: 90[0m
+[0;32mI (288874) EXAMPLE: Light Level: 250[0m
+[0;32mI (290884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (290884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (290884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (290884) EXAMPLE: Temperature: 50[0m
+[0;32mI (290894) EXAMPLE: Humidity: 84[0m
+[0;32mI (290894) EXAMPLE: Light Level: 250[0m
+[0;32mI (292864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (292864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (292864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (292864) EXAMPLE: Temperature: 50[0m
+[0;32mI (292874) EXAMPLE: Humidity: 90[0m
+[0;32mI (292874) EXAMPLE: Light Level: 246[0m
+[0;32mI (294864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (294864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (294864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (294864) EXAMPLE: Temperature: 50[0m
+[0;32mI (294874) EXAMPLE: Humidity: 85[0m
+[0;32mI (294874) EXAMPLE: Light Level: 220[0m
+[0;32mI (296884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (296884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (296884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (296884) EXAMPLE: Temperature: 10[0m
+[0;32mI (296894) EXAMPLE: Humidity: 90[0m
+[0;32mI (296894) EXAMPLE: Light Level: 220[0m
+[0;32mI (298864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (298864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (298864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (298864) EXAMPLE: Temperature: 10[0m
+[0;32mI (298874) EXAMPLE: Humidity: 30[0m
+[0;32mI (298874) EXAMPLE: Light Level: 197[0m
+[0;32mI (300864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (300864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (300864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (300864) EXAMPLE: Temperature: 10[0m
+[0;32mI (300874) EXAMPLE: Humidity: 30[0m
+[0;32mI (300874) EXAMPLE: Light Level: 250[0m
+[0;32mI (302864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (302864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (302864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (302864) EXAMPLE: Temperature: 10[0m
+[0;32mI (302874) EXAMPLE: Humidity: 90[0m
+[0;32mI (302874) EXAMPLE: Light Level: 249[0m
+[0;32mI (304884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (304884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (304884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (304884) EXAMPLE: Temperature: 10[0m
+[0;32mI (304894) EXAMPLE: Humidity: 90[0m
+[0;32mI (304894) EXAMPLE: Light Level: 249[0m
+[0;32mI (306884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (306884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (306884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (306884) EXAMPLE: Temperature: 50[0m
+[0;32mI (306894) EXAMPLE: Humidity: 90[0m
+[0;32mI (306894) EXAMPLE: Light Level: 250[0m
+[0;32mI (308864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (308864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (308864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (308864) EXAMPLE: Temperature: 47[0m
+[0;32mI (308874) EXAMPLE: Humidity: 90[0m
+[0;32mI (308874) EXAMPLE: Light Level: 206[0m
+[0;32mI (310864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (310864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (310864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (310864) EXAMPLE: Temperature: 46[0m
+[0;32mI (310874) EXAMPLE: Humidity: 30[0m
+[0;32mI (310874) EXAMPLE: Light Level: 239[0m
+[0;32mI (312854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (312854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (312854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (312854) EXAMPLE: Temperature: 10[0m
+[0;32mI (312864) EXAMPLE: Humidity: 30[0m
+[0;32mI (312864) EXAMPLE: Light Level: 208[0m
+[0;32mI (314884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (314884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (314884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (314884) EXAMPLE: Temperature: 50[0m
+[0;32mI (314894) EXAMPLE: Humidity: 32[0m
+[0;32mI (314894) EXAMPLE: Light Level: 250[0m
+[0;32mI (316864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (316864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (316864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (316864) EXAMPLE: Temperature: 50[0m
+[0;32mI (316874) EXAMPLE: Humidity: 30[0m
+[0;32mI (316874) EXAMPLE: Light Level: 250[0m
+[0;32mI (318884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (318884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (318884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (318884) EXAMPLE: Temperature: 50[0m
+[0;32mI (318894) EXAMPLE: Humidity: 30[0m
+[0;32mI (318894) EXAMPLE: Light Level: 245[0m
+[0;32mI (320864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (320864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (320864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (320864) EXAMPLE: Temperature: 50[0m
+[0;32mI (320874) EXAMPLE: Humidity: 30[0m
+[0;32mI (320874) EXAMPLE: Light Level: 250[0m
+[0;32mI (322884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (322884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (322884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (322884) EXAMPLE: Temperature: 50[0m
+[0;32mI (322894) EXAMPLE: Humidity: 39[0m
+[0;32mI (322894) EXAMPLE: Light Level: 224[0m
+[0;32mI (324874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (324874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (324874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (324874) EXAMPLE: Temperature: 46[0m
+[0;32mI (324884) EXAMPLE: Humidity: 90[0m
+[0;32mI (324884) EXAMPLE: Light Level: 250[0m
+[0;32mI (326884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (326884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (326884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (326884) EXAMPLE: Temperature: 45[0m
+[0;32mI (326884) EXAMPLE: Humidity: 84[0m
+[0;32mI (326894) EXAMPLE: Light Level: 250[0m
+[0;32mI (328884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (328884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (328884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (328884) EXAMPLE: Temperature: 50[0m
+[0;32mI (328894) EXAMPLE: Humidity: 83[0m
+[0;32mI (328894) EXAMPLE: Light Level: 250[0m
+[0;32mI (330854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (330854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (330854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (330854) EXAMPLE: Temperature: 10[0m
+[0;32mI (330864) EXAMPLE: Humidity: 80[0m
+[0;32mI (330864) EXAMPLE: Light Level: 250[0m
+[0;32mI (332864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (332864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (332864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (332864) EXAMPLE: Temperature: 10[0m
+[0;32mI (332874) EXAMPLE: Humidity: 30[0m
+[0;32mI (332874) EXAMPLE: Light Level: 250[0m
+[0;32mI (334874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (334874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (334874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (334884) EXAMPLE: Temperature: 50[0m
+[0;32mI (334884) EXAMPLE: Humidity: 30[0m
+[0;32mI (334884) EXAMPLE: Light Level: 100[0m
+[0;32mI (336884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (336884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (336884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (336884) EXAMPLE: Temperature: 45[0m
+[0;32mI (336894) EXAMPLE: Humidity: 90[0m
+[0;32mI (336894) EXAMPLE: Light Level: 100[0m
+[0;32mI (338864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (338864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (338864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (338864) EXAMPLE: Temperature: 10[0m
+[0;32mI (338874) EXAMPLE: Humidity: 90[0m
+[0;32mI (338874) EXAMPLE: Light Level: 250[0m
+[0;32mI (340904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (340904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (340904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (340904) EXAMPLE: Temperature: 15[0m
+[0;32mI (340914) EXAMPLE: Humidity: 80[0m
+[0;32mI (340914) EXAMPLE: Light Level: 250[0m
+[0;32mI (342864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (342864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (342864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (342864) EXAMPLE: Temperature: 11[0m
+[0;32mI (342874) EXAMPLE: Humidity: 84[0m
+[0;32mI (342874) EXAMPLE: Light Level: 100[0m
+[0;32mI (344864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (344864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (344864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (344864) EXAMPLE: Temperature: 11[0m
+[0;32mI (344874) EXAMPLE: Humidity: 30[0m
+[0;32mI (344874) EXAMPLE: Light Level: 100[0m
+[0;32mI (346884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (346884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (346884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (346884) EXAMPLE: Temperature: 10[0m
+[0;32mI (346894) EXAMPLE: Humidity: 90[0m
+[0;32mI (346894) EXAMPLE: Light Level: 120[0m
+[0;32mI (348904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (348904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (348904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (348904) EXAMPLE: Temperature: 10[0m
+[0;32mI (348914) EXAMPLE: Humidity: 87[0m
+[0;32mI (348914) EXAMPLE: Light Level: 100[0m
+[0;32mI (350864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (350864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (350864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (350864) EXAMPLE: Temperature: 10[0m
+[0;32mI (350874) EXAMPLE: Humidity: 90[0m
+[0;32mI (350874) EXAMPLE: Light Level: 128[0m
+[0;32mI (352884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (352884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (352884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (352884) EXAMPLE: Temperature: 14[0m
+[0;32mI (352894) EXAMPLE: Humidity: 90[0m
+[0;32mI (352894) EXAMPLE: Light Level: 123[0m
+[0;32mI (354864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (354864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (354864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (354864) EXAMPLE: Temperature: 12[0m
+[0;32mI (354874) EXAMPLE: Humidity: 90[0m
+[0;32mI (354874) EXAMPLE: Light Level: 250[0m
+[0;32mI (356864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (356864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (356864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (356864) EXAMPLE: Temperature: 13[0m
+[0;32mI (356874) EXAMPLE: Humidity: 30[0m
+[0;32mI (356874) EXAMPLE: Light Level: 100[0m
+[0;32mI (358884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (358884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (358884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (358884) EXAMPLE: Temperature: 50[0m
+[0;32mI (358894) EXAMPLE: Humidity: 32[0m
+[0;32mI (358894) EXAMPLE: Light Level: 100[0m
+[0;32mI (360884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (360884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (360884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (360884) EXAMPLE: Temperature: 48[0m
+[0;32mI (360894) EXAMPLE: Humidity: 30[0m
+[0;32mI (360894) EXAMPLE: Light Level: 250[0m
+[0;32mI (362864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (362864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (362864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (362864) EXAMPLE: Temperature: 50[0m
+[0;32mI (362874) EXAMPLE: Humidity: 35[0m
+[0;32mI (362874) EXAMPLE: Light Level: 250[0m
+[0;32mI (364884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (364884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (364884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (364884) EXAMPLE: Temperature: 50[0m
+[0;32mI (364894) EXAMPLE: Humidity: 30[0m
+[0;32mI (364894) EXAMPLE: Light Level: 250[0m
+[0;32mI (366884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (366884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (366884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (366884) EXAMPLE: Temperature: 50[0m
+[0;32mI (366894) EXAMPLE: Humidity: 30[0m
+[0;32mI (366894) EXAMPLE: Light Level: 250[0m
+[0;32mI (368854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (368854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (368854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (368864) EXAMPLE: Temperature: 50[0m
+[0;32mI (368864) EXAMPLE: Humidity: 30[0m
+[0;32mI (368864) EXAMPLE: Light Level: 100[0m
+[0;32mI (370884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (370884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (370884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (370884) EXAMPLE: Temperature: 50[0m
+[0;32mI (370894) EXAMPLE: Humidity: 34[0m
+[0;32mI (370894) EXAMPLE: Light Level: 100[0m
+[0;32mI (372864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (372864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (372864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (372864) EXAMPLE: Temperature: 50[0m
+[0;32mI (372874) EXAMPLE: Humidity: 31[0m
+[0;32mI (372874) EXAMPLE: Light Level: 250[0m
+[0;32mI (374854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (374854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (374864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (374864) EXAMPLE: Temperature: 50[0m
+[0;32mI (374864) EXAMPLE: Humidity: 90[0m
+[0;32mI (374874) EXAMPLE: Light Level: 250[0m
+[0;32mI (376854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (376854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (376854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (376854) EXAMPLE: Temperature: 50[0m
+[0;32mI (376864) EXAMPLE: Humidity: 90[0m
+[0;32mI (376864) EXAMPLE: Light Level: 228[0m
+[0;32mI (378884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (378884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (378884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (378884) EXAMPLE: Temperature: 50[0m
+[0;32mI (378894) EXAMPLE: Humidity: 90[0m
+[0;32mI (378894) EXAMPLE: Light Level: 216[0m
+[0;32mI (380904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (380904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (380904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (380904) EXAMPLE: Temperature: 50[0m
+[0;32mI (380914) EXAMPLE: Humidity: 83[0m
+[0;32mI (380914) EXAMPLE: Light Level: 250[0m
+[0;32mI (382864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (382864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (382864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (382864) EXAMPLE: Temperature: 46[0m
+[0;32mI (382874) EXAMPLE: Humidity: 90[0m
+[0;32mI (382874) EXAMPLE: Light Level: 250[0m
+[0;32mI (384864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (384864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (384864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (384864) EXAMPLE: Temperature: 43[0m
+[0;32mI (384874) EXAMPLE: Humidity: 84[0m
+[0;32mI (384874) EXAMPLE: Light Level: 100[0m
+[0;32mI (386884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (386884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (386884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (386884) EXAMPLE: Temperature: 41[0m
+[0;32mI (386894) EXAMPLE: Humidity: 90[0m
+[0;32mI (386894) EXAMPLE: Light Level: 250[0m
+[0;32mI (388864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (388864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (388864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (388864) EXAMPLE: Temperature: 10[0m
+[0;32mI (388874) EXAMPLE: Humidity: 30[0m
+[0;32mI (388874) EXAMPLE: Light Level: 250[0m
+[0;32mI (390884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (390884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (390884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (390884) EXAMPLE: Temperature: 50[0m
+[0;32mI (390894) EXAMPLE: Humidity: 90[0m
+[0;32mI (390894) EXAMPLE: Light Level: 217[0m
+[0;32mI (392864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (392864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (392864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (392864) EXAMPLE: Temperature: 50[0m
+[0;32mI (392874) EXAMPLE: Humidity: 90[0m
+[0;32mI (392874) EXAMPLE: Light Level: 250[0m
+[0;32mI (394864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (394864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (394864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (394864) EXAMPLE: Temperature: 49[0m
+[0;32mI (394874) EXAMPLE: Humidity: 84[0m
+[0;32mI (394874) EXAMPLE: Light Level: 100[0m
+[0;32mI (396894) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (396894) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (396904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (396904) EXAMPLE: Temperature: 50[0m
+[0;32mI (396904) EXAMPLE: Humidity: 75[0m
+[0;32mI (396904) EXAMPLE: Light Level: 119[0m
+[0;32mI (398864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (398864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (398864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (398864) EXAMPLE: Temperature: 10[0m
+[0;32mI (398874) EXAMPLE: Humidity: 65[0m
+[0;32mI (398874) EXAMPLE: Light Level: 100[0m
+[0;32mI (400904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (400904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (400904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (400904) EXAMPLE: Temperature: 10[0m
+[0;32mI (400914) EXAMPLE: Humidity: 72[0m
+[0;32mI (400914) EXAMPLE: Light Level: 100[0m
+[0;32mI (402864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (402864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (402864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (402864) EXAMPLE: Temperature: 10[0m
+[0;32mI (402874) EXAMPLE: Humidity: 64[0m
+[0;32mI (402874) EXAMPLE: Light Level: 250[0m
+[0;32mI (404844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (404844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (404844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (404844) EXAMPLE: Temperature: 13[0m
+[0;32mI (404854) EXAMPLE: Humidity: 67[0m
+[0;32mI (404854) EXAMPLE: Light Level: 250[0m
+[0;32mI (406844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (406844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (406844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (406844) EXAMPLE: Temperature: 50[0m
+[0;32mI (406854) EXAMPLE: Humidity: 64[0m
+[0;32mI (406854) EXAMPLE: Light Level: 250[0m
+[0;32mI (408884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (408884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (408884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (408884) EXAMPLE: Temperature: 47[0m
+[0;32mI (408894) EXAMPLE: Humidity: 58[0m
+[0;32mI (408894) EXAMPLE: Light Level: 100[0m
+[0;32mI (410884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (410884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (410884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (410884) EXAMPLE: Temperature: 44[0m
+[0;32mI (410894) EXAMPLE: Humidity: 64[0m
+[0;32mI (410894) EXAMPLE: Light Level: 250[0m
+[0;32mI (412844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (412844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (412844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (412844) EXAMPLE: Temperature: 40[0m
+[0;32mI (412854) EXAMPLE: Humidity: 54[0m
+[0;32mI (412854) EXAMPLE: Light Level: 250[0m
+[0;32mI (414864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (414864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (414864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (414864) EXAMPLE: Temperature: 38[0m
+[0;32mI (414874) EXAMPLE: Humidity: 30[0m
+[0;32mI (414874) EXAMPLE: Light Level: 250[0m
+[0;32mI (416884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (416884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (416884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (416884) EXAMPLE: Temperature: 38[0m
+[0;32mI (416894) EXAMPLE: Humidity: 30[0m
+[0;32mI (416894) EXAMPLE: Light Level: 217[0m
+[0;32mI (418884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (418884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (418884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (418884) EXAMPLE: Temperature: 43[0m
+[0;32mI (418894) EXAMPLE: Humidity: 38[0m
+[0;32mI (418894) EXAMPLE: Light Level: 250[0m
+[0;32mI (420864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (420864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (420864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (420864) EXAMPLE: Temperature: 43[0m
+[0;32mI (420874) EXAMPLE: Humidity: 30[0m
+[0;32mI (420874) EXAMPLE: Light Level: 250[0m
+[0;32mI (422884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (422884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (422884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (422884) EXAMPLE: Temperature: 40[0m
+[0;32mI (422894) EXAMPLE: Humidity: 30[0m
+[0;32mI (422894) EXAMPLE: Light Level: 100[0m
+[0;32mI (424864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (424864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (424864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (424864) EXAMPLE: Temperature: 50[0m
+[0;32mI (424874) EXAMPLE: Humidity: 36[0m
+[0;32mI (424874) EXAMPLE: Light Level: 100[0m
+[0;32mI (426884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (426884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (426884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (426884) EXAMPLE: Temperature: 10[0m
+[0;32mI (426894) EXAMPLE: Humidity: 36[0m
+[0;32mI (426894) EXAMPLE: Light Level: 250[0m
+[0;32mI (428864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (428864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (428864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (428864) EXAMPLE: Temperature: 50[0m
+[0;32mI (428874) EXAMPLE: Humidity: 90[0m
+[0;32mI (428874) EXAMPLE: Light Level: 250[0m
+[0;32mI (430904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (430904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (430904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (430904) EXAMPLE: Temperature: 50[0m
+[0;32mI (430914) EXAMPLE: Humidity: 90[0m
+[0;32mI (430914) EXAMPLE: Light Level: 219[0m
+[0;32mI (432844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (432844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (432844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (432844) EXAMPLE: Temperature: 47[0m
+[0;32mI (432854) EXAMPLE: Humidity: 90[0m
+[0;32mI (432854) EXAMPLE: Light Level: 250[0m
+[0;32mI (434884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (434884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (434884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (434884) EXAMPLE: Temperature: 50[0m
+[0;32mI (434894) EXAMPLE: Humidity: 30[0m
+[0;32mI (434894) EXAMPLE: Light Level: 100[0m
+[0;32mI (436884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (436884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (436884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (436884) EXAMPLE: Temperature: 10[0m
+[0;32mI (436894) EXAMPLE: Humidity: 30[0m
+[0;32mI (436894) EXAMPLE: Light Level: 138[0m
+[0;32mI (438864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (438864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (438864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (438864) EXAMPLE: Temperature: 12[0m
+[0;32mI (438874) EXAMPLE: Humidity: 38[0m
+[0;32mI (438874) EXAMPLE: Light Level: 185[0m
+[0;32mI (440844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (440844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (440844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (440844) EXAMPLE: Temperature: 10[0m
+[0;32mI (440854) EXAMPLE: Humidity: 30[0m
+[0;32mI (440854) EXAMPLE: Light Level: 250[0m
+[0;32mI (442844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (442844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (442844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (442844) EXAMPLE: Temperature: 10[0m
+[0;32mI (442854) EXAMPLE: Humidity: 35[0m
+[0;32mI (442854) EXAMPLE: Light Level: 250[0m
+[0;32mI (444864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (444864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (444864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (444864) EXAMPLE: Temperature: 14[0m
+[0;32mI (444874) EXAMPLE: Humidity: 30[0m
+[0;32mI (444874) EXAMPLE: Light Level: 250[0m
+[0;32mI (446884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (446884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (446884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (446884) EXAMPLE: Temperature: 10[0m
+[0;32mI (446894) EXAMPLE: Humidity: 30[0m
+[0;32mI (446894) EXAMPLE: Light Level: 100[0m
+[0;32mI (448864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (448864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (448864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (448864) EXAMPLE: Temperature: 10[0m
+[0;32mI (448874) EXAMPLE: Humidity: 30[0m
+[0;32mI (448874) EXAMPLE: Light Level: 250[0m
+[0;32mI (450864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (450864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (450864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (450864) EXAMPLE: Temperature: 10[0m
+[0;32mI (450874) EXAMPLE: Humidity: 30[0m
+[0;32mI (450874) EXAMPLE: Light Level: 250[0m
+[0;32mI (452924) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (452924) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (452924) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (452924) EXAMPLE: Temperature: 50[0m
+[0;32mI (452934) EXAMPLE: Humidity: 90[0m
+[0;32mI (452934) EXAMPLE: Light Level: 210[0m
+[0;32mI (454884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (454884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (454884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (454884) EXAMPLE: Temperature: 50[0m
+[0;32mI (454894) EXAMPLE: Humidity: 90[0m
+[0;32mI (454894) EXAMPLE: Light Level: 250[0m
+[0;32mI (456864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (456864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (456864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (456864) EXAMPLE: Temperature: 10[0m
+[0;32mI (456874) EXAMPLE: Humidity: 90[0m
+[0;32mI (456874) EXAMPLE: Light Level: 250[0m
+[0;32mI (458904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (458904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (458904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (458904) EXAMPLE: Temperature: 11[0m
+[0;32mI (458914) EXAMPLE: Humidity: 90[0m
+[0;32mI (458914) EXAMPLE: Light Level: 224[0m
+[0;32mI (460864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (460864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (460864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (460864) EXAMPLE: Temperature: 13[0m
+[0;32mI (460874) EXAMPLE: Humidity: 90[0m
+[0;32mI (460874) EXAMPLE: Light Level: 230[0m
+[0;32mI (462864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (462874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (462874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (462874) EXAMPLE: Temperature: 10[0m
+[0;32mI (462874) EXAMPLE: Humidity: 90[0m
+[0;32mI (462884) EXAMPLE: Light Level: 250[0m
+[0;32mI (464864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (464864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (464864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (464864) EXAMPLE: Temperature: 12[0m
+[0;32mI (464874) EXAMPLE: Humidity: 90[0m
+[0;32mI (464874) EXAMPLE: Light Level: 250[0m
+[0;32mI (466844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (466844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (466844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (466844) EXAMPLE: Temperature: 12[0m
+[0;32mI (466854) EXAMPLE: Humidity: 90[0m
+[0;32mI (466854) EXAMPLE: Light Level: 219[0m
+[0;32mI (468864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (468864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (468864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (468864) EXAMPLE: Temperature: 50[0m
+[0;32mI (468874) EXAMPLE: Humidity: 90[0m
+[0;32mI (468874) EXAMPLE: Light Level: 209[0m
+[0;32mI (470844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (470844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (470844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (470844) EXAMPLE: Temperature: 46[0m
+[0;32mI (470854) EXAMPLE: Humidity: 81[0m
+[0;32mI (470854) EXAMPLE: Light Level: 185[0m
+[0;32mI (472884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (472884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (472884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (472884) EXAMPLE: Temperature: 10[0m
+[0;32mI (472894) EXAMPLE: Humidity: 90[0m
+[0;32mI (472894) EXAMPLE: Light Level: 250[0m
+[0;32mI (474884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (474884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (474884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (474884) EXAMPLE: Temperature: 50[0m
+[0;32mI (474894) EXAMPLE: Humidity: 82[0m
+[0;32mI (474894) EXAMPLE: Light Level: 245[0m
+[0;32mI (476844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (476844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (476844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (476844) EXAMPLE: Temperature: 50[0m
+[0;32mI (476854) EXAMPLE: Humidity: 30[0m
+[0;32mI (476854) EXAMPLE: Light Level: 100[0m
+[0;32mI (478844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (478844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (478844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (478844) EXAMPLE: Temperature: 48[0m
+[0;32mI (478854) EXAMPLE: Humidity: 40[0m
+[0;32mI (478854) EXAMPLE: Light Level: 250[0m
+[0;32mI (480864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (480864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (480864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (480864) EXAMPLE: Temperature: 50[0m
+[0;32mI (480874) EXAMPLE: Humidity: 30[0m
+[0;32mI (480874) EXAMPLE: Light Level: 220[0m
+[0;32mI (482874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (482874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (482874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (482884) EXAMPLE: Temperature: 50[0m
+[0;32mI (482884) EXAMPLE: Humidity: 30[0m
+[0;32mI (482884) EXAMPLE: Light Level: 192[0m
+[0;32mI (484864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (484864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (484864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (484864) EXAMPLE: Temperature: 50[0m
+[0;32mI (484874) EXAMPLE: Humidity: 30[0m
+[0;32mI (484874) EXAMPLE: Light Level: 178[0m
+[0;32mI (486844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (486844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (486844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (486844) EXAMPLE: Temperature: 50[0m
+[0;32mI (486854) EXAMPLE: Humidity: 30[0m
+[0;32mI (486854) EXAMPLE: Light Level: 213[0m
+[0;32mI (488844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (488844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (488844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (488844) EXAMPLE: Temperature: 47[0m
+[0;32mI (488854) EXAMPLE: Humidity: 90[0m
+[0;32mI (488854) EXAMPLE: Light Level: 250[0m
+[0;32mI (490854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (490854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (490854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (490854) EXAMPLE: Temperature: 10[0m
+[0;32mI (490864) EXAMPLE: Humidity: 90[0m
+[0;32mI (490864) EXAMPLE: Light Level: 250[0m
+[0;32mI (492864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (492864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (492864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (492864) EXAMPLE: Temperature: 10[0m
+[0;32mI (492874) EXAMPLE: Humidity: 90[0m
+[0;32mI (492874) EXAMPLE: Light Level: 250[0m
+[0;32mI (494884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (494884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (494884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (494884) EXAMPLE: Temperature: 10[0m
+[0;32mI (494894) EXAMPLE: Humidity: 80[0m
+[0;32mI (494894) EXAMPLE: Light Level: 100[0m
+[0;32mI (496864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (496864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (496864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (496864) EXAMPLE: Temperature: 12[0m
+[0;32mI (496874) EXAMPLE: Humidity: 30[0m
+[0;32mI (496874) EXAMPLE: Light Level: 250[0m
+[0;32mI (498844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (498844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (498844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (498844) EXAMPLE: Temperature: 50[0m
+[0;32mI (498854) EXAMPLE: Humidity: 37[0m
+[0;32mI (498854) EXAMPLE: Light Level: 100[0m
+[0;32mI (500864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (500864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (500864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (500864) EXAMPLE: Temperature: 45[0m
+[0;32mI (500874) EXAMPLE: Humidity: 43[0m
+[0;32mI (500874) EXAMPLE: Light Level: 142[0m
+[0;32mI (502884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (502884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (502884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (502884) EXAMPLE: Temperature: 46[0m
+[0;32mI (502894) EXAMPLE: Humidity: 49[0m
+[0;32mI (502894) EXAMPLE: Light Level: 146[0m
+[0;32mI (504844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (504844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (504844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (504844) EXAMPLE: Temperature: 10[0m
+[0;32mI (504854) EXAMPLE: Humidity: 90[0m
+[0;32mI (504854) EXAMPLE: Light Level: 250[0m
+[0;32mI (506844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (506844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (506844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (506844) EXAMPLE: Temperature: 10[0m
+[0;32mI (506854) EXAMPLE: Humidity: 90[0m
+[0;32mI (506854) EXAMPLE: Light Level: 250[0m
+[0;32mI (508844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (508844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (508844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (508844) EXAMPLE: Temperature: 10[0m
+[0;32mI (508854) EXAMPLE: Humidity: 90[0m
+[0;32mI (508854) EXAMPLE: Light Level: 250[0m
+[0;32mI (510864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (510864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (510864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (510864) EXAMPLE: Temperature: 10[0m
+[0;32mI (510874) EXAMPLE: Humidity: 90[0m
+[0;32mI (510874) EXAMPLE: Light Level: 250[0m
+[0;32mI (512844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (512844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (512844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (512844) EXAMPLE: Temperature: 50[0m
+[0;32mI (512854) EXAMPLE: Humidity: 90[0m
+[0;32mI (512854) EXAMPLE: Light Level: 250[0m
+[0;32mI (514884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (514884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (514884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (514884) EXAMPLE: Temperature: 50[0m
+[0;32mI (514894) EXAMPLE: Humidity: 90[0m
+[0;32mI (514894) EXAMPLE: Light Level: 216[0m
+[0;32mI (516864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (516864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (516864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (516864) EXAMPLE: Temperature: 50[0m
+[0;32mI (516874) EXAMPLE: Humidity: 90[0m
+[0;32mI (516874) EXAMPLE: Light Level: 250[0m
+[0;32mI (518844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (518844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (518844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (518844) EXAMPLE: Temperature: 10[0m
+[0;32mI (518854) EXAMPLE: Humidity: 30[0m
+[0;32mI (518854) EXAMPLE: Light Level: 239[0m
+[0;32mI (520844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (520844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (520844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (520844) EXAMPLE: Temperature: 10[0m
+[0;32mI (520854) EXAMPLE: Humidity: 90[0m
+[0;32mI (520854) EXAMPLE: Light Level: 214[0m
+[0;32mI (522864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (522864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (522864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (522864) EXAMPLE: Temperature: 10[0m
+[0;32mI (522874) EXAMPLE: Humidity: 90[0m
+[0;32mI (522874) EXAMPLE: Light Level: 247[0m
+[0;32mI (524884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (524884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (524884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (524884) EXAMPLE: Temperature: 10[0m
+[0;32mI (524894) EXAMPLE: Humidity: 30[0m
+[0;32mI (524894) EXAMPLE: Light Level: 250[0m
+[0;32mI (526844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (526844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (526844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (526854) EXAMPLE: Temperature: 10[0m
+[0;32mI (526854) EXAMPLE: Humidity: 30[0m
+[0;32mI (526854) EXAMPLE: Light Level: 216[0m
+[0;32mI (528854) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (528854) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (528854) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (528864) EXAMPLE: Temperature: 13[0m
+[0;32mI (528864) EXAMPLE: Humidity: 90[0m
+[0;32mI (528864) EXAMPLE: Light Level: 250[0m
+[0;32mI (530904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (530904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (530904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (530904) EXAMPLE: Temperature: 10[0m
+[0;32mI (530914) EXAMPLE: Humidity: 90[0m
+[0;32mI (530914) EXAMPLE: Light Level: 250[0m
+[0;32mI (532864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (532864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (532864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (532864) EXAMPLE: Temperature: 10[0m
+[0;32mI (532874) EXAMPLE: Humidity: 90[0m
+[0;32mI (532874) EXAMPLE: Light Level: 250[0m
+[0;32mI (534884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (534884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (534884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (534884) EXAMPLE: Temperature: 50[0m
+[0;32mI (534894) EXAMPLE: Humidity: 30[0m
+[0;32mI (534894) EXAMPLE: Light Level: 242[0m
+[0;32mI (536844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (536844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (536844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (536844) EXAMPLE: Temperature: 50[0m
+[0;32mI (536854) EXAMPLE: Humidity: 90[0m
+[0;32mI (536854) EXAMPLE: Light Level: 201[0m
+[0;32mI (538864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (538864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (538864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (538864) EXAMPLE: Temperature: 50[0m
+[0;32mI (538874) EXAMPLE: Humidity: 90[0m
+[0;32mI (538874) EXAMPLE: Light Level: 250[0m
+[0;32mI (540844) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (540844) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (540844) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (540844) EXAMPLE: Temperature: 50[0m
+[0;32mI (540854) EXAMPLE: Humidity: 82[0m
+[0;32mI (540854) EXAMPLE: Light Level: 246[0m
+[0;32mI (542864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (542864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (542864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (542864) EXAMPLE: Temperature: 10[0m
+[0;32mI (542874) EXAMPLE: Humidity: 80[0m
+[0;32mI (542874) EXAMPLE: Light Level: 250[0m
+[0;32mI (546864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (546864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (546864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (546864) EXAMPLE: Temperature: 50[0m
+[0;32mI (546874) EXAMPLE: Humidity: 30[0m
+[0;32mI (546874) EXAMPLE: Light Level: 227[0m
+[0;32mI (548884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (548884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (548884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (548884) EXAMPLE: Temperature: 49[0m
+[0;32mI (548894) EXAMPLE: Humidity: 30[0m
+[0;32mI (548894) EXAMPLE: Light Level: 250[0m
+[0;32mI (550884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (550884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (550884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (550884) EXAMPLE: Temperature: 47[0m
+[0;32mI (550894) EXAMPLE: Humidity: 39[0m
+[0;32mI (550894) EXAMPLE: Light Level: 100[0m
+[0;32mI (552884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (552884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (552884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (552884) EXAMPLE: Temperature: 47[0m
+[0;32mI (552894) EXAMPLE: Humidity: 39[0m
+[0;32mI (552894) EXAMPLE: Light Level: 139[0m
+[0;32mI (554944) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (554944) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (554944) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (554944) EXAMPLE: Temperature: 42[0m
+[0;32mI (554954) EXAMPLE: Humidity: 90[0m
+[0;32mI (554954) EXAMPLE: Light Level: 120[0m
+[0;32mI (556884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (556884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (556884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (556884) EXAMPLE: Temperature: 39[0m
+[0;32mI (556894) EXAMPLE: Humidity: 90[0m
+[0;32mI (556894) EXAMPLE: Light Level: 250[0m
+[0;32mI (558904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (558904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (558904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (558904) EXAMPLE: Temperature: 50[0m
+[0;32mI (558914) EXAMPLE: Humidity: 87[0m
+[0;32mI (558914) EXAMPLE: Light Level: 226[0m
+[0;32mI (560884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (560884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (560884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (560884) EXAMPLE: Temperature: 50[0m
+[0;32mI (560894) EXAMPLE: Humidity: 30[0m
+[0;32mI (560894) EXAMPLE: Light Level: 250[0m
+[0;32mI (562884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (562884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (562884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (562884) EXAMPLE: Temperature: 46[0m
+[0;32mI (562894) EXAMPLE: Humidity: 30[0m
+[0;32mI (562894) EXAMPLE: Light Level: 244[0m
+[0;32mI (564884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (564884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (564884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (564884) EXAMPLE: Temperature: 10[0m
+[0;32mI (564894) EXAMPLE: Humidity: 30[0m
+[0;32mI (564894) EXAMPLE: Light Level: 250[0m
+[0;32mI (566884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (566884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (566884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (566884) EXAMPLE: Temperature: 13[0m
+[0;32mI (566894) EXAMPLE: Humidity: 90[0m
+[0;32mI (566894) EXAMPLE: Light Level: 250[0m
+[0;32mI (568884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (568884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (568884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (568884) EXAMPLE: Temperature: 50[0m
+[0;32mI (568894) EXAMPLE: Humidity: 30[0m
+[0;32mI (568894) EXAMPLE: Light Level: 100[0m
+[0;32mI (570874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (570874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (570874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (570884) EXAMPLE: Temperature: 10[0m
+[0;32mI (570884) EXAMPLE: Humidity: 30[0m
+[0;32mI (570884) EXAMPLE: Light Level: 250[0m
+[0;32mI (572884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (572884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (572884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (572884) EXAMPLE: Temperature: 50[0m
+[0;32mI (572894) EXAMPLE: Humidity: 36[0m
+[0;32mI (572894) EXAMPLE: Light Level: 100[0m
+[0;32mI (574884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (574884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (574884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (574884) EXAMPLE: Temperature: 47[0m
+[0;32mI (574894) EXAMPLE: Humidity: 90[0m
+[0;32mI (574894) EXAMPLE: Light Level: 250[0m
+[0;32mI (576924) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (576924) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (576924) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (576924) EXAMPLE: Temperature: 47[0m
+[0;32mI (576934) EXAMPLE: Humidity: 90[0m
+[0;32mI (576934) EXAMPLE: Light Level: 239[0m
+[0;32mI (578884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (578884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (578884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (578884) EXAMPLE: Temperature: 47[0m
+[0;32mI (578894) EXAMPLE: Humidity: 90[0m
+[0;32mI (578894) EXAMPLE: Light Level: 250[0m
+[0;32mI (580884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (580884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (580884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (580884) EXAMPLE: Temperature: 10[0m
+[0;32mI (580894) EXAMPLE: Humidity: 82[0m
+[0;32mI (580894) EXAMPLE: Light Level: 100[0m
+[0;32mI (582884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (582884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (582884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (582884) EXAMPLE: Temperature: 10[0m
+[0;32mI (582894) EXAMPLE: Humidity: 30[0m
+[0;32mI (582894) EXAMPLE: Light Level: 250[0m
+[0;32mI (584924) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (584924) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (584924) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (584924) EXAMPLE: Temperature: 10[0m
+[0;32mI (584934) EXAMPLE: Humidity: 30[0m
+[0;32mI (584934) EXAMPLE: Light Level: 250[0m
+[0;32mI (586884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (586884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (586884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (586884) EXAMPLE: Temperature: 10[0m
+[0;32mI (586894) EXAMPLE: Humidity: 31[0m
+[0;32mI (586894) EXAMPLE: Light Level: 250[0m
+[0;32mI (588944) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (588944) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (588944) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (588944) EXAMPLE: Temperature: 10[0m
+[0;32mI (588954) EXAMPLE: Humidity: 30[0m
+[0;32mI (588954) EXAMPLE: Light Level: 232[0m
+[0;32mI (590884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (590884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (590884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (590884) EXAMPLE: Temperature: 10[0m
+[0;32mI (590894) EXAMPLE: Humidity: 90[0m
+[0;32mI (590894) EXAMPLE: Light Level: 250[0m
+[0;32mI (592904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (592904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (592904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (592904) EXAMPLE: Temperature: 10[0m
+[0;32mI (592914) EXAMPLE: Humidity: 90[0m
+[0;32mI (592914) EXAMPLE: Light Level: 220[0m
+[0;32mI (594884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (594884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (594884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (594884) EXAMPLE: Temperature: 50[0m
+[0;32mI (594894) EXAMPLE: Humidity: 90[0m
+[0;32mI (594894) EXAMPLE: Light Level: 250[0m
+[0;32mI (596884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (596884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (596884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (596884) EXAMPLE: Temperature: 10[0m
+[0;32mI (596894) EXAMPLE: Humidity: 30[0m
+[0;32mI (596894) EXAMPLE: Light Level: 250[0m
+[0;32mI (598884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (598884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (598884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (598884) EXAMPLE: Temperature: 50[0m
+[0;32mI (598894) EXAMPLE: Humidity: 90[0m
+[0;32mI (598894) EXAMPLE: Light Level: 100[0m
+[0;32mI (600884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (600884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (600884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (600884) EXAMPLE: Temperature: 50[0m
+[0;32mI (600894) EXAMPLE: Humidity: 82[0m
+[0;32mI (600894) EXAMPLE: Light Level: 107[0m
+[0;32mI (602884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (602884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (602884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (602884) EXAMPLE: Temperature: 50[0m
+[0;32mI (602894) EXAMPLE: Humidity: 86[0m
+[0;32mI (602894) EXAMPLE: Light Level: 100[0m
+[0;32mI (604874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (604874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (604874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (604884) EXAMPLE: Temperature: 50[0m
+[0;32mI (604884) EXAMPLE: Humidity: 78[0m
+[0;32mI (604884) EXAMPLE: Light Level: 250[0m
+[0;32mI (606884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (606884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (606884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (606884) EXAMPLE: Temperature: 50[0m
+[0;32mI (606894) EXAMPLE: Humidity: 72[0m
+[0;32mI (606894) EXAMPLE: Light Level: 100[0m
+[0;32mI (608864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (608874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (608874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (608874) EXAMPLE: Temperature: 45[0m
+[0;32mI (608874) EXAMPLE: Humidity: 30[0m
+[0;32mI (608884) EXAMPLE: Light Level: 100[0m
+[0;32mI (610884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (610884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (610884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (610884) EXAMPLE: Temperature: 10[0m
+[0;32mI (610894) EXAMPLE: Humidity: 90[0m
+[0;32mI (610894) EXAMPLE: Light Level: 100[0m
+[0;32mI (612884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (612884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (612884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (612884) EXAMPLE: Temperature: 10[0m
+[0;32mI (612894) EXAMPLE: Humidity: 90[0m
+[0;32mI (612894) EXAMPLE: Light Level: 250[0m
+[0;32mI (614884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (614884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (614884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (614884) EXAMPLE: Temperature: 11[0m
+[0;32mI (614894) EXAMPLE: Humidity: 30[0m
+[0;32mI (614894) EXAMPLE: Light Level: 250[0m
+[0;32mI (616884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (616884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (616884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (616884) EXAMPLE: Temperature: 10[0m
+[0;32mI (616894) EXAMPLE: Humidity: 30[0m
+[0;32mI (616894) EXAMPLE: Light Level: 250[0m
+[0;32mI (618904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (618904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (618904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (618904) EXAMPLE: Temperature: 10[0m
+[0;32mI (618914) EXAMPLE: Humidity: 30[0m
+[0;32mI (618914) EXAMPLE: Light Level: 250[0m
+[0;32mI (620884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (620884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (620884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (620884) EXAMPLE: Temperature: 11[0m
+[0;32mI (620894) EXAMPLE: Humidity: 90[0m
+[0;32mI (620894) EXAMPLE: Light Level: 206[0m
+[0;32mI (622884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (622884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (622884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (622884) EXAMPLE: Temperature: 50[0m
+[0;32mI (622894) EXAMPLE: Humidity: 90[0m
+[0;32mI (622894) EXAMPLE: Light Level: 250[0m
+[0;32mI (624884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (624884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (624884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (624884) EXAMPLE: Temperature: 50[0m
+[0;32mI (624894) EXAMPLE: Humidity: 81[0m
+[0;32mI (624894) EXAMPLE: Light Level: 250[0m
+[0;32mI (626904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (626904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (626904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (626904) EXAMPLE: Temperature: 50[0m
+[0;32mI (626914) EXAMPLE: Humidity: 83[0m
+[0;32mI (626914) EXAMPLE: Light Level: 250[0m
+[0;32mI (628884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (628884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (628884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (628884) EXAMPLE: Temperature: 50[0m
+[0;32mI (628894) EXAMPLE: Humidity: 81[0m
+[0;32mI (628894) EXAMPLE: Light Level: 216[0m
+[0;32mI (630884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (630884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (630884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (630884) EXAMPLE: Temperature: 50[0m
+[0;32mI (630894) EXAMPLE: Humidity: 90[0m
+[0;32mI (630894) EXAMPLE: Light Level: 221[0m
+[0;32mI (632884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (632884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (632884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (632884) EXAMPLE: Temperature: 50[0m
+[0;32mI (632894) EXAMPLE: Humidity: 90[0m
+[0;32mI (632894) EXAMPLE: Light Level: 198[0m
+[0;32mI (634884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (634884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (634884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (634884) EXAMPLE: Temperature: 10[0m
+[0;32mI (634894) EXAMPLE: Humidity: 30[0m
+[0;32mI (634894) EXAMPLE: Light Level: 250[0m
+[0;32mI (636884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (636884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (636884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (636884) EXAMPLE: Temperature: 10[0m
+[0;32mI (636894) EXAMPLE: Humidity: 90[0m
+[0;32mI (636894) EXAMPLE: Light Level: 100[0m
+[0;32mI (638884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (638884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (638884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (638884) EXAMPLE: Temperature: 14[0m
+[0;32mI (638894) EXAMPLE: Humidity: 83[0m
+[0;32mI (638894) EXAMPLE: Light Level: 140[0m
+[0;32mI (640884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (640884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (640884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (640884) EXAMPLE: Temperature: 50[0m
+[0;32mI (640894) EXAMPLE: Humidity: 90[0m
+[0;32mI (640894) EXAMPLE: Light Level: 137[0m
+[0;32mI (642864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (642864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (642874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (642874) EXAMPLE: Temperature: 50[0m
+[0;32mI (642874) EXAMPLE: Humidity: 30[0m
+[0;32mI (642884) EXAMPLE: Light Level: 186[0m
+[0;32mI (644884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (644884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (644884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (644884) EXAMPLE: Temperature: 50[0m
+[0;32mI (644894) EXAMPLE: Humidity: 30[0m
+[0;32mI (644894) EXAMPLE: Light Level: 189[0m
+[0;32mI (646884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (646884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (646884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (646884) EXAMPLE: Temperature: 49[0m
+[0;32mI (646894) EXAMPLE: Humidity: 30[0m
+[0;32mI (646894) EXAMPLE: Light Level: 250[0m
+[0;32mI (648874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (648874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (648884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (648884) EXAMPLE: Temperature: 10[0m
+[0;32mI (648884) EXAMPLE: Humidity: 90[0m
+[0;32mI (648884) EXAMPLE: Light Level: 100[0m
+[0;32mI (650904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (650904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (650904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (650904) EXAMPLE: Temperature: 10[0m
+[0;32mI (650914) EXAMPLE: Humidity: 90[0m
+[0;32mI (650914) EXAMPLE: Light Level: 250[0m
+[0;32mI (652884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (652884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (652884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (652884) EXAMPLE: Temperature: 50[0m
+[0;32mI (652894) EXAMPLE: Humidity: 88[0m
+[0;32mI (652894) EXAMPLE: Light Level: 250[0m
+[0;32mI (654864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (654864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (654864) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (654874) EXAMPLE: Temperature: 47[0m
+[0;32mI (654874) EXAMPLE: Humidity: 84[0m
+[0;32mI (654874) EXAMPLE: Light Level: 250[0m
+[0;32mI (656884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (656884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (656884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (656884) EXAMPLE: Temperature: 10[0m
+[0;32mI (656894) EXAMPLE: Humidity: 81[0m
+[0;32mI (656894) EXAMPLE: Light Level: 250[0m
+[0;32mI (658884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (658884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (658884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (658884) EXAMPLE: Temperature: 14[0m
+[0;32mI (658894) EXAMPLE: Humidity: 80[0m
+[0;32mI (658894) EXAMPLE: Light Level: 214[0m
+[0;32mI (660884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (660884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (660884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (660884) EXAMPLE: Temperature: 50[0m
+[0;32mI (660894) EXAMPLE: Humidity: 71[0m
+[0;32mI (660894) EXAMPLE: Light Level: 197[0m
+[0;32mI (662884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (662884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (662884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (662884) EXAMPLE: Temperature: 10[0m
+[0;32mI (662894) EXAMPLE: Humidity: 73[0m
+[0;32mI (662894) EXAMPLE: Light Level: 250[0m
+[0;32mI (664884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (664884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (664884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (664884) EXAMPLE: Temperature: 10[0m
+[0;32mI (664894) EXAMPLE: Humidity: 90[0m
+[0;32mI (664894) EXAMPLE: Light Level: 204[0m
+[0;32mI (666884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (666884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (666884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (666884) EXAMPLE: Temperature: 10[0m
+[0;32mI (666894) EXAMPLE: Humidity: 90[0m
+[0;32mI (666894) EXAMPLE: Light Level: 250[0m
+[0;32mI (668884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (668884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (668884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (668884) EXAMPLE: Temperature: 11[0m
+[0;32mI (668894) EXAMPLE: Humidity: 90[0m
+[0;32mI (668894) EXAMPLE: Light Level: 250[0m
+[0;32mI (670884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (670884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (670884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (670884) EXAMPLE: Temperature: 13[0m
+[0;32mI (670894) EXAMPLE: Humidity: 90[0m
+[0;32mI (670894) EXAMPLE: Light Level: 250[0m
+[0;32mI (672884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (672884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (672884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (672884) EXAMPLE: Temperature: 10[0m
+[0;32mI (672894) EXAMPLE: Humidity: 90[0m
+[0;32mI (672894) EXAMPLE: Light Level: 250[0m
+[0;32mI (674884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (674884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (674884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (674884) EXAMPLE: Temperature: 10[0m
+[0;32mI (674894) EXAMPLE: Humidity: 90[0m
+[0;32mI (674894) EXAMPLE: Light Level: 250[0m
+[0;32mI (676874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (676874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (676874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (676884) EXAMPLE: Temperature: 10[0m
+[0;32mI (676884) EXAMPLE: Humidity: 90[0m
+[0;32mI (676884) EXAMPLE: Light Level: 250[0m
+[0;32mI (678884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (678884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (678884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (678884) EXAMPLE: Temperature: 10[0m
+[0;32mI (678894) EXAMPLE: Humidity: 30[0m
+[0;32mI (678894) EXAMPLE: Light Level: 250[0m
+[0;32mI (680884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (680884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (680884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (680884) EXAMPLE: Temperature: 10[0m
+[0;32mI (680894) EXAMPLE: Humidity: 35[0m
+[0;32mI (680894) EXAMPLE: Light Level: 237[0m
+[0;32mI (682894) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (682894) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (682904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (682904) EXAMPLE: Temperature: 10[0m
+[0;32mI (682904) EXAMPLE: Humidity: 30[0m
+[0;32mI (682914) EXAMPLE: Light Level: 100[0m
+[0;32mI (684884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (684884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (684884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (684884) EXAMPLE: Temperature: 10[0m
+[0;32mI (684894) EXAMPLE: Humidity: 90[0m
+[0;32mI (684894) EXAMPLE: Light Level: 100[0m
+[0;32mI (686884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (686884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (686884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (686884) EXAMPLE: Temperature: 10[0m
+[0;32mI (686894) EXAMPLE: Humidity: 30[0m
+[0;32mI (686894) EXAMPLE: Light Level: 250[0m
+[0;32mI (688884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (688884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (688884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (688884) EXAMPLE: Temperature: 14[0m
+[0;32mI (688894) EXAMPLE: Humidity: 30[0m
+[0;32mI (688894) EXAMPLE: Light Level: 249[0m
+[0;32mI (690904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (690904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (690904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (690904) EXAMPLE: Temperature: 10[0m
+[0;32mI (690914) EXAMPLE: Humidity: 90[0m
+[0;32mI (690914) EXAMPLE: Light Level: 220[0m
+[0;32mI (692884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (692884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (692884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (692884) EXAMPLE: Temperature: 10[0m
+[0;32mI (692894) EXAMPLE: Humidity: 30[0m
+[0;32mI (692894) EXAMPLE: Light Level: 250[0m
+[0;32mI (694884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (694884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (694884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (694884) EXAMPLE: Temperature: 12[0m
+[0;32mI (694894) EXAMPLE: Humidity: 30[0m
+[0;32mI (694894) EXAMPLE: Light Level: 250[0m
+[0;32mI (696884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (696884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (696884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (696884) EXAMPLE: Temperature: 16[0m
+[0;32mI (696894) EXAMPLE: Humidity: 35[0m
+[0;32mI (696894) EXAMPLE: Light Level: 100[0m
+[0;32mI (698884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (698884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (698884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (698884) EXAMPLE: Temperature: 19[0m
+[0;32mI (698894) EXAMPLE: Humidity: 30[0m
+[0;32mI (698894) EXAMPLE: Light Level: 250[0m
+[0;32mI (700884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (700884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (700884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (700884) EXAMPLE: Temperature: 14[0m
+[0;32mI (700894) EXAMPLE: Humidity: 35[0m
+[0;32mI (700894) EXAMPLE: Light Level: 250[0m
+[0;32mI (702884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (702884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (702884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (702884) EXAMPLE: Temperature: 11[0m
+[0;32mI (702894) EXAMPLE: Humidity: 30[0m
+[0;32mI (702894) EXAMPLE: Light Level: 100[0m
+[0;32mI (704874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (704874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (704874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (704884) EXAMPLE: Temperature: 10[0m
+[0;32mI (704884) EXAMPLE: Humidity: 30[0m
+[0;32mI (704884) EXAMPLE: Light Level: 250[0m
+[0;32mI (706884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (706884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (706884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (706884) EXAMPLE: Temperature: 50[0m
+[0;32mI (706894) EXAMPLE: Humidity: 30[0m
+[0;32mI (706894) EXAMPLE: Light Level: 250[0m
+[0;32mI (708884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (708884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (708884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (708884) EXAMPLE: Temperature: 46[0m
+[0;32mI (708894) EXAMPLE: Humidity: 30[0m
+[0;32mI (708894) EXAMPLE: Light Level: 219[0m
+[0;32mI (710884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (710884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (710884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (710884) EXAMPLE: Temperature: 50[0m
+[0;32mI (710894) EXAMPLE: Humidity: 90[0m
+[0;32mI (710894) EXAMPLE: Light Level: 206[0m
+[0;32mI (712884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (712884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (712884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (712884) EXAMPLE: Temperature: 45[0m
+[0;32mI (712894) EXAMPLE: Humidity: 30[0m
+[0;32mI (712894) EXAMPLE: Light Level: 250[0m
+[0;32mI (714884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (714884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (714884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (714884) EXAMPLE: Temperature: 45[0m
+[0;32mI (714894) EXAMPLE: Humidity: 30[0m
+[0;32mI (714894) EXAMPLE: Light Level: 100[0m
+[0;32mI (716924) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (716924) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (716924) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (716924) EXAMPLE: Temperature: 43[0m
+[0;32mI (716934) EXAMPLE: Humidity: 30[0m
+[0;32mI (716934) EXAMPLE: Light Level: 100[0m
+[0;32mI (718904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (718904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (718904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (718904) EXAMPLE: Temperature: 38[0m
+[0;32mI (718914) EXAMPLE: Humidity: 30[0m
+[0;32mI (718914) EXAMPLE: Light Level: 250[0m
+[0;32mI (720884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (720884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (720884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (720884) EXAMPLE: Temperature: 50[0m
+[0;32mI (720894) EXAMPLE: Humidity: 90[0m
+[0;32mI (720894) EXAMPLE: Light Level: 250[0m
+[0;32mI (722884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (722884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (722884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (722884) EXAMPLE: Temperature: 48[0m
+[0;32mI (722894) EXAMPLE: Humidity: 90[0m
+[0;32mI (722894) EXAMPLE: Light Level: 250[0m
+[0;32mI (724904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (724904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (724904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (724904) EXAMPLE: Temperature: 50[0m
+[0;32mI (724914) EXAMPLE: Humidity: 87[0m
+[0;32mI (724914) EXAMPLE: Light Level: 250[0m
+[0;32mI (726884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (726884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (726884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (726884) EXAMPLE: Temperature: 45[0m
+[0;32mI (726894) EXAMPLE: Humidity: 90[0m
+[0;32mI (726894) EXAMPLE: Light Level: 100[0m
+[0;32mI (728924) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (728924) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (728924) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (728924) EXAMPLE: Temperature: 48[0m
+[0;32mI (728934) EXAMPLE: Humidity: 90[0m
+[0;32mI (728934) EXAMPLE: Light Level: 250[0m
+[0;32mI (730884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (730884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (730884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (730884) EXAMPLE: Temperature: 10[0m
+[0;32mI (730894) EXAMPLE: Humidity: 90[0m
+[0;32mI (730894) EXAMPLE: Light Level: 213[0m
+[0;32mI (732874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (732874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (732874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (732884) EXAMPLE: Temperature: 10[0m
+[0;32mI (732884) EXAMPLE: Humidity: 30[0m
+[0;32mI (732884) EXAMPLE: Light Level: 250[0m
+[0;32mI (734884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (734884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (734884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (734884) EXAMPLE: Temperature: 10[0m
+[0;32mI (734894) EXAMPLE: Humidity: 30[0m
+[0;32mI (734894) EXAMPLE: Light Level: 242[0m
+[0;32mI (736884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (736884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (736884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (736884) EXAMPLE: Temperature: 50[0m
+[0;32mI (736894) EXAMPLE: Humidity: 30[0m
+[0;32mI (736894) EXAMPLE: Light Level: 238[0m
+[0;32mI (738894) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (738894) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (738894) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (738894) EXAMPLE: Temperature: 50[0m
+[0;32mI (738894) EXAMPLE: Humidity: 30[0m
+[0;32mI (738904) EXAMPLE: Light Level: 245[0m
+[0;32mI (740884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (740884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (740884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (740884) EXAMPLE: Temperature: 45[0m
+[0;32mI (740894) EXAMPLE: Humidity: 90[0m
+[0;32mI (740894) EXAMPLE: Light Level: 250[0m
+[0;32mI (742884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (742884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (742884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (742884) EXAMPLE: Temperature: 50[0m
+[0;32mI (742894) EXAMPLE: Humidity: 83[0m
+[0;32mI (742894) EXAMPLE: Light Level: 250[0m
+[0;32mI (744864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (744864) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (744874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (744874) EXAMPLE: Temperature: 45[0m
+[0;32mI (744874) EXAMPLE: Humidity: 85[0m
+[0;32mI (744884) EXAMPLE: Light Level: 100[0m
+[0;32mI (746884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (746884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (746884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (746884) EXAMPLE: Temperature: 50[0m
+[0;32mI (746894) EXAMPLE: Humidity: 90[0m
+[0;32mI (746894) EXAMPLE: Light Level: 250[0m
+[0;32mI (748864) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (748874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (748874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (748874) EXAMPLE: Temperature: 50[0m
+[0;32mI (748874) EXAMPLE: Humidity: 30[0m
+[0;32mI (748884) EXAMPLE: Light Level: 250[0m
+[0;32mI (750884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (750884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (750884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (750884) EXAMPLE: Temperature: 10[0m
+[0;32mI (750894) EXAMPLE: Humidity: 33[0m
+[0;32mI (750894) EXAMPLE: Light Level: 250[0m
+[0;32mI (752884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (752884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (752884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (752884) EXAMPLE: Temperature: 50[0m
+[0;32mI (752894) EXAMPLE: Humidity: 90[0m
+[0;32mI (752894) EXAMPLE: Light Level: 250[0m
+[0;32mI (754884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (754884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (754884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (754884) EXAMPLE: Temperature: 50[0m
+[0;32mI (754894) EXAMPLE: Humidity: 90[0m
+[0;32mI (754894) EXAMPLE: Light Level: 250[0m
+[0;32mI (756884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (756884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (756884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (756884) EXAMPLE: Temperature: 50[0m
+[0;32mI (756894) EXAMPLE: Humidity: 90[0m
+[0;32mI (756894) EXAMPLE: Light Level: 100[0m
+[0;32mI (758894) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (758904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (758914) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (758914) EXAMPLE: Temperature: 50[0m
+[0;32mI (758914) EXAMPLE: Humidity: 30[0m
+[0;32mI (758924) EXAMPLE: Light Level: 147[0m
+[0;32mI (760884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (760884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (760884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (760884) EXAMPLE: Temperature: 50[0m
+[0;32mI (760894) EXAMPLE: Humidity: 30[0m
+[0;32mI (760894) EXAMPLE: Light Level: 197[0m
+[0;32mI (762874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (762874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (762874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (762874) EXAMPLE: Temperature: 50[0m
+[0;32mI (762884) EXAMPLE: Humidity: 30[0m
+[0;32mI (762884) EXAMPLE: Light Level: 196[0m
+[0;32mI (764884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (764884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (764884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (764884) EXAMPLE: Temperature: 45[0m
+[0;32mI (764894) EXAMPLE: Humidity: 37[0m
+[0;32mI (764894) EXAMPLE: Light Level: 250[0m
+[0;32mI (766884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (766884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (766884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (766884) EXAMPLE: Temperature: 50[0m
+[0;32mI (766894) EXAMPLE: Humidity: 90[0m
+[0;32mI (766894) EXAMPLE: Light Level: 100[0m
+[0;32mI (768884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (768884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (768884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (768884) EXAMPLE: Temperature: 46[0m
+[0;32mI (768894) EXAMPLE: Humidity: 90[0m
+[0;32mI (768894) EXAMPLE: Light Level: 250[0m
+[0;32mI (770884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (770884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (770884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (770884) EXAMPLE: Temperature: 44[0m
+[0;32mI (770894) EXAMPLE: Humidity: 90[0m
+[0;32mI (770894) EXAMPLE: Light Level: 250[0m
+[0;32mI (772874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (772874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (772874) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (772884) EXAMPLE: Temperature: 48[0m
+[0;32mI (772884) EXAMPLE: Humidity: 88[0m
+[0;32mI (772884) EXAMPLE: Light Level: 250[0m
+[0;32mI (774884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (774884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (774884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (774884) EXAMPLE: Temperature: 50[0m
+[0;32mI (774894) EXAMPLE: Humidity: 30[0m
+[0;32mI (774894) EXAMPLE: Light Level: 250[0m
+[0;32mI (776884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (776884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (776884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (776884) EXAMPLE: Temperature: 46[0m
+[0;32mI (776894) EXAMPLE: Humidity: 30[0m
+[0;32mI (776894) EXAMPLE: Light Level: 100[0m
+[0;32mI (778884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (778884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (778884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (778884) EXAMPLE: Temperature: 10[0m
+[0;32mI (778894) EXAMPLE: Humidity: 30[0m
+[0;32mI (778894) EXAMPLE: Light Level: 100[0m
+[0;32mI (780884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (780884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (780884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (780884) EXAMPLE: Temperature: 50[0m
+[0;32mI (780894) EXAMPLE: Humidity: 90[0m
+[0;32mI (780894) EXAMPLE: Light Level: 250[0m
+[0;32mI (782884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (782884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (782884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (782884) EXAMPLE: Temperature: 47[0m
+[0;32mI (782894) EXAMPLE: Humidity: 90[0m
+[0;32mI (782894) EXAMPLE: Light Level: 241[0m
+[0;32mI (784884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (784884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (784884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (784884) EXAMPLE: Temperature: 50[0m
+[0;32mI (784894) EXAMPLE: Humidity: 90[0m
+[0;32mI (784894) EXAMPLE: Light Level: 191[0m
+[0;32mI (786884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (786884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (786884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (786884) EXAMPLE: Temperature: 50[0m
+[0;32mI (786894) EXAMPLE: Humidity: 84[0m
+[0;32mI (786894) EXAMPLE: Light Level: 250[0m
+[0;32mI (788904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (788904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (788904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (788904) EXAMPLE: Temperature: 47[0m
+[0;32mI (788914) EXAMPLE: Humidity: 77[0m
+[0;32mI (788914) EXAMPLE: Light Level: 100[0m
+[0;32mI (790884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (790884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (790884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (790884) EXAMPLE: Temperature: 10[0m
+[0;32mI (790894) EXAMPLE: Humidity: 30[0m
+[0;32mI (790894) EXAMPLE: Light Level: 250[0m
+[0;32mI (792884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (792884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (792884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (792884) EXAMPLE: Temperature: 10[0m
+[0;32mI (792894) EXAMPLE: Humidity: 34[0m
+[0;32mI (792894) EXAMPLE: Light Level: 241[0m
+[0;32mI (794884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (794884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (794884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (794884) EXAMPLE: Temperature: 10[0m
+[0;32mI (794884) EXAMPLE: Humidity: 33[0m
+[0;32mI (794894) EXAMPLE: Light Level: 250[0m
+[0;32mI (796884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (796884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (796884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (796884) EXAMPLE: Temperature: 12[0m
+[0;32mI (796894) EXAMPLE: Humidity: 30[0m
+[0;32mI (796894) EXAMPLE: Light Level: 100[0m
+[0;32mI (798884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (798884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (798884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (798884) EXAMPLE: Temperature: 10[0m
+[0;32mI (798894) EXAMPLE: Humidity: 30[0m
+[0;32mI (798894) EXAMPLE: Light Level: 250[0m
+[0;32mI (800874) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (800874) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (800884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (800884) EXAMPLE: Temperature: 10[0m
+[0;32mI (800884) EXAMPLE: Humidity: 34[0m
+[0;32mI (800894) EXAMPLE: Light Level: 250[0m
+[0;32mI (802884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (802884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (802884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (802884) EXAMPLE: Temperature: 10[0m
+[0;32mI (802894) EXAMPLE: Humidity: 30[0m
+[0;32mI (802894) EXAMPLE: Light Level: 100[0m
+[0;32mI (804884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (804884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (804884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (804884) EXAMPLE: Temperature: 50[0m
+[0;32mI (804894) EXAMPLE: Humidity: 30[0m
+[0;32mI (804894) EXAMPLE: Light Level: 109[0m
+[0;32mI (806884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (806884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (806884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (806884) EXAMPLE: Temperature: 50[0m
+[0;32mI (806894) EXAMPLE: Humidity: 90[0m
+[0;32mI (806894) EXAMPLE: Light Level: 100[0m
+[0;32mI (808884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (808884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (808884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (808884) EXAMPLE: Temperature: 46[0m
+[0;32mI (808894) EXAMPLE: Humidity: 80[0m
+[0;32mI (808894) EXAMPLE: Light Level: 117[0m
+[0;32mI (810884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (810884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (810884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (810884) EXAMPLE: Temperature: 10[0m
+[0;32mI (810894) EXAMPLE: Humidity: 90[0m
+[0;32mI (810894) EXAMPLE: Light Level: 100[0m
+[0;32mI (812884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (812884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (812884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (812884) EXAMPLE: Temperature: 11[0m
+[0;32mI (812894) EXAMPLE: Humidity: 90[0m
+[0;32mI (812894) EXAMPLE: Light Level: 250[0m
+[0;32mI (814884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (814884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (814884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (814884) EXAMPLE: Temperature: 10[0m
+[0;32mI (814894) EXAMPLE: Humidity: 90[0m
+[0;32mI (814894) EXAMPLE: Light Level: 250[0m
+[0;32mI (816884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (816884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (816884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (816884) EXAMPLE: Temperature: 10[0m
+[0;32mI (816894) EXAMPLE: Humidity: 90[0m
+[0;32mI (816894) EXAMPLE: Light Level: 250[0m
+[0;32mI (818894) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (818894) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (818894) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (818904) EXAMPLE: Temperature: 10[0m
+[0;32mI (818904) EXAMPLE: Humidity: 30[0m
+[0;32mI (818904) EXAMPLE: Light Level: 250[0m
+[0;32mI (820894) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (820894) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (820894) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (820894) EXAMPLE: Temperature: 10[0m
+[0;32mI (820904) EXAMPLE: Humidity: 90[0m
+[0;32mI (820904) EXAMPLE: Light Level: 203[0m
+[0;32mI (824884) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (824884) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (824884) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (824884) EXAMPLE: Temperature: 10[0m
+[0;32mI (824894) EXAMPLE: Humidity: 90[0m
+[0;32mI (824894) EXAMPLE: Light Level: 201[0m
+[0;32mI (826904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (826904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (826904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (826904) EXAMPLE: Temperature: 10[0m
+[0;32mI (826914) EXAMPLE: Humidity: 90[0m
+[0;32mI (826914) EXAMPLE: Light Level: 250[0m
+[0;32mI (828934) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (828934) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (828944) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (828944) EXAMPLE: Temperature: 10[0m
+[0;32mI (828944) EXAMPLE: Humidity: 90[0m
+[0;32mI (828954) EXAMPLE: Light Level: 250[0m
+[0;32mI (830904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (830904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (830904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (830904) EXAMPLE: Temperature: 50[0m
+[0;32mI (830914) EXAMPLE: Humidity: 81[0m
+[0;32mI (830914) EXAMPLE: Light Level: 250[0m
+[0;32mI (832904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (832904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (832904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (832904) EXAMPLE: Temperature: 50[0m
+[0;32mI (832914) EXAMPLE: Humidity: 30[0m
+[0;32mI (832914) EXAMPLE: Light Level: 250[0m
+[0;32mI (834924) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (834924) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (834924) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (834924) EXAMPLE: Temperature: 48[0m
+[0;32mI (834934) EXAMPLE: Humidity: 30[0m
+[0;32mI (834934) EXAMPLE: Light Level: 250[0m
+[0;32mI (836904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (836904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (836904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (836904) EXAMPLE: Temperature: 46[0m
+[0;32mI (836914) EXAMPLE: Humidity: 30[0m
+[0;32mI (836914) EXAMPLE: Light Level: 203[0m
+[0;32mI (838894) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (838894) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (838894) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (838904) EXAMPLE: Temperature: 48[0m
+[0;32mI (838904) EXAMPLE: Humidity: 90[0m
+[0;32mI (838904) EXAMPLE: Light Level: 237[0m
+[0;32mI (840904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (840904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (840904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (840904) EXAMPLE: Temperature: 44[0m
+[0;32mI (840914) EXAMPLE: Humidity: 85[0m
+[0;32mI (840914) EXAMPLE: Light Level: 250[0m
+[0;32mI (842944) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (842944) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (842944) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (842944) EXAMPLE: Temperature: 48[0m
+[0;32mI (842954) EXAMPLE: Humidity: 90[0m
+[0;32mI (842954) EXAMPLE: Light Level: 250[0m
+[0;32mI (844904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (844904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (844904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (844904) EXAMPLE: Temperature: 50[0m
+[0;32mI (844914) EXAMPLE: Humidity: 80[0m
+[0;32mI (844914) EXAMPLE: Light Level: 210[0m
+[0;32mI (846904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (846904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (846904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (846904) EXAMPLE: Temperature: 45[0m
+[0;32mI (846914) EXAMPLE: Humidity: 90[0m
+[0;32mI (846914) EXAMPLE: Light Level: 250[0m
+[0;32mI (848924) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (848924) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (848924) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (848924) EXAMPLE: Temperature: 50[0m
+[0;32mI (848934) EXAMPLE: Humidity: 90[0m
+[0;32mI (848934) EXAMPLE: Light Level: 200[0m
+[0;32mI (850904) EXAMPLE: Sensor server, event 1, src 0x0001, dst 0x0005, model_id 0x1100[0m
+[0;32mI (850904) EXAMPLE: ESP_BLE_MESH_MODEL_OP_SENSOR_GET[0m
+[0;32mI (850904) EXAMPLE: Sending Sensor Status[0m
+[0;32mI (850904) EXAMPLE: Temperature: 45[0m
+[0;32mI (850914) EXAMPLE: Humidity: 30[0m
+[0;32mI (850914) EXAMPLE: Light Level: 167[0m

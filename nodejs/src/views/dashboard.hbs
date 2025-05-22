@@ -1,7 +1,12 @@
 <!-- nodejs/src/views/dashboard.hbs -->
+<link rel="stylesheet" href="/public/dashboard/dashboard.css" />
+
 <div class="dashboard-header">
   <h1><i class="fas fa-tachometer-alt"></i> Dashboard Overview</h1>
   <p>Real-time sensor monitoring and control.</p>
+  <div class="mqtt-status">
+    <span id="mqtt-connection-status">MQTT: Disconnected</span>
+  </div>
 </div>
 
 <div class="dashboard-grid">
@@ -48,85 +53,32 @@
       <div class="data-item">
         <h4>Light Level</h4>
         <p class="data-value" id="ldr-value">--</p>
-        <!-- You could use a gauge chart here -->
-        <div class="gauge-placeholder" id="ldrGaugePlaceholder">Light Level
-          Gauge</div>
+        <div class="chart-placeholder" id="ldrChartPlaceholder">
+          <canvas id="lightChart"></canvas>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Add more cards for other sensors or controls -->
+  <!-- Device Status Card -->
+  <div class="sensor-card device-card">
+    <div class="card-icon"><i class="fas fa-microchip"></i></div>
+    <h3>Device Status</h3>
+    <div class="sensor-data-group">
+      <div class="data-item">
+        <h4>Last Update</h4>
+        <p class="data-value" id="last-update">--</p>
+        <p class="status-indicator" id="device-status">Unknown</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- Chart.js CDN (include this if you want to use Chart.js) -->
+<!-- MQTT.js CDN -->
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+
+<!-- Chart.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<script>
-  // Basic Chart.js example for Temperature (using placeholder data) // Replace
-  with your actual data fetching and chart updates
-  document.addEventListener('DOMContentLoaded', () => { const 온도ctx =
-  document.getElementById('temperatureChart')?.getContext('2d'); if (온도ctx) {
-  new Chart(온도ctx, { type: 'line', data: { labels: ['Time1', 'Time2', 'Time3',
-  'Time4', 'Time5'], // Replace with actual timestamps datasets: [{ label:
-  'Temperature (°C)', data: [22, 23, 22.5, 24, 23.5], // Replace with actual
-  temperature data borderColor: 'rgba(255, 99, 132, 1)', backgroundColor:
-  'rgba(255, 99, 132, 0.2)', tension: 0.3, fill: true }] }, options: {
-  responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero:
-  false } } } }); } const 습도ctx =
-  document.getElementById('humidityChart')?.getContext('2d'); if (습도ctx) { new
-  Chart(습도ctx, { type: 'line', data: { labels: ['Time1', 'Time2', 'Time3',
-  'Time4', 'Time5'], // Replace with actual timestamps datasets: [{ label:
-  'Humidity (%)', data: [55, 56, 58, 57, 59], // Replace with actual humidity
-  data borderColor: 'rgba(54, 162, 235, 1)', backgroundColor: 'rgba(54, 162,
-  235, 0.2)', tension: 0.3, fill: true }] }, options: { responsive: true,
-  maintainAspectRatio: false, scales: { y: { beginAtZero: false, max: 100 //
-  Humidity typically 0-100% } } } }); } // Mock LED toggle const ledButton =
-  document.getElementById('toggleLedButton'); const ledStatusEl =
-  document.getElementById('led-status'); let isLedOn = false; if(ledButton &&
-  ledStatusEl) { ledButton.addEventListener('click', () => { isLedOn = !isLedOn;
-  ledStatusEl.textContent = isLedOn ? 'ON' : 'OFF'; ledStatusEl.style.color =
-  isLedOn ? 'var(--success-color, #2ecc71)' : 'var(--error-color, #e74c3c)'; //
-  Here you would add an API call to actually toggle the LED console.log('LED
-  Toggled:', isLedOn); }); } });
-</script>
-
-<style>
-  /* Enhanced dashboard styles - ideally move to a separate CSS file */
-  .dashboard-header { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom:
-  1px solid var(--border-color, #e0e0e0); } .dashboard-header h1 { font-size:
-  2rem; /* Increased size */ color: var(--text-color); margin-bottom: 0.25rem; }
-  .dashboard-header h1 i { margin-right: 10px; color: var(--primary-accent,
-  #4a90e2); } .dashboard-header p { font-size: 1rem; color:
-  var(--text-color-light); } .dashboard-grid { display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-  .sensor-card { background-color: #fff; border-radius: 12px; padding: 25px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); transition: transform 0.2s
-  ease-in-out, box-shadow 0.2s ease-in-out; display: flex; flex-direction:
-  column; } .sensor-card:hover { transform: translateY(-5px); box-shadow: 0 8px
-  25px rgba(0, 0, 0, 0.12); } .sensor-card .card-icon { font-size: 2.5rem;
-  color: var(--primary-accent, #4a90e2); margin-bottom: 15px; text-align:
-  center; height: 50px; /* Fixed height for icon area */ }
-  .sensor-card.dht22-card .card-icon i { color: #e74c3c; } /* Reddish for
-  temp/humidity */ .sensor-card.led-card .card-icon i { color: #f1c40f; } /*
-  Yellow for LED */ .sensor-card.ldr-card .card-icon i { color: #2ecc71; } /*
-  Green for LDR/light */ .sensor-card h3 { font-size: 1.5rem; margin-bottom:
-  20px; text-align: center; color: var(--text-color); } .sensor-data-group {
-  display: flex; flex-direction: column; /* Stack data items vertically for now
-  */ gap: 20px; flex-grow: 1; /* Allow group to take space */ }
-  .sensor-data-group .data-item { text-align: center; } .sensor-data-group
-  .data-item h4 { font-size: 0.9rem; color: var(--text-color-light);
-  margin-bottom: 8px; text-transform: uppercase; font-weight: 500; } .data-value
-  { font-size: 2.2rem; font-weight: 600; color: var(--primary-accent, #4a90e2);
-  margin-bottom: 15px; } .led-status { color: var(--error-color, #e74c3c); /*
-  Default to OFF color */ } .chart-placeholder, .gauge-placeholder { height:
-  180px; /* Adjust as needed */ width: 100%; background-color: #f0f2f5; display:
-  flex; align-items: center; justify-content: center; color:
-  var(--text-color-light); border-radius: 8px; font-size: 0.9rem; } .btn-control
-  { background-color: var(--primary-accent, #4a90e2); color: white; border:
-  none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size:
-  1rem; transition: background-color 0.2s ease; align-self: center; /* Center
-  button in its flex item container */ } .btn-control:hover { background-color:
-  var(--hover-accent, #357abd); } /* Variables for success/error (if not in
-  root) */ :root { --success-color: #2ecc71; --error-color: #e74c3c; }
-
-</style>
+<!-- Dashboard JavaScript -->
+<script src="/public/dashboard/dashboard.js"></script>

@@ -1,0 +1,2 @@
+source /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/build/gdbinit/symbols
+source /home/tvconss/Workspace/mang-trong-iot/esp/sensor_client_middle/build/gdbinit/connect

@@ -1,0 +1,39 @@
+menu "Example Configuration"
+
+    config EXAMPLE_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) for the example to connect to.
+
+    config EXAMPLE_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+    config EXAMPLE_MQTT_BROKER_URL
+        string "MQTT Broker URL"
+        default "mqtt://mqtt.example.com:1883"
+        help
+            URL of the MQTT broker to connect to
+
+    config EXAMPLE_MQTT_BROKER_USERNAME
+        string "MQTT Broker Username"
+        default ""
+        help
+            Username for MQTT broker (leave empty if no username is required)
+
+    config EXAMPLE_MQTT_BROKER_PASSWORD
+        string "MQTT Broker Password"
+        default ""
+        help
+            Password for MQTT broker (leave empty if no password is required)
+
+    config EXAMPLE_MQTT_TOPIC
+        string "MQTT Topic"
+        default "tranvancon/mangtrongiot"
+        help
+            MQTT topic to publish sensor data
+
+endmenu 
