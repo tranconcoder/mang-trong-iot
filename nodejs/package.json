@@ -14,7 +14,6 @@
     "@types/jsonwebtoken": "^9.0.9",
     "@types/morgan": "^1.9.9",
     "bcrypt": "^6.0.0",
-    "cookie-parse": "^0.4.0",
     "cookie-parser": "^1.4.7",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",

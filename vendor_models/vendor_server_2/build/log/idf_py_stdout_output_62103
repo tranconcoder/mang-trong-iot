@@ -5022,4 +5022,1936 @@ entry 0x4008063c
 [0;32mI (33016) LDR_NODE: From address: 0x0005[0m
 [0;32mI (33026) LDR_NODE: ========================[0m
 [0;32mI (33836) LDR_NODE: Sending LDR data - Light: 557, Voltage: 0.45V, Status: Dark, Time: 33317 ms[0m
-[0;32mI (3
+[0;32mI (33836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (33836) LDR_NODE: LCD test update #6[0m
+[0;32mI (33856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (36356) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (36356) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (36366) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (36836) LDR_NODE: Sending LDR data - Light: 71, Voltage: 0.06V, Status: Dark, Time: 36317 ms[0m
+[0;32mI (36836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (36846) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (38006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (38006) LDR_NODE: DHT data received![0m
+[0;32mI (38006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (38006) LDR_NODE: Temperature: 21.68°C[0m
+[0;32mI (38006) LDR_NODE: Humidity: 79.20%[0m
+[0;32mI (38016) LDR_NODE: Timestamp: 40254 ms[0m
+[0;32mI (38016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (38026) LDR_NODE: ========================[0m
+[0;32mI (38836) LDR_NODE: LCD test update #7[0m
+[0;32mI (39836) LDR_NODE: Sending LDR data - Light: 1688, Voltage: 1.36V, Status: Dim, Time: 39318 ms[0m
+[0;32mI (39836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (39856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (41476) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (41486) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (41496) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (42836) LDR_NODE: Sending LDR data - Light: 629, Voltage: 0.51V, Status: Dark, Time: 42317 ms[0m
+[0;32mI (42836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (42856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (43066) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (43066) LDR_NODE: DHT data received![0m
+[0;32mI (43066) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (43066) LDR_NODE: Temperature: 24.91°C[0m
+[0;32mI (43076) LDR_NODE: Humidity: 35.59%[0m
+[0;32mI (43076) LDR_NODE: Timestamp: 45254 ms[0m
+[0;32mI (43076) LDR_NODE: From address: 0x0005[0m
+[0;32mI (43086) LDR_NODE: ========================[0m
+[0;32mI (43836) LDR_NODE: LCD test update #8[0m
+[0;32mI (45836) LDR_NODE: Sending LDR data - Light: 2931, Voltage: 2.36V, Status: Dim, Time: 45317 ms[0m
+[0;32mI (45836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (45856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (48006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (48006) LDR_NODE: DHT data received![0m
+[0;32mI (48006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (48006) LDR_NODE: Temperature: 31.80°C[0m
+[0;32mI (48006) LDR_NODE: Humidity: 48.56%[0m
+[0;32mI (48016) LDR_NODE: Timestamp: 50254 ms[0m
+[0;32mI (48016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (48016) LDR_NODE: ========================[0m
+[0;32mI (48836) LDR_NODE: Sending LDR data - Light: 361, Voltage: 0.29V, Status: Dark, Time: 48317 ms[0m
+[0;32mI (48836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (48836) LDR_NODE: LCD test update #9[0m
+[0;32mI (48856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (51836) LDR_NODE: Sending LDR data - Light: 1435, Voltage: 1.16V, Status: Dim, Time: 51317 ms[0m
+[0;32mI (51836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (51856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (53026) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (53026) LDR_NODE: DHT data received![0m
+[0;32mI (53026) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (53026) LDR_NODE: Temperature: 21.13°C[0m
+[0;32mI (53026) LDR_NODE: Humidity: 31.22%[0m
+[0;32mI (53036) LDR_NODE: Timestamp: 55254 ms[0m
+[0;32mI (53036) LDR_NODE: From address: 0x0005[0m
+[0;32mI (53046) LDR_NODE: ========================[0m
+[0;32mI (53836) LDR_NODE: LCD test update #10[0m
+[0;32mI (54836) LDR_NODE: Sending LDR data - Light: 2628, Voltage: 2.12V, Status: Dim, Time: 54317 ms[0m
+[0;32mI (54836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (54856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (57836) LDR_NODE: Sending LDR data - Light: 543, Voltage: 0.44V, Status: Dark, Time: 57317 ms[0m
+[0;32mI (57836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (57856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (58036) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (58036) LDR_NODE: DHT data received![0m
+[0;32mI (58036) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (58036) LDR_NODE: Temperature: 24.77°C[0m
+[0;32mI (58046) LDR_NODE: Humidity: 68.63%[0m
+[0;32mI (58046) LDR_NODE: Timestamp: 60254 ms[0m
+[0;32mI (58046) LDR_NODE: From address: 0x0005[0m
+[0;32mI (58056) LDR_NODE: ========================[0m
+[0;32mI (58836) LDR_NODE: LCD test update #11[0m
+[0;32mI (60836) LDR_NODE: Sending LDR data - Light: 3861, Voltage: 3.11V, Status: Bright, Time: 60317 ms[0m
+[0;32mI (60836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (60856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (63006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (63006) LDR_NODE: DHT data received![0m
+[0;32mI (63006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (63006) LDR_NODE: Temperature: 25.95°C[0m
+[0;32mI (63006) LDR_NODE: Humidity: 33.55%[0m
+[0;32mI (63016) LDR_NODE: Timestamp: 65254 ms[0m
+[0;32mI (63016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (63016) LDR_NODE: ========================[0m
+[0;32mI (63836) LDR_NODE: Sending LDR data - Light: 3486, Voltage: 2.81V, Status: Bright, Time: 63317 ms[0m
+[0;32mI (63836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (63836) LDR_NODE: LCD test update #12[0m
+[0;32mI (63856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (66836) LDR_NODE: Sending LDR data - Light: 2838, Voltage: 2.29V, Status: Dim, Time: 66317 ms[0m
+[0;32mI (66836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (66856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (68006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (68006) LDR_NODE: DHT data received![0m
+[0;32mI (68006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (68006) LDR_NODE: Temperature: 30.29°C[0m
+[0;32mI (68006) LDR_NODE: Humidity: 51.13%[0m
+[0;32mI (68016) LDR_NODE: Timestamp: 70254 ms[0m
+[0;32mI (68016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (68026) LDR_NODE: ========================[0m
+[0;32mI (68836) LDR_NODE: LCD test update #13[0m
+[0;32mI (69836) LDR_NODE: Sending LDR data - Light: 2238, Voltage: 1.80V, Status: Dim, Time: 69317 ms[0m
+[0;32mI (69836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (69856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (72836) LDR_NODE: Sending LDR data - Light: 3271, Voltage: 2.64V, Status: Bright, Time: 72317 ms[0m
+[0;32mI (72836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (72856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (73006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (73006) LDR_NODE: DHT data received![0m
+[0;32mI (73006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (73006) LDR_NODE: Temperature: 22.83°C[0m
+[0;32mI (73016) LDR_NODE: Humidity: 34.28%[0m
+[0;32mI (73016) LDR_NODE: Timestamp: 75254 ms[0m
+[0;32mI (73016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (73026) LDR_NODE: ========================[0m
+[0;32mI (73836) LDR_NODE: LCD test update #14[0m
+[0;32mI (75836) LDR_NODE: Sending LDR data - Light: 3534, Voltage: 2.85V, Status: Bright, Time: 75317 ms[0m
+[0;32mI (75836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (75856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (78006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (78006) LDR_NODE: DHT data received![0m
+[0;32mI (78006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (78006) LDR_NODE: Temperature: 34.71°C[0m
+[0;32mI (78006) LDR_NODE: Humidity: 78.53%[0m
+[0;32mI (78016) LDR_NODE: Timestamp: 80254 ms[0m
+[0;32mI (78016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (78026) LDR_NODE: ========================[0m
+[0;32mI (78836) LDR_NODE: Sending LDR data - Light: 2735, Voltage: 2.20V, Status: Dim, Time: 78317 ms[0m
+[0;32mI (78836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (78836) LDR_NODE: LCD test update #15[0m
+[0;32mI (78856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (81836) LDR_NODE: Sending LDR data - Light: 1177, Voltage: 0.95V, Status: Dim, Time: 81317 ms[0m
+[0;32mI (81836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (81856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (83006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (83006) LDR_NODE: DHT data received![0m
+[0;32mI (83006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (83006) LDR_NODE: Temperature: 28.55°C[0m
+[0;32mI (83006) LDR_NODE: Humidity: 35.29%[0m
+[0;32mI (83016) LDR_NODE: Timestamp: 85254 ms[0m
+[0;32mI (83016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (83016) LDR_NODE: ========================[0m
+[0;32mI (83836) LDR_NODE: LCD test update #16[0m
+[0;32mI (84836) LDR_NODE: Sending LDR data - Light: 1139, Voltage: 0.92V, Status: Dim, Time: 84317 ms[0m
+[0;32mI (84836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (84846) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (87836) LDR_NODE: Sending LDR data - Light: 3914, Voltage: 3.15V, Status: Bright, Time: 87317 ms[0m
+[0;32mI (87836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (87856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (88006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (88006) LDR_NODE: DHT data received![0m
+[0;32mI (88006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (88006) LDR_NODE: Temperature: 30.67°C[0m
+[0;32mI (88016) LDR_NODE: Humidity: 77.06%[0m
+[0;32mI (88016) LDR_NODE: Timestamp: 90254 ms[0m
+[0;32mI (88016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (88026) LDR_NODE: ========================[0m
+[0;32mI (88836) LDR_NODE: LCD test update #17[0m
+[0;32mI (90836) LDR_NODE: Sending LDR data - Light: 1929, Voltage: 1.55V, Status: Dim, Time: 90317 ms[0m
+[0;32mI (90836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (90856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (93026) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (93026) LDR_NODE: DHT data received![0m
+[0;32mI (93026) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (93026) LDR_NODE: Temperature: 30.48°C[0m
+[0;32mI (93026) LDR_NODE: Humidity: 43.22%[0m
+[0;32mI (93036) LDR_NODE: Timestamp: 95254 ms[0m
+[0;32mI (93036) LDR_NODE: From address: 0x0005[0m
+[0;32mI (93046) LDR_NODE: ========================[0m
+[0;32mI (93836) LDR_NODE: Sending LDR data - Light: 4024, Voltage: 3.24V, Status: Bright, Time: 93317 ms[0m
+[0;32mI (93836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (93836) LDR_NODE: LCD test update #18[0m
+[0;32mI (93856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (95856) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (95856) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (95866) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (96836) LDR_NODE: Sending LDR data - Light: 1445, Voltage: 1.16V, Status: Dim, Time: 96317 ms[0m
+[0;32mI (96836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (96846) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (97996) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (98006) LDR_NODE: DHT data received![0m
+[0;32mI (98006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (98006) LDR_NODE: Temperature: 28.44°C[0m
+[0;32mI (98006) LDR_NODE: Humidity: 75.66%[0m
+[0;32mI (98016) LDR_NODE: Timestamp: 100254 ms[0m
+[0;32mI (98016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (98016) LDR_NODE: ========================[0m
+[0;32mI (98836) LDR_NODE: LCD test update #19[0m
+[0;32mI (99836) LDR_NODE: Sending LDR data - Light: 1553, Voltage: 1.25V, Status: Dim, Time: 99317 ms[0m
+[0;32mI (99836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (99856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (102836) LDR_NODE: Sending LDR data - Light: 2236, Voltage: 1.80V, Status: Dim, Time: 102317 ms[0m
+[0;32mI (102836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (102856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (103006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (103006) LDR_NODE: DHT data received![0m
+[0;32mI (103006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (103006) LDR_NODE: Temperature: 26.69°C[0m
+[0;32mI (103016) LDR_NODE: Humidity: 55.16%[0m
+[0;32mI (103016) LDR_NODE: Timestamp: 105254 ms[0m
+[0;32mI (103016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (103026) LDR_NODE: ========================[0m
+[0;32mI (103836) LDR_NODE: LCD test update #20[0m
+[0;32mI (105836) LDR_NODE: Sending LDR data - Light: 2679, Voltage: 2.16V, Status: Dim, Time: 105317 ms[0m
+[0;32mI (105836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (105856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (107996) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (107996) LDR_NODE: DHT data received![0m
+[0;32mI (107996) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (108006) LDR_NODE: Temperature: 34.68°C[0m
+[0;32mI (108006) LDR_NODE: Humidity: 30.11%[0m
+[0;32mI (108006) LDR_NODE: Timestamp: 110254 ms[0m
+[0;32mI (108016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (108016) LDR_NODE: ========================[0m
+[0;32mI (108836) LDR_NODE: Sending LDR data - Light: 3274, Voltage: 2.64V, Status: Bright, Time: 108317 ms[0m
+[0;32mI (108836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (108836) LDR_NODE: LCD test update #21[0m
+[0;32mI (108856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (111836) LDR_NODE: Sending LDR data - Light: 4010, Voltage: 3.23V, Status: Bright, Time: 111317 ms[0m
+[0;32mI (111836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (111856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (113006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (113006) LDR_NODE: DHT data received![0m
+[0;32mI (113006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (113006) LDR_NODE: Temperature: 28.55°C[0m
+[0;32mI (113006) LDR_NODE: Humidity: 45.75%[0m
+[0;32mI (113016) LDR_NODE: Timestamp: 115254 ms[0m
+[0;32mI (113016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (113026) LDR_NODE: ========================[0m
+[0;32mI (113836) LDR_NODE: LCD test update #22[0m
+[0;32mI (114836) LDR_NODE: Sending LDR data - Light: 519, Voltage: 0.42V, Status: Dark, Time: 114317 ms[0m
+[0;32mI (114836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (114856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (117836) LDR_NODE: Sending LDR data - Light: 1740, Voltage: 1.40V, Status: Dim, Time: 117317 ms[0m
+[0;32mI (117836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (117856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (117996) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (118006) LDR_NODE: DHT data received![0m
+[0;32mI (118006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (118006) LDR_NODE: Temperature: 25.45°C[0m
+[0;32mI (118006) LDR_NODE: Humidity: 42.44%[0m
+[0;32mI (118016) LDR_NODE: Timestamp: 120254 ms[0m
+[0;32mI (118016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (118016) LDR_NODE: ========================[0m
+[0;32mI (118836) LDR_NODE: LCD test update #23[0m
+[0;32mI (120836) LDR_NODE: Sending LDR data - Light: 2228, Voltage: 1.80V, Status: Dim, Time: 120317 ms[0m
+[0;32mI (120836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (120856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (123006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (123006) LDR_NODE: DHT data received![0m
+[0;32mI (123006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (123006) LDR_NODE: Temperature: 31.87°C[0m
+[0;32mI (123006) LDR_NODE: Humidity: 38.61%[0m
+[0;32mI (123016) LDR_NODE: Timestamp: 125254 ms[0m
+[0;32mI (123016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (123026) LDR_NODE: ========================[0m
+[0;32mI (123836) LDR_NODE: Sending LDR data - Light: 3492, Voltage: 2.81V, Status: Bright, Time: 123317 ms[0m
+[0;32mI (123836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (123836) LDR_NODE: LCD test update #24[0m
+[0;32mI (123856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (126836) LDR_NODE: Sending LDR data - Light: 3397, Voltage: 2.74V, Status: Bright, Time: 126317 ms[0m
+[0;32mI (126836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (126856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (127996) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (127996) LDR_NODE: DHT data received![0m
+[0;32mI (127996) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (128006) LDR_NODE: Temperature: 23.71°C[0m
+[0;32mI (128006) LDR_NODE: Humidity: 60.33%[0m
+[0;32mI (128006) LDR_NODE: Timestamp: 130254 ms[0m
+[0;32mI (128016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (128016) LDR_NODE: ========================[0m
+[0;32mI (128836) LDR_NODE: LCD test update #25[0m
+[0;32mI (129836) LDR_NODE: Sending LDR data - Light: 3916, Voltage: 3.16V, Status: Bright, Time: 129317 ms[0m
+[0;32mI (129836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (129856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (132836) LDR_NODE: Sending LDR data - Light: 886, Voltage: 0.71V, Status: Dark, Time: 132317 ms[0m
+[0;32mI (132836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (132856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (133006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (133006) LDR_NODE: DHT data received![0m
+[0;32mI (133006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (133006) LDR_NODE: Temperature: 27.02°C[0m
+[0;32mI (133006) LDR_NODE: Humidity: 32.33%[0m
+[0;32mI (133016) LDR_NODE: Timestamp: 135254 ms[0m
+[0;32mI (133016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (133016) LDR_NODE: ========================[0m
+[0;32mI (133836) LDR_NODE: LCD test update #26[0m
+[0;32mI (135836) LDR_NODE: Sending LDR data - Light: 1923, Voltage: 1.55V, Status: Dim, Time: 135317 ms[0m
+[0;32mI (135836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (135856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (137996) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (137996) LDR_NODE: DHT data received![0m
+[0;32mI (137996) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (138006) LDR_NODE: Temperature: 31.97°C[0m
+[0;32mI (138006) LDR_NODE: Humidity: 43.10%[0m
+[0;32mI (138006) LDR_NODE: Timestamp: 140254 ms[0m
+[0;32mI (138016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (138016) LDR_NODE: ========================[0m
+[0;32mI (138836) LDR_NODE: Sending LDR data - Light: 3503, Voltage: 2.82V, Status: Bright, Time: 138317 ms[0m
+[0;32mI (138836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (138836) LDR_NODE: LCD test update #27[0m
+[0;32mI (138856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (141836) LDR_NODE: Sending LDR data - Light: 2042, Voltage: 1.65V, Status: Dim, Time: 141317 ms[0m
+[0;32mI (141836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (141856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (142996) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (142996) LDR_NODE: DHT data received![0m
+[0;32mI (142996) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (143006) LDR_NODE: Temperature: 21.84°C[0m
+[0;32mI (143006) LDR_NODE: Humidity: 42.83%[0m
+[0;32mI (143006) LDR_NODE: Timestamp: 145254 ms[0m
+[0;32mI (143016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (143016) LDR_NODE: ========================[0m
+[0;32mI (143836) LDR_NODE: LCD test update #28[0m
+[0;32mI (144836) LDR_NODE: Sending LDR data - Light: 2637, Voltage: 2.13V, Status: Dim, Time: 144317 ms[0m
+[0;32mI (144836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (144856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (147836) LDR_NODE: Sending LDR data - Light: 2800, Voltage: 2.26V, Status: Dim, Time: 147317 ms[0m
+[0;32mI (147836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (147856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (148006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (148006) LDR_NODE: DHT data received![0m
+[0;32mI (148006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (148006) LDR_NODE: Temperature: 34.95°C[0m
+[0;32mI (148016) LDR_NODE: Humidity: 67.35%[0m
+[0;32mI (148016) LDR_NODE: Timestamp: 150254 ms[0m
+[0;32mI (148016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (148026) LDR_NODE: ========================[0m
+[0;32mI (148836) LDR_NODE: LCD test update #29[0m
+[0;32mI (150836) LDR_NODE: Sending LDR data - Light: 1595, Voltage: 1.29V, Status: Dim, Time: 150317 ms[0m
+[0;32mI (150836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (150856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (152996) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (152996) LDR_NODE: DHT data received![0m
+[0;32mI (152996) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (153006) LDR_NODE: Temperature: 20.13°C[0m
+[0;32mI (153006) LDR_NODE: Humidity: 59.55%[0m
+[0;32mI (153006) LDR_NODE: Timestamp: 155254 ms[0m
+[0;32mI (153016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (153016) LDR_NODE: ========================[0m
+[0;32mI (153836) LDR_NODE: Sending LDR data - Light: 1456, Voltage: 1.17V, Status: Dim, Time: 153317 ms[0m
+[0;32mI (153836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (153836) LDR_NODE: LCD test update #30[0m
+[0;32mI (153856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (156836) LDR_NODE: Sending LDR data - Light: 2559, Voltage: 2.06V, Status: Dim, Time: 156317 ms[0m
+[0;32mI (156836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (156856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (158006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (158006) LDR_NODE: DHT data received![0m
+[0;32mI (158006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (158006) LDR_NODE: Temperature: 31.46°C[0m
+[0;32mI (158006) LDR_NODE: Humidity: 44.55%[0m
+[0;32mI (158016) LDR_NODE: Timestamp: 160254 ms[0m
+[0;32mI (158016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (158026) LDR_NODE: ========================[0m
+[0;32mI (158836) LDR_NODE: LCD test update #31[0m
+[0;32mI (159836) LDR_NODE: Sending LDR data - Light: 1716, Voltage: 1.38V, Status: Dim, Time: 159317 ms[0m
+[0;32mI (159836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (159856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (162836) LDR_NODE: Sending LDR data - Light: 1417, Voltage: 1.14V, Status: Dim, Time: 162317 ms[0m
+[0;32mI (162836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (162856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (163006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (163006) LDR_NODE: DHT data received![0m
+[0;32mI (163006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (163006) LDR_NODE: Temperature: 34.73°C[0m
+[0;32mI (163016) LDR_NODE: Humidity: 57.82%[0m
+[0;32mI (163016) LDR_NODE: Timestamp: 165254 ms[0m
+[0;32mI (163016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (163026) LDR_NODE: ========================[0m
+[0;32mI (163836) LDR_NODE: LCD test update #32[0m
+[0;32mI (165836) LDR_NODE: Sending LDR data - Light: 988, Voltage: 0.80V, Status: Dark, Time: 165317 ms[0m
+[0;32mI (165836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (165856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (168006) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (168006) LDR_NODE: DHT data received![0m
+[0;32mI (168006) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (168006) LDR_NODE: Temperature: 23.16°C[0m
+[0;32mI (168006) LDR_NODE: Humidity: 31.44%[0m
+[0;32mI (168016) LDR_NODE: Timestamp: 170254 ms[0m
+[0;32mI (168016) LDR_NODE: From address: 0x0005[0m
+[0;32mI (168026) LDR_NODE: ========================[0m
+[0;32mI (168836) LDR_NODE: Sending LDR data - Light: 2020, Voltage: 1.63V, Status: Dim, Time: 168317 ms[0m
+[0;32mI (168836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (168836) LDR_NODE: LCD test update #33[0m
+[0;32mI (168856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (169086) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (169086) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (169096) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (171836) LDR_NODE: Sending LDR data - Light: 1491, Voltage: 1.20V, Status: Dim, Time: 171317 ms[0m
+[0;32mI (171836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (171856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (173016) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (173016) LDR_NODE: DHT data received![0m
+[0;32mI (173016) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (173016) LDR_NODE: Temperature: 34.18°C[0m
+[0;32mI (173026) LDR_NODE: Humidity: 48.74%[0m
+[0;32mI (173026) LDR_NODE: Timestamp: 175254 ms[0m
+[0;32mI (173026) LDR_NODE: From address: 0x0005[0m
+[0;32mI (173036) LDR_NODE: ========================[0m
+[0;32mI (173836) LDR_NODE: LCD test update #34[0m
+[0;32mI (174836) LDR_NODE: Sending LDR data - Light: 2340, Voltage: 1.89V, Status: Dim, Time: 174317 ms[0m
+[0;32mI (174836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (174856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (176586) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (176586) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (176596) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (177836) LDR_NODE: Sending LDR data - Light: 4003, Voltage: 3.23V, Status: Bright, Time: 177317 ms[0m
+[0;32mI (177836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (177856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (178066) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (178066) LDR_NODE: DHT data received![0m
+[0;32mI (178066) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (178066) LDR_NODE: Temperature: 33.85°C[0m
+[0;32mI (178076) LDR_NODE: Humidity: 62.63%[0m
+[0;32mI (178076) LDR_NODE: Timestamp: 180254 ms[0m
+[0;32mI (178076) LDR_NODE: From address: 0x0005[0m
+[0;32mI (178086) LDR_NODE: ========================[0m
+[0;32mI (178836) LDR_NODE: LCD test update #35[0m
+[0;32mI (180836) LDR_NODE: Sending LDR data - Light: 34, Voltage: 0.03V, Status: Dark, Time: 180317 ms[0m
+[0;32mI (180836) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (180856) LDR_NODE: Send 0xc302e5[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 19:04:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29b00h (170752) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=00039b28 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=00039b4c vaddr=3ffbdb60 size=05508h ( 21768) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003f05c vaddr=40080000 size=00fbch (  4028) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=95218h (610840) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d5240 vaddr=40080fbc size=17eb8h ( 97976) load[0m
+[0;32mI (426) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (426) boot: Disabling RNG early entropy source...[0m
+[0;32mI (437) cpu_start: Multicore app[0m
+[0;32mI (445) cpu_start: Pro cpu start user code[0m
+[0;32mI (445) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (445) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     vendor_server[0m
+[0;32mI (450) app_init: App version:      b4b7e179-dirty[0m
+[0;32mI (454) app_init: Compile time:     May 25 2025 19:04:01[0m
+[0;32mI (459) app_init: ELF file SHA256:  5867c195c...[0m
+[0;32mI (464) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (467) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (471) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (475) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (479) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (485) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (496) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFCAE50 len 000151B0 (84 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (517) heap_init: At 40098E74 len 0000718C (28 KiB): IRAM[0m
+[0;32mI (524) spi_flash: detected chip: generic[0m
+[0;32mI (526) spi_flash: flash io: dio[0m
+[0;33mW (529) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (541) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (551) coexist: coex firmware version: e727207[0m
+[0;32mI (556) main_task: Started on CPU0[0m
+[0;32mI (566) main_task: Calling app_main()[0m
+[0;32mI (566) LDR_NODE: Initializing...[0m
+[0;32mI (576) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (576) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (576) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (586) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (596) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (596) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (956) LDR_NODE: Initializing I2C...[0m
+[0;32mI (956) LDR_NODE: Initializing LCD...[0m
+[0;32mI (1016) LDR_NODE: LCD initialized successfully[0m
+[0;32mI (1126) LDR_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1146) LDR_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1146) LDR_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1146) main_task: Returned from app_main()[0m
+[0;32mI (1196) LDR_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;33mW (4246) BLE_MESH: Data for unknown transaction (3 != 0)[0m
+[0;32mI (5836) LDR_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (5836) LDR_NODE: === PROVISIONING COMPLETE ===[0m
+[0;32mI (5836) LDR_NODE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (5836) LDR_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (5836) LDR_NODE: My address is: 0x0005[0m
+[0;32mI (5846) LDR_NODE: =============================[0m
+[0;32mI (5846) LDR_NODE: LDR timer started successfully[0m
+[0;32mI (5856) LDR_NODE: LCD test timer started successfully[0m
+[0;32mI (6116) LDR_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-ADV[0m
+[0;32mI (6626) LDR_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (6626) LDR_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (6626) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (6846) LDR_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (6846) LDR_NODE: elem_addr 0x0005, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (8846) LDR_NODE: Sending LDR data - Light: 693, Voltage: 0.56V, Status: Dark, Time: 8329 ms[0m
+[0;32mI (8846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (8866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (10856) LDR_NODE: LCD test update #1[0m
+[0;32mI (10886) LDR_NODE: LCD updated with test message[0m
+[0;32mI (11846) LDR_NODE: Sending LDR data - Light: 1189, Voltage: 0.96V, Status: Dim, Time: 11329 ms[0m
+[0;32mI (11846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (11866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (13126) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (13126) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (13136) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (14846) LDR_NODE: Sending LDR data - Light: 2272, Voltage: 1.83V, Status: Dim, Time: 14329 ms[0m
+[0;32mI (14846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (14866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (15856) LDR_NODE: LCD test update #2[0m
+[0;32mI (15876) LDR_NODE: LCD updated with test message[0m
+[0;32mI (17656) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (17656) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (17666) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (17846) LDR_NODE: Sending LDR data - Light: 3438, Voltage: 2.77V, Status: Bright, Time: 17329 ms[0m
+[0;32mI (17846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (17866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (20846) LDR_NODE: Sending LDR data - Light: 1016, Voltage: 0.82V, Status: Dim, Time: 20329 ms[0m
+[0;32mI (20846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (20856) LDR_NODE: LCD test update #3[0m
+[0;32mI (20856) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (20886) LDR_NODE: LCD updated with test message[0m
+[0;32mI (22576) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (22576) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (22586) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (23846) LDR_NODE: Sending LDR data - Light: 786, Voltage: 0.63V, Status: Dark, Time: 23329 ms[0m
+[0;32mI (23846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (23866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (25856) LDR_NODE: LCD test update #4[0m
+[0;32mI (25876) LDR_NODE: LCD updated with test message[0m
+[0;32mI (26846) LDR_NODE: Sending LDR data - Light: 920, Voltage: 0.74V, Status: Dark, Time: 26329 ms[0m
+[0;32mI (26846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (26866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (27376) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (27376) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (27386) LDR_NODE: Send 0xc102e5[0m
+[0;33mW (29616) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (29846) LDR_NODE: Sending LDR data - Light: 504, Voltage: 0.41V, Status: Dark, Time: 29329 ms[0m
+[0;32mI (29846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (29866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (30856) LDR_NODE: LCD test update #5[0m
+[0;32mI (30886) LDR_NODE: LCD updated with test message[0m
+[0;32mI (31376) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (31376) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (31386) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (32846) LDR_NODE: Sending LDR data - Light: 882, Voltage: 0.71V, Status: Dark, Time: 32329 ms[0m
+[0;32mI (32846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (32866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (35846) LDR_NODE: Sending LDR data - Light: 595, Voltage: 0.48V, Status: Dark, Time: 35329 ms[0m
+[0;32mI (35846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (35856) LDR_NODE: LCD test update #6[0m
+[0;32mI (35876) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (35886) LDR_NODE: LCD updated with test message[0m
+[0;32mI (38846) LDR_NODE: Sending LDR data - Light: 3860, Voltage: 3.11V, Status: Bright, Time: 38329 ms[0m
+[0;32mI (38846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (38866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (40856) LDR_NODE: LCD test update #7[0m
+[0;32mI (40886) LDR_NODE: LCD updated with test message[0m
+[0;32mI (41846) LDR_NODE: Sending LDR data - Light: 12, Voltage: 0.01V, Status: Dark, Time: 41329 ms[0m
+[0;32mI (41846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (41866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (42706) LDR_NODE: Received message with opcode: 0xc002e5, length: 2[0m
+[0;32mI (42706) LDR_NODE: Recv 0xc002e5, tid 0x0002[0m
+[0;32mI (42716) LDR_NODE: Send 0xc102e5[0m
+[0;32mI (44846) LDR_NODE: Sending LDR data - Light: 507, Voltage: 0.41V, Status: Dark, Time: 44329 ms[0m
+[0;32mI (44846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (44866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (45856) LDR_NODE: LCD test update #8[0m
+[0;32mI (45876) LDR_NODE: LCD updated with test message[0m
+[0;32mI (47846) LDR_NODE: Sending LDR data - Light: 3640, Voltage: 2.93V, Status: Bright, Time: 47329 ms[0m
+[0;32mI (47846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (47866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (50846) LDR_NODE: Sending LDR data - Light: 2872, Voltage: 2.31V, Status: Dim, Time: 50329 ms[0m
+[0;32mI (50846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (50856) LDR_NODE: LCD test update #9[0m
+[0;32mI (50876) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (50886) LDR_NODE: LCD updated with test message[0m
+[0;32mI (53846) LDR_NODE: Sending LDR data - Light: 3739, Voltage: 3.01V, Status: Bright, Time: 53329 ms[0m
+[0;32mI (53846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (53866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (55856) LDR_NODE: LCD test update #10[0m
+[0;32mI (55876) LDR_NODE: LCD updated with test message[0m
+[0;32mI (56846) LDR_NODE: Sending LDR data - Light: 2549, Voltage: 2.05V, Status: Dim, Time: 56329 ms[0m
+[0;32mI (56846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (56866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (59846) LDR_NODE: Sending LDR data - Light: 789, Voltage: 0.64V, Status: Dark, Time: 59329 ms[0m
+[0;32mI (59846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (59866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (60856) LDR_NODE: LCD test update #11[0m
+[0;32mI (60876) LDR_NODE: LCD updated with test message[0m
+[0;32mI (62846) LDR_NODE: Sending LDR data - Light: 1710, Voltage: 1.38V, Status: Dim, Time: 62329 ms[0m
+[0;32mI (62846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (62866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (65846) LDR_NODE: Sending LDR data - Light: 3558, Voltage: 2.87V, Status: Bright, Time: 65329 ms[0m
+[0;32mI (65846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (65856) LDR_NODE: LCD test update #12[0m
+[0;32mI (65876) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (65886) LDR_NODE: LCD updated with test message[0m
+[0;32mI (68676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (68676) LDR_NODE: DHT data received![0m
+[0;32mI (68676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (68676) LDR_NODE: Temperature: 32.34°C[0m
+[0;32mI (68686) LDR_NODE: Humidity: 60.08%[0m
+[0;32mI (68686) LDR_NODE: Timestamp: 71308 ms[0m
+[0;32mI (68686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (68696) LDR_NODE: ========================[0m
+[0;32mI (68846) LDR_NODE: Sending LDR data - Light: 153, Voltage: 0.12V, Status: Dark, Time: 68329 ms[0m
+[0;32mI (68846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (68866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (70856) LDR_NODE: LCD test update #13[0m
+[0;32mI (71846) LDR_NODE: Sending LDR data - Light: 3283, Voltage: 2.65V, Status: Bright, Time: 71329 ms[0m
+[0;32mI (71846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (71866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (73676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (73676) LDR_NODE: DHT data received![0m
+[0;32mI (73676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (73676) LDR_NODE: Temperature: 22.52°C[0m
+[0;32mI (73686) LDR_NODE: Humidity: 59.68%[0m
+[0;32mI (73686) LDR_NODE: Timestamp: 76308 ms[0m
+[0;32mI (73686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (73696) LDR_NODE: ========================[0m
+[0;32mI (74846) LDR_NODE: Sending LDR data - Light: 2270, Voltage: 1.83V, Status: Dim, Time: 74329 ms[0m
+[0;32mI (74846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (74866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (75856) LDR_NODE: LCD test update #14[0m
+[0;32mI (77846) LDR_NODE: Sending LDR data - Light: 997, Voltage: 0.80V, Status: Dark, Time: 77329 ms[0m
+[0;32mI (77846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (77866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (78676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (78676) LDR_NODE: DHT data received![0m
+[0;32mI (78676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (78676) LDR_NODE: Temperature: 20.54°C[0m
+[0;32mI (78686) LDR_NODE: Humidity: 75.16%[0m
+[0;32mI (78686) LDR_NODE: Timestamp: 81308 ms[0m
+[0;32mI (78686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (78696) LDR_NODE: ========================[0m
+[0;32mI (80846) LDR_NODE: Sending LDR data - Light: 2799, Voltage: 2.26V, Status: Dim, Time: 80329 ms[0m
+[0;32mI (80846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (80856) LDR_NODE: LCD test update #15[0m
+[0;32mI (80866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (83666) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (83666) LDR_NODE: DHT data received![0m
+[0;32mI (83666) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (83666) LDR_NODE: Temperature: 29.99°C[0m
+[0;32mI (83676) LDR_NODE: Humidity: 67.50%[0m
+[0;32mI (83676) LDR_NODE: Timestamp: 86308 ms[0m
+[0;32mI (83686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (83686) LDR_NODE: ========================[0m
+[0;32mI (83846) LDR_NODE: Sending LDR data - Light: 1627, Voltage: 1.31V, Status: Dim, Time: 83329 ms[0m
+[0;32mI (83846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (83866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (85856) LDR_NODE: LCD test update #16[0m
+[0;32mI (86846) LDR_NODE: Sending LDR data - Light: 3257, Voltage: 2.62V, Status: Bright, Time: 86329 ms[0m
+[0;32mI (86846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (86866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (88676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (88676) LDR_NODE: DHT data received![0m
+[0;32mI (88676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (88676) LDR_NODE: Temperature: 22.72°C[0m
+[0;32mI (88686) LDR_NODE: Humidity: 41.53%[0m
+[0;32mI (88686) LDR_NODE: Timestamp: 91308 ms[0m
+[0;32mI (88686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (88696) LDR_NODE: ========================[0m
+[0;32mI (89846) LDR_NODE: Sending LDR data - Light: 392, Voltage: 0.32V, Status: Dark, Time: 89329 ms[0m
+[0;32mI (89846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (89866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (90856) LDR_NODE: LCD test update #17[0m
+[0;32mI (92846) LDR_NODE: Sending LDR data - Light: 1750, Voltage: 1.41V, Status: Dim, Time: 92329 ms[0m
+[0;32mI (92846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (92866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (93676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (93676) LDR_NODE: DHT data received![0m
+[0;32mI (93676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (93676) LDR_NODE: Temperature: 21.32°C[0m
+[0;32mI (93686) LDR_NODE: Humidity: 68.81%[0m
+[0;32mI (93686) LDR_NODE: Timestamp: 96308 ms[0m
+[0;32mI (93686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (93696) LDR_NODE: ========================[0m
+[0;32mI (95846) LDR_NODE: Sending LDR data - Light: 3658, Voltage: 2.95V, Status: Bright, Time: 95329 ms[0m
+[0;32mI (95846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (95856) LDR_NODE: LCD test update #18[0m
+[0;32mI (95866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (98676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (98676) LDR_NODE: DHT data received![0m
+[0;32mI (98676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (98676) LDR_NODE: Temperature: 32.50°C[0m
+[0;32mI (98686) LDR_NODE: Humidity: 58.38%[0m
+[0;32mI (98686) LDR_NODE: Timestamp: 101308 ms[0m
+[0;32mI (98686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (98696) LDR_NODE: ========================[0m
+[0;32mI (98846) LDR_NODE: Sending LDR data - Light: 3210, Voltage: 2.59V, Status: Bright, Time: 98329 ms[0m
+[0;32mI (98846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (98866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (100856) LDR_NODE: LCD test update #19[0m
+[0;32mI (101846) LDR_NODE: Sending LDR data - Light: 2934, Voltage: 2.36V, Status: Dim, Time: 101329 ms[0m
+[0;32mI (101846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (101866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (103666) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (103676) LDR_NODE: DHT data received![0m
+[0;32mI (103676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (103676) LDR_NODE: Temperature: 22.80°C[0m
+[0;32mI (103676) LDR_NODE: Humidity: 35.11%[0m
+[0;32mI (103686) LDR_NODE: Timestamp: 106308 ms[0m
+[0;32mI (103686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (103686) LDR_NODE: ========================[0m
+[0;32mI (104846) LDR_NODE: Sending LDR data - Light: 4063, Voltage: 3.27V, Status: Bright, Time: 104329 ms[0m
+[0;32mI (104846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (104866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (105856) LDR_NODE: LCD test update #20[0m
+[0;32mI (107846) LDR_NODE: Sending LDR data - Light: 4046, Voltage: 3.26V, Status: Bright, Time: 107329 ms[0m
+[0;32mI (107846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (107866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (108666) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (108676) LDR_NODE: DHT data received![0m
+[0;32mI (108676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (108676) LDR_NODE: Temperature: 30.05°C[0m
+[0;32mI (108676) LDR_NODE: Humidity: 76.90%[0m
+[0;32mI (108686) LDR_NODE: Timestamp: 111308 ms[0m
+[0;32mI (108686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (108686) LDR_NODE: ========================[0m
+[0;32mI (110846) LDR_NODE: Sending LDR data - Light: 3766, Voltage: 3.03V, Status: Bright, Time: 110329 ms[0m
+[0;32mI (110846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (110856) LDR_NODE: LCD test update #21[0m
+[0;32mI (110866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (113676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (113676) LDR_NODE: DHT data received![0m
+[0;32mI (113676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (113676) LDR_NODE: Temperature: 33.43°C[0m
+[0;32mI (113686) LDR_NODE: Humidity: 74.66%[0m
+[0;32mI (113686) LDR_NODE: Timestamp: 116308 ms[0m
+[0;32mI (113686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (113696) LDR_NODE: ========================[0m
+[0;32mI (113846) LDR_NODE: Sending LDR data - Light: 3454, Voltage: 2.78V, Status: Bright, Time: 113329 ms[0m
+[0;32mI (113846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (113866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (115856) LDR_NODE: LCD test update #22[0m
+[0;32mI (116846) LDR_NODE: Sending LDR data - Light: 3503, Voltage: 2.82V, Status: Bright, Time: 116329 ms[0m
+[0;32mI (116846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (116866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (118676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (118676) LDR_NODE: DHT data received![0m
+[0;32mI (118676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (118676) LDR_NODE: Temperature: 34.67°C[0m
+[0;32mI (118686) LDR_NODE: Humidity: 64.92%[0m
+[0;32mI (118686) LDR_NODE: Timestamp: 121308 ms[0m
+[0;32mI (118686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (118696) LDR_NODE: ========================[0m
+[0;32mI (119846) LDR_NODE: Sending LDR data - Light: 3807, Voltage: 3.07V, Status: Bright, Time: 119329 ms[0m
+[0;32mI (119846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (119866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (120856) LDR_NODE: LCD test update #23[0m
+[0;32mI (122846) LDR_NODE: Sending LDR data - Light: 3889, Voltage: 3.13V, Status: Bright, Time: 122329 ms[0m
+[0;32mI (122846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (122866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (123676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (123676) LDR_NODE: DHT data received![0m
+[0;32mI (123676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (123676) LDR_NODE: Temperature: 21.25°C[0m
+[0;32mI (123686) LDR_NODE: Humidity: 35.98%[0m
+[0;32mI (123686) LDR_NODE: Timestamp: 126308 ms[0m
+[0;32mI (123686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (123696) LDR_NODE: ========================[0m
+[0;32mI (125846) LDR_NODE: Sending LDR data - Light: 278, Voltage: 0.22V, Status: Dark, Time: 125329 ms[0m
+[0;32mI (125846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (125856) LDR_NODE: LCD test update #24[0m
+[0;32mI (125866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (128676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (128676) LDR_NODE: DHT data received![0m
+[0;32mI (128676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (128676) LDR_NODE: Temperature: 32.15°C[0m
+[0;32mI (128686) LDR_NODE: Humidity: 75.05%[0m
+[0;32mI (128686) LDR_NODE: Timestamp: 131308 ms[0m
+[0;32mI (128686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (128696) LDR_NODE: ========================[0m
+[0;32mI (128846) LDR_NODE: Sending LDR data - Light: 1739, Voltage: 1.40V, Status: Dim, Time: 128329 ms[0m
+[0;32mI (128846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (128866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (130856) LDR_NODE: LCD test update #25[0m
+[0;32mI (131846) LDR_NODE: Sending LDR data - Light: 1365, Voltage: 1.10V, Status: Dim, Time: 131329 ms[0m
+[0;32mI (131846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (131866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (133676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (133676) LDR_NODE: DHT data received![0m
+[0;32mI (133676) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (133676) LDR_NODE: Temperature: 28.03°C[0m
+[0;32mI (133686) LDR_NODE: Humidity: 55.76%[0m
+[0;32mI (133686) LDR_NODE: Timestamp: 136308 ms[0m
+[0;32mI (133686) LDR_NODE: From address: 0x0006[0m
+[0;32mI (133696) LDR_NODE: ========================[0m
+[0;32mI (134846) LDR_NODE: Sending LDR data - Light: 3730, Voltage: 3.01V, Status: Bright, Time: 134329 ms[0m
+[0;32mI (134846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (134866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (135856) LDR_NODE: LCD test update #26[0m
+[0;32mI (137846) LDR_NODE: Sending LDR data - Light: 1524, Voltage: 1.23V, Status: Dim, Time: 137329 ms[0m
+[0;32mI (137846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (137866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (138716) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (138716) LDR_NODE: DHT data received![0m
+[0;32mI (138716) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (138716) LDR_NODE: Temperature: 25.79°C[0m
+[0;32mI (138726) LDR_NODE: Humidity: 78.99%[0m
+[0;32mI (138726) LDR_NODE: Timestamp: 141308 ms[0m
+[0;32mI (138726) LDR_NODE: From address: 0x0006[0m
+[0;32mI (138736) LDR_NODE: ========================[0m
+[0;32mI (140846) LDR_NODE: Sending LDR data - Light: 2343, Voltage: 1.89V, Status: Dim, Time: 140329 ms[0m
+[0;32mI (140846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (140856) LDR_NODE: LCD test update #27[0m
+[0;32mI (140866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (143696) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (143696) LDR_NODE: DHT data received![0m
+[0;32mI (143696) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (143696) LDR_NODE: Temperature: 31.79°C[0m
+[0;32mI (143706) LDR_NODE: Humidity: 64.55%[0m
+[0;32mI (143706) LDR_NODE: Timestamp: 146308 ms[0m
+[0;32mI (143706) LDR_NODE: From address: 0x0006[0m
+[0;32mI (143716) LDR_NODE: ========================[0m
+[0;32mI (143846) LDR_NODE: Sending LDR data - Light: 1931, Voltage: 1.56V, Status: Dim, Time: 143329 ms[0m
+[0;32mI (143846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (143866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (145856) LDR_NODE: LCD test update #28[0m
+[0;32mI (146846) LDR_NODE: Sending LDR data - Light: 1357, Voltage: 1.09V, Status: Dim, Time: 146329 ms[0m
+[0;32mI (146846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (146866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (148696) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (148696) LDR_NODE: DHT data received![0m
+[0;32mI (148696) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (148696) LDR_NODE: Temperature: 21.11°C[0m
+[0;32mI (148706) LDR_NODE: Humidity: 45.09%[0m
+[0;32mI (148706) LDR_NODE: Timestamp: 151308 ms[0m
+[0;32mI (148706) LDR_NODE: From address: 0x0006[0m
+[0;32mI (148716) LDR_NODE: ========================[0m
+[0;32mI (149846) LDR_NODE: Sending LDR data - Light: 1570, Voltage: 1.27V, Status: Dim, Time: 149329 ms[0m
+[0;32mI (149846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (149866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (150856) LDR_NODE: LCD test update #29[0m
+[0;32mI (152846) LDR_NODE: Sending LDR data - Light: 3151, Voltage: 2.54V, Status: Bright, Time: 152329 ms[0m
+[0;32mI (152846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (152866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (153696) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (153696) LDR_NODE: DHT data received![0m
+[0;32mI (153696) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (153696) LDR_NODE: Temperature: 24.33°C[0m
+[0;32mI (153706) LDR_NODE: Humidity: 79.83%[0m
+[0;32mI (153706) LDR_NODE: Timestamp: 156308 ms[0m
+[0;32mI (153706) LDR_NODE: From address: 0x0006[0m
+[0;32mI (153716) LDR_NODE: ========================[0m
+[0;32mI (155846) LDR_NODE: Sending LDR data - Light: 2320, Voltage: 1.87V, Status: Dim, Time: 155329 ms[0m
+[0;32mI (155846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (155856) LDR_NODE: LCD test update #30[0m
+[0;32mI (155866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (158696) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (158696) LDR_NODE: DHT data received![0m
+[0;32mI (158696) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (158696) LDR_NODE: Temperature: 22.60°C[0m
+[0;32mI (158706) LDR_NODE: Humidity: 57.56%[0m
+[0;32mI (158706) LDR_NODE: Timestamp: 161308 ms[0m
+[0;32mI (158706) LDR_NODE: From address: 0x0006[0m
+[0;32mI (158716) LDR_NODE: ========================[0m
+[0;32mI (158846) LDR_NODE: Sending LDR data - Light: 3735, Voltage: 3.01V, Status: Bright, Time: 158329 ms[0m
+[0;32mI (158846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (158866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (160856) LDR_NODE: LCD test update #31[0m
+[0;32mI (161846) LDR_NODE: Sending LDR data - Light: 1159, Voltage: 0.93V, Status: Dim, Time: 161329 ms[0m
+[0;32mI (161846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (161866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (163686) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (163686) LDR_NODE: DHT data received![0m
+[0;32mI (163686) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (163696) LDR_NODE: Temperature: 31.53°C[0m
+[0;32mI (163696) LDR_NODE: Humidity: 48.14%[0m
+[0;32mI (163696) LDR_NODE: Timestamp: 166308 ms[0m
+[0;32mI (163706) LDR_NODE: From address: 0x0006[0m
+[0;32mI (163706) LDR_NODE: ========================[0m
+[0;32mI (164846) LDR_NODE: Sending LDR data - Light: 1465, Voltage: 1.18V, Status: Dim, Time: 164329 ms[0m
+[0;32mI (164846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (164866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (165856) LDR_NODE: LCD test update #32[0m
+[0;32mI (167846) LDR_NODE: Sending LDR data - Light: 1550, Voltage: 1.25V, Status: Dim, Time: 167329 ms[0m
+[0;32mI (167846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (167866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (168696) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (168696) LDR_NODE: DHT data received![0m
+[0;32mI (168696) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (168696) LDR_NODE: Temperature: 27.71°C[0m
+[0;32mI (168706) LDR_NODE: Humidity: 36.05%[0m
+[0;32mI (168706) LDR_NODE: Timestamp: 171308 ms[0m
+[0;32mI (168716) LDR_NODE: From address: 0x0006[0m
+[0;32mI (168716) LDR_NODE: ========================[0m
+[0;32mI (170846) LDR_NODE: Sending LDR data - Light: 2781, Voltage: 2.24V, Status: Dim, Time: 170329 ms[0m
+[0;32mI (170846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (170856) LDR_NODE: LCD test update #33[0m
+[0;32mI (170866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (173716) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (173716) LDR_NODE: DHT data received![0m
+[0;32mI (173716) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (173716) LDR_NODE: Temperature: 30.81°C[0m
+[0;32mI (173726) LDR_NODE: Humidity: 69.41%[0m
+[0;32mI (173726) LDR_NODE: Timestamp: 176308 ms[0m
+[0;32mI (173726) LDR_NODE: From address: 0x0006[0m
+[0;32mI (173736) LDR_NODE: ========================[0m
+[0;32mI (173846) LDR_NODE: Sending LDR data - Light: 1929, Voltage: 1.55V, Status: Dim, Time: 173329 ms[0m
+[0;32mI (173846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (173866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (175856) LDR_NODE: LCD test update #34[0m
+[0;32mI (176846) LDR_NODE: Sending LDR data - Light: 3014, Voltage: 2.43V, Status: Bright, Time: 176329 ms[0m
+[0;32mI (176846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (176866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (178696) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (178696) LDR_NODE: DHT data received![0m
+[0;32mI (178696) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (178696) LDR_NODE: Temperature: 21.34°C[0m
+[0;32mI (178706) LDR_NODE: Humidity: 52.21%[0m
+[0;32mI (178706) LDR_NODE: Timestamp: 181308 ms[0m
+[0;32mI (178706) LDR_NODE: From address: 0x0006[0m
+[0;32mI (178716) LDR_NODE: ========================[0m
+[0;32mI (179846) LDR_NODE: Sending LDR data - Light: 3144, Voltage: 2.53V, Status: Bright, Time: 179329 ms[0m
+[0;32mI (179846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (179866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (180856) LDR_NODE: LCD test update #35[0m
+[0;32mI (182846) LDR_NODE: Sending LDR data - Light: 968, Voltage: 0.78V, Status: Dark, Time: 182329 ms[0m
+[0;32mI (182846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (182866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (183686) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (183686) LDR_NODE: DHT data received![0m
+[0;32mI (183686) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (183686) LDR_NODE: Temperature: 30.02°C[0m
+[0;32mI (183696) LDR_NODE: Humidity: 72.26%[0m
+[0;32mI (183696) LDR_NODE: Timestamp: 186308 ms[0m
+[0;32mI (183696) LDR_NODE: From address: 0x0006[0m
+[0;32mI (183706) LDR_NODE: ========================[0m
+[0;32mI (185846) LDR_NODE: Sending LDR data - Light: 1116, Voltage: 0.90V, Status: Dim, Time: 185329 ms[0m
+[0;32mI (185846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (185856) LDR_NODE: LCD test update #36[0m
+[0;32mI (185866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (188696) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (188696) LDR_NODE: DHT data received![0m
+[0;32mI (188696) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (188696) LDR_NODE: Temperature: 24.84°C[0m
+[0;32mI (188706) LDR_NODE: Humidity: 37.82%[0m
+[0;32mI (188706) LDR_NODE: Timestamp: 191308 ms[0m
+[0;32mI (188706) LDR_NODE: From address: 0x0006[0m
+[0;32mI (188716) LDR_NODE: ========================[0m
+[0;32mI (188846) LDR_NODE: Sending LDR data - Light: 949, Voltage: 0.76V, Status: Dark, Time: 188329 ms[0m
+[0;32mI (188846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (188866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (190856) LDR_NODE: LCD test update #37[0m
+[0;32mI (191846) LDR_NODE: Sending LDR data - Light: 4020, Voltage: 3.24V, Status: Bright, Time: 191329 ms[0m
+[0;32mI (191846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (191866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (193676) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (193686) LDR_NODE: DHT data received![0m
+[0;32mI (193686) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (193686) LDR_NODE: Temperature: 30.49°C[0m
+[0;32mI (193686) LDR_NODE: Humidity: 61.27%[0m
+[0;32mI (193696) LDR_NODE: Timestamp: 196308 ms[0m
+[0;32mI (193696) LDR_NODE: From address: 0x0006[0m
+[0;32mI (193696) LDR_NODE: ========================[0m
+[0;32mI (194846) LDR_NODE: Sending LDR data - Light: 3760, Voltage: 3.03V, Status: Bright, Time: 194329 ms[0m
+[0;32mI (194846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (194866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (195856) LDR_NODE: LCD test update #38[0m
+[0;32mI (197846) LDR_NODE: Sending LDR data - Light: 1177, Voltage: 0.95V, Status: Dim, Time: 197329 ms[0m
+[0;32mI (197846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (197866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (198716) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (198716) LDR_NODE: DHT data received![0m
+[0;32mI (198716) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (198716) LDR_NODE: Temperature: 28.89°C[0m
+[0;32mI (198726) LDR_NODE: Humidity: 42.23%[0m
+[0;32mI (198726) LDR_NODE: Timestamp: 201308 ms[0m
+[0;32mI (198726) LDR_NODE: From address: 0x0006[0m
+[0;32mI (198736) LDR_NODE: ========================[0m
+[0;32mI (200846) LDR_NODE: Sending LDR data - Light: 541, Voltage: 0.44V, Status: Dark, Time: 200329 ms[0m
+[0;32mI (200846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (200856) LDR_NODE: LCD test update #39[0m
+[0;32mI (200866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (203656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (203656) LDR_NODE: DHT data received![0m
+[0;32mI (203656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (203656) LDR_NODE: Temperature: 24.02°C[0m
+[0;32mI (203666) LDR_NODE: Humidity: 31.82%[0m
+[0;32mI (203666) LDR_NODE: Timestamp: 206308 ms[0m
+[0;32mI (203666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (203676) LDR_NODE: ========================[0m
+[0;32mI (203846) LDR_NODE: Sending LDR data - Light: 2941, Voltage: 2.37V, Status: Dim, Time: 203329 ms[0m
+[0;32mI (203846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (203866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (205856) LDR_NODE: LCD test update #40[0m
+[0;32mI (206846) LDR_NODE: Sending LDR data - Light: 1152, Voltage: 0.93V, Status: Dim, Time: 206329 ms[0m
+[0;32mI (206846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (206866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (208696) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (208696) LDR_NODE: DHT data received![0m
+[0;32mI (208696) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (208696) LDR_NODE: Temperature: 21.83°C[0m
+[0;32mI (208706) LDR_NODE: Humidity: 45.51%[0m
+[0;32mI (208706) LDR_NODE: Timestamp: 211308 ms[0m
+[0;32mI (208706) LDR_NODE: From address: 0x0006[0m
+[0;32mI (208716) LDR_NODE: ========================[0m
+[0;32mI (209846) LDR_NODE: Sending LDR data - Light: 1422, Voltage: 1.15V, Status: Dim, Time: 209329 ms[0m
+[0;32mI (209846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (209866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (210856) LDR_NODE: LCD test update #41[0m
+[0;32mI (212846) LDR_NODE: Sending LDR data - Light: 441, Voltage: 0.36V, Status: Dark, Time: 212329 ms[0m
+[0;32mI (212846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (212866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (213656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (213656) LDR_NODE: DHT data received![0m
+[0;32mI (213656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (213656) LDR_NODE: Temperature: 23.64°C[0m
+[0;32mI (213666) LDR_NODE: Humidity: 62.96%[0m
+[0;32mI (213666) LDR_NODE: Timestamp: 216308 ms[0m
+[0;32mI (213666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (213676) LDR_NODE: ========================[0m
+[0;32mI (215846) LDR_NODE: Sending LDR data - Light: 1157, Voltage: 0.93V, Status: Dim, Time: 215329 ms[0m
+[0;32mI (215846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (215856) LDR_NODE: LCD test update #42[0m
+[0;32mI (215866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (218656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (218656) LDR_NODE: DHT data received![0m
+[0;32mI (218656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (218656) LDR_NODE: Temperature: 29.45°C[0m
+[0;32mI (218666) LDR_NODE: Humidity: 75.28%[0m
+[0;32mI (218666) LDR_NODE: Timestamp: 221308 ms[0m
+[0;32mI (218666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (218676) LDR_NODE: ========================[0m
+[0;32mI (218846) LDR_NODE: Sending LDR data - Light: 3401, Voltage: 2.74V, Status: Bright, Time: 218329 ms[0m
+[0;32mI (218846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (218866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (220856) LDR_NODE: LCD test update #43[0m
+[0;32mI (221846) LDR_NODE: Sending LDR data - Light: 2397, Voltage: 1.93V, Status: Dim, Time: 221329 ms[0m
+[0;32mI (221846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (221866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (223656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (223656) LDR_NODE: DHT data received![0m
+[0;32mI (223656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (223656) LDR_NODE: Temperature: 24.73°C[0m
+[0;32mI (223666) LDR_NODE: Humidity: 79.26%[0m
+[0;32mI (223666) LDR_NODE: Timestamp: 226308 ms[0m
+[0;32mI (223666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (223676) LDR_NODE: ========================[0m
+[0;32mI (224846) LDR_NODE: Sending LDR data - Light: 3062, Voltage: 2.47V, Status: Bright, Time: 224329 ms[0m
+[0;32mI (224846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (224866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (225856) LDR_NODE: LCD test update #44[0m
+[0;32mI (227846) LDR_NODE: Sending LDR data - Light: 1488, Voltage: 1.20V, Status: Dim, Time: 227329 ms[0m
+[0;32mI (227846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (227866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (228656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (228656) LDR_NODE: DHT data received![0m
+[0;32mI (228656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (228656) LDR_NODE: Temperature: 34.18°C[0m
+[0;32mI (228666) LDR_NODE: Humidity: 76.14%[0m
+[0;32mI (228666) LDR_NODE: Timestamp: 231308 ms[0m
+[0;32mI (228666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (228676) LDR_NODE: ========================[0m
+[0;32mI (230846) LDR_NODE: Sending LDR data - Light: 1872, Voltage: 1.51V, Status: Dim, Time: 230329 ms[0m
+[0;32mI (230846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (230856) LDR_NODE: LCD test update #45[0m
+[0;32mI (230866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (233656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (233656) LDR_NODE: DHT data received![0m
+[0;32mI (233656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (233656) LDR_NODE: Temperature: 21.42°C[0m
+[0;32mI (233666) LDR_NODE: Humidity: 54.91%[0m
+[0;32mI (233666) LDR_NODE: Timestamp: 236308 ms[0m
+[0;32mI (233666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (233676) LDR_NODE: ========================[0m
+[0;32mI (233846) LDR_NODE: Sending LDR data - Light: 2406, Voltage: 1.94V, Status: Dim, Time: 233329 ms[0m
+[0;32mI (233846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (233866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (235856) LDR_NODE: LCD test update #46[0m
+[0;32mI (236846) LDR_NODE: Sending LDR data - Light: 3147, Voltage: 2.54V, Status: Bright, Time: 236329 ms[0m
+[0;32mI (236846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (236866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (238656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (238656) LDR_NODE: DHT data received![0m
+[0;32mI (238656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (238656) LDR_NODE: Temperature: 28.86°C[0m
+[0;32mI (238666) LDR_NODE: Humidity: 47.27%[0m
+[0;32mI (238666) LDR_NODE: Timestamp: 241308 ms[0m
+[0;32mI (238666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (238676) LDR_NODE: ========================[0m
+[0;32mI (239846) LDR_NODE: Sending LDR data - Light: 1007, Voltage: 0.81V, Status: Dim, Time: 239329 ms[0m
+[0;32mI (239846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (239866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (240856) LDR_NODE: LCD test update #47[0m
+[0;32mI (242846) LDR_NODE: Sending LDR data - Light: 2472, Voltage: 1.99V, Status: Dim, Time: 242329 ms[0m
+[0;32mI (242846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (242866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (243656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (243656) LDR_NODE: DHT data received![0m
+[0;32mI (243656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (243656) LDR_NODE: Temperature: 30.58°C[0m
+[0;32mI (243666) LDR_NODE: Humidity: 47.45%[0m
+[0;32mI (243666) LDR_NODE: Timestamp: 246308 ms[0m
+[0;32mI (243666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (243676) LDR_NODE: ========================[0m
+[0;32mI (245846) LDR_NODE: Sending LDR data - Light: 1902, Voltage: 1.53V, Status: Dim, Time: 245329 ms[0m
+[0;32mI (245846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (245856) LDR_NODE: LCD test update #48[0m
+[0;32mI (245866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (248656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (248656) LDR_NODE: DHT data received![0m
+[0;32mI (248656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (248656) LDR_NODE: Temperature: 30.45°C[0m
+[0;32mI (248666) LDR_NODE: Humidity: 59.58%[0m
+[0;32mI (248666) LDR_NODE: Timestamp: 251308 ms[0m
+[0;32mI (248666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (248676) LDR_NODE: ========================[0m
+[0;32mI (248846) LDR_NODE: Sending LDR data - Light: 1835, Voltage: 1.48V, Status: Dim, Time: 248329 ms[0m
+[0;32mI (248846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (248866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (250856) LDR_NODE: LCD test update #49[0m
+[0;32mI (251846) LDR_NODE: Sending LDR data - Light: 2952, Voltage: 2.38V, Status: Dim, Time: 251329 ms[0m
+[0;32mI (251846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (251866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (253656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (253656) LDR_NODE: DHT data received![0m
+[0;32mI (253656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (253656) LDR_NODE: Temperature: 25.76°C[0m
+[0;32mI (253666) LDR_NODE: Humidity: 49.70%[0m
+[0;32mI (253666) LDR_NODE: Timestamp: 256308 ms[0m
+[0;32mI (253666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (253676) LDR_NODE: ========================[0m
+[0;32mI (254846) LDR_NODE: Sending LDR data - Light: 3903, Voltage: 3.15V, Status: Bright, Time: 254329 ms[0m
+[0;32mI (254846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (254866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (255856) LDR_NODE: LCD test update #50[0m
+[0;32mI (257846) LDR_NODE: Sending LDR data - Light: 2482, Voltage: 2.00V, Status: Dim, Time: 257329 ms[0m
+[0;32mI (257846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (257866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (258656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (258656) LDR_NODE: DHT data received![0m
+[0;32mI (258656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (258656) LDR_NODE: Temperature: 25.34°C[0m
+[0;32mI (258656) LDR_NODE: Humidity: 60.45%[0m
+[0;32mI (258666) LDR_NODE: Timestamp: 261308 ms[0m
+[0;32mI (258666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (258676) LDR_NODE: ========================[0m
+[0;32mI (260846) LDR_NODE: Sending LDR data - Light: 1735, Voltage: 1.40V, Status: Dim, Time: 260329 ms[0m
+[0;32mI (260846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (260856) LDR_NODE: LCD test update #51[0m
+[0;32mI (260866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (263656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (263656) LDR_NODE: DHT data received![0m
+[0;32mI (263656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (263656) LDR_NODE: Temperature: 21.88°C[0m
+[0;32mI (263666) LDR_NODE: Humidity: 39.04%[0m
+[0;32mI (263666) LDR_NODE: Timestamp: 266308 ms[0m
+[0;32mI (263666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (263676) LDR_NODE: ========================[0m
+[0;32mI (263846) LDR_NODE: Sending LDR data - Light: 851, Voltage: 0.69V, Status: Dark, Time: 263329 ms[0m
+[0;32mI (263846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (263866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (265856) LDR_NODE: LCD test update #52[0m
+[0;32mI (266846) LDR_NODE: Sending LDR data - Light: 2989, Voltage: 2.41V, Status: Dim, Time: 266329 ms[0m
+[0;32mI (266846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (266866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (268656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (268656) LDR_NODE: DHT data received![0m
+[0;32mI (268656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (268656) LDR_NODE: Temperature: 23.92°C[0m
+[0;32mI (268656) LDR_NODE: Humidity: 51.45%[0m
+[0;32mI (268666) LDR_NODE: Timestamp: 271308 ms[0m
+[0;32mI (268666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (268676) LDR_NODE: ========================[0m
+[0;32mI (269846) LDR_NODE: Sending LDR data - Light: 3665, Voltage: 2.95V, Status: Bright, Time: 269329 ms[0m
+[0;32mI (269846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (269866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (270856) LDR_NODE: LCD test update #53[0m
+[0;32mI (272846) LDR_NODE: Sending LDR data - Light: 2689, Voltage: 2.17V, Status: Dim, Time: 272329 ms[0m
+[0;32mI (272846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (272866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (273656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (273656) LDR_NODE: DHT data received![0m
+[0;32mI (273656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (273656) LDR_NODE: Temperature: 26.48°C[0m
+[0;32mI (273666) LDR_NODE: Humidity: 45.93%[0m
+[0;32mI (273666) LDR_NODE: Timestamp: 276308 ms[0m
+[0;32mI (273666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (273676) LDR_NODE: ========================[0m
+[0;32mI (275846) LDR_NODE: Sending LDR data - Light: 1221, Voltage: 0.98V, Status: Dim, Time: 275329 ms[0m
+[0;32mI (275846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (275856) LDR_NODE: LCD test update #54[0m
+[0;32mI (275866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (278656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (278656) LDR_NODE: DHT data received![0m
+[0;32mI (278656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (278656) LDR_NODE: Temperature: 28.31°C[0m
+[0;32mI (278656) LDR_NODE: Humidity: 42.30%[0m
+[0;32mI (278666) LDR_NODE: Timestamp: 281308 ms[0m
+[0;32mI (278666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (278666) LDR_NODE: ========================[0m
+[0;32mI (278846) LDR_NODE: Sending LDR data - Light: 1207, Voltage: 0.97V, Status: Dim, Time: 278329 ms[0m
+[0;32mI (278846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (278866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (280856) LDR_NODE: LCD test update #55[0m
+[0;32mI (281846) LDR_NODE: Sending LDR data - Light: 532, Voltage: 0.43V, Status: Dark, Time: 281329 ms[0m
+[0;32mI (281846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (281866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (283656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (283656) LDR_NODE: DHT data received![0m
+[0;32mI (283656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (283656) LDR_NODE: Temperature: 26.18°C[0m
+[0;32mI (283656) LDR_NODE: Humidity: 78.42%[0m
+[0;32mI (283666) LDR_NODE: Timestamp: 286308 ms[0m
+[0;32mI (283666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (283676) LDR_NODE: ========================[0m
+[0;32mI (284846) LDR_NODE: Sending LDR data - Light: 699, Voltage: 0.56V, Status: Dark, Time: 284329 ms[0m
+[0;32mI (284846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (284866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (285856) LDR_NODE: LCD test update #56[0m
+[0;32mI (287846) LDR_NODE: Sending LDR data - Light: 3244, Voltage: 2.61V, Status: Bright, Time: 287329 ms[0m
+[0;32mI (287846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (287866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (288656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (288656) LDR_NODE: DHT data received![0m
+[0;32mI (288656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (288656) LDR_NODE: Temperature: 29.32°C[0m
+[0;32mI (288666) LDR_NODE: Humidity: 62.07%[0m
+[0;32mI (288666) LDR_NODE: Timestamp: 291308 ms[0m
+[0;32mI (288676) LDR_NODE: From address: 0x0006[0m
+[0;32mI (288676) LDR_NODE: ========================[0m
+[0;32mI (290846) LDR_NODE: Sending LDR data - Light: 598, Voltage: 0.48V, Status: Dark, Time: 290329 ms[0m
+[0;32mI (290846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (290856) LDR_NODE: LCD test update #57[0m
+[0;32mI (290866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (293656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (293656) LDR_NODE: DHT data received![0m
+[0;32mI (293656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (293656) LDR_NODE: Temperature: 31.77°C[0m
+[0;32mI (293656) LDR_NODE: Humidity: 66.59%[0m
+[0;32mI (293666) LDR_NODE: Timestamp: 296308 ms[0m
+[0;32mI (293666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (293666) LDR_NODE: ========================[0m
+[0;32mI (293846) LDR_NODE: Sending LDR data - Light: 1587, Voltage: 1.28V, Status: Dim, Time: 293329 ms[0m
+[0;32mI (293846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (293866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (295856) LDR_NODE: LCD test update #58[0m
+[0;32mI (296846) LDR_NODE: Sending LDR data - Light: 3550, Voltage: 2.86V, Status: Bright, Time: 296329 ms[0m
+[0;32mI (296846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (296866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (298656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (298656) LDR_NODE: DHT data received![0m
+[0;32mI (298656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (298656) LDR_NODE: Temperature: 32.67°C[0m
+[0;32mI (298656) LDR_NODE: Humidity: 70.66%[0m
+[0;32mI (298666) LDR_NODE: Timestamp: 301308 ms[0m
+[0;32mI (298666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (298666) LDR_NODE: ========================[0m
+[0;32mI (299846) LDR_NODE: Sending LDR data - Light: 442, Voltage: 0.36V, Status: Dark, Time: 299329 ms[0m
+[0;32mI (299846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (299866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (300856) LDR_NODE: LCD test update #59[0m
+[0;32mI (302846) LDR_NODE: Sending LDR data - Light: 3100, Voltage: 2.50V, Status: Bright, Time: 302329 ms[0m
+[0;32mI (302846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (302866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (303656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (303656) LDR_NODE: DHT data received![0m
+[0;32mI (303656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (303656) LDR_NODE: Temperature: 25.74°C[0m
+[0;32mI (303666) LDR_NODE: Humidity: 49.59%[0m
+[0;32mI (303666) LDR_NODE: Timestamp: 306308 ms[0m
+[0;32mI (303666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (303676) LDR_NODE: ========================[0m
+[0;32mI (305846) LDR_NODE: Sending LDR data - Light: 2502, Voltage: 2.02V, Status: Dim, Time: 305329 ms[0m
+[0;32mI (305846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (305856) LDR_NODE: LCD test update #60[0m
+[0;32mI (305866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (308656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (308656) LDR_NODE: DHT data received![0m
+[0;32mI (308656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (308656) LDR_NODE: Temperature: 22.95°C[0m
+[0;32mI (308656) LDR_NODE: Humidity: 43.59%[0m
+[0;32mI (308666) LDR_NODE: Timestamp: 311308 ms[0m
+[0;32mI (308666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (308666) LDR_NODE: ========================[0m
+[0;32mI (308846) LDR_NODE: Sending LDR data - Light: 299, Voltage: 0.24V, Status: Dark, Time: 308329 ms[0m
+[0;32mI (308846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (308866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (310856) LDR_NODE: LCD test update #61[0m
+[0;32mI (311846) LDR_NODE: Sending LDR data - Light: 3792, Voltage: 3.06V, Status: Bright, Time: 311329 ms[0m
+[0;32mI (311846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (311866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (313656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (313656) LDR_NODE: DHT data received![0m
+[0;32mI (313656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (313656) LDR_NODE: Temperature: 31.01°C[0m
+[0;32mI (313666) LDR_NODE: Humidity: 70.04%[0m
+[0;32mI (313666) LDR_NODE: Timestamp: 316308 ms[0m
+[0;32mI (313666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (313676) LDR_NODE: ========================[0m
+[0;32mI (314846) LDR_NODE: Sending LDR data - Light: 2620, Voltage: 2.11V, Status: Dim, Time: 314329 ms[0m
+[0;32mI (314846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (314866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (315856) LDR_NODE: LCD test update #62[0m
+[0;32mI (317846) LDR_NODE: Sending LDR data - Light: 1933, Voltage: 1.56V, Status: Dim, Time: 317329 ms[0m
+[0;32mI (317846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (317866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (318656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (318656) LDR_NODE: DHT data received![0m
+[0;32mI (318656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (318656) LDR_NODE: Temperature: 32.92°C[0m
+[0;32mI (318656) LDR_NODE: Humidity: 47.98%[0m
+[0;32mI (318666) LDR_NODE: Timestamp: 321308 ms[0m
+[0;32mI (318666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (318666) LDR_NODE: ========================[0m
+[0;32mI (320846) LDR_NODE: Sending LDR data - Light: 2761, Voltage: 2.22V, Status: Dim, Time: 320329 ms[0m
+[0;32mI (320846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (320856) LDR_NODE: LCD test update #63[0m
+[0;32mI (320866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (323656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (323656) LDR_NODE: DHT data received![0m
+[0;32mI (323656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (323656) LDR_NODE: Temperature: 20.75°C[0m
+[0;32mI (323656) LDR_NODE: Humidity: 53.47%[0m
+[0;32mI (323666) LDR_NODE: Timestamp: 326308 ms[0m
+[0;32mI (323666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (323666) LDR_NODE: ========================[0m
+[0;32mI (323846) LDR_NODE: Sending LDR data - Light: 3724, Voltage: 3.00V, Status: Bright, Time: 323329 ms[0m
+[0;32mI (323846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (323866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (325856) LDR_NODE: LCD test update #64[0m
+[0;32mI (326846) LDR_NODE: Sending LDR data - Light: 2864, Voltage: 2.31V, Status: Dim, Time: 326329 ms[0m
+[0;32mI (326846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (326866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (328656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (328656) LDR_NODE: DHT data received![0m
+[0;32mI (328656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (328656) LDR_NODE: Temperature: 27.04°C[0m
+[0;32mI (328656) LDR_NODE: Humidity: 77.75%[0m
+[0;32mI (328666) LDR_NODE: Timestamp: 331308 ms[0m
+[0;32mI (328666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (328666) LDR_NODE: ========================[0m
+[0;32mI (329846) LDR_NODE: Sending LDR data - Light: 2708, Voltage: 2.18V, Status: Dim, Time: 329329 ms[0m
+[0;32mI (329846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (329866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (330856) LDR_NODE: LCD test update #65[0m
+[0;32mI (332846) LDR_NODE: Sending LDR data - Light: 2032, Voltage: 1.64V, Status: Dim, Time: 332329 ms[0m
+[0;32mI (332846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (332866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (333656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (333656) LDR_NODE: DHT data received![0m
+[0;32mI (333656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (333656) LDR_NODE: Temperature: 34.47°C[0m
+[0;32mI (333666) LDR_NODE: Humidity: 50.51%[0m
+[0;32mI (333666) LDR_NODE: Timestamp: 336308 ms[0m
+[0;32mI (333666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (333676) LDR_NODE: ========================[0m
+[0;32mI (335846) LDR_NODE: Sending LDR data - Light: 2389, Voltage: 1.93V, Status: Dim, Time: 335329 ms[0m
+[0;32mI (335846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (335856) LDR_NODE: LCD test update #66[0m
+[0;32mI (335866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (338656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (338656) LDR_NODE: DHT data received![0m
+[0;32mI (338656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (338656) LDR_NODE: Temperature: 33.13°C[0m
+[0;32mI (338666) LDR_NODE: Humidity: 31.48%[0m
+[0;32mI (338666) LDR_NODE: Timestamp: 341308 ms[0m
+[0;32mI (338666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (338676) LDR_NODE: ========================[0m
+[0;32mI (338846) LDR_NODE: Sending LDR data - Light: 1875, Voltage: 1.51V, Status: Dim, Time: 338329 ms[0m
+[0;32mI (338846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (338866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (340856) LDR_NODE: LCD test update #67[0m
+[0;32mI (341846) LDR_NODE: Sending LDR data - Light: 474, Voltage: 0.38V, Status: Dark, Time: 341329 ms[0m
+[0;32mI (341846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (341866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (343656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (343656) LDR_NODE: DHT data received![0m
+[0;32mI (343656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (343656) LDR_NODE: Temperature: 34.27°C[0m
+[0;32mI (343666) LDR_NODE: Humidity: 74.41%[0m
+[0;32mI (343666) LDR_NODE: Timestamp: 346308 ms[0m
+[0;32mI (343666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (343676) LDR_NODE: ========================[0m
+[0;32mI (344846) LDR_NODE: Sending LDR data - Light: 1475, Voltage: 1.19V, Status: Dim, Time: 344329 ms[0m
+[0;32mI (344846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (344866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (345856) LDR_NODE: LCD test update #68[0m
+[0;32mI (347846) LDR_NODE: Sending LDR data - Light: 2001, Voltage: 1.61V, Status: Dim, Time: 347329 ms[0m
+[0;32mI (347846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (347866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (348656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (348656) LDR_NODE: DHT data received![0m
+[0;32mI (348656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (348656) LDR_NODE: Temperature: 34.23°C[0m
+[0;32mI (348666) LDR_NODE: Humidity: 68.45%[0m
+[0;32mI (348666) LDR_NODE: Timestamp: 351308 ms[0m
+[0;32mI (348666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (348676) LDR_NODE: ========================[0m
+[0;32mI (350846) LDR_NODE: Sending LDR data - Light: 662, Voltage: 0.53V, Status: Dark, Time: 350329 ms[0m
+[0;32mI (350846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (350856) LDR_NODE: LCD test update #69[0m
+[0;32mI (350866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (353656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (353656) LDR_NODE: DHT data received![0m
+[0;32mI (353656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (353656) LDR_NODE: Temperature: 30.91°C[0m
+[0;32mI (353666) LDR_NODE: Humidity: 68.87%[0m
+[0;32mI (353666) LDR_NODE: Timestamp: 356308 ms[0m
+[0;32mI (353666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (353676) LDR_NODE: ========================[0m
+[0;32mI (353846) LDR_NODE: Sending LDR data - Light: 3767, Voltage: 3.04V, Status: Bright, Time: 353329 ms[0m
+[0;32mI (353846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (353866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (355856) LDR_NODE: LCD test update #70[0m
+[0;32mI (356846) LDR_NODE: Sending LDR data - Light: 893, Voltage: 0.72V, Status: Dark, Time: 356329 ms[0m
+[0;32mI (356846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (356866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (358646) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (358656) LDR_NODE: DHT data received![0m
+[0;32mI (358656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (358656) LDR_NODE: Temperature: 22.80°C[0m
+[0;32mI (358656) LDR_NODE: Humidity: 75.96%[0m
+[0;32mI (358666) LDR_NODE: Timestamp: 361308 ms[0m
+[0;32mI (358666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (358666) LDR_NODE: ========================[0m
+[0;32mI (359846) LDR_NODE: Sending LDR data - Light: 983, Voltage: 0.79V, Status: Dark, Time: 359329 ms[0m
+[0;32mI (359846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (359866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (360856) LDR_NODE: LCD test update #71[0m
+[0;32mI (362846) LDR_NODE: Sending LDR data - Light: 2176, Voltage: 1.75V, Status: Dim, Time: 362329 ms[0m
+[0;32mI (362846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (362866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (363646) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (363646) LDR_NODE: DHT data received![0m
+[0;32mI (363646) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (363656) LDR_NODE: Temperature: 25.69°C[0m
+[0;32mI (363656) LDR_NODE: Humidity: 43.87%[0m
+[0;32mI (363656) LDR_NODE: Timestamp: 366308 ms[0m
+[0;32mI (363666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (363666) LDR_NODE: ========================[0m
+[0;32mI (365846) LDR_NODE: Sending LDR data - Light: 1603, Voltage: 1.29V, Status: Dim, Time: 365329 ms[0m
+[0;32mI (365846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (365856) LDR_NODE: LCD test update #72[0m
+[0;32mI (365866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (368656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (368656) LDR_NODE: DHT data received![0m
+[0;32mI (368656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (368656) LDR_NODE: Temperature: 29.09°C[0m
+[0;32mI (368666) LDR_NODE: Humidity: 67.40%[0m
+[0;32mI (368666) LDR_NODE: Timestamp: 371308 ms[0m
+[0;32mI (368666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (368676) LDR_NODE: ========================[0m
+[0;32mI (368846) LDR_NODE: Sending LDR data - Light: 1306, Voltage: 1.05V, Status: Dim, Time: 368329 ms[0m
+[0;32mI (368846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (368866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (370856) LDR_NODE: LCD test update #73[0m
+[0;32mI (371846) LDR_NODE: Sending LDR data - Light: 2197, Voltage: 1.77V, Status: Dim, Time: 371329 ms[0m
+[0;32mI (371846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (371866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (373656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (373656) LDR_NODE: DHT data received![0m
+[0;32mI (373656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (373656) LDR_NODE: Temperature: 31.21°C[0m
+[0;32mI (373666) LDR_NODE: Humidity: 38.02%[0m
+[0;32mI (373666) LDR_NODE: Timestamp: 376308 ms[0m
+[0;32mI (373666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (373676) LDR_NODE: ========================[0m
+[0;32mI (374846) LDR_NODE: Sending LDR data - Light: 2249, Voltage: 1.81V, Status: Dim, Time: 374329 ms[0m
+[0;32mI (374846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (374866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (375856) LDR_NODE: LCD test update #74[0m
+[0;32mI (377846) LDR_NODE: Sending LDR data - Light: 4005, Voltage: 3.23V, Status: Bright, Time: 377329 ms[0m
+[0;32mI (377846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (377866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (378656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (378656) LDR_NODE: DHT data received![0m
+[0;32mI (378656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (378656) LDR_NODE: Temperature: 28.37°C[0m
+[0;32mI (378666) LDR_NODE: Humidity: 75.56%[0m
+[0;32mI (378666) LDR_NODE: Timestamp: 381308 ms[0m
+[0;32mI (378666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (378676) LDR_NODE: ========================[0m
+[0;32mI (380846) LDR_NODE: Sending LDR data - Light: 1256, Voltage: 1.01V, Status: Dim, Time: 380329 ms[0m
+[0;32mI (380846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (380856) LDR_NODE: LCD test update #75[0m
+[0;32mI (380866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (383646) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (383646) LDR_NODE: DHT data received![0m
+[0;32mI (383646) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (383656) LDR_NODE: Temperature: 32.80°C[0m
+[0;32mI (383656) LDR_NODE: Humidity: 63.62%[0m
+[0;32mI (383656) LDR_NODE: Timestamp: 386308 ms[0m
+[0;32mI (383666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (383666) LDR_NODE: ========================[0m
+[0;32mI (383846) LDR_NODE: Sending LDR data - Light: 1021, Voltage: 0.82V, Status: Dim, Time: 383329 ms[0m
+[0;32mI (383846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (383866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (385856) LDR_NODE: LCD test update #76[0m
+[0;32mI (386846) LDR_NODE: Sending LDR data - Light: 432, Voltage: 0.35V, Status: Dark, Time: 386329 ms[0m
+[0;32mI (386846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (386866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (388656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (388656) LDR_NODE: DHT data received![0m
+[0;32mI (388656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (388656) LDR_NODE: Temperature: 27.23°C[0m
+[0;32mI (388666) LDR_NODE: Humidity: 53.81%[0m
+[0;32mI (388666) LDR_NODE: Timestamp: 391308 ms[0m
+[0;32mI (388666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (388676) LDR_NODE: ========================[0m
+[0;32mI (389846) LDR_NODE: Sending LDR data - Light: 3230, Voltage: 2.60V, Status: Bright, Time: 389329 ms[0m
+[0;32mI (389846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (389866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (390856) LDR_NODE: LCD test update #77[0m
+[0;32mI (392846) LDR_NODE: Sending LDR data - Light: 3096, Voltage: 2.49V, Status: Bright, Time: 392329 ms[0m
+[0;32mI (392846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (392866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (393646) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (393646) LDR_NODE: DHT data received![0m
+[0;32mI (393646) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (393656) LDR_NODE: Temperature: 33.76°C[0m
+[0;32mI (393656) LDR_NODE: Humidity: 34.74%[0m
+[0;32mI (393656) LDR_NODE: Timestamp: 396308 ms[0m
+[0;32mI (393666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (393666) LDR_NODE: ========================[0m
+[0;32mI (395846) LDR_NODE: Sending LDR data - Light: 3636, Voltage: 2.93V, Status: Bright, Time: 395329 ms[0m
+[0;32mI (395846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (395856) LDR_NODE: LCD test update #78[0m
+[0;32mI (395866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (398656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (398656) LDR_NODE: DHT data received![0m
+[0;32mI (398656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (398656) LDR_NODE: Temperature: 34.82°C[0m
+[0;32mI (398666) LDR_NODE: Humidity: 52.50%[0m
+[0;32mI (398666) LDR_NODE: Timestamp: 401308 ms[0m
+[0;32mI (398666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (398676) LDR_NODE: ========================[0m
+[0;32mI (398846) LDR_NODE: Sending LDR data - Light: 1759, Voltage: 1.42V, Status: Dim, Time: 398329 ms[0m
+[0;32mI (398846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (398866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (400856) LDR_NODE: LCD test update #79[0m
+[0;32mI (401846) LDR_NODE: Sending LDR data - Light: 835, Voltage: 0.67V, Status: Dark, Time: 401329 ms[0m
+[0;32mI (401846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (401866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (403656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (403656) LDR_NODE: DHT data received![0m
+[0;32mI (403656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (403656) LDR_NODE: Temperature: 29.97°C[0m
+[0;32mI (403666) LDR_NODE: Humidity: 30.56%[0m
+[0;32mI (403666) LDR_NODE: Timestamp: 406308 ms[0m
+[0;32mI (403666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (403676) LDR_NODE: ========================[0m
+[0;32mI (404846) LDR_NODE: Sending LDR data - Light: 533, Voltage: 0.43V, Status: Dark, Time: 404329 ms[0m
+[0;32mI (404846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (404866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (405856) LDR_NODE: LCD test update #80[0m
+[0;32mI (407846) LDR_NODE: Sending LDR data - Light: 465, Voltage: 0.37V, Status: Dark, Time: 407329 ms[0m
+[0;32mI (407846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (407866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (408656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (408656) LDR_NODE: DHT data received![0m
+[0;32mI (408656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (408656) LDR_NODE: Temperature: 31.59°C[0m
+[0;32mI (408666) LDR_NODE: Humidity: 56.18%[0m
+[0;32mI (408666) LDR_NODE: Timestamp: 411308 ms[0m
+[0;32mI (408666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (408676) LDR_NODE: ========================[0m
+[0;32mI (410846) LDR_NODE: Sending LDR data - Light: 1750, Voltage: 1.41V, Status: Dim, Time: 410329 ms[0m
+[0;32mI (410846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (410856) LDR_NODE: LCD test update #81[0m
+[0;32mI (410866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (413656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (413656) LDR_NODE: DHT data received![0m
+[0;32mI (413656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (413656) LDR_NODE: Temperature: 27.45°C[0m
+[0;32mI (413666) LDR_NODE: Humidity: 36.78%[0m
+[0;32mI (413666) LDR_NODE: Timestamp: 416308 ms[0m
+[0;32mI (413666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (413676) LDR_NODE: ========================[0m
+[0;32mI (413846) LDR_NODE: Sending LDR data - Light: 1312, Voltage: 1.06V, Status: Dim, Time: 413329 ms[0m
+[0;32mI (413846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (413866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (415856) LDR_NODE: LCD test update #82[0m
+[0;32mI (416846) LDR_NODE: Sending LDR data - Light: 2362, Voltage: 1.90V, Status: Dim, Time: 416329 ms[0m
+[0;32mI (416846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (416866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (418646) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (418646) LDR_NODE: DHT data received![0m
+[0;32mI (418646) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (418646) LDR_NODE: Temperature: 21.37°C[0m
+[0;32mI (418656) LDR_NODE: Humidity: 53.88%[0m
+[0;32mI (418656) LDR_NODE: Timestamp: 421308 ms[0m
+[0;32mI (418666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (418666) LDR_NODE: ========================[0m
+[0;32mI (419846) LDR_NODE: Sending LDR data - Light: 2373, Voltage: 1.91V, Status: Dim, Time: 419329 ms[0m
+[0;32mI (419846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (419866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (420856) LDR_NODE: LCD test update #83[0m
+[0;32mI (422846) LDR_NODE: Sending LDR data - Light: 2811, Voltage: 2.27V, Status: Dim, Time: 422329 ms[0m
+[0;32mI (422846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (422866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (423656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (423656) LDR_NODE: DHT data received![0m
+[0;32mI (423656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (423656) LDR_NODE: Temperature: 32.64°C[0m
+[0;32mI (423666) LDR_NODE: Humidity: 32.15%[0m
+[0;32mI (423666) LDR_NODE: Timestamp: 426308 ms[0m
+[0;32mI (423666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (423676) LDR_NODE: ========================[0m
+[0;32mI (425846) LDR_NODE: Sending LDR data - Light: 648, Voltage: 0.52V, Status: Dark, Time: 425329 ms[0m
+[0;32mI (425846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (425856) LDR_NODE: LCD test update #84[0m
+[0;32mI (425866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (428656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (428656) LDR_NODE: DHT data received![0m
+[0;32mI (428656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (428656) LDR_NODE: Temperature: 29.22°C[0m
+[0;32mI (428666) LDR_NODE: Humidity: 64.79%[0m
+[0;32mI (428666) LDR_NODE: Timestamp: 431308 ms[0m
+[0;32mI (428666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (428676) LDR_NODE: ========================[0m
+[0;32mI (428846) LDR_NODE: Sending LDR data - Light: 1434, Voltage: 1.16V, Status: Dim, Time: 428329 ms[0m
+[0;32mI (428846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (428866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (430856) LDR_NODE: LCD test update #85[0m
+[0;32mI (431846) LDR_NODE: Sending LDR data - Light: 3157, Voltage: 2.54V, Status: Bright, Time: 431329 ms[0m
+[0;32mI (431846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (431866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (433656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (433656) LDR_NODE: DHT data received![0m
+[0;32mI (433656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (433656) LDR_NODE: Temperature: 24.30°C[0m
+[0;32mI (433666) LDR_NODE: Humidity: 38.94%[0m
+[0;32mI (433666) LDR_NODE: Timestamp: 436308 ms[0m
+[0;32mI (433666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (433676) LDR_NODE: ========================[0m
+[0;32mI (434846) LDR_NODE: Sending LDR data - Light: 223, Voltage: 0.18V, Status: Dark, Time: 434329 ms[0m
+[0;32mI (434846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (434866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (435856) LDR_NODE: LCD test update #86[0m
+[0;32mI (437846) LDR_NODE: Sending LDR data - Light: 220, Voltage: 0.18V, Status: Dark, Time: 437329 ms[0m
+[0;32mI (437846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (437866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (438656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (438656) LDR_NODE: DHT data received![0m
+[0;32mI (438656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (438656) LDR_NODE: Temperature: 24.95°C[0m
+[0;32mI (438666) LDR_NODE: Humidity: 58.87%[0m
+[0;32mI (438666) LDR_NODE: Timestamp: 441308 ms[0m
+[0;32mI (438666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (438676) LDR_NODE: ========================[0m
+[0;32mI (440846) LDR_NODE: Sending LDR data - Light: 2829, Voltage: 2.28V, Status: Dim, Time: 440329 ms[0m
+[0;32mI (440846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (440856) LDR_NODE: LCD test update #87[0m
+[0;32mI (440866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (443646) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (443656) LDR_NODE: DHT data received![0m
+[0;32mI (443656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (443656) LDR_NODE: Temperature: 29.99°C[0m
+[0;32mI (443656) LDR_NODE: Humidity: 59.30%[0m
+[0;32mI (443666) LDR_NODE: Timestamp: 446308 ms[0m
+[0;32mI (443666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (443666) LDR_NODE: ========================[0m
+[0;32mI (443846) LDR_NODE: Sending LDR data - Light: 406, Voltage: 0.33V, Status: Dark, Time: 443329 ms[0m
+[0;32mI (443846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (443866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (445856) LDR_NODE: LCD test update #88[0m
+[0;32mI (446846) LDR_NODE: Sending LDR data - Light: 43, Voltage: 0.03V, Status: Dark, Time: 446329 ms[0m
+[0;32mI (446846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (446866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (448656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (448656) LDR_NODE: DHT data received![0m
+[0;32mI (448656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (448656) LDR_NODE: Temperature: 20.32°C[0m
+[0;32mI (448666) LDR_NODE: Humidity: 34.36%[0m
+[0;32mI (448666) LDR_NODE: Timestamp: 451308 ms[0m
+[0;32mI (448666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (448676) LDR_NODE: ========================[0m
+[0;32mI (449846) LDR_NODE: Sending LDR data - Light: 2217, Voltage: 1.79V, Status: Dim, Time: 449329 ms[0m
+[0;32mI (449846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (449866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (450856) LDR_NODE: LCD test update #89[0m
+[0;32mI (452846) LDR_NODE: Sending LDR data - Light: 2683, Voltage: 2.16V, Status: Dim, Time: 452329 ms[0m
+[0;32mI (452846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (452866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (453656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (453656) LDR_NODE: DHT data received![0m
+[0;32mI (453656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (453656) LDR_NODE: Temperature: 31.73°C[0m
+[0;32mI (453666) LDR_NODE: Humidity: 39.51%[0m
+[0;32mI (453666) LDR_NODE: Timestamp: 456308 ms[0m
+[0;32mI (453666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (453676) LDR_NODE: ========================[0m
+[0;32mI (455846) LDR_NODE: Sending LDR data - Light: 1758, Voltage: 1.42V, Status: Dim, Time: 455329 ms[0m
+[0;32mI (455846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (455856) LDR_NODE: LCD test update #90[0m
+[0;32mI (455866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (458656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (458656) LDR_NODE: DHT data received![0m
+[0;32mI (458656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (458656) LDR_NODE: Temperature: 31.58°C[0m
+[0;32mI (458666) LDR_NODE: Humidity: 60.32%[0m
+[0;32mI (458666) LDR_NODE: Timestamp: 461308 ms[0m
+[0;32mI (458666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (458676) LDR_NODE: ========================[0m
+[0;32mI (458846) LDR_NODE: Sending LDR data - Light: 2610, Voltage: 2.10V, Status: Dim, Time: 458329 ms[0m
+[0;32mI (458846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (458866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (460856) LDR_NODE: LCD test update #91[0m
+[0;32mI (461846) LDR_NODE: Sending LDR data - Light: 2184, Voltage: 1.76V, Status: Dim, Time: 461329 ms[0m
+[0;32mI (461846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (461866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (463656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (463656) LDR_NODE: DHT data received![0m
+[0;32mI (463656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (463656) LDR_NODE: Temperature: 33.38°C[0m
+[0;32mI (463666) LDR_NODE: Humidity: 57.08%[0m
+[0;32mI (463666) LDR_NODE: Timestamp: 466308 ms[0m
+[0;32mI (463666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (463676) LDR_NODE: ========================[0m
+[0;32mI (464846) LDR_NODE: Sending LDR data - Light: 1013, Voltage: 0.82V, Status: Dim, Time: 464329 ms[0m
+[0;32mI (464846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (464866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (465856) LDR_NODE: LCD test update #92[0m
+[0;32mI (467846) LDR_NODE: Sending LDR data - Light: 3362, Voltage: 2.71V, Status: Bright, Time: 467329 ms[0m
+[0;32mI (467846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (467866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (468656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (468656) LDR_NODE: DHT data received![0m
+[0;32mI (468656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (468656) LDR_NODE: Temperature: 32.15°C[0m
+[0;32mI (468666) LDR_NODE: Humidity: 63.78%[0m
+[0;32mI (468666) LDR_NODE: Timestamp: 471308 ms[0m
+[0;32mI (468666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (468676) LDR_NODE: ========================[0m
+[0;32mI (470846) LDR_NODE: Sending LDR data - Light: 1481, Voltage: 1.19V, Status: Dim, Time: 470329 ms[0m
+[0;32mI (470846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (470856) LDR_NODE: LCD test update #93[0m
+[0;32mI (470866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (473656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (473656) LDR_NODE: DHT data received![0m
+[0;32mI (473656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (473656) LDR_NODE: Temperature: 30.07°C[0m
+[0;32mI (473666) LDR_NODE: Humidity: 63.86%[0m
+[0;32mI (473666) LDR_NODE: Timestamp: 476308 ms[0m
+[0;32mI (473666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (473676) LDR_NODE: ========================[0m
+[0;32mI (473846) LDR_NODE: Sending LDR data - Light: 2355, Voltage: 1.90V, Status: Dim, Time: 473329 ms[0m
+[0;32mI (473846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (473866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (475856) LDR_NODE: LCD test update #94[0m
+[0;32mI (476846) LDR_NODE: Sending LDR data - Light: 1254, Voltage: 1.01V, Status: Dim, Time: 476329 ms[0m
+[0;32mI (476846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (476866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (478656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (478656) LDR_NODE: DHT data received![0m
+[0;32mI (478656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (478656) LDR_NODE: Temperature: 26.20°C[0m
+[0;32mI (478666) LDR_NODE: Humidity: 43.38%[0m
+[0;32mI (478666) LDR_NODE: Timestamp: 481308 ms[0m
+[0;32mI (478666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (478676) LDR_NODE: ========================[0m
+[0;32mI (479846) LDR_NODE: Sending LDR data - Light: 1984, Voltage: 1.60V, Status: Dim, Time: 479329 ms[0m
+[0;32mI (479846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (479866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (480856) LDR_NODE: LCD test update #95[0m
+[0;32mI (482846) LDR_NODE: Sending LDR data - Light: 303, Voltage: 0.24V, Status: Dark, Time: 482329 ms[0m
+[0;32mI (482846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (482866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (483656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (483656) LDR_NODE: DHT data received![0m
+[0;32mI (483656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (483656) LDR_NODE: Temperature: 32.63°C[0m
+[0;32mI (483666) LDR_NODE: Humidity: 49.65%[0m
+[0;32mI (483666) LDR_NODE: Timestamp: 486308 ms[0m
+[0;32mI (483666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (483676) LDR_NODE: ========================[0m
+[0;32mI (485846) LDR_NODE: Sending LDR data - Light: 1863, Voltage: 1.50V, Status: Dim, Time: 485329 ms[0m
+[0;32mI (485846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (485856) LDR_NODE: LCD test update #96[0m
+[0;32mI (485866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (488646) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (488646) LDR_NODE: DHT data received![0m
+[0;32mI (488646) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (488646) LDR_NODE: Temperature: 23.56°C[0m
+[0;32mI (488646) LDR_NODE: Humidity: 75.23%[0m
+[0;32mI (488656) LDR_NODE: Timestamp: 491308 ms[0m
+[0;32mI (488656) LDR_NODE: From address: 0x0006[0m
+[0;32mI (488666) LDR_NODE: ========================[0m
+[0;32mI (488846) LDR_NODE: Sending LDR data - Light: 850, Voltage: 0.68V, Status: Dark, Time: 488329 ms[0m
+[0;32mI (488846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (488866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (490856) LDR_NODE: LCD test update #97[0m
+[0;32mI (491846) LDR_NODE: Sending LDR data - Light: 47, Voltage: 0.04V, Status: Dark, Time: 491329 ms[0m
+[0;32mI (491846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (491866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (493656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (493656) LDR_NODE: DHT data received![0m
+[0;32mI (493656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (493656) LDR_NODE: Temperature: 31.89°C[0m
+[0;32mI (493666) LDR_NODE: Humidity: 43.38%[0m
+[0;32mI (493666) LDR_NODE: Timestamp: 496308 ms[0m
+[0;32mI (493666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (493676) LDR_NODE: ========================[0m
+[0;32mI (494846) LDR_NODE: Sending LDR data - Light: 1476, Voltage: 1.19V, Status: Dim, Time: 494329 ms[0m
+[0;32mI (494846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (494866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (495856) LDR_NODE: LCD test update #98[0m
+[0;32mI (497846) LDR_NODE: Sending LDR data - Light: 288, Voltage: 0.23V, Status: Dark, Time: 497329 ms[0m
+[0;32mI (497846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (497866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (498656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (498656) LDR_NODE: DHT data received![0m
+[0;32mI (498656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (498656) LDR_NODE: Temperature: 22.89°C[0m
+[0;32mI (498666) LDR_NODE: Humidity: 69.69%[0m
+[0;32mI (498666) LDR_NODE: Timestamp: 501308 ms[0m
+[0;32mI (498666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (498676) LDR_NODE: ========================[0m
+[0;32mI (500846) LDR_NODE: Sending LDR data - Light: 1747, Voltage: 1.41V, Status: Dim, Time: 500329 ms[0m
+[0;32mI (500846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (500856) LDR_NODE: LCD test update #99[0m
+[0;32mI (500866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (503656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (503656) LDR_NODE: DHT data received![0m
+[0;32mI (503656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (503656) LDR_NODE: Temperature: 34.53°C[0m
+[0;32mI (503666) LDR_NODE: Humidity: 74.20%[0m
+[0;32mI (503666) LDR_NODE: Timestamp: 506308 ms[0m
+[0;32mI (503666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (503676) LDR_NODE: ========================[0m
+[0;32mI (503846) LDR_NODE: Sending LDR data - Light: 651, Voltage: 0.52V, Status: Dark, Time: 503329 ms[0m
+[0;32mI (503846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (503866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (505856) LDR_NODE: LCD test update #100[0m
+[0;32mI (506846) LDR_NODE: Sending LDR data - Light: 283, Voltage: 0.23V, Status: Dark, Time: 506329 ms[0m
+[0;32mI (506846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (506866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (508656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (508656) LDR_NODE: DHT data received![0m
+[0;32mI (508656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (508656) LDR_NODE: Temperature: 32.86°C[0m
+[0;32mI (508666) LDR_NODE: Humidity: 69.02%[0m
+[0;32mI (508666) LDR_NODE: Timestamp: 511308 ms[0m
+[0;32mI (508666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (508676) LDR_NODE: ========================[0m
+[0;32mI (509846) LDR_NODE: Sending LDR data - Light: 97, Voltage: 0.08V, Status: Dark, Time: 509329 ms[0m
+[0;32mI (509846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (509866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (510856) LDR_NODE: LCD test update #101[0m
+[0;32mI (512846) LDR_NODE: Sending LDR data - Light: 3553, Voltage: 2.86V, Status: Bright, Time: 512329 ms[0m
+[0;32mI (512846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (512866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (513656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (513656) LDR_NODE: DHT data received![0m
+[0;32mI (513656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (513656) LDR_NODE: Temperature: 23.90°C[0m
+[0;32mI (513666) LDR_NODE: Humidity: 49.14%[0m
+[0;32mI (513666) LDR_NODE: Timestamp: 516308 ms[0m
+[0;32mI (513666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (513676) LDR_NODE: ========================[0m
+[0;32mI (515846) LDR_NODE: Sending LDR data - Light: 3568, Voltage: 2.88V, Status: Bright, Time: 515329 ms[0m
+[0;32mI (515846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (515856) LDR_NODE: LCD test update #102[0m
+[0;32mI (515866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (518646) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (518646) LDR_NODE: DHT data received![0m
+[0;32mI (518646) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (518646) LDR_NODE: Temperature: 29.75°C[0m
+[0;32mI (518656) LDR_NODE: Humidity: 41.47%[0m
+[0;32mI (518656) LDR_NODE: Timestamp: 521308 ms[0m
+[0;32mI (518656) LDR_NODE: From address: 0x0006[0m
+[0;32mI (518666) LDR_NODE: ========================[0m
+[0;32mI (518846) LDR_NODE: Sending LDR data - Light: 3830, Voltage: 3.09V, Status: Bright, Time: 518329 ms[0m
+[0;32mI (518846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (518866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (520856) LDR_NODE: LCD test update #103[0m
+[0;32mI (521846) LDR_NODE: Sending LDR data - Light: 1410, Voltage: 1.14V, Status: Dim, Time: 521329 ms[0m
+[0;32mI (521846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (521866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (523656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (523656) LDR_NODE: DHT data received![0m
+[0;32mI (523656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (523656) LDR_NODE: Temperature: 25.81°C[0m
+[0;32mI (523666) LDR_NODE: Humidity: 60.01%[0m
+[0;32mI (523666) LDR_NODE: Timestamp: 526308 ms[0m
+[0;32mI (523666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (523676) LDR_NODE: ========================[0m
+[0;32mI (524846) LDR_NODE: Sending LDR data - Light: 40, Voltage: 0.03V, Status: Dark, Time: 524329 ms[0m
+[0;32mI (524846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (524866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (525856) LDR_NODE: LCD test update #104[0m
+[0;32mI (527846) LDR_NODE: Sending LDR data - Light: 3842, Voltage: 3.10V, Status: Bright, Time: 527329 ms[0m
+[0;32mI (527846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (527866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (528656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (528656) LDR_NODE: DHT data received![0m
+[0;32mI (528656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (528656) LDR_NODE: Temperature: 31.87°C[0m
+[0;32mI (528666) LDR_NODE: Humidity: 42.09%[0m
+[0;32mI (528666) LDR_NODE: Timestamp: 531308 ms[0m
+[0;32mI (528666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (528676) LDR_NODE: ========================[0m
+[0;32mI (530846) LDR_NODE: Sending LDR data - Light: 1040, Voltage: 0.84V, Status: Dim, Time: 530329 ms[0m
+[0;32mI (530846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (530856) LDR_NODE: LCD test update #105[0m
+[0;32mI (530866) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (533656) LDR_NODE: Received message with opcode: 0xc202e5, length: 12[0m
+[0;32mI (533656) LDR_NODE: DHT data received![0m
+[0;32mI (533656) LDR_NODE: === DHT Data Received ===[0m
+[0;32mI (533656) LDR_NODE: Temperature: 20.57°C[0m
+[0;32mI (533656) LDR_NODE: Humidity: 43.85%[0m
+[0;32mI (533666) LDR_NODE: Timestamp: 536308 ms[0m
+[0;32mI (533666) LDR_NODE: From address: 0x0006[0m
+[0;32mI (533666) LDR_NODE: ========================[0m
+[0;32mI (533846) LDR_NODE: Sending LDR data - Light: 1142, Voltage: 0.92V, Status: Dim, Time: 533329 ms[0m
+[0;32mI (533846) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (533866) LDR_NODE: Send 0xc302e5[0m

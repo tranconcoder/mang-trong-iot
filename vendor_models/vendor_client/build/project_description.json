@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "vendor_client",
-    "project_version":    "b4b7e179-dirty",
+    "project_version":    "6f85d5e7-dirty",
     "project_path":       "/home/tvconss/Workspace/mang-trong-iot/vendor_models/vendor_client",
     "idf_path":           "/home/tvconss/esp/esp-idf",
     "build_dir":          "/home/tvconss/Workspace/mang-trong-iot/vendor_models/vendor_client/build",

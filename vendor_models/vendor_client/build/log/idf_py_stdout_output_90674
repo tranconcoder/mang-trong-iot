@@ -1,0 +1,243 @@
+���� segment 5: paddr=00183904 vad�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 25 2025 18:55:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=3f3d0h (259024) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=0004f3f8 vaddr=3fc9e400 size=00c20h (  3104) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=1145f0h (1132016) map[0m
+[0;32mI (338) esp_image: segment 3: paddr=00164618 vaddr=3fc9f020 size=04ef0h ( 20208) load[0m
+[0;32mI (342) esp_image: segment 4: paddr=00169510 vaddr=40374000 size=1a3ech (107500) load[0m
+[0;32mI (366) esp_image: segment 5: paddr=00183904 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (376) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (376) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) cpu_start: Multicore app[0m
+[0;32mI (395) cpu_start: Pro cpu start user code[0m
+[0;32mI (396) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (396) app_init: Application information:[0m
+[0;32mI (396) app_init: Project name:     vendor_client[0m
+[0;32mI (400) app_init: App version:      6f85d5e7-dirty[0m
+[0;32mI (405) app_init: Compile time:     May 25 2025 19:49:32[0m
+[0;32mI (410) app_init: ELF file SHA256:  1f92f9205...[0m
+[0;32mI (414) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (418) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (422) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (426) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (429) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (436) heap_init: At 3FCAF288 len 0003A488 (233 KiB): RAM[0m
+[0;32mI (441) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (446) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (451) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (458) spi_flash: detected chip: boya[0m
+[0;32mI (460) spi_flash: flash io: dio[0m
+[0;33mW (463) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (475) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (482) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (488) coexist: coex firmware version: e727207[0m
+[0;32mI (507) coexist: coexist rom version e7ae62f[0m
+[0;32mI (507) main_task: Started on CPU0[0m
+[0;32mI (517) main_task: Calling app_main()[0m
+[0;32mI (517) DHT_RECEIVER: Initializing...[0m
+use esp timer !!!
+[1;31mE (527) esp_timer: Task is already initialized[0m
+[0;32mI (527) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (527) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (537) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (537) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (547) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (577) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (637) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (697) DHT_RECEIVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (697) EXAMPLE_NVS: Restore, key "vendor_client" not exists[0m
+[0;32mI (707) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (707) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_ADD_LOCAL_APP_KEY_COMP_EVT, err_code 0[0m
+[0;32mI (717) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (717) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (727) DHT_RECEIVER: ESP BLE Mesh Provisioner initialized[0m
+[0;32mI (737) pp: pp rom version: e7ae62f[0m
+[0;32mI (737) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (757) wifi:wifi driver task: 3fcc987c, prio:23, stack:6656, core=0[0m
+[0;32mI (757) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (757) wifi:wifi certification version: v7.0[0m
+[0;32mI (757) wifi:config NVS flash: enabled[0m
+[0;32mI (757) wifi:config nano formatting: disabled[0m
+[0;32mI (767) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (767) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (777) wifi:Init management short buffer num: 32[0m
+[0;32mI (777) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (777) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (787) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (787) wifi:Init static rx buffer num: 10[0m
+[0;32mI (797) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (797) wifi_init: rx ba win: 6[0m
+[0;32mI (797) wifi_init: accept mbox: 6[0m
+[0;32mI (807) wifi_init: tcpip mbox: 32[0m
+[0;32mI (807) wifi_init: udp mbox: 6[0m
+[0;32mI (807) wifi_init: tcp mbox: 6[0m
+[0;32mI (807) wifi_init: tcp tx win: 5760[0m
+[0;32mI (817) wifi_init: tcp rx win: 5760[0m
+[0;32mI (817) wifi_init: tcp mss: 1440[0m
+[0;32mI (817) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (827) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (847) wifi:mode : sta (24:ec:4a:3a:2b:ec)[0m
+[0;32mI (847) wifi:enable tsf[0m
+[0;32mI (847) DHT_RECEIVER: wifi_init_sta finished.[0m
+[0;32mI (857) DHT_RECEIVER: connect to ap SSID:Tran Con password:88888888[0m
+[0;32mI (857) main_task: Returned from app_main()[0m
+[0;32mI (3487) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3487) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3497) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3507) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3627) wifi:connected with Tran Con, aid = 3, channel 10, BW20, bssid = 30:16:9d:62:a0:f8[0m
+[0;32mI (3627) wifi:security: WPA2-PSK, phy: bgn, rssi: -61[0m
+[0;32mI (3637) wifi:pm start, type: 1[0m
+
+[0;32mI (3637) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3637) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (3687) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3727) wifi:<ba-add>idx:0 (ifx:0, 30:16:9d:62:a0:f8), tid:0, ssn:3, winSize:64[0m
+[0;32mI (7047) esp_netif_handlers: sta ip: 192.168.1.13, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (7047) DHT_RECEIVER: got ip:192.168.1.13[0m
+[0;32mI (7047) DHT_RECEIVER: Starting MQTT client[0m
+[0;32mI (7047) DHT_RECEIVER: Other event id:7[0m
+[0;32mI (7207) wifi:<ba-add>idx:1 (ifx:0, 30:16:9d:62:a0:f8), tid:5, ssn:1, winSize:64[0m
+[0;32mI (7987) DHT_RECEIVER: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7987) DHT_RECEIVER: mqtt subscribe to LED topic successful, msg_id=29603[0m
+[0;32mI (8297) DHT_RECEIVER: MQTT_EVENT_SUBSCRIBED, msg_id=29603[0m
+[0;32mI (18337) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (18337) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (18337) DHT_RECEIVER: Address type 0x00, adv type 0x03[0m
+[0;32mI (18347) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (18347) DHT_RECEIVER: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (18357) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (18357) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (21737) DHT_RECEIVER: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (21737) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (21747) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (21747) EXAMPLE_NVS: Store, data: 05 00 00 00[0m
+[0;32mI (21757) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (21757) DHT_RECEIVER: Node 0 name NODE-00[0m
+[0;32mI (22077) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (22187) DHT_RECEIVER: Config client, err_code 0, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (22187) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 01 01 00 00[0m
+[0;32mI (22197) Composition data: e5 02 01 00[0m
+[0;32mI (22197) DHT_RECEIVER: ********************** Composition Data Start **********************[0m
+[0;32mI (22207) DHT_RECEIVER: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (22217) DHT_RECEIVER: * Loc 0x0000, NumS 0x01, NumV 0x01 *[0m
+[0;32mI (22217) DHT_RECEIVER: * SIG Model ID 0x0000 *[0m
+[0;32mI (22227) DHT_RECEIVER: * Vendor Model ID 0x0001, Company ID 0x02e5 *[0m
+[0;32mI (22227) DHT_RECEIVER: *********************** Composition Data End ***********************[0m
+[0;32mI (22237) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (22497) DHT_RECEIVER: Config client, err_code 0, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (22617) DHT_RECEIVER: Config client, err_code 0, event 1, addr 0x0005, opcode 0x803d[0m
+[0;33mW (22617) DHT_RECEIVER: example_ble_mesh_config_client_cb, Provision and config successfully[0m
+[0;32mI (25607) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (25607) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (25607) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (25617) DHT_RECEIVER: Data: 1[0m
+[0;32mI (25617) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (25617) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (25627) DHT_RECEIVER: Target server address: 0x0005[0m
+[0;32mI (25627) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (25637) DHT_RECEIVER: Timestamp: 25169 ms[0m
+[0;32mI (25637) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (25637) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (25647) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (25647) DHT_RECEIVER: =============================================[0m
+[0;32mI (25657) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (25657) DHT_RECEIVER: ===================================[0m
+[0;32mI (26777) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (26777) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (26777) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (26777) DHT_RECEIVER: Temperature: 25.67°C[0m
+[0;32mI (26787) DHT_RECEIVER: Humidity: 74.30%[0m
+[0;32mI (26787) DHT_RECEIVER: Timestamp: 8837 ms[0m
+[0;32mI (26787) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (26797) DHT_RECEIVER: ==================================[0m
+[0;32mI (26797) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=54394[0m
+[0;33mW (26987) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (27087) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (27087) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (27087) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (27097) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (27097) DHT_RECEIVER: Temperature: 25.67°C[0m
+[0;32mI (27107) DHT_RECEIVER: Humidity: 74.30%[0m
+[0;32mI (27107) DHT_RECEIVER: Timestamp: 8837 ms[0m
+[0;32mI (27117) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (27117) DHT_RECEIVER: ==================================[0m
+[0;32mI (27127) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=12887[0m
+[0;32mI (27137) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=54394[0m
+[0;33mW (27197) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (27367) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=12887[0m
+[0;33mW (27437) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (27617) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (27637) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (27777) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (27867) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (29657) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (29657) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (29657) EXAMPLE_NVS: Store, data: 05 00 00 00[0m
+[0;32mI (29657) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (29687) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (29687) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 26005us[0m
+[0;32mI (31777) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (31777) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (31777) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (31777) DHT_RECEIVER: Temperature: 26.90°C[0m
+[0;32mI (31787) DHT_RECEIVER: Humidity: 39.35%[0m
+[0;32mI (31787) DHT_RECEIVER: Timestamp: 13837 ms[0m
+[0;32mI (31787) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (31797) DHT_RECEIVER: ==================================[0m
+[0;32mI (31807) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=60080[0m
+[0;33mW (31917) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32007) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (32007) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (32017) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (32017) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (32027) DHT_RECEIVER: Temperature: 26.90°C[0m
+[0;32mI (32027) DHT_RECEIVER: Humidity: 39.35%[0m
+[0;32mI (32027) DHT_RECEIVER: Timestamp: 13837 ms[0m
+[0;32mI (32037) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (32037) DHT_RECEIVER: ==================================[0m
+[0;32mI (32047) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=15824[0m
+[0;33mW (32097) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (32157) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=60080[0m
+[0;33mW (32217) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32337) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32457) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (32467) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=15824[0m
+[0;33mW (32617) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32657) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32847) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32947) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (36787) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (36797) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (36797) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (36797) DHT_RECEIVER: Temperature: 20.87°C[0m
+[0;32mI (36797) DHT_RECEIVER: Humidity: 48.25%[0m
+[0;32mI (36807) DHT_RECEIVER: Timestamp: 18837 ms[0m
+[0;32mI (36807) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (36817) DHT_RECEIVER: ==================================[0m
+[0;32mI (36817) DHT_RECEIVER

@@ -820,17 +820,23 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         printf("DATA=%.*s\r\n", event->data_len, event->data);
         
         // Check if this is LED control topic
-        if (strncmp(event->topic, EXAMPLE_MQTT_LED_TOPIC, event->topic_len) == 0) {
-            ESP_LOGI(TAG, "LED control message received");
+        if (event->topic_len == strlen(EXAMPLE_MQTT_LED_TOPIC) && 
+            strncmp(event->topic, EXAMPLE_MQTT_LED_TOPIC, event->topic_len) == 0) {
+            ESP_LOGI(TAG, "=== LED Control Message Received ===");
+            ESP_LOGI(TAG, "Topic: %.*s", event->topic_len, event->topic);
+            ESP_LOGI(TAG, "Data: %.*s", event->data_len, event->data);
             
             // Parse LED state from data (expecting "0" or "1")
             if (event->data_len > 0) {
                 uint8_t led_state = (event->data[0] == '1') ? 1 : 0;
-                ESP_LOGI(TAG, "Setting LED to: %s", led_state ? "ON" : "OFF");
+                ESP_LOGI(TAG, "Parsed LED state: %s", led_state ? "ON" : "OFF");
                 
                 // Send LED control to BLE Mesh server
                 send_led_control_to_server(led_state);
+            } else {
+                ESP_LOGW(TAG, "Empty LED control data received");
             }
+            ESP_LOGI(TAG, "===================================");
         }
         break;
     case MQTT_EVENT_ERROR:
@@ -894,8 +900,11 @@ static void publish_sensor_data(float temperature, float humidity, uint16_t ligh
 
 static void send_led_control_to_server(uint8_t led_state)
 {
+    ESP_LOGI(TAG, "=== Sending LED Control to BLE Mesh Server ===");
+    
     if (store.server_addr == ESP_BLE_MESH_ADDR_UNASSIGNED) {
         ESP_LOGW(TAG, "No server address available. Cannot send LED control.");
+        ESP_LOGW(TAG, "Make sure the vendor server is provisioned first.");
         return;
     }
     
@@ -903,6 +912,12 @@ static void send_led_control_to_server(uint8_t led_state)
         .led_state = led_state,
         .timestamp = (uint32_t)(esp_timer_get_time() / 1000)
     };
+    
+    ESP_LOGI(TAG, "Target server address: 0x%04x", store.server_addr);
+    ESP_LOGI(TAG, "LED state: %s", led_state ? "ON" : "OFF");
+    ESP_LOGI(TAG, "Timestamp: %lu ms", led_data.timestamp);
+    ESP_LOGI(TAG, "Opcode: 0x%06x", ESP_BLE_MESH_VND_MODEL_OP_LED_CTRL);
+    ESP_LOGI(TAG, "Data size: %d bytes", sizeof(led_ctrl_data_t));
     
     esp_ble_mesh_msg_ctx_t ctx = {
         .net_idx = prov_key.net_idx,
@@ -917,9 +932,11 @@ static void send_led_control_to_server(uint8_t led_state)
                                                        MSG_TIMEOUT, true, MSG_ROLE);
     if (err != ESP_OK) {
         ESP_LOGE(TAG, "Failed to send LED control to server: %s", esp_err_to_name(err));
+        ESP_LOGE(TAG, "Check if BLE Mesh is properly initialized and server is provisioned");
     } else {
-        ESP_LOGI(TAG, "Sent LED control to server: %s", led_state ? "ON" : "OFF");
+        ESP_LOGI(TAG, "✅ Successfully sent LED control to server: %s", led_state ? "ON" : "OFF");
     }
+    ESP_LOGI(TAG, "=============================================");
 }
 
 void app_main(void)

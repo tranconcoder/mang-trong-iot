@@ -387,11 +387,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const ledStatusEl = document.getElementById("led-status");
   let isLedOn = false;
 
+  // Initialize LED state from dashboard data
+  async function initializeLEDState() {
+    try {
+      const response = await fetchAuthenticatedAPI("/api/dashboard/data");
+      if (response && response.success && response.data.led) {
+        isLedOn = response.data.led.state === 1;
+        if (ledStatusEl) {
+          ledStatusEl.textContent = isLedOn ? "ON" : "OFF";
+          ledStatusEl.style.color = isLedOn
+            ? "var(--success-color, #2ecc71)"
+            : "var(--error-color, #e74c3c)";
+        }
+        console.log("LED state initialized:", isLedOn ? "ON" : "OFF");
+      }
+    } catch (error) {
+      console.error("Error initializing LED state:", error);
+    }
+  }
+
   if (ledButton && ledStatusEl) {
+    console.log("LED control elements found, setting up event listener");
+    
     ledButton.addEventListener("click", async () => {
       try {
+        console.log("LED button clicked, current state:", isLedOn ? "ON" : "OFF");
+        
+        // Disable button during request
+        ledButton.disabled = true;
+        ledButton.textContent = "Controlling...";
+        
         // Toggle LED state
         const newState = isLedOn ? 0 : 1;
+        console.log("Sending LED control request with state:", newState);
         
         // Send API request to control LED
         const response = await fetchAuthenticatedAPI("/api/led/control", {
@@ -399,20 +427,61 @@ document.addEventListener("DOMContentLoaded", () => {
           body: JSON.stringify({ state: newState })
         });
 
+        console.log("LED control API response:", response);
+
         if (response && response.success) {
-          isLedOn = !isLedOn;
+          isLedOn = newState === 1;
           ledStatusEl.textContent = isLedOn ? "ON" : "OFF";
           ledStatusEl.style.color = isLedOn
             ? "var(--success-color, #2ecc71)"
             : "var(--error-color, #e74c3c)";
           
-          console.log("LED control successful:", response);
+          console.log("LED control successful, new state:", isLedOn ? "ON" : "OFF");
+          
+          // Update button text
+          ledButton.textContent = "Toggle LED";
+          
+          // Show success feedback
+          ledButton.style.backgroundColor = "#28a745";
+          setTimeout(() => {
+            ledButton.style.backgroundColor = "";
+          }, 1000);
+          
         } else {
           console.error("LED control failed:", response);
+          
+          // Show error feedback
+          ledButton.style.backgroundColor = "#dc3545";
+          setTimeout(() => {
+            ledButton.style.backgroundColor = "";
+          }, 1000);
+          
+          // Show error message
+          alert("Failed to control LED: " + (response?.message || "Unknown error"));
         }
       } catch (error) {
         console.error("Error controlling LED:", error);
+        
+        // Show error feedback
+        ledButton.style.backgroundColor = "#dc3545";
+        setTimeout(() => {
+          ledButton.style.backgroundColor = "";
+        }, 1000);
+        
+        alert("Error controlling LED: " + error.message);
+      } finally {
+        // Re-enable button
+        ledButton.disabled = false;
+        ledButton.textContent = "Toggle LED";
       }
+    });
+    
+    // Initialize LED state
+    initializeLEDState();
+  } else {
+    console.error("LED control elements not found:", {
+      button: !!ledButton,
+      status: !!ledStatusEl
     });
   }
 
