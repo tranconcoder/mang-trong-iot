@@ -1,16 +1,45 @@
 <!-- nodejs/src/views/login.hbs -->
 <div class="auth-container">
   <div class="auth-form-section">
-    <div class="logo">AdminPanel</div>
+    <div class="logo">IoT Dashboard</div>
     <h2>Admin Portal Access</h2>
-    <p class="subtitle">Please sign in to manage your application.</p>
+    <p class="subtitle">Please sign in to access the sensor dashboard.</p>
 
-    <form id="adminLoginForm">
+    {{#if error}}
+    <div class="error-message" style="color: var(--error-color); background-color: rgba(231, 76, 60, 0.1); padding: 10px; border-radius: 8px; margin-bottom: 20px;">
+      {{#if (eq error "session_expired")}}
+        Your session has expired. Please log in again.
+      {{else if (eq error "user_not_found")}}
+        User not found. Please check your email address.
+      {{else if (eq error "invalid_password")}}
+        Invalid password. Please try again.
+      {{else if (eq error "missing_credentials")}}
+        Please enter both email and password.
+      {{else}}
+        {{error}}
+      {{/if}}
+    </div>
+    {{/if}}
+
+    {{#if message}}
+    <div class="success-message" style="color: var(--success-color); background-color: rgba(46, 204, 113, 0.1); padding: 10px; border-radius: 8px; margin-bottom: 20px;">
+      {{#if (eq message "logged_out")}}
+        You have been logged out successfully.
+      {{else}}
+        {{message}}
+      {{/if}}
+    </div>
+    {{/if}}
+
+    <!-- Form for web login -->
+    <form id="adminLoginForm" action="/api/web-login" method="POST">
       <div
         id="loginErrorMessage"
         class="error-message"
         style="display:none; color: var(--error-color); background-color: rgba(231, 76, 60, 0.1); padding: 10px; border-radius: 8px; margin-bottom: 20px;"
       ></div>
+
+      <input type="hidden" name="returnUrl" value="{{returnUrl}}" />
 
       <div class="form-group">
         <label for="email">Email Address</label>
@@ -19,6 +48,7 @@
           id="email"
           name="email"
           placeholder="Enter your email address"
+          value="tranvanconkg@gmail.com"
           required
         />
       </div>
@@ -29,6 +59,7 @@
           id="password"
           name="password"
           placeholder="Enter your password"
+          value="123"
           required
         />
       </div>
@@ -37,16 +68,95 @@
           <input type="checkbox" name="remember" />
           Remember me
         </label>
-        <a href="/forgot-password" class="forgot-password-link">Forgot Password?</a>
+        <small class="demo-credentials">Demo: tranvanconkg@gmail.com / 123</small>
       </div>
-      <button type="submit" class="btn btn-primary">Sign In</button>
+      <button type="submit" class="btn btn-primary" id="loginButton">
+        <span id="loginButtonText">Sign In</span>
+        <span id="loginSpinner" style="display: none;">Signing in...</span>
+      </button>
     </form>
 
     <p class="signup-link">
-      &copy; 2024 Your Company Name
+      &copy; 2024 IoT Sensor Dashboard
     </p>
   </div>
   <div class="auth-image-section">
     <!-- The image will be set as a background for this div via CSS -->
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('adminLoginForm');
+  const errorDiv = document.getElementById('loginErrorMessage');
+  const loginButton = document.getElementById('loginButton');
+  const loginButtonText = document.getElementById('loginButtonText');
+  const loginSpinner = document.getElementById('loginSpinner');
+
+  // Handle form submission for both web and API login
+  form.addEventListener('submit', async function(e) {
+    // Allow normal form submission for web login
+    // But also try API login for better UX
+    
+    const formData = new FormData(form);
+    const email = formData.get('email');
+    const password = formData.get('password');
+    const returnUrl = formData.get('returnUrl') || '/dashboard';
+
+    // Show loading state
+    loginButton.disabled = true;
+    loginButtonText.style.display = 'none';
+    loginSpinner.style.display = 'inline';
+    errorDiv.style.display = 'none';
+
+    try {
+      // Try API login first for better UX
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        
+        // Store token in localStorage for API calls
+        localStorage.setItem('authToken', data.token);
+        
+        // Redirect to return URL or dashboard
+        const redirectTo = returnUrl && returnUrl !== '/login' ? returnUrl : '/dashboard';
+        window.location.href = redirectTo;
+        
+        // Prevent form submission since we're handling it via API
+        e.preventDefault();
+        return;
+      } else {
+        const errorData = await response.json();
+        errorDiv.textContent = errorData.message || 'Login failed. Please try again.';
+        errorDiv.style.display = 'block';
+        
+        // Reset button state
+        loginButton.disabled = false;
+        loginButtonText.style.display = 'inline';
+        loginSpinner.style.display = 'none';
+        
+        // Prevent form submission
+        e.preventDefault();
+      }
+    } catch (error) {
+      console.error('API login failed, falling back to form submission:', error);
+      // Let the form submit normally as fallback
+      
+      // Reset button state
+      loginButton.disabled = false;
+      loginButtonText.style.display = 'inline';
+      loginSpinner.style.display = 'none';
+    }
+  });
+
+  // Auto-focus email field
+  document.getElementById('email').focus();
+});
+</script>

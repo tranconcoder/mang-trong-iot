@@ -15,8 +15,26 @@ export default new (class AuthService {
       throw new Error("Invalid password");
     }
 
-    const token = jwt.sign({ userId: user._id }, jwtConfig.SECRET);
+    // Create JWT payload with user information
+    const payload = {
+      userId: user._id.toString(),
+      email: user.email,
+      name: user.name,
+    };
 
-    return token;
+    // Generate token with expiration
+    const token = jwt.sign(payload, jwtConfig.SECRET, {
+      expiresIn: jwtConfig.EXPIRES_IN || '24h'
+    });
+
+    // Return token and user information (excluding password)
+    return {
+      token,
+      user: {
+        id: user._id.toString(),
+        email: user.email,
+        name: user.name,
+      }
+    };
   }
 })();

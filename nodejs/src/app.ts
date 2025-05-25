@@ -1,9 +1,11 @@
 import express, { type Express, type Request, type Response } from "express";
 import path from "path";
 import morgan from "morgan";
+import cookieParser from "cookie-parser";
 import { engine } from "express-handlebars";
 
 import { connectDB } from "@/services/database.service";
+import mqttService from "@/services/mqtt.service";
 import rootRoute from "@/routes";
 import apiRouter from "@/routes/api.route";
 import User from "./models/user.model";
@@ -28,9 +30,14 @@ await User.findOneAndReplace(
   }
 );
 
+// Initialize MQTT Service
+console.log("🚀 Initializing MQTT Service...");
+// The MQTT service will auto-connect when imported
+
 // Express middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 app.use("/public", express.static(path.join(__dirname, "../public")));
 
 // Custom middlewares
@@ -54,5 +61,18 @@ app.set("views", path.join(__dirname, "views"));
 
 // Routes
 app.use("/", rootRoute);
+
+// Graceful shutdown
+process.on('SIGINT', () => {
+  console.log('🛑 Shutting down gracefully...');
+  mqttService.disconnect();
+  process.exit(0);
+});
+
+process.on('SIGTERM', () => {
+  console.log('🛑 Shutting down gracefully...');
+  mqttService.disconnect();
+  process.exit(0);
+});
 
 export default app;
