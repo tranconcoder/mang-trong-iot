@@ -1,0 +1,898 @@
+8094 vaddr=400803b4 size=17744h ( 96068ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 09:04:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a61ch (173596) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003a644 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0003a668 vaddr=3ffbdb60 size=055f4h ( 22004) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=0003fc64 vaddr=40080000 size=003b4h (   948) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9806ch (622700) map[0m
+[0;32mI (381) esp_image: segment 5: paddr=000d8094 vaddr=400803b4 size=17744h ( 96068) load[0m
+[0;32mI (430) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (430) boot: Disabling RNG early entropy source...[0m
+[0;32mI (441) cpu_start: Multicore app[0m
+[0;32mI (449) cpu_start: Pro cpu start user code[0m
+[0;32mI (449) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (449) app_init: Application information:[0m
+[0;32mI (449) app_init: Project name:     sensor_server[0m
+[0;32mI (454) app_init: App version:      deb1a3c9-dirty[0m
+[0;32mI (458) app_init: Compile time:     May 25 2025 14:13:05[0m
+[0;32mI (463) app_init: ELF file SHA256:  846f64f35...[0m
+[0;32mI (467) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (471) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (475) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (479) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFCAF70 len 00015090 (84 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (521) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (528) spi_flash: detected chip: generic[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (546) coexist: coex firmware version: e727207[0m
+[0;32mI (550) main_task: Started on CPU0[0m
+[0;32mI (560) main_task: Calling app_main()[0m
+[0;32mI (560) EXAMPLE: Initializing...[0m
+[0;32mI (570) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (570) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (570) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (580) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (590) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (590) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (600) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (680) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1070) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1080) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1080) EXAMPLE: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (1090) EXAMPLE: 📛 Device name set to: NODE 1[0m
+[0;32mI (1090) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1090) Publishing Sensor Data: c0 0a 20 60 0b 4c[0m
+📢 NODE 1 PUBLISHING: Temp=16.0°C, Humidity=76%, Length=6 bytes
+[1;31mE (1100) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (1110) main_task: Returned from app_main()[0m
+[0;32mI (2110) Publishing Sensor Data: c0 0a 22 60 0b 50[0m
+📢 NODE 1 PUBLISHING: Temp=17.0°C, Humidity=80%, Length=6 bytes
+[1;31mE (2110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (3110) Publishing Sensor Data: c0 0a 31 60 0b 42[0m
+📢 NODE 1 PUBLISHING: Temp=24.5°C, Humidity=66%, Length=6 bytes
+[1;31mE (3110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (4110) Publishing Sensor Data: c0 0a 1f 60 0b 30[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=48%, Length=6 bytes
+[1;31mE (4110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (5110) Publishing Sensor Data: c0 0a 3c 60 0b 3d[0m
+📢 NODE 1 PUBLISHING: Temp=30.0°C, Humidity=61%, Length=6 bytes
+[1;31mE (5110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (6110) Publishing Sensor Data: c0 0a 37 60 0b 48[0m
+📢 NODE 1 PUBLISHING: Temp=27.5°C, Humidity=72%, Length=6 bytes
+[1;31mE (6110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (7110) Publishing Sensor Data: c0 0a 27 60 0b 4f[0m
+📢 NODE 1 PUBLISHING: Temp=19.5°C, Humidity=79%, Length=6 bytes
+[1;31mE (7110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (8110) Publishing Sensor Data: c0 0a 39 60 0b 2a[0m
+📢 NODE 1 PUBLISHING: Temp=28.5°C, Humidity=42%, Length=6 bytes
+[1;31mE (8110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (8660) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (9110) Publishing Sensor Data: c0 0a 38 60 0b 2a[0m
+📢 NODE 1 PUBLISHING: Temp=28.0°C, Humidity=42%, Length=6 bytes
+[1;31mE (9110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (10110) Publishing Sensor Data: c0 0a 32 60 0b 49[0m
+📢 NODE 1 PUBLISHING: Temp=25.0°C, Humidity=73%, Length=6 bytes
+[1;31mE (10110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (11110) Publishing Sensor Data: c0 0a 35 60 0b 2d[0m
+📢 NODE 1 PUBLISHING: Temp=26.5°C, Humidity=45%, Length=6 bytes
+[1;31mE (11110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;33mW (11340) BLE_MESH: No Health Server context provided[0m
+[0;32mI (12110) Publishing Sensor Data: c0 0a 1f 60 0b 37[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=55%, Length=6 bytes
+[1;31mE (12110) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;33mW (13110) BLE_MESH: No Health Server context provided[0m
+[0;32mI (13140) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (13140) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (13140) EXAMPLE: net_idx 0x000, addr 0x0003[0m
+[0;32mI (13140) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (13150) Publishing Sensor Data: c0 0a 3a 60 0b 3e[0m
+📢 NODE 1 PUBLISHING: Temp=29.0°C, Humidity=62%, Length=6 bytes
+[1;31mE (13160) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (14180) Publishing Sensor Data: c0 0a 26 60 0b 39[0m
+📢 NODE 1 PUBLISHING: Temp=19.0°C, Humidity=57%, Length=6 bytes
+[1;31mE (14180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;33mW (14250) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (15180) Publishing Sensor Data: c0 0a 34 60 0b 2b[0m
+📢 NODE 1 PUBLISHING: Temp=26.0°C, Humidity=43%, Length=6 bytes
+[1;31mE (15180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (16180) Publishing Sensor Data: c0 0a 23 60 0b 3b[0m
+📢 NODE 1 PUBLISHING: Temp=17.5°C, Humidity=59%, Length=6 bytes
+[1;31mE (16180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (17180) Publishing Sensor Data: c0 0a 37 60 0b 3e[0m
+📢 NODE 1 PUBLISHING: Temp=27.5°C, Humidity=62%, Length=6 bytes
+[1;31mE (17180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (18180) Publishing Sensor Data: c0 0a 30 60 0b 43[0m
+📢 NODE 1 PUBLISHING: Temp=24.0°C, Humidity=67%, Length=6 bytes
+[1;31mE (18180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[1;31mE (19020) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (19020) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[1;31mE (19020) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[1;31mE (19030) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[1;31mE (19030) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[1;31mE (19140) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (19140) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[0;32mI (19180) Publishing Sensor Data: c0 0a 3c 60 0b 3c[0m
+📢 NODE 1 PUBLISHING: Temp=30.0°C, Humidity=60%, Length=6 bytes
+[1;31mE (19180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[1;31mE (19470) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (19470) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[1;31mE (19650) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (19650) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[1;31mE (19650) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;32mI (20180) Publishing Sensor Data: c0 0a 34 60 0b 28[0m
+📢 NODE 1 PUBLISHING: Temp=26.0°C, Humidity=40%, Length=6 bytes
+[1;31mE (20180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (21180) Publishing Sensor Data: c0 0a 21 60 0b 33[0m
+📢 NODE 1 PUBLISHING: Temp=16.5°C, Humidity=51%, Length=6 bytes
+[1;31mE (21180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[1;31mE (21210) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (21210) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[1;31mE (21210) BLE_MESH: Failed to set mesh/cfg data (err 4359)[0m
+[1;31mE (21210) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;32mI (22180) Publishing Sensor Data: c0 0a 2f 60 0b 43[0m
+📢 NODE 1 PUBLISHING: Temp=23.5°C, Humidity=67%, Length=6 bytes
+[1;31mE (22180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[1;31mE (22800) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (22800) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[1;31mE (22800) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[1;31mE (22810) BLE_MESH: Failed to set mesh/ak/0000 data (err 4359)[0m
+[1;31mE (22810) BLE_MESH: Failed to store AppKey 0x000[0m
+[1;31mE (22820) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;32mI (22840) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (22840) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (22840) AppKey: c9 8e 5b 3e 6e 9c 65 6b 87 d9 53 25 b4 9d 7a 36[0m
+[0;32mI (23180) Publishing Sensor Data: c0 0a 29 60 0b 4a[0m
+📢 NODE 1 PUBLISHING: Temp=20.5°C, Humidity=74%, Length=6 bytes
+[1;31mE (23180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (24180) Publishing Sensor Data: c0 0a 21 60 0b 4e[0m
+📢 NODE 1 PUBLISHING: Temp=16.5°C, Humidity=78%, Length=6 bytes
+[1;31mE (24180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (25180) Publishing Sensor Data: c0 0a 1f 60 0b 4c[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=76%, Length=6 bytes
+[1;31mE (25180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (26180) Publishing Sensor Data: c0 0a 33 60 0b 2f[0m
+📢 NODE 1 PUBLISHING: Temp=25.5°C, Humidity=47%, Length=6 bytes
+[1;31mE (26180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (27180) Publishing Sensor Data: c0 0a 29 60 0b 3d[0m
+📢 NODE 1 PUBLISHING: Temp=20.5°C, Humidity=61%, Length=6 bytes
+[1;31mE (27180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (28180) Publishing Sensor Data: c0 0a 22 60 0b 2f[0m
+📢 NODE 1 PUBLISHING: Temp=17.0°C, Humidity=47%, Length=6 bytes
+[1;31mE (28180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (29180) Publishing Sensor Data: c0 0a 2b 60 0b 42[0m
+📢 NODE 1 PUBLISHING: Temp=21.5°C, Humidity=66%, Length=6 bytes
+[1;31mE (29180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (30180) Publishing Sensor Data: c0 0a 35 60 0b 3a[0m
+📢 NODE 1 PUBLISHING: Temp=26.5°C, Humidity=58%, Length=6 bytes
+[1;31mE (30180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[1;31mE (30960) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (30960) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[1;31mE (30960) BLE_MESH: Failed to set mesh/s/0001/b data (err 4359)[0m
+[1;31mE (30960) BLE_MESH: Failed to store mesh/s/0001/b[0m
+[1;31mE (30970) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;32mI (30990) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (30990) EXAMPLE: elem_addr 0x0003, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;32mI (31180) Publishing Sensor Data: c0 0a 29 60 0b 28[0m
+📢 NODE 1 PUBLISHING: Temp=20.5°C, Humidity=40%, Length=6 bytes
+[1;31mE (31180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (32180) Publishing Sensor Data: c0 0a 37 60 0b 50[0m
+📢 NODE 1 PUBLISHING: Temp=27.5°C, Humidity=80%, Length=6 bytes
+[1;31mE (32180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (33180) Publishing Sensor Data: c0 0a 34 60 0b 3c[0m
+📢 NODE 1 PUBLISHING: Temp=26.0°C, Humidity=60%, Length=6 bytes
+[1;31mE (33180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (34180) Publishing Sensor Data: c0 0a 33 60 0b 4f[0m
+📢 NODE 1 PUBLISHING: Temp=25.5°C, Humidity=79%, Length=6 bytes
+[1;31mE (34180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[1;31mE (35100) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (35100) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[1;31mE (35100) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[1;31mE (35100) BLE_MESH: Failed to set mesh/s/0001/p data (err 4359)[0m
+[1;31mE (35110) BLE_MESH: Failed to store mesh/s/0001/p[0m
+[1;31mE (35110) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[1;31mE (35120) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;32mI (35180) Publishing Sensor Data: c0 0a 20 60 0b 4f[0m
+📢 NODE 1 PUBLISHING: Temp=16.0°C, Humidity=79%, Length=6 bytes
+[1;31mE (35180) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (35190) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (35190) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (35220) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (35220) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[1;31mE (35420) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (35420) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[1;31mE (35640) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (35640) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[0;32mI (36190) Publishing Sensor Data: c0 0a 25 60 0b 50[0m
+📢 NODE 1 PUBLISHING: Temp=18.5°C, Humidity=80%, Length=6 bytes
+[1;31mE (36190) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (36200) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (36210) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (36400) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (36400) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (37210) Publishing Sensor Data: c0 0a 2a 60 0b 4e[0m
+📢 NODE 1 PUBLISHING: Temp=21.0°C, Humidity=78%, Length=6 bytes
+[1;31mE (37210) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (37220) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (37230) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (37420) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (37420) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (38230) Publishing Sensor Data: c0 0a 23 60 0b 3c[0m
+📢 NODE 1 PUBLISHING: Temp=17.5°C, Humidity=60%, Length=6 bytes
+[1;31mE (38230) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (38240) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (38250) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (38440) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (38440) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (39250) Publishing Sensor Data: c0 0a 27 60 0b 2a[0m
+📢 NODE 1 PUBLISHING: Temp=19.5°C, Humidity=42%, Length=6 bytes
+[1;31mE (39250) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (39260) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (39270) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (39460) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (39460) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (40270) Publishing Sensor Data: c0 0a 29 60 0b 35[0m
+📢 NODE 1 PUBLISHING: Temp=20.5°C, Humidity=53%, Length=6 bytes
+[1;31mE (40270) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (40280) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (40290) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (40480) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (40480) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (41290) Publishing Sensor Data: c0 0a 1f 60 0b 3d[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=61%, Length=6 bytes
+[1;31mE (41290) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (41300) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (41310) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (41500) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (41500) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (42310) Publishing Sensor Data: c0 0a 3c 60 0b 4f[0m
+📢 NODE 1 PUBLISHING: Temp=30.0°C, Humidity=79%, Length=6 bytes
+[1;31mE (42310) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (42320) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (42330) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (42520) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (42520) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (43330) Publishing Sensor Data: c0 0a 3c 60 0b 2f[0m
+📢 NODE 1 PUBLISHING: Temp=30.0°C, Humidity=47%, Length=6 bytes
+[1;31mE (43330) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (43340) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (43350) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (43540) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (43540) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (44350) Publishing Sensor Data: c0 0a 2b 60 0b 2c[0m
+📢 NODE 1 PUBLISHING: Temp=21.5°C, Humidity=44%, Length=6 bytes
+[1;31mE (44350) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (44360) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (44370) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (44560) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (44560) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (45370) Publishing Sensor Data: c0 0a 30 60 0b 34[0m
+📢 NODE 1 PUBLISHING: Temp=24.0°C, Humidity=52%, Length=6 bytes
+[1;31mE (45370) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (45380) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (45390) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (45580) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (45580) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (46390) Publishing Sensor Data: c0 0a 3a 60 0b 42[0m
+📢 NODE 1 PUBLISHING: Temp=29.0°C, Humidity=66%, Length=6 bytes
+[1;31mE (46390) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (46400) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (46400) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (46600) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (46600) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (47410) Publishing Sensor Data: c0 0a 30 60 0b 47[0m
+📢 NODE 1 PUBLISHING: Temp=24.0°C, Humidity=71%, Length=6 bytes
+[1;31mE (47410) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (47420) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[1;31mE (47430) BLE_MESH: Failed to set mesh/rpl/0001 data (err 4359)[0m
+[1;31mE (47430) BLE_MESH: Failed to store RPL entry 0x0001[0m
+[1;31mE (47430) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;32mI (47440) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (47630) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (47630) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (48440) Publishing Sensor Data: c0 0a 25 60 0b 3f[0m
+📢 NODE 1 PUBLISHING: Temp=18.5°C, Humidity=63%, Length=6 bytes
+[1;31mE (48440) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (48450) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (48450) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (48650) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (48650) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (49460) Publishing Sensor Data: c0 0a 2e 60 0b 2e[0m
+📢 NODE 1 PUBLISHING: Temp=23.0°C, Humidity=46%, Length=6 bytes
+[1;31mE (49460) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (49470) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (49470) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (49670) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (49670) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (50480) Publishing Sensor Data: c0 0a 38 60 0b 42[0m
+📢 NODE 1 PUBLISHING: Temp=28.0°C, Humidity=66%, Length=6 bytes
+[1;31mE (50480) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (50490) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (50500) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (50690) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (50690) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (51500) Publishing Sensor Data: c0 0a 26 60 0b 31[0m
+📢 NODE 1 PUBLISHING: Temp=19.0°C, Humidity=49%, Length=6 bytes
+[1;31mE (51500) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (51510) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (51520) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (51710) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (51710) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (52520) Publishing Sensor Data: c0 0a 22 60 0b 36[0m
+📢 NODE 1 PUBLISHING: Temp=17.0°C, Humidity=54%, Length=6 bytes
+[1;31mE (52520) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (52530) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (52540) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (52730) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (52730) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (53540) Publishing Sensor Data: c0 0a 2b 60 0b 48[0m
+📢 NODE 1 PUBLISHING: Temp=21.5°C, Humidity=72%, Length=6 bytes
+[1;31mE (53540) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (53550) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (53560) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (53750) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (53750) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (54560) Publishing Sensor Data: c0 0a 23 60 0b 4a[0m
+📢 NODE 1 PUBLISHING: Temp=17.5°C, Humidity=74%, Length=6 bytes
+[1;31mE (54560) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (54570) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (54580) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (54770) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (54770) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (55580) Publishing Sensor Data: c0 0a 32 60 0b 41[0m
+📢 NODE 1 PUBLISHING: Temp=25.0°C, Humidity=65%, Length=6 bytes
+[1;31mE (55580) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (55590) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (55600) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (55790) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (55790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (56600) Publishing Sensor Data: c0 0a 36 60 0b 42[0m
+📢 NODE 1 PUBLISHING: Temp=27.0°C, Humidity=66%, Length=6 bytes
+[1;31mE (56600) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (56610) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (56620) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (56810) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (56810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (57620) Publishing Sensor Data: c0 0a 2c 60 0b 45[0m
+📢 NODE 1 PUBLISHING: Temp=22.0°C, Humidity=69%, Length=6 bytes
+[1;31mE (57620) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (57630) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (57640) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (57830) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (57830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (58640) Publishing Sensor Data: c0 0a 2a 60 0b 3c[0m
+📢 NODE 1 PUBLISHING: Temp=21.0°C, Humidity=60%, Length=6 bytes
+[1;31mE (58640) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (58650) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (58660) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (58850) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (58850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (59660) Publishing Sensor Data: c0 0a 2d 60 0b 41[0m
+📢 NODE 1 PUBLISHING: Temp=22.5°C, Humidity=65%, Length=6 bytes
+[1;31mE (59660) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (59670) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (59680) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (59870) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (59870) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (60680) Publishing Sensor Data: c0 0a 39 60 0b 32[0m
+📢 NODE 1 PUBLISHING: Temp=28.5°C, Humidity=50%, Length=6 bytes
+[1;31mE (60680) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (60690) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (60700) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (60890) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (60890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (61700) Publishing Sensor Data: c0 0a 2c 60 0b 32[0m
+📢 NODE 1 PUBLISHING: Temp=22.0°C, Humidity=50%, Length=6 bytes
+[1;31mE (61700) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (61710) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (61720) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (61910) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (61910) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (62720) Publishing Sensor Data: c0 0a 37 60 0b 50[0m
+📢 NODE 1 PUBLISHING: Temp=27.5°C, Humidity=80%, Length=6 bytes
+[1;31mE (62720) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (62730) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (62740) EXAMPLE: ✅ Sensor data published successfully[0m
+✅ PUBLISHED SUCCESSFULLY to group address
+[1;31mE (62930) BLE_MESH: Failed to set mesh/seq data (err 4359)[0m
+[0;33mW (62930) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 09:04:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a61ch (173596) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003a644 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0003a668 vaddr=3ffbdb60 size=055f4h ( 22004) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=0003fc64 vaddr=40080000 size=003b4h (   948) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9806ch (622700) map[0m
+[0;32mI (381) esp_image: segment 5: paddr=000d8094 vaddr=400803b4 size=17744h ( 96068) load[0m
+[0;32mI (430) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (430) boot: Disabling RNG early entropy source...[0m
+[0;32mI (441) cpu_start: Multicore app[0m
+[0;32mI (449) cpu_start: Pro cpu start user code[0m
+[0;32mI (449) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (449) app_init: Application information:[0m
+[0;32mI (449) app_init: Project name:     sensor_server[0m
+[0;32mI (454) app_init: App version:      deb1a3c9-dirty[0m
+[0;32mI (458) app_init: Compile time:     May 25 2025 14:13:05[0m
+[0;32mI (463) app_init: ELF file SHA256:  846f64f35...[0m
+[0;32mI (467) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (471) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (475) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (479) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFCAF70 len 00015090 (84 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (521) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (528) spi_flash: detected chip: generic[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (546) coexist: coex firmware version: e727207[0m
+[0;32mI (550) main_task: Started on CPU0[0m
+[0;32mI (560) main_task: Calling app_main()[0m
+[0;32mI (560) EXAMPLE: Initializing...[0m
+[0;32mI (580) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (580) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (580) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (590) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (600) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (600) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (690) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;33mW (1050) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1070) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1070) EXAMPLE: net_idx 0x000, addr 0x0003[0m
+[0;32mI (1070) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;33mW (1070) BOARD: led green is already off[0m
+[0;32mI (1080) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;33mW (1080) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1090) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1090) EXAMPLE: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (1100) EXAMPLE: 📛 Device name set to: NODE 1[0m
+[0;32mI (1110) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1110) Publishing Sensor Data: c0 0a 20 60 0b 4c[0m
+📢 NODE 1 PUBLISHING: Temp=16.0°C, Humidity=76%, Length=6 bytes
+[1;31mE (1120) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (1130) main_task: Returned from app_main()[0m
+[0;32mI (2130) Publishing Sensor Data: c0 0a 22 60 0b 50[0m
+📢 NODE 1 PUBLISHING: Temp=17.0°C, Humidity=80%, Length=6 bytes
+[1;31mE (2130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (3130) Publishing Sensor Data: c0 0a 31 60 0b 42[0m
+📢 NODE 1 PUBLISHING: Temp=24.5°C, Humidity=66%, Length=6 bytes
+[1;31mE (3130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (4130) Publishing Sensor Data: c0 0a 1f 60 0b 30[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=48%, Length=6 bytes
+[1;31mE (4130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (5130) Publishing Sensor Data: c0 0a 3c 60 0b 3d[0m
+📢 NODE 1 PUBLISHING: Temp=30.0°C, Humidity=61%, Length=6 bytes
+[1;31mE (5130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (6130) Publishing Sensor Data: c0 0a 37 60 0b 48[0m
+📢 NODE 1 PUBLISHING: Temp=27.5°C, Humidity=72%, Length=6 bytes
+[1;31mE (6130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (7130) Publishing Sensor Data: c0 0a 27 60 0b 4f[0m
+📢 NODE 1 PUBLISHING: Temp=19.5°C, Humidity=79%, Length=6 bytes
+[1;31mE (7130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (8130) Publishing Sensor Data: c0 0a 39 60 0b 2a[0m
+📢 NODE 1 PUBLISHING: Temp=28.5°C, Humidity=42%, Length=6 bytes
+[1;31mE (8130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (9130) Publishing Sensor Data: c0 0a 38 60 0b 2a[0m
+📢 NODE 1 PUBLISHING: Temp=28.0°C, Humidity=42%, Length=6 bytes
+[1;31mE (9130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (10130) Publishing Sensor Data: c0 0a 32 60 0b 49[0m
+📢 NODE 1 PUBLISHING: Temp=25.0°C, Humidity=73%, Length=6 bytes
+[1;31mE (10130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (11130) Publishing Sensor Data: c0 0a 35 60 0b 2d[0m
+📢 NODE 1 PUBLISHING: Temp=26.5°C, Humidity=45%, Length=6 bytes
+[1;31mE (11130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (12130) Publishing Sensor Data: c0 0a 1f 60 0b 37[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=55%, Length=6 bytes
+[1;31mE (12130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (13130) Publishing Sensor Data: c0 0a 3a 60 0b 3e[0m
+📢 NODE 1 PUBLISHING: Temp=29.0°C, Humidity=62%, Length=6 bytes
+[1;31mE (13130) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (14130) Publishing Sensor Data: c0 0a 26 60 0b 39[0m
+📢 NODE 1 PUBLISHING: Temp=19.0°C, Humidity=57%, Length=6 bytes
+[1;31mE (14130) EXAMPLE: ❌ Failed to publish Sensor Status (e[0m
+***ERROR*** A stack overflow in task publish_sens has been detected.
+
+
+Backtrace: 0x40081b71:0x3ffd3820 0x4008fb71:0x3ffd3840 0x40090952:0x3ffd3860 0x400919cf:0x3ffd38e0 0x40090a5c:0x3ffd3900 0x40090a0e:0x3ffd3930 0x00060920:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 846f64f35
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 09:04:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a61ch (173596) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003a644 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0003a668 vaddr=3ffbdb60 size=055f4h ( 22004) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=0003fc64 vaddr=40080000 size=003b4h (   948) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9806ch (622700) map[0m
+[0;32mI (381) esp_image: segment 5: paddr=000d8094 vaddr=400803b4 size=17744h ( 96068) load[0m
+[0;32mI (430) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (430) boot: Disabling RNG early entropy source...[0m
+[0;32mI (441) cpu_start: Multicore app[0m
+[0;32mI (449) cpu_start: Pro cpu start user code[0m
+[0;32mI (449) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (449) app_init: Application information:[0m
+[0;32mI (449) app_init: Project name:     sensor_server[0m
+[0;32mI (454) app_init: App version:      deb1a3c9-dirty[0m
+[0;32mI (458) app_init: Compile time:     May 25 2025 14:13:05[0m
+[0;32mI (463) app_init: ELF file SHA256:  846f64f35...[0m
+[0;32mI (467) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (471) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (475) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (479) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFCAF70 len 00015090 (84 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (521) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (528) spi_flash: detected chip: generic[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (546) coexist: coex firmware version: e727207[0m
+[0;32mI (550) main_task: Started on CPU0[0m
+[0;32mI (560) main_task: Calling app_main()[0m
+[0;32mI (560) EXAMPLE: Initializing...[0m
+[0;32mI (570) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (580) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (580) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (590) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (600) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (600) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (690) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;33mW (1070) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1090) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1090) EXAMPLE: net_idx 0x000, addr 0x0003[0m
+[0;32mI (1090) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;33mW (1090) BOARD: led green is already off[0m
+[0;32mI (1090) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;33mW (1100) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1100) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1110) EXAMPLE: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (1120) EXAMPLE: 📛 Device name set to: NODE 1[0m
+[0;32mI (1120) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1130) Publishing Sensor Data: c0 0a 20 60 0b 4c[0m
+📢 NODE 1 PUBLISHING: Temp=16.0°C, Humidity=76%, Length=6 bytes
+[1;31mE (1140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (1140) main_task: Returned from app_main()[0m
+[0;32mI (2140) Publishing Sensor Data: c0 0a 22 60 0b 50[0m
+📢 NODE 1 PUBLISHING: Temp=17.0°C, Humidity=80%, Length=6 bytes
+[1;31mE (2140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (3140) Publishing Sensor Data: c0 0a 31 60 0b 42[0m
+📢 NODE 1 PUBLISHING: Temp=24.5°C, Humidity=66%, Length=6 bytes
+[1;31mE (3140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (4140) Publishing Sensor Data: c0 0a 1f 60 0b 30[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=48%, Length=6 bytes
+[1;31mE (4140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (5140) Publishing Sensor Data: c0 0a 3c 60 0b 3d[0m
+📢 NODE 1 PUBLISHING: Temp=30.0°C, Humidity=61%, Length=6 bytes
+[1;31mE (5140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (6140) Publishing Sensor Data: c0 0a 37 60 0b 48[0m
+📢 NODE 1 PUBLISHING: Temp=27.5°C, Humidity=72%, Length=6 bytes
+[1;31mE (6140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (7140) Publishing Sensor Data: c0 0a 27 60 0b 4f[0m
+📢 NODE 1 PUBLISHING: Temp=19.5°C, Humidity=79%, Length=6 bytes
+[1;31mE (7140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (8140) Publishing Sensor Data: c0 0a 39 60 0b 2a[0m
+📢 NODE 1 PUBLISHING: Temp=28.5°C, Humidity=42%, Length=6 bytes
+[1;31mE (8140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (9140) Publishing Sensor Data: c0 0a 38 60 0b 2a[0m
+📢 NODE 1 PUBLISHING: Temp=28.0°C, Humidity=42%, Length=6 bytes
+[1;31mE (9140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (10140) Publishing Sensor Data: c0 0a 32 60 0b 49[0m
+📢 NODE 1 PUBLISHING: Temp=25.0°C, Humidity=73%, Length=6 bytes
+[1;31mE (10140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (11140) Publishing Sensor Data: c0 0a 35 60 0b 2d[0m
+📢 NODE 1 PUBLISHING: Temp=26.5°C, Humidity=45%, Length=6 bytes
+[1;31mE (11140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (12140) Publishing Sensor Data: c0 0a 1f 60 0b 37[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=55%, Length=6 bytes
+[1;31mE (12140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (13140) Publishing Sensor Data: c0 0a 3a 60 0b 3e[0m
+📢 NODE 1 PUBLISHING: Temp=29.0°C, Humidity=62%, Length=6 bytes
+[1;31mE (13140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (14140) Publishing Sensor Data: c0 0a 26 60 0b 39[0m
+📢 NODE 1 PUBLISHING: Temp=19.0°C, Humidity=57%, Length=6 bytes
+[1;31mE (14140) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (15160) Publishing Sensor Data: c0 0a 34 60 0b 2b[0m
+📢 NODE 1 PUBLISHING: Temp=26.0°C, Humidity=43%, Length=6 bytes
+[1;31mE (15160) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (16170) Publishing Sensor Data: c0 0a 23 60 0b 3b[0m
+📢 NODE 1 PUBLISHING: Temp=17.5°C, Humidity=59%, Length=6 bytes
+[1;31mE (16170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (17170) Publishing Sensor Data: c0 0a 37 60 0b 3e[0m
+📢 NODE 1 PUBLISHING: Temp=27.5°C, Humidity=62%, Length=6 bytes
+[1;31mE (17170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (18170) Publishing Sensor Data: c0 0a 30 60 0b 43[0m
+📢 NODE 1 PUBLISHING: Temp=24.0°C, Humidity=67%, Length=6 bytes
+[1;31mE (18170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (19170) Publishing Sensor Data: c0 0a 3c 60 0b 3c[0m
+📢 NODE 1 PUBLISHING: Temp=30.0°C, Humidity=60%, Length=6 bytes
+[1;31mE (19170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;33mW (19260) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (20170) Publishing Sensor Data: c0 0a 34 60 0b 28[0m
+📢 NODE 1 PUBLISHING: Temp=26.0°C, Humidity=40%, Length=6 bytes
+[1;31mE (20170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (21170) Publishing Sensor Data: c0 0a 21 60 0b 33[0m
+📢 NODE 1 PUBLISHING: Temp=16.5°C, Humidity=51%, Length=6 bytes
+[1;31mE (21170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (22170) Publishing Sensor Data: c0 0a 2f 60 0b 43[0m
+📢 NODE 1 PUBLISHING: Temp=23.5°C, Humidity=67%, Length=6 bytes
+[1;31mE (22170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (23170) Publishing Sensor Data: c0 0a 29 60 0b 4a[0m
+📢 NODE 1 PUBLISHING: Temp=20.5°C, Humidity=74%, Length=6 bytes
+[1;31mE (23170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (24170) Publishing Sensor Data: c0 0a 21 60 0b 4e[0m
+📢 NODE 1 PUBLISHING: Temp=16.5°C, Humidity=78%, Length=6 bytes
+[1;31mE (24170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (25170) Publishing Sensor Data: c0 0a 1f 60 0b 4c[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=76%, Length=6 bytes
+[1;31mE (25170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (26170) Publishing Sensor Data: c0 0a 33 60 0b 2f[0m
+📢 NODE 1 PUBLISHING: Temp=25.5°C, Humidity=47%, Length=6 bytes
+[1;31mE (26170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (27170) Publishing Sensor Data: c0 0a 29 60 0b 3d[0m
+📢 NODE 1 PUBLISHING: Temp=20.5°C, Humidity=61%, Length=6 bytes
+[1;31mE (27170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (28170) Publishing Sensor Data: c0 0a 22 60 0b 2f[0m
+📢 NODE 1 PUBLISHING: Temp=17.0°C, Humidity=47%, Length=6 bytes
+[1;31mE (28170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (29170) Publishing Sensor Data: c0 0a 2b 60 0b 42[0m
+📢 NODE 1 PUBLISHING: Temp=21.5°C, Humidity=66%, Length=6 bytes
+[1;31mE (29170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (30170) Publishing Sensor Data: c0 0a 35 60 0b 3a[0m
+📢 NODE 1 PUBLISHING: Temp=26.5°C, Humidity=58%, Length=6 bytes
+[1;31mE (30170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (31170) Publishing Sensor Data: c0 0a 29 60 0b 28[0m
+📢 NODE 1 PUBLISHING: Temp=20.5°C, Humidity=40%, Length=6 bytes
+[1;31mE (31170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;33mW (31350) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (32170) Publishing Sensor Data: c0 0a 37 60 0b 50[0m
+📢 NODE 1 PUBLISHING: Temp=27.5°C, Humidity=80%, Length=6 bytes
+[1;31mE (32170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (33170) Publishing Sensor Data: c0 0a 34 60 0b 3c[0m
+📢 NODE 1 PUBLISHING: Temp=26.0°C, Humidity=60%, Length=6 bytes
+[1;31mE (33170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (34170) Publishing Sensor Data: c0 0a 33 60 0b 4f[0m
+📢 NODE 1 PUBLISHING: Temp=25.5°C, Humidity=79%, Length=6 bytes
+[1;31mE (34170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (35170) Publishing Sensor Data: c0 0a 20 60 0b 4f[0m
+📢 NODE 1 PUBLISHING: Temp=16.0°C, Humidity=79%, Length=6 bytes
+[1;31mE (35170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (36170) Publishing Sensor Data: c0 0a 25 60 0b 50[0m
+📢 NODE 1 PUBLISHING: Temp=18.5°C, Humidity=80%, Length=6 bytes
+[1;31mE (36170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (37170) Publishing Sensor Data: c0 0a 2a 60 0b 4e[0m
+📢 NODE 1 PUBLISHING: Temp=21.0°C, Humidity=78%, Length=6 bytes
+[1;31mE (37170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (38170) Publishing Sensor Data: c0 0a 23 60 0b 3c[0m
+📢 NODE 1 PUBLISHING: Temp=17.5°C, Humidity=60%, Length=6 bytes
+[1;31mE (38170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (39170) Publishing Sensor Data: c0 0a 27 60 0b 2a[0m
+📢 NODE 1 PUBLISHING: Temp=19.5°C, Humidity=42%, Length=6 bytes
+[1;31mE (39170) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (40170) Publishing Sensor Data: c0 0a 29 60 0b 35[0m
+📢 NODE 1 PUBLISHING: Temp=20.5°C, Humidity=53%, Length=6 bytes
+[1;31mE (40180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (41180) Publishing Sensor Data: c0 0a 1f 60 0b 3d[0m
+📢 NODE 1 PUBLISHING: Temp=15.5°C, Humidity=61%, Length=6 bytes
+[1;31mE (41180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (42180) Publishing Sensor Data: c0 0a 3c 60 0b 4f[0m
+📢 NODE 1 PUBLISHING: Temp=30.0°C, Humidity=79%, Length=6 bytes
+[1;31mE (42180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (43180) Publishing Sensor Data: c0 0a 3c 60 0b 2f[0m
+📢 NODE 1 PUBLISHING: Temp=30.0°C, Humidity=47%, Length=6 bytes
+[1;31mE (43180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;32mI (44180) Publishing Sensor Data: c0 0a 2b 60 0b 2c[0m
+📢 NODE 1 PUBLISHING: Temp=21.5°C, Humidity=44%, Length=6 bytes
+[1;31mE (44180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258
+[0;33mW (44190) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (45180) Publishing Sensor Data: c0 0a 30 60 0b 34[0m
+📢 NODE 1 PUBLISHING: Temp=24.0°C, Humidity=52%, Length=6 bytes
+[1;31mE (45180) EXAMPLE: ❌ Failed to publish Sensor Status (err 258)[0m
+❌ PUBLISH FAILED! Error: 258

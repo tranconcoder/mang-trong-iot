@@ -388,10 +388,10 @@ static void example_ble_mesh_generic_client_cb(esp_ble_mesh_generic_client_cb_ev
         break;
     case ESP_BLE_MESH_GENERIC_CLIENT_TIMEOUT_EVT:
         ESP_LOGW(TAG, "Generic client timeout event");
-        break;
+            break;
     default:
         ESP_LOGE(TAG, "Unknown Generic client event %d", event);
-        break;
+            break;
     }
 }
 

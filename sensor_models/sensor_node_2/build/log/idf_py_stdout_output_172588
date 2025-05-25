@@ -1,0 +1,147 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 11:50:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2d3cch (185292) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0003d3f4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=0003d418 vaddr=3ffbdb60 size=02c00h ( 11264) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0144h (655684) map[0m
+[0;32mI (389) esp_image: segment 4: paddr=000e016c vaddr=3ffc0760 size=02bech ( 11244) load[0m
+[0;32mI (393) esp_image: segment 5: paddr=000e2d60 vaddr=40080000 size=17af8h ( 97016) load[0m
+[0;32mI (443) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (443) boot: Disabling RNG early entropy source...[0m
+[0;32mI (453) cpu_start: Multicore app[0m
+[0;32mI (462) cpu_start: Pro cpu start user code[0m
+[0;32mI (462) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (462) app_init: Application information:[0m
+[0;32mI (462) app_init: Project name:     sensor_server[0m
+[0;32mI (466) app_init: App version:      deb1a3c9-dirty[0m
+[0;32mI (471) app_init: Compile time:     May 25 2025 14:12:30[0m
+[0;32mI (476) app_init: ELF file SHA256:  7afcf7472...[0m
+[0;32mI (480) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (484) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (488) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (492) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (496) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (502) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (507) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (517) heap_init: At 3FFCBC60 len 000143A0 (80 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (540) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (545) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (558) coexist: coex firmware version: e727207[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                              SENSOR NODE 2 STARTING                             ║
+║                            (SUBSCRIPTION RECEIVER)                              ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+
+[0;32mI (622) SENSOR_NODE_2: 🚀 Initializing Sensor Node 2 (Subscriber)...[0m
+[0;32mI (642) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (642) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (642) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (652) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (662) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (662) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (672) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (752) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1042) SENSOR_NODE_2: 🔧 All callbacks registered successfully[0m
+[0;32mI (1042) SENSOR_NODE_2: 🎯 Node 2 will monitor for SENSOR_STATUS (0x0052) messages[0m
+[0;32mI (1042) SENSOR_NODE_2: 🔧 Using Sensor Server model to receive published data[0m
+[0;32mI (1162) SENSOR_NODE_2: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1172) SENSOR_NODE_2: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1172) SENSOR_NODE_2: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (1172) SENSOR_NODE_2: 📛 Device name set to: NODE 2[0m
+[0;32mI (1182) SENSOR_NODE_2: BLE Mesh sensor node 2 (subscriber) initialized[0m
+
+✅ SENSOR NODE 2 INITIALIZATION COMPLETE!
+🔔 Ready to receive sensor data via BLE Mesh subscription
+📡 Waiting for sensor data from other nodes...
+═══════════════════════════════════════════════════════════════════════════════════
+
+[0;32mI (1222) SENSOR_NODE_2: ✅ Sensor Node 2 ready to receive sensor data via subscription![0m
+[0;32mI (1232) SENSOR_NODE_2: 📡 Device UUID: dddd[0m
+[0;32mI (1232) SENSOR_NODE_2: 🔍 Monitoring for SENSOR_STATUS messages...[0m
+[0;32mI (1242) main_task: Returned from app_main()[0m
+[0;32mI (54692) SENSOR_NODE_2: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (55582) BLE_MESH: No Health Server context provided[0m
+[0;33mW (56612) BLE_MESH: No Health Server context provided[0m
+[0;32mI (56642) SENSOR_NODE_2: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (56642) SENSOR_NODE_2: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (56642) SENSOR_NODE_2: net_idx 0x000, addr 0x0003[0m
+[0;32mI (56652) SENSOR_NODE_2: flags 0x00, iv_index 0x00000000[0m
+[0;33mW (56922) BLE_MESH: No matching AppKey[0m
+[0;33mW (57722) BLE_MESH: No matching AppKey[0m
+[0;33mW (57732) BT_APPL: gattc_conn_cb: if=4 st=0 id=4 rsn=0x13[0m
+[0;33mW (57732) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[1;31mE (57732) BT_APPL: Unknown connection ID: 3 fail sending notification[0m
+[1;31mE (57732) BT_APPL: Unknown connection ID: 3 fail sending notification[0m
+[0;33mW (57912) BLE_MESH: No matching AppKey[0m
+[0;33mW (58752) BLE_MESH: No matching AppKey[0m
+[0;33mW (58952) BLE_MESH: No matching AppKey[0m
+[0;33mW (59812) BLE_MESH: No matching AppKey[0m
+[0;33mW (59982) BLE_MESH: No matching AppKey[0m
+[0;33mW (60742) BLE_MESH: No matching AppKey[0m
+[0;33mW (60952) BLE_MESH: No matching AppKey[0m
+[0;33mW (61752) BLE_MESH: No matching AppKey[0m
+[0;33mW (61972) BLE_MESH: No matching AppKey[0m
+[0;33mW (62932) BLE_MESH: No matching AppKey[0m
+[0;33mW (63062) BLE_MESH: No matching AppKey[0m
+[0;33mW (63772) BLE_MESH: No matching AppKey[0m
+[0;33mW (63972) BLE_MESH: No matching AppKey[0m
+[0;33mW (64782) BLE_MESH: No matching AppKey[0m
+[0;33mW (65052) BLE_MESH: No matching AppKey[0m
+[0;33mW (65792) BLE_MESH: No matching AppKey[0m
+[0;33mW (66052) BLE_MESH: No matching AppKey[0m
+🔑 APP KEY ADDED!
+[0;32mI (66552) SENSOR_NODE_2: 🔑 ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (66552) SENSOR_NODE_2: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (66552) AppKey: c9 8e 5b 3e 6e 9c 65 6b 87 d9 53 25 b4 9d 7a 36[0m
+🔗 MODEL APP BIND COMPLETED!
+[0;32mI (78812) SENSOR_NODE_2: 🔗 ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (78812) SENSOR_NODE_2: elem_addr 0x0003, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+📡 SUBSCRIPTION ADDED! Group: 0xc000
+🎯 Node 2 is now subscribed and ready to receive data!
+📋 Model ID: 0x1100 (Should be 0x1100 for Sensor Server)
+🏢 Company ID: 0xffff
+[0;32mI (83882) SENSOR_NODE_2: 📡 ESP_BLE_MESH_MODEL_OP_MODEL_SUB_ADD - SUBSCRIPTION CONFIGURED![0m
+[0;32mI (83892) SENSOR_NODE_2: elem_addr 0x0003, sub_addr 0xc000, cid 0xffff, mod_id 0x1100[0m
+🔗 MODEL APP BIND COMPLETED!
+[0;32mI (87732) SENSOR_NODE_2: 🔗 ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (87732) SENSOR_NODE_2: elem_addr 0x0003, app_idx 0x0000, cid 0x02e6, mod_id 0x0000[0m
+📡 SUBSCRIPTION ADDED! Group: 0xc000
+🎯 Node 2 is now subscribed and ready to receive data!
+📋 Model ID: 0x0000 (Should be 0x1100 for Sensor Server)
+🏢 Company ID: 0x02e6
+[0;32mI (99012) SENSOR_NODE_2: 📡 ESP_BLE_MESH_MODEL_OP_MODEL_SUB_ADD - SUBSCRIPTION CONFIGURED![0m
+[0;32mI (99022) SENSOR_NODE_2: elem_addr 0x0003, sub_addr 0xc000, cid 0x02e6, mod_id 0x0000[0m
+[0;33mW (121192) BT_APPL: gattc_conn_cb: if=4 st=0 id=4 rsn=0x13[0m
+[0;33mW (121192) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m

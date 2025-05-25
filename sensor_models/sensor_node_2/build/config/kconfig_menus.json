@@ -12179,7 +12179,10 @@
                                 "help": "This value defines in seconds how soon any pending changes are actually\nwritten into persistent storage (flash) after a change occurs.\nThe option allows nodes to delay a certain period of time to save proper\ninformation to flash. The default value is 0, which means information\nwill be stored immediately once there are updates.",
                                 "id": "BLE_MESH_STORE_TIMEOUT",
                                 "name": "BLE_MESH_STORE_TIMEOUT",
-                                "range": null,
+                                "range": [
+                                    0,
+                                    1000000
+                                ],
                                 "title": "Delay (in seconds) before storing anything persistently",
                                 "type": "int"
                             },
@@ -12189,7 +12192,10 @@
                                 "help": "This value defines how often the local sequence number gets updated in\npersistent storage (i.e. flash). e.g. a value of 100 means that the\nsequence number will be stored to flash on every 100th increment.\nIf the node sends messages very frequently a higher value makes more\nsense, whereas if the node sends infrequently a value as low as 0\n(update storage for every increment) can make sense. When the stack\ngets initialized it will add sequence number to the last stored one,\nso that it starts off with a value that's guaranteed to be larger than\nthe last one used before power off.",
                                 "id": "BLE_MESH_SEQ_STORE_RATE",
                                 "name": "BLE_MESH_SEQ_STORE_RATE",
-                                "range": null,
+                                "range": [
+                                    0,
+                                    1000000
+                                ],
                                 "title": "How often the sequence number gets updated in storage",
                                 "type": "int"
                             },
@@ -12199,7 +12205,10 @@
                                 "help": "This value defines in seconds how soon the RPL (Replay Protection List)\ngets written to persistent storage after a change occurs. If the node\nreceives messages frequently, then a large value is recommended. If the\nnode receives messages rarely, then the value can be as low as 0 (which\nmeans the RPL is written into the storage immediately).\nNote that if the node operates in a security-sensitive case, and there is\na risk of sudden power-off, then a value of 0 is strongly recommended.\nOtherwise, a power loss before RPL being written into the storage may\nintroduce message replay attacks and system security will be in a\nvulnerable state.",
                                 "id": "BLE_MESH_RPL_STORE_TIMEOUT",
                                 "name": "BLE_MESH_RPL_STORE_TIMEOUT",
-                                "range": null,
+                                "range": [
+                                    0,
+                                    1000000
+                                ],
                                 "title": "Minimum frequency that the RPL gets updated in storage",
                                 "type": "int"
                             },

@@ -1,0 +1,16 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b71: panic_abort at /home/tvconss/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4008fb71: esp_system_abort at /home/tvconss/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40090952: vApplicationStackOverflowHook at /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x400919cf: vTaskSwitchContext at /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x40090a5c: _frxt_dispatch at /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x40090a0e: _frxt_int_exit at /home/tvconss/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

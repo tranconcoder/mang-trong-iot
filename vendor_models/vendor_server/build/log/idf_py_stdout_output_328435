@@ -1,0 +1,97 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2877ch (165756) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=000387a4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=000387c8 vaddr=3ffbdb60 size=054c8h ( 21704) load[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003dc98 vaddr=40080000 size=02380h (  9088) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=93198h (602520) map[0m
+[0;32mI (371) esp_image: segment 5: paddr=000d31c0 vaddr=40082380 size=15778h ( 87928) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (428) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu start user code[0m
+[0;32mI (436) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (436) app_init: Application information:[0m
+[0;32mI (436) app_init: Project name:     vendor_server[0m
+[0;32mI (441) app_init: App version:      deb1a3c9-dirty[0m
+[0;32mI (445) app_init: Compile time:     May 25 2025 15:20:34[0m
+[0;32mI (450) app_init: ELF file SHA256:  27746b045...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (458) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (462) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (466) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (470) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (481) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFCADF0 len 00015210 (84 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (502) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (515) spi_flash: detected chip: generic[0m
+[0;32mI (517) spi_flash: flash io: dio[0m
+[0;33mW (520) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (533) coexist: coex firmware version: e727207[0m
+[0;32mI (537) main_task: Started on CPU0[0m
+[0;32mI (547) main_task: Calling app_main()[0m
+[0;32mI (547) DHT_NODE: Initializing...[0m
+[0;32mI (557) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (557) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (557) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (577) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (577) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (587) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (667) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1067) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1077) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1077) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1077) main_task: Returned from app_main()[0m
+[0;32mI (7377) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (7887) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (7887) DHT_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (7887) DHT_NODE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (7897) DHT_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (7897) DHT_NODE: DHT timer started successfully[0m
+[0;33mW (7977) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (8477) DHT_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (8477) DHT_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (8477) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (8627) DHT_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (8627) DHT_NODE: elem_addr 0x0005, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (12897) DHT_NODE: Sending DHT data - Temp: 25.20°C, Humidity: 43.20%, Time: 12391 ms[0m
+[0;32mI (12897) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (12917) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (17897) DHT_NODE: Sending DHT data - Temp: 33.35°C, Humidity: 36.48%, Time: 17391 ms[0m
+[0;32mI (17897) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (17927) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (22897) DHT_NODE: Sending DHT data - Temp: 32.86°C, Humidity: 72.33%, Time: 22391 ms[0m
+[0;32mI (22897) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (22917) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (27897) DHT_NODE: Sending DHT data - Temp: 28.82°C, Humidity: 64.99%, Time: 27391 ms[0m
+[0;32mI (27897) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (27907) DHT_NODE: Send 0xc202e5[0m
