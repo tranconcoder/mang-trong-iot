@@ -1,0 +1,276 @@
+boot: Loaded app from partition at offset 0x10000
+[0;32mI (424) boot: Disabling RNG ear�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 09:04:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=298bch (170172) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=000398e4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=00039908 vaddr=3ffbdb60 size=055d8h ( 21976) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003eee8 vaddr=40080000 size=01130h (  4400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=955f8h (611832) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d5620 vaddr=40081130 size=169c8h ( 92616) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     sensor_server[0m
+[0;32mI (447) app_init: App version:      e62a9d89-dirty[0m
+[0;32mI (452) app_init: Compile time:     May 25 2025 09:03:51[0m
+[0;32mI (457) app_init: ELF file SHA256:  b6d336dd4...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAF28 len 000150D8 (84 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) coexist: coex firmware version: e727207[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (554) EXAMPLE: Initializing...[0m
+[0;32mI (564) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (584) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (584) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (594) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (674) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1064) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1074) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1074) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1074) Publishing Sensor Data: c0 0a 20 60 0b 4c[0m
+[1;31mE (1074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (1084) main_task: Returned from app_main()[0m
+[0;32mI (2084) Publishing Sensor Data: c0 0a 22 60 0b 50[0m
+[1;31mE (2084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+
+***ERROR*** A stack overflow in task publish_sens has been detected.
+
+
+Backtrace: 0x40081b71:0x3ffd3590 0x4008fb71:0x3ffd35b0 0x40090952:0x3ffd35d0 0x400919cf:0x3ffd3650 0x40090a5c:0x3ffd3670 0x40090a0e:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: b6d336dd4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 09:04:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=298bch (170172) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=000398e4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=00039908 vaddr=3ffbdb60 size=055d8h ( 21976) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003eee8 vaddr=40080000 size=01130h (  4400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=955f8h (611832) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d5620 vaddr=40081130 size=169c8h ( 92616) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     sensor_server[0m
+[0;32mI (447) app_init: App version:      e62a9d89-dirty[0m
+[0;32mI (452) app_init: Compile time:     May 25 2025 09:03:51[0m
+[0;32mI (457) app_init: ELF file SHA256:  b6d336dd4...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+I (477) heap_init: Initializing. RAM available for dynamic allocation:
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAF28 len 000150D8 (84 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) coexist: coex firmware version: e727207[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (554) EXAMPLE: Initializing...[0m
+[0;32mI (564) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (584) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (584) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (594) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (674) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1044) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1064) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1064) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1064) Publishing Sensor Data: c0 0a 20 60 0b 4c[0m
+[1;31mE (1064) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (1074) main_task: Returned from app_main()[0m
+[0;32mI (2074) Publishing Sensor Data: c0 0a 22 60 0b 50[0m
+[1;31mE (2074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (3074) Publishing Sensor Data: c0 0a 31 60 0b 42[0m
+[1;31mE (3074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (4074) Publishing Sensor Data: c0 0a 1f 60 0b 30[0m
+[1;31mE (4074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (5074) Publishing Sensor Data: c0 0a 3c 60 0b 3d[0m
+[1;31mE (5074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (6074) Publishing Sensor Data: c0 0a 37 60 0b 48[0m
+[1;31mE (6074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (7074) Publishing Sensor Data: c0 0a 27 60 0b 4f[0m
+[1;31mE (7074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (8074) Publishing Sensor Data: c0 0a 39 60 0b 2a[0m
+[1;31mE (8074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (9074) Publishing Sensor Data: c0 0a 38 60 0b 2a[0m
+[1;31mE (9074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (10074) Publishing Sensor Data: c0 0a 32 60 0b 49[0m
+[1;31mE (10074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (11074) Publishing Sensor Data: c0 0a 35 60 0b 2d[0m
+[1;31mE (11074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (12074) Publishing Sensor Data: c0 0a 1f 60 0b 37[0m
+[1;31mE (12074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (13074) Publishing Sensor Data: c0 0a 3a 60 0b 3e[0m
+[1;31mE (13074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (14074) Publishing Sensor Data: c0 0a 26 60 0b 39[0m
+[1;31mE (14074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (15074) Publishing Sensor Data: c0 0a 34 60 0b 2b[0m
+[1;31mE (15074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (16074) Publishing Sensor Data: c0 0a 23 60 0b 3b[0m
+[1;31mE (16074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (17074) Publishing Sensor Data: c0 0a 37 60 0b 3e[0m
+[1;31mE (17074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (18074) Publishing Sensor Data: c0 0a 30 60 0b 43[0m
+[1;31mE (18074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (19074) Publishing Sensor Data: c0 0a 3c 60 0b 3c[0m
+[1;31mE (19074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (20074) Publishing Sensor Data: c0 0a 34 60 0b 28[0m
+[1;31mE (20074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (21074) Publishing Sensor Data: c0 0a 21 60 0b 33[0m
+[1;31mE (21074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (22074) Publishing Sensor Data: c0 0a 2f 60 0b 43[0m
+[1;31mE (22074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (23074) Publishing Sensor Data: c0 0a 29 60 0b 4a[0m
+[1;31mE (23074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (24074) Publishing Sensor Data: c0 0a 21 60 0b 4e[0m
+[1;31mE (24074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (25074) Publishing Sensor Data: c0 0a 1f 60 0b 4c[0m
+[1;31mE (25074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (26074) Publishing Sensor Data: c0 0a 33 60 0b 2f[0m
+[1;31mE (26074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (27074) Publishing Sensor Data: c0 0a 29 60 0b 3d[0m
+[1;31mE (27074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (28074) Publishing Sensor Data: c0 0a 22 60 0b 2f[0m
+[1;31mE (28074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (29074) Publishing Sensor Data: c0 0a 2b 60 0b 42[0m
+[1;31mE (29074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (30074) Publishing Sensor Data: c0 0a 35 60 0b 3a[0m
+[1;31mE (30074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (31074) Publishing Sensor Data: c0 0a 29 60 0b 28[0m
+[1;31mE (31074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (32074) Publishing Sensor Data: c0 0a 37 60 0b 50[0m
+[1;31mE (32074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (33074) Publishing Sensor Data: c0 0a 34 60 0b 3c[0m
+[1;31mE (33074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (34074) Publishing Sensor Data: c0 0a 33 60 0b 4f[0m
+[1;31mE (34074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (35074) Publishing Sensor Data: c0 0a 20 60 0b 4f[0m
+[1;31mE (35074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (36074) Publishing Sensor Data: c0 0a 25 60 0b 50[0m
+[1;31mE (36074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (37074) Publishing Sensor Data: c0 0a 2a 60 0b 4e[0m
+[1;31mE (37074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (38074) Publishing Sensor Data: c0 0a 23 60 0b 3c[0m
+[1;31mE (38074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (39074) Publishing Sensor Data: c0 0a 27 60 0b 2a[0m
+[1;31mE (39074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (40074) Publishing Sensor Data: c0 0a 29 60 0b 35[0m
+[1;31mE (40074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (41074) Publishing Sensor Data: c0 0a 1f 60 0b 3d[0m
+[1;31mE (41074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (42074) Publishing Sensor Data: c0 0a 3c 60 0b 4f[0m
+[1;31mE (42074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (43074) Publishing Sensor Data: c0 0a 3c 60 0b 2f[0m
+[1;31mE (43074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (44074) Publishing Sensor Data: c0 0a 2b 60 0b 2c[0m
+[1;31mE (44074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (45074) Publishing Sensor Data: c0 0a 30 60 0b 34[0m
+[1;31mE (45074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (46074) Publishing Sensor Data: c0 0a 3a 60 0b 42[0m
+[1;31mE (46074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (47074) Publishing Sensor Data: c0 0a 30 60 0b 47[0m
+[1;31mE (47074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (48074) Publishing Sensor Data: c0 0a 25 60 0b 3f[0m
+[1;31mE (48074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (49074) Publishing Sensor Data: c0 0a 2e 60 0b 2e[0m
+[1;31mE (49074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (50074) Publishing Sensor Data: c0 0a 38 60 0b 42[0m
+[1;31mE (50074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (51074) Publishing Sensor Data: c0 0a 26 60 0b 31[0m
+[1;31mE (51074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (52074) Publishing Sensor Data: c0 0a 22 60 0b 36[0m
+[1;31mE (52074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (53074) Publishing Sensor Data: c0 0a 2b 60 0b 48[0m
+[1;31mE (53074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (54074) Publishing Sensor Data: c0 0a 23 60 0b 4a[0m
+[1;31mE (54074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (55074) Publishing Sensor Data: c0 0a 32 60 0b 41[0m
+[1;31mE (55074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (56074) Publishing Sensor Data: c0 0a 36 60 0b 42[0m
+[1;31mE (56074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (57074) Publishing Sensor Data: c0 0a 2c 60 0b 45[0m
+[1;31mE (57074) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
