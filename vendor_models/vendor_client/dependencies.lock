@@ -26,5 +26,5 @@ direct_dependencies:
 - example_init
 - example_nvs
 manifest_hash: 70e2f5ec13ac983058eb013a911cc6c062529d6e4c9f02ea0ffa865dfada43da
-target: esp32
+target: esp32s3
 version: 2.0.0

@@ -1,0 +1,382 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 19:04:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29900h (170240) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=00039928 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=0003994c vaddr=3ffbdb60 size=05508h ( 21768) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003ee5c vaddr=40080000 size=011bch (  4540) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9502ch (610348) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000d5054 vaddr=400811bc size=17cb8h ( 97464) load[0m
+[0;32mI (426) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (426) boot: Disabling RNG early entropy source...[0m
+[0;32mI (436) cpu_start: Multicore app[0m
+[0;32mI (445) cpu_start: Pro cpu start user code[0m
+[0;32mI (445) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (445) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     vendor_server[0m
+[0;32mI (449) app_init: App version:      b4b7e179-dirty[0m
+[0;32mI (454) app_init: Compile time:     May 25 2025 19:04:01[0m
+[0;32mI (459) app_init: ELF file SHA256:  08f227cba...[0m
+[0;32mI (463) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (467) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (471) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (475) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (479) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (485) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFCAE48 len 000151B8 (84 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (516) heap_init: At 40098E74 len 0000718C (28 KiB): IRAM[0m
+[0;32mI (523) spi_flash: detected chip: generic[0m
+[0;32mI (525) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (541) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (551) coexist: coex firmware version: e727207[0m
+[0;32mI (555) main_task: Started on CPU0[0m
+[0;32mI (565) main_task: Calling app_main()[0m
+[0;32mI (565) LDR_NODE: Initializing...[0m
+[0;32mI (575) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (575) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (575) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (585) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (595) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (595) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (605) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (685) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (965) LDR_NODE: Initializing I2C...[0m
+[0;32mI (985) LDR_NODE: Initializing LCD...[0m
+[0;32mI (1035) LDR_NODE: LCD initialized successfully[0m
+[0;32mI (1145) LDR_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1165) LDR_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1165) LDR_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1165) main_task: Returned from app_main()[0m
+[0;32mI (7545) LDR_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (8175) LDR_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (8175) LDR_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (8175) LDR_NODE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (8175) LDR_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (8185) LDR_NODE: LDR timer started successfully[0m
+[0;33mW (8225) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (9665) LDR_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (9665) LDR_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (9665) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (9895) LDR_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (9895) LDR_NODE: elem_addr 0x0005, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (11185) LDR_NODE: Sending LDR data - Light: 1115, Voltage: 0.90V, Status: Dim, Time: 10666 ms[0m
+[0;32mI (11185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (11195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (14185) LDR_NODE: Sending LDR data - Light: 3888, Voltage: 3.13V, Status: Bright, Time: 13666 ms[0m
+[0;32mI (14185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (14195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (17185) LDR_NODE: Sending LDR data - Light: 1241, Voltage: 1.00V, Status: Dim, Time: 16666 ms[0m
+[0;32mI (17185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (17195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (20185) LDR_NODE: Sending LDR data - Light: 4037, Voltage: 3.25V, Status: Bright, Time: 19666 ms[0m
+[0;32mI (20185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (20195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (23185) LDR_NODE: Sending LDR data - Light: 1089, Voltage: 0.88V, Status: Dim, Time: 22666 ms[0m
+[0;32mI (23185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (23205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (26185) LDR_NODE: Sending LDR data - Light: 3309, Voltage: 2.67V, Status: Bright, Time: 25666 ms[0m
+[0;32mI (26185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (26195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (29185) LDR_NODE: Sending LDR data - Light: 945, Voltage: 0.76V, Status: Dark, Time: 28666 ms[0m
+[0;32mI (29185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (29195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (32185) LDR_NODE: Sending LDR data - Light: 2793, Voltage: 2.25V, Status: Dim, Time: 31666 ms[0m
+[0;32mI (32185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (32195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (35185) LDR_NODE: Sending LDR data - Light: 2440, Voltage: 1.97V, Status: Dim, Time: 34666 ms[0m
+[0;32mI (35185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (35195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (38185) LDR_NODE: Sending LDR data - Light: 2759, Voltage: 2.22V, Status: Dim, Time: 37666 ms[0m
+[0;32mI (38185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (38205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (41185) LDR_NODE: Sending LDR data - Light: 1199, Voltage: 0.97V, Status: Dim, Time: 40666 ms[0m
+[0;32mI (41185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (41195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (44185) LDR_NODE: Sending LDR data - Light: 1912, Voltage: 1.54V, Status: Dim, Time: 43666 ms[0m
+[0;32mI (44185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (44195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (47185) LDR_NODE: Sending LDR data - Light: 1444, Voltage: 1.16V, Status: Dim, Time: 46666 ms[0m
+[0;32mI (47185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (47195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (50185) LDR_NODE: Sending LDR data - Light: 2370, Voltage: 1.91V, Status: Dim, Time: 49666 ms[0m
+[0;32mI (50185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (50195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (53185) LDR_NODE: Sending LDR data - Light: 779, Voltage: 0.63V, Status: Dark, Time: 52666 ms[0m
+[0;32mI (53185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (53195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (56185) LDR_NODE: Sending LDR data - Light: 2693, Voltage: 2.17V, Status: Dim, Time: 55666 ms[0m
+[0;32mI (56185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (56195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (59185) LDR_NODE: Sending LDR data - Light: 3033, Voltage: 2.44V, Status: Bright, Time: 58666 ms[0m
+[0;32mI (59185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (59195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (62185) LDR_NODE: Sending LDR data - Light: 1501, Voltage: 1.21V, Status: Dim, Time: 61666 ms[0m
+[0;32mI (62185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (62195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (65185) LDR_NODE: Sending LDR data - Light: 1857, Voltage: 1.50V, Status: Dim, Time: 64666 ms[0m
+[0;32mI (65185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (65195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (68185) LDR_NODE: Sending LDR data - Light: 3907, Voltage: 3.15V, Status: Bright, Time: 67666 ms[0m
+[0;32mI (68185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (68195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (71185) LDR_NODE: Sending LDR data - Light: 3401, Voltage: 2.74V, Status: Bright, Time: 70666 ms[0m
+[0;32mI (71185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (71195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (74185) LDR_NODE: Sending LDR data - Light: 2722, Voltage: 2.19V, Status: Dim, Time: 73666 ms[0m
+[0;32mI (74185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (74195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (77185) LDR_NODE: Sending LDR data - Light: 1324, Voltage: 1.07V, Status: Dim, Time: 76666 ms[0m
+[0;32mI (77185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (77195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (80185) LDR_NODE: Sending LDR data - Light: 306, Voltage: 0.25V, Status: Dark, Time: 79666 ms[0m
+[0;32mI (80185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (80195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (83185) LDR_NODE: Sending LDR data - Light: 2472, Voltage: 1.99V, Status: Dim, Time: 82666 ms[0m
+[0;32mI (83185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (83195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (86185) LDR_NODE: Sending LDR data - Light: 3169, Voltage: 2.55V, Status: Bright, Time: 85666 ms[0m
+[0;32mI (86185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (86195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (89185) LDR_NODE: Sending LDR data - Light: 2193, Voltage: 1.77V, Status: Dim, Time: 88666 ms[0m
+[0;32mI (89185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (89195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (92185) LDR_NODE: Sending LDR data - Light: 1023, Voltage: 0.82V, Status: Dim, Time: 91666 ms[0m
+[0;32mI (92185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (92205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (95185) LDR_NODE: Sending LDR data - Light: 3385, Voltage: 2.73V, Status: Bright, Time: 94666 ms[0m
+[0;32mI (95185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (95195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (98185) LDR_NODE: Sending LDR data - Light: 1218, Voltage: 0.98V, Status: Dim, Time: 97666 ms[0m
+[0;32mI (98185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (98195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (101185) LDR_NODE: Sending LDR data - Light: 2799, Voltage: 2.26V, Status: Dim, Time: 100666 ms[0m
+[0;32mI (101185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (101195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (104185) LDR_NODE: Sending LDR data - Light: 1627, Voltage: 1.31V, Status: Dim, Time: 103666 ms[0m
+[0;32mI (104185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (104195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (107185) LDR_NODE: Sending LDR data - Light: 3, Voltage: 0.00V, Status: Dark, Time: 106666 ms[0m
+[0;32mI (107185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (107205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (110185) LDR_NODE: Sending LDR data - Light: 1668, Voltage: 1.34V, Status: Dim, Time: 109666 ms[0m
+[0;32mI (110185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (110195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (113185) LDR_NODE: Sending LDR data - Light: 2498, Voltage: 2.01V, Status: Dim, Time: 112666 ms[0m
+[0;32mI (113185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (113195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (116185) LDR_NODE: Sending LDR data - Light: 634, Voltage: 0.51V, Status: Dark, Time: 115666 ms[0m
+[0;32mI (116185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (116195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (119185) LDR_NODE: Sending LDR data - Light: 927, Voltage: 0.75V, Status: Dark, Time: 118666 ms[0m
+[0;32mI (119185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (119195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (122185) LDR_NODE: Sending LDR data - Light: 2542, Voltage: 2.05V, Status: Dim, Time: 121666 ms[0m
+[0;32mI (122185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (122205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (125185) LDR_NODE: Sending LDR data - Light: 1154, Voltage: 0.93V, Status: Dim, Time: 124666 ms[0m
+[0;32mI (125185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (125195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (128185) LDR_NODE: Sending LDR data - Light: 1205, Voltage: 0.97V, Status: Dim, Time: 127666 ms[0m
+[0;32mI (128185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (128195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (131185) LDR_NODE: Sending LDR data - Light: 1254, Voltage: 1.01V, Status: Dim, Time: 130666 ms[0m
+[0;32mI (131185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (131195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (134185) LDR_NODE: Sending LDR data - Light: 598, Voltage: 0.48V, Status: Dark, Time: 133666 ms[0m
+[0;32mI (134185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (134195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (137185) LDR_NODE: Sending LDR data - Light: 2642, Voltage: 2.13V, Status: Dim, Time: 136666 ms[0m
+[0;32mI (137185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (137205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (140185) LDR_NODE: Sending LDR data - Light: 408, Voltage: 0.33V, Status: Dark, Time: 139666 ms[0m
+[0;32mI (140185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (140195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (143185) LDR_NODE: Sending LDR data - Light: 2590, Voltage: 2.09V, Status: Dim, Time: 142666 ms[0m
+[0;32mI (143185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (143205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (146185) LDR_NODE: Sending LDR data - Light: 789, Voltage: 0.64V, Status: Dark, Time: 145666 ms[0m
+[0;32mI (146185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (146195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (149185) LDR_NODE: Sending LDR data - Light: 751, Voltage: 0.61V, Status: Dark, Time: 148666 ms[0m
+[0;32mI (149185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (149195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (152185) LDR_NODE: Sending LDR data - Light: 2112, Voltage: 1.70V, Status: Dim, Time: 151666 ms[0m
+[0;32mI (152185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (152205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (155185) LDR_NODE: Sending LDR data - Light: 2138, Voltage: 1.72V, Status: Dim, Time: 154666 ms[0m
+[0;32mI (155185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (155195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (158185) LDR_NODE: Sending LDR data - Light: 561, Voltage: 0.45V, Status: Dark, Time: 157666 ms[0m
+[0;32mI (158185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (158205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (161185) LDR_NODE: Sending LDR data - Light: 4046, Voltage: 3.26V, Status: Bright, Time: 160666 ms[0m
+[0;32mI (161185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (161195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (164185) LDR_NODE: Sending LDR data - Light: 1143, Voltage: 0.92V, Status: Dim, Time: 163666 ms[0m
+[0;32mI (164185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (164195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (167185) LDR_NODE: Sending LDR data - Light: 331, Voltage: 0.27V, Status: Dark, Time: 166666 ms[0m
+[0;32mI (167185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (167205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (170185) LDR_NODE: Sending LDR data - Light: 787, Voltage: 0.63V, Status: Dark, Time: 169666 ms[0m
+[0;32mI (170185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (170195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (173185) LDR_NODE: Sending LDR data - Light: 2218, Voltage: 1.79V, Status: Dim, Time: 172666 ms[0m
+[0;32mI (173185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (173195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (176185) LDR_NODE: Sending LDR data - Light: 2041, Voltage: 1.64V, Status: Dim, Time: 175666 ms[0m
+[0;32mI (176185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (176195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (179185) LDR_NODE: Sending LDR data - Light: 2750, Voltage: 2.22V, Status: Dim, Time: 178666 ms[0m
+[0;32mI (179185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (179195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (182185) LDR_NODE: Sending LDR data - Light: 1321, Voltage: 1.06V, Status: Dim, Time: 181666 ms[0m
+[0;32mI (182185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (182205) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (185185) LDR_NODE: Sending LDR data - Light: 3501, Voltage: 2.82V, Status: Bright, Time: 184666 ms[0m
+[0;32mI (185185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (185195) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (188185) LDR_NODE: Sending LDR data - Light: 1032, Voltage: 0.83V, Status: Dim, Time: 187666 ms[0m
+[0;32mI (188185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (188185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (188885) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (191185) LDR_NODE: Sending LDR data - Light: 3897, Voltage: 3.14V, Status: Bright, Time: 190666 ms[0m
+[0;32mI (191185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (191195) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (192105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (194185) LDR_NODE: Sending LDR data - Light: 2575, Voltage: 2.08V, Status: Dim, Time: 193666 ms[0m
+[0;32mI (194185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (194185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (194885) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (197185) LDR_NODE: Sending LDR data - Light: 2910, Voltage: 2.35V, Status: Dim, Time: 196666 ms[0m
+[0;32mI (197185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (197205) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (198125) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (200185) LDR_NODE: Sending LDR data - Light: 75, Voltage: 0.06V, Status: Dark, Time: 199666 ms[0m
+[0;32mI (200185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (200185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (200905) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (203185) LDR_NODE: Sending LDR data - Light: 1156, Voltage: 0.93V, Status: Dim, Time: 202666 ms[0m
+[0;32mI (203185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (203205) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (204105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (206185) LDR_NODE: Sending LDR data - Light: 1139, Voltage: 0.92V, Status: Dim, Time: 205666 ms[0m
+[0;32mI (206185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (206185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (206875) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (209185) LDR_NODE: Sending LDR data - Light: 149, Voltage: 0.12V, Status: Dark, Time: 208666 ms[0m
+[0;32mI (209185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (209205) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (210105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (212185) LDR_NODE: Sending LDR data - Light: 3685, Voltage: 2.97V, Status: Bright, Time: 211666 ms[0m
+[0;32mI (212185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (212195) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (212875) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (215185) LDR_NODE: Sending LDR data - Light: 3257, Voltage: 2.62V, Status: Bright, Time: 214666 ms[0m
+[0;32mI (215185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (215195) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (216105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (218185) LDR_NODE: Sending LDR data - Light: 2141, Voltage: 1.73V, Status: Dim, Time: 217666 ms[0m
+[0;32mI (218185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (218185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (218885) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (221185) LDR_NODE: Sending LDR data - Light: 4032, Voltage: 3.25V, Status: Bright, Time: 220666 ms[0m
+[0;32mI (221185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (221195) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (222105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (224185) LDR_NODE: Sending LDR data - Light: 1115, Voltage: 0.90V, Status: Dim, Time: 223666 ms[0m
+[0;32mI (224185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (224185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (224885) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (227185) LDR_NODE: Sending LDR data - Light: 2234, Voltage: 1.80V, Status: Dim, Time: 226666 ms[0m
+[0;32mI (227185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (227205) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (228115) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (230185) LDR_NODE: Sending LDR data - Light: 1169, Voltage: 0.94V, Status: Dim, Time: 229666 ms[0m
+[0;32mI (230185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (230185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (230905) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (233185) LDR_NODE: Sending LDR data - Light: 18, Voltage: 0.01V, Status: Dark, Time: 232666 ms[0m
+[0;32mI (233185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (233205) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (234105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (236185) LDR_NODE: Sending LDR data - Light: 824, Voltage: 0.66V, Status: Dark, Time: 235666 ms[0m
+[0;32mI (236185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (236185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (236875) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (239185) LDR_NODE: Sending LDR data - Light: 549, Voltage: 0.44V, Status: Dark, Time: 238666 ms[0m
+[0;32mI (239185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (239195) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (240105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (242185) LDR_NODE: Sending LDR data - Light: 1063, Voltage: 0.86V, Status: Dim, Time: 241666 ms[0m
+[0;32mI (242185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (242195) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (242875) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (245185) LDR_NODE: Sending LDR data - Light: 1166, Voltage: 0.94V, Status: Dim, Time: 244666 ms[0m
+[0;32mI (245185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (245195) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (246105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (248185) LDR_NODE: Sending LDR data - Light: 324, Voltage: 0.26V, Status: Dark, Time: 247666 ms[0m
+[0;32mI (248185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (248185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (248885) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (251185) LDR_NODE: Sending LDR data - Light: 763, Voltage: 0.61V, Status: Dark, Time: 250666 ms[0m
+[0;32mI (251185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (251195) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (252105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (254185) LDR_NODE: Sending LDR data - Light: 3710, Voltage: 2.99V, Status: Bright, Time: 253666 ms[0m
+[0;32mI (254185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (254185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (254885) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (257185) LDR_NODE: Sending LDR data - Light: 2579, Voltage: 2.08V, Status: Dim, Time: 256666 ms[0m
+[0;32mI (257185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (257205) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (258115) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (260185) LDR_NODE: Sending LDR data - Light: 1105, Voltage: 0.89V, Status: Dim, Time: 259666 ms[0m
+[0;32mI (260185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (260185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (260905) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (263185) LDR_NODE: Sending LDR data - Light: 1512, Voltage: 1.22V, Status: Dim, Time: 262666 ms[0m
+[0;32mI (263185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (263205) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (264105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (266185) LDR_NODE: Sending LDR data - Light: 2182, Voltage: 1.76V, Status: Dim, Time: 265666 ms[0m
+[0;32mI (266185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (266185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (266875) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (269185) LDR_NODE: Sending LDR data - Light: 3444, Voltage: 2.78V, Status: Bright, Time: 268666 ms[0m
+[0;32mI (269185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (269195) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (270105) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (272185) LDR_NODE: Sending LDR data - Light: 1927, Voltage: 1.55V, Status: Dim, Time: 271666 ms[0m
+[0;32mI (272185) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (272185) LDR_NODE: Send 0xc302e5[0m
+[0;33mW (272875) BLE_MESH: Ran out of retransmit attempts[0m

@@ -16,6 +16,9 @@
 #include "esp_bt.h"
 #include "esp_timer.h"
 #include "esp_random.h"
+#include "driver/i2c.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 
 #include "esp_ble_mesh_defs.h"
 #include "esp_ble_mesh_common_api.h"
@@ -36,10 +39,32 @@
 
 #define ESP_BLE_MESH_VND_MODEL_OP_SEND      ESP_BLE_MESH_MODEL_OP_3(0x00, CID_ESP)
 #define ESP_BLE_MESH_VND_MODEL_OP_STATUS    ESP_BLE_MESH_MODEL_OP_3(0x01, CID_ESP)
+#define ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA  ESP_BLE_MESH_MODEL_OP_3(0x02, CID_ESP)
 #define ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA  ESP_BLE_MESH_MODEL_OP_3(0x03, CID_ESP)
 
 #define LDR_SEND_INTERVAL_MS    3000  // Send LDR data every 3 seconds
 #define TARGET_NODE_ADDR        0x0001  // Address of the target node (client/provisioner)
+
+// I2C LCD Configuration
+#define I2C_MASTER_SCL_IO           22    /*!< GPIO number used for I2C master clock */
+#define I2C_MASTER_SDA_IO           21    /*!< GPIO number used for I2C master data  */
+#define I2C_MASTER_NUM              0     /*!< I2C master i2c port number, the number of i2c peripheral interfaces available will depend on the chip */
+#define I2C_MASTER_FREQ_HZ          100000                     /*!< I2C master clock frequency */
+#define I2C_MASTER_TX_BUF_DISABLE   0                          /*!< I2C master doesn't need buffer */
+#define I2C_MASTER_RX_BUF_DISABLE   0                          /*!< I2C master doesn't need buffer */
+#define I2C_MASTER_TIMEOUT_MS       1000
+
+// LCD 1602 I2C Configuration
+#define LCD_ADDR                    0x27  // Common I2C address for LCD1602 with I2C backpack
+#define LCD_COLS                    16
+#define LCD_ROWS                    2
+
+// DHT sensor data structure (must match server)
+typedef struct {
+    float temperature;
+    float humidity;
+    uint32_t timestamp;
+} dht_data_t;
 
 // LDR sensor data structure
 typedef struct {
@@ -51,9 +76,11 @@ typedef struct {
 
 static uint8_t dev_uuid[ESP_BLE_MESH_OCTET16_LEN] = { 0x33, 0x11 };
 static esp_timer_handle_t ldr_timer;
+static esp_timer_handle_t lcd_test_timer;
 static bool is_provisioned = false;
 static uint16_t net_idx = 0;
 static uint16_t app_idx = 0;
+static uint16_t my_addr = 0; // Store our own address
 
 static esp_ble_mesh_cfg_srv_t config_server = {
     /* 3 transmissions with 20ms interval */
@@ -80,6 +107,7 @@ static esp_ble_mesh_model_t root_models[] = {
 
 static esp_ble_mesh_model_op_t vnd_op[] = {
     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_SEND, 2),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA, sizeof(dht_data_t)),
     ESP_BLE_MESH_MODEL_OP_END,
 };
 
@@ -87,6 +115,22 @@ static esp_ble_mesh_model_t vnd_models[] = {
     ESP_BLE_MESH_VENDOR_MODEL(CID_ESP, ESP_BLE_MESH_VND_MODEL_ID_SERVER,
     vnd_op, NULL, NULL),
 };
+
+// Global variables for received DHT data
+static float last_temperature = 0.0;
+static float last_humidity = 0.0;
+static bool dht_data_received = false;
+
+// Forward declarations
+static esp_err_t i2c_master_init(void);
+static esp_err_t lcd_init(void);
+static void lcd_clear(void);
+static void lcd_set_cursor(uint8_t col, uint8_t row);
+static void lcd_print(const char* str);
+static void lcd_write_cmd(uint8_t cmd);
+static void lcd_write_data(uint8_t data);
+static void lcd_write_nibble(uint8_t nibble, uint8_t rs);
+static void update_lcd_display(void);
 
 // LDR simulation functions
 static ldr_data_t simulate_ldr_reading(void)
@@ -149,6 +193,29 @@ static void ldr_timer_callback(void* arg)
     send_ldr_data();
 }
 
+static void lcd_test_timer_callback(void* arg)
+{
+    static int counter = 0;
+    counter++;
+    
+    ESP_LOGI(TAG, "LCD test update #%d", counter);
+    
+    if (!dht_data_received) {
+        // Update LCD with test message if no DHT data received
+        char line1[17], line2[17];
+        snprintf(line1, sizeof(line1), "Test #%d", counter);
+        snprintf(line2, sizeof(line2), "Addr: 0x%04X", my_addr);
+        
+        lcd_clear();
+        lcd_set_cursor(0, 0);
+        lcd_print(line1);
+        lcd_set_cursor(0, 1);
+        lcd_print(line2);
+        
+        ESP_LOGI(TAG, "LCD updated with test message");
+    }
+}
+
 static esp_ble_mesh_elem_t elements[] = {
     ESP_BLE_MESH_ELEMENT(0, root_models, vnd_models),
 };
@@ -165,10 +232,14 @@ static esp_ble_mesh_prov_t provision = {
 
 static void prov_complete(uint16_t net_idx_param, uint16_t addr, uint8_t flags, uint32_t iv_index)
 {
+    ESP_LOGI(TAG, "=== PROVISIONING COMPLETE ===");
     ESP_LOGI(TAG, "net_idx 0x%03x, addr 0x%04x", net_idx_param, addr);
     ESP_LOGI(TAG, "flags 0x%02x, iv_index 0x%08" PRIx32, flags, iv_index);
+    ESP_LOGI(TAG, "My address is: 0x%04x", addr);
+    ESP_LOGI(TAG, "=============================");
     
     net_idx = net_idx_param;
+    my_addr = addr; // Store our address
     is_provisioned = true;
     
     board_led_operation(LED_G, LED_OFF);
@@ -189,6 +260,24 @@ static void prov_complete(uint16_t net_idx_param, uint16_t addr, uint8_t flags, 
         }
     } else {
         ESP_LOGE(TAG, "Failed to create LDR timer: %s", esp_err_to_name(err));
+    }
+
+    // Start LCD test timer
+    esp_timer_create_args_t lcd_test_timer_args = {
+        .callback = lcd_test_timer_callback,
+        .name = "lcd_test_timer"
+    };
+    
+    err = esp_timer_create(&lcd_test_timer_args, &lcd_test_timer);
+    if (err == ESP_OK) {
+        err = esp_timer_start_periodic(lcd_test_timer, 5000000); // Convert to microseconds (5 seconds)
+        if (err == ESP_OK) {
+            ESP_LOGI(TAG, "LCD test timer started successfully");
+        } else {
+            ESP_LOGE(TAG, "Failed to start LCD test timer: %s", esp_err_to_name(err));
+        }
+    } else {
+        ESP_LOGE(TAG, "Failed to create LCD test timer: %s", esp_err_to_name(err));
     }
 }
 
@@ -222,6 +311,11 @@ static void example_ble_mesh_provisioning_cb(esp_ble_mesh_prov_cb_event_t event,
             esp_timer_stop(ldr_timer);
             esp_timer_delete(ldr_timer);
             ldr_timer = NULL;
+        }
+        if (lcd_test_timer) {
+            esp_timer_stop(lcd_test_timer);
+            esp_timer_delete(lcd_test_timer);
+            lcd_test_timer = NULL;
         }
         is_provisioned = false;
         break;
@@ -267,6 +361,9 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
 {
     switch (event) {
     case ESP_BLE_MESH_MODEL_OPERATION_EVT:
+        ESP_LOGI(TAG, "Received message with opcode: 0x%06" PRIx32 ", length: %d", 
+                 param->model_operation.opcode, param->model_operation.length);
+        
         if (param->model_operation.opcode == ESP_BLE_MESH_VND_MODEL_OP_SEND) {
             uint16_t tid = *(uint16_t *)param->model_operation.msg;
             ESP_LOGI(TAG, "Recv 0x%06" PRIx32 ", tid 0x%04x", param->model_operation.opcode, tid);
@@ -276,6 +373,30 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
             if (err) {
                 ESP_LOGE(TAG, "Failed to send message 0x%06x", ESP_BLE_MESH_VND_MODEL_OP_STATUS);
             }
+        } else if (param->model_operation.opcode == ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA) {
+            ESP_LOGI(TAG, "DHT data received!");
+            if (param->model_operation.length == sizeof(dht_data_t)) {
+                dht_data_t *dht_data = (dht_data_t *)param->model_operation.msg;
+                ESP_LOGI(TAG, "=== DHT Data Received ===");
+                ESP_LOGI(TAG, "Temperature: %.2f°C", dht_data->temperature);
+                ESP_LOGI(TAG, "Humidity: %.2f%%", dht_data->humidity);
+                ESP_LOGI(TAG, "Timestamp: %lu ms", dht_data->timestamp);
+                ESP_LOGI(TAG, "From address: 0x%04x", param->model_operation.ctx->addr);
+                ESP_LOGI(TAG, "========================");
+                
+                // Store the received DHT data
+                last_temperature = dht_data->temperature;
+                last_humidity = dht_data->humidity;
+                dht_data_received = true;
+                
+                // Update LCD display with new DHT data
+                update_lcd_display();
+            } else {
+                ESP_LOGW(TAG, "Received DHT data with incorrect length: %d (expected %d)",
+                         param->model_operation.length, sizeof(dht_data_t));
+            }
+        } else {
+            ESP_LOGW(TAG, "Unknown opcode received: 0x%06" PRIx32, param->model_operation.opcode);
         }
         break;
     case ESP_BLE_MESH_MODEL_SEND_COMP_EVT:
@@ -317,6 +438,121 @@ static esp_err_t ble_mesh_init(void)
     return ESP_OK;
 }
 
+// I2C LCD Driver Functions
+static esp_err_t i2c_master_init(void)
+{
+    int i2c_master_port = I2C_MASTER_NUM;
+
+    i2c_config_t conf = {
+        .mode = I2C_MODE_MASTER,
+        .sda_io_num = I2C_MASTER_SDA_IO,
+        .scl_io_num = I2C_MASTER_SCL_IO,
+        .sda_pullup_en = GPIO_PULLUP_ENABLE,
+        .scl_pullup_en = GPIO_PULLUP_ENABLE,
+        .master.clk_speed = I2C_MASTER_FREQ_HZ,
+    };
+
+    i2c_param_config(i2c_master_port, &conf);
+
+    return i2c_driver_install(i2c_master_port, conf.mode, I2C_MASTER_RX_BUF_DISABLE, I2C_MASTER_TX_BUF_DISABLE, 0);
+}
+
+static void lcd_write_nibble(uint8_t nibble, uint8_t rs)
+{
+    uint8_t data = nibble | 0x08; // Enable backlight
+    if (rs) data |= 0x01; // Set RS bit if needed
+    
+    // Write with E high
+    data |= 0x04;
+    i2c_master_write_to_device(I2C_MASTER_NUM, LCD_ADDR, &data, 1, I2C_MASTER_TIMEOUT_MS / portTICK_PERIOD_MS);
+    vTaskDelay(pdMS_TO_TICKS(1));
+    
+    // Write with E low
+    data &= ~0x04;
+    i2c_master_write_to_device(I2C_MASTER_NUM, LCD_ADDR, &data, 1, I2C_MASTER_TIMEOUT_MS / portTICK_PERIOD_MS);
+    vTaskDelay(pdMS_TO_TICKS(1));
+}
+
+static void lcd_write_cmd(uint8_t cmd)
+{
+    lcd_write_nibble(cmd & 0xF0, 0);
+    lcd_write_nibble((cmd << 4) & 0xF0, 0);
+    vTaskDelay(pdMS_TO_TICKS(2));
+}
+
+static void lcd_write_data(uint8_t data)
+{
+    lcd_write_nibble(data & 0xF0, 1);
+    lcd_write_nibble((data << 4) & 0xF0, 1);
+    vTaskDelay(pdMS_TO_TICKS(2));
+}
+
+static esp_err_t lcd_init(void)
+{
+    vTaskDelay(pdMS_TO_TICKS(50)); // Wait for LCD to power up
+    
+    // Initialize in 4-bit mode
+    lcd_write_nibble(0x30, 0);
+    vTaskDelay(pdMS_TO_TICKS(5));
+    lcd_write_nibble(0x30, 0);
+    vTaskDelay(pdMS_TO_TICKS(1));
+    lcd_write_nibble(0x30, 0);
+    vTaskDelay(pdMS_TO_TICKS(1));
+    lcd_write_nibble(0x20, 0); // Set to 4-bit mode
+    
+    // Function set: 4-bit, 2 lines, 5x8 dots
+    lcd_write_cmd(0x28);
+    // Display control: display on, cursor off, blink off
+    lcd_write_cmd(0x0C);
+    // Clear display
+    lcd_write_cmd(0x01);
+    vTaskDelay(pdMS_TO_TICKS(2));
+    // Entry mode: increment cursor, no shift
+    lcd_write_cmd(0x06);
+    
+    ESP_LOGI(TAG, "LCD initialized successfully");
+    return ESP_OK;
+}
+
+static void lcd_clear(void)
+{
+    lcd_write_cmd(0x01);
+    vTaskDelay(pdMS_TO_TICKS(2));
+}
+
+static void lcd_set_cursor(uint8_t col, uint8_t row)
+{
+    uint8_t address = (row == 0) ? 0x80 : 0xC0;
+    address += col;
+    lcd_write_cmd(address);
+}
+
+static void lcd_print(const char* str)
+{
+    while (*str) {
+        lcd_write_data(*str++);
+    }
+}
+
+static void update_lcd_display(void)
+{
+    char line1[17], line2[17];
+    
+    if (dht_data_received) {
+        snprintf(line1, sizeof(line1), "Temp: %.1fC", last_temperature);
+        snprintf(line2, sizeof(line2), "Humi: %.1f%%", last_humidity);
+    } else {
+        snprintf(line1, sizeof(line1), "Waiting for");
+        snprintf(line2, sizeof(line2), "DHT data...");
+    }
+    
+    lcd_clear();
+    lcd_set_cursor(0, 0);
+    lcd_print(line1);
+    lcd_set_cursor(0, 1);
+    lcd_print(line2);
+}
+
 void app_main(void)
 {
     esp_err_t err;
@@ -338,6 +574,24 @@ void app_main(void)
         return;
     }
 
+    // Initialize I2C and LCD
+    ESP_LOGI(TAG, "Initializing I2C...");
+    err = i2c_master_init();
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "I2C initialization failed: %s", esp_err_to_name(err));
+        return;
+    }
+
+    ESP_LOGI(TAG, "Initializing LCD...");
+    err = lcd_init();
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "LCD initialization failed: %s", esp_err_to_name(err));
+        return;
+    }
+
+    // Display initial message
+    update_lcd_display();
+
     ble_mesh_get_dev_uuid(dev_uuid);
 
     /* Initialize the Bluetooth Mesh Subsystem */
@@ -346,3 +600,4 @@ void app_main(void)
         ESP_LOGE(TAG, "Bluetooth mesh init failed (err %d)", err);
     }
 }
+

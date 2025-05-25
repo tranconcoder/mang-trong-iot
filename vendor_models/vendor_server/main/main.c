@@ -42,6 +42,7 @@
 
 #define DHT_SEND_INTERVAL_MS    5000  // Send DHT data every 5 seconds
 #define TARGET_NODE_ADDR        0x0001  // Address of the target node (client/provisioner)
+#define LDR_NODE_ADDR           0x0003  // Address of the LDR node (vendor_server_2)
 #define MSG_SEND_TTL            3
 #define MSG_TIMEOUT             0
 
@@ -150,10 +151,11 @@ static void send_dht_data(void)
     
     ESP_LOGI(TAG, "Sending DHT data - Temp: %.2f°C, Humidity: %.2f%%, Time: %lu ms", 
              dht_data.temperature, dht_data.humidity, dht_data.timestamp);
-    ESP_LOGI(TAG, "Opcode: 0x%06x, Size: %d bytes, Target: 0x%04x", 
-             ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA, sizeof(dht_data_t), TARGET_NODE_ADDR);
+    ESP_LOGI(TAG, "Opcode: 0x%06x, Size: %d bytes", 
+             ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA, sizeof(dht_data_t));
     
-    esp_ble_mesh_msg_ctx_t ctx = {
+    // Send to client/provisioner (TARGET_NODE_ADDR)
+    esp_ble_mesh_msg_ctx_t ctx1 = {
         .net_idx = net_idx,
         .app_idx = app_idx,
         .addr = TARGET_NODE_ADDR,
@@ -161,11 +163,31 @@ static void send_dht_data(void)
         .send_rel = false,
     };
     
-    esp_err_t err = esp_ble_mesh_server_model_send_msg(&vnd_models[0], &ctx, 
+    esp_err_t err = esp_ble_mesh_server_model_send_msg(&vnd_models[0], &ctx1, 
                                                        ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA,
                                                        sizeof(dht_data_t), (uint8_t *)&dht_data);
     if (err != ESP_OK) {
-        ESP_LOGE(TAG, "Failed to send DHT data: %s", esp_err_to_name(err));
+        ESP_LOGE(TAG, "Failed to send DHT data to client: %s", esp_err_to_name(err));
+    } else {
+        ESP_LOGI(TAG, "DHT data sent to client (0x%04x)", TARGET_NODE_ADDR);
+    }
+    
+    // Send to all nodes using broadcast address
+    esp_ble_mesh_msg_ctx_t ctx2 = {
+        .net_idx = net_idx,
+        .app_idx = app_idx,
+        .addr = ESP_BLE_MESH_ADDR_ALL_NODES, // Broadcast to all nodes
+        .send_ttl = 3,
+        .send_rel = false,
+    };
+    
+    err = esp_ble_mesh_server_model_send_msg(&vnd_models[0], &ctx2, 
+                                             ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA,
+                                             sizeof(dht_data_t), (uint8_t *)&dht_data);
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to broadcast DHT data: %s", esp_err_to_name(err));
+    } else {
+        ESP_LOGI(TAG, "DHT data broadcasted to all nodes");
     }
 }
 
