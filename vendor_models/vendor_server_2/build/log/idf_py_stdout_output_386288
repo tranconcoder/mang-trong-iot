@@ -1,0 +1,118 @@
+�X��from partition at offset 0�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 25 2025 15:47:13[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=2aaf0h (174832) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0003ab18 vaddr=3fc99200 size=04a58h ( 19032) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0003f578 vaddr=40374000 size=00aa0h (  2720) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=99b3ch (629564) map[0m
+[0;32mI (242) esp_image: segment 4: paddr=000d9b64 vaddr=40374aa0 size=146cch ( 83660) load[0m
+[0;32mI (260) esp_image: segment 5: paddr=000ee238 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (269) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (269) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Multicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (288) app_init: Project name:     vendor_server[0m
+[0;32mI (292) app_init: App version:      e6b9eda6-dirty[0m
+[0;32mI (297) app_init: Compile time:     May 25 2025 15:47:00[0m
+[0;32mI (302) app_init: ELF file SHA256:  ffba690d0...[0m
+[0;32mI (306) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (310) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (314) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (318) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (322) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (328) heap_init: At 3FCA50F0 len 00044620 (273 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (344) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (350) spi_flash: detected chip: boya[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (368) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (374) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (381) coexist: coex firmware version: e727207[0m
+[0;32mI (399) coexist: coexist rom version e7ae62f[0m
+[0;32mI (400) main_task: Started on CPU0[0m
+[0;32mI (410) main_task: Calling app_main()[0m
+[0;32mI (410) LDR_NODE: Initializing...[0m
+[0;32mI (420) gpio: GPIO[47]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) gpio: GPIO[47]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) gpio: GPIO[47]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (430) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (440) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (440) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (450) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (480) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (600) LDR_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (610) LDR_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (610) LDR_NODE: BLE Mesh Node initialized[0m
+[0;32mI (610) main_task: Returned from app_main()[0m
+[0;32mI (2200) LDR_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (2720) LDR_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (2730) LDR_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (2730) LDR_NODE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (2730) LDR_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (2740) LDR_NODE: LDR timer started successfully[0m
+[0;33mW (2770) BT_HCI: hcif disc complete: hdl 0x2, rsn 0x13[0m
+[0;32mI (3490) LDR_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (3490) LDR_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (3490) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (3820) LDR_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (3830) LDR_NODE: elem_addr 0x0005, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (5740) LDR_NODE: Sending LDR data - Light: 3774, Voltage: 3.04V, Status: Bright, Time: 5389 ms[0m
+[0;32mI (5740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (5750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (8740) LDR_NODE: Sending LDR data - Light: 1645, Voltage: 1.33V, Status: Dim, Time: 8389 ms[0m
+[0;32mI (8740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (8750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (11740) LDR_NODE: Sending LDR data - Light: 63, Voltage: 0.05V, Status: Dark, Time: 11389 ms[0m
+[0;32mI (11740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (11750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (14740) LDR_NODE: Sending LDR data - Light: 1697, Voltage: 1.37V, Status: Dim, Time: 14389 ms[0m
+[0;32mI (14740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (14750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (17740) LDR_NODE: Sending LDR data - Light: 500, Voltage: 0.40V, Status: Dark, Time: 17389 ms[0m
+[0;32mI (17740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (17750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (20740) LDR_NODE: Sending LDR data - Light: 1939, Voltage: 1.56V, Status: Dim, Time: 20389 ms[0m
+[0;32mI (20740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (20750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (23740) LDR_NODE: Sending LDR data - Light: 3904, Voltage: 3.15V, Status: Bright, Time: 23389 ms[0m
+[0;32mI (23740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (23750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (26740) LDR_NODE: Sending LDR data - Light: 1803, Voltage: 1.45V, Status: Dim, Time: 26389 ms[0m
+[0;32mI (26740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (26750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (29740) LDR_NODE: Sending LDR data - Light: 417, Voltage: 0.34V, Status: Dark, Time: 29389 ms[0m
+[0;32mI (29740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (29750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (32740) LDR_NODE: Sending LDR data - Light: 2738, Voltage: 2.21V, Status: Dim, Time: 32389 ms[0m
+[0;32mI (32740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (32750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (35740) LDR_NODE: Sending LDR data - Light: 1381, Voltage: 1.11V, Status: Dim, Time: 35389 ms[0m
+[0;32mI (35740) LDR_NODE: Opcode: 0xc302e5, Size: 16 bytes, Target: 0x0001[0m
+[0;32mI (35750) LDR_NODE: Send 0xc302e5[0m
+[0;32mI (38740) LDR_NODE: Sending LDR data - Light: 1318, Voltage:

@@ -1,0 +1,72 @@
+[1/5] cd /home/tvconss/Workspace/mang-trong-iot/vendor_models/vendor_server/build/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/tvconss/Workspace/mang-trong-iot/vendor_models/vendor_server/build/partition_table/partition-table.bin /home/tvconss/Workspace/mang-trong-iot/vendor_models/vendor_server/build/vendor_server.bin
+vendor_server.bin binary size 0xd8960 bytes. Smallest app partition is 0x177000 bytes. 0x9e6a0 bytes (42%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/tvconss/Workspace/mang-trong-iot/vendor_models/vendor_server/build/bootloader/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/tvconss/Workspace/mang-trong-iot/vendor_models/vendor_server/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/tvconss/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/tvconss/esp/esp-idf -D "SERIAL_TOOL=/home/tvconss/.espressif/python_env/idf5.4_py3.12_env/bin/python;;/home/tvconss/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/tvconss/Workspace/mang-trong-iot/vendor_models/vendor_server/build -P /home/tvconss/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 vendor_server.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c8:2e:18:25:e0:80
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000e8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25984 bytes to 16377...
+Writing at 0x00001000... (100 %)
+Wrote 25984 bytes (16377 compressed) at 0x00001000 in 0.4 seconds (effective 467.2 kbit/s)...
+Hash of data verified.
+Compressed 887136 bytes to 510031...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d861... (6 %)
+Writing at 0x0002ce30... (9 %)
+Writing at 0x00037cd0... (12 %)
+Writing at 0x00041e25... (15 %)
+Writing at 0x000478b1... (18 %)
+Writing at 0x0004da87... (21 %)
+Writing at 0x000533ea... (25 %)
+Writing at 0x00058ebb... (28 %)
+Writing at 0x0005e9fa... (31 %)
+Writing at 0x000654df... (34 %)
+Writing at 0x0006b342... (37 %)
+Writing at 0x00071783... (40 %)
+Writing at 0x000778f0... (43 %)
+Writing at 0x0007d99f... (46 %)
+Writing at 0x00083b41... (50 %)
+Writing at 0x00089b63... (53 %)
+Writing at 0x0008fa3e... (56 %)
+Writing at 0x000958c6... (59 %)
+Writing at 0x0009be11... (62 %)
+Writing at 0x000a1bb3... (65 %)
+Writing at 0x000a7496... (68 %)
+Writing at 0x000ad1e1... (71 %)
+Writing at 0x000b3419... (75 %)
+Writing at 0x000b93e1... (78 %)
+Writing at 0x000bfb67... (81 %)
+Writing at 0x000c9688... (84 %)
+Writing at 0x000d0534... (87 %)
+Writing at 0x000d638c... (90 %)
+Writing at 0x000dbb58... (93 %)
+Writing at 0x000e168c... (96 %)
+Writing at 0x000e7a9c... (100 %)
+Wrote 887136 bytes (510031 compressed) at 0x00010000 in 10.4 seconds (effective 684.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 1726.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

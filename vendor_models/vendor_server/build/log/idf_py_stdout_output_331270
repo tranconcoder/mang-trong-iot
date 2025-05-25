@@ -239,4 +239,722 @@ entry 0x4008063c
 [0;32mI (18097) DHT_NODE: Sending DHT data - Temp: 30.51°C, Humidity: 69.95%, Time: 17591 ms[0m
 [0;32mI (18097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
 [0;32mI (18107) DHT_NODE: Send 0xc202e5[0m
-[0;32mI (23097) DHT_NODE: Se
+[0;32mI (23097) DHT_NODE: Sending DHT data - Temp: 29.30°C, Humidity: 55.88%, Time: 22591 ms[0m
+[0;32mI (23097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (23117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (28097) DHT_NODE: Sending DHT data - Temp: 22.74°C, Humidity: 68.76%, Time: 27591 ms[0m
+[0;32mI (28097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (28117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (33097) DHT_NODE: Sending DHT data - Temp: 28.35°C, Humidity: 62.15%, Time: 32591 ms[0m
+[0;32mI (33097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (33117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (38097) DHT_NODE: Sending DHT data - Temp: 33.05°C, Humidity: 30.06%, Time: 37591 ms[0m
+[0;32mI (38097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (38117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (43097) DHT_NODE: Sending DHT data - Temp: 28.60°C, Humidity: 56.07%, Time: 42591 ms[0m
+[0;32mI (43097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (43117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (48097) DHT_NODE: Sending DHT data - Temp: 33.85°C, Humidity: 67.21%, Time: 47591 ms[0m
+[0;32mI (48097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (48117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (53097) DHT_NODE: Sending DHT data - Temp: 26.87°C, Humidity: 62.54%, Time: 52591 ms[0m
+[0;32mI (53097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (53117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (58097) DHT_NODE: Sending DHT data - Temp: 31.81°C, Humidity: 54.22%, Time: 57591 ms[0m
+[0;32mI (58097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (58117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (63097) DHT_NODE: Sending DHT data - Temp: 23.56°C, Humidity: 47.40%, Time: 62591 ms[0m
+[0;32mI (63097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (63117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (68097) DHT_NODE: Sending DHT data - Temp: 27.04°C, Humidity: 68.68%, Time: 67591 ms[0m
+[0;32mI (68097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (68117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (73097) DHT_NODE: Sending DHT data - Temp: 32.60°C, Humidity: 47.38%, Time: 72591 ms[0m
+[0;32mI (73097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (73117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (78097) DHT_NODE: Sending DHT data - Temp: 20.64°C, Humidity: 47.63%, Time: 77591 ms[0m
+[0;32mI (78097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (78117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (83097) DHT_NODE: Sending DHT data - Temp: 31.40°C, Humidity: 51.07%, Time: 82591 ms[0m
+[0;32mI (83097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (83117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (88097) DHT_NODE: Sending DHT data - Temp: 22.11°C, Humidity: 49.58%, Time: 87591 ms[0m
+[0;32mI (88097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (88117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (93097) DHT_NODE: Sending DHT data - Temp: 27.13°C, Humidity: 37.18%, Time: 92591 ms[0m
+[0;32mI (93097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (93117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (98097) DHT_NODE: Sending DHT data - Temp: 30.71°C, Humidity: 78.91%, Time: 97591 ms[0m
+[0;32mI (98097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (98117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (103097) DHT_NODE: Sending DHT data - Temp: 29.68°C, Humidity: 51.93%, Time: 102591 ms[0m
+[0;32mI (103097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (103117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (108097) DHT_NODE: Sending DHT data - Temp: 34.93°C, Humidity: 53.04%, Time: 107591 ms[0m
+[0;32mI (108097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (108117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (113097) DHT_NODE: Sending DHT data - Temp: 29.63°C, Humidity: 73.45%, Time: 112591 ms[0m
+[0;32mI (113097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (113117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (118097) DHT_NODE: Sending DHT data - Temp: 29.54°C, Humidity: 78.33%, Time: 117591 ms[0m
+[0;32mI (118097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (118117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (123097) DHT_NODE: Sending DHT data - Temp: 22.17°C, Humidity: 52.21%, Time: 122591 ms[0m
+[0;32mI (123097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (123117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (128097) DHT_NODE: Sending DHT data - Temp: 24.07°C, Humidity: 77.87%, Time: 127591 ms[0m
+[0;32mI (128097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (128117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (133097) DHT_NODE: Sending DHT data - Temp: 32.73°C, Humidity: 73.57%, Time: 132591 ms[0m
+[0;32mI (133097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (133117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (138097) DHT_NODE: Sending DHT data - Temp: 23.23°C, Humidity: 66.44%, Time: 137591 ms[0m
+[0;32mI (138097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (138117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (143097) DHT_NODE: Sending DHT data - Temp: 23.21°C, Humidity: 59.75%, Time: 142591 ms[0m
+[0;32mI (143097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (143117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (148097) DHT_NODE: Sending DHT data - Temp: 24.46°C, Humidity: 77.50%, Time: 147591 ms[0m
+[0;32mI (148097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (148117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (153097) DHT_NODE: Sending DHT data - Temp: 22.83°C, Humidity: 68.03%, Time: 152591 ms[0m
+[0;32mI (153097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (153117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (158097) DHT_NODE: Sending DHT data - Temp: 21.99°C, Humidity: 48.64%, Time: 157591 ms[0m
+[0;32mI (158097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (158117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (163097) DHT_NODE: Sending DHT data - Temp: 31.91°C, Humidity: 41.55%, Time: 162591 ms[0m
+[0;32mI (163097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (163117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (168097) DHT_NODE: Sending DHT data - Temp: 29.99°C, Humidity: 51.67%, Time: 167591 ms[0m
+[0;32mI (168097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (168117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (173097) DHT_NODE: Sending DHT data - Temp: 32.04°C, Humidity: 48.14%, Time: 172591 ms[0m
+[0;32mI (173097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (173117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (178097) DHT_NODE: Sending DHT data - Temp: 20.71°C, Humidity: 32.66%, Time: 177591 ms[0m
+[0;32mI (178097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (178117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (183097) DHT_NODE: Sending DHT data - Temp: 29.63°C, Humidity: 74.95%, Time: 182591 ms[0m
+[0;32mI (183097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (183117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (188097) DHT_NODE: Sending DHT data - Temp: 26.91°C, Humidity: 67.30%, Time: 187591 ms[0m
+[0;32mI (188097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (188117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (193097) DHT_NODE: Sending DHT data - Temp: 23.20°C, Humidity: 36.41%, Time: 192591 ms[0m
+[0;32mI (193097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (193117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (198097) DHT_NODE: Sending DHT data - Temp: 20.12°C, Humidity: 53.84%, Time: 197591 ms[0m
+[0;32mI (198097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (198117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (203097) DHT_NODE: Sending DHT data - Temp: 25.43°C, Humidity: 57.43%, Time: 202591 ms[0m
+[0;32mI (203097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (203117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (208097) DHT_NODE: Sending DHT data - Temp: 28.88°C, Humidity: 31.22%, Time: 207591 ms[0m
+[0;32mI (208097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (208117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (213097) DHT_NODE: Sending DHT data - Temp: 30.07°C, Humidity: 31.54%, Time: 212591 ms[0m
+[0;32mI (213097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (213117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (218097) DHT_NODE: Sending DHT data - Temp: 25.92°C, Humidity: 74.92%, Time: 217591 ms[0m
+[0;32mI (218097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (218117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (223097) DHT_NODE: Sending DHT data - Temp: 32.38°C, Humidity: 39.32%, Time: 222591 ms[0m
+[0;32mI (223097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (223117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (228097) DHT_NODE: Sending DHT data - Temp: 22.42°C, Humidity: 35.06%, Time: 227591 ms[0m
+[0;32mI (228097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (228117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (233097) DHT_NODE: Sending DHT data - Temp: 34.55°C, Humidity: 57.80%, Time: 232591 ms[0m
+[0;32mI (233097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (233117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (238097) DHT_NODE: Sending DHT data - Temp: 27.70°C, Humidity: 74.05%, Time: 237591 ms[0m
+[0;32mI (238097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (238117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (243097) DHT_NODE: Sending DHT data - Temp: 29.82°C, Humidity: 79.52%, Time: 242591 ms[0m
+[0;32mI (243097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (243117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (248097) DHT_NODE: Sending DHT data - Temp: 26.51°C, Humidity: 41.48%, Time: 247591 ms[0m
+[0;32mI (248097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (248117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (253097) DHT_NODE: Sending DHT data - Temp: 22.55°C, Humidity: 71.09%, Time: 252591 ms[0m
+[0;32mI (253097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (253117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (258097) DHT_NODE: Sending DHT data - Temp: 29.52°C, Humidity: 73.66%, Time: 257591 ms[0m
+[0;32mI (258097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (258117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (263097) DHT_NODE: Sending DHT data - Temp: 20.18°C, Humidity: 67.79%, Time: 262591 ms[0m
+[0;32mI (263097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (263117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (268097) DHT_NODE: Sending DHT data - Temp: 24.49°C, Humidity: 60.67%, Time: 267591 ms[0m
+[0;32mI (268097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (268117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (273097) DHT_NODE: Sending DHT data - Temp: 26.75°C, Humidity: 63.84%, Time: 272591 ms[0m
+[0;32mI (273097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (273117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (278097) DHT_NODE: Sending DHT data - Temp: 33.39°C, Humidity: 49.41%, Time: 277591 ms[0m
+[0;32mI (278097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (278117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (283097) DHT_NODE: Sending DHT data - Temp: 27.79°C, Humidity: 53.92%, Time: 282591 ms[0m
+[0;32mI (283097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (283117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (288097) DHT_NODE: Sending DHT data - Temp: 22.55°C, Humidity: 39.24%, Time: 287591 ms[0m
+[0;32mI (288097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (288117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (293097) DHT_NODE: Sending DHT data - Temp: 27.14°C, Humidity: 60.87%, Time: 292591 ms[0m
+[0;32mI (293097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (293117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (298097) DHT_NODE: Sending DHT data - Temp: 31.48°C, Humidity: 54.27%, Time: 297591 ms[0m
+[0;32mI (298097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (298117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (303097) DHT_NODE: Sending DHT data - Temp: 24.88°C, Humidity: 45.01%, Time: 302591 ms[0m
+[0;32mI (303097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (303117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (308097) DHT_NODE: Sending DHT data - Temp: 23.85°C, Humidity: 34.24%, Time: 307591 ms[0m
+[0;32mI (308097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (308117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (313097) DHT_NODE: Sending DHT data - Temp: 34.41°C, Humidity: 51.10%, Time: 312591 ms[0m
+[0;32mI (313097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (313117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (318097) DHT_NODE: Sending DHT data - Temp: 29.11°C, Humidity: 65.57%, Time: 317591 ms[0m
+[0;32mI (318097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (318117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (323097) DHT_NODE: Sending DHT data - Temp: 27.33°C, Humidity: 35.42%, Time: 322591 ms[0m
+[0;32mI (323097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (323117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (328097) DHT_NODE: Sending DHT data - Temp: 30.28°C, Humidity: 31.51%, Time: 327591 ms[0m
+[0;32mI (328097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (328117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (333097) DHT_NODE: Sending DHT data - Temp: 21.51°C, Humidity: 75.88%, Time: 332591 ms[0m
+[0;32mI (333097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (333117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (338097) DHT_NODE: Sending DHT data - Temp: 30.67°C, Humidity: 53.02%, Time: 337591 ms[0m
+[0;32mI (338097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (338117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (343097) DHT_NODE: Sending DHT data - Temp: 26.44°C, Humidity: 31.78%, Time: 342591 ms[0m
+[0;32mI (343097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (343117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (348097) DHT_NODE: Sending DHT data - Temp: 31.89°C, Humidity: 33.11%, Time: 347591 ms[0m
+[0;32mI (348097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (348117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (353097) DHT_NODE: Sending DHT data - Temp: 25.51°C, Humidity: 34.56%, Time: 352591 ms[0m
+[0;32mI (353097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (353117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (358097) DHT_NODE: Sending DHT data - Temp: 21.94°C, Humidity: 59.84%, Time: 357591 ms[0m
+[0;32mI (358097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (358117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (363097) DHT_NODE: Sending DHT data - Temp: 34.22°C, Humidity: 61.01%, Time: 362591 ms[0m
+[0;32mI (363097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (363117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (368097) DHT_NODE: Sending DHT data - Temp: 21.57°C, Humidity: 69.99%, Time: 367591 ms[0m
+[0;32mI (368097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (368117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (373097) DHT_NODE: Sending DHT data - Temp: 23.76°C, Humidity: 72.75%, Time: 372591 ms[0m
+[0;32mI (373097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (373117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (378097) DHT_NODE: Sending DHT data - Temp: 21.19°C, Humidity: 46.81%, Time: 377591 ms[0m
+[0;32mI (378097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (378117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (383097) DHT_NODE: Sending DHT data - Temp: 23.44°C, Humidity: 40.29%, Time: 382591 ms[0m
+[0;32mI (383097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (383117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (388097) DHT_NODE: Sending DHT data - Temp: 34.34°C, Humidity: 41.42%, Time: 387591 ms[0m
+[0;32mI (388097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (388117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (393097) DHT_NODE: Sending DHT data - Temp: 22.29°C, Humidity: 40.25%, Time: 392591 ms[0m
+[0;32mI (393097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (393117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (398097) DHT_NODE: Sending DHT data - Temp: 27.53°C, Humidity: 50.25%, Time: 397591 ms[0m
+[0;32mI (398097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (398117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (403097) DHT_NODE: Sending DHT data - Temp: 21.66°C, Humidity: 46.91%, Time: 402591 ms[0m
+[0;32mI (403097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (403117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (408097) DHT_NODE: Sending DHT data - Temp: 32.20°C, Humidity: 34.66%, Time: 407591 ms[0m
+[0;32mI (408097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (408117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (413097) DHT_NODE: Sending DHT data - Temp: 28.96°C, Humidity: 33.61%, Time: 412591 ms[0m
+[0;32mI (413097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (413117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (418097) DHT_NODE: Sending DHT data - Temp: 28.39°C, Humidity: 70.40%, Time: 417591 ms[0m
+[0;32mI (418097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (418117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (423097) DHT_NODE: Sending DHT data - Temp: 34.12°C, Humidity: 36.62%, Time: 422591 ms[0m
+[0;32mI (423097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (423117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (428097) DHT_NODE: Sending DHT data - Temp: 33.25°C, Humidity: 44.31%, Time: 427591 ms[0m
+[0;32mI (428097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (428117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (433097) DHT_NODE: Sending DHT data - Temp: 22.80°C, Humidity: 68.47%, Time: 432591 ms[0m
+[0;32mI (433097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (433117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (438097) DHT_NODE: Sending DHT data - Temp: 30.70°C, Humidity: 43.50%, Time: 437591 ms[0m
+[0;32mI (438097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (438117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (443097) DHT_NODE: Sending DHT data - Temp: 26.32°C, Humidity: 74.28%, Time: 442591 ms[0m
+[0;32mI (443097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (443117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (448097) DHT_NODE: Sending DHT data - Temp: 24.56°C, Humidity: 43.91%, Time: 447591 ms[0m
+[0;32mI (448097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (448117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (453097) DHT_NODE: Sending DHT data - Temp: 33.06°C, Humidity: 48.01%, Time: 452591 ms[0m
+[0;32mI (453097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (453117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (458097) DHT_NODE: Sending DHT data - Temp: 27.62°C, Humidity: 46.48%, Time: 457591 ms[0m
+[0;32mI (458097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (458117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (463097) DHT_NODE: Sending DHT data - Temp: 20.43°C, Humidity: 44.77%, Time: 462591 ms[0m
+[0;32mI (463097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (463117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (468097) DHT_NODE: Sending DHT data - Temp: 26.03°C, Humidity: 51.43%, Time: 467591 ms[0m
+[0;32mI (468097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (468117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (473097) DHT_NODE: Sending DHT data - Temp: 26.46°C, Humidity: 77.35%, Time: 472591 ms[0m
+[0;32mI (473097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (473117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (478097) DHT_NODE: Sending DHT data - Temp: 29.60°C, Humidity: 60.22%, Time: 477591 ms[0m
+[0;32mI (478097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (478117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (483097) DHT_NODE: Sending DHT data - Temp: 25.24°C, Humidity: 77.48%, Time: 482591 ms[0m
+[0;32mI (483097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (483117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (488097) DHT_NODE: Sending DHT data - Temp: 34.92°C, Humidity: 51.04%, Time: 487591 ms[0m
+[0;32mI (488097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (488117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (493097) DHT_NODE: Sending DHT data - Temp: 26.22°C, Humidity: 69.26%, Time: 492591 ms[0m
+[0;32mI (493097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (493117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (498097) DHT_NODE: Sending DHT data - Temp: 24.85°C, Humidity: 61.15%, Time: 497591 ms[0m
+[0;32mI (498097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (498117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (503097) DHT_NODE: Sending DHT data - Temp: 33.26°C, Humidity: 48.04%, Time: 502591 ms[0m
+[0;32mI (503097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (503117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (508097) DHT_NODE: Sending DHT data - Temp: 20.25°C, Humidity: 77.29%, Time: 507591 ms[0m
+[0;32mI (508097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (508117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (513097) DHT_NODE: Sending DHT data - Temp: 24.80°C, Humidity: 60.55%, Time: 512591 ms[0m
+[0;32mI (513097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (513117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (518097) DHT_NODE: Sending DHT data - Temp: 20.53°C, Humidity: 37.95%, Time: 517591 ms[0m
+[0;32mI (518097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (518117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (523097) DHT_NODE: Sending DHT data - Temp: 32.95°C, Humidity: 31.94%, Time: 522591 ms[0m
+[0;32mI (523097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (523117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (528097) DHT_NODE: Sending DHT data - Temp: 30.78°C, Humidity: 33.21%, Time: 527591 ms[0m
+[0;32mI (528097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (528117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (533097) DHT_NODE: Sending DHT data - Temp: 28.84°C, Humidity: 58.97%, Time: 532591 ms[0m
+[0;32mI (533097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (533117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (538097) DHT_NODE: Sending DHT data - Temp: 31.45°C, Humidity: 70.15%, Time: 537591 ms[0m
+[0;32mI (538097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (538117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (543097) DHT_NODE: Sending DHT data - Temp: 34.76°C, Humidity: 43.48%, Time: 542591 ms[0m
+[0;32mI (543097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (543117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (548097) DHT_NODE: Sending DHT data - Temp: 30.55°C, Humidity: 52.40%, Time: 547591 ms[0m
+[0;32mI (548097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (548117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (553097) DHT_NODE: Sending DHT data - Temp: 30.41°C, Humidity: 71.93%, Time: 552591 ms[0m
+[0;32mI (553097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (553117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (558097) DHT_NODE: Sending DHT data - Temp: 27.80°C, Humidity: 31.19%, Time: 557591 ms[0m
+[0;32mI (558097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (558117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (563097) DHT_NODE: Sending DHT data - Temp: 20.14°C, Humidity: 49.14%, Time: 562591 ms[0m
+[0;32mI (563097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (563117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (568097) DHT_NODE: Sending DHT data - Temp: 31.00°C, Humidity: 71.66%, Time: 567591 ms[0m
+[0;32mI (568097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (568117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (573097) DHT_NODE: Sending DHT data - Temp: 30.79°C, Humidity: 64.73%, Time: 572591 ms[0m
+[0;32mI (573097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (573117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (578097) DHT_NODE: Sending DHT data - Temp: 21.14°C, Humidity: 62.72%, Time: 577591 ms[0m
+[0;32mI (578097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (578117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (583097) DHT_NODE: Sending DHT data - Temp: 32.06°C, Humidity: 58.68%, Time: 582591 ms[0m
+[0;32mI (583097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (583117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (588097) DHT_NODE: Sending DHT data - Temp: 30.80°C, Humidity: 72.70%, Time: 587591 ms[0m
+[0;32mI (588097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (588117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (593097) DHT_NODE: Sending DHT data - Temp: 23.66°C, Humidity: 79.20%, Time: 592591 ms[0m
+[0;32mI (593097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (593117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (598097) DHT_NODE: Sending DHT data - Temp: 22.98°C, Humidity: 49.76%, Time: 597591 ms[0m
+[0;32mI (598097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (598117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (603097) DHT_NODE: Sending DHT data - Temp: 29.76°C, Humidity: 68.38%, Time: 602591 ms[0m
+[0;32mI (603097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (603117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (608097) DHT_NODE: Sending DHT data - Temp: 30.61°C, Humidity: 37.97%, Time: 607591 ms[0m
+[0;32mI (608097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (608117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (613097) DHT_NODE: Sending DHT data - Temp: 31.36°C, Humidity: 57.43%, Time: 612591 ms[0m
+[0;32mI (613097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (613117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (618097) DHT_NODE: Sending DHT data - Temp: 32.36°C, Humidity: 68.10%, Time: 617591 ms[0m
+[0;32mI (618097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (618117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (623097) DHT_NODE: Sending DHT data - Temp: 24.72°C, Humidity: 32.13%, Time: 622591 ms[0m
+[0;32mI (623097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (623117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (628097) DHT_NODE: Sending DHT data - Temp: 26.43°C, Humidity: 48.00%, Time: 627591 ms[0m
+[0;32mI (628097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (628117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (633097) DHT_NODE: Sending DHT data - Temp: 26.03°C, Humidity: 69.30%, Time: 632591 ms[0m
+[0;32mI (633097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (633117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (638097) DHT_NODE: Sending DHT data - Temp: 22.19°C, Humidity: 68.84%, Time: 637591 ms[0m
+[0;32mI (638097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (638117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (643097) DHT_NODE: Sending DHT data - Temp: 24.61°C, Humidity: 78.55%, Time: 642591 ms[0m
+[0;32mI (643097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (643117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (648097) DHT_NODE: Sending DHT data - Temp: 29.41°C, Humidity: 50.90%, Time: 647591 ms[0m
+[0;32mI (648097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (648117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (653097) DHT_NODE: Sending DHT data - Temp: 21.11°C, Humidity: 79.99%, Time: 652591 ms[0m
+[0;32mI (653097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (653117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (658097) DHT_NODE: Sending DHT data - Temp: 21.05°C, Humidity: 49.32%, Time: 657591 ms[0m
+[0;32mI (658097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (658117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (663097) DHT_NODE: Sending DHT data - Temp: 20.36°C, Humidity: 58.80%, Time: 662591 ms[0m
+[0;32mI (663097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (663117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (668097) DHT_NODE: Sending DHT data - Temp: 29.70°C, Humidity: 63.84%, Time: 667591 ms[0m
+[0;32mI (668097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (668117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (673097) DHT_NODE: Sending DHT data - Temp: 33.15°C, Humidity: 66.66%, Time: 672591 ms[0m
+[0;32mI (673097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (673117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (678097) DHT_NODE: Sending DHT data - Temp: 32.45°C, Humidity: 40.96%, Time: 677591 ms[0m
+[0;32mI (678097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (678117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (683097) DHT_NODE: Sending DHT data - Temp: 23.84°C, Humidity: 72.43%, Time: 682591 ms[0m
+[0;32mI (683097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (683117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (688097) DHT_NODE: Sending DHT data - Temp: 24.61°C, Humidity: 56.67%, Time: 687591 ms[0m
+[0;32mI (688097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (688117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (693097) DHT_NODE: Sending DHT data - Temp: 32.08°C, Humidity: 45.98%, Time: 692591 ms[0m
+[0;32mI (693097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (693117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (698097) DHT_NODE: Sending DHT data - Temp: 26.47°C, Humidity: 32.74%, Time: 697591 ms[0m
+[0;32mI (698097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (698117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (703097) DHT_NODE: Sending DHT data - Temp: 20.50°C, Humidity: 44.04%, Time: 702591 ms[0m
+[0;32mI (703097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (703117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (708097) DHT_NODE: Sending DHT data - Temp: 26.91°C, Humidity: 66.60%, Time: 707591 ms[0m
+[0;32mI (708097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (708117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (713097) DHT_NODE: Sending DHT data - Temp: 20.63°C, Humidity: 53.69%, Time: 712591 ms[0m
+[0;32mI (713097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (713117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (718097) DHT_NODE: Sending DHT data - Temp: 32.82°C, Humidity: 63.97%, Time: 717591 ms[0m
+[0;32mI (718097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (718117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (723097) DHT_NODE: Sending DHT data - Temp: 30.37°C, Humidity: 34.51%, Time: 722591 ms[0m
+[0;32mI (723097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (723117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (728097) DHT_NODE: Sending DHT data - Temp: 20.73°C, Humidity: 48.39%, Time: 727591 ms[0m
+[0;32mI (728097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (728117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (733097) DHT_NODE: Sending DHT data - Temp: 23.37°C, Humidity: 52.58%, Time: 732591 ms[0m
+[0;32mI (733097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (733117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (738097) DHT_NODE: Sending DHT data - Temp: 29.89°C, Humidity: 77.51%, Time: 737591 ms[0m
+[0;32mI (738097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (738117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (743097) DHT_NODE: Sending DHT data - Temp: 31.94°C, Humidity: 61.20%, Time: 742591 ms[0m
+[0;32mI (743097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (743117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (748097) DHT_NODE: Sending DHT data - Temp: 29.77°C, Humidity: 68.64%, Time: 747591 ms[0m
+[0;32mI (748097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (748117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (753097) DHT_NODE: Sending DHT data - Temp: 31.59°C, Humidity: 36.01%, Time: 752591 ms[0m
+[0;32mI (753097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (753117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (758097) DHT_NODE: Sending DHT data - Temp: 21.67°C, Humidity: 76.33%, Time: 757591 ms[0m
+[0;32mI (758097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (758117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (763097) DHT_NODE: Sending DHT data - Temp: 29.57°C, Humidity: 74.70%, Time: 762591 ms[0m
+[0;32mI (763097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (763117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (768097) DHT_NODE: Sending DHT data - Temp: 26.90°C, Humidity: 47.24%, Time: 767591 ms[0m
+[0;32mI (768097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (768117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (773097) DHT_NODE: Sending DHT data - Temp: 34.36°C, Humidity: 72.36%, Time: 772591 ms[0m
+[0;32mI (773097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (773117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (778097) DHT_NODE: Sending DHT data - Temp: 21.16°C, Humidity: 75.71%, Time: 777591 ms[0m
+[0;32mI (778097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (778117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (783097) DHT_NODE: Sending DHT data - Temp: 29.88°C, Humidity: 53.87%, Time: 782591 ms[0m
+[0;32mI (783097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (783117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (788097) DHT_NODE: Sending DHT data - Temp: 27.59°C, Humidity: 43.02%, Time: 787591 ms[0m
+[0;32mI (788097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (788117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (793097) DHT_NODE: Sending DHT data - Temp: 20.96°C, Humidity: 39.39%, Time: 792591 ms[0m
+[0;32mI (793097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (793117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (798097) DHT_NODE: Sending DHT data - Temp: 32.90°C, Humidity: 49.80%, Time: 797591 ms[0m
+[0;32mI (798097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (798117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (803097) DHT_NODE: Sending DHT data - Temp: 31.31°C, Humidity: 32.30%, Time: 802591 ms[0m
+[0;32mI (803097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (803117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (808097) DHT_NODE: Sending DHT data - Temp: 27.57°C, Humidity: 35.91%, Time: 807591 ms[0m
+[0;32mI (808097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (808117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (813097) DHT_NODE: Sending DHT data - Temp: 29.36°C, Humidity: 77.30%, Time: 812591 ms[0m
+[0;32mI (813097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (813117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (818097) DHT_NODE: Sending DHT data - Temp: 20.72°C, Humidity: 73.97%, Time: 817591 ms[0m
+[0;32mI (818097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (818117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (823097) DHT_NODE: Sending DHT data - Temp: 34.85°C, Humidity: 76.38%, Time: 822591 ms[0m
+[0;32mI (823097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (823117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (828097) DHT_NODE: Sending DHT data - Temp: 33.63°C, Humidity: 37.09%, Time: 827591 ms[0m
+[0;32mI (828097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (828117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (833097) DHT_NODE: Sending DHT data - Temp: 33.60°C, Humidity: 42.35%, Time: 832591 ms[0m
+[0;32mI (833097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (833117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (838097) DHT_NODE: Sending DHT data - Temp: 28.02°C, Humidity: 58.11%, Time: 837591 ms[0m
+[0;32mI (838097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (838117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (843097) DHT_NODE: Sending DHT data - Temp: 28.52°C, Humidity: 72.17%, Time: 842591 ms[0m
+[0;32mI (843097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (843117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (848097) DHT_NODE: Sending DHT data - Temp: 33.96°C, Humidity: 47.80%, Time: 847591 ms[0m
+[0;32mI (848097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (848117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (853097) DHT_NODE: Sending DHT data - Temp: 29.54°C, Humidity: 54.34%, Time: 852591 ms[0m
+[0;32mI (853097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (853117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (858097) DHT_NODE: Sending DHT data - Temp: 23.53°C, Humidity: 42.65%, Time: 857591 ms[0m
+[0;32mI (858097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (858117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (863097) DHT_NODE: Sending DHT data - Temp: 21.46°C, Humidity: 69.22%, Time: 862591 ms[0m
+[0;32mI (863097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (863117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (868097) DHT_NODE: Sending DHT data - Temp: 23.29°C, Humidity: 48.43%, Time: 867591 ms[0m
+[0;32mI (868097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (868117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (873097) DHT_NODE: Sending DHT data - Temp: 31.46°C, Humidity: 60.22%, Time: 872591 ms[0m
+[0;32mI (873097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (873117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (878097) DHT_NODE: Sending DHT data - Temp: 20.77°C, Humidity: 51.58%, Time: 877591 ms[0m
+[0;32mI (878097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (878117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (883097) DHT_NODE: Sending DHT data - Temp: 22.02°C, Humidity: 42.47%, Time: 882591 ms[0m
+[0;32mI (883097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (883117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (888097) DHT_NODE: Sending DHT data - Temp: 34.77°C, Humidity: 37.41%, Time: 887591 ms[0m
+[0;32mI (888097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (888117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (893097) DHT_NODE: Sending DHT data - Temp: 30.77°C, Humidity: 71.74%, Time: 892591 ms[0m
+[0;32mI (893097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (893117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (898097) DHT_NODE: Sending DHT data - Temp: 27.88°C, Humidity: 40.61%, Time: 897591 ms[0m
+[0;32mI (898097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (898117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (903097) DHT_NODE: Sending DHT data - Temp: 22.51°C, Humidity: 75.03%, Time: 902591 ms[0m
+[0;32mI (903097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (903117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (908097) DHT_NODE: Sending DHT data - Temp: 25.07°C, Humidity: 39.71%, Time: 907591 ms[0m
+[0;32mI (908097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (908117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (913097) DHT_NODE: Sending DHT data - Temp: 21.04°C, Humidity: 72.95%, Time: 912591 ms[0m
+[0;32mI (913097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (913117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (918097) DHT_NODE: Sending DHT data - Temp: 33.67°C, Humidity: 66.21%, Time: 917591 ms[0m
+[0;32mI (918097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (918117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (923097) DHT_NODE: Sending DHT data - Temp: 24.39°C, Humidity: 38.36%, Time: 922591 ms[0m
+[0;32mI (923097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (923117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (928097) DHT_NODE: Sending DHT data - Temp: 27.75°C, Humidity: 55.51%, Time: 927591 ms[0m
+[0;32mI (928097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (928117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (933097) DHT_NODE: Sending DHT data - Temp: 21.34°C, Humidity: 52.01%, Time: 932591 ms[0m
+[0;32mI (933097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (933117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (938097) DHT_NODE: Sending DHT data - Temp: 31.22°C, Humidity: 44.39%, Time: 937591 ms[0m
+[0;32mI (938097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (938117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (943097) DHT_NODE: Sending DHT data - Temp: 28.30°C, Humidity: 42.52%, Time: 942591 ms[0m
+[0;32mI (943097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (943117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (948097) DHT_NODE: Sending DHT data - Temp: 28.91°C, Humidity: 79.90%, Time: 947591 ms[0m
+[0;32mI (948097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (948117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (953097) DHT_NODE: Sending DHT data - Temp: 23.09°C, Humidity: 38.15%, Time: 952591 ms[0m
+[0;32mI (953097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (953117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (958097) DHT_NODE: Sending DHT data - Temp: 22.48°C, Humidity: 59.54%, Time: 957591 ms[0m
+[0;32mI (958097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (958117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (963097) DHT_NODE: Sending DHT data - Temp: 27.41°C, Humidity: 46.15%, Time: 962591 ms[0m
+[0;32mI (963097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (963117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (968097) DHT_NODE: Sending DHT data - Temp: 29.74°C, Humidity: 44.40%, Time: 967591 ms[0m
+[0;32mI (968097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (968117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (973097) DHT_NODE: Sending DHT data - Temp: 33.06°C, Humidity: 68.76%, Time: 972591 ms[0m
+[0;32mI (973097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (973117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (978097) DHT_NODE: Sending DHT data - Temp: 26.23°C, Humidity: 46.21%, Time: 977591 ms[0m
+[0;32mI (978097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (978117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (983097) DHT_NODE: Sending DHT data - Temp: 30.94°C, Humidity: 43.31%, Time: 982591 ms[0m
+[0;32mI (983097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (983117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (988097) DHT_NODE: Sending DHT data - Temp: 20.67°C, Humidity: 64.53%, Time: 987591 ms[0m
+[0;32mI (988097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (988117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (993097) DHT_NODE: Sending DHT data - Temp: 22.47°C, Humidity: 48.54%, Time: 992591 ms[0m
+[0;32mI (993097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (993117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (998097) DHT_NODE: Sending DHT data - Temp: 31.56°C, Humidity: 78.43%, Time: 997591 ms[0m
+[0;32mI (998097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (998117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1003097) DHT_NODE: Sending DHT data - Temp: 28.18°C, Humidity: 32.93%, Time: 1002591 ms[0m
+[0;32mI (1003097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1003117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1008097) DHT_NODE: Sending DHT data - Temp: 25.86°C, Humidity: 44.41%, Time: 1007591 ms[0m
+[0;32mI (1008097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1008117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1013097) DHT_NODE: Sending DHT data - Temp: 34.35°C, Humidity: 46.79%, Time: 1012591 ms[0m
+[0;32mI (1013097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1013117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1018097) DHT_NODE: Sending DHT data - Temp: 25.63°C, Humidity: 71.12%, Time: 1017591 ms[0m
+[0;32mI (1018097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1018117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1023097) DHT_NODE: Sending DHT data - Temp: 21.91°C, Humidity: 73.83%, Time: 1022591 ms[0m
+[0;32mI (1023097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1023117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1028097) DHT_NODE: Sending DHT data - Temp: 25.76°C, Humidity: 75.22%, Time: 1027591 ms[0m
+[0;32mI (1028097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1028117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1033097) DHT_NODE: Sending DHT data - Temp: 29.82°C, Humidity: 71.67%, Time: 1032591 ms[0m
+[0;32mI (1033097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1033117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1038097) DHT_NODE: Sending DHT data - Temp: 34.43°C, Humidity: 32.49%, Time: 1037591 ms[0m
+[0;32mI (1038097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1038117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1043097) DHT_NODE: Sending DHT data - Temp: 24.33°C, Humidity: 65.81%, Time: 1042591 ms[0m
+[0;32mI (1043097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1043117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1048097) DHT_NODE: Sending DHT data - Temp: 23.57°C, Humidity: 37.69%, Time: 1047591 ms[0m
+[0;32mI (1048097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1048117) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (1053097) DHT_NODE: Sending DHT data - Temp: 20.67°C, Humidity: 78.85%, Time: 1052591 ms[0m
+[0;32mI (1053097) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (1053117) DHT_NODE: Send 0xc202e5[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2877ch (165756) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=000387a4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=000387c8 vaddr=3ffbdb60 size=054c8h ( 21704) load[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003dc98 vaddr=40080000 size=02380h (  9088) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=93198h (602520) map[0m
+[0;32mI (371) esp_image: segment 5: paddr=000d31c0 vaddr=40082380 size=15778h ( 87928) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (428) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu start user code[0m
+[0;32mI (436) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (436) app_init: Application information:[0m
+[0;32mI (436) app_init: Project name:     vendor_server[0m
+[0;32mI (441) app_init: App version:      deb1a3c9-dirty[0m
+[0;32mI (445) app_init: Compile time:     May 25 2025 15:20:34[0m
+[0;32mI (450) app_init: ELF file SHA256:  27746b045...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (458) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (462) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (466) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (470) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (481) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFCADF0 len 00015210 (84 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (502) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (515) spi_flash: detected chip: generic[0m
+[0;32mI (517) spi_flash: flash io: dio[0m
+[0;33mW (520) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (533) coexist: coex firmware version: e727207[0m
+[0;32mI (537) main_task: Started on CPU0[0m
+[0;32mI (547) main_task: Calling app_main()[0m
+[0;32mI (547) DHT_NODE: Initializing...[0m
+[0;32mI (557) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (557) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (577) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (587) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (667) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1037) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1057) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1057) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1057) main_task: Returned from app_main()[0m
+[0;32mI (1177) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (3247) DHT_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (3247) DHT_NODE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (3247) DHT_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (3247) DHT_NODE: DHT timer started successfully[0m
+[0;32mI (3507) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-ADV[0m
+[0;32mI (3997) DHT_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (3997) DHT_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (3997) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (4157) DHT_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (4157) DHT_NODE: elem_addr 0x0005, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (8247) DHT_NODE: Sending DHT data - Temp: 29.83°C, Humidity: 38.08%, Time: 7739 ms[0m
+[0;32mI (8247) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (8257) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (13247) DHT_NODE: Sending DHT data - Temp: 27.44°C, Humidity: 71.21%, Time: 12739 ms[0m
+[0;32mI (13247) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (13267) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (18247) DHT_NODE: Sending DHT data - Temp: 28.50°C, Humidity: 32.41%, Time: 17739 ms[0m
+[0;32mI (18247) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (18257) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (23247) DHT_NODE: Sending DHT data - Temp: 33.67°C, Humidity: 34.20%, Time: 22739 ms[0m
+[0;32mI (23247) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (23267) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (28247) DHT_NODE: Sending DHT data - Temp: 34.60°C, Humidity: 77.39%, Time: 27739 ms[0m
+[0;32mI (28247) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (28267) DHT_NODE: Send 0xc202e5[0m

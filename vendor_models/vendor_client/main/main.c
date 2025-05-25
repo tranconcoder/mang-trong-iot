@@ -50,6 +50,7 @@
 #define ESP_BLE_MESH_VND_MODEL_OP_SEND      ESP_BLE_MESH_MODEL_OP_3(0x00, CID_ESP)
 #define ESP_BLE_MESH_VND_MODEL_OP_STATUS    ESP_BLE_MESH_MODEL_OP_3(0x01, CID_ESP)
 #define ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA  ESP_BLE_MESH_MODEL_OP_3(0x02, CID_ESP)
+#define ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA  ESP_BLE_MESH_MODEL_OP_3(0x03, CID_ESP)
 
 // DHT sensor data structure (must match server)
 typedef struct {
@@ -57,6 +58,14 @@ typedef struct {
     float humidity;
     uint32_t timestamp;
 } dht_data_t;
+
+// LDR sensor data structure (must match server)
+typedef struct {
+    uint16_t light_level;      // Light level (0-4095, 12-bit ADC)
+    float voltage;             // Voltage reading (0-3.3V)
+    uint8_t light_status;      // 0=Dark, 1=Dim, 2=Bright
+    uint32_t timestamp;        // Timestamp in milliseconds
+} ldr_data_t;
 
 static uint8_t dev_uuid[ESP_BLE_MESH_OCTET16_LEN];
 
@@ -105,6 +114,7 @@ static esp_ble_mesh_client_t vendor_client = {
 static esp_ble_mesh_model_op_t vnd_op[] = {
     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_STATUS, 2),
     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA, sizeof(dht_data_t)),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA, sizeof(ldr_data_t)),
     ESP_BLE_MESH_MODEL_OP_END,
 };
 
@@ -524,6 +534,23 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
                 ESP_LOGW(TAG, "Received DHT data with incorrect length: %d (expected %d)", 
                          param->model_operation.length, sizeof(dht_data_t));
             }
+        } else if (param->model_operation.opcode == ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA) {
+            ESP_LOGI(TAG, "LDR opcode matched! Expected: 0x%06x, Received: 0x%06" PRIx32, 
+                     ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA, param->model_operation.opcode);
+            if (param->model_operation.length == sizeof(ldr_data_t)) {
+                ldr_data_t *ldr_data = (ldr_data_t *)param->model_operation.msg;
+                const char* status_str[] = {"Dark", "Dim", "Bright"};
+                ESP_LOGI(TAG, "=== LDR Data Received ===");
+                ESP_LOGI(TAG, "Light Level: %d", ldr_data->light_level);
+                ESP_LOGI(TAG, "Voltage: %.2fV", ldr_data->voltage);
+                ESP_LOGI(TAG, "Status: %s", status_str[ldr_data->light_status]);
+                ESP_LOGI(TAG, "Timestamp: %lu ms", ldr_data->timestamp);
+                ESP_LOGI(TAG, "From address: 0x%04x", param->model_operation.ctx->addr);
+                ESP_LOGI(TAG, "=========================");
+            } else {
+                ESP_LOGW(TAG, "Received LDR data with incorrect length: %d (expected %d)", 
+                         param->model_operation.length, sizeof(ldr_data_t));
+            }
         } else {
             ESP_LOGW(TAG, "Unknown opcode received: 0x%06" PRIx32, param->model_operation.opcode);
         }
@@ -554,6 +581,22 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
                 ESP_LOGW(TAG, "Received DHT publish data with incorrect length: %d (expected %d)", 
                          param->client_recv_publish_msg.length, sizeof(dht_data_t));
             }
+        } else if (param->client_recv_publish_msg.opcode == ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA) {
+            ESP_LOGI(TAG, "LDR publish message received!");
+            if (param->client_recv_publish_msg.length == sizeof(ldr_data_t)) {
+                ldr_data_t *ldr_data = (ldr_data_t *)param->client_recv_publish_msg.msg;
+                const char* status_str[] = {"Dark", "Dim", "Bright"};
+                ESP_LOGI(TAG, "=== LDR Data Received (Publish) ===");
+                ESP_LOGI(TAG, "Light Level: %d", ldr_data->light_level);
+                ESP_LOGI(TAG, "Voltage: %.2fV", ldr_data->voltage);
+                ESP_LOGI(TAG, "Status: %s", status_str[ldr_data->light_status]);
+                ESP_LOGI(TAG, "Timestamp: %lu ms", ldr_data->timestamp);
+                ESP_LOGI(TAG, "From address: 0x%04x", param->client_recv_publish_msg.ctx->addr);
+                ESP_LOGI(TAG, "===================================");
+            } else {
+                ESP_LOGW(TAG, "Received LDR publish data with incorrect length: %d (expected %d)", 
+                         param->client_recv_publish_msg.length, sizeof(ldr_data_t));
+            }
         }
         break;
     case ESP_BLE_MESH_CLIENT_MODEL_SEND_TIMEOUT_EVT:
@@ -567,7 +610,6 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
 
 static esp_err_t ble_mesh_init(void)
 {
-    uint8_t match[2] = { 0x32, 0x10 };
     esp_err_t err;
 
     prov_key.net_idx = ESP_BLE_MESH_KEY_PRIMARY;
@@ -590,11 +632,8 @@ static esp_err_t ble_mesh_init(void)
         return err;
     }
 
-    err = esp_ble_mesh_provisioner_set_dev_uuid_match(match, sizeof(match), 0x0, false);
-    if (err != ESP_OK) {
-        ESP_LOGE(TAG, "Failed to set matching device uuid");
-        return err;
-    }
+    // Don't set UUID matching to allow both DHT (0x32,0x10) and LDR (0x33,0x11) sensors
+    // to be discovered and provisioned
 
     err = esp_ble_mesh_provisioner_prov_enable((esp_ble_mesh_prov_bearer_t)(ESP_BLE_MESH_PROV_ADV | ESP_BLE_MESH_PROV_GATT));
     if (err != ESP_OK) {
