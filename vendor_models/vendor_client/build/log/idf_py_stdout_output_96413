@@ -1,0 +1,2136 @@
+[0;32mI (424) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (428) efuse_init: Chip rev:   ESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004883b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 25 2025 18:55:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=3f3d0h (259024) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=0004f3f8 vaddr=3fc9e400 size=00c20h (  3104) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=1145f0h (1132016) map[0m
+[0;32mI (337) esp_image: segment 3: paddr=00164618 vaddr=3fc9f020 size=04ef0h ( 20208) load[0m
+[0;32mI (342) esp_image: segment 4: paddr=00169510 vaddr=40374000 size=1a3ech (107500) load[0m
+[0;32mI (366) esp_image: segment 5: paddr=00183904 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (376) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (376) boot: Disabling RNG early entropy source...[0m
+[0;32mI (387) cpu_start: Multicore app[0m
+[0;32mI (396) cpu_start: Pro cpu start user code[0m
+[0;32mI (396) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (396) app_init: Application information:[0m
+[0;32mI (396) app_init: Project name:     vendor_client[0m
+[0;32mI (400) app_init: App version:      1537d447-dirty[0m
+[0;32mI (405) app_init: Compile time:     May 25 2025 19:54:21[0m
+[0;32mI (410) app_init: ELF file SHA256:  3a616171d...[0m
+[0;32mI (414) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (418) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (422) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (426) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (430) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (436) heap_init: At 3FCAF288 len 0003A488 (233 KiB): RAM[0m
+[0;32mI (441) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (446) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (451) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (458) spi_flash: detected chip: boya[0m
+[0;32mI (460) spi_flash: flash io: dio[0m
+[0;33mW (463) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (476) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (482) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (488) coexist: coex firmware version: e727207[0m
+[0;32mI (493) coexist: coexist rom version e7ae62f[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[0;32mI (507) DHT_RECEIVER: Initializing...[0m
+use esp timer !!!
+[1;31mE (517) esp_timer: Task is already initialized[0m
+[0;32mI (517) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (517) BLE_INIT: BT controller compile version [d74042a][0m
+[0;32mI (527) BLE_INIT: Bluetooth MAC: 24:ec:4a:3a:2b:ee[0m
+[0;32mI (527) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;33mW (537) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (567) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (627) EXAMPLE_NVS: Open namespace done, name "mesh_example"[0m
+[0;32mI (687) DHT_RECEIVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (687) EXAMPLE_NVS: Restore, key "vendor_client" not exists[0m
+[0;32mI (697) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (697) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_ADD_LOCAL_APP_KEY_COMP_EVT, err_code 0[0m
+[0;32mI (697) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (707) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (707) DHT_RECEIVER: Address type 0x00, adv type 0x00[0m
+[0;32mI (717) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (727) DHT_RECEIVER: oob info 0x0000, bearer PB-GATT[0m
+[0;32mI (727) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (737) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_BIND_APP_KEY_TO_MODEL_COMP_EVT, err_code 0[0m
+[0;32mI (747) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (747) DHT_RECEIVER: ESP BLE Mesh Provisioner initialized[0m
+[0;32mI (757) pp: pp rom version: e7ae62f[0m
+[0;32mI (757) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (777) wifi:wifi driver task: 3fcca518, prio:23, stack:6656, core=0[0m
+[0;32mI (777) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (777) wifi:wifi certification version: v7.0[0m
+[0;32mI (777) wifi:config NVS flash: enabled[0m
+[0;32mI (777) wifi:config nano formatting: disabled[0m
+[0;32mI (787) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (787) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (797) wifi:Init management short buffer num: 32[0m
+[0;32mI (797) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (797) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (807) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (807) wifi:Init static rx buffer num: 10[0m
+[0;32mI (817) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (817) wifi_init: rx ba win: 6[0m
+[0;32mI (817) wifi_init: accept mbox: 6[0m
+[0;32mI (827) wifi_init: tcpip mbox: 32[0m
+[0;32mI (837) wifi_init: udp mbox: 6[0m
+[0;32mI (837) wifi_init: tcp mbox: 6[0m
+[0;32mI (837) wifi_init: tcp tx win: 5760[0m
+[0;32mI (837) wifi_init: tcp rx win: 5760[0m
+[0;32mI (837) wifi_init: tcp mss: 1440[0m
+[0;32mI (837) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (847) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (877) wifi:mode : sta (24:ec:4a:3a:2b:ec)[0m
+[0;32mI (877) wifi:enable tsf[0m
+[0;32mI (877) DHT_RECEIVER: wifi_init_sta finished.[0m
+[0;32mI (877) DHT_RECEIVER: connect to ap SSID:Tran Con password:88888888[0m
+[0;32mI (877) main_task: Returned from app_main()[0m
+[0;33mW (2267) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x8[0m
+[0;33mW (2267) BT_HCI: hcif disc complete: hdl 0x1, rsn 0x8[0m
+[1;31mE (2267) BT_GATT: GATT_Write Illegal param: conn_id 3, type 02,[0m
+[0;33mW (2557) BLE_MESH: Device in queue not support PB-ADV[0m
+[0;32mI (2557) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (2557) Device address: 5c 01 3b 47 5b 22[0m
+[0;32mI (2567) DHT_RECEIVER: Address type 0x00, adv type 0x03[0m
+[0;32mI (2567) Device UUID: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (2577) DHT_RECEIVER: oob info 0x0000, bearer PB-ADV[0m
+[0;33mW (2577) BLE_MESH: Add device with only bearer updated[0m
+[0;32mI (2587) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (2587) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (2697) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_RECV_UNPROV_ADV_PKT_EVT[0m
+[0;32mI (2697) Device address: c8 2e 18 25 e0 82[0m
+[0;32mI (2697) DHT_RECEIVER: Address type 0x00, adv type 0x03[0m
+[0;32mI (2697) Device UUID: 33 11 c8 2e 18 25 e0 82 00 00 00 00 00 00 00 00[0m
+[0;32mI (2707) DHT_RECEIVER: oob info 0x0000, bearer PB-ADV[0m
+[0;32mI (2717) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (2717) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_ADD_UNPROV_DEV_COMP_EVT, err_code 0[0m
+[0;32mI (3517) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3517) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3527) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3537) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3637) wifi:connected with Tran Con, aid = 3, channel 10, BW20, bssid = 30:16:9d:62:a0:f8[0m
+[0;32mI (3637) wifi:security: WPA2-PSK, phy: bgn, rssi: -66[0m
+[0;32mI (3657) wifi:pm start, type: 1[0m
+
+[0;32mI (3657) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3657) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (3667) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3797) wifi:<ba-add>idx:0 (ifx:0, 30:16:9d:62:a0:f8), tid:0, ssn:4, winSize:64[0m
+[0;32mI (6187) DHT_RECEIVER: node_index 0, primary_addr 0x0005, element_num 1, net_idx 0x000[0m
+[0;32mI (6187) uuid: 33 11 c8 2e 18 25 e0 82 00 00 00 00 00 00 00 00[0m
+[0;32mI (6187) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (6197) EXAMPLE_NVS: Store, data: 05 00 00 00[0m
+[0;32mI (6197) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (6207) DHT_RECEIVER: Node 0 name NODE-00[0m
+[0;32mI (6457) DHT_RECEIVER: node_index 1, primary_addr 0x0006, element_num 1, net_idx 0x000[0m
+[0;32mI (6457) uuid: 32 10 5c 01 3b 47 5b 22 00 00 00 00 00 00 00 00[0m
+[0;32mI (6477) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (6477) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (6477) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_SET_NODE_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (6487) DHT_RECEIVER: Node 1 name NODE-01[0m
+[0;32mI (6707) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (6827) DHT_RECEIVER: Config client, err_code 0, event 0, addr 0x0005, opcode 0x8008[0m
+[0;32mI (6827) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 01 01 00 00[0m
+[0;32mI (6827) Composition data: e5 02 01 00[0m
+[0;32mI (6837) DHT_RECEIVER: ********************** Composition Data Start **********************[0m
+[0;32mI (6847) DHT_RECEIVER: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (6847) DHT_RECEIVER: * Loc 0x0000, NumS 0x01, NumV 0x01 *[0m
+[0;32mI (6857) DHT_RECEIVER: * SIG Model ID 0x0000 *[0m
+[0;32mI (6857) DHT_RECEIVER: * Vendor Model ID 0x0001, Company ID 0x02e5 *[0m
+[0;32mI (6867) DHT_RECEIVER: *********************** Composition Data End ***********************[0m
+[0;32mI (6877) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (6977) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_PROV_LINK_CLOSE_EVT, bearer PB-ADV, reason 0x00[0m
+[0;32mI (7337) DHT_RECEIVER: Config client, err_code 0, event 1, addr 0x0005, opcode 0x0000[0m
+[0;32mI (7427) DHT_RECEIVER: Config client, err_code 0, event 1, addr 0x0005, opcode 0x803d[0m
+[0;33mW (7427) DHT_RECEIVER: example_ble_mesh_config_client_cb, Provision and config successfully[0m
+[0;32mI (7857) DHT_RECEIVER: Config client, err_code 0, event 2, addr 0x0005, opcode 0x0002[0m
+[0;32mI (7857) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 01 01 00 00[0m
+[0;32mI (7857) Composition data: e5 02 01 00[0m
+[0;32mI (9277) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (9277) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (9277) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (9277) DHT_RECEIVER: Light Level: 3990[0m
+[0;32mI (9277) DHT_RECEIVER: Voltage: 3.22V[0m
+[0;32mI (9287) DHT_RECEIVER: Status: Bright[0m
+[0;32mI (9287) DHT_RECEIVER: Timestamp: 7105 ms[0m
+[0;32mI (9287) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (9297) DHT_RECEIVER: ===================================[0m
+[0;33mW (10877) BLE_MESH: Receive configuration status message timeout[0m
+[0;32mI (10877) DHT_RECEIVER: Config client, err_code 0, event 3, addr 0x0006, opcode 0x8008[0m
+[0;33mW (10907) BLE_MESH: Duplicate SDU from src 0x0006[0m
+[0;32mI (11097) DHT_RECEIVER: Config client, err_code 0, event 0, addr 0x0006, opcode 0x8008[0m
+[0;32mI (11097) Composition data: e5 02 00 00 00 00 0a 00 03 00 00 00 01 01 00 00[0m
+[0;32mI (11097) Composition data: e5 02 01 00[0m
+[0;32mI (11097) DHT_RECEIVER: ********************** Composition Data Start **********************[0m
+[0;32mI (11107) DHT_RECEIVER: * CID 0x02e5, PID 0x0000, VID 0x0000, CRPL 0x000a, Features 0x0003 *[0m
+[0;32mI (11117) DHT_RECEIVER: * Loc 0x0000, NumS 0x01, NumV 0x01 *[0m
+[0;32mI (11117) DHT_RECEIVER: * SIG Model ID 0x0000 *[0m
+[0;32mI (11127) DHT_RECEIVER: * Vendor Model ID 0x0001, Company ID 0x02e5 *[0m
+[0;32mI (11127) DHT_RECEIVER: *********************** Composition Data End ***********************[0m
+[0;32mI (11147) DHT_RECEIVER: ESP_BLE_MESH_PROVISIONER_STORE_NODE_COMP_DATA_COMP_EVT, err_code 0[0m
+[0;32mI (11507) DHT_RECEIVER: Config client, err_code 0, event 1, addr 0x0006, opcode 0x0000[0m
+[0;32mI (11607) DHT_RECEIVER: Config client, err_code 0, event 1, addr 0x0006, opcode 0x803d[0m
+[0;33mW (11607) DHT_RECEIVER: example_ble_mesh_config_client_cb, Provision and config successfully[0m
+[0;32mI (12227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (12227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (12227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (12227) DHT_RECEIVER: Light Level: 3085[0m
+[0;32mI (12227) DHT_RECEIVER: Voltage: 2.49V[0m
+[0;32mI (12237) DHT_RECEIVER: Status: Bright[0m
+[0;32mI (12237) DHT_RECEIVER: Timestamp: 10105 ms[0m
+[0;32mI (12247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (12247) DHT_RECEIVER: ===================================[0m
+[0;32mI (12477) esp_netif_handlers: sta ip: 192.168.1.13, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (12477) DHT_RECEIVER: got ip:192.168.1.13[0m
+[0;32mI (12477) DHT_RECEIVER: Starting MQTT client[0m
+[0;32mI (12477) DHT_RECEIVER: Other event id:7[0m
+[0;32mI (12577) wifi:<ba-add>idx:1 (ifx:0, 30:16:9d:62:a0:f8), tid:5, ssn:1, winSize:64[0m
+[0;32mI (13177) DHT_RECEIVER: MQTT_EVENT_CONNECTED[0m
+[0;32mI (13187) DHT_RECEIVER: mqtt subscribe to LED topic successful, msg_id=5998[0m
+[0;32mI (13497) DHT_RECEIVER: MQTT_EVENT_SUBSCRIBED, msg_id=5998[0m
+[0;32mI (15257) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (15257) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (15257) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (15257) DHT_RECEIVER: Light Level: 2942[0m
+[0;32mI (15267) DHT_RECEIVER: Voltage: 2.37V[0m
+[0;32mI (15267) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (15267) DHT_RECEIVER: Timestamp: 13105 ms[0m
+[0;32mI (15277) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (15277) DHT_RECEIVER: ===================================[0m
+[0;32mI (15287) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=32129[0m
+[0;32mI (15657) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=32129[0m
+[0;32mI (15657) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (15657) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (15657) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (15667) DHT_RECEIVER: Data: 1[0m
+[0;32mI (15667) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (15677) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (15677) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (15687) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (15687) DHT_RECEIVER: Timestamp: 15222 ms[0m
+[0;32mI (15687) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (15697) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (15697) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (15707) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (15707) DHT_RECEIVER: =============================================[0m
+[0;32mI (15717) DHT_RECEIVER: ===================================[0m
+[0;32mI (16517) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (16517) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (16517) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (16527) DHT_RECEIVER: Temperature: 23.19°C[0m
+[0;32mI (16527) DHT_RECEIVER: Humidity: 74.48%[0m
+[0;32mI (16537) DHT_RECEIVER: Timestamp: 14353 ms[0m
+[0;32mI (16537) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (16537) DHT_RECEIVER: ==================================[0m
+[0;32mI (16547) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=18868[0m
+[0;33mW (16627) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (16727) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (16727) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (16727) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (16727) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (16737) DHT_RECEIVER: Temperature: 23.19°C[0m
+[0;32mI (16737) DHT_RECEIVER: Humidity: 74.48%[0m
+[0;32mI (16747) DHT_RECEIVER: Timestamp: 14353 ms[0m
+[0;32mI (16747) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (16747) DHT_RECEIVER: ==================================[0m
+[0;32mI (16757) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=16941[0m
+[0;33mW (16807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (16877) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=18868[0m
+[0;33mW (16947) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (17037) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (17127) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (17187) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=16941[0m
+[0;33mW (17267) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (17357) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (17497) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (17597) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (18227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (18227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (18227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (18227) DHT_RECEIVER: Light Level: 1920[0m
+[0;32mI (18237) DHT_RECEIVER: Voltage: 1.55V[0m
+[0;32mI (18237) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (18237) DHT_RECEIVER: Timestamp: 16105 ms[0m
+[0;32mI (18247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (18247) DHT_RECEIVER: ===================================[0m
+[0;32mI (18257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=3558[0m
+[0;32mI (18617) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=3558[0m
+[0;32mI (19127) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (19127) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (19127) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (19137) DHT_RECEIVER: Data: 0[0m
+[0;32mI (19137) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (19147) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (19147) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (19157) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (19157) DHT_RECEIVER: Timestamp: 18691 ms[0m
+[0;32mI (19157) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (19167) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (19167) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (19177) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (19177) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (19187) DHT_RECEIVER: =============================================[0m
+[0;32mI (19187) DHT_RECEIVER: ===================================[0m
+[0;33mW (19707) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (19707) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (19707) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (19717) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (19797) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (19797) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 80421us[0m
+[0;32mI (21227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (21227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (21227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (21227) DHT_RECEIVER: Light Level: 288[0m
+[0;32mI (21237) DHT_RECEIVER: Voltage: 0.23V[0m
+[0;32mI (21237) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (21237) DHT_RECEIVER: Timestamp: 19105 ms[0m
+[0;32mI (21247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (21247) DHT_RECEIVER: ===================================[0m
+[0;32mI (21257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=42176[0m
+[0;32mI (21517) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (21517) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (21517) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (21527) DHT_RECEIVER: Temperature: 31.58°C[0m
+[0;32mI (21527) DHT_RECEIVER: Humidity: 58.69%[0m
+[0;32mI (21537) DHT_RECEIVER: Timestamp: 19353 ms[0m
+[0;32mI (21537) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (21537) DHT_RECEIVER: ==================================[0m
+[0;32mI (21547) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=34278[0m
+[0;32mI (21587) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=42176[0m
+[0;33mW (21647) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (21667) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (21667) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (21667) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (21677) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (21677) DHT_RECEIVER: Temperature: 31.58°C[0m
+[0;32mI (21687) DHT_RECEIVER: Humidity: 58.69%[0m
+[0;32mI (21687) DHT_RECEIVER: Timestamp: 19353 ms[0m
+[0;32mI (21687) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (21697) DHT_RECEIVER: ==================================[0m
+[0;32mI (21697) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=43670[0m
+[0;33mW (21837) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (21897) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=34278[0m
+[0;33mW (21947) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (22067) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (22127) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (22197) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=43670[0m
+[0;33mW (22267) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (22357) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (22547) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (22587) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (23017) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (23017) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (23017) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (23027) DHT_RECEIVER: Data: 1[0m
+[0;32mI (23027) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (23037) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (23037) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (23047) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (23047) DHT_RECEIVER: Timestamp: 22583 ms[0m
+[0;32mI (23047) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (23057) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (23067) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (23067) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (23067) DHT_RECEIVER: =============================================[0m
+[0;32mI (23077) DHT_RECEIVER: ===================================[0m
+[0;32mI (23127) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (23127) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (23127) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (23127) DHT_RECEIVER: Data: 0[0m
+[0;32mI (23137) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (23137) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (23147) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (23147) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (23157) DHT_RECEIVER: Timestamp: 22688 ms[0m
+[0;32mI (23157) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (23157) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (23167) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (23167) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (23167) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (23177) DHT_RECEIVER: =============================================[0m
+[0;32mI (23187) DHT_RECEIVER: ===================================[0m
+[0;32mI (23837) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (23837) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (23837) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (23847) DHT_RECEIVER: Data: 1[0m
+[0;32mI (23847) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (23857) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (23857) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (23867) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (23867) DHT_RECEIVER: Timestamp: 23402 ms[0m
+[0;32mI (23867) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (23877) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (23877) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (23887) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (23887) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (23897) DHT_RECEIVER: =============================================[0m
+[0;32mI (23897) DHT_RECEIVER: ===================================[0m
+[0;32mI (24227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (24227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (24227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (24227) DHT_RECEIVER: Light Level: 3155[0m
+[0;32mI (24237) DHT_RECEIVER: Voltage: 2.54V[0m
+[0;32mI (24237) DHT_RECEIVER: Status: Bright[0m
+[0;32mI (24237) DHT_RECEIVER: Timestamp: 22105 ms[0m
+[0;32mI (24247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (24247) DHT_RECEIVER: ===================================[0m
+[0;32mI (24257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=63495[0m
+[0;32mI (24557) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=63495[0m
+[0;32mI (26517) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (26517) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (26517) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (26517) DHT_RECEIVER: Temperature: 33.20°C[0m
+[0;32mI (26527) DHT_RECEIVER: Humidity: 70.86%[0m
+[0;32mI (26527) DHT_RECEIVER: Timestamp: 24353 ms[0m
+[0;32mI (26527) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (26537) DHT_RECEIVER: ==================================[0m
+[0;32mI (26547) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=47169[0m
+[0;33mW (26577) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (26667) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (26667) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (26667) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (26677) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (26677) DHT_RECEIVER: Temperature: 33.20°C[0m
+[0;32mI (26687) DHT_RECEIVER: Humidity: 70.86%[0m
+[0;32mI (26687) DHT_RECEIVER: Timestamp: 24353 ms[0m
+[0;32mI (26687) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (26697) DHT_RECEIVER: ==================================[0m
+[0;32mI (26707) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=11314[0m
+[0;33mW (26807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (26897) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (26907) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=47169[0m
+[0;33mW (27067) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (27067) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (27067) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (27077) DHT_RECEIVER: Send 0xc002e5[0m
+[0;33mW (27137) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (27217) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=11314[0m
+[0;32mI (27277) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (27277) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (27277) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (27287) DHT_RECEIVER: Light Level: 1485[0m
+[0;32mI (27287) DHT_RECEIVER: Voltage: 1.20V[0m
+[0;32mI (27287) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (27297) DHT_RECEIVER: Timestamp: 25105 ms[0m
+[0;32mI (27297) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (27297) DHT_RECEIVER: ===================================[0m
+[0;32mI (27307) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=31405[0m
+[0;33mW (27387) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (27387) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (27387) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (27387) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (27397) DHT_RECEIVER: Temperature: 33.20°C[0m
+[0;32mI (27397) DHT_RECEIVER: Humidity: 70.86%[0m
+[0;32mI (27397) DHT_RECEIVER: Timestamp: 24353 ms[0m
+[0;32mI (27407) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (27407) DHT_RECEIVER: ==================================[0m
+[0;32mI (27417) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=19861[0m
+[0;33mW (27487) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (27557) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (27627) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=31405[0m
+[0;33mW (27677) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (27937) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=19861[0m
+[0;32mI (28057) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (28057) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (28057) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (28057) DHT_RECEIVER: Data: 0[0m
+[0;32mI (28067) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (28067) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (28077) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (28077) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (28077) DHT_RECEIVER: Timestamp: 27616 ms[0m
+[0;32mI (28087) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (28087) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (28097) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (28097) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (28097) DHT_RECEIVER: =============================================[0m
+[1;31mE (28107) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (28107) DHT_RECEIVER: ===================================[0m
+[0;32mI (30187) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (30187) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (30187) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (30197) DHT_RECEIVER: Data: 0[0m
+[0;32mI (30197) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (30197) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (30207) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (30217) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (30217) DHT_RECEIVER: Timestamp: 29751 ms[0m
+[0;32mI (30217) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (30227) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (30227) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (30237) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (30237) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (30247) DHT_RECEIVER: =============================================[0m
+[0;32mI (30247) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (30247) DHT_RECEIVER: ===================================[0m
+[0;32mI (30257) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (30267) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (30267) DHT_RECEIVER: Light Level: 1526[0m
+[0;32mI (30277) DHT_RECEIVER: Voltage: 1.23V[0m
+[0;32mI (30277) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (30277) DHT_RECEIVER: Timestamp: 28105 ms[0m
+[0;32mI (30287) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (30287) DHT_RECEIVER: ===================================[0m
+[0;32mI (30297) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=17794[0m
+[0;32mI (30597) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=17794[0m
+[0;33mW (31077) DHT_RECEIVER: Client message 0xc002e5 timeout[0m
+[0;32mI (31077) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (31077) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (31087) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (31127) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (31127) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 40403us[0m
+[0;32mI (31217) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (31217) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (31217) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (31227) DHT_RECEIVER: Data: 0[0m
+[0;32mI (31227) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (31227) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (31237) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (31247) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (31247) DHT_RECEIVER: Timestamp: 30781 ms[0m
+[0;32mI (31247) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (31257) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (31267) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (31267) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (31267) DHT_RECEIVER: =============================================[0m
+[0;32mI (31277) DHT_RECEIVER: ===================================[0m
+[0;32mI (31517) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (31517) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (31517) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (31517) DHT_RECEIVER: Temperature: 34.94°C[0m
+[0;32mI (31527) DHT_RECEIVER: Humidity: 43.63%[0m
+[0;32mI (31527) DHT_RECEIVER: Timestamp: 29353 ms[0m
+[0;32mI (31527) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (31537) DHT_RECEIVER: ==================================[0m
+[0;32mI (31547) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=49225[0m
+[0;33mW (31577) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (31687) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (31687) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (31687) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (31697) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (31697) DHT_RECEIVER: Temperature: 34.94°C[0m
+[0;32mI (31707) DHT_RECEIVER: Humidity: 43.63%[0m
+[0;32mI (31707) DHT_RECEIVER: Timestamp: 29353 ms[0m
+[0;32mI (31717) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (31717) DHT_RECEIVER: ==================================[0m
+[0;32mI (31727) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=1806[0m
+[0;33mW (31807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (31827) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=49225[0m
+[0;33mW (31897) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32037) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (32137) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=1806[0m
+[0;33mW (32187) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32297) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32407) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32497) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (32597) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (33227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (33227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (33227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (33227) DHT_RECEIVER: Light Level: 371[0m
+[0;32mI (33237) DHT_RECEIVER: Voltage: 0.30V[0m
+[0;32mI (33237) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (33237) DHT_RECEIVER: Timestamp: 31105 ms[0m
+[0;32mI (33247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (33247) DHT_RECEIVER: ===================================[0m
+[0;32mI (33257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=43755[0m
+[0;32mI (33567) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=43755[0m
+[0;33mW (35267) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (35267) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (35267) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (35277) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (35297) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (35297) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 24150us[0m
+[0;32mI (36247) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (36247) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (36247) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (36257) DHT_RECEIVER: Light Level: 1325[0m
+[0;32mI (36257) DHT_RECEIVER: Voltage: 1.07V[0m
+[0;32mI (36267) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (36267) DHT_RECEIVER: Timestamp: 34105 ms[0m
+[0;32mI (36267) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (36277) DHT_RECEIVER: ===================================[0m
+[0;32mI (36287) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=55349[0m
+[0;32mI (36497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (36497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (36497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (36497) DHT_RECEIVER: Temperature: 23.42°C[0m
+[0;32mI (36507) DHT_RECEIVER: Humidity: 65.40%[0m
+[0;32mI (36507) DHT_RECEIVER: Timestamp: 34353 ms[0m
+[0;32mI (36507) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (36517) DHT_RECEIVER: ==================================[0m
+[0;32mI (36527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=7043[0m
+[0;32mI (36637) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=55349[0m
+[0;33mW (36717) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (36817) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (36817) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (36817) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (36817) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (36827) DHT_RECEIVER: Temperature: 23.42°C[0m
+[0;32mI (36827) DHT_RECEIVER: Humidity: 65.40%[0m
+[0;32mI (36827) DHT_RECEIVER: Timestamp: 34353 ms[0m
+[0;32mI (36837) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (36837) DHT_RECEIVER: ==================================[0m
+[0;32mI (36847) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=42113[0m
+[0;33mW (36907) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (36947) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=7043[0m
+[0;33mW (37107) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37137) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (37257) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=42113[0m
+[0;33mW (37327) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37427) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37517) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37617) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (39227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (39227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (39227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (39227) DHT_RECEIVER: Light Level: 1307[0m
+[0;32mI (39237) DHT_RECEIVER: Voltage: 1.05V[0m
+[0;32mI (39237) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (39237) DHT_RECEIVER: Timestamp: 37105 ms[0m
+[0;32mI (39247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (39247) DHT_RECEIVER: ===================================[0m
+[0;32mI (39257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=38073[0m
+[0;32mI (39607) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=38073[0m
+[0;32mI (41517) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (41517) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (41517) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (41527) DHT_RECEIVER: Temperature: 22.01°C[0m
+[0;32mI (41527) DHT_RECEIVER: Humidity: 32.63%[0m
+[0;32mI (41537) DHT_RECEIVER: Timestamp: 39353 ms[0m
+[0;32mI (41537) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (41537) DHT_RECEIVER: ==================================[0m
+[0;32mI (41547) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=62403[0m
+[0;33mW (41607) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (41717) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (41717) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (41717) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (41727) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (41727) DHT_RECEIVER: Temperature: 22.01°C[0m
+[0;32mI (41727) DHT_RECEIVER: Humidity: 32.63%[0m
+[0;32mI (41737) DHT_RECEIVER: Timestamp: 39353 ms[0m
+[0;32mI (41737) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (41747) DHT_RECEIVER: ==================================[0m
+[0;32mI (41747) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=5936[0m
+[0;33mW (41837) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (41867) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=62403[0m
+[0;33mW (41937) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (42037) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (42137) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (42167) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=5936[0m
+[0;32mI (42247) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (42247) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (42247) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (42257) DHT_RECEIVER: Light Level: 2352[0m
+[0;32mI (42257) DHT_RECEIVER: Voltage: 1.90V[0m
+[0;32mI (42257) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (42267) DHT_RECEIVER: Timestamp: 40105 ms[0m
+[0;32mI (42267) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (42267) DHT_RECEIVER: ===================================[0m
+[0;32mI (42277) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=46879[0m
+[0;33mW (42347) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (42347) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (42347) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (42347) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (42357) DHT_RECEIVER: Temperature: 22.01°C[0m
+[0;32mI (42357) DHT_RECEIVER: Humidity: 32.63%[0m
+[0;32mI (42367) DHT_RECEIVER: Timestamp: 39353 ms[0m
+[0;32mI (42367) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (42367) DHT_RECEIVER: ==================================[0m
+[0;32mI (42377) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=9681[0m
+[0;33mW (42437) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (42527) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (42577) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=46879[0m
+[0;33mW (42647) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (42897) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=9681[0m
+[0;32mI (45247) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (45247) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (45247) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (45257) DHT_RECEIVER: Light Level: 2036[0m
+[0;32mI (45257) DHT_RECEIVER: Voltage: 1.64V[0m
+[0;32mI (45267) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (45267) DHT_RECEIVER: Timestamp: 43105 ms[0m
+[0;32mI (45267) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (45277) DHT_RECEIVER: ===================================[0m
+[0;32mI (45287) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=62050[0m
+[0;32mI (45647) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=62050[0m
+[0;32mI (46497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (46497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (46497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (46497) DHT_RECEIVER: Temperature: 25.10°C[0m
+[0;32mI (46507) DHT_RECEIVER: Humidity: 45.44%[0m
+[0;32mI (46507) DHT_RECEIVER: Timestamp: 44353 ms[0m
+[0;32mI (46507) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (46517) DHT_RECEIVER: ==================================[0m
+[0;32mI (46527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=12539[0m
+[0;32mI (46617) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (46617) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (46617) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (46627) DHT_RECEIVER: Data: 0[0m
+[0;32mI (46627) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (46637) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (46637) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (46647) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (46647) DHT_RECEIVER: Timestamp: 46182 ms[0m
+[0;32mI (46647) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (46657) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (46657) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (46667) DHT_RECEIVER: =============================================[0m
+[0;32mI (46667) DHT_RECEIVER: ===================================[0m
+[0;33mW (46627) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (46687) DHT_RECEIVER: Send 0xc402e5[0m
+[0;33mW (46737) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (46737) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (46737) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (46747) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (46747) DHT_RECEIVER: Temperature: 25.10°C[0m
+[0;32mI (46757) DHT_RECEIVER: Humidity: 45.44%[0m
+[0;32mI (46757) DHT_RECEIVER: Timestamp: 44353 ms[0m
+[0;32mI (46767) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (46767) DHT_RECEIVER: ==================================[0m
+[0;32mI (46777) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=57754[0m
+[0;33mW (46817) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (46877) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=12539[0m
+[0;33mW (46937) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (47047) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (47137) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (47187) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=57754[0m
+[0;33mW (47357) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (47377) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (47517) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (47617) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (48227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (48227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (48227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (48227) DHT_RECEIVER: Light Level: 718[0m
+[0;32mI (48237) DHT_RECEIVER: Voltage: 0.58V[0m
+[0;32mI (48237) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (48237) DHT_RECEIVER: Timestamp: 46105 ms[0m
+[0;32mI (48247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (48247) DHT_RECEIVER: ===================================[0m
+[0;32mI (48257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=24808[0m
+[0;32mI (48617) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=24808[0m
+[0;32mI (50467) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (50467) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (50467) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (50467) DHT_RECEIVER: Data: 1[0m
+[0;32mI (50477) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (50477) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (50487) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (50487) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (50487) DHT_RECEIVER: Timestamp: 50027 ms[0m
+[0;32mI (50497) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (50497) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (50507) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (50507) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (50507) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (50517) DHT_RECEIVER: =============================================[0m
+[0;32mI (50527) DHT_RECEIVER: ===================================[0m
+[0;32mI (50557) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (50557) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (50567) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (50567) DHT_RECEIVER: Data: 0[0m
+[0;32mI (50567) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (50577) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (50577) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (50587) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (50587) DHT_RECEIVER: Timestamp: 50124 ms[0m
+[0;32mI (50597) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (50597) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (50597) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (50597) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (50607) DHT_RECEIVER: =============================================[0m
+[1;31mE (50607) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (50617) DHT_RECEIVER: ===================================[0m
+[0;32mI (50677) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (50677) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (50677) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (50687) DHT_RECEIVER: Data: 1[0m
+[0;32mI (50687) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (50687) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (50697) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (50697) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (50707) DHT_RECEIVER: Timestamp: 50239 ms[0m
+[0;32mI (50707) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (50707) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (50717) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (50717) DHT_RECEIVER: =============================================[0m
+[0;32mI (50727) DHT_RECEIVER: ===================================[0m
+[0;33mW (50687) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (50737) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (50747) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[1;31mE (50757) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (50757) DHT_RECEIVER: Send 0xc402e5[0m
+[1;31mE (50757) DHT_RECEIVER: Failed to send message 0xc002e5[0m
+[0;32mI (50807) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (50807) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (50817) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (50817) DHT_RECEIVER: Data: 0[0m
+[0;32mI (50817) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (50827) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (50827) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (50837) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (50837) DHT_RECEIVER: Timestamp: 50374 ms[0m
+[0;32mI (50847) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (50847) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (50847) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (50847) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (50857) DHT_RECEIVER: =============================================[0m
+[1;31mE (50867) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (50867) DHT_RECEIVER: ===================================[0m
+[0;32mI (50977) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (50977) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (50977) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (50987) DHT_RECEIVER: Data: 1[0m
+[0;32mI (50987) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (50987) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (50997) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (50997) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (51007) DHT_RECEIVER: Timestamp: 50539 ms[0m
+[0;32mI (51007) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (51007) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (51017) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (51017) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (51017) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (51027) DHT_RECEIVER: =============================================[0m
+[0;32mI (51037) DHT_RECEIVER: ===================================[0m
+[0;32mI (51077) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (51077) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (51077) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (51087) DHT_RECEIVER: Data: 0[0m
+[0;32mI (51087) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (51087) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (51097) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (51097) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (51107) DHT_RECEIVER: Timestamp: 50639 ms[0m
+[0;32mI (51107) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (51117) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (51117) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (51117) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (51117) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (51127) DHT_RECEIVER: =============================================[0m
+[0;32mI (51137) DHT_RECEIVER: ===================================[0m
+[0;32mI (51257) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (51257) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (51257) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (51257) DHT_RECEIVER: Light Level: 597[0m
+[0;32mI (51267) DHT_RECEIVER: Voltage: 0.48V[0m
+[0;32mI (51267) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (51267) DHT_RECEIVER: Timestamp: 49105 ms[0m
+[0;32mI (51277) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (51277) DHT_RECEIVER: ===================================[0m
+[0;32mI (51287) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=6944[0m
+[0;32mI (51517) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (51517) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (51517) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (51517) DHT_RECEIVER: Temperature: 29.10°C[0m
+[0;32mI (51527) DHT_RECEIVER: Humidity: 43.67%[0m
+[0;32mI (51527) DHT_RECEIVER: Timestamp: 49354 ms[0m
+[0;32mI (51527) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (51537) DHT_RECEIVER: ==================================[0m
+[0;32mI (51537) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=51840[0m
+[0;32mI (51587) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=6944[0m
+[0;33mW (51647) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (51767) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (51767) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (51767) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (51767) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (51777) DHT_RECEIVER: Temperature: 29.10°C[0m
+[0;32mI (51777) DHT_RECEIVER: Humidity: 43.67%[0m
+[0;32mI (51777) DHT_RECEIVER: Timestamp: 49354 ms[0m
+[0;32mI (51787) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (51787) DHT_RECEIVER: ==================================[0m
+[0;32mI (51797) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=57856[0m
+[0;33mW (51827) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (51897) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=51840[0m
+[0;33mW (51967) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52087) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52177) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (52207) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=57856[0m
+[0;33mW (52287) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52377) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52517) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52617) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (54227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (54227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (54227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (54227) DHT_RECEIVER: Light Level: 1665[0m
+[0;32mI (54237) DHT_RECEIVER: Voltage: 1.34V[0m
+[0;32mI (54237) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (54237) DHT_RECEIVER: Timestamp: 52105 ms[0m
+[0;32mI (54247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (54247) DHT_RECEIVER: ===================================[0m
+[0;32mI (54257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=64803[0m
+[0;32mI (54557) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=64803[0m
+[0;33mW (54757) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (54757) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (54757) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (54767) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (56497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (56497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (56497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (56497) DHT_RECEIVER: Temperature: 28.99°C[0m
+[0;32mI (56507) DHT_RECEIVER: Humidity: 47.38%[0m
+[0;32mI (56507) DHT_RECEIVER: Timestamp: 54353 ms[0m
+[0;32mI (56517) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (56517) DHT_RECEIVER: ==================================[0m
+[0;32mI (56527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=40772[0m
+[0;33mW (56667) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (56817) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=40772[0m
+[0;33mW (56867) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (56867) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (56867) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (56877) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (56877) DHT_RECEIVER: Temperature: 28.99°C[0m
+[0;32mI (56887) DHT_RECEIVER: Humidity: 47.38%[0m
+[0;32mI (56887) DHT_RECEIVER: Timestamp: 54353 ms[0m
+[0;32mI (56887) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (56897) DHT_RECEIVER: ==================================[0m
+[0;33mW (56897) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (56907) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=61098[0m
+[0;33mW (57087) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (57147) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (57227) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=61098[0m
+[0;33mW (57387) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (57537) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (57537) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (57537) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (57537) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (57547) DHT_RECEIVER: Temperature: 28.99°C[0m
+[0;32mI (57547) DHT_RECEIVER: Humidity: 47.38%[0m
+[0;32mI (57547) DHT_RECEIVER: Timestamp: 54353 ms[0m
+[0;32mI (57557) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (57557) DHT_RECEIVER: ==================================[0m
+[0;32mI (57567) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=63604[0m
+[0;33mW (57617) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (57837) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=63604[0m
+[0;32mI (57897) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (57897) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (57897) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (57897) DHT_RECEIVER: Light Level: 643[0m
+[0;32mI (57907) DHT_RECEIVER: Voltage: 0.52V[0m
+[0;32mI (57907) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (57907) DHT_RECEIVER: Timestamp: 55105 ms[0m
+[0;32mI (57917) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (57917) DHT_RECEIVER: ===================================[0m
+[0;32mI (57927) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=18819[0m
+[0;32mI (58247) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=18819[0m
+[0;32mI (58247) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (58247) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (58257) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (58257) DHT_RECEIVER: Data: 1[0m
+[0;32mI (58267) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (58267) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (58277) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (58277) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (58277) DHT_RECEIVER: Timestamp: 57816 ms[0m
+[0;32mI (58287) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (58287) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (58297) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (58297) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (58297) DHT_RECEIVER: =============================================[0m
+[1;31mE (58307) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (58307) DHT_RECEIVER: ===================================[0m
+[0;33mW (58767) DHT_RECEIVER: Client message 0xc002e5 timeout[0m
+[0;32mI (58767) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (58767) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (58777) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (58807) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (58807) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 37058us[0m
+[0;32mI (60227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (60227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (60227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (60227) DHT_RECEIVER: Light Level: 2322[0m
+[0;32mI (60237) DHT_RECEIVER: Voltage: 1.87V[0m
+[0;32mI (60237) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (60237) DHT_RECEIVER: Timestamp: 58105 ms[0m
+[0;32mI (60247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (60247) DHT_RECEIVER: ===================================[0m
+[0;32mI (60257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=39181[0m
+[0;32mI (60527) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (60527) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (60527) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (60527) DHT_RECEIVER: Data: 0[0m
+[0;32mI (60537) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (60537) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (60547) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (60547) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (60557) DHT_RECEIVER: Timestamp: 60087 ms[0m
+[0;32mI (60557) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (60557) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (60567) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (60567) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (60567) DHT_RECEIVER: =============================================[0m
+[0;32mI (60577) DHT_RECEIVER: ===================================[0m
+[0;32mI (60587) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=39181[0m
+[0;32mI (61497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (61497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (61497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (61497) DHT_RECEIVER: Temperature: 22.20°C[0m
+[0;32mI (61507) DHT_RECEIVER: Humidity: 36.42%[0m
+[0;32mI (61507) DHT_RECEIVER: Timestamp: 59353 ms[0m
+[0;32mI (61507) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (61517) DHT_RECEIVER: ==================================[0m
+[0;32mI (61527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=60091[0m
+[0;33mW (61577) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (61697) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (61697) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (61697) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (61697) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (61707) DHT_RECEIVER: Temperature: 22.20°C[0m
+[0;32mI (61707) DHT_RECEIVER: Humidity: 36.42%[0m
+[0;32mI (61717) DHT_RECEIVER: Timestamp: 59353 ms[0m
+[0;32mI (61717) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (61717) DHT_RECEIVER: ==================================[0m
+[0;32mI (61727) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=42522[0m
+[0;32mI (61757) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (61757) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (61757) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (61757) DHT_RECEIVER: Data: 1[0m
+[0;32mI (61767) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (61767) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (61777) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (61777) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (61787) DHT_RECEIVER: Timestamp: 61317 ms[0m
+[0;32mI (61787) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (61787) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (61797) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (61797) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (61797) DHT_RECEIVER: =============================================[0m
+[0;33mW (61807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (61807) DHT_RECEIVER: ===================================[0m
+[1;31mE (61807) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (61827) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=60091[0m
+[0;33mW (61907) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (62037) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=42522[0m
+[0;33mW (62097) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (62187) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (62307) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (62377) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (62517) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (62617) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (63227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (63227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (63227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (63237) DHT_RECEIVER: Light Level: 347[0m
+[0;32mI (63237) DHT_RECEIVER: Voltage: 0.28V[0m
+[0;32mI (63237) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (63247) DHT_RECEIVER: Timestamp: 61105 ms[0m
+[0;32mI (63247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (63247) DHT_RECEIVER: ===================================[0m
+[0;32mI (63257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=9050[0m
+[0;32mI (63577) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=9050[0m
+[0;33mW (64567) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (64567) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (64567) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (64577) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (64607) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (64607) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 26608us[0m
+[0;32mI (65417) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (65417) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (65417) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (65417) DHT_RECEIVER: Data: 0[0m
+[0;32mI (65427) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (65427) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (65437) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (65437) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (65447) DHT_RECEIVER: Timestamp: 64978 ms[0m
+[0;32mI (65447) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (65447) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (65457) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (65457) DHT_RECEIVER: =============================================[0m
+[0;32mI (65467) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (65467) DHT_RECEIVER: ===================================[0m
+[0;32mI (66027) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (66027) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (66027) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (66037) DHT_RECEIVER: Data: 1[0m
+[0;32mI (66037) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (66047) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (66047) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (66057) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (66057) DHT_RECEIVER: Timestamp: 65592 ms[0m
+[0;32mI (66057) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (66067) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (66067) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (66077) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (66077) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (66087) DHT_RECEIVER: =============================================[0m
+[0;32mI (66087) DHT_RECEIVER: ===================================[0m
+[0;32mI (66227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (66227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (66227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (66237) DHT_RECEIVER: Light Level: 183[0m
+[0;32mI (66237) DHT_RECEIVER: Voltage: 0.15V[0m
+[0;32mI (66237) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (66247) DHT_RECEIVER: Timestamp: 64105 ms[0m
+[0;32mI (66247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (66247) DHT_RECEIVER: ===================================[0m
+[0;32mI (66257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=43058[0m
+[0;32mI (66497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (66497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (66497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (66497) DHT_RECEIVER: Temperature: 24.76°C[0m
+[0;32mI (66507) DHT_RECEIVER: Humidity: 61.86%[0m
+[0;32mI (66507) DHT_RECEIVER: Timestamp: 64353 ms[0m
+[0;32mI (66507) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (66517) DHT_RECEIVER: ==================================[0m
+[0;32mI (66527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=31665[0m
+[0;32mI (66537) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=43058[0m
+[0;33mW (66597) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (66717) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (66717) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (66717) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (66717) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (66727) DHT_RECEIVER: Temperature: 24.76°C[0m
+[0;32mI (66727) DHT_RECEIVER: Humidity: 61.86%[0m
+[0;32mI (66737) DHT_RECEIVER: Timestamp: 64353 ms[0m
+[0;32mI (66737) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (66747) DHT_RECEIVER: ==================================[0m
+[0;32mI (66747) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=30872[0m
+[0;33mW (66807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (66847) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=31665[0m
+[0;33mW (66897) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (67037) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (67157) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=30872[0m
+[0;33mW (67327) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (67417) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (67537) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (67597) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (67667) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (67667) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (67667) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (67677) DHT_RECEIVER: Data: 0[0m
+[0;32mI (67677) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (67677) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (67687) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (67697) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (67697) DHT_RECEIVER: Timestamp: 67231 ms[0m
+[0;32mI (67697) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (67707) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (67707) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (67717) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (67717) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (67727) DHT_RECEIVER: =============================================[0m
+[0;32mI (67727) DHT_RECEIVER: ===================================[0m
+[0;32mI (68077) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (68077) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (68077) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (68087) DHT_RECEIVER: Data: 1[0m
+[0;32mI (68087) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (68087) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (68097) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (68107) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (68107) DHT_RECEIVER: Timestamp: 67641 ms[0m
+[0;32mI (68107) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (68117) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (68117) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (68127) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (68127) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (68137) DHT_RECEIVER: =============================================[0m
+[0;32mI (68137) DHT_RECEIVER: ===================================[0m
+[0;32mI (69227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (69227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (69227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (69237) DHT_RECEIVER: Light Level: 745[0m
+[0;32mI (69237) DHT_RECEIVER: Voltage: 0.60V[0m
+[0;32mI (69237) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (69247) DHT_RECEIVER: Timestamp: 67105 ms[0m
+[0;32mI (69247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (69247) DHT_RECEIVER: ===================================[0m
+[0;32mI (69257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=9737[0m
+[0;33mW (69467) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (69467) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (69467) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (69467) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (69527) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (69527) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 57918us[0m
+[0;32mI (69617) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=9737[0m
+[0;32mI (70947) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (70947) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (70947) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (70947) DHT_RECEIVER: Data: 0[0m
+[0;32mI (70957) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (70957) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (70967) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (70967) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (70977) DHT_RECEIVER: Timestamp: 70507 ms[0m
+[0;32mI (70977) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (70977) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (70987) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (70987) DHT_RECEIVER: =============================================[0m
+[0;32mI (70987) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (70997) DHT_RECEIVER: ===================================[0m
+[0;32mI (71357) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (71357) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (71357) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (71357) DHT_RECEIVER: Data: 1[0m
+[0;32mI (71367) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (71367) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (71377) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (71377) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (71387) DHT_RECEIVER: Timestamp: 70918 ms[0m
+[0;32mI (71387) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (71387) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (71397) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (71397) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (71397) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (71407) DHT_RECEIVER: =============================================[0m
+[0;32mI (71417) DHT_RECEIVER: ===================================[0m
+[0;33mW (71627) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (71807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (71907) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (71907) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (71907) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (71917) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (71917) DHT_RECEIVER: Temperature: 33.60°C[0m
+[0;32mI (71927) DHT_RECEIVER: Humidity: 57.72%[0m
+[0;32mI (71927) DHT_RECEIVER: Timestamp: 69353 ms[0m
+[0;32mI (71937) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (71937) DHT_RECEIVER: ==================================[0m
+[0;32mI (71947) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=13742[0m
+[0;33mW (72047) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (72187) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (72227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (72227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (72227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (72227) DHT_RECEIVER: Light Level: 2713[0m
+[0;32mI (72237) DHT_RECEIVER: Voltage: 2.19V[0m
+[0;32mI (72237) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (72247) DHT_RECEIVER: Timestamp: 70105 ms[0m
+[0;32mI (72247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (72247) DHT_RECEIVER: ===================================[0m
+[0;32mI (72257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=1680[0m
+[0;32mI (72257) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (72267) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (72277) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (72277) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=13742[0m
+[0;32mI (72277) DHT_RECEIVER: Temperature: 33.60°C[0m
+[0;32mI (72287) DHT_RECEIVER: Humidity: 57.72%[0m
+[0;32mI (72287) DHT_RECEIVER: Timestamp: 69353 ms[0m
+[0;32mI (72297) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (72297) DHT_RECEIVER: ==================================[0m
+[0;32mI (72307) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=25247[0m
+[0;33mW (72497) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (72497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (72497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (72507) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (72507) DHT_RECEIVER: Temperature: 33.60°C[0m
+[0;32mI (72517) DHT_RECEIVER: Humidity: 57.72%[0m
+[0;32mI (72517) DHT_RECEIVER: Timestamp: 69353 ms[0m
+[0;33mW (72517) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (72527) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (72527) DHT_RECEIVER: ==================================[0m
+[0;32mI (72537) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=58434[0m
+[0;32mI (72587) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=1680[0m
+[0;33mW (72657) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (72747) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (72897) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=25247[0m
+[0;32mI (72897) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=58434[0m
+[0;33mW (74987) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (74997) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (74997) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (74997) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (75047) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (75047) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 50031us[0m
+[0;32mI (75227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (75227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (75227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (75237) DHT_RECEIVER: Light Level: 3767[0m
+[0;32mI (75237) DHT_RECEIVER: Voltage: 3.04V[0m
+[0;32mI (75237) DHT_RECEIVER: Status: Bright[0m
+[0;32mI (75247) DHT_RECEIVER: Timestamp: 73105 ms[0m
+[0;32mI (75247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (75247) DHT_RECEIVER: ===================================[0m
+[0;32mI (75257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=14187[0m
+[0;32mI (75557) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=14187[0m
+[0;32mI (76497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (76497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (76497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (76497) DHT_RECEIVER: Temperature: 20.57°C[0m
+[0;32mI (76507) DHT_RECEIVER: Humidity: 44.99%[0m
+[0;32mI (76507) DHT_RECEIVER: Timestamp: 74353 ms[0m
+[0;32mI (76507) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (76517) DHT_RECEIVER: ==================================[0m
+[0;32mI (76527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=16284[0m
+[0;33mW (76657) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (76737) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (76737) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (76737) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (76747) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (76747) DHT_RECEIVER: Temperature: 20.57°C[0m
+[0;32mI (76757) DHT_RECEIVER: Humidity: 44.99%[0m
+[0;32mI (76757) DHT_RECEIVER: Timestamp: 74353 ms[0m
+[0;32mI (76757) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (76767) DHT_RECEIVER: ==================================[0m
+[0;32mI (76767) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=23512[0m
+[0;33mW (76837) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (76887) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=16284[0m
+[0;33mW (76947) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (77037) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (77127) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (77187) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=23512[0m
+[0;33mW (77267) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (77357) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (77507) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (77597) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (78227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (78227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (78227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (78237) DHT_RECEIVER: Light Level: 3199[0m
+[0;32mI (78237) DHT_RECEIVER: Voltage: 2.58V[0m
+[0;32mI (78237) DHT_RECEIVER: Status: Bright[0m
+[0;32mI (78247) DHT_RECEIVER: Timestamp: 76105 ms[0m
+[0;32mI (78247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (78247) DHT_RECEIVER: ===================================[0m
+[0;32mI (78257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=9094[0m
+[0;32mI (78627) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=9094[0m
+[0;32mI (79547) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (79557) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (79557) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (79557) DHT_RECEIVER: Data: 0[0m
+[0;32mI (79557) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (79567) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (79567) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (79577) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (79577) DHT_RECEIVER: Timestamp: 79114 ms[0m
+[0;32mI (79587) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (79587) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (79597) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (79597) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (79597) DHT_RECEIVER: =============================================[0m
+[0;32mI (79607) DHT_RECEIVER: ===================================[0m
+[0;32mI (81227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (81227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (81227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (81237) DHT_RECEIVER: Light Level: 2717[0m
+[0;32mI (81237) DHT_RECEIVER: Voltage: 2.19V[0m
+[0;32mI (81237) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (81247) DHT_RECEIVER: Timestamp: 79105 ms[0m
+[0;32mI (81247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (81257) DHT_RECEIVER: ===================================[0m
+[0;32mI (81257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=49417[0m
+[0;33mW (81577) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (81597) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=49417[0m
+[0;33mW (81667) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (81667) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (81667) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (81677) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (81677) DHT_RECEIVER: Temperature: 33.19°C[0m
+[0;32mI (81687) DHT_RECEIVER: Humidity: 31.82%[0m
+[0;32mI (81687) DHT_RECEIVER: Timestamp: 79353 ms[0m
+[0;32mI (81697) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (81697) DHT_RECEIVER: ==================================[0m
+[0;32mI (81707) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=9286[0m
+[0;33mW (81867) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (81907) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (82007) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=9286[0m
+[0;33mW (82077) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (82167) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (82217) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (82217) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (82217) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (82217) DHT_RECEIVER: Data: 1[0m
+[0;32mI (82227) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (82227) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (82237) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (82237) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (82247) DHT_RECEIVER: Timestamp: 81777 ms[0m
+[0;32mI (82247) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (82247) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (82257) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (82257) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (82257) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (82267) DHT_RECEIVER: =============================================[0m
+[0;32mI (82277) DHT_RECEIVER: ===================================[0m
+[0;33mW (82477) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (82497) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (82637) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (82727) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (82847) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (82847) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (82847) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (82857) DHT_RECEIVER: Temperature: 33.19°C[0m
+[0;32mI (82857) DHT_RECEIVER: Humidity: 31.82%[0m
+[0;32mI (82857) DHT_RECEIVER: Timestamp: 79353 ms[0m
+[0;32mI (82867) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (82867) DHT_RECEIVER: ==================================[0m
+[0;32mI (82877) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=30346[0m
+[0;32mI (83237) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=30346[0m
+[0;33mW (83597) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (83597) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (83597) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (83607) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (83627) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (83627) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 23141us[0m
+[0;32mI (84227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (84227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (84227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (84237) DHT_RECEIVER: Light Level: 3427[0m
+[0;32mI (84237) DHT_RECEIVER: Voltage: 2.76V[0m
+[0;32mI (84237) DHT_RECEIVER: Status: Bright[0m
+[0;32mI (84247) DHT_RECEIVER: Timestamp: 82105 ms[0m
+[0;32mI (84247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (84247) DHT_RECEIVER: ===================================[0m
+[0;32mI (84257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=56650[0m
+[0;32mI (84567) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=56650[0m
+[0;32mI (86517) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (86527) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (86527) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (86527) DHT_RECEIVER: Temperature: 24.04°C[0m
+[0;32mI (86527) DHT_RECEIVER: Humidity: 53.11%[0m
+[0;32mI (86537) DHT_RECEIVER: Timestamp: 84353 ms[0m
+[0;32mI (86537) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (86547) DHT_RECEIVER: ==================================[0m
+[0;32mI (86547) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=62997[0m
+[0;33mW (86577) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (86667) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (86667) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (86667) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (86677) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (86677) DHT_RECEIVER: Temperature: 24.04°C[0m
+[0;32mI (86687) DHT_RECEIVER: Humidity: 53.11%[0m
+[0;32mI (86687) DHT_RECEIVER: Timestamp: 84353 ms[0m
+[0;32mI (86697) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (86697) DHT_RECEIVER: ==================================[0m
+[0;32mI (86707) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=57012[0m
+[0;33mW (86837) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (86897) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (86917) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=62997[0m
+[0;33mW (87147) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (87227) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=57012[0m
+[0;32mI (87287) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (87287) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (87287) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;33mW (87297) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (87297) DHT_RECEIVER: Light Level: 2804[0m
+[0;32mI (87297) DHT_RECEIVER: Voltage: 2.26V[0m
+[0;32mI (87307) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (87307) DHT_RECEIVER: Timestamp: 85105 ms[0m
+[0;32mI (87307) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (87317) DHT_RECEIVER: ===================================[0m
+[0;32mI (87327) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=2897[0m
+[0;32mI (87327) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (87337) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (87337) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (87347) DHT_RECEIVER: Temperature: 24.04°C[0m
+[0;32mI (87347) DHT_RECEIVER: Humidity: 53.11%[0m
+[0;32mI (87347) DHT_RECEIVER: Timestamp: 84353 ms[0m
+[0;32mI (87357) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (87357) DHT_RECEIVER: ==================================[0m
+[0;32mI (87367) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=6376[0m
+[0;33mW (87387) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (87537) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (87617) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (87637) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=2897[0m
+[0;32mI (87947) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=6376[0m
+[0;32mI (90227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (90227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (90227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (90237) DHT_RECEIVER: Light Level: 2904[0m
+[0;32mI (90237) DHT_RECEIVER: Voltage: 2.34V[0m
+[0;32mI (90237) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (90247) DHT_RECEIVER: Timestamp: 88105 ms[0m
+[0;32mI (90247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (90247) DHT_RECEIVER: ===================================[0m
+[0;32mI (90257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=22031[0m
+[0;32mI (90297) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (90297) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (90297) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (90297) DHT_RECEIVER: Data: 0[0m
+[0;32mI (90307) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (90307) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (90317) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (90317) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (90317) DHT_RECEIVER: Timestamp: 89858 ms[0m
+[0;32mI (90327) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (90327) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (90337) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (90337) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (90337) DHT_RECEIVER: =============================================[0m
+[0;32mI (90347) DHT_RECEIVER: ===================================[0m
+[0;32mI (90607) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=22031[0m
+[0;32mI (90837) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (90837) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (90837) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (90837) DHT_RECEIVER: Data: 1[0m
+[0;32mI (90847) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (90847) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (90857) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (90857) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (90867) DHT_RECEIVER: Timestamp: 90397 ms[0m
+[0;32mI (90867) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (90867) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (90877) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (90877) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (90877) DHT_RECEIVER: =============================================[0m
+[1;31mE (90887) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (90887) DHT_RECEIVER: ===================================[0m
+[0;32mI (91497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (91497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (91497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (91497) DHT_RECEIVER: Temperature: 25.58°C[0m
+[0;32mI (91507) DHT_RECEIVER: Humidity: 31.03%[0m
+[0;32mI (91507) DHT_RECEIVER: Timestamp: 89353 ms[0m
+[0;32mI (91507) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (91517) DHT_RECEIVER: ==================================[0m
+[0;32mI (91527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=4152[0m
+[0;33mW (91577) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (91697) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (91697) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (91697) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (91707) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (91707) DHT_RECEIVER: Temperature: 25.58°C[0m
+[0;32mI (91717) DHT_RECEIVER: Humidity: 31.03%[0m
+[0;32mI (91717) DHT_RECEIVER: Timestamp: 89353 ms[0m
+[0;32mI (91717) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (91727) DHT_RECEIVER: ==================================[0m
+[0;32mI (91737) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=695[0m
+[0;33mW (91807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (91837) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=4152[0m
+[0;33mW (91897) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (92047) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (92147) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=695[0m
+[0;32mI (92187) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (92187) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (92197) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (92197) DHT_RECEIVER: Data: 0[0m
+[0;32mI (92197) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (92207) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (92207) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (92217) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (92217) DHT_RECEIVER: Timestamp: 91753 ms[0m
+[0;32mI (92227) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (92227) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (92227) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (92227) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (92237) DHT_RECEIVER: =============================================[0m
+[1;31mE (92237) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (92247) DHT_RECEIVER: ===================================[0m
+[0;33mW (92307) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (92397) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (92517) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (92607) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (93067) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (93067) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (93067) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (93077) DHT_RECEIVER: Data: 1[0m
+[0;32mI (93077) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (93077) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (93087) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (93087) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (93097) DHT_RECEIVER: Timestamp: 92628 ms[0m
+[0;32mI (93097) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (93097) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (93107) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (93107) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (93107) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (93117) DHT_RECEIVER: =============================================[0m
+[0;32mI (93127) DHT_RECEIVER: ===================================[0m
+[0;32mI (93227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (93227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (93227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (93237) DHT_RECEIVER: Light Level: 53[0m
+[0;32mI (93237) DHT_RECEIVER: Voltage: 0.04V[0m
+[0;32mI (93237) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (93247) DHT_RECEIVER: Timestamp: 91105 ms[0m
+[0;32mI (93247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (93257) DHT_RECEIVER: ===================================[0m
+[0;32mI (93257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=11866[0m
+[0;32mI (93577) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=11866[0m
+[0;32mI (93707) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (93707) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (93717) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (93717) DHT_RECEIVER: Data: 0[0m
+[0;32mI (93717) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (93727) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (93727) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (93737) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (93737) DHT_RECEIVER: Timestamp: 93274 ms[0m
+[0;32mI (93747) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (93747) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (93747) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (93747) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (93757) DHT_RECEIVER: =============================================[0m
+[1;31mE (93757) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (93767) DHT_RECEIVER: ===================================[0m
+[0;33mW (94337) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (94337) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (94337) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (94347) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (94367) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (94367) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 21462us[0m
+[0;32mI (94707) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (94707) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (94707) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (94707) DHT_RECEIVER: Data: 1[0m
+[0;32mI (94717) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (94717) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (94727) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (94727) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (94727) DHT_RECEIVER: Timestamp: 94265 ms[0m
+[0;32mI (94737) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (94737) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (94747) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (94747) DHT_RECEIVER: =============================================[0m
+[0;32mI (94747) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (94757) DHT_RECEIVER: ===================================[0m
+[0;32mI (94837) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (94837) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (94837) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (94847) DHT_RECEIVER: Data: 0[0m
+[0;32mI (94847) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (94857) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (94857) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (94867) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (94867) DHT_RECEIVER: Timestamp: 94402 ms[0m
+[0;32mI (94867) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (94877) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (94877) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (94887) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (94887) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (94897) DHT_RECEIVER: =============================================[0m
+[0;32mI (94897) DHT_RECEIVER: ===================================[0m
+[0;32mI (94947) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (94947) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (94947) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (94947) DHT_RECEIVER: Data: 1[0m
+[0;32mI (94957) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (94957) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (94967) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (94967) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (94977) DHT_RECEIVER: Timestamp: 94507 ms[0m
+[0;32mI (94977) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (94977) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (94987) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (94987) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (94987) DHT_RECEIVER: =============================================[0m
+[1;31mE (94997) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (94997) DHT_RECEIVER: ===================================[0m
+[0;32mI (95147) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (95147) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (95157) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (95157) DHT_RECEIVER: Data: 0[0m
+[0;32mI (95157) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (95167) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (95167) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (95177) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (95177) DHT_RECEIVER: Timestamp: 94713 ms[0m
+[0;32mI (95187) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (95187) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (95187) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (95197) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (95197) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (95207) DHT_RECEIVER: =============================================[0m
+[0;32mI (95217) DHT_RECEIVER: ===================================[0m
+[0;32mI (95257) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (95257) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (95257) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (95257) DHT_RECEIVER: Data: 1[0m
+[0;32mI (95267) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (95267) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (95277) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (95277) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (95287) DHT_RECEIVER: Timestamp: 94818 ms[0m
+[0;32mI (95287) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (95287) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (95297) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (95297) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (95297) DHT_RECEIVER: =============================================[0m
+[1;31mE (95307) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (95307) DHT_RECEIVER: ===================================[0m
+[0;32mI (96227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (96227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (96227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (96237) DHT_RECEIVER: Light Level: 313[0m
+[0;32mI (96237) DHT_RECEIVER: Voltage: 0.25V[0m
+[0;32mI (96237) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (96247) DHT_RECEIVER: Timestamp: 94105 ms[0m
+[0;32mI (96247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (96257) DHT_RECEIVER: ===================================[0m
+[0;32mI (96257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=33662[0m
+[0;32mI (96497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (96497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (96497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (96497) DHT_RECEIVER: Temperature: 28.47°C[0m
+[0;32mI (96507) DHT_RECEIVER: Humidity: 37.60%[0m
+[0;32mI (96507) DHT_RECEIVER: Timestamp: 94353 ms[0m
+[0;32mI (96517) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (96517) DHT_RECEIVER: ==================================[0m
+[0;32mI (96527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=60998[0m
+[0;32mI (96547) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=33662[0m
+[0;33mW (96597) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (96717) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (96717) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (96717) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (96727) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (96727) DHT_RECEIVER: Temperature: 28.47°C[0m
+[0;32mI (96737) DHT_RECEIVER: Humidity: 37.60%[0m
+[0;32mI (96737) DHT_RECEIVER: Timestamp: 94353 ms[0m
+[0;32mI (96747) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (96747) DHT_RECEIVER: ==================================[0m
+[0;32mI (96757) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=29859[0m
+[0;33mW (96807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (96857) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=60998[0m
+[0;33mW (96927) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (97107) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (97107) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (97107) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (97107) DHT_RECEIVER: Data: 0[0m
+[0;32mI (97107) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (97117) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;33mW (97117) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (97127) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (97137) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (97137) DHT_RECEIVER: Timestamp: 96665 ms[0m
+[0;33mW (97137) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (97137) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (97147) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (97157) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (97157) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (97157) DHT_RECEIVER: =============================================[0m
+[0;32mI (97167) DHT_RECEIVER: ===================================[0m
+[1;31mE (97177) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (97177) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=29859[0m
+[0;33mW (97287) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (97377) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (97517) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (97607) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (98747) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (98747) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (98747) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (98757) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (99227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (99227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (99227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (99237) DHT_RECEIVER: Light Level: 1448[0m
+[0;32mI (99237) DHT_RECEIVER: Voltage: 1.17V[0m
+[0;32mI (99237) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (99247) DHT_RECEIVER: Timestamp: 97105 ms[0m
+[0;32mI (99247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (99247) DHT_RECEIVER: ===================================[0m
+[0;32mI (99257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=2981[0m
+[0;32mI (99627) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=2981[0m
+[0;32mI (100947) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (100947) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (100947) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (100957) DHT_RECEIVER: Data: 1[0m
+[0;32mI (100957) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (100967) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (100967) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (100977) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (100977) DHT_RECEIVER: Timestamp: 100512 ms[0m
+[0;32mI (100977) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (100987) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (100987) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (100997) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (100997) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (101007) DHT_RECEIVER: =============================================[0m
+[0;32mI (101017) DHT_RECEIVER: ===================================[0m
+[0;32mI (101497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (101497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (101497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (101497) DHT_RECEIVER: Temperature: 28.15°C[0m
+[0;32mI (101507) DHT_RECEIVER: Humidity: 33.78%[0m
+[0;32mI (101507) DHT_RECEIVER: Timestamp: 99353 ms[0m
+[0;32mI (101517) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (101517) DHT_RECEIVER: ==================================[0m
+[0;32mI (101527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=52267[0m
+[0;33mW (101627) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (101687) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (101687) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (101697) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (101697) DHT_RECEIVER: Data: 0[0m
+[0;32mI (101697) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (101707) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (101707) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (101717) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (101717) DHT_RECEIVER: Timestamp: 101254 ms[0m
+[0;32mI (101727) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (101727) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (101727) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;33mW (101737) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (101737) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (101747) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (101747) DHT_RECEIVER: =============================================[0m
+[0;32mI (101757) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (101757) DHT_RECEIVER: ===================================[0m
+[0;32mI (101767) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (101777) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=52267[0m
+[0;32mI (101777) DHT_RECEIVER: Temperature: 28.15°C[0m
+[0;32mI (101787) DHT_RECEIVER: Humidity: 33.78%[0m
+[0;32mI (101787) DHT_RECEIVER: Timestamp: 99353 ms[0m
+[0;32mI (101797) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (101797) DHT_RECEIVER: ==================================[0m
+[0;32mI (101807) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=37814[0m
+[1;31mE (101807) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;33mW (101927) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (102037) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (102077) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=37814[0m
+[0;33mW (102137) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (102257) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (102257) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (102257) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (102257) DHT_RECEIVER: Light Level: 1392[0m
+[0;32mI (102267) DHT_RECEIVER: Voltage: 1.12V[0m
+[0;32mI (102267) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (102267) DHT_RECEIVER: Timestamp: 100105 ms[0m
+[0;32mI (102277) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (102277) DHT_RECEIVER: ===================================[0m
+[0;32mI (102287) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=48833[0m
+[0;33mW (102357) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (102357) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (102357) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (102367) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (102367) DHT_RECEIVER: Temperature: 28.15°C[0m
+[0;32mI (102377) DHT_RECEIVER: Humidity: 33.78%[0m
+[0;32mI (102377) DHT_RECEIVER: Timestamp: 99353 ms[0m
+[0;32mI (102377) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (102387) DHT_RECEIVER: ==================================[0m
+[0;32mI (102397) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=37125[0m
+[0;33mW (102527) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (102587) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=48833[0m
+[0;32mI (102597) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (102597) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (102597) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (102597) DHT_RECEIVER: Data: 1[0m
+[0;32mI (102607) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (102607) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (102617) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (102617) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (102627) DHT_RECEIVER: Timestamp: 102158 ms[0m
+[0;32mI (102627) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (102627) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (102637) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (102637) DHT_RECEIVER: =============================================[0m
+[0;33mW (102647) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (102647) DHT_RECEIVER: ===================================[0m
+[1;31mE (102637) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (102667) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;33mW (102757) DHT_RECEIVER: Client message 0xc002e5 timeout[0m
+[0;32mI (102757) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (102757) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (102767) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (102807) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (102807) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 43969us[0m
+[0;32mI (102817) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (102817) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (102827) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (102827) DHT_RECEIVER: Data: 0[0m
+[0;32mI (102837) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (102837) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (102847) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (102847) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (102857) DHT_RECEIVER: Timestamp: 102387 ms[0m
+[0;32mI (102857) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (102857) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (102867) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (102867) DHT_RECEIVER: Send 0xc402e5[0m
+[0;32mI (102867) DHT_RECEIVER: =============================================[0m
+[0;32mI (102877) DHT_RECEIVER: ===================================[0m
+[0;32mI (102887) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=37125[0m
+[0;32mI (103407) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (103407) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (103407) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (103417) DHT_RECEIVER: Data: 1[0m
+[0;32mI (103417) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (103417) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (103427) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (103427) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (103437) DHT_RECEIVER: Timestamp: 102970 ms[0m
+[0;32mI (103437) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (103447) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (103447) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (103457) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (103457) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[0;32mI (103467) DHT_RECEIVER: =============================================[0m
+[0;32mI (103467) DHT_RECEIVER: ===================================[0m
+[0;32mI (104837) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (104847) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (104847) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (104847) DHT_RECEIVER: Data: 0[0m
+[0;32mI (104847) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (104857) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (104867) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (104867) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (104867) DHT_RECEIVER: Timestamp: 104405 ms[0m
+[0;32mI (104877) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (104877) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (104887) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (104887) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (104887) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (104897) DHT_RECEIVER: =============================================[0m
+[0;32mI (104907) DHT_RECEIVER: ===================================[0m
+[0;32mI (105257) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (105257) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (105257) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (105257) DHT_RECEIVER: Light Level: 169[0m
+[0;32mI (105267) DHT_RECEIVER: Voltage: 0.14V[0m
+[0;32mI (105267) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (105277) DHT_RECEIVER: Timestamp: 103105 ms[0m
+[0;32mI (105277) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (105277) DHT_RECEIVER: ===================================[0m
+[0;32mI (105287) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=40227[0m
+[0;32mI (105397) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (105397) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (105397) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (105397) DHT_RECEIVER: Data: 1[0m
+[0;32mI (105407) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (105407) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (105417) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (105417) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (105427) DHT_RECEIVER: Timestamp: 104957 ms[0m
+[0;32mI (105427) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (105427) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (105437) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (105437) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (105437) DHT_RECEIVER: =============================================[0m
+[1;31mE (105447) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (105447) DHT_RECEIVER: ===================================[0m
+[0;32mI (105497) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=40227[0m
+[0;32mI (105867) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (105867) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (105867) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (105877) DHT_RECEIVER: Data: 0[0m
+[0;32mI (105877) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (105877) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (105887) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (105887) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (105897) DHT_RECEIVER: Timestamp: 105429 ms[0m
+[0;32mI (105897) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (105907) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (105907) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (105907) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[1;31mE (105907) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (105917) DHT_RECEIVER: =============================================[0m
+[0;32mI (105927) DHT_RECEIVER: ===================================[0m
+[0;32mI (105957) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=1
+[0;32mI (105967) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (105967) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (105967) DHT_RECEIVER: Data: 1[0m
+[0;32mI (105967) DHT_RECEIVER: Parsed LED state: ON[0m
+[0;32mI (105977) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (105977) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (105987) DHT_RECEIVER: LED state: ON[0m
+[0;32mI (105987) DHT_RECEIVER: Timestamp: 105525 ms[0m
+[0;32mI (105997) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (105997) DHT_RECEIVER: Data size: 8 bytes[0m
+[0;32mI (105997) DHT_RECEIVER: ✅ Successfully sent LED control to server: ON[0m
+[1;31mE (106007) BLE_MESH: Busy sending message to DST 0x0006[0m
+[0;32mI (106007) DHT_RECEIVER: =============================================[0m
+[1;31mE (106017) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (106017) DHT_RECEIVER: ===================================[0m
+[0;32mI (106077) DHT_RECEIVER: MQTT_EVENT_DATA[0m
+TOPIC=22004015/tranvancon/led
+DATA=0
+[0;32mI (106087) DHT_RECEIVER: === LED Control Message Received ===[0m
+[0;32mI (106087) DHT_RECEIVER: Topic: 22004015/tranvancon/led[0m
+[0;32mI (106087) DHT_RECEIVER: Data: 0[0m
+[0;32mI (106087) DHT_RECEIVER: Parsed LED state: OFF[0m
+[0;32mI (106097) DHT_RECEIVER: === Sending LED Control to BLE Mesh Server ===[0m
+[0;32mI (106097) DHT_RECEIVER: Target server address: 0x0006[0m
+[0;32mI (106107) DHT_RECEIVER: LED state: OFF[0m
+[0;32mI (106107) DHT_RECEIVER: Timestamp: 105645 ms[0m
+[0;32mI (106117) DHT_RECEIVER: Opcode: 0xc402e5[0m
+[0;32mI (106117) DHT_RECEIVER: Data size: 8 bytes[0m
+[1;31mE (106127) BLE_MESH: Busy sending message to DST 0x0006[0m
+[1;31mE (106127) DHT_RECEIVER: Failed to send message 0xc402e5[0m
+[0;32mI (106127) DHT_RECEIVER: ✅ Successfully sent LED control to server: OFF[0m
+[0;32mI (106137) DHT_RECEIVER: =============================================[0m
+[0;32mI (106147) DHT_RECEIVER: ===================================[0m
+[0;32mI (106497) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (106497) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (106497) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (106497) DHT_RECEIVER: Temperature: 20.03°C[0m
+[0;32mI (106507) DHT_RECEIVER: Humidity: 39.61%[0m
+[0;32mI (106507) DHT_RECEIVER: Timestamp: 104353 ms[0m
+[0;32mI (106517) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (106517) DHT_RECEIVER: ==================================[0m
+[0;32mI (106527) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=61426[0m
+[0;33mW (106667) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (106807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (106817) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (106817) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (106817) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (106827) DHT_RECEIVER: Temperature: 20.03°C[0m
+[0;32mI (106827) DHT_RECEIVER: Humidity: 39.61%[0m
+[0;32mI (106827) DHT_RECEIVER: Timestamp: 104353 ms[0m
+[0;32mI (106837) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (106837) DHT_RECEIVER: ==================================[0m
+[0;32mI (106847) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=34330[0m
+[0;33mW (106867) DHT_RECEIVER: Client message 0xc402e5 timeout[0m
+[0;32mI (106867) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (106867) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (106877) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (106887) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=61426[0m
+[0;33mW (106947) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (107077) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (107167) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (107307) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (107397) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=34330[0m
+[0;33mW (107567) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (108227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (108227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (108227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (108237) DHT_RECEIVER: Light Level: 1527[0m
+[0;32mI (108237) DHT_RECEIVER: Voltage: 1.23V[0m
+[0;32mI (108237) DHT_RECEIVER: Status: Dim[0m
+[0;32mI (108247) DHT_RECEIVER: Timestamp: 106105 ms[0m
+[0;32mI (108247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (108257) DHT_RECEIVER: ===================================[0m
+[0;32mI (108257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=11390[0m
+[0;32mI (108627) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=11390[0m
+[0;33mW (110877) DHT_RECEIVER: Client message 0xc002e5 timeout[0m
+[0;32mI (110877) EXAMPLE_NVS: Store, key "vendor_client", length 4[0m
+[0;32mI (110877) EXAMPLE_NVS: Store, data: 06 00 00 00[0m
+[0;32mI (110887) DHT_RECEIVER: Send 0xc002e5[0m
+[0;32mI (110967) DHT_RECEIVER: Received message with opcode: 0xc102e5, length: 2[0m
+[0;32mI (110967) DHT_RECEIVER: Recv 0xc102e5, tid 0x0000, time 81647us[0m
+[0;32mI (111227) DHT_RECEIVER: Receive publish message 0xc302e5, length: 16[0m
+[0;32mI (111227) DHT_RECEIVER: LDR publish message received![0m
+[0;32mI (111227) DHT_RECEIVER: === LDR Data Received (Publish) ===[0m
+[0;32mI (111237) DHT_RECEIVER: Light Level: 788[0m
+[0;32mI (111237) DHT_RECEIVER: Voltage: 0.64V[0m
+[0;32mI (111237) DHT_RECEIVER: Status: Dark[0m
+[0;32mI (111247) DHT_RECEIVER: Timestamp: 109105 ms[0m
+[0;32mI (111247) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (111257) DHT_RECEIVER: ===================================[0m
+[0;32mI (111257) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=2554[0m
+[0;32mI (111517) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (111517) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (111517) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (111527) DHT_RECEIVER: Temperature: 32.69°C[0m
+[0;32mI (111527) DHT_RECEIVER: Humidity: 55.29%[0m
+[0;32mI (111527) DHT_RECEIVER: Timestamp: 109353 ms[0m
+[0;32mI (111537) DHT_RECEIVER: From address: 0x0006[0m
+[0;32mI (111537) DHT_RECEIVER: ==================================[0m
+[0;32mI (111547) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=12011[0m
+[0;33mW (111577) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (111597) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=2554[0m
+[0;33mW (111667) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (111667) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (111667) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (111677) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (111677) DHT_RECEIVER: Temperature: 32.69°C[0m
+[0;32mI (111687) DHT_RECEIVER: Humidity: 55.29%[0m
+[0;32mI (111687) DHT_RECEIVER: Timestamp: 109353 ms[0m
+[0;32mI (111697

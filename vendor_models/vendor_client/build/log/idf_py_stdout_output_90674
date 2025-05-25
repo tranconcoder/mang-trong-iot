@@ -240,4 +240,123 @@ DATA=1
 [0;32mI (36807) DHT_RECEIVER: Timestamp: 18837 ms[0m
 [0;32mI (36807) DHT_RECEIVER: From address: 0x0005[0m
 [0;32mI (36817) DHT_RECEIVER: ==================================[0m
-[0;32mI (36817) DHT_RECEIVER
+[0;32mI (36817) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=45633[0m
+[0;33mW (36937) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37037) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (37037) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (37037) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (37047) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (37047) DHT_RECEIVER: Temperature: 20.87°C[0m
+[0;32mI (37057) DHT_RECEIVER: Humidity: 48.25%[0m
+[0;32mI (37057) DHT_RECEIVER: Timestamp: 18837 ms[0m
+[0;32mI (37067) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (37067) DHT_RECEIVER: ==================================[0m
+[0;32mI (37067) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=45633[0m
+[0;32mI (37077) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=10927[0m
+[0;33mW (37137) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37227) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37347) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (37387) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=10927[0m
+[0;33mW (37647) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37667) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37807) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (37897) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (41777) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (41777) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (41777) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (41777) DHT_RECEIVER: Temperature: 28.40°C[0m
+[0;32mI (41787) DHT_RECEIVER: Humidity: 49.82%[0m
+[0;32mI (41787) DHT_RECEIVER: Timestamp: 23837 ms[0m
+[0;32mI (41787) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (41797) DHT_RECEIVER: ==================================[0m
+[0;32mI (41797) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=63948[0m
+[0;33mW (41857) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (41947) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (41947) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (41947) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (41957) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (41957) DHT_RECEIVER: Temperature: 28.40°C[0m
+[0;32mI (41967) DHT_RECEIVER: Humidity: 49.82%[0m
+[0;32mI (41967) DHT_RECEIVER: Timestamp: 23837 ms[0m
+[0;32mI (41967) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (41977) DHT_RECEIVER: ==================================[0m
+[0;32mI (41977) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=30970[0m
+[0;32mI (42097) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=63948[0m
+[0;33mW (42147) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (42177) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (42317) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (42407) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (42547) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (42637) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (42707) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=30970[0m
+[0;33mW (42777) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (42867) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (46777) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (46777) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (46777) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (46777) DHT_RECEIVER: Temperature: 23.23°C[0m
+[0;32mI (46787) DHT_RECEIVER: Humidity: 48.80%[0m
+[0;32mI (46787) DHT_RECEIVER: Timestamp: 28837 ms[0m
+[0;32mI (46787) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (46797) DHT_RECEIVER: ==================================[0m
+[0;32mI (46797) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=44416[0m
+[0;33mW (46857) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (46967) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (46977) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (46977) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (46977) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (46987) DHT_RECEIVER: Temperature: 23.23°C[0m
+[0;32mI (46987) DHT_RECEIVER: Humidity: 48.80%[0m
+[0;32mI (46987) DHT_RECEIVER: Timestamp: 28837 ms[0m
+[0;32mI (46997) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (46997) DHT_RECEIVER: ==================================[0m
+[0;32mI (47007) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=62450[0m
+[0;33mW (47087) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (47107) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=44416[0m
+[0;33mW (47177) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (47317) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (47417) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=62450[0m
+[0;33mW (47577) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (47647) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (47817) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (47877) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (51777) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (51777) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (51777) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (51777) DHT_RECEIVER: Temperature: 26.82°C[0m
+[0;32mI (51787) DHT_RECEIVER: Humidity: 40.74%[0m
+[0;32mI (51787) DHT_RECEIVER: Timestamp: 33837 ms[0m
+[0;32mI (51787) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (51797) DHT_RECEIVER: ==================================[0m
+[0;32mI (51797) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=30419[0m
+[0;33mW (51877) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (51977) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (51977) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (51977) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (51977) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (51987) DHT_RECEIVER: Temperature: 26.82°C[0m
+[0;32mI (51987) DHT_RECEIVER: Humidity: 40.74%[0m
+[0;32mI (51997) DHT_RECEIVER: Timestamp: 33837 ms[0m
+[0;32mI (51997) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (52007) DHT_RECEIVER: ==================================[0m
+[0;32mI (52007) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=59696[0m
+[0;33mW (52087) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (52127) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=30419[0m
+[0;33mW (52207) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52317) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52417) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (52437) DHT_RECEIVER: MQTT_EVENT_PUBLISHED, msg_id=59696[0m
+[0;33mW (52587) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52647) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52817) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;33mW (52897) BLE_MESH: No outbound bearer found, inbound bearer 0[0m
+[0;32mI (56777) DHT_RECEIVER: Receive publish message 0xc202e5, length: 12[0m
+[0;32mI (56777) DHT_RECEIVER: DHT publish message received![0m
+[0;32mI (56777) DHT_RECEIVER: === DHT Data Received (Publish) ===[0m
+[0;32mI (56777) DHT_RECEIVER: Temperature: 25.45°C[0m
+[0;32mI (56787) DHT_RECEIVER: Humidity: 68.28%[0m
+[0;32mI (56787) DHT_RECEIVER: Timestamp: 38837 ms[0m
+[0;32mI (56787) DHT_RECEIVER: From address: 0x0005[0m
+[0;32mI (56797) DHT_RECEIVER: ==================================[0m
+[0;32mI (56797) DHT_RECEIVER: Published sensor data to topic 22004015/tranvancon, msg_id=54964[0m
+[0;33mW (56997) BLE_MESH: No outbound bearer found, inbound bearer 0[0m

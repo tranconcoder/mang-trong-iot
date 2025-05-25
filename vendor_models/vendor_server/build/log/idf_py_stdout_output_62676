@@ -70718,4 +70718,1282 @@ I (35T data broadcasted to all nodes
 [0;32mI (686818) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
 [0;32mI (686818) DHT_NODE: DHT data sent to client (0x0001)[0m
 [0;32mI (686828) DHT_NODE: DHT data broadcasted to all nodes[0m
-[0;33mW (686838) BLE_MESH: No outbound bearer f
+[0;33mW (686838) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (686848) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (686848) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (686848) DHT_NODE: Recv 0xc202e5, tid 0x0003[0m
+[0;32mI (686848) DHT_NODE: Send 0xc202e5[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a0ch (166412) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=00038a34 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00038a58 vaddr=3ffbdb60 size=054e8h ( 21736) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=0003df48 vaddr=40080000 size=020d0h (  8400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9343ch (603196) map[0m
+[0;32mI (372) esp_image: segment 5: paddr=000d3464 vaddr=400820d0 size=15a28h ( 88616) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) app_init: Application information:[0m
+[0;32mI (437) app_init: Project name:     vendor_server[0m
+[0;32mI (442) app_init: App version:      b4b7e179-dirty[0m
+[0;32mI (446) app_init: Compile time:     May 25 2025 19:04:43[0m
+[0;32mI (451) app_init: ELF file SHA256:  606d7b6b6...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (459) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (463) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (467) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFCAE18 len 000151E8 (84 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (516) spi_flash: detected chip: generic[0m
+[0;32mI (518) spi_flash: flash io: dio[0m
+[0;33mW (521) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) coexist: coex firmware version: e727207[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (548) main_task: Calling app_main()[0m
+[0;32mI (548) DHT_NODE: Initializing...[0m
+[0;32mI (558) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (578) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (588) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (938) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (938) DHT_NODE: Built-in LED initialized on GPIO 2[0m
+[0;32mI (1018) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1038) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1038) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1038) main_task: Returned from app_main()[0m
+[0;32mI (1068) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (4348) DHT_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (4348) DHT_NODE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (4348) DHT_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (4348) DHT_NODE: DHT timer started successfully[0m
+[0;32mI (4648) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-ADV[0m
+[0;32mI (5098) DHT_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (5098) DHT_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (5098) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (5258) DHT_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (5258) DHT_NODE: elem_addr 0x0005, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (8368) DHT_NODE: Recv 0xc402e5, tid 0x0000[0m
+[0;32mI (8368) DHT_NODE: LED control message received![0m
+[0;32mI (8368) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (8368) DHT_NODE: LED State: ON[0m
+[0;32mI (8368) DHT_NODE: Timestamp: 25169 ms[0m
+[0;32mI (8378) DHT_NODE: From address: 0x0001[0m
+[0;32mI (8378) DHT_NODE: ============================[0m
+[0;32mI (8378) DHT_NODE: Built-in LED ON[0m
+[0;32mI (9348) DHT_NODE: Sending DHT data - Temp: 25.67°C, Humidity: 74.30%, Time: 8837 ms[0m
+[0;32mI (9348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (9348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (9358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (9358) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (9378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (9378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (9378) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (9378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (12368) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (12368) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (12368) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (12378) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (14348) DHT_NODE: Sending DHT data - Temp: 26.90°C, Humidity: 39.35%, Time: 13837 ms[0m
+[0;32mI (14348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (14348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (14358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (14368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (14378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (14378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (14378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (14378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (19348) DHT_NODE: Sending DHT data - Temp: 20.87°C, Humidity: 48.25%, Time: 18837 ms[0m
+[0;32mI (19348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (19348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (19358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (19368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (19368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (19368) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (19368) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (19378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (24348) DHT_NODE: Sending DHT data - Temp: 28.40°C, Humidity: 49.82%, Time: 23837 ms[0m
+[0;32mI (24348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (24348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (24358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (24368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (24378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (24378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (24378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (24378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (29348) DHT_NODE: Sending DHT data - Temp: 23.23°C, Humidity: 48.80%, Time: 28837 ms[0m
+[0;32mI (29348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (29348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (29358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (29368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (29378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (29378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (29378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (29378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (34348) DHT_NODE: Sending DHT data - Temp: 26.82°C, Humidity: 40.74%, Time: 33837 ms[0m
+[0;32mI (34348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (34348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (34358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (34368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (34378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (34378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (34378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (34378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (39348) DHT_NODE: Sending DHT data - Temp: 25.45°C, Humidity: 68.28%, Time: 38837 ms[0m
+[0;32mI (39348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (39348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (39358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (39368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (39378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (39378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (39378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (39378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (44348) DHT_NODE: Sending DHT data - Temp: 23.83°C, Humidity: 45.40%, Time: 43837 ms[0m
+[0;32mI (44348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (44348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (44358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (44368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (44378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (44378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (44378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (44378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (48138) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (49348) DHT_NODE: Sending DHT data - Temp: 33.95°C, Humidity: 79.99%, Time: 48837 ms[0m
+[0;32mI (49348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (49348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (49358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (49368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (49378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (49378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (49378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (49378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (53128) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (54348) DHT_NODE: Sending DHT data - Temp: 31.68°C, Humidity: 76.27%, Time: 53837 ms[0m
+[0;32mI (54348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (54348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (54358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (54368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (54378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (54378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (54378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (54378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (58148) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (59348) DHT_NODE: Sending DHT data - Temp: 20.07°C, Humidity: 52.27%, Time: 58837 ms[0m
+[0;32mI (59348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (59348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (59358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (59368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (59378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (59378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (59378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (59378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (63138) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (64348) DHT_NODE: Sending DHT data - Temp: 27.76°C, Humidity: 50.24%, Time: 63837 ms[0m
+[0;32mI (64348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (64348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (64358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (64368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (64378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (64378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (64378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (64378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (68148) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (69348) DHT_NODE: Sending DHT data - Temp: 21.58°C, Humidity: 50.65%, Time: 68837 ms[0m
+[0;32mI (69348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (69348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (69358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (69368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (69378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (69378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (69378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (69378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (73158) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (74348) DHT_NODE: Sending DHT data - Temp: 29.03°C, Humidity: 72.08%, Time: 73837 ms[0m
+[0;32mI (74348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (74348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (74358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (74368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (74378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (74378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (74378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (74378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (78128) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (79348) DHT_NODE: Sending DHT data - Temp: 21.38°C, Humidity: 50.88%, Time: 78837 ms[0m
+[0;32mI (79348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (79348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (79358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (79368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (79378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (79378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (79378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (79378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (83158) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (84348) DHT_NODE: Sending DHT data - Temp: 22.94°C, Humidity: 62.69%, Time: 83837 ms[0m
+[0;32mI (84348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (84348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (84358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (84368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (84378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (84378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (84378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (84378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (88148) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (89348) DHT_NODE: Sending DHT data - Temp: 22.35°C, Humidity: 68.73%, Time: 88837 ms[0m
+[0;32mI (89348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (89348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (89358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (89368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (89378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (89378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (89378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (89378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (93128) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (94348) DHT_NODE: Sending DHT data - Temp: 33.58°C, Humidity: 47.94%, Time: 93837 ms[0m
+[0;32mI (94348) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (94348) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (94358) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (94368) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (94378) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (94378) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (94378) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (94378) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (98128) BLE_MESH: Ran out of retransmit attempts[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a0ch (166412) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=00038a34 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00038a58 vaddr=3ffbdb60 size=054e8h ( 21736) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=0003df48 vaddr=40080000 size=020d0h (  8400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9343ch (603196) map[0m
+[0;32mI (372) esp_image: segment 5: paddr=000d3464 vaddr=400820d0 size=15a28h ( 88616) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) app_init: Application information:[0m
+[0;32mI (437) app_init: Project name:     vendor_server[0m
+[0;32mI (442) app_init: App version:      b4b7e179-dirty[0m
+[0;32mI (446) app_init: Compile time:     May 25 2025 19:04:43[0m
+[0;32mI (451) app_init: ELF file SHA256:  606d7b6b6...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (459) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (463) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (467) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFCAE18 len 000151E8 (84 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (516) spi_flash: detected chip: generic[0m
+[0;32mI (518) spi_flash: flash io: dio[0m
+[0;33mW (521) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) coexist: coex firmware version: e727207[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (548) main_task: Calling app_main()[0m
+[0;32mI (548) DHT_NODE: Initializing...[0m
+[0;32mI (558) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (578) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (588) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (668) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (958) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (958) DHT_NODE: Built-in LED initialized on GPIO 2[0m
+[0;32mI (1048) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1058) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1058) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1058) main_task: Returned from app_main()[0m
+[0;32mI (6678) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (7268) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (7268) DHT_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (7268) DHT_NODE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (7278) DHT_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (7278) DHT_NODE: DHT timer started successfully[0m
+[0;33mW (7338) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (7818) DHT_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (7818) DHT_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (7818) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (11818) DHT_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (11818) DHT_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (11818) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (11968) DHT_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (11968) DHT_NODE: elem_addr 0x0005, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (12278) DHT_NODE: Sending DHT data - Temp: 22.77°C, Humidity: 70.64%, Time: 11767 ms[0m
+[0;32mI (12278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (12278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (12288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (12298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (12308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (12308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (12308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (12308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (17278) DHT_NODE: Sending DHT data - Temp: 31.02°C, Humidity: 72.06%, Time: 16767 ms[0m
+[0;32mI (17278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (17278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (17288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (17308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (17318) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (17318) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (17318) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (17318) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (22278) DHT_NODE: Sending DHT data - Temp: 28.26°C, Humidity: 79.91%, Time: 21767 ms[0m
+[0;32mI (22278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (22278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (22288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (22298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (22308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (22308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (22308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (22308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (27278) DHT_NODE: Sending DHT data - Temp: 25.82°C, Humidity: 48.71%, Time: 26767 ms[0m
+[0;32mI (27278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (27278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (27288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (27308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (27308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (27308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (27308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (27308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (32278) DHT_NODE: Sending DHT data - Temp: 25.97°C, Humidity: 49.38%, Time: 31767 ms[0m
+[0;32mI (32278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (32278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (32288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (32298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (32308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (32308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (32308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (32308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (37278) DHT_NODE: Sending DHT data - Temp: 28.61°C, Humidity: 67.78%, Time: 36767 ms[0m
+[0;32mI (37278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (37278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (37288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (37298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (37308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (37308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (37308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (37308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (42278) DHT_NODE: Sending DHT data - Temp: 34.99°C, Humidity: 71.59%, Time: 41767 ms[0m
+[0;32mI (42278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (42278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (42288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (42298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (42308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (42308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (42308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (42308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (47278) DHT_NODE: Sending DHT data - Temp: 27.66°C, Humidity: 70.32%, Time: 46767 ms[0m
+[0;32mI (47278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (47278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (47288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (47298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (47298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (47298) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (47308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (47308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (52278) DHT_NODE: Sending DHT data - Temp: 27.18°C, Humidity: 36.92%, Time: 51767 ms[0m
+[0;32mI (52278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (52278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (52288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (52298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (52308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (52308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (52308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (52308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (57278) DHT_NODE: Sending DHT data - Temp: 34.75°C, Humidity: 70.92%, Time: 56767 ms[0m
+[0;32mI (57278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (57278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (57288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (57298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (57308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (57308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (57308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (57308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (62278) DHT_NODE: Sending DHT data - Temp: 30.82°C, Humidity: 30.91%, Time: 61767 ms[0m
+[0;32mI (62278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (62278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (62288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (62298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (62308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (62308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (62308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (62308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (67278) DHT_NODE: Sending DHT data - Temp: 21.72°C, Humidity:01)[0m
+[0;32mI (67288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (67298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (67298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (67308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (67308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (67308) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (71108) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (72278) DHT_NODE: Sending DHT data - Temp: 31.19°C, Humidity: 33.35%, Time: 71767 ms[0m
+[0;32mI (72278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (72278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (72288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (72298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (72308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (72308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (72308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (72308) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (76088) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (77278) DHT_NODE: Sending DHT data - Temp: 29.47°C, Humidity: 55.96%, Time: 76767 ms[0m
+[0;32mI (77278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (77278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (77288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (77298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (77308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (77308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (77308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (77308) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (81088) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (82278) DHT_NODE: Sending DHT data - Temp: 26.80°C, Humidity: 45.83%, Time: 81767 ms[0m
+[0;32mI (82278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (82278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (82288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (82298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (82308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (82308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (82308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (82308) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (86088) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (87278) DHT_NODE: Sending DHT data - Temp: 25.85°C, Humidity: 50.98%, Time: 86767 ms[0m
+[0;32mI (87278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (87278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (87288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (87298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (87308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (87308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (87308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (87308) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (91088) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (92278) DHT_NODE: Sending DHT data - Temp: 33.22°C, Humidity: 46.50%, Time: 91767 ms[0m
+[0;32mI (92278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (92278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (92288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (92298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (92308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (92308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (92308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (92308) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (96088) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (97278) DHT_NODE: Sending DHT data - Temp: 33.42°C, Humidity: 51.05%, Time: 96767 ms[0m
+[0;32mI (97278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (97278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (97288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (97298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (97308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (97308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (97308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (97308) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (101088) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (102278) DHT_NODE: Sending DHT data - Temp: 31.76°C, Humidity: 44.33%, Time: 101767 ms[0m
+[0;32mI (102278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (102278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (102288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (102298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (102308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (102308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (102308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (102308) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (106088) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (107278) DHT_NODE: Sending DHT data - Temp: 26.07°C, Humidity: 67.55%, Time: 106767 ms[0m
+[0;32mI (107278) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (107278) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (107288) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (107298) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (107308) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (107308) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (107308) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (107308) DHT_NODE: Send 0xc202e5[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a0ch (166412) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=00038a34 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00038a58 vaddr=3ffbdb60 size=054e8h ( 21736) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=0003df48 vaddr=40080000 size=020d0h (  8400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9343ch (603196) map[0m
+[0;32mI (372) esp_image: segment 5: paddr=000d3464 vaddr=400820d0 size=15a28h ( 88616) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) app_init: Application information:[0m
+[0;32mI (437) app_init: Project name:     vendor_server[0m
+[0;32mI (442) app_init: App version:      b4b7e179-dirty[0m
+[0;32mI (446) app_init: Compile time:     May 25 2025 19:04:43[0m
+[0;32mI (451) app_init: ELF file SHA256:  606d7b6b6...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (459) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (463) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (467) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFCAE18 len 000151E8 (84 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (516) spi_flash: detected chip: generic[0m
+[0;32mI (518) spi_flash: flash io: dio[0m
+[0;33mW (521) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) coexist: coex firmware version: e727207[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (548) main_task: Calling app_main()[0m
+[0;32mI (548) DHT_NODE: Initializing...[0m
+[0;32mI (558) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (578) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (588) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (938) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (938) DHT_NODE: Built-in LED initialized on GPIO 2[0m
+[0;32mI (1028) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1038) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1038) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1038) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a0ch (166412) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=00038a34 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00038a58 vaddr=3ffbdb60 size=054e8h ( 21736) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=0003df48 vaddr=40080000 size=020d0h (  8400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9343ch (603196) map[0m
+[0;32mI (372) esp_image: segment 5: paddr=000d3464 vaddr=400820d0 size=15a28h ( 88616) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) app_init: Application information:[0m
+[0;32mI (437) app_init: Project name:     vendor_server[0m
+[0;32mI (442) app_init: App version:      b4b7e179-dirty[0m
+[0;32mI (446) app_init: Compile time:     May 25 2025 19:04:43[0m
+[0;32mI (451) app_init: ELF file SHA256:  606d7b6b6...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (459) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (463) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (467) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFCAE18 len 000151E8 (84 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (516) spi_flash: detected chip: generic[0m
+[0;32mI (518) spi_flash: flash io: dio[0m
+[0;33mW (521) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) coexist: coex firmware version: e727207[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (548) main_task: Calling app_main()[0m
+[0;32mI (548) DHT_NODE: Initializing...[0m
+[0;32mI (558) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (578) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (588) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (938) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (938) DHT_NODE: Built-in LED initialized on GPIO 2[0m
+[0;32mI (1028) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1038) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1038) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1048) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a0ch (166412) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=00038a34 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00038a58 vaddr=3ffbdb60 size=054e8h ( 21736) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=0003df48 vaddr=40080000 size=020d0h (  8400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9343ch (603196) map[0m
+[0;32mI (372) esp_image: segment 5: paddr=000d3464 vaddr=400820d0 size=15a28h ( 88616) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) app_init: Application information:[0m
+[0;32mI (437) app_init: Project name:     vendor_server[0m
+[0;32mI (442) app_init: App version:      b4b7e179-dirty[0m
+[0;32mI (446) app_init: Compile time:     May 25 2025 19:04:43[0m
+[0;32mI (451) app_init: ELF file SHA256:  606d7b6b6...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (459) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (463) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (467) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFCAE18 len 000151E8 (84 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (516) spi_flash: detected chip: generic[0m
+[0;32mI (518) spi_flash: flash io: dio[0m
+[0;33mW (521) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) coexist: coex firmware version: e727207[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (548) main_task: Calling app_main()[0m
+[0;32mI (548) DHT_NODE: Initializing...[0m
+[0;32mI (558) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (578) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (588) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (668) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (958) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (958) DHT_NODE: Built-in LED initialized on GPIO 2[0m
+[0;32mI (1038) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1058) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1058) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1058) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a0ch (166412) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=00038a34 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00038a58 vaddr=3ffbdb60 size=054e8h ( 21736) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=0003df48 vaddr=40080000 size=020d0h (  8400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9343ch (603196) map[0m
+[0;32mI (372) esp_image: segment 5: paddr=000d3464 vaddr=400820d0 size=15a28h ( 88616) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) app_init: Application information:[0m
+[0;32mI (437) app_init: Project name:     vendor_server[0m
+[0;32mI (442) app_init: App version:      b4b7e179-dirty[0m
+[0;32mI (446) app_init: Compile time:     May 25 2025 19:04:43[0m
+[0;32mI (451) app_init: ELF file SHA256:  606d7b6b6...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (459) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (463) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (467) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFCAE18 len 000151E8 (84 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (516) spi_flash: detected chip: generic[0m
+[0;32mI (518) spi_flash: flash io: dio[0m
+[0;33mW (521) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) coexist: coex firmware version: e727207[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (548) main_task: Calling app_main()[0m
+[0;32mI (548) DHT_NODE: Initializing...[0m
+[0;32mI (558) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (578) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (588) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (668) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (958) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (958) DHT_NODE: Built-in LED initialized on GPIO 2[0m
+[0;32mI (1048) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1068) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1068) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1068) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a0ch (166412) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=00038a34 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00038a58 vaddr=3ffbdb60 size=054e8h ( 21736) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=0003df48 vaddr=40080000 size=020d0h (  8400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9343ch (603196) map[0m
+[0;32mI (372) esp_image: segment 5: paddr=000d3464 vaddr=400820d0 size=15a28h ( 88616) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) app_init: Application information:[0m
+[0;32mI (437) app_init: Project name:     vendor_server[0m
+[0;32mI (442) app_init: App version:      b4b7e179-dirty[0m
+[0;32mI (446) app_init: Compile time:     May 25 2025 19:04:43[0m
+[0;32mI (451) app_init: ELF file SHA256:  606d7b6b6...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (459) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (463) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (467) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFCAE18 len 000151E8 (84 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (516) spi_flash: detected chip: generic[0m
+[0;32mI (518) spi_flash: flash io: dio[0m
+[0;33mW (521) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) coexist: coex firmware version: e727207[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (548) main_task: Calling app_main()[0m
+[0;32mI (548) DHT_NODE: Initializing...[0m
+[0;32mI (558) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (578) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (578) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (668) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (958) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (958) DHT_NODE: Built-in LED initialized on GPIO 2[0m
+[0;32mI (1038) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1058) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1058) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1058) main_task: Returned from app_main()[0m
+[0;32mI (1108) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (4858) DHT_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (4858) DHT_NODE: net_idx 0x000, addr 0x0006[0m
+[0;32mI (4858) DHT_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (4858) DHT_NODE: DHT timer started successfully[0m
+[0;32mI (5288) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-ADV[0m
+[0;32mI (9838) DHT_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (9838) DHT_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (9838) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (9868) DHT_NODE: Sending DHT data - Temp: 30.65°C, Humidity: 42.70%, Time: 9353 ms[0m
+[0;32mI (9868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (9868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (9868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[1;31mE (9878) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[1;31mE (9878) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[1;31mE (9888) DHT_NODE: Failed to send message 0xc202e5[0m
+[1;31mE (9888) DHT_NODE: Failed to send message 0xc202e5[0m
+[0;32mI (10028) DHT_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (10028) DHT_NODE: elem_addr 0x0006, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (14228) DHT_NODE: Recv 0xc402e5, tid 0x0000[0m
+[0;32mI (14228) DHT_NODE: LED control message received![0m
+[0;32mI (14228) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (14228) DHT_NODE: LED State: ON[0m
+[0;32mI (14228) DHT_NODE: Timestamp: 15222 ms[0m
+[0;32mI (14238) DHT_NODE: From address: 0x0001[0m
+[0;32mI (14238) DHT_NODE: ============================[0m
+[0;32mI (14238) DHT_NODE: Built-in LED ON[0m
+[0;32mI (14868) DHT_NODE: Sending DHT data - Temp: 23.19°C, Humidity: 74.48%, Time: 14353 ms[0m
+[0;32mI (14868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (14868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (14868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (14888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (14888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (14888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (14888) DHT_NODE: Recv 0xc202e5, tid 0x0000[0m
+[0;32mI (14898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (18228) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (18228) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (18228) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (18238) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (19868) DHT_NODE: Sending DHT data - Temp: 31.58°C, Humidity: 58.69%, Time: 19353 ms[0m
+[0;32mI (19868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (19868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (19868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (19888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (19888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (19888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (19888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (19898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (21588) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (21588) DHT_NODE: LED control message received![0m
+[0;32mI (21588) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (21588) DHT_NODE: LED State: ON[0m
+[0;32mI (21588) DHT_NODE: Timestamp: 22583 ms[0m
+[0;32mI (21598) DHT_NODE: From address: 0x0001[0m
+[0;32mI (21598) DHT_NODE: ============================[0m
+[0;32mI (21608) DHT_NODE: Built-in LED ON[0m
+[0;32mI (24868) DHT_NODE: Sending DHT data - Temp: 33.20°C, Humidity: 70.86%, Time: 24353 ms[0m
+[0;32mI (24868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (24868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (24868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (24888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (24888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (24888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (24888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (24898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (25638) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (25638) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (25638) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (25638) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (29608) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (29608) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (29608) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (29618) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (29788) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (29788) DHT_NODE: LED control message received![0m
+[0;32mI (29788) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (29788) DHT_NODE: LED State: OFF[0m
+[0;32mI (29798) DHT_NODE: Timestamp: 30781 ms[0m
+[0;32mI (29798) DHT_NODE: From address: 0x0001[0m
+[0;32mI (29798) DHT_NODE: ============================[0m
+[0;32mI (29808) DHT_NODE: Built-in LED OFF[0m
+[0;32mI (29868) DHT_NODE: Sending DHT data - Temp: 34.94°C, Humidity: 43.63%, Time: 29353 ms[0m
+[0;32mI (29868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (29868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (29868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (29878) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (29878) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (29888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (29898) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (29898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (33778) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (33778) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (33778) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (33788) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (34868) DHT_NODE: Sending DHT data - Temp: 23.42°C, Humidity: 65.40%, Time: 34353 ms[0m
+[0;32mI (34868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (34868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (34868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (34888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (34888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (34888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (34888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (34898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (39868) DHT_NODE: Sending DHT data - Temp: 22.01°C, Humidity: 32.63%, Time: 39353 ms[0m
+[0;32mI (39868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (39868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (39868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (39888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (39888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (39888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (39888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (39898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (44868) DHT_NODE: Sending DHT data - Temp: 25.10°C, Humidity: 45.44%, Time: 44353 ms[0m
+[0;32mI (44868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (44868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (44868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (44888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (44888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (44888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (44888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (44898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (45228) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (45228) DHT_NODE: LED control message received![0m
+[0;32mI (45228) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (45228) DHT_NODE: LED State: OFF[0m
+[0;32mI (45228) DHT_NODE: Timestamp: 46182 ms[0m
+[0;32mI (45238) DHT_NODE: From address: 0x0001[0m
+[0;32mI (45238) DHT_NODE: ============================[0m
+[0;32mI (45258) DHT_NODE: Built-in LED OFF[0m
+[0;32mI (49328) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (49328) DHT_NODE: LED control message received![0m
+[0;32mI (49328) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (49328) DHT_NODE: LED State: ON[0m
+[0;32mI (49328) DHT_NODE: Timestamp: 50239 ms[0m
+[0;32mI (49338) DHT_NODE: From address: 0x0001[0m
+[0;32mI (49338) DHT_NODE: ============================[0m
+[0;32mI (49348) DHT_NODE: Built-in LED ON[0m
+[0;32mI (49868) DHT_NODE: Sending DHT data - Temp: 29.10°C, Humidity: 43.67%, Time: 49354 ms[0m
+[0;32mI (49868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (49868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (49868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (49888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (49888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (49888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (49888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (49898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (53268) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (53268) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (53268) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (53278) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (54868) DHT_NODE: Sending DHT data - Temp: 28.99°C, Humidity: 47.38%, Time: 54353 ms[0m
+[0;32mI (54868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (54868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (54868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (54888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (54888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (54888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (54888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (54898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (57288) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (57288) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (57288) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (57298) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (59088) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (59088) DHT_NODE: LED control message received![0m
+[0;32mI (59088) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (59088) DHT_NODE: LED State: OFF[0m
+[0;32mI (59088) DHT_NODE: Timestamp: 60087 ms[0m
+[0;32mI (59098) DHT_NODE: From address: 0x0001[0m
+[0;32mI (59098) DHT_NODE: ============================[0m
+[0;32mI (59108) DHT_NODE: Built-in LED OFF[0m
+[0;32mI (59868) DHT_NODE: Sending DHT data - Temp: 22.20°C, Humidity: 36.42%, Time: 59353 ms[0m
+[0;32mI (59868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (59868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (59868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (59888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (59888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (59888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (59888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (59898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (63088) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (63088) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (63088) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (63098) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (64008) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (64008) DHT_NODE: LED control message received![0m
+[0;32mI (64008) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (64008) DHT_NODE: LED State: OFF[0m
+[0;32mI (64018) DHT_NODE: Timestamp: 64978 ms[0m
+[0;32mI (64018) DHT_NODE: From address: 0x0001[0m
+[0;32mI (64018) DHT_NODE: ============================[0m
+[0;32mI (64028) DHT_NODE: Built-in LED OFF[0m
+[0;32mI (64868) DHT_NODE: Sending DHT data - Temp: 24.76°C, Humidity: 61.86%, Time: 64353 ms[0m
+[0;32mI (64868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (64868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (64868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (64888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (64888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (64888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (64888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (64898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (67988) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (67988) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (67988) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (67998) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (69518) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (69518) DHT_NODE: LED control message received![0m
+[0;32mI (69518) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (69518) DHT_NODE: LED State: OFF[0m
+[0;32mI (69518) DHT_NODE: Timestamp: 70507 ms[0m
+[0;32mI (69518) DHT_NODE: From address: 0x0001[0m
+[0;32mI (69528) DHT_NODE: ============================[0m
+[0;32mI (69528) DHT_NODE: Built-in LED OFF[0m
+[0;32mI (69868) DHT_NODE: Sending DHT data - Temp: 33.60°C, Humidity: 57.72%, Time: 69353 ms[0m
+[0;32mI (69868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (69868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (69868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (69888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (69888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (69888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (69888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (69898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (73528) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (73528) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (73528) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (73538) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (74868) DHT_NODE: Sending DHT data - Temp: 20.57°C, Humidity: 44.99%, Time: 74353 ms[0m
+[0;32mI (74868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (74868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (74868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (74888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (74888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (74888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (74888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (74898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (78098) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (78108) DHT_NODE: LED control message received![0m
+[0;32mI (78108) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (78108) DHT_NODE: LED State: OFF[0m
+[0;32mI (78108) DHT_NODE: Timestamp: 79114 ms[0m
+[0;32mI (78108) DHT_NODE: From address: 0x0001[0m
+[0;32mI (78118) DHT_NODE: ============================[0m
+[0;32mI (78118) DHT_NODE: Built-in LED OFF[0m
+[0;32mI (79868) DHT_NODE: Sending DHT data - Temp: 33.19°C, Humidity: 31.82%, Time: 79353 ms[0m
+[0;32mI (79868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (79868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (79868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (79888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (79888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (79888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (79888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (79898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (82108) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (82108) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (82108) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (82118) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (84868) DHT_NODE: Sending DHT data - Temp: 24.04°C, Humidity: 53.11%, Time: 84353 ms[0m
+[0;32mI (84868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (84868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (84868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (84888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (84888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (84888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (84888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (84898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (88848) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (88848) DHT_NODE: LED control message received![0m
+[0;32mI (88848) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (88848) DHT_NODE: LED State: OFF[0m
+[0;32mI (88848) DHT_NODE: Timestamp: 89858 ms[0m
+[0;32mI (88858) DHT_NODE: From address: 0x0001[0m
+[0;32mI (88858) DHT_NODE: ============================[0m
+[0;32mI (88868) DHT_NODE: Built-in LED OFF[0m
+[0;32mI (89868) DHT_NODE: Sending DHT data - Temp: 25.58°C, Humidity: 31.03%, Time: 89353 ms[0m
+[0;32mI (89868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (89868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (89868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (89888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (89888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (89888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (89888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (89898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (92848) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (92848) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (92848) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (92858) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (93288) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (93288) DHT_NODE: LED control message received![0m
+[0;32mI (93288) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (93288) DHT_NODE: LED State: ON[0m
+[0;32mI (93288) DHT_NODE: Timestamp: 94265 ms[0m
+[0;32mI (93298) DHT_NODE: From address: 0x0001[0m
+[0;32mI (93298) DHT_NODE: ============================[0m
+[0;32mI (93308) DHT_NODE: Built-in LED ON[0m
+[0;32mI (94868) DHT_NODE: Sending DHT data - Temp: 28.47°C, Humidity: 37.60%, Time: 94353 ms[0m
+[0;32mI (94868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (94868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (94868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (94888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (94888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (94888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (94888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (94898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (97268) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (97268) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (97268) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (97278) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (99868) DHT_NODE: Sending DHT data - Temp: 28.15°C, Humidity: 33.78%, Time: 99353 ms[0m
+[0;32mI (99868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (99868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (99868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (99888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (99888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (99888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (99888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (99898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (101288) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (101288) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (101288) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (101298) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (101368) DHT_NODE: Recv 0xc402e5, tid 0x0001[0m
+[0;32mI (101378) DHT_NODE: LED control message received![0m
+[0;32mI (101378) DHT_NODE: === LED Control Received ===[0m
+[0;32mI (101378) DHT_NODE: LED State: OFF[0m
+[0;32mI (101378) DHT_NODE: Timestamp: 102387 ms[0m
+[0;32mI (101378) DHT_NODE: From address: 0x0001[0m
+[0;32mI (101388) DHT_NODE: ============================[0m
+[0;32mI (101398) DHT_NODE: Built-in LED OFF[0m
+[0;32mI (104868) DHT_NODE: Sending DHT data - Temp: 20.03°C, Humidity: 39.61%, Time: 104353 ms[0m
+[0;32mI (104868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (104868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (104868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (104888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (104888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (104888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (104888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (104898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (105458) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (105458) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (105458) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (105458) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (109448) DHT_NODE: Recv 0xc002e5, tid 0x0001[0m
+[0;32mI (109448) DHT_NODE: Recv 0xc002e5, tid 0x0000[0m
+[0;32mI (109448) DHT_NODE: Sent vendor status message, tid: 0x0001[0m
+[0;32mI (109458) DHT_NODE: Send 0xc102e5[0m
+[0;32mI (109868) DHT_NODE: Sending DHT data - Temp: 32.69°C, Humidity: 55.29%, Time: 109353 ms[0m
+[0;32mI (109868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (109868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (109868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (109888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (109888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (109888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (109888) DHT_NODE: Recv 0xc202e5, tid 0x0001[0m
+[0;32mI (109898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (114868) DHT_NODE: Sending DHT data - Temp: 31.31°C, Humidity: 69.95%, Time: 114353 ms[0m
+[0;32mI (114868) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes[0m
+[0;32mI (114868) DHT_NODE: DHT data sent to client (0x0001)[0m
+[0;32mI (114868) DHT_NODE: DHT data broadcasted to all nodes[0m
+[0;33mW (114888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (114888) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI 
