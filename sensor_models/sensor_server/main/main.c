@@ -653,11 +653,17 @@ void example_ble_mesh_publish_sensor_data(void)
     }
 
     ESP_LOG_BUFFER_HEX("Publishing Sensor Data", status, length);
+    printf("📢 NODE 1 PUBLISHING: Temp=%.1f°C, Humidity=%d%%, Length=%u bytes\n", 
+           temperature * 0.5f, humidity, length);
 
     // Publish the sensor data
     err = esp_ble_mesh_model_publish(&root_models[1], ESP_BLE_MESH_MODEL_OP_SENSOR_STATUS, length, status, ROLE_NODE);
     if (err != ESP_OK) {
-        ESP_LOGE(TAG, "Failed to publish Sensor Status (err %d)", err);
+        ESP_LOGE(TAG, "❌ Failed to publish Sensor Status (err %d)", err);
+        printf("❌ PUBLISH FAILED! Error: %d\n", err);
+    } else {
+        ESP_LOGI(TAG, "✅ Sensor data published successfully");
+        printf("✅ PUBLISHED SUCCESSFULLY to group address\n");
     }
 
     free(status);
@@ -697,6 +703,14 @@ static esp_err_t ble_mesh_init(void)
     if (err != ESP_OK) {
         ESP_LOGE(TAG, "Failed to enable mesh node");
         return err;
+    }
+
+    /* Set device name for scanner visibility */
+    err = esp_ble_mesh_set_unprovisioned_device_name("NODE 1");
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to set device name");
+    } else {
+        ESP_LOGI(TAG, "📛 Device name set to: NODE 1");
     }
 
     board_led_operation(LED_G, LED_ON);

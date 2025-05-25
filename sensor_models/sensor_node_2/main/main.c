@@ -18,6 +18,7 @@
 
 #include "esp_log.h"
 #include "nvs_flash.h"
+#include "esp_timer.h"
 
 #include "esp_ble_mesh_defs.h"
 #include "esp_ble_mesh_common_api.h"
@@ -25,6 +26,7 @@
 #include "esp_ble_mesh_provisioning_api.h"
 #include "esp_ble_mesh_config_model_api.h"
 #include "esp_ble_mesh_sensor_model_api.h"
+#include "esp_ble_mesh_generic_model_api.h"
 
 #include "ble_mesh_example_init.h"
 #include "board.h"
@@ -125,6 +127,7 @@ static esp_ble_mesh_sensor_state_t sensor_states[2] = {
 };
 
 /* 20 octets is large enough to hold two Sensor Descriptor state values. */
+/* 20 octets is large enough to hold two Sensor Descriptor state values. */
 ESP_BLE_MESH_MODEL_PUB_DEFINE(sensor_pub, 20, ROLE_NODE);
 static esp_ble_mesh_sensor_srv_t sensor_server = {
     .rsp_ctrl = {
@@ -145,8 +148,12 @@ static esp_ble_mesh_sensor_setup_srv_t sensor_setup_server = {
     .states = sensor_states,
 };
 
+/* Generic OnOff Client for receiving published messages */
+static esp_ble_mesh_client_t onoff_client;
+
 static esp_ble_mesh_model_t root_models[] = {
     ESP_BLE_MESH_MODEL_CFG_SRV(&config_server),
+    ESP_BLE_MESH_MODEL_GEN_ONOFF_CLI(NULL, &onoff_client),
     ESP_BLE_MESH_MODEL_SENSOR_SRV(&sensor_pub, &sensor_server),
     ESP_BLE_MESH_MODEL_SENSOR_SETUP_SRV(&sensor_setup_pub, &sensor_setup_server),
 };
@@ -216,14 +223,16 @@ static void example_ble_mesh_config_server_cb(esp_ble_mesh_cfg_server_cb_event_t
     if (event == ESP_BLE_MESH_CFG_SERVER_STATE_CHANGE_EVT) {
         switch (param->ctx.recv_op) {
         case ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD:
-            ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD");
+            printf("🔑 APP KEY ADDED!\n");
+            ESP_LOGI(TAG, "🔑 ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD");
             ESP_LOGI(TAG, "net_idx 0x%04x, app_idx 0x%04x",
                 param->value.state_change.appkey_add.net_idx,
                 param->value.state_change.appkey_add.app_idx);
             ESP_LOG_BUFFER_HEX("AppKey", param->value.state_change.appkey_add.app_key, 16);
             break;
         case ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND:
-            ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+            printf("🔗 MODEL APP BIND COMPLETED!\n");
+            ESP_LOGI(TAG, "🔗 ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
             ESP_LOGI(TAG, "elem_addr 0x%04x, app_idx 0x%04x, cid 0x%04x, mod_id 0x%04x",
                 param->value.state_change.mod_app_bind.element_addr,
                 param->value.state_change.mod_app_bind.app_idx,
@@ -231,7 +240,11 @@ static void example_ble_mesh_config_server_cb(esp_ble_mesh_cfg_server_cb_event_t
                 param->value.state_change.mod_app_bind.model_id);
             break;
         case ESP_BLE_MESH_MODEL_OP_MODEL_SUB_ADD:
-            ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_SUB_ADD");
+            printf("📡 SUBSCRIPTION ADDED! Group: 0x%04x\n", param->value.state_change.mod_sub_add.sub_addr);
+            printf("🎯 Node 2 is now subscribed and ready to receive data!\n");
+            printf("📋 Model ID: 0x%04x (Should be 0x1100 for Sensor Server)\n", param->value.state_change.mod_sub_add.model_id);
+            printf("🏢 Company ID: 0x%04x\n", param->value.state_change.mod_sub_add.company_id);
+            ESP_LOGI(TAG, "📡 ESP_BLE_MESH_MODEL_OP_MODEL_SUB_ADD - SUBSCRIPTION CONFIGURED!");
             ESP_LOGI(TAG, "elem_addr 0x%04x, sub_addr 0x%04x, cid 0x%04x, mod_id 0x%04x",
                 param->value.state_change.mod_sub_add.element_addr,
                 param->value.state_change.mod_sub_add.sub_addr,
@@ -248,8 +261,19 @@ static void example_ble_mesh_config_server_cb(esp_ble_mesh_cfg_server_cb_event_t
 static void example_ble_mesh_parse_and_print_sensor_data(const uint8_t *data, uint16_t length)
 {
     uint16_t offset = 0;
-
-    ESP_LOGI(TAG, "=== RECEIVED SENSOR DATA (Length: %u) ===", length);
+    static uint32_t message_count = 0;
+    
+    message_count++;
+    
+    printf("\n");
+    printf("╔══════════════════════════════════════════════════════════════════════════════════╗\n");
+    printf("║                          SENSOR NODE 2 - SUBSCRIPTION DATA                       ║\n");
+    printf("╠══════════════════════════════════════════════════════════════════════════════════╣\n");
+    printf("║ Message #%lu | Data Length: %u bytes                                        ║\n", message_count, length);
+    printf("╚══════════════════════════════════════════════════════════════════════════════════╝\n");
+    
+    ESP_LOGI(TAG, "📨 RECEIVED SUBSCRIPTION DATA #%lu (Length: %u bytes)", message_count, length);
+    ESP_LOG_BUFFER_HEX("Raw Data", data, length);
 
     while (offset < length) {
         uint8_t fmt = ESP_BLE_MESH_GET_SENSOR_DATA_FORMAT(data + offset);
@@ -258,7 +282,13 @@ static void example_ble_mesh_parse_and_print_sensor_data(const uint8_t *data, ui
         uint8_t mpid_len = (fmt == ESP_BLE_MESH_SENSOR_DATA_FORMAT_A ?
                             ESP_BLE_MESH_SENSOR_DATA_FORMAT_A_MPID_LEN : ESP_BLE_MESH_SENSOR_DATA_FORMAT_B_MPID_LEN);
 
-        ESP_LOGI(TAG, "  Property ID: 0x%04x, Format: %s, Data Length: %u",
+        printf("┌─────────────────────────────────────────────────────────────────────────────────┐\n");
+        printf("│ SENSOR READING                                                                  │\n");
+        printf("├─────────────────────────────────────────────────────────────────────────────────┤\n");
+        printf("│ Property ID: 0x%04x | Format: %s | Data Length: %u                        │\n",
+               prop_id, fmt == ESP_BLE_MESH_SENSOR_DATA_FORMAT_A ? "A" : "B", data_len);
+
+        ESP_LOGI(TAG, "🔍 Parsing sensor data - Property ID: 0x%04x, Format: %s, Data Length: %u",
                  prop_id, fmt == ESP_BLE_MESH_SENSOR_DATA_FORMAT_A ? "A" : "B", data_len);
 
         if (data_len != ESP_BLE_MESH_SENSOR_DATA_ZERO_LEN) {
@@ -268,39 +298,99 @@ static void example_ble_mesh_parse_and_print_sensor_data(const uint8_t *data, ui
             // Display the sensor reading based on property ID
             if (prop_id == SENSOR_PROPERTY_ID_0) { // Temperature
                 float temp = raw_value * 0.5f; // Convert to Celsius (Temperature 8 format)
-                ESP_LOGI(TAG, "  >>> Temperature: %.1f °C (Raw: %d)", temp, raw_value);
+                printf("│ 🌡️  TEMPERATURE: %.1f °C (Raw: %d)                                      │\n", temp, raw_value);
+                ESP_LOGI(TAG, "🌡️ Temperature received: %.1f °C (Raw value: %d)", temp, raw_value);
             } else if (prop_id == SENSOR_PROPERTY_ID_1) { // Humidity
-                ESP_LOGI(TAG, "  >>> Humidity: %d%% (Raw: %d)", raw_value, raw_value);
+                printf("│ 💧 HUMIDITY: %d%% (Raw: %d)                                             │\n", raw_value, raw_value);
+                ESP_LOGI(TAG, "💧 Humidity received: %d%% (Raw value: %d)", raw_value, raw_value);
             } else {
-                ESP_LOGI(TAG, "  >>> Unknown Property ID: 0x%04x, Raw Value: %d", prop_id, raw_value);
-                ESP_LOG_BUFFER_HEX("  Raw Value", data + offset + mpid_len, data_len + 1);
+                printf("│ ❓ UNKNOWN SENSOR: Property 0x%04x, Value: %d                          │\n", prop_id, raw_value);
+                ESP_LOGI(TAG, "❓ Unknown sensor data - Property ID: 0x%04x, Raw Value: %d", prop_id, raw_value);
+                ESP_LOG_BUFFER_HEX("Unknown Sensor Raw Data", data + offset + mpid_len, data_len + 1);
             }
             
             offset += mpid_len + data_len + 1;
         } else {
             // Zero-length data has no raw value field
-            ESP_LOGI(TAG, "  >>> Zero-length data for Property ID: 0x%04x", prop_id);
+            printf("│ ⚠️  ZERO-LENGTH DATA for Property ID: 0x%04x                              │\n", prop_id);
+            ESP_LOGI(TAG, "⚠️ Zero-length data received for Property ID: 0x%04x", prop_id);
             offset += mpid_len;
         }
+        printf("└─────────────────────────────────────────────────────────────────────────────────┘\n");
     }
-    ESP_LOGI(TAG, "=== END SENSOR DATA ===");
+    
+    printf("\n");
+    printf("✅ SUBSCRIPTION DATA PROCESSING COMPLETE - Message #%lu\n", message_count);
+    printf("═══════════════════════════════════════════════════════════════════════════════════\n\n");
+    
+    ESP_LOGI(TAG, "✅ Finished processing subscription data message #%lu", message_count);
 }
 
 static void example_ble_mesh_sensor_server_cb(esp_ble_mesh_sensor_server_cb_event_t event,
                                               esp_ble_mesh_sensor_server_cb_param_t *param)
 {
-    ESP_LOGI(TAG, "Sensor server, event %d, src 0x%04x, dst 0x%04x, model_id 0x%04x",
+    ESP_LOGI(TAG, "🔔 Sensor server callback - event %d, src 0x%04x, dst 0x%04x, model_id 0x%04x",
         event, param->ctx.addr, param->ctx.recv_dst, param->model->model_id);
 
     switch (event) {
     case ESP_BLE_MESH_SENSOR_SERVER_RECV_GET_MSG_EVT:
         ESP_LOGI(TAG, "ESP_BLE_MESH_SENSOR_SERVER_RECV_GET_MSG_EVT");
+        // Handle sensor get requests
+        if (param->ctx.recv_op == ESP_BLE_MESH_MODEL_OP_SENSOR_STATUS) {
+            printf("\n🎯 SENSOR SERVER RECEIVED STATUS MESSAGE!\n");
+            printf("📡 Source: 0x%04x → Destination: 0x%04x\n", param->ctx.addr, param->ctx.recv_dst);
+            ESP_LOGI(TAG, "🎯 Received SENSOR_STATUS in GET event!");
+        }
         break;
     case ESP_BLE_MESH_SENSOR_SERVER_RECV_SET_MSG_EVT:
         ESP_LOGI(TAG, "ESP_BLE_MESH_SENSOR_SERVER_RECV_SET_MSG_EVT");
+        // Handle sensor set requests
+        if (param->ctx.recv_op == ESP_BLE_MESH_MODEL_OP_SENSOR_STATUS) {
+            printf("\n🎯 SENSOR SERVER RECEIVED STATUS MESSAGE!\n");
+            printf("📡 Source: 0x%04x → Destination: 0x%04x\n", param->ctx.addr, param->ctx.recv_dst);
+            ESP_LOGI(TAG, "🎯 Received SENSOR_STATUS in SET event!");
+        }
         break;
     default:
-        ESP_LOGE(TAG, "Unknown Sensor Server event %d", event);
+        ESP_LOGI(TAG, "🔄 Sensor Server event %d - checking for SENSOR_STATUS", event);
+        // Check if this is a published SENSOR_STATUS message
+        if (param->ctx.recv_op == ESP_BLE_MESH_MODEL_OP_SENSOR_STATUS) {
+            printf("\n🎯 SENSOR SERVER RECEIVED PUBLISHED DATA!\n");
+            printf("📡 Source: 0x%04x → Destination: 0x%04x\n", param->ctx.addr, param->ctx.recv_dst);
+            ESP_LOGI(TAG, "🎯 Received published SENSOR_STATUS message!");
+        }
+        break;
+    }
+}
+
+/* Generic OnOff Client callback to receive published messages */
+static void example_ble_mesh_generic_client_cb(esp_ble_mesh_generic_client_cb_event_t event,
+                                               esp_ble_mesh_generic_client_cb_param_t *param)
+{
+    ESP_LOGI(TAG, "🔔 Generic client callback - event %d", event);
+
+    if (param->error_code) {
+        ESP_LOGE(TAG, "Generic client message failed (err %d)", param->error_code);
+        return;
+    }
+
+    switch (event) {
+    case ESP_BLE_MESH_GENERIC_CLIENT_GET_STATE_EVT:
+        ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_CLIENT_GET_STATE_EVT");
+        break;
+    case ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT:
+        ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_CLIENT_SET_STATE_EVT");
+        break;
+    case ESP_BLE_MESH_GENERIC_CLIENT_PUBLISH_EVT:
+        printf("\n🎯 GENERIC CLIENT RECEIVED PUBLISHED DATA!\n");
+        ESP_LOGI(TAG, "🎯 ESP_BLE_MESH_GENERIC_CLIENT_PUBLISH_EVT");
+        ESP_LOGI(TAG, "Generic client publish event, opcode 0x%04" PRIx32, param->params->opcode);
+        break;
+    case ESP_BLE_MESH_GENERIC_CLIENT_TIMEOUT_EVT:
+        ESP_LOGW(TAG, "Generic client timeout event");
+        break;
+    default:
+        ESP_LOGE(TAG, "Unknown Generic client event %d", event);
         break;
     }
 }
@@ -308,26 +398,56 @@ static void example_ble_mesh_sensor_server_cb(esp_ble_mesh_sensor_server_cb_even
 static void example_ble_mesh_model_cb(esp_ble_mesh_model_cb_event_t event,
                                      esp_ble_mesh_model_cb_param_t *param)
 {
+    ESP_LOGI(TAG, "🔄 Model callback triggered - Event: %d", event);
+    
     switch (event) {
     case ESP_BLE_MESH_MODEL_OPERATION_EVT:
+        printf("📨 INCOMING MESSAGE: Opcode 0x%04x from 0x%04x to 0x%04x\n", 
+               (uint16_t)param->model_operation.opcode, 
+               param->model_operation.ctx->addr, 
+               param->model_operation.ctx->recv_dst);
+        ESP_LOGI(TAG, "📨 MODEL_OPERATION_EVT - Opcode: 0x%04x", (uint16_t)param->model_operation.opcode);
+        
         if (param->model_operation.opcode == ESP_BLE_MESH_MODEL_OP_SENSOR_STATUS) {
-            ESP_LOGI(TAG, "*** RECEIVED SENSOR STATUS from addr 0x%04x ***", param->model_operation.ctx->addr);
+            printf("\n🔔 SUBSCRIPTION ALERT: New sensor data received!\n");
+            printf("📡 Source Address: 0x%04x\n", param->model_operation.ctx->addr);
+            printf("📍 Destination Address: 0x%04x\n", param->model_operation.ctx->recv_dst);
+            printf("🔑 App Key Index: 0x%04x\n", param->model_operation.ctx->app_idx);
+            printf("🌐 Network Index: 0x%04x\n", param->model_operation.ctx->net_idx);
+            printf("📊 Data Length: %u bytes\n", param->model_operation.length);
+            printf("⏰ Timestamp: %lu ms\n", (unsigned long)(esp_timer_get_time() / 1000));
+            
+            ESP_LOGI(TAG, "🔔 SUBSCRIPTION: Received SENSOR_STATUS from 0x%04x to 0x%04x", 
+                     param->model_operation.ctx->addr, param->model_operation.ctx->recv_dst);
+            ESP_LOGI(TAG, "📡 Network info - NetIdx: 0x%04x, AppIdx: 0x%04x", 
+                     param->model_operation.ctx->net_idx, param->model_operation.ctx->app_idx);
+            
             if (param->model_operation.length > 0) {
                 // Parse and print the received sensor data
                 example_ble_mesh_parse_and_print_sensor_data(
                     param->model_operation.msg, param->model_operation.length);
             } else {
-                ESP_LOGI(TAG, "Received empty Sensor Status message");
+                printf("⚠️ WARNING: Received empty Sensor Status message\n");
+                ESP_LOGI(TAG, "⚠️ Received empty Sensor Status message from 0x%04x", param->model_operation.ctx->addr);
+            }
+        } else {
+            printf("📨 OTHER MESSAGE: Opcode 0x%04x, Length: %u bytes\n", 
+                   (uint16_t)param->model_operation.opcode, param->model_operation.length);
+            ESP_LOGI(TAG, "📨 Received model operation with opcode: 0x%04x from 0x%04x", 
+                     (uint16_t)param->model_operation.opcode, param->model_operation.ctx->addr);
+            if (param->model_operation.length > 0) {
+                ESP_LOG_BUFFER_HEX("Message Data", param->model_operation.msg, param->model_operation.length);
             }
         }
         break;
     case ESP_BLE_MESH_MODEL_SEND_COMP_EVT:
-        ESP_LOGI(TAG, "Model send complete");
+        ESP_LOGI(TAG, "📤 Model send complete");
         break;
     case ESP_BLE_MESH_MODEL_PUBLISH_COMP_EVT:
-        ESP_LOGI(TAG, "Model publish complete");
+        ESP_LOGI(TAG, "📢 Model publish complete");
         break;
     default:
+        ESP_LOGI(TAG, "🔄 Model callback event: %d", event);
         break;
     }
 }
@@ -339,7 +459,12 @@ static esp_err_t ble_mesh_init(void)
     esp_ble_mesh_register_prov_callback(example_ble_mesh_provisioning_cb);
     esp_ble_mesh_register_config_server_callback(example_ble_mesh_config_server_cb);
     esp_ble_mesh_register_sensor_server_callback(example_ble_mesh_sensor_server_cb);
+    esp_ble_mesh_register_generic_client_callback(example_ble_mesh_generic_client_cb);
     esp_ble_mesh_register_custom_model_callback(example_ble_mesh_model_cb);
+    
+    ESP_LOGI(TAG, "🔧 All callbacks registered successfully");
+    ESP_LOGI(TAG, "🎯 Node 2 will monitor for SENSOR_STATUS (0x%04x) messages", ESP_BLE_MESH_MODEL_OP_SENSOR_STATUS);
+    ESP_LOGI(TAG, "🔧 Using Sensor Server model to receive published data");
 
     err = esp_ble_mesh_init(&provision, &composition);
     if (err != ESP_OK) {
@@ -353,6 +478,14 @@ static esp_err_t ble_mesh_init(void)
         return err;
     }
 
+    /* Set device name for scanner visibility */
+    err = esp_ble_mesh_set_unprovisioned_device_name("NODE 2");
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to set device name");
+    } else {
+        ESP_LOGI(TAG, "📛 Device name set to: NODE 2");
+    }
+
     board_led_operation(LED_G, LED_ON);
 
     ESP_LOGI(TAG, "BLE Mesh sensor node 2 (subscriber) initialized");
@@ -364,7 +497,14 @@ void app_main(void)
 {
     esp_err_t err;
 
-    ESP_LOGI(TAG, "Initializing Sensor Node 2 (Subscriber)...");
+    printf("\n");
+    printf("╔══════════════════════════════════════════════════════════════════════════════════╗\n");
+    printf("║                              SENSOR NODE 2 STARTING                             ║\n");
+    printf("║                            (SUBSCRIPTION RECEIVER)                              ║\n");
+    printf("╚══════════════════════════════════════════════════════════════════════════════════╝\n");
+    printf("\n");
+
+    ESP_LOGI(TAG, "🚀 Initializing Sensor Node 2 (Subscriber)...");
 
     err = nvs_flash_init();
     if (err == ESP_ERR_NVS_NO_FREE_PAGES) {
@@ -390,5 +530,13 @@ void app_main(void)
         return;
     }
 
-    ESP_LOGI(TAG, "Sensor Node 2 ready to receive sensor data via subscription!");
+    printf("\n");
+    printf("✅ SENSOR NODE 2 INITIALIZATION COMPLETE!\n");
+    printf("🔔 Ready to receive sensor data via BLE Mesh subscription\n");
+    printf("📡 Waiting for sensor data from other nodes...\n");
+    printf("═══════════════════════════════════════════════════════════════════════════════════\n\n");
+    
+    ESP_LOGI(TAG, "✅ Sensor Node 2 ready to receive sensor data via subscription!");
+    ESP_LOGI(TAG, "📡 Device UUID: %02x%02x", dev_uuid[0], dev_uuid[1]);
+    ESP_LOGI(TAG, "🔍 Monitoring for SENSOR_STATUS messages...");
 }

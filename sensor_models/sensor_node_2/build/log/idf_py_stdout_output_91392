@@ -1,0 +1,260 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 11:50:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2c25ch (180828) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=0003c284 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (152) esp_image: segment 2: paddr=0003c2a8 vaddr=3ffbdb60 size=03d70h ( 15728) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9c710h (640784) map[0m
+[0;32mI (382) esp_image: segment 4: paddr=000dc738 vaddr=3ffc18d0 size=019e0h (  6624) load[0m
+[0;32mI (385) esp_image: segment 5: paddr=000de120 vaddr=40080000 size=17af8h ( 97016) load[0m
+[0;32mI (435) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (435) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (454) cpu_start: Pro cpu start user code[0m
+[0;32mI (454) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (454) app_init: Application information:[0m
+[0;32mI (454) app_init: Project name:     sensor_server[0m
+[0;32mI (459) app_init: App version:      1a80c916-dirty[0m
+[0;32mI (463) app_init: Compile time:     May 25 2025 13:17:00[0m
+[0;32mI (468) app_init: ELF file SHA256:  a4bc8d2e8...[0m
+[0;32mI (473) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (476) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (480) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (484) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (488) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (495) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFCBB80 len 00014480 (81 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (533) spi_flash: detected chip: generic[0m
+[0;32mI (535) spi_flash: flash io: dio[0m
+[0;33mW (538) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (551) coexist: coex firmware version: e727207[0m
+[0;32mI (555) main_task: Started on CPU0[0m
+[0;32mI (565) main_task: Calling app_main()[0m
+
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                              SENSOR NODE 2 STARTING                             ║
+║                            (SUBSCRIPTION RECEIVER)                              ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+
+[0;32mI (615) SENSOR_NODE_2: 🚀 Initializing Sensor Node 2 (Subscriber)...[0m
+[0;32mI (635) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (635) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (635) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (645) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (655) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (655) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (665) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (745) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1045) SENSOR_NODE_2: 🔧 All callbacks registered successfully[0m
+[0;32mI (1045) SENSOR_NODE_2: 🎯 Node 2 will monitor for SENSOR_STATUS (0x0052) messages[0m
+[0;32mI (1045) SENSOR_NODE_2: 🔧 Using Sensor Server model to receive published data[0m
+[0;32mI (1155) SENSOR_NODE_2: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1175) SENSOR_NODE_2: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1175) SENSOR_NODE_2: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, err_code 0[0m
+[0;32mI (1175) SENSOR_NODE_2: 📛 Device name set to: NODE 2[0m
+[0;32mI (1175) SENSOR_NODE_2: BLE Mesh sensor node 2 (subscriber) initialized[0m
+
+✅ SENSOR NODE 2 INITIALIZATION COMPLETE!
+🔔 Ready to receive sensor data via BLE Mesh subscription
+📡 Waiting for sensor data from other nodes...
+═══════════════════════════════════════════════════════════════════════════════════
+
+[0;32mI (1225) SENSOR_NODE_2: ✅ Sensor Node 2 ready to receive sensor data via subscription![0m
+[0;32mI (1225) SENSOR_NODE_2: 📡 Device UUID: dddd[0m
+[0;32mI (1235) SENSOR_NODE_2: 🔍 Monitoring for SENSOR_STATUS messages...[0m
+[0;32mI (1235) main_task: Returned from app_main()[0m
+[0;32mI (16255) SENSOR_NODE_2: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (17855) BLE_MESH: No Health Server context provided[0m
+[0;33mW (19175) BLE_MESH: No Health Server context provided[0m
+[0;32mI (19205) SENSOR_NODE_2: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (19205) SENSOR_NODE_2: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (19205) SENSOR_NODE_2: net_idx 0x000, addr 0x0004[0m
+[0;32mI (19215) SENSOR_NODE_2: flags 0x00, iv_index 0x00000000[0m
+[0;33mW (19445) BLE_MESH: No matching AppKey[0m
+[0;33mW (19665) BLE_MESH: No matching AppKey[0m
+[0;33mW (20225) BT_APPL: gattc_conn_cb: if=4 st=0 id=4 rsn=0x13[0m
+[0;33mW (20225) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;33mW (20485) BLE_MESH: No matching AppKey[0m
+[0;33mW (20675) BLE_MESH: No matching AppKey[0m
+[0;33mW (21455) BLE_MESH: No matching AppKey[0m
+[0;33mW (21655) BLE_MESH: No matching AppKey[0m
+[0;33mW (22505) BLE_MESH: No matching AppKey[0m
+[0;33mW (22705) BLE_MESH: No matching AppKey[0m
+[0;33mW (23485) BLE_MESH: No matching AppKey[0m
+[0;33mW (23685) BLE_MESH: No matching AppKey[0m
+[0;33mW (24515) BLE_MESH: No matching AppKey[0m
+[0;33mW (24725) BLE_MESH: No matching AppKey[0m
+[0;33mW (25515) BLE_MESH: No matching AppKey[0m
+[0;33mW (25775) BLE_MESH: No matching AppKey[0m
+[0;33mW (26375) BT_APPL: gattc_conn_cb: if=4 st=0 id=4 rsn=0x13[0m
+[0;33mW (26375) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;33mW (26545) BLE_MESH: No matching AppKey[0m
+[0;33mW (26745) BLE_MESH: No matching AppKey[0m
+[0;33mW (27515) BLE_MESH: No matching AppKey[0m
+[0;33mW (27715) BLE_MESH: No matching AppKey[0m
+[0;33mW (28565) BLE_MESH: No matching AppKey[0m
+[0;33mW (29545) BLE_MESH: No matching AppKey[0m
+[0;33mW (29745) BLE_MESH: No matching AppKey[0m
+[0;33mW (30605) BLE_MESH: No matching AppKey[0m
+[0;33mW (30795) BLE_MESH: No matching AppKey[0m
+[0;33mW (31615) BLE_MESH: No matching AppKey[0m
+[0;33mW (31765) BLE_MESH: No matching AppKey[0m
+[0;33mW (32785) BLE_MESH: No matching AppKey[0m
+[0;33mW (33575) BLE_MESH: No matching AppKey[0m
+[0;33mW (33785) BLE_MESH: No matching AppKey[0m
+[0;33mW (34615) BLE_MESH: No matching AppKey[0m
+[0;33mW (34845) BLE_MESH: No matching AppKey[0m
+[0;33mW (35865) BLE_MESH: No matching AppKey[0m
+[0;33mW (36625) BLE_MESH: No matching AppKey[0m
+[0;33mW (36855) BLE_MESH: No matching AppKey[0m
+[0;33mW (37625) BLE_MESH: No matching AppKey[0m
+[0;33mW (37825) BLE_MESH: No matching AppKey[0m
+[0;33mW (38665) BLE_MESH: No matching AppKey[0m
+[0;33mW (38845) BLE_MESH: No matching AppKey[0m
+[0;33mW (39725) BLE_MESH: No matching AppKey[0m
+[0;33mW (39865) BLE_MESH: No matching AppKey[0m
+[0;33mW (40695) BLE_MESH: No matching AppKey[0m
+[0;33mW (40875) BLE_MESH: No matching AppKey[0m
+[0;33mW (41655) BLE_MESH: No matching AppKey[0m
+[0;33mW (41905) BLE_MESH: No matching AppKey[0m
+[0;33mW (42695) BLE_MESH: No matching AppKey[0m
+[0;33mW (42905) BLE_MESH: No matching AppKey[0m
+[0;33mW (43675) BLE_MESH: No matching AppKey[0m
+[0;33mW (43885) BLE_MESH: No matching AppKey[0m
+[0;33mW (44725) BLE_MESH: No matching AppKey[0m
+[0;33mW (44945) BLE_MESH: No matching AppKey[0m
+[0;33mW (45755) BLE_MESH: No matching AppKey[0m
+[0;33mW (45895) BLE_MESH: No matching AppKey[0m
+[0;33mW (46735) BLE_MESH: No matching AppKey[0m
+[0;33mW (46935) BLE_MESH: No matching AppKey[0m
+[0;33mW (47725) BLE_MESH: No matching AppKey[0m
+[0;33mW (47995) BLE_MESH: No matching AppKey[0m
+[0;33mW (48755) BLE_MESH: No matching AppKey[0m
+[0;33mW (48955) BLE_MESH: No matching AppKey[0m
+[0;33mW (49735) BLE_MESH: No matching AppKey[0m
+[0;33mW (49935) BLE_MESH: No matching AppKey[0m
+[0;33mW (50745) BLE_MESH: No matching AppKey[0m
+[0;33mW (50975) BLE_MESH: No matching AppKey[0m
+[0;33mW (51785) BLE_MESH: No matching AppKey[0m
+[0;33mW (51955) BLE_MESH: No matching AppKey[0m
+[0;33mW (52775) BLE_MESH: No matching AppKey[0m
+[0;33mW (53015) BLE_MESH: No matching AppKey[0m
+[0;33mW (53775) BLE_MESH: No matching AppKey[0m
+[0;33mW (54035) BLE_MESH: No matching AppKey[0m
+[0;33mW (102245) BT_APPL: gattc_conn_cb: if=4 st=0 id=4 rsn=0x13[0m
+[0;33mW (102245) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;33mW (126905) BLE_MESH: No matching AppKey[0m
+[0;33mW (127125) BLE_MESH: No matching AppKey[0m
+[0;33mW (127925) BLE_MESH: No matching AppKey[0m
+[0;33mW (128105) BLE_MESH: No matching AppKey[0m
+[0;33mW (128925) BLE_MESH: No matching AppKey[0m
+[0;33mW (129125) BLE_MESH: No matching AppKey[0m
+[0;33mW (129925) BLE_MESH: No matching AppKey[0m
+[0;33mW (130205) BLE_MESH: No matching AppKey[0m
+[0;33mW (130945) BLE_MESH: No matching AppKey[0m
+[0;33mW (131135) BLE_MESH: No matching AppKey[0m
+[0;33mW (131945) BLE_MESH: No matching AppKey[0m
+[0;33mW (132145) BLE_MESH: No matching AppKey[0m
+[0;33mW (132965) BLE_MESH: No matching AppKey[0m
+[0;33mW (133205) BLE_MESH: No matching AppKey[0m
+[0;33mW (133965) BLE_MESH: No matching AppKey[0m
+[0;33mW (134165) BLE_MESH: No matching AppKey[0m
+[0;33mW (134985) BLE_MESH: No matching AppKey[0m
+[0;33mW (135205) BLE_MESH: No matching AppKey[0m
+[0;33mW (135975) BLE_MESH: No matching AppKey[0m
+[0;33mW (136245) BLE_MESH: No matching AppKey[0m
+[0;33mW (137075) BLE_MESH: No matching AppKey[0m
+[0;33mW (137205) BLE_MESH: No matching AppKey[0m
+[0;33mW (138085) BLE_MESH: No matching AppKey[0m
+[0;33mW (138305) BLE_MESH: No matching AppKey[0m
+[0;33mW (139025) BLE_MESH: No matching AppKey[0m
+[0;33mW (139225) BLE_MESH: No matching AppKey[0m
+[0;33mW (140025) BLE_MESH: No matching AppKey[0m
+[0;33mW (140275) BLE_MESH: No matching AppKey[0m
+[0;33mW (141245) BLE_MESH: No matching AppKey[0m
+[0;33mW (142065) BLE_MESH: No matching AppKey[0m
+[0;33mW (142265) BLE_MESH: No matching AppKey[0m
+[0;33mW (143065) BLE_MESH: No matching AppKey[0m
+[0;33mW (143325) BLE_MESH: No matching AppKey[0m
+[0;33mW (144085) BLE_MESH: No matching AppKey[0m
+[0;33mW (144285) BLE_MESH: No matching AppKey[0m
+[0;33mW (145085) BLE_MESH: No matching AppKey[0m
+[0;33mW (145275) BLE_MESH: No matching AppKey[0m
+[0;33mW (146095) BLE_MESH: No matching AppKey[0m
+[0;33mW (146345) BLE_MESH: No matching AppKey[0m
+[0;33mW (147105) BLE_MESH: No matching AppKey[0m
+[0;33mW (147295) BLE_MESH: No matching AppKey[0m
+🔑 APP KEY ADDED!
+[0;32mI (147855) SENSOR_NODE_2: 🔑 ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (147855) SENSOR_NODE_2: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (147855) AppKey: c9 8e 5b 3e 6e 9c 65 6b 87 d9 53 25 b4 9d 7a 36[0m
+🔗 MODEL APP BIND COMPLETED!
+[0;32mI (171715) SENSOR_NODE_2: 🔗 ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (171715) SENSOR_NODE_2: elem_addr 0x0004, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;33mW (195965) BT_APPL: gattc_conn_cb: if=4 st=0 id=4 rsn=0x13[0m
+[0;33mW (195965) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;33mW (225555) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00000c[0m
+[0;33mW (226425) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00000d[0m
+[0;33mW (226565) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00000e[0m
+[0;33mW (227375) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00000f[0m
+[0;33mW (227585) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000010[0m
+[0;33mW (228425) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000011[0m
+[0;33mW (228585) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000012[0m
+[0;33mW (229395) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000013[0m
+[0;33mW (229605) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000014[0m
+[0;33mW (230405) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000015[0m
+[0;33mW (230645) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000016[0m
+[0;33mW (231445) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000017[0m
+[0;33mW (231625) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000018[0m
+[0;33mW (232485) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000019[0m
+[0;33mW (232625) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00001a[0m
+[0;33mW (233445) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00001b[0m
+[0;33mW (233645) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00001c[0m
+[0;33mW (234505) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00001d[0m
+[0;33mW (234645) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00001e[0m
+[0;33mW (235465) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00001f[0m
+[0;33mW (235665) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000020[0m
+[0;33mW (236465) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000021[0m
+[0;33mW (236665) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000022[0m
+[0;33mW (237495) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000023[0m
+[0;33mW (237705) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000024[0m
+[0;33mW (238525) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000025[0m
+[0;33mW (238725) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000026[0m
+[0;33mW (239505) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000027[0m
+[0;33mW (239705) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000028[0m
+[0;33mW (240565) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x000029[0m
+[0;33mW (240705) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00002a[0m
+[0;33mW (241545) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00002b[0m
+[0;33mW (241725) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00002c[0m
+[0;33mW (242525) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00002d[0m
+[0;33mW (242785) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00002e[0m
+[0;33mW (243565) BLE_MESH: Replay: src 0x0002 dst 0xffff seq 0x00002f[0m
+[0;33mW (243755) BLE_MESH: Replay
