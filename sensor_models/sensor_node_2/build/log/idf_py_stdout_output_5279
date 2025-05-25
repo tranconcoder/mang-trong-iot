@@ -1,0 +1,20 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/tvconss/Workspace/mang-trong-iot/sensor_models/sensor_node_2/build/bootloader/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/tvconss/Workspace/mang-trong-iot/sensor_models/sensor_node_2/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/tvconss/Workspace/mang-trong-iot/sensor_models/sensor_node_2/main/main.c:231:13: warning: 'example_ble_mesh_model_cb' defined but not used [-Wunused-function]
+  231 | static void example_ble_mesh_model_cb(esp_ble_mesh_model_cb_event_t event,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable sensor_server.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/tvconss/Workspace/mang-trong-iot/sensor_models/sensor_node_2/build/sensor_server.bin
+[9/9] cd /home/tvconss/Workspace/mang-trong-iot/sensor_models/sensor_node_2/build/esp-idf/esptool_py && /home/tvconss/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/tvconss/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/tvconss/Workspace/mang-trong-iot/sensor_models/sensor_node_2/build/partition_table/partition-table.bin /home/tvconss/Workspace/mang-trong-iot/sensor_models/sensor_node_2/build/sensor_server.bin
+sensor_server.bin binary size 0xe3e30 bytes. Smallest app partition is 0x177000 bytes. 0x931d0 bytes (39%) free.

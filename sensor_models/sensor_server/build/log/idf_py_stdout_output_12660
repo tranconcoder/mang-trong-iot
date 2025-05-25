@@ -1,0 +1,815 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 09:04:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=298bch (170172) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=000398e4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=00039908 vaddr=3ffbdb60 size=055d8h ( 21976) load[0m
+[0;32mI (160) esp_image: segment 3: paddr=0003eee8 vaddr=40080000 size=01130h (  4400) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=955f8h (611832) map[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d5620 vaddr=40081130 size=169c8h ( 92616) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (443) app_init: Project name:     sensor_server[0m
+[0;32mI (447) app_init: App version:      fe623cb3-dirty[0m
+[0;32mI (452) app_init: Compile time:     May 25 2025 13:07:49[0m
+[0;32mI (457) app_init: ELF file SHA256:  014a1657f...[0m
+[0;32mI (461) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFCAF28 len 000150D8 (84 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) coexist: coex firmware version: e727207[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (554) EXAMPLE: Initializing...[0m
+[0;32mI (564) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (584) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (584) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (594) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (674) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1074) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1084) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1084) EXAMPLE: BLE Mesh sensor server initialized[0m
+[0;32mI (1084) Publishing Sensor Data: c0 0a 20 60 0b 4c[0m
+[1;31mE (1084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (1094) main_task: Returned from app_main()[0m
+[0;32mI (2094) Publishing Sensor Data: c0 0a 22 60 0b 50[0m
+[1;31mE (2094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (3094) Publishing Sensor Data: c0 0a 31 60 0b 42[0m
+[1;31mE (3094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (4094) Publishing Sensor Data: c0 0a 1f 60 0b 30[0m
+[1;31mE (4094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (5094) Publishing Sensor Data: c0 0a 3c 60 0b 3d[0m
+[1;31mE (5094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (6094) Publishing Sensor Data: c0 0a 37 60 0b 48[0m
+[1;31mE (6094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (7094) Publishing Sensor Data: c0 0a 27 60 0b 4f[0m
+[1;31mE (7094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (8094) Publishing Sensor Data: c0 0a 39 60 0b 2a[0m
+[1;31mE (8094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (9094) Publishing Sensor Data: c0 0a 38 60 0b 2a[0m
+[1;31mE (9094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (10094) Publishing Sensor Data: c0 0a 32 60 0b 49[0m
+[1;31mE (10094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (10224) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (11094) Publishing Sensor Data: c0 0a 35 60 0b 2d[0m
+[1;31mE (11094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;33mW (11834) BLE_MESH: No Health Server context provided[0m
+[0;32mI (12094) Publishing Sensor Data: c0 0a 1f 60 0b 37[0m
+[1;31mE (12094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (13094) Publishing Sensor Data: c0 0a 3a 60 0b 3e[0m
+[1;31mE (13094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;33mW (13994) BLE_MESH: No Health Server context provided[0m
+[0;32mI (14024) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (14024) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (14024) EXAMPLE: net_idx 0x000, addr 0x0002[0m
+[0;32mI (14024) EXAMPLE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (14094) Publishing Sensor Data: c0 0a 26 60 0b 39[0m
+[1;31mE (14094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (15094) Publishing Sensor Data: c0 0a 34 60 0b 2b[0m
+[1;31mE (15094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;33mW (15164) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (16094) Publishing Sensor Data: c0 0a 23 60 0b 3b[0m
+[1;31mE (16094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (17094) Publishing Sensor Data: c0 0a 37 60 0b 3e[0m
+[1;31mE (17094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (18094) Publishing Sensor Data: c0 0a 30 60 0b 43[0m
+[1;31mE (18094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (19094) Publishing Sensor Data: c0 0a 3c 60 0b 3c[0m
+[1;31mE (19094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (20094) Publishing Sensor Data: c0 0a 34 60 0b 28[0m
+[1;31mE (20094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (21094) Publishing Sensor Data: c0 0a 21 60 0b 33[0m
+[1;31mE (21094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (22094) Publishing Sensor Data: c0 0a 2f 60 0b 43[0m
+[1;31mE (22094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (23094) Publishing Sensor Data: c0 0a 29 60 0b 4a[0m
+[1;31mE (23094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (24094) Publishing Sensor Data: c0 0a 21 60 0b 4e[0m
+[1;31mE (24094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (25094) Publishing Sensor Data: c0 0a 1f 60 0b 4c[0m
+[1;31mE (25094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (26094) Publishing Sensor Data: c0 0a 33 60 0b 2f[0m
+[1;31mE (26094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (27094) Publishing Sensor Data: c0 0a 29 60 0b 3d[0m
+[1;31mE (27094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (28094) Publishing Sensor Data: c0 0a 22 60 0b 2f[0m
+[1;31mE (28094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (29094) Publishing Sensor Data: c0 0a 2b 60 0b 42[0m
+[1;31mE (29094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (30094) Publishing Sensor Data: c0 0a 35 60 0b 3a[0m
+[1;31mE (30094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (31094) Publishing Sensor Data: c0 0a 29 60 0b 28[0m
+[1;31mE (31094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (32094) Publishing Sensor Data: c0 0a 37 60 0b 50[0m
+[1;31mE (32094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (33094) Publishing Sensor Data: c0 0a 34 60 0b 3c[0m
+[1;31mE (33094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (34094) Publishing Sensor Data: c0 0a 33 60 0b 4f[0m
+[1;31mE (34094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;33mW (34514) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (35094) Publishing Sensor Data: c0 0a 20 60 0b 4f[0m
+[1;31mE (35094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (36094) Publishing Sensor Data: c0 0a 25 60 0b 50[0m
+[1;31mE (36094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (37094) Publishing Sensor Data: c0 0a 2a 60 0b 4e[0m
+[1;31mE (37094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (38094) Publishing Sensor Data: c0 0a 23 60 0b 3c[0m
+[1;31mE (38094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (39094) Publishing Sensor Data: c0 0a 27 60 0b 2a[0m
+[1;31mE (39094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (40094) Publishing Sensor Data: c0 0a 29 60 0b 35[0m
+[1;31mE (40094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (41094) Publishing Sensor Data: c0 0a 1f 60 0b 3d[0m
+[1;31mE (41094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (42094) Publishing Sensor Data: c0 0a 3c 60 0b 4f[0m
+[1;31mE (42094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (43094) Publishing Sensor Data: c0 0a 3c 60 0b 2f[0m
+[1;31mE (43094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (44094) Publishing Sensor Data: c0 0a 2b 60 0b 2c[0m
+[1;31mE (44094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (45094) Publishing Sensor Data: c0 0a 30 60 0b 34[0m
+[1;31mE (45094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (46094) Publishing Sensor Data: c0 0a 3a 60 0b 42[0m
+[1;31mE (46094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (47094) Publishing Sensor Data: c0 0a 30 60 0b 47[0m
+[1;31mE (47094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (48094) Publishing Sensor Data: c0 0a 25 60 0b 3f[0m
+[1;31mE (48094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (49094) Publishing Sensor Data: c0 0a 2e 60 0b 2e[0m
+[1;31mE (49094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (50094) Publishing Sensor Data: c0 0a 38 60 0b 42[0m
+[1;31mE (50094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (51094) Publishing Sensor Data: c0 0a 26 60 0b 31[0m
+[1;31mE (51094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (52094) Publishing Sensor Data: c0 0a 22 60 0b 36[0m
+[1;31mE (52094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (53094) Publishing Sensor Data: c0 0a 2b 60 0b 48[0m
+[1;31mE (53094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (54094) Publishing Sensor Data: c0 0a 23 60 0b 4a[0m
+[1;31mE (54094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (55094) Publishing Sensor Data: c0 0a 32 60 0b 41[0m
+[1;31mE (55094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (56094) Publishing Sensor Data: c0 0a 36 60 0b 42[0m
+[1;31mE (56094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (57094) Publishing Sensor Data: c0 0a 2c 60 0b 45[0m
+[1;31mE (57094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (58094) Publishing Sensor Data: c0 0a 2a 60 0b 3c[0m
+[1;31mE (58094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (59094) Publishing Sensor Data: c0 0a 2d 60 0b 41[0m
+[1;31mE (59094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (60094) Publishing Sensor Data: c0 0a 39 60 0b 32[0m
+[1;31mE (60094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (61094) Publishing Sensor Data: c0 0a 2c 60 0b 32[0m
+[1;31mE (61094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (62094) Publishing Sensor Data: c0 0a 37 60 0b 50[0m
+[1;31mE (62094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (63094) Publishing Sensor Data: c0 0a 39 60 0b 29[0m
+[1;31mE (63094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (64094) Publishing Sensor Data: c0 0a 3a 60 0b 48[0m
+[1;31mE (64094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (65094) Publishing Sensor Data: c0 0a 34 60 0b 4a[0m
+[1;31mE (65094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (66094) Publishing Sensor Data: c0 0a 24 60 0b 43[0m
+[1;31mE (66094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (67094) Publishing Sensor Data: c0 0a 25 60 0b 37[0m
+[1;31mE (67094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (68094) Publishing Sensor Data: c0 0a 2a 60 0b 3f[0m
+[1;31mE (68094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (69094) Publishing Sensor Data: c0 0a 2a 60 0b 31[0m
+[1;31mE (69094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (70094) Publishing Sensor Data: c0 0a 26 60 0b 29[0m
+[1;31mE (70094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (71094) Publishing Sensor Data: c0 0a 30 60 0b 4a[0m
+[1;31mE (71094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (72094) Publishing Sensor Data: c0 0a 23 60 0b 31[0m
+[1;31mE (72094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (73094) Publishing Sensor Data: c0 0a 34 60 0b 4e[0m
+[1;31mE (73094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (74094) Publishing Sensor Data: c0 0a 2c 60 0b 2b[0m
+[1;31mE (74094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (75094) Publishing Sensor Data: c0 0a 3b 60 0b 2a[0m
+[1;31mE (75094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (76094) Publishing Sensor Data: c0 0a 36 60 0b 44[0m
+[1;31mE (76094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (77094) Publishing Sensor Data: c0 0a 22 60 0b 3d[0m
+[1;31mE (77094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (78094) Publishing Sensor Data: c0 0a 2f 60 0b 35[0m
+[1;31mE (78094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (79094) Publishing Sensor Data: c0 0a 27 60 0b 3a[0m
+[1;31mE (79094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (80094) Publishing Sensor Data: c0 0a 2a 60 0b 3e[0m
+[1;31mE (80094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (81094) Publishing Sensor Data: c0 0a 3c 60 0b 2a[0m
+[1;31mE (81094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (82094) Publishing Sensor Data: c0 0a 2c 60 0b 2b[0m
+[1;31mE (82094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (83094) Publishing Sensor Data: c0 0a 39 60 0b 3d[0m
+[1;31mE (83094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (84094) Publishing Sensor Data: c0 0a 30 60 0b 3b[0m
+[1;31mE (84094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (85094) Publishing Sensor Data: c0 0a 23 60 0b 28[0m
+[1;31mE (85094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (86094) Publishing Sensor Data: c0 0a 31 60 0b 40[0m
+[1;31mE (86094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (87094) Publishing Sensor Data: c0 0a 33 60 0b 48[0m
+[1;31mE (87094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (88094) Publishing Sensor Data: c0 0a 1f 60 0b 40[0m
+[1;31mE (88094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (89094) Publishing Sensor Data: c0 0a 31 60 0b 39[0m
+[1;31mE (89094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (90094) Publishing Sensor Data: c0 0a 1f 60 0b 48[0m
+[1;31mE (90094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (91094) Publishing Sensor Data: c0 0a 39 60 0b 30[0m
+[1;31mE (91094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (92094) Publishing Sensor Data: c0 0a 32 60 0b 42[0m
+[1;31mE (92094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (92654) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (92654) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (92654) AppKey: c5 20 f6 72 21 17 53 a6 c2 e4 47 c2 f5 7c 66 32[0m
+[0;32mI (93094) Publishing Sensor Data: c0 0a 38 60 0b 36[0m
+[1;31mE (93094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (94094) Publishing Sensor Data: c0 0a 22 60 0b 2f[0m
+[1;31mE (94094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (95094) Publishing Sensor Data: c0 0a 30 60 0b 4f[0m
+[1;31mE (95094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (96094) Publishing Sensor Data: c0 0a 33 60 0b 35[0m
+[1;31mE (96094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (97094) Publishing Sensor Data: c0 0a 22 60 0b 28[0m
+[1;31mE (97094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (98094) Publishing Sensor Data: c0 0a 38 60 0b 31[0m
+[1;31mE (98094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (99094) Publishing Sensor Data: c0 0a 29 60 0b 45[0m
+[1;31mE (99094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (100094) Publishing Sensor Data: c0 0a 2a 60 0b 30[0m
+[1;31mE (100094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (101094) Publishing Sensor Data: c0 0a 22 60 0b 48[0m
+[1;31mE (101094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (102094) Publishing Sensor Data: c0 0a 27 60 0b 43[0m
+[1;31mE (102094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (103094) Publishing Sensor Data: c0 0a 3c 60 0b 4c[0m
+[1;31mE (103094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (104094) Publishing Sensor Data: c0 0a 22 60 0b 2c[0m
+[1;31mE (104094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (105094) Publishing Sensor Data: c0 0a 3b 60 0b 4e[0m
+[1;31mE (105094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (106094) Publishing Sensor Data: c0 0a 35 60 0b 42[0m
+[1;31mE (106094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (107094) Publishing Sensor Data: c0 0a 2a 60 0b 35[0m
+[1;31mE (107094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (108094) Publishing Sensor Data: c0 0a 2f 60 0b 40[0m
+[1;31mE (108094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (109094) Publishing Sensor Data: c0 0a 32 60 0b 2d[0m
+[1;31mE (109094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (110094) Publishing Sensor Data: c0 0a 34 60 0b 44[0m
+[1;31mE (110094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (111094) Publishing Sensor Data: c0 0a 30 60 0b 41[0m
+[1;31mE (111094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (112094) Publishing Sensor Data: c0 0a 30 60 0b 4f[0m
+[1;31mE (112094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (113094) Publishing Sensor Data: c0 0a 26 60 0b 35[0m
+[1;31mE (113094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (114094) Publishing Sensor Data: c0 0a 3c 60 0b 3c[0m
+[1;31mE (114094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (115094) Publishing Sensor Data: c0 0a 1e 60 0b 2d[0m
+[1;31mE (115094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (116094) Publishing Sensor Data: c0 0a 22 60 0b 3a[0m
+[1;31mE (116094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (117094) Publishing Sensor Data: c0 0a 2b 60 0b 29[0m
+[1;31mE (117094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (118094) Publishing Sensor Data: c0 0a 38 60 0b 2f[0m
+[1;31mE (118094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (119094) Publishing Sensor Data: c0 0a 2d 60 0b 30[0m
+[1;31mE (119094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (120094) Publishing Sensor Data: c0 0a 38 60 0b 37[0m
+[1;31mE (120094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (121094) Publishing Sensor Data: c0 0a 3c 60 0b 4d[0m
+[1;31mE (121094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (122094) Publishing Sensor Data: c0 0a 3b 60 0b 31[0m
+[1;31mE (122094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (123094) Publishing Sensor Data: c0 0a 31 60 0b 42[0m
+[1;31mE (123094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (124094) Publishing Sensor Data: c0 0a 32 60 0b 2b[0m
+[1;31mE (124094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (125094) Publishing Sensor Data: c0 0a 28 60 0b 4a[0m
+[1;31mE (125094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (126094) Publishing Sensor Data: c0 0a 21 60 0b 45[0m
+[1;31mE (126094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (126344) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (126344) EXAMPLE: elem_addr 0x0002, app_idx 0x0000, cid 0xffff, mod_id 0x1100[0m
+[0;32mI (127094) Publishing Sensor Data: c0 0a 2d 60 0b 39[0m
+[1;31mE (127094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (128094) Publishing Sensor Data: c0 0a 34 60 0b 44[0m
+[1;31mE (128094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (129094) Publishing Sensor Data: c0 0a 25 60 0b 37[0m
+[1;31mE (129094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (130094) Publishing Sensor Data: c0 0a 2c 60 0b 2e[0m
+[1;31mE (130094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (131094) Publishing Sensor Data: c0 0a 22 60 0b 4e[0m
+[1;31mE (131094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (132094) Publishing Sensor Data: c0 0a 3c 60 0b 3b[0m
+[1;31mE (132094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (133094) Publishing Sensor Data: c0 0a 22 60 0b 3b[0m
+[1;31mE (133094) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (134094) Publishing Sensor Data: c0 0a 2b 60 0b 4b[0m
+[0;33mW (134094) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (134294) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (135094) Publishing Sensor Data: c0 0a 20 60 0b 2c[0m
+[0;33mW (135094) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (135294) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (136104) Publishing Sensor Data: c0 0a 23 60 0b 3b[0m
+[0;33mW (136104) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (136304) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (137114) Publishing Sensor Data: c0 0a 26 60 0b 40[0m
+[0;33mW (137114) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (137314) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (138124) Publishing Sensor Data: c0 0a 3a 60 0b 3a[0m
+[0;33mW (138124) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (138324) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (139134) Publishing Sensor Data: c0 0a 3c 60 0b 29[0m
+[0;33mW (139134) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (139334) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (140144) Publishing Sensor Data: c0 0a 30 60 0b 4c[0m
+[0;33mW (140144) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (140344) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (141154) Publishing Sensor Data: c0 0a 2c 60 0b 48[0m
+[0;33mW (141154) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (141354) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (142164) Publishing Sensor Data: c0 0a 31 60 0b 45[0m
+[0;33mW (142164) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (142364) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (143174) Publishing Sensor Data: c0 0a 3a 60 0b 3e[0m
+[0;33mW (143174) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (143374) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (144184) Publishing Sensor Data: c0 0a 33 60 0b 48[0m
+[0;33mW (144184) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (144384) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (145194) Publishing Sensor Data: c0 0a 1e 60 0b 3d[0m
+[0;33mW (145194) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (145394) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (146204) Publishing Sensor Data: c0 0a 22 60 0b 35[0m
+[0;33mW (146204) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (146404) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (147214) Publishing Sensor Data: c0 0a 23 60 0b 4e[0m
+[0;33mW (147214) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (147414) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (148224) Publishing Sensor Data: c0 0a 25 60 0b 41[0m
+[0;33mW (148224) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (148424) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (149234) Publishing Sensor Data: c0 0a 28 60 0b 46[0m
+[0;33mW (149234) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (149434) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (150244) Publishing Sensor Data: c0 0a 25 60 0b 4b[0m
+[0;33mW (150244) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (150444) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (151254) Publishing Sensor Data: c0 0a 29 60 0b 3f[0m
+[0;33mW (151254) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (151454) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (152264) Publishing Sensor Data: c0 0a 39 60 0b 30[0m
+[0;33mW (152264) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (152464) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (153274) Publishing Sensor Data: c0 0a 3c 60 0b 3b[0m
+[0;33mW (153274) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (153474) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (154284) Publishing Sensor Data: c0 0a 1e 60 0b 2b[0m
+[0;33mW (154284) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (154484) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (155294) Publishing Sensor Data: c0 0a 30 60 0b 3b[0m
+[0;33mW (155294) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (155494) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (156304) Publishing Sensor Data: c0 0a 2e 60 0b 4d[0m
+[0;33mW (156304) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (156504) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (157314) Publishing Sensor Data: c0 0a 37 60 0b 39[0m
+[0;33mW (157314) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (157514) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (158324) Publishing Sensor Data: c0 0a 2a 60 0b 4a[0m
+[0;33mW (158324) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (158524) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (159334) Publishing Sensor Data: c0 0a 24 60 0b 28[0m
+[0;33mW (159334) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (159534) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (160344) Publishing Sensor Data: c0 0a 3a 60 0b 4a[0m
+[0;33mW (160344) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (160544) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (161354) Publishing Sensor Data: c0 0a 2e 60 0b 45[0m
+[0;33mW (161354) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (161554) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (162364) Publishing Sensor Data: c0 0a 32 60 0b 39[0m
+[0;33mW (162364) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (162564) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (163374) Publishing Sensor Data: c0 0a 33 60 0b 35[0m
+[0;33mW (163374) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (163574) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (164384) Publishing Sensor Data: c0 0a 32 60 0b 3d[0m
+[0;33mW (164384) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (164584) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (165394) Publishing Sensor Data: c0 0a 21 60 0b 2e[0m
+[0;33mW (165394) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (165594) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (166404) Publishing Sensor Data: c0 0a 1e 60 0b 2e[0m
+[0;33mW (166404) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (166604) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (167414) Publishing Sensor Data: c0 0a 38 60 0b 3c[0m
+[0;33mW (167414) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (167614) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (168424) Publishing Sensor Data: c0 0a 33 60 0b 40[0m
+[0;33mW (168424) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (168624) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (169434) Publishing Sensor Data: c0 0a 21 60 0b 2c[0m
+[0;33mW (169434) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (169634) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (170444) Publishing Sensor Data: c0 0a 31 60 0b 3d[0m
+[0;33mW (170444) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (170644) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (171454) Publishing Sensor Data: c0 0a 38 60 0b 37[0m
+[0;33mW (171454) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (171654) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (172464) Publishing Sensor Data: c0 0a 38 60 0b 3e[0m
+[0;33mW (172464) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (172664) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (173474) Publishing Sensor Data: c0 0a 28 60 0b 30[0m
+[0;33mW (173474) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (173674) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (174484) Publishing Sensor Data: c0 0a 24 60 0b 44[0m
+[0;33mW (174484) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (174684) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (175494) Publishing Sensor Data: c0 0a 36 60 0b 46[0m
+[0;33mW (175494) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (175694) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (176504) Publishing Sensor Data: c0 0a 32 60 0b 3f[0m
+[0;33mW (176504) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (176704) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (177514) Publishing Sensor Data: c0 0a 22 60 0b 4e[0m
+[0;33mW (177514) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (177714) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (178524) Publishing Sensor Data: c0 0a 3a 60 0b 38[0m
+[0;33mW (178524) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (178724) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (179534) Publishing Sensor Data: c0 0a 20 60 0b 3e[0m
+[0;33mW (179534) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (179734) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (180544) Publishing Sensor Data: c0 0a 30 60 0b 40[0m
+[0;33mW (180544) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (180744) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (181554) Publishing Sensor Data: c0 0a 38 60 0b 3d[0m
+[0;33mW (181554) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (181754) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (182564) Publishing Sensor Data: c0 0a 39 60 0b 43[0m
+[0;33mW (182564) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (182764) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (183574) Publishing Sensor Data: c0 0a 1e 60 0b 4c[0m
+[0;33mW (183574) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (183774) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (184584) Publishing Sensor Data: c0 0a 2d 60 0b 34[0m
+[0;33mW (184584) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (184784) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (185594) Publishing Sensor Data: c0 0a 21 60 0b 47[0m
+[0;33mW (185594) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (185794) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (186604) Publishing Sensor Data: c0 0a 2c 60 0b 2f[0m
+[0;33mW (186604) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (186804) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (187614) Publishing Sensor Data: c0 0a 34 60 0b 46[0m
+[0;33mW (187614) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (187814) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (188624) Publishing Sensor Data: c0 0a 24 60 0b 45[0m
+[0;33mW (188624) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (188824) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (189634) Publishing Sensor Data: c0 0a 24 60 0b 50[0m
+[0;33mW (189634) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (189834) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (190644) Publishing Sensor Data: c0 0a 29 60 0b 4c[0m
+[0;33mW (190644) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (190844) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (191654) Publishing Sensor Data: c0 0a 2f 60 0b 40[0m
+[0;33mW (191654) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (191854) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (192664) Publishing Sensor Data: c0 0a 2e 60 0b 44[0m
+[0;33mW (192664) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (192864) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (193674) Publishing Sensor Data: c0 0a 22 60 0b 2b[0m
+[0;33mW (193674) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (193874) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (194684) Publishing Sensor Data: c0 0a 32 60 0b 4f[0m
+[0;33mW (194684) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (194884) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (195694) Publishing Sensor Data: c0 0a 38 60 0b 48[0m
+[0;33mW (195694) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (195894) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (196704) Publishing Sensor Data: c0 0a 38 60 0b 48[0m
+[0;33mW (196704) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (196904) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (197714) Publishing Sensor Data: c0 0a 38 60 0b 47[0m
+[0;33mW (197714) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (197914) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (198724) Publishing Sensor Data: c0 0a 25 60 0b 3e[0m
+[0;33mW (198724) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (198924) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (199734) Publishing Sensor Data: c0 0a 2e 60 0b 4b[0m
+[0;33mW (199734) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (199934) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (200744) Publishing Sensor Data: c0 0a 38 60 0b 3f[0m
+[0;33mW (200744) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (200944) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (201754) Publishing Sensor Data: c0 0a 35 60 0b 28[0m
+[0;33mW (201754) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (201954) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (202764) Publishing Sensor Data: c0 0a 37 60 0b 3c[0m
+[0;33mW (202764) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (202964) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (203774) Publishing Sensor Data: c0 0a 2b 60 0b 4c[0m
+[0;33mW (203774) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (203974) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (204784) Publishing Sensor Data: c0 0a 26 60 0b 33[0m
+[0;33mW (204784) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204984) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (205794) Publishing Sensor Data: c0 0a 27 60 0b 2f[0m
+[0;33mW (205794) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (205994) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (206804) Publishing Sensor Data: c0 0a 23 60 0b 37[0m
+[0;33mW (206804) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (207004) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (207814) Publishing Sensor Data: c0 0a 28 60 0b 41[0m
+[0;33mW (207814) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (208014) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (208824) Publishing Sensor Data: c0 0a 3a 60 0b 29[0m
+[0;33mW (208824) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (209024) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (209834) Publishing Sensor Data: c0 0a 23 60 0b 2f[0m
+[0;33mW (209834) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (210034) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (210844) Publishing Sensor Data: c0 0a 23 60 0b 28[0m
+[0;33mW (210844) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (211044) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (211854) Publishing Sensor Data: c0 0a 3b 60 0b 4c[0m
+[0;33mW (211854) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (212054) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (212864) Publishing Sensor Data: c0 0a 23 60 0b 2d[0m
+[0;33mW (212864) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (213064) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (213874) Publishing Sensor Data: c0 0a 3c 60 0b 48[0m
+[0;33mW (213874) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (214074) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (214884) Publishing Sensor Data: c0 0a 25 60 0b 46[0m
+[0;33mW (214884) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (215084) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (215894) Publishing Sensor Data: c0 0a 35 60 0b 41[0m
+[0;33mW (215894) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (216094) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (216904) Publishing Sensor Data: c0 0a 27 60 0b 4e[0m
+[0;33mW (216904) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (217104) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (217914) Publishing Sensor Data: c0 0a 34 60 0b 41[0m
+[0;33mW (217914) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (218114) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (218924) Publishing Sensor Data: c0 0a 30 60 0b 45[0m
+[0;33mW (218924) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (219124) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (219934) Publishing Sensor Data: c0 0a 2f 60 0b 48[0m
+[0;33mW (219934) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (220134) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (220944) Publishing Sensor Data: c0 0a 26 60 0b 47[0m
+[0;33mW (220944) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (221144) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (221954) Publishing Sensor Data: c0 0a 25 60 0b 4b[0m
+[0;33mW (221954) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (222154) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (222964) Publishing Sensor Data: c0 0a 33 60 0b 35[0m
+[0;33mW (222964) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (223164) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (223974) Publishing Sensor Data: c0 0a 36 60 0b 2e[0m
+[0;33mW (223974) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (224174) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (224984) Publishing Sensor Data: c0 0a 3a 60 0b 33[0m
+[0;33mW (224984) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (225184) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (225994) Publishing Sensor Data: c0 0a 38 60 0b 3c[0m
+[0;33mW (225994) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (226194) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (227004) Publishing Sensor Data: c0 0a 29 60 0b 2e[0m
+[0;33mW (227004) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (227204) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (228014) Publishing Sensor Data: c0 0a 27 60 0b 30[0m
+[0;33mW (228014) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (228214) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (229024) Publishing Sensor Data: c0 0a 25 60 0b 3a[0m
+[0;33mW (229024) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (229224) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (230034) Publishing Sensor Data: c0 0a 29 60 0b 43[0m
+[0;33mW (230034) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (230234) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (231044) Publishing Sensor Data: c0 0a 2d 60 0b 3f[0m
+[0;33mW (231044) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (231244) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (232054) Publishing Sensor Data: c0 0a 29 60 0b 35[0m
+[0;33mW (232054) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (232254) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (233064) Publishing Sensor Data: c0 0a 2d 60 0b 3a[0m
+[0;33mW (233064) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (233264) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (234074) Publishing Sensor Data: c0 0a 33 60 0b 50[0m
+[0;33mW (234074) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (234274) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (235084) Publishing Sensor Data: c0 0a 20 60 0b 4f[0m
+[0;33mW (235084) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (235284) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (236094) Publishing Sensor Data: c0 0a 37 60 0b 35[0m
+[0;33mW (236094) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (236294) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (237104) Publishing Sensor Data: c0 0a 33 60 0b 49[0m
+[0;33mW (237104) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (237304) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (238114) Publishing Sensor Data: c0 0a 33 60 0b 38[0m
+[0;33mW (238114) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (238314) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (239124) Publishing Sensor Data: c0 0a 33 60 0b 42[0m
+[0;33mW (239124) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (239324) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (240134) Publishing Sensor Data: c0 0a 20 60 0b 2f[0m
+[0;33mW (240134) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (240334) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (241144) Publishing Sensor Data: c0 0a 32 60 0b 33[0m
+[0;33mW (241144) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (241344) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (242154) Publishing Sensor Data: c0 0a 31 60 0b 49[0m
+[0;33mW (242154) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (242354) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (243164) Publishing Sensor Data: c0 0a 21 60 0b 34[0m
+[0;33mW (243164) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (243364) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (244174) Publishing Sensor Data: c0 0a 29 60 0b 48[0m
+[0;33mW (244174) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244374) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (245184) Publishing Sensor Data: c0 0a 3c 60 0b 39[0m
+[0;33mW (245184) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (245384) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (246194) Publishing Sensor Data: c0 0a 26 60 0b 40[0m
+[0;33mW (246194) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (246394) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (247204) Publishing Sensor Data: c0 0a 2c 60 0b 36[0m
+[0;33mW (247204) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (247404) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (248214) Publishing Sensor Data: c0 0a 2a 60 0b 3c[0m
+[0;33mW (248214) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (248414) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (249224) Publishing Sensor Data: c0 0a 3c 60 0b 3d[0m
+[0;33mW (249224) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (249424) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (250234) Publishing Sensor Data: c0 0a 20 60 0b 50[0m
+[0;33mW (250234) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (250434) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (251244) Publishing Sensor Data: c0 0a 34 60 0b 39[0m
+[0;33mW (251244) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (251444) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (252254) Publishing Sensor Data: c0 0a 2e 60 0b 41[0m
+[0;33mW (252254) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (252454) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (253264) Publishing Sensor Data: c0 0a 3b 60 0b 47[0m
+[0;33mW (253264) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (253464) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (254274) Publishing Sensor Data: c0 0a 31 60 0b 42[0m
+[0;33mW (254274) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (254474) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (255284) Publishing Sensor Data: c0 0a 1f 60 0b 50[0m
+[0;33mW (255284) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (255484) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (256294) Publishing Sensor Data: c0 0a 35 60 0b 45[0m
+[0;33mW (256294) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (256494) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (257304) Publishing Sensor Data: c0 0a 27 60 0b 38[0m
+[0;33mW (257304) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (257504) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (258314) Publishing Sensor Data: c0 0a 21 60 0b 4d[0m
+[0;33mW (258314) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (258514) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (259324) Publishing Sensor Data: c0 0a 25 60 0b 4e[0m
+[0;33mW (259324) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (259524) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (260334) Publishing Sensor Data: c0 0a 32 60 0b 3d[0m
+[0;33mW (260334) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (260534) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (261344) Publishing Sensor Data: c0 0a 28 60 0b 32[0m
+[0;33mW (261344) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (261544) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (262354) Publishing Sensor Data: c0 0a 1f 60 0b 3a[0m
+[0;33mW (262354) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (262554) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (263364) Publishing Sensor Data: c0 0a 30 60 0b 33[0m
+[0;33mW (263364) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (263564) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (264374) Publishing Sensor Data: c0 0a 34 60 0b 2e[0m
+[0;33mW (264374) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (264574) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (265384) Publishing Sensor Data: c0 0a 26 60 0b 35[0m
+[0;33mW (265384) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (265584) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (266394) Publishing Sensor Data: c0 0a 37 60 0b 2a[0m
+[0;33mW (266394) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (266594) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (267404) Publishing Sensor Data: c0 0a 24 60 0b 28[0m
+[0;33mW (267404) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (267604) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (268414) Publishing Sensor Data: c0 0a 3c 60 0b 37[0m
+[0;33mW (268414) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (268614) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (269424) Publishing Sensor Data: c0 0a 2a 60 0b 45[0m
+[0;33mW (269424) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (269624) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (270434) Publishing Sensor Data: c0 0a 21 60 0b 44[0m
+[0;33mW (270434) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (270634) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (271444) Publishing Sensor Data: c0 0a 33 60 0b 3c[0m
+[0;33mW (271444) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (271644) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (272454) Publishing Sensor Data: c0 0a 2e 60 0b 3a[0m
+[0;33mW (272454) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (272654) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (273464) Publishing Sensor Data: c0 0a 26 60 0b 32[0m
+[0;33mW (273464) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (273664) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (274474) Publishing Sensor Data: c0 0a 2f 60 0b 2c[0m
+[0;33mW (274474) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (274674) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (275484) Publishing Sensor Data: c0 0a 39 60 0b 3b[0m
+[0;33mW (275484) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (275684) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (276494) Publishing Sensor Data: c0 0a 3a 60 0b 31[0m
+[0;33mW (276494) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (276694) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (277504) Publishing Sensor Data: c0 0a 32 60 0b 50[0m
+[0;33mW (277504) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (277704) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (278514) Publishing Sensor Data: c0 0a 20 60 0b 2b[0m
+[0;33mW (278514) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (278714) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (279524) Publishing Sensor Data: c0 0a 2b 60 0b 40[0m
+[0;33mW (279524) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (279724) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (280534) Publishing Sensor Data: c0 0a 2f 60 0b 30[0m
+[0;33mW (280534) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (280734) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (281544) Publishing Sensor Data: c0 0a 1f 60 0b 40[0m
+[0;33mW (281544) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (281744) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (282554) Publishing Sensor Data: c0 0a 33 60 0b 29[0m
+[0;33mW (282554) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (282754) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (283564) Publishing Sensor Data: c0 0a 33 60 0b 4d[0m
+[0;33mW (283564) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (283764) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (284574) Publishing Sensor Data: c0 0a 3a 60 0b 38[0m
+[0;33mW (284574) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (284774) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (285584) Publishing Sensor Data: c0 0a 37 60 0b 36[0m
+[0;33mW (285584) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (285784) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (286594) Publishing Sensor Data: c0 0a 3c 60 0b 4a[0m
+[0;33mW (286594) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (286794) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (287604) Publishing Sensor Data: c0 0a 1e 60 0b 29[0m
+[0;33mW (287604) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (287804) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (288614) Publishing Sensor Data: c0 0a 21 60 0b 4b[0m
+[0;33mW (288614) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (288814) BLE_MESH: No outbound bearer fo

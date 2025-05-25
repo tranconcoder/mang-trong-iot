@@ -242,4 +242,107 @@ entry 0x4008063c
 [0;32mI (85084) Publishing Sensor Data: c0 0a 23 60 0b 28[0m
 [1;31mE (85084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
 [0;32mI (86084) Publishing Sensor Data: c0 0a 31 60 0b 40[0m
-[
+[1;31mE (86084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (87084) Publishing Sensor Data: c0 0a 33 60 0b 48[0m
+[1;31mE (87084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (88084) Publishing Sensor Data: c0 0a 1f 60 0b 40[0m
+[1;31mE (88084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (89084) Publishing Sensor Data: c0 0a 31 60 0b 39[0m
+[1;31mE (89084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (90084) Publishing Sensor Data: c0 0a 1f 60 0b 48[0m
+[1;31mE (90084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (91084) Publishing Sensor Data: c0 0a 39 60 0b 30[0m
+[1;31mE (91084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (92084) Publishing Sensor Data: c0 0a 32 60 0b 42[0m
+[1;31mE (92084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (93084) Publishing Sensor Data: c0 0a 38 60 0b 36[0m
+[1;31mE (93084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (94084) Publishing Sensor Data: c0 0a 22 60 0b 2f[0m
+[1;31mE (94084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (95084) Publishing Sensor Data: c0 0a 30 60 0b 4f[0m
+[1;31mE (95084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (96084) Publishing Sensor Data: c0 0a 33 60 0b 35[0m
+[1;31mE (96084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (97084) Publishing Sensor Data: c0 0a 22 60 0b 28[0m
+[1;31mE (97084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (98084) Publishing Sensor Data: c0 0a 38 60 0b 31[0m
+[1;31mE (98084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (99084) Publishing Sensor Data: c0 0a 29 60 0b 45[0m
+[1;31mE (99084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (100084) Publishing Sensor Data: c0 0a 2a 60 0b 30[0m
+[1;31mE (100084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (101084) Publishing Sensor Data: c0 0a 22 60 0b 48[0m
+[1;31mE (101084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (102084) Publishing Sensor Data: c0 0a 27 60 0b 43[0m
+[1;31mE (102084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (103084) Publishing Sensor Data: c0 0a 3c 60 0b 4c[0m
+[1;31mE (103084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (104084) Publishing Sensor Data: c0 0a 22 60 0b 2c[0m
+[1;31mE (104084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (105084) Publishing Sensor Data: c0 0a 3b 60 0b 4e[0m
+[1;31mE (105084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (106084) Publishing Sensor Data: c0 0a 35 60 0b 42[0m
+[1;31mE (106084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (107084) Publishing Sensor Data: c0 0a 2a 60 0b 35[0m
+[1;31mE (107084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (108084) Publishing Sensor Data: c0 0a 2f 60 0b 40[0m
+[1;31mE (108084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (109084) Publishing Sensor Data: c0 0a 32 60 0b 2d[0m
+[1;31mE (109084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (110084) Publishing Sensor Data: c0 0a 34 60 0b 44[0m
+[1;31mE (110084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (111084) Publishing Sensor Data: c0 0a 30 60 0b 41[0m
+[1;31mE (111084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (112084) Publishing Sensor Data: c0 0a 30 60 0b 4f[0m
+[1;31mE (112084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (113084) Publishing Sensor Data: c0 0a 26 60 0b 35[0m
+[1;31mE (113084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (114084) Publishing Sensor Data: c0 0a 3c 60 0b 3c[0m
+[1;31mE (114084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (115084) Publishing Sensor Data: c0 0a 1e 60 0b 2d[0m
+[1;31mE (115084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (116084) Publishing Sensor Data: c0 0a 22 60 0b 3a[0m
+[1;31mE (116084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (117084) Publishing Sensor Data: c0 0a 2b 60 0b 29[0m
+[1;31mE (117084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (118084) Publishing Sensor Data: c0 0a 38 60 0b 2f[0m
+[1;31mE (118084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (119084) Publishing Sensor Data: c0 0a 2d 60 0b 30[0m
+[1;31mE (119084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (120084) Publishing Sensor Data: c0 0a 38 60 0b 37[0m
+[1;31mE (120084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (121084) Publishing Sensor Data: c0 0a 3c 60 0b 4d[0m
+[1;31mE (121084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (122084) Publishing Sensor Data: c0 0a 3b 60 0b 31[0m
+[1;31mE (122084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (123084) Publishing Sensor Data: c0 0a 31 60 0b 42[0m
+[1;31mE (123084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (124084) Publishing Sensor Data: c0 0a 32 60 0b 2b[0m
+[1;31mE (124084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (125084) Publishing Sensor Data: c0 0a 28 60 0b 4a[0m
+[1;31mE (125084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (126084) Publishing Sensor Data: c0 0a 21 60 0b 45[0m
+[1;31mE (126084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (127084) Publishing Sensor Data: c0 0a 2d 60 0b 39[0m
+[1;31mE (127084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (128084) Publishing Sensor Data: c0 0a 34 60 0b 44[0m
+[1;31mE (128084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (129084) Publishing Sensor Data: c0 0a 25 60 0b 37[0m
+[1;31mE (129084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (130084) Publishing Sensor Data: c0 0a 2c 60 0b 2e[0m
+[1;31mE (130084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (131084) Publishing Sensor Data: c0 0a 22 60 0b 4e[0m
+[1;31mE (131084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (132084) Publishing Sensor Data: c0 0a 3c 60 0b 3b[0m
+[1;31mE (132084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (133084) Publishing Sensor Data: c0 0a 22 60 0b 3b[0m
+[1;31mE (133084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (134084) Publishing Sensor Data: c0 0a 2b 60 0b 4b[0m
+[1;31mE (134084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (135084) Publishing Sensor Data: c0 0a 20 60 0b 2c[0m
+[1;31mE (135084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (136084) Publishing Sensor Data: c0 0a 23 60 0b 3b[0m
+[1;31mE (136084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+[0;32mI (137084) Publishing Sensor Data: c0 0a 26 60 0b 40[0m
+[1;31mE (137084) EXAMPLE: Failed to publish Sensor Status (err 258)[0m
+                                                                                                                                                                                                                                                                
