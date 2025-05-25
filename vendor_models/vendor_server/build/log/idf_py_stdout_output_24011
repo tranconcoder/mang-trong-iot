@@ -1,0 +1,119 @@
+"��=3ff80000 size=0001ch (    28) loa�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2898ch (166284) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=000389b4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=000389d8 vaddr=3ffbdb60 size=054e8h ( 21736) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=0003dec8 vaddr=40080000 size=02150h (  8528) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9339ch (603036) map[0m
+[0;32mI (372) esp_image: segment 5: paddr=000d33c4 vaddr=40082150 size=159a8h ( 88488) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) app_init: Application information:[0m
+[0;32mI (437) app_init: Project name:     vendor_server[0m
+[0;32mI (441) app_init: App version:      5cdc3c5f-dirty[0m
+[0;32mI (446) app_init: Compile time:     May 25 2025 18:23:40[0m
+[0;32mI (451) app_init: ELF file SHA256:  fb068f0ba...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (459) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (463) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (467) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFCAE18 len 000151E8 (84 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (515) spi_flash: detected chip: generic[0m
+[0;32mI (517) spi_flash: flash io: dio[0m
+[0;33mW (520) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) coexist: coex firmware version: e727207[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (548) main_task: Calling app_main()[0m
+[0;32mI (548) DHT_NODE: Initializing...[0m
+[0;32mI (558) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (578) BTDM_INIT: Bluetooth MAC: 5c:01:3b:47:5b:22[0m
+[0;32mI (578) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (588) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (668) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (948) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (948) DHT_NODE: Built-in LED initialized on GPIO 2[0m
+[0;32mI (1058) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1068) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1068) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1068) main_task: Returned from app_main()[0m
+[0;32mI (7088) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;32mI (7868) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (7868) DHT_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (7868) DHT_NODE: net_idx 0x000, addr 0x0005[0m
+[0;32mI (7878) DHT_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (7878) DHT_NODE: DHT timer started successfully[0m
+[0;33mW (7928) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (10258) DHT_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (10258) DHT_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (10258) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (10388) DHT_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (10388) DHT_NODE: elem_addr 0x0005, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (12878) DHT_NODE: Sending DHT data - Temp: 20.64°C, Humidity: 35.91%, Time: 12371 ms[0m
+[0;32mI (12878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (12898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (17878) DHT_NODE: Sending DHT data - Temp: 20.55°C, Humidity: 56.16%, Time: 17371 ms[0m
+[0;32mI (17878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (17908) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (22878) DHT_NODE: Sending DHT data - Temp: 25.84°C, Humidity: 71.59%, Time: 22371 ms[0m
+[0;32mI (22878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (22898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (27878) DHT_NODE: Sending DHT data - Temp: 21.16°C, Humidity: 72.50%, Time: 27371 ms[0m
+[0;32mI (27878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (27888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (32878) DHT_NODE: Sending DHT data - Temp: 23.74°C, Humidity: 66.64%, Time: 32371 ms[0m
+[0;32mI (32878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (32898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (37878) DHT_NODE: Sending DHT data - Temp: 22.78°C, Humidity: 49.56%, Time: 37371 ms[0m
+[0;32mI (37878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (37888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (42878) DHT_NODE: Sending DHT data - Temp: 28.62°C, Humidity: 51.13%, Time: 42371 ms[0m
+[0;32mI (42878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (42898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (47878) DHT_NODE: Sending DHT data - Temp: 34.97°C, Humidity: 33.59%, Time: 47371 ms[0m
+[0;32mI (47878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (47888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (52878) DHT_NODE: Sending DHT data - Temp: 21.27°C, Humidity: 63.95%, Time: 52371 ms[0m
+[0;32mI (52878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (52888) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (57878) DHT_NODE: Sending DHT data - Temp: 25.73°C, Humidity: 37.60%, Time: 57371 ms[0m
+[0;32mI (57878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (57898) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (62878) DHT_NODE: Sending DHT data - Temp: 30.20°C, Humidity: 48.54%, Time: 62371 ms[0m
+[0;32mI (62878) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target

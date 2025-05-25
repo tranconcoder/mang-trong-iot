@@ -16,6 +16,7 @@
 #include "esp_bt.h"
 #include "esp_timer.h"
 #include "esp_random.h"
+#include "driver/gpio.h"
 
 #include "esp_ble_mesh_defs.h"
 #include "esp_ble_mesh_common_api.h"
@@ -37,9 +38,15 @@
 #define ESP_BLE_MESH_VND_MODEL_OP_SEND      ESP_BLE_MESH_MODEL_OP_3(0x00, CID_ESP)
 #define ESP_BLE_MESH_VND_MODEL_OP_STATUS    ESP_BLE_MESH_MODEL_OP_3(0x01, CID_ESP)
 #define ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA  ESP_BLE_MESH_MODEL_OP_3(0x02, CID_ESP)
+#define ESP_BLE_MESH_VND_MODEL_OP_LED_CTRL  ESP_BLE_MESH_MODEL_OP_3(0x04, CID_ESP)
 
 #define DHT_SEND_INTERVAL_MS    5000  // Send DHT data every 5 seconds
 #define TARGET_NODE_ADDR        0x0001  // Address of the target node (client/provisioner)
+#define MSG_SEND_TTL            3
+#define MSG_TIMEOUT             0
+
+// Built-in LED pin (GPIO2 for most ESP32 boards)
+#define BUILTIN_LED_GPIO        2
 
 // DHT sensor data structure
 typedef struct {
@@ -47,6 +54,26 @@ typedef struct {
     float humidity;
     uint32_t timestamp;
 } dht_data_t;
+
+// LED control data structure
+typedef struct {
+    uint8_t led_state;  // 0 = OFF, 1 = ON
+    uint32_t timestamp;
+} led_ctrl_data_t;
+
+// Store structure for vendor message handling
+static struct example_info_store {
+    uint16_t vnd_tid;       /* TID contained in the vendor message */
+} store = {
+    .vnd_tid = 0,
+};
+
+// Provisioning key structure
+static struct esp_ble_mesh_key {
+    uint16_t net_idx;
+    uint16_t app_idx;
+    uint8_t  app_key[ESP_BLE_MESH_OCTET16_LEN];
+} prov_key;
 
 static uint8_t dev_uuid[ESP_BLE_MESH_OCTET16_LEN] = { 0x32, 0x10 };
 static esp_timer_handle_t dht_timer;
@@ -79,6 +106,8 @@ static esp_ble_mesh_model_t root_models[] = {
 
 static esp_ble_mesh_model_op_t vnd_op[] = {
     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_SEND, 2),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA, sizeof(dht_data_t)),
+    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_VND_MODEL_OP_LED_CTRL, sizeof(led_ctrl_data_t)),
     ESP_BLE_MESH_MODEL_OP_END,
 };
 
@@ -86,6 +115,13 @@ static esp_ble_mesh_model_t vnd_models[] = {
     ESP_BLE_MESH_VENDOR_MODEL(CID_ESP, ESP_BLE_MESH_VND_MODEL_ID_SERVER,
     vnd_op, NULL, NULL),
 };
+
+// Forward declarations
+static void send_dht_data(void);
+static void dht_timer_callback(void* arg);
+static void init_builtin_led(void);
+static void set_builtin_led(uint8_t state);
+void example_ble_mesh_send_vendor_message(bool resend);
 
 // DHT simulation functions
 static dht_data_t simulate_dht_reading(void)
@@ -254,16 +290,31 @@ static void example_ble_mesh_config_server_cb(esp_ble_mesh_cfg_server_cb_event_t
 static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event,
                                              esp_ble_mesh_model_cb_param_t *param)
 {
+    uint32_t opcode = param->model_operation.opcode;
+
     switch (event) {
     case ESP_BLE_MESH_MODEL_OPERATION_EVT:
+        ESP_LOGI(TAG, "Recv 0x%06" PRIx32 ", tid 0x%04x", opcode, store.vnd_tid);
         if (param->model_operation.opcode == ESP_BLE_MESH_VND_MODEL_OP_SEND) {
             uint16_t tid = *(uint16_t *)param->model_operation.msg;
             ESP_LOGI(TAG, "Recv 0x%06" PRIx32 ", tid 0x%04x", param->model_operation.opcode, tid);
-            esp_err_t err = esp_ble_mesh_server_model_send_msg(&vnd_models[0],
-                    param->model_operation.ctx, ESP_BLE_MESH_VND_MODEL_OP_STATUS,
-                    sizeof(tid), (uint8_t *)&tid);
-            if (err) {
-                ESP_LOGE(TAG, "Failed to send message 0x%06x", ESP_BLE_MESH_VND_MODEL_OP_STATUS);
+            store.vnd_tid = tid;
+            example_ble_mesh_send_vendor_message(false);
+        } else if (param->model_operation.opcode == ESP_BLE_MESH_VND_MODEL_OP_LED_CTRL) {
+            ESP_LOGI(TAG, "LED control message received!");
+            if (param->model_operation.length == sizeof(led_ctrl_data_t)) {
+                led_ctrl_data_t *led_data = (led_ctrl_data_t *)param->model_operation.msg;
+                ESP_LOGI(TAG, "=== LED Control Received ===");
+                ESP_LOGI(TAG, "LED State: %s", led_data->led_state ? "ON" : "OFF");
+                ESP_LOGI(TAG, "Timestamp: %lu ms", led_data->timestamp);
+                ESP_LOGI(TAG, "From address: 0x%04x", param->model_operation.ctx->addr);
+                ESP_LOGI(TAG, "============================");
+                
+                // Set the LED state
+                set_builtin_led(led_data->led_state);
+            } else {
+                ESP_LOGW(TAG, "Received LED control data with incorrect length: %d (expected %d)",
+                         param->model_operation.length, sizeof(led_ctrl_data_t));
             }
         }
         break;
@@ -273,6 +324,9 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
             break;
         }
         ESP_LOGI(TAG, "Send 0x%06" PRIx32, param->model_send_comp.opcode);
+        break;
+    case ESP_BLE_MESH_MODEL_PUBLISH_COMP_EVT:
+        ESP_LOGI(TAG, "Publish completed");
         break;
     default:
         break;
@@ -322,10 +376,15 @@ void app_main(void)
     board_init();
 
     err = bluetooth_init();
-    if (err) {
+    if (err != ESP_OK) {
         ESP_LOGE(TAG, "esp32_bluetooth_init failed (err %d)", err);
         return;
     }
+
+    // Initialize built-in LED
+    init_builtin_led();
+
+    /* Open nvs namespace for storing/restoring mesh example info */
 
     ble_mesh_get_dev_uuid(dev_uuid);
 
@@ -334,4 +393,52 @@ void app_main(void)
     if (err) {
         ESP_LOGE(TAG, "Bluetooth mesh init failed (err %d)", err);
     }
+}
+
+static void init_builtin_led(void)
+{
+    gpio_config_t io_conf = {
+        .intr_type = GPIO_INTR_DISABLE,
+        .mode = GPIO_MODE_OUTPUT,
+        .pin_bit_mask = (1ULL << BUILTIN_LED_GPIO),
+        .pull_down_en = 0,
+        .pull_up_en = 0,
+    };
+    gpio_config(&io_conf);
+    
+    // Turn off LED initially
+    gpio_set_level(BUILTIN_LED_GPIO, 0);
+    ESP_LOGI(TAG, "Built-in LED initialized on GPIO %d", BUILTIN_LED_GPIO);
+}
+
+static void set_builtin_led(uint8_t state)
+{
+    gpio_set_level(BUILTIN_LED_GPIO, state);
+    ESP_LOGI(TAG, "Built-in LED %s", state ? "ON" : "OFF");
+}
+
+void example_ble_mesh_send_vendor_message(bool resend)
+{
+    esp_ble_mesh_msg_ctx_t ctx = {0};
+    uint32_t opcode;
+    esp_err_t err;
+
+    ctx.net_idx = net_idx;
+    ctx.app_idx = app_idx;
+    ctx.addr = TARGET_NODE_ADDR;  // Send to client/provisioner
+    ctx.send_ttl = MSG_SEND_TTL;
+    opcode = ESP_BLE_MESH_VND_MODEL_OP_STATUS;
+
+    if (resend == false) {
+        store.vnd_tid++;
+    }
+
+    err = esp_ble_mesh_server_model_send_msg(&vnd_models[0], &ctx, opcode,
+            sizeof(store.vnd_tid), (uint8_t *)&store.vnd_tid);
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to send vendor message 0x%06" PRIx32, opcode);
+        return;
+    }
+
+    ESP_LOGI(TAG, "Sent vendor status message, tid: 0x%04x", store.vnd_tid);
 }

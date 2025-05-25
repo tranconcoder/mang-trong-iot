@@ -1,0 +1,231 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 25 2025 15:20:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2877ch (165756) map[0m
+[0;32mI (147) esp_image: segment 1: paddr=000387a4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=000387c8 vaddr=3ffbdb60 size=054c8h ( 21704) load[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003dc98 vaddr=40080000 size=02380h (  9088) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=93198h (602520) map[0m
+[0;32mI (371) esp_image: segment 5: paddr=000d31c0 vaddr=40082380 size=15778h ( 87928) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (428) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu start user code[0m
+[0;32mI (436) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (436) app_init: Application information:[0m
+[0;32mI (436) app_init: Project name:     vendor_server[0m
+[0;32mI (441) app_init: App version:      e6b9eda6-dirty[0m
+[0;32mI (445) app_init: Compile time:     May 25 2025 15:52:24[0m
+[0;32mI (450) app_init: ELF file SHA256:  a4c3959e1...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (458) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (462) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (466) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (470) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (481) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFCADF0 len 00015210 (84 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (502) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 40097AF8 len 00008508 (33 KiB): IRAM[0m
+[0;32mI (515) spi_flash: detected chip: generic[0m
+[0;32mI (517) spi_flash: flash io: dio[0m
+[0;33mW (520) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (533) coexist: coex firmware version: e727207[0m
+[0;32mI (537) main_task: Started on CPU0[0m
+[0;32mI (547) main_task: Calling app_main()[0m
+[0;32mI (547) DHT_NODE: Initializing...[0m
+[0;32mI (557) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (557) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (557) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) BTDM_INIT: BT controller compile version [dc1cd58][0m
+[0;32mI (577) BTDM_INIT: Bluetooth MAC: c8:2e:18:25:e0:82[0m
+[0;32mI (577) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (587) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (667) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1057) DHT_NODE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1067) DHT_NODE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (1067) DHT_NODE: BLE Mesh Node initialized[0m
+[0;32mI (1067) main_task: Returned from app_main()[0m
+[0;32mI (16137) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-ADV[0m
+[0;32mI (18507) DHT_NODE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (18517) DHT_NODE: net_idx 0x000, addr 0x0006[0m
+[0;32mI (18517) DHT_NODE: flags 0x00, iv_index 0x00000000[0m
+[0;32mI (18517) DHT_NODE: DHT timer started successfully[0m
+[0;32mI (18897) DHT_NODE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-ADV[0m
+[0;32mI (19387) DHT_NODE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (19387) DHT_NODE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (19387) AppKey: 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12[0m
+[0;32mI (23517) DHT_NODE: Sending DHT data - Temp: 29.48°C, Humidity: 55.27%, Time: 23006 ms[0m
+[0;32mI (23517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[1;31mE (23517) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[1;31mE (23527) DHT_NODE: Failed to send message 0xc202e5[0m
+[0;32mI (23547) DHT_NODE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (23547) DHT_NODE: elem_addr 0x0006, app_idx 0x0000, cid 0x02e5, mod_id 0x0001[0m
+[0;32mI (28517) DHT_NODE: Sending DHT data - Temp: 21.80°C, Humidity: 55.96%, Time: 28006 ms[0m
+[0;32mI (28517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (28527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (33517) DHT_NODE: Sending DHT data - Temp: 23.48°C, Humidity: 30.88%, Time: 33006 ms[0m
+[0;32mI (33517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (33527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (38517) DHT_NODE: Sending DHT data - Temp: 27.41°C, Humidity: 62.97%, Time: 38006 ms[0m
+[0;32mI (38517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (38527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (43517) DHT_NODE: Sending DHT data - Temp: 28.90°C, Humidity: 40.04%, Time: 43006 ms[0m
+[0;32mI (43517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (43527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (48517) DHT_NODE: Sending DHT data - Temp: 33.35°C, Humidity: 76.11%, Time: 48006 ms[0m
+[0;32mI (48517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (48527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (53517) DHT_NODE: Sending DHT data - Temp: 30.18°C, Humidity: 44.94%, Time: 53006 ms[0m
+[0;32mI (53517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (53527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (58517) DHT_NODE: Sending DHT data - Temp: 27.20°C, Humidity: 39.93%, Time: 58006 ms[0m
+[0;32mI (58517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (58527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (63517) DHT_NODE: Sending DHT data - Temp: 30.07°C, Humidity: 32.61%, Time: 63006 ms[0m
+[0;32mI (63517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (63527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (68517) DHT_NODE: Sending DHT data - Temp: 28.60°C, Humidity: 69.36%, Time: 68006 ms[0m
+[0;32mI (68517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (68527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (73517) DHT_NODE: Sending DHT data - Temp: 21.27°C, Humidity: 67.53%, Time: 73006 ms[0m
+[0;32mI (73517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (73527) DHT_NODE: Send 0xc202e5[0m
+[0;32mI (78517) DHT_NODE: Sending DHT data - Temp: 31.13°C, Humidity: 32.92%, Time: 78006 ms[0m
+[0;32mI (78517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (78527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (82217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (83517) DHT_NODE: Sending DHT data - Temp: 25.10°C, Humidity: 31.89%, Time: 83006 ms[0m
+[0;32mI (83517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (83527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (87217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (88517) DHT_NODE: Sending DHT data - Temp: 28.83°C, Humidity: 53.97%, Time: 88006 ms[0m
+[0;32mI (88517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (88527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (92217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (93517) DHT_NODE: Sending DHT data - Temp: 23.54°C, Humidity: 42.76%, Time: 93006 ms[0m
+[0;32mI (93517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (93527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (97217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (98517) DHT_NODE: Sending DHT data - Temp: 21.36°C, Humidity: 53.72%, Time: 98006 ms[0m
+[0;32mI (98517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (98527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (102217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (103517) DHT_NODE: Sending DHT data - Temp: 24.96°C, Humidity: 57.99%, Time: 103006 ms[0m
+[0;32mI (103517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (103527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (107217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (108517) DHT_NODE: Sending DHT data - Temp: 34.62°C, Humidity: 54.95%, Time: 108006 ms[0m
+[0;32mI (108517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (108527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (112217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (113517) DHT_NODE: Sending DHT data - Temp: 27.98°C, Humidity: 52.96%, Time: 113006 ms[0m
+[0;32mI (113517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (113527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (117217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (118517) DHT_NODE: Sending DHT data - Temp: 22.00°C, Humidity: 50.32%, Time: 118006 ms[0m
+[0;32mI (118517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (118527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (122217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (123517) DHT_NODE: Sending DHT data - Temp: 28.52°C, Humidity: 57.69%, Time: 123006 ms[0m
+[0;32mI (123517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (123527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (127217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (128517) DHT_NODE: Sending DHT data - Temp: 31.37°C, Humidity: 51.42%, Time: 128006 ms[0m
+[0;32mI (128517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (128527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (132217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (133517) DHT_NODE: Sending DHT data - Temp: 32.58°C, Humidity: 37.48%, Time: 133006 ms[0m
+[0;32mI (133517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (133527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (137217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (138517) DHT_NODE: Sending DHT data - Temp: 20.26°C, Humidity: 37.95%, Time: 138006 ms[0m
+[0;32mI (138517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (138527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (142217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (143517) DHT_NODE: Sending DHT data - Temp: 22.52°C, Humidity: 52.13%, Time: 143006 ms[0m
+[0;32mI (143517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (143527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (147217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (148517) DHT_NODE: Sending DHT data - Temp: 34.72°C, Humidity: 63.59%, Time: 148006 ms[0m
+[0;32mI (148517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (148527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (152217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (153517) DHT_NODE: Sending DHT data - Temp: 24.65°C, Humidity: 40.67%, Time: 153006 ms[0m
+[0;32mI (153517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (153527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (157217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (158517) DHT_NODE: Sending DHT data - Temp: 34.87°C, Humidity: 33.99%, Time: 158006 ms[0m
+[0;32mI (158517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (158527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (162217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (163517) DHT_NODE: Sending DHT data - Temp: 23.47°C, Humidity: 68.56%, Time: 163006 ms[0m
+[0;32mI (163517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (163527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (167217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (168517) DHT_NODE: Sending DHT data - Temp: 21.38°C, Humidity: 52.99%, Time: 168006 ms[0m
+[0;32mI (168517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (168527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (172217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (173517) DHT_NODE: Sending DHT data - Temp: 20.58°C, Humidity: 66.67%, Time: 173006 ms[0m
+[0;32mI (173517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (173527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (177217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (178517) DHT_NODE: Sending DHT data - Temp: 27.68°C, Humidity: 66.46%, Time: 178006 ms[0m
+[0;32mI (178517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (178527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (182217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (183517) DHT_NODE: Sending DHT data - Temp: 31.50°C, Humidity: 32.21%, Time: 183006 ms[0m
+[0;32mI (183517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (183527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (187217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (188517) DHT_NODE: Sending DHT data - Temp: 25.11°C, Humidity: 65.46%, Time: 188006 ms[0m
+[0;32mI (188517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (188527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (192217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (193517) DHT_NODE: Sending DHT data - Temp: 28.59°C, Humidity: 68.62%, Time: 193006 ms[0m
+[0;32mI (193517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (193527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (197217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (198517) DHT_NODE: Sending DHT data - Temp: 30.69°C, Humidity: 62.43%, Time: 198006 ms[0m
+[0;32mI (198517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (198527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (202217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (203517) DHT_NODE: Sending DHT data - Temp: 25.04°C, Humidity: 75.15%, Time: 203006 ms[0m
+[0;32mI (203517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (203527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (207217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (208517) DHT_NODE: Sending DHT data - Temp: 26.75°C, Humidity: 38.83%, Time: 208006 ms[0m
+[0;32mI (208517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (208527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (212217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (213517) DHT_NODE: Sending DHT data - Temp: 28.19°C, Humidity: 33.36%, Time: 213006 ms[0m
+[0;32mI (213517) DHT_NODE: Opcode: 0xc202e5, Size: 12 bytes, Target: 0x0001[0m
+[0;32mI (213527) DHT_NODE: Send 0xc202e5[0m
+[0;33mW (217217) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (218517) DHT_NODE: Sending DHT data - Temp: 25.34°C, Humidity: 36.68%, Time: 2180

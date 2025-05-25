@@ -16,6 +16,13 @@
 #include "esp_bt.h"
 #include "esp_timer.h"
 
+// Add MQTT and WiFi includes
+#include <freertos/FreeRTOS.h>
+#include "mqtt_client.h"
+#include "esp_wifi.h"
+#include "esp_event.h"
+#include "sdkconfig.h"
+
 #include "esp_ble_mesh_defs.h"
 #include "esp_ble_mesh_common_api.h"
 #include "esp_ble_mesh_provisioning_api.h"
@@ -51,6 +58,31 @@
 #define ESP_BLE_MESH_VND_MODEL_OP_STATUS    ESP_BLE_MESH_MODEL_OP_3(0x01, CID_ESP)
 #define ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA  ESP_BLE_MESH_MODEL_OP_3(0x02, CID_ESP)
 #define ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA  ESP_BLE_MESH_MODEL_OP_3(0x03, CID_ESP)
+#define ESP_BLE_MESH_VND_MODEL_OP_LED_CTRL  ESP_BLE_MESH_MODEL_OP_3(0x04, CID_ESP)
+
+// MQTT Configuration
+// Configure with 'idf.py menuconfig' under "Example Configuration"
+#define EXAMPLE_WIFI_SSID               "Tran Con"
+#define EXAMPLE_WIFI_PASS               "88888888"
+#define EXAMPLE_MQTT_BROKER_URL         "mqtt://broker.emqx.io:1883"
+#define EXAMPLE_MQTT_BROKER_USERNAME    ""
+#define EXAMPLE_MQTT_BROKER_PASSWORD    ""
+#define EXAMPLE_MQTT_TOPIC              "22004015/tranvancon"
+#define EXAMPLE_MQTT_LED_TOPIC          "22004015/tranvancon/led"
+
+// LED control data structure
+typedef struct {
+    uint8_t led_state;  // 0 = OFF, 1 = ON
+    uint32_t timestamp;
+} led_ctrl_data_t;
+
+// Global variables for MQTT and WiFi
+static esp_mqtt_client_handle_t mqtt_client = NULL;
+static bool mqtt_connected = false;
+static float last_temperature = 0.0;
+static float last_humidity = 0.0;
+static uint16_t last_light_level = 0;
+static bool have_sensor_data = false;
 
 // DHT sensor data structure (must match server)
 typedef struct {
@@ -104,6 +136,7 @@ static esp_ble_mesh_client_t config_client;
 
 static const esp_ble_mesh_client_op_pair_t vnd_op_pair[] = {
     { ESP_BLE_MESH_VND_MODEL_OP_SEND, ESP_BLE_MESH_VND_MODEL_OP_STATUS },
+    { ESP_BLE_MESH_VND_MODEL_OP_LED_CTRL, ESP_BLE_MESH_VND_MODEL_OP_STATUS },
 };
 
 static esp_ble_mesh_client_t vendor_client = {
@@ -145,6 +178,15 @@ static esp_ble_mesh_prov_t provision = {
     .prov_unicast_addr  = PROV_OWN_ADDR,
     .prov_start_address = 0x0005,
 };
+
+// Forward declarations for MQTT and WiFi functions
+static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data);
+static void wifi_event_handler(void* arg, esp_event_base_t event_base,
+                                int32_t event_id, void* event_data);
+static void wifi_init_sta(void);
+static void mqtt_app_start(void);
+static void publish_sensor_data(float temperature, float humidity, uint16_t light_level);
+static void send_led_control_to_server(uint8_t led_state);
 
 static void mesh_example_info_store(void)
 {
@@ -512,15 +554,15 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
 
     switch (event) {
     case ESP_BLE_MESH_MODEL_OPERATION_EVT:
-        ESP_LOGI(TAG, "Received message with opcode: 0x%06" PRIx32 ", length: %d", 
+        ESP_LOGI(TAG, "Received message with opcode: 0x%06" PRIx32 ", length: %d",
                  param->model_operation.opcode, param->model_operation.length);
-        
+
         if (param->model_operation.opcode == ESP_BLE_MESH_VND_MODEL_OP_STATUS) {
             int64_t end_time = esp_timer_get_time();
-            ESP_LOGI(TAG, "Recv 0x06%" PRIx32 ", tid 0x%04x, time %lldus",
+            ESP_LOGI(TAG, "Recv 0x%06" PRIx32 ", tid 0x%04x, time %lldus",
                 param->model_operation.opcode, store.vnd_tid, end_time - start_time);
         } else if (param->model_operation.opcode == ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA) {
-            ESP_LOGI(TAG, "DHT opcode matched! Expected: 0x%06x, Received: 0x%06" PRIx32, 
+            ESP_LOGI(TAG, "DHT opcode matched! Expected: 0x%06x, Received: 0x%06" PRIx32,
                      ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA, param->model_operation.opcode);
             if (param->model_operation.length == sizeof(dht_data_t)) {
                 dht_data_t *dht_data = (dht_data_t *)param->model_operation.msg;
@@ -530,12 +572,21 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
                 ESP_LOGI(TAG, "Timestamp: %lu ms", dht_data->timestamp);
                 ESP_LOGI(TAG, "From address: 0x%04x", param->model_operation.ctx->addr);
                 ESP_LOGI(TAG, "========================");
+                // Store the received data and set flag
+                last_temperature = dht_data->temperature;
+                last_humidity = dht_data->humidity;
+                have_sensor_data = true;
+                // Publish data if MQTT is connected and we have both types of data (assuming LDR data will also arrive)
+                // For simplicity, we'll publish after any sensor data arrives in this example
+                if (mqtt_connected) {
+                    publish_sensor_data(last_temperature, last_humidity, last_light_level);
+                }
             } else {
-                ESP_LOGW(TAG, "Received DHT data with incorrect length: %d (expected %d)", 
+                ESP_LOGW(TAG, "Received DHT data with incorrect length: %d (expected %d)",
                          param->model_operation.length, sizeof(dht_data_t));
             }
         } else if (param->model_operation.opcode == ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA) {
-            ESP_LOGI(TAG, "LDR opcode matched! Expected: 0x%06x, Received: 0x%06" PRIx32, 
+            ESP_LOGI(TAG, "LDR opcode matched! Expected: 0x%06x, Received: 0x%06" PRIx32,
                      ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA, param->model_operation.opcode);
             if (param->model_operation.length == sizeof(ldr_data_t)) {
                 ldr_data_t *ldr_data = (ldr_data_t *)param->model_operation.msg;
@@ -547,8 +598,15 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
                 ESP_LOGI(TAG, "Timestamp: %lu ms", ldr_data->timestamp);
                 ESP_LOGI(TAG, "From address: 0x%04x", param->model_operation.ctx->addr);
                 ESP_LOGI(TAG, "=========================");
+                // Store the received data and set flag
+                last_light_level = ldr_data->light_level;
+                have_sensor_data = true;
+                 // Publish data if MQTT is connected and we have both types of data
+                if (mqtt_connected) {
+                     publish_sensor_data(last_temperature, last_humidity, last_light_level);
+                }
             } else {
-                ESP_LOGW(TAG, "Received LDR data with incorrect length: %d (expected %d)", 
+                ESP_LOGW(TAG, "Received LDR data with incorrect length: %d (expected %d)",
                          param->model_operation.length, sizeof(ldr_data_t));
             }
         } else {
@@ -564,9 +622,9 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
         ESP_LOGI(TAG, "Send 0x%06" PRIx32, param->model_send_comp.opcode);
         break;
     case ESP_BLE_MESH_CLIENT_MODEL_RECV_PUBLISH_MSG_EVT:
-        ESP_LOGI(TAG, "Receive publish message 0x%06" PRIx32 ", length: %d", 
+        ESP_LOGI(TAG, "Receive publish message 0x%06" PRIx32 ", length: %d",
                  param->client_recv_publish_msg.opcode, param->client_recv_publish_msg.length);
-        
+
         if (param->client_recv_publish_msg.opcode == ESP_BLE_MESH_VND_MODEL_OP_DHT_DATA) {
             ESP_LOGI(TAG, "DHT publish message received!");
             if (param->client_recv_publish_msg.length == sizeof(dht_data_t)) {
@@ -577,8 +635,16 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
                 ESP_LOGI(TAG, "Timestamp: %lu ms", dht_data->timestamp);
                 ESP_LOGI(TAG, "From address: 0x%04x", param->client_recv_publish_msg.ctx->addr);
                 ESP_LOGI(TAG, "==================================");
+                // Store the received data and set flag
+                last_temperature = dht_data->temperature;
+                last_humidity = dht_data->humidity;
+                have_sensor_data = true;
+                 // Publish data if MQTT is connected and we have both types of data
+                if (mqtt_connected) {
+                    publish_sensor_data(last_temperature, last_humidity, last_light_level);
+                }
             } else {
-                ESP_LOGW(TAG, "Received DHT publish data with incorrect length: %d (expected %d)", 
+                ESP_LOGW(TAG, "Received DHT publish data with incorrect length: %d (expected %d)",
                          param->client_recv_publish_msg.length, sizeof(dht_data_t));
             }
         } else if (param->client_recv_publish_msg.opcode == ESP_BLE_MESH_VND_MODEL_OP_LDR_DATA) {
@@ -593,8 +659,15 @@ static void example_ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event
                 ESP_LOGI(TAG, "Timestamp: %lu ms", ldr_data->timestamp);
                 ESP_LOGI(TAG, "From address: 0x%04x", param->client_recv_publish_msg.ctx->addr);
                 ESP_LOGI(TAG, "===================================");
+                 // Store the received data and set flag
+                last_light_level = ldr_data->light_level;
+                have_sensor_data = true;
+                 // Publish data if MQTT is connected and we have both types of data
+                if (mqtt_connected) {
+                     publish_sensor_data(last_temperature, last_humidity, last_light_level);
+                }
             } else {
-                ESP_LOGW(TAG, "Received LDR publish data with incorrect length: %d (expected %d)", 
+                ESP_LOGW(TAG, "Received LDR publish data with incorrect length: %d (expected %d)",
                          param->client_recv_publish_msg.length, sizeof(ldr_data_t));
             }
         }
@@ -652,6 +725,203 @@ static esp_err_t ble_mesh_init(void)
     return ESP_OK;
 }
 
+static void wifi_event_handler(void* arg, esp_event_base_t event_base,
+                                int32_t event_id, void* event_data)
+{
+    if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+        esp_wifi_connect();
+    } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+        ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+        ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
+        mqtt_app_start();
+    } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+        ESP_LOGI(TAG,"wifi disconnect, reconnecting...");
+        esp_wifi_connect();
+        mqtt_connected = false; // Update MQTT status
+    }
+}
+
+static void wifi_init_sta(void)
+{
+    ESP_ERROR_CHECK(esp_netif_init());
+
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+    esp_netif_create_default_wifi_sta();
+
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+
+    esp_event_handler_instance_t instance_any_id;
+    esp_event_handler_instance_t instance_got_ip;
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+                                                        ESP_EVENT_ANY_ID,
+                                                        &wifi_event_handler,
+                                                        NULL,
+                                                        &instance_any_id));
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+                                                        IP_EVENT_STA_GOT_IP,
+                                                        &wifi_event_handler,
+                                                        NULL,
+                                                        &instance_got_ip));
+
+    wifi_config_t wifi_config = {
+        .sta = {
+            .ssid = EXAMPLE_WIFI_SSID,
+            .password = EXAMPLE_WIFI_PASS,
+             /* Setting a password makes the station mode secure. It allows it to connect an encrypted access point. */
+            .threshold.authmode = WIFI_AUTH_WPA2_PSK,
+
+            .pmf_cfg = {
+                .capable = true,
+                .required = false
+            },
+        },
+    };
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
+    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
+    ESP_ERROR_CHECK(esp_wifi_start());
+
+    ESP_LOGI(TAG, "wifi_init_sta finished.");
+    ESP_LOGI(TAG, "connect to ap SSID:%s password:%s",
+             EXAMPLE_WIFI_SSID, EXAMPLE_WIFI_PASS);
+}
+
+static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
+{
+    ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%" PRIi32, base, event_id);
+    esp_mqtt_event_handle_t event = (esp_mqtt_event_handle_t)event_data;
+    // Comment out unused variables to avoid warnings
+    // esp_mqtt_client_handle_t client = event->client;
+    // int msg_id;
+    switch ((esp_mqtt_event_id_t)event_id) {
+    case MQTT_EVENT_CONNECTED:
+        ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
+        mqtt_connected = true;
+        // Subscribe to LED control topic
+        int msg_id = esp_mqtt_client_subscribe(event->client, EXAMPLE_MQTT_LED_TOPIC, 0);
+        ESP_LOGI(TAG, "mqtt subscribe to LED topic successful, msg_id=%d", msg_id);
+        break;
+    case MQTT_EVENT_DISCONNECTED:
+        ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");
+        mqtt_connected = false;
+        break;
+    case MQTT_EVENT_SUBSCRIBED:
+        ESP_LOGI(TAG, "MQTT_EVENT_SUBSCRIBED, msg_id=%d", event->msg_id);
+        break;
+    case MQTT_EVENT_UNSUBSCRIBED:
+        ESP_LOGI(TAG, "MQTT_EVENT_UNSUBSCRIBED, msg_id=%d", event->msg_id);
+        break;
+    case MQTT_EVENT_PUBLISHED:
+        ESP_LOGI(TAG, "MQTT_EVENT_PUBLISHED, msg_id=%d", event->msg_id);
+        break;
+    case MQTT_EVENT_DATA:
+        ESP_LOGI(TAG, "MQTT_EVENT_DATA");
+        printf("TOPIC=%.*s\r\n", event->topic_len, event->topic);
+        printf("DATA=%.*s\r\n", event->data_len, event->data);
+        
+        // Check if this is LED control topic
+        if (strncmp(event->topic, EXAMPLE_MQTT_LED_TOPIC, event->topic_len) == 0) {
+            ESP_LOGI(TAG, "LED control message received");
+            
+            // Parse LED state from data (expecting "0" or "1")
+            if (event->data_len > 0) {
+                uint8_t led_state = (event->data[0] == '1') ? 1 : 0;
+                ESP_LOGI(TAG, "Setting LED to: %s", led_state ? "ON" : "OFF");
+                
+                // Send LED control to BLE Mesh server
+                send_led_control_to_server(led_state);
+            }
+        }
+        break;
+    case MQTT_EVENT_ERROR:
+        ESP_LOGI(TAG, "MQTT_EVENT_ERROR");
+        if (event->error_handle->error_type == MQTT_ERROR_TYPE_TCP_TRANSPORT) {
+            ESP_LOGI(TAG, "Last error code reported from esp-tls: 0x%x", event->error_handle->esp_tls_last_esp_err);
+            ESP_LOGI(TAG, "Last error code reported from tls stack: 0x%x", event->error_handle->esp_tls_stack_err);
+            ESP_LOGI(TAG, "Last error code reported from captured errno: %d", event->error_handle->esp_transport_sock_errno);
+        } else if (event->error_handle->error_type == MQTT_ERROR_TYPE_CONNECTION_REFUSED) {
+            ESP_LOGI(TAG, "Connection refused error: 0x%x", event->error_handle->connect_return_code);
+        } else {
+            ESP_LOGW(TAG, "Unknown error type: 0x%x", event->error_handle->error_type);
+        }
+        mqtt_connected = false; // Update MQTT status on error
+        break;
+    default:
+        ESP_LOGI(TAG, "Other event id:%" PRIi32, event_id);
+        break;
+    }
+}
+
+static void mqtt_app_start(void)
+{
+    ESP_LOGI(TAG, "Starting MQTT client");
+    esp_mqtt_client_config_t mqtt_cfg = {
+        .broker = {
+            .address = {
+                .uri = EXAMPLE_MQTT_BROKER_URL,
+            },
+        },
+        .credentials = {
+            .username = EXAMPLE_MQTT_BROKER_USERNAME,
+            .authentication = {
+                .password = EXAMPLE_MQTT_BROKER_PASSWORD,
+            },
+        },
+    };
+
+    mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
+    esp_mqtt_client_register_event(mqtt_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+    esp_mqtt_client_start(mqtt_client);
+}
+
+static void publish_sensor_data(float temperature, float humidity, uint16_t light_level) {
+    if (!mqtt_connected) {
+        ESP_LOGW(TAG, "MQTT client not connected. Cannot publish sensor data.");
+        return;
+    }
+
+    char mqtt_payload[128];
+    snprintf(mqtt_payload, sizeof(mqtt_payload), "{\"temperature\":%.2f, \"humidity\":%.2f, \"light_level\":%d}",
+             temperature, humidity, light_level);
+
+    int msg_id = esp_mqtt_client_publish(mqtt_client, EXAMPLE_MQTT_TOPIC, mqtt_payload, 0, 1, 0);
+    if (msg_id != -1) {
+        ESP_LOGI(TAG, "Published sensor data to topic %s, msg_id=%d", EXAMPLE_MQTT_TOPIC, msg_id);
+    } else {
+        ESP_LOGE(TAG, "Failed to publish sensor data");
+    }
+}
+
+static void send_led_control_to_server(uint8_t led_state)
+{
+    if (store.server_addr == ESP_BLE_MESH_ADDR_UNASSIGNED) {
+        ESP_LOGW(TAG, "No server address available. Cannot send LED control.");
+        return;
+    }
+    
+    led_ctrl_data_t led_data = {
+        .led_state = led_state,
+        .timestamp = (uint32_t)(esp_timer_get_time() / 1000)
+    };
+    
+    esp_ble_mesh_msg_ctx_t ctx = {
+        .net_idx = prov_key.net_idx,
+        .app_idx = prov_key.app_idx,
+        .addr = store.server_addr,
+        .send_ttl = MSG_SEND_TTL,
+    };
+    
+    esp_err_t err = esp_ble_mesh_client_model_send_msg(vendor_client.model, &ctx, 
+                                                       ESP_BLE_MESH_VND_MODEL_OP_LED_CTRL,
+                                                       sizeof(led_ctrl_data_t), (uint8_t *)&led_data, 
+                                                       MSG_TIMEOUT, true, MSG_ROLE);
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to send LED control to server: %s", esp_err_to_name(err));
+    } else {
+        ESP_LOGI(TAG, "Sent LED control to server: %s", led_state ? "ON" : "OFF");
+    }
+}
+
 void app_main(void)
 {
     esp_err_t err;
@@ -686,4 +956,7 @@ void app_main(void)
     if (err != ESP_OK) {
         ESP_LOGE(TAG, "Bluetooth mesh init failed (err %d)", err);
     }
+
+    // Initialize WiFi and connect to MQTT
+    wifi_init_sta();
 }
